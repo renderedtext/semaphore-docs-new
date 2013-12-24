@@ -10,9 +10,9 @@ activate :syntax #https://github.com/middleman/middleman-syntax
 
 #Activate sync extension
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                = 'semaphore-docs' # The name of the S3 bucket you are targetting. This is globally unique.
-  s3_sync.aws_access_key_id     = ''
-  s3_sync.aws_secret_access_key = ''
+  s3_sync.bucket                = data.credentials.aws_bucket
+  s3_sync.aws_access_key_id     = data.credentials.aws_access_key_id
+  s3_sync.aws_secret_access_key = data.credentials.aws_secret_access_key
   s3_sync.delete                = false # We delete stray files by default.
   s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
 end
