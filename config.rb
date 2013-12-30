@@ -8,6 +8,8 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 activate :syntax #https://github.com/middleman/middleman-syntax
 
+ignore 'plain.html'
+
 #Activate sync extension
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                = data.credentials.aws_bucket
@@ -81,6 +83,10 @@ helpers do
 
   def image_url(source)
     protocol + host_with_port + image_path(source)
+  end
+
+  def categories
+    sitemap.resources.reject{ |p| p.data["category"].nil? }.group_by {|p| p.data["category"] }
   end
 
 end

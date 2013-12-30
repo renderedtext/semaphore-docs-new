@@ -1,0 +1,17 @@
+<% wrap_layout :layout do  %>
+
+  <% content_for :title do %>
+    <title><%= current_page.data.title  %></title>
+  <% end %>
+
+  <hgroup class="page-header">
+    <h1>
+      <small><%= link_to current_page.data.category + " /", "/docs" %></small>
+      <%= current_page.data.title %>
+    </h1>
+  </hgroup>
+
+  <title><%= current_page.data.title  %></title>
+  <%= yield %>
+
+<% end %>
