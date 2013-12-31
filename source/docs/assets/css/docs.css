@@ -9,10 +9,18 @@
   display: inline-block;
   margin-left: 10px;
 }
-.docs .navbar-nav > li > a {
+.docs .navbar-nav > li > a:link,
+.docs .navbar-nav > li > a:visited {
   color: #999999;
   font-size: 14px;
 }
+
+.docs .navbar-nav > li > a:hover,
+.docs .navbar-nav > li > a:focus {
+  color: #8a0808;
+  font-size: 14px;
+}
+
 @media (max-width: 767px){
   .docs .navbar-brand {
     margin: 0px auto;
@@ -48,7 +56,7 @@
 
 .docs .panel{
   padding: 56px;
-  margin-top: 112px;
+  margin-top: 56px;
   border: 1px solid #ceceb5;
 }
 .docs .panel img {
