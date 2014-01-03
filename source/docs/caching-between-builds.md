@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cache between builds
+title: Caching between builds
 category: The Semaphore platform
 ---
 

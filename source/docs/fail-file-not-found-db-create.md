@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build fails with “file not found db:create (ArgumentError)”
+title: "Fail: 'file not found db:create (ArgumentError)'"
 category: Build troubleshooting
 ---
 

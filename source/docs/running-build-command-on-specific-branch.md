@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Is it possible to override build commands on some branches?
+title: Running a build command on specific branch
 category: Customizing your build
 ---
 

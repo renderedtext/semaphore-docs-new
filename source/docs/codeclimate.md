@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Climate Integration
+title: Code Climate
 category: Integrations
 ---
 

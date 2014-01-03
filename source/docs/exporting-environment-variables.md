@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How can I export some environment variables before the build?
+title: Exporting environment variables
 category: Customizing your build
 ---
 

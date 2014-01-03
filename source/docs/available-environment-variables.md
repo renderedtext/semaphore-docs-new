@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Available Environment Variables
-category: Customizing your build
+category: The Semaphore platform
 ---
 
 Before running your build or deploy, Semaphore exports the following environment variables:

@@ -8,7 +8,8 @@ Here's how you can find the API token required for the HipChat integration.
 
 - From your dashboard, open "Group Admin".
 
-<img src="/docs/assets/img/finding-hipchat-token/nav.png" width="600">
+<figure><img src="/docs/assets/img/finding-hipchat-token/nav.png" class="img-responsive"></figure>
+
 
 - Open the "API" tab. Create a new "Notification" token.
 

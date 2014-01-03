@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How do I build a project with git submodules?
+title: Building a project with git submodules
 category: Managing dependencies
 ---
 

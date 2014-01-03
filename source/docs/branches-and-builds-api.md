@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Branches & builds API
+title: Branches & builds
 category: API
 ---
 

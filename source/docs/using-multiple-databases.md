@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How do I configure the database?
+title: Manually creating the database
 category: Customizing your build
 ---
 

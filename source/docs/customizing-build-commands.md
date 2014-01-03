@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom build commands
+title: Customizing build commands
 category: Customizing your build
 ---
 

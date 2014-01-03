@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Post-thread commands
+title: Using post-thread commands
 category: Customizing your build
 ---
 

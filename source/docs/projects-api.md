@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Projects API
+title: Projects
 category: API
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My tests / integration specs / scenarios fail on Semaphore but pass locally
+title: Tests fail on Semaphore but pass locally
 category: Build troubleshooting
 ---
 

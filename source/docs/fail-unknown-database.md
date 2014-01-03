@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build fails with “Unknown database ‘xyz_test’” or "FATAL database “xyx_test” does not exist"
+title: "Fail: 'Unknown database 'xyz_test'' or 'FATAL database 'xyx_test' does not exist'"
 category: Build troubleshooting
 ---
 

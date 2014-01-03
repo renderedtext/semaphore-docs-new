@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to securely add custom file
+title: Adding custom configuration files
 category: Customizing your build
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported application stack
+title: Supported stack
 category: The Semaphore platform
 ---
 

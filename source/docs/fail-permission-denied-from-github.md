@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Permission denied from GitHub on bundle install
+title: "Fail: Permission denied from GitHub on bundle install"
 category: Build troubleshooting
 ---
 

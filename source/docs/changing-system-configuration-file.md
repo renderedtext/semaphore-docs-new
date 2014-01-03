@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How can I change /etc/hosts or another system configuration file?
+title: Changing a system configuration file
 category: Customizing your build
 ---
 

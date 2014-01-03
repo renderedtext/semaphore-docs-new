@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add another SSH key
+title: Adding more SSH keys
 category: Customizing your build
 ---
 

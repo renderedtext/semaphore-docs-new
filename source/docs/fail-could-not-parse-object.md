@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build fails with “fatal Could not parse object” during bundle install
+title: "Fail: 'fatal Could not parse object' during bundle install"
 category: Build troubleshooting
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Servers & deploys API
+title: Servers & deploys
 category: API
 ---
 

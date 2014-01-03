@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How can I execute Postgres commands?
+title: Executing Postgres commands
 category: Customizing your build
 ---
 

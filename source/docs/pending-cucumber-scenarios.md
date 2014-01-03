@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My build fails if I have pending Cucumber scenarios
+title: Pending Cucumber scenarios
 category: Build troubleshooting
 ---
 

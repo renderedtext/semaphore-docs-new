@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Third party tools
+title: Third-party tools
 category: Integrations
 ---
 

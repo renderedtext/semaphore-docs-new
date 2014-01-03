@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integration with Cloud 66
-category: Deployment
+title: Deploying via Cloud 66
+category: Deploying your application
 ---
 
 [Cloud 66](https://www.cloud66.com) makes it easy to provision, deploy and manage your Ruby on Rails application on any cloud. Semaphore has native integration for deployment through Cloud 66.

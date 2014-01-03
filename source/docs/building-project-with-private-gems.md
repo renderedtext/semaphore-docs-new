@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How do I build a project with private gems?
+title: Building a project with private gems
 category: Managing dependencies
 ---
 

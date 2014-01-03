@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tests or setup failed with “Real HTTP connections are disabled.”
+title: Tests or setup fail with "Real HTTP connections are disabled."
 category: Build troubleshooting
 ---
 

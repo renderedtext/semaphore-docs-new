@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deployment fails with "permission denied (publickey)"
-category: Deployment
+title: "Fail: 'permission denied (publickey)'"
+category: Deploying your application
 ---
 
 When this happens the first thing to check is if you have correctly configured the SSH key. The public key should be pasted in Semaphore. The public key should be present on the server, in the `.ssh/authorized_keys` file, inside the deploy user’s home directory. This key combination gives Semaphore permission to SSH inside the server.

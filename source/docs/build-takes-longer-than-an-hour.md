@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My build takes longer than an hour
+title: Building projects that take longer than 60 minutes
 category: Build troubleshooting
 ---
 

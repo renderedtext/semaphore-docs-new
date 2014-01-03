@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How can I manually trigger an automatic deploy?
-category: Deployment
+title: Manually triggerring an automatic deploy
+category: Deploying your application
 ---
 
 After you create your server, you can easily launch a deploy manually from a build page.

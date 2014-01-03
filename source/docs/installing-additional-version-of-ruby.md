@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install specific Ruby version?
+title: Installing additional version of Ruby
 category: Managing dependencies
 ---
 

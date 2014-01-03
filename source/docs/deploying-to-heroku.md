@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploying to Heroku
-category: Deployment
+category: Deploying your application
 ---
 
 With Semaphore it's very easy to set up continuous deployment of applications hosted on [Heroku](https://www.heroku.com/). You only need to make sure that you have a configured application on Heroku and a corresponding project on Semaphore.
