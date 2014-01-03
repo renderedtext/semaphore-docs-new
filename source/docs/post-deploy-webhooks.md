@@ -10,15 +10,15 @@ To set up one or more webhooks for your project, follow these steps:
 
 - Click on "settings" next to your project on the dashboard.
 
-<img src="/docs/assets/img/webhooks/project-settings-link.png" width="600">
+<img src="/docs/assets/img/webhooks/project-settings-link.png" class="img-responsive">
 
 - Open the "Webhooks" tab on project settings page.
 
-<img src="/docs/assets/img/webhooks/webhooks-tab-link.png" width="600">
+<img src="/docs/assets/img/webhooks/webhooks-tab-link.png" class="img-responsive">
 
 - Add a URL to receive the payload.
 
-<img src="/docs/assets/img/webhooks/webhooks.png" width="600">
+<img src="/docs/assets/img/webhooks/webhooks.png" class="img-responsive">
 
 - Click on "Test" to receive an example payload and verify that it all works.
 

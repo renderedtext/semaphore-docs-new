@@ -8,7 +8,7 @@ category: Deploying your application
 
 To get started, go to your project's settings and under "Deployment" tab follow the link to add a new server.
 
-<img src="/docs/assets/img/deploying-with-capistrano/settings.png" width="600">
+<img src="/docs/assets/img/deploying-with-capistrano/settings.png" class="img-responsive">
 
 This will launch a simple 5 step process.
 
@@ -16,12 +16,12 @@ This will launch a simple 5 step process.
 
 The first step is to select Capistrano as your deployment method.
 
-<img src="/docs/assets/img/deploying-with-capistrano/deployment-method.png" width="600">
+<img src="/docs/assets/img/deploying-with-capistrano/deployment-method.png" class="img-responsive">
 
 
 ## Choosing your deployment strategy
 
-<img src="/docs/assets/img/deploying-with-capistrano/deployment-strategy.png" width="600">
+<img src="/docs/assets/img/deploying-with-capistrano/deployment-strategy.png" class="img-responsive">
 
 There are two deployment strategies on Semaphore: "automatic" and "manual".
 
@@ -35,7 +35,7 @@ For automatic deployment you will be asked to select which branch will be automa
 
 ## Writing deploy commands
 
-<img src="/docs/assets/img/deploying-with-capistrano/deploy-commands.png" width="600">
+<img src="/docs/assets/img/deploying-with-capistrano/deploy-commands.png" class="img-responsive">
 
 Writing custom deploy commands gives you an ability to use the deploy steps that match your server setup. During a deploy, Semaphore sets `REVISION` environment variable which contains the current Git revision being deployed.
 
@@ -43,7 +43,7 @@ Writing custom deploy commands gives you an ability to use the deploy steps that
 
 At this point you need to provide a private SSH key which Semaphore will use to deploy your code.
 
-<img src="/docs/assets/img/deploying-with-capistrano/add-ssh-key.png" width="600">
+<img src="/docs/assets/img/deploying-with-capistrano/add-ssh-key.png" class="img-responsive">
 
 We recommend that you create separate SSH keys specifically for Semaphore deployment.
 
@@ -59,7 +59,7 @@ If you are using port forwarding with Capistrano, you will need to make sure tha
 
 ## Naming your server on Semaphore
 
-<img src="/docs/assets/img/deploying-with-capistrano/server-name.png" width="600">
+<img src="/docs/assets/img/deploying-with-capistrano/server-name.png" class="img-responsive">
 
 Here you just give your server a name, which can be anything you like. It will be used on your Semaphore dashboard and deployment timeline.
 

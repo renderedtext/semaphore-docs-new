@@ -10,19 +10,19 @@ category: Deploying your application
 
 2) In Semaphore, go to your project setting and click on Deployment.
 
-<img src="/docs/assets/img/cloud66-integration/project_settings.png" width="600">
+<img src="/docs/assets/img/cloud66-integration/project_settings.png" class="img-responsive">
 
 3) If you have no deployments configured, you can add your first server.
 
-<img src="/docs/assets/img/cloud66-integration/project_settings_deployment.png" width="600">
+<img src="/docs/assets/img/cloud66-integration/project_settings_deployment.png" class="img-responsive">
 
 4) Select Cloud 66 from the list of Deployment Methods and choose Automatic.
 
-<img src="/docs/assets/img/cloud66-integration/deployment_method.png" width="600">
+<img src="/docs/assets/img/cloud66-integration/deployment_method.png" class="img-responsive">
 
 5) You will be redirected to your Cloud 66 account and asked if you give Semaphore permission to deploy your stacks on your behalf.
 
-<img src="/docs/assets/img/cloud66-integration/oauth_access_rights.png" width="600">
+<img src="/docs/assets/img/cloud66-integration/oauth_access_rights.png" class="img-responsive">
 
 
 6) Select the project you would like to deploy once the tests are successful.

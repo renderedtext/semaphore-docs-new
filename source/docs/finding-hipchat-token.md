@@ -13,8 +13,8 @@ From your dashboard, open "Group Admin".
 
 Open the "API" tab. Create a new "Notification" token.
 
-<img src="/docs/assets/img/finding-hipchat-token/api-tab.png" width="600">
+<img src="/docs/assets/img/finding-hipchat-token/api-tab.png" class="img-responsive">
 
 Copy the created 30-character token into Semaphore > Notifications > HipChat "Token" field.
 
-<img src="/docs/assets/img/finding-hipchat-token/created-token.png" width="600">
+<img src="/docs/assets/img/finding-hipchat-token/created-token.png" class="img-responsive">

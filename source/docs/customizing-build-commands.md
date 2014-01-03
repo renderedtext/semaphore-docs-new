@@ -19,16 +19,16 @@ To change commands follow the simple steps bellow.
 
 ### 1. Click on "settings" next to your project on the dashboard.
 
-<img src="/docs/assets/img/custom-build-commands/cbc-project-settings-link.png" width="600">
+<img src="/docs/assets/img/custom-build-commands/cbc-project-settings-link.png" class="img-responsive">
 
 ### 2. Review your commands
 
 If your plan allows, you can schedule your commands to run in multiple threads. Click "Change build commands" to edit them.
 
-<img src="/docs/assets/img/custom-build-commands/cbc-commands.png" width="600">
+<img src="/docs/assets/img/custom-build-commands/cbc-commands.png" class="img-responsive">
 
 ### 3. Edit and save your new commands
 
-<img src="/docs/assets/img/custom-build-commands/cbc-edit.png" width="600">
+<img src="/docs/assets/img/custom-build-commands/cbc-edit.png" class="img-responsive">
 
 Note that Semaphore exports some [environment variables](/available-environment-variables) which might be useful to you. You can also install additional packages with commands like `sudo apt-get install -y something`.

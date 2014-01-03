@@ -8,7 +8,7 @@ You can easily define commands for Semaphore to execute after build commands on 
 
 To do this, simply set a command to "Post-thread" in your project's [Build Settings](/docs/custom-build-commands.html):
 
-<img src="/docs/assets/img/post-thread-commands/settings.png" width="600">
+<img src="/docs/assets/img/post-thread-commands/settings.png" class="img-responsive">
 
 This is useful when you need to, for example, upload assets to S3 or tail the test.log.
 

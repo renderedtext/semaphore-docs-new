@@ -18,7 +18,7 @@ For all SSH keys you add Semaphore will automatically:
 
 Here's how you can do that. Open your project settings, "Configuration Files" tab. Click to add a new file.
 
-<img src="/docs/assets/img/how-to-add-another-ssh-key/blank-form.png" width="600">
+<img src="/docs/assets/img/how-to-add-another-ssh-key/blank-form.png" class="img-responsive">
 
 Name your new file `.ssh/custom_id_rsa`.
 
@@ -28,7 +28,7 @@ Paste the content of your private SSH key. This key should be passwordless, to a
 
 This what the form would look like at this point:
 
-<img src="/docs/assets/img/how-to-add-another-ssh-key/adding-ssh-key.png" width="600">
+<img src="/docs/assets/img/how-to-add-another-ssh-key/adding-ssh-key.png" class="img-responsive">
 
 Finally, click "Create File" to save it.
 
