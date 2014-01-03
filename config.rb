@@ -95,6 +95,12 @@ helpers do
     "/docs/#{category.parameterize}.html"
   end
 
+  def link_to_file_on_github(current_page)
+    path = current_page.source_file.split("/semaphore-docs-new/").last
+
+    link_to "Edit this article on GitHub", "https://github.com/renderedtext/semaphore-docs-new/blob/master/#{path}"
+  end
+
 end
 
 configure :development do
