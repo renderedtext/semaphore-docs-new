@@ -26,7 +26,7 @@ To set up one or more webhooks for your project, follow these steps:
 
 ### Payload format
 
-Payload is JSON in the same structure as [build notification API](/branches-and-builds-api).
+Payload is JSON in the same structure as [build notification API](/docs//branches-and-builds-api.html).
 
 ```json
 {

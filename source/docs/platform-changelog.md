@@ -4,7 +4,7 @@ title: Platform changelog
 category: The Semaphore platform
 ---
 
-Current package versions are listed on the [Supported application stack](/supported-stack) page.
+Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
 ### 2013-12-30
 

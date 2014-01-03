@@ -6,7 +6,7 @@ category: Managing dependencies
 
 If your application is using locally installed binary version of wkhtmltopdf without additional configuration, or if you use [wkhtmltopdf-heroku](https://github.com/bradphelan/wkhtmltopdf-heroku) gem, no additional configuration is necessary.
 
-If your application is using wkhtmltopdf or wkhtmltopdf-binary gem or binary version is installed on custom location, then you need to tell your PDF generator tool to use wkhtmltopdf that is installed locally on Semaphore builder machines. Path to executable wkhtmltopdf is stored in `WKHTMLTOPDF_PATH` [environment variable](/available-environment-variables).
+If your application is using wkhtmltopdf or wkhtmltopdf-binary gem or binary version is installed on custom location, then you need to tell your PDF generator tool to use wkhtmltopdf that is installed locally on Semaphore builder machines. Path to executable wkhtmltopdf is stored in `WKHTMLTOPDF_PATH` [environment variable](/docs/available-environment-variables.html).
 
 ## Example configuration
 

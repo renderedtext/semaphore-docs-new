@@ -8,7 +8,7 @@ Ubuntu's Personal Package Archives (PPA) can be used to install a package
 that is unavailable from the official repository.
 
 Add a PPA and install a package with following 3 [custom build
-commands](/custom-build-commands/):
+commands](/docs/custom-build-commands.html):
 
 <img src="/docs/assets/img/how-to-install-dependency-from-ppa/ppa.png" width="600">
 

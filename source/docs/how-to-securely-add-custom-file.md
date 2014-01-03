@@ -18,4 +18,4 @@ For greater security, the content of your files can be stored as encrypted. We s
 
 <img src="/docs/assets/img/how-to-securely-add-custom-file/custom-file-list.png" width="600">
 
-See also: [how to add another SSH key](/how-to-add-another-ssh-key) to your build.
+See also: [how to add another SSH key](/docs/how-to-add-another-ssh-key.html) to your build.

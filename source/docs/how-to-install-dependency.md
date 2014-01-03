@@ -4,7 +4,7 @@ title: My project depends on X and you don’t seem to have it
 category: Managing dependencies
 ---
 
-Important packages that are available in the platform are listed in the [Supported application stack](/supported-stack) article.
+Important packages that are available in the platform are listed in the [Supported application stack](/docs/supported-stack.html) article.
 
 Additional dependencies can be added by simply adding an installation command to your build settings:
 

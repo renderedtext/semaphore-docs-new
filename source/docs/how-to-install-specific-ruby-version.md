@@ -13,4 +13,4 @@ gem install bundler --no-ri --no-rdoc
 # followed by your build commands
 ```
 
-You can find the list of available Ruby versions on our [supported application stack](/supported-stack) page.
+You can find the list of available Ruby versions on our [supported application stack](/docs/supported-stack.html) page.

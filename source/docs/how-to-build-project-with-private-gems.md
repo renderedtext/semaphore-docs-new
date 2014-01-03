@@ -46,4 +46,4 @@ Now bundle localy and you are ready to build on Semaphore!
 
 ## Third alternative: additional SSH key(s)
 
-As of November 2013 Semaphore supports saving and using custom configuration files, including SSH keys. [Follow this guide](/how-to-add-another-ssh-key) to set up an additional SSH key which can give your build or deploy permissions to pull private dependencies.
+As of November 2013 Semaphore supports saving and using custom configuration files, including SSH keys. [Follow this guide](/docs/how-to-add-another-ssh-key.html) to set up an additional SSH key which can give your build or deploy permissions to pull private dependencies.

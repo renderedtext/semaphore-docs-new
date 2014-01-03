@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Semaphore supports Ruby applications and provides UI for configuring version of Ruby. It also generates `database.yml` for your Ruby application based on selected database engine.
 
-Apart from Ruby the following languages are also available: JavaScript (Node.js), Java, Python, C/C++ and Perl. For those languages application has to be configured manually in your project's [custom build commands](/custom-build-commands). If you would like another language to be included out of the box, [send us email](mailto:semaphore@renderedtext.com) or [install it manually](/how-to-install-dependency).
+Apart from Ruby the following languages are also available: JavaScript (Node.js), Java, Python, C/C++ and Perl. For those languages application has to be configured manually in your project's [custom build commands](/docs/custom-build-commands.html). If you would like another language to be included out of the box, [send us email](mailto:semaphore@renderedtext.com) or [install it manually](/docs/how-to-install-dependency.html).
 
 Below you can find information about installed software.
 
@@ -21,7 +21,7 @@ Below you can find information about installed software.
 * Bundler 1.3.5
 * RubyGems 2.1.11
 
-Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). If you need to install an additional version, please check [this guide](/how-to-install-specific-ruby-version).
+Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). If you need to install an additional version, please check [this guide](/docs/how-to-install-specific-ruby-version.html).
 
 ### Database engines
 
@@ -54,7 +54,7 @@ Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). 
 
 Builds on Semaphore run on Ubuntu 12.04 Precise LTS.
 
-We have a number of open source [test apps](/test-apps) in various flavors that we use for verification. If your setup is different or you're having problems making your build pass, we encourage you to [contact us](mailto:semaphore@renderedtext.com) - we'd be happy to get your app building on Semaphore as quickly as possible.
+We have a number of open source [test apps](/docs/test-apps.html) in various flavors that we use for verification. If your setup is different or you're having problems making your build pass, we encourage you to [contact us](mailto:semaphore@renderedtext.com) - we'd be happy to get your app building on Semaphore as quickly as possible.
 
 Other important system packages installed by default include:
 
