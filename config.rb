@@ -87,6 +87,14 @@ helpers do
     sitemap.resources.reject{ |p| p.data["category"].nil? }.group_by {|p| p.data["category"] }
   end
 
+  def category_link(category)
+    link_to category, category_url(category)
+  end
+
+  def category_url(category)
+    "/docs/#{category.parameterize}.html"
+  end
+
 end
 
 configure :development do
@@ -105,4 +113,11 @@ configure :build do
   set :protocol, "https://"
   set :host, "semaphoreapp.com"
   set :port, 80
+end
+
+ready do
+  categories.each do |category, pages|
+    proxy category_url(category), "category.html",
+    :locals => { :category => category, :pages => pages }
+  end
 end

@@ -1,7 +1,7 @@
 .docs .navbar-brand {
   color: #343434;
   font-weight: bold;
-  font-size: 30px;  
+  font-size: 30px;
 }
 .docs .navbar-brand span{
   line-height: 41px;
@@ -28,10 +28,10 @@
   }
   .docs .navbar-brand img{
     margin-bottom: 10px;
-  }  
+  }
   .docs .navbar-brand span {
     margin-left: 0;
-  } 
+  }
 }
 
 .docs .search {
@@ -50,7 +50,7 @@
 @media (max-width: 767px){
   .docs .search {
     float: none;
-    margin: 14px auto;    
+    margin: 14px auto;
   }
 }
 
@@ -68,7 +68,7 @@
   .docs .panel{
     padding: 28px;
     margin-top: 56px;
-  }  
+  }
 }
 
 .docs h1 {
@@ -85,7 +85,7 @@
 .docs h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 28px 0 14px 0;  
+  margin: 28px 0 14px 0;
 }
 .docs .page-header {
   border-bottom: none;
@@ -94,26 +94,26 @@
 }
 .docs .page-header h1 {
   font-weight: 700;
-  font-size: 30px; 
-  margin: 0; 
+  font-size: 30px;
+  margin: 0;
 }
-.docs h1 > small > a {
+.docs .page-header > small {
   font-size: 16px;
   font-weight: bold;
   color: #999999;
   margin-bottom: 14px;
   display: block;
-} 
+}
 @media (max-width: 767px){
   .docs h1 {
-   font-size: 30px; 
+   font-size: 30px;
   }
   .docs h2 {
     font-size: 24px;
-  }  
+  }
   .docs .page-header h1 {
-    font-size: 26px; 
-  }  
+    font-size: 26px;
+  }
 }
 
 .docs .alert {
@@ -123,7 +123,7 @@
   border-radius: 4px;
   font-size: 16px;
   margin-top: 56px;
-  margin-bottom: 56px;  
+  margin-bottom: 56px;
 }
 .docs code {
   font-size: 14px;
@@ -131,25 +131,25 @@
   background-color: #f2f2e9;
   border: 1px solid #dadad6;
   border-radius: 2px;
-  font-family: "Courier New", Courier, monospace; 
+  font-family: "Courier New", Courier, monospace;
 }
 .docs pre {
   margin: 28px -57px;
   border: none;
   border-radius: 0;
-  background-color: #4a4a4a; 
+  background-color: #4a4a4a;
   color: #999999;
   padding: 14px 56px;
 }
 @media (max-width: 767px){
   .docs pre {
     margin: 28px -28px;
-    padding: 14px 28px;    
+    padding: 14px 28px;
   }
   .docs .alert {
   margin-top: 28px;
-  margin-bottom: 28px;     
-  }  
+  margin-bottom: 28px;
+  }
 }
 
 .docs ul li > ul{
