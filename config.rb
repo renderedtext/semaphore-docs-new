@@ -83,8 +83,16 @@ helpers do
     protocol + host_with_port + image_path(source)
   end
 
+  def sort_pages(pages)
+    pages.sort_by {|p| p.data.title}
+  end
+
   def categories
-    sitemap.resources.reject{ |p| p.data["category"].nil? }.group_by {|p| p.data["category"] }
+    categories_hash = sitemap.resources.reject{ |p| p.data["category"].nil? }.group_by {|p| p.data["category"] }
+
+    ordered_articles = data.categories.order.map { |index| categories_hash[index] }.flatten.compact
+
+    ordered_articles.group_by {|p| p.data["category"] }
   end
 
   def category_link(category)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fail: Sphinx tests
+title: "Fail: Sphinx tests"
 category: Build troubleshooting
 ---
 
