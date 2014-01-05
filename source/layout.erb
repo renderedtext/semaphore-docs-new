@@ -49,7 +49,7 @@
               </ul>
 
               <form action="" name="" class="search" role="form">
-                <input type="search" class="form-control" placeholder="Eg. How Semaphore Works" />
+                  <input type="search" id="st-search-input" class="form-control" placeholder="Eg. How Semaphore Works"/>
               </form>
 
             </div>
@@ -82,6 +82,8 @@
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="/docs/assets/js/bootstrap.min.js"></script>
+
+    <%= partial(:swiftype_search)%>
 
   </body>
 </html>
