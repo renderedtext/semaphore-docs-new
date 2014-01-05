@@ -18,4 +18,4 @@ git submodule deinit .
 ```
 
 __Note:__
-Make sure that Semaphore has premissions to clone your submodules repo. Please check documentation about [private gems](http://docs.semaphoreapp.com/how-to-build-project-with-private-gems) where you can find more information about setting premisions for private repos, if you are using those.
+Make sure that Semaphore has premissions to clone your submodules repo. Please check documentation about [private gems](/docs/building-project-with-private-gems.html) where you can find more information about setting premisions for private repos, if you are using those.

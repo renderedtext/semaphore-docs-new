@@ -31,4 +31,4 @@ If your plan allows, you can schedule your commands to run in multiple threads. 
 
 <img src="/docs/assets/img/custom-build-commands/cbc-edit.png" class="img-responsive">
 
-Note that Semaphore exports some [environment variables](/available-environment-variables) which might be useful to you. You can also install additional packages with commands like `sudo apt-get install -y something`.
+Note that Semaphore exports some [environment variables](/docs/available-environment-variables.html) which might be useful to you. You can also install additional packages with commands like `sudo apt-get install -y something`.

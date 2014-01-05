@@ -35,5 +35,5 @@ end
 See our test apps for example source code:
 
 - [wicked_pdf without additional configuration](https://github.com/renderedtext/testapp-capybara-webkit/tree/pdf)
-- [wicked_pdf + wkhtmltopdf-herok](:https://github.com/renderedtext/testapp-capybara-webkit/tree/wkhtmltopdf-heroku)
-- [wicked_pdf + wkhtmltopdf-binar](:https://github.com/renderedtext/testapp-capybara-webkit/tree/wkhtmltopdf-binary)
+- [wicked_pdf + wkhtmltopdf-heroku](https://github.com/renderedtext/testapp-capybara-webkit/tree/wkhtmltopdf-heroku)
+- [wicked_pdf + wkhtmltopdf-binary](https://github.com/renderedtext/testapp-capybara-webkit/tree/wkhtmltopdf-binary)

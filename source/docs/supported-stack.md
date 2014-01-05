@@ -6,7 +6,9 @@ category: The Semaphore platform
 
 Semaphore supports Ruby applications and provides UI for configuring version of Ruby. It also generates `database.yml` for your Ruby application based on selected database engine.
 
-Apart from Ruby the following languages are also available: JavaScript (Node.js), Java, Python, C/C++ and Perl. For those languages application has to be configured manually in your project's [custom build commands](/docs/custom-build-commands.html). If you would like another language to be included out of the box, [send us email](mailto:semaphore@renderedtext.com) or [install it manually](/docs/how-to-install-dependency.html).
+Apart from Ruby the following languages are also available: JavaScript (Node.js), Java, Python, C/C++ and Perl.
+For those languages application has to be configured manually in your project's [custom build commands](/docs/customizing-build-commands.html).
+If you would like another language to be included out of the box, [send us email](mailto:semaphore@renderedtext.com) or [install it manually](/docs/how-to-install-dependency.html).
 
 Below you can find information about installed software.
 
@@ -21,7 +23,7 @@ Below you can find information about installed software.
 * Bundler 1.3.5
 * RubyGems 2.1.11
 
-Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). If you need to install an additional version, please check [this guide](/docs/how-to-install-specific-ruby-version.html).
+Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). If you need to install an additional version, please check [this guide](/docs/installing-additional-version-of-ruby.html).
 
 ### Database engines
 

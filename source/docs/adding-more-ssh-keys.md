@@ -7,7 +7,7 @@ category: Customizing your build
 Semaphore automatically sets up a deploy key needed for CI, and asks you for another deploy key when setting up deployment with Capistrano. However, some projects require additional SSH keys. Some use cases include:
 
 - Deploying to multiple machines.
-- Pulling private gems or submodules (note that [this is doable with OAuth tokens](/docs/how-to-build-project-with-private-gems.html) too).
+- Pulling private gems or submodules (note that [this is doable with OAuth tokens](/docs/building-project-with-private-gems.html) too).
 - Being able to tag releases with Git.
 
 For all SSH keys you add Semaphore will automatically:

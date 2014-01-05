@@ -51,5 +51,5 @@ DATABASE_POSTGRESQL_USERNAME
 DATABASE_POSTGRESQL_PASSWORD
 </pre>
 
-More info about managing databases at Semaphore you can find [here](/docs/how-to-configure-database.html).
+More info about managing databases at Semaphore you can find [here](/docs/using-multiple-databases.html).
 

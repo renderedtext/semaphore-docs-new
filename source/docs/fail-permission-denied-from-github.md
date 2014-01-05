@@ -29,7 +29,7 @@ This is good:
 gem "rails-settings", :git => "https://github.com/renderedtext/rails-settings.git"
 ```
 
-This won't work (unless you insert a working SSH key into the build environment, which is not necessary unless it's a [private repository](/docs/how-to-build-project-with-private-gems.html)):
+This won't work (unless you insert a working SSH key into the build environment, which is not necessary unless it's a [private repository](/docs/building-project-with-private-gems.html)):
 
 ```ruby
 gem "rails-settings", :git => "git@github.com:renderedtext/rails-settings.git"
