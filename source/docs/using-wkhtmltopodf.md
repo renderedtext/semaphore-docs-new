@@ -12,8 +12,9 @@ If your application is using wkhtmltopdf or wkhtmltopdf-binary gem or binary ver
 
 ### wicked_pdf
 
+config/initializers/wicked_pdf.rb
+
 ```ruby
-# config/initializers/wicked_pdf.rb
 if ENV['CI'] == 'true'
   WickedPdf.config = {
     :exe_path => ENV['WKHTMLTOPDF_PATH']
@@ -23,8 +24,9 @@ end
 
 ### PDFKit
 
+config/initializers/pdfkit.rb
+
 ```ruby
-# config/initializers/pdfkit.rb
 if ENV['CI'] == 'true'
   PDFKit.configure do |config|
     config.wkhtmltopdf = ENV['WKHTMLTOPDF_PATH']

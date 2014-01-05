@@ -172,6 +172,7 @@ Pagination: {
             "message": "Merge branch 'staging'",
             "timestamp": "2013-07-22T16:52:27+02:00"
          }
+      }
    ]
 }
 ```
@@ -218,7 +219,7 @@ GET /api/v1/projects/:hash_id/servers/:id/deploys/:number
 
 ### Deploy Log
 
-```json
+```bash
 GET /api/v1/projects/:hash_id/servers/:id/deploys/:number/log
 ```
 
