@@ -68,7 +68,6 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-# Used for generating absolute URLs:
 helpers do
 
   def host_with_port
