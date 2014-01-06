@@ -8,7 +8,7 @@ Semaphore Docs, powered by [Middleman](http://middlemanapp.com) and Amazon S3.
 Clone the repo and install all necessary gems with
 
 ```
-$ git clone git@github.com:renderedtext/semaphore-docs-new.git`
+$ git clone git@github.com:renderedtext/semaphore-docs-new.git
 $ bundle install --path .bundle
 ```
 
