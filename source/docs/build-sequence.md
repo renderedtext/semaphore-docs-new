@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The build sequence
+title: Build sequence
 category: The Semaphore platform
 ---
 
