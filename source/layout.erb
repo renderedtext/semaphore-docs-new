@@ -10,7 +10,7 @@
     <% if content_for?(:title) %>
       <%= yield_content :title %>
     <% else%>
-      <title>Semaphore — Documentation</title>
+      <title>Semaphore Documentation</title>
     <% end %>
 
     <!-- Bootstrap -->
@@ -49,7 +49,7 @@
               </ul>
 
               <form action="" name="" class="search" role="form">
-                  <input type="search" id="st-search-input" class="form-control" placeholder="Eg. How Semaphore Works"/>
+                  <input type="search" id="st-search-input" class="form-control" placeholder="Eg. Supported stack"/>
               </form>
 
             </div>
@@ -84,6 +84,8 @@
     <script src="/docs/assets/js/bootstrap.min.js"></script>
 
     <%= partial(:swiftype_search)%>
+
+    <%= partial(:google_analytics)%>
 
   </body>
 </html>
