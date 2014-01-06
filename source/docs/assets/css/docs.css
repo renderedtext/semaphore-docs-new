@@ -135,11 +135,14 @@
 }
 .docs pre {
   margin: 28px -57px;
-  border: none;
+  background-color: #F9F9F9;
+  border: 1px solid #CCC;
   border-radius: 0;
-  background-color: #4a4a4a;
-  color: #999999;
   padding: 14px 56px;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: pre;
+  overflow-x: scroll;
 }
 @media (max-width: 767px){
   .docs pre {
@@ -161,4 +164,8 @@
   display: inline-block;
   margin-right: 7px;
   font-weight: bold;
+}
+
+.highlight .err{
+  background-color: transparent !important;
 }

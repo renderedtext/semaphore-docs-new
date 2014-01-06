@@ -4,28 +4,24 @@ title: Branches & builds
 category: API
 ---
 
-- Project's Branches
-- Branch Status
-- Branch History
-- Build Information
-- Build Log
-- Rebuild Last Revision
+- [Project's Branches](#project_branches)
+- [Branch Status](#branch_status)
+- [Branch History](#branch_history)
+- [Build Information](#build_information)
+- [Build Log](#build_log)
+- [Rebuild Last Revision](#rebuild)
 
-<p class="alert alert-warning">
-All API access is over HTTPS. Every method requires the user to provide his authentication token via <strong>auth_token</strong> parameter. To see your authentication token and project hash id, open a project’s settings, then find the “API” tab.
-</p>
-
-### Project's branches
+## <a name="project_branches" href="#project_branches">Project's branches</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/branches
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 
-#### Response
+### Response
 
 ```json
 [
@@ -47,18 +43,18 @@ GET /api/v1/projects/:hash_id/branches
 ]
 ```
 
-### Branch Status
+## <a name="branch_status" href="#branch_status">Branch Status</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/:id/status
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 - `id` of the branch
 
-#### Response
+### Response
 
 ```json
 {
@@ -85,20 +81,20 @@ GET /api/v1/projects/:hash_id/:id/status
 ```
 
 
-### Branch History
+## <a name="branch_history" href="#branch_history">Branch History</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/:id
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 - `id` of the branch
 
 Branch builds are returned paginated by 10 per page. A specific page can be requested using the `page` parameter. The pagination information is included in the response header.
 
-#### Pagination header
+### Pagination header
 
 ```json
 Pagination: {
@@ -113,7 +109,7 @@ Pagination: {
 }
 ```
 
-#### Response
+### Response
 
 ```json
 {
@@ -159,13 +155,13 @@ Pagination: {
 }
 ```
 
-### Build Information
+## <a name="build_information" href="#build_information">Build Information</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/:id/builds/:number
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 - `id` of the branch
@@ -197,13 +193,13 @@ GET /api/v1/projects/:hash_id/:id/builds/:number
 }
 ```
 
-### Build Log
+## <a name="build_log" href="#build_log">Build Log</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/:id/builds/:number/log
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 - `id` of the branch
@@ -253,18 +249,18 @@ GET /api/v1/projects/:hash_id/:id/builds/:number/log
 }
 ```
 
-### Rebuild Last Revision
+## <a name="rebuild" href="#rebuild">Rebuild Last Revision</a>
 
 ```bash
 POST /api/v1/projects/:project_hash_id/:branch_id/build
 ```
 
-#### Arguments
+### Arguments
 
 - `project_hash_id` project hash id
 - `branch_id` branch id
 
-#### Response
+### Response
 
 ```json
 {

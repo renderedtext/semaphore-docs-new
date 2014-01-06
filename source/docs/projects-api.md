@@ -4,12 +4,7 @@ title: Projects
 category: API
 ---
 
-<p class="alert alert-warning">
-All API access is over HTTPS. Every method requires the user to provide his authentication token via <strong>auth_token</strong> parameter. To see your authentication token and project hash id, open a project’s settings, then find the “API” tab.
-</p>
-
-
-### User's projects
+## User's projects
 
 List all projects that user has access to and their current status.
 
@@ -17,7 +12,7 @@ List all projects that user has access to and their current status.
 GET /api/v1/projects
 ```
 
-#### Response
+### Response
 
 ```json
 

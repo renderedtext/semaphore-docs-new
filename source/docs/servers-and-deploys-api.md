@@ -4,27 +4,23 @@ title: Servers & deploys
 category: API
 ---
 
-- Project's servers
-- Server Status
-- Server History
-- Deploy Information
-- Deploy Log
+- [Project's servers](#project_servers)
+- [Server Status](#server_status)
+- [Server History](#server_history)
+- [Deploy Information](#deploy_information)
+- [Deploy Log](#deploy_log)
 
-<p class="alert alert-warning">
-All API access is over HTTPS. Every method requires the user to provide his authentication token via <strong>auth_token</strong> parameter. To see your authentication token and project hash id, open a project’s settings, then find the “API” tab.
-</p>
-
-### Project's servers
+## <a name="project_servers" href="#project_servers">Project's servers</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/servers
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 
-#### Response
+### Response
 
 ```json
 [
@@ -41,18 +37,18 @@ GET /api/v1/projects/:hash_id/servers
 ]
 ```
 
-### Server Status
+## <a name="server_status" href="#server_status">Server Status</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/servers/:id/status
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 - `id` of the server
 
-#### Response
+### Response
 
 ```json
 {
@@ -86,23 +82,23 @@ GET /api/v1/projects/:hash_id/servers/:id/status
 }
 ```
 
-### Server History
+## <a name="server_history" href="#server_history">Server History</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/servers/:id
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 - `id` of the server
 
 Server deploys are returned paginated by 10 per page. A specific page can be requested using the `page` parameter. The pagination information is included in the response header.
 
-#### Pagination header
+### Pagination header
 
 ```json
-Pagination: {
+{
   "total_entries": 46,
   "total_pages": 5,
   "per_page": 10,
@@ -114,7 +110,7 @@ Pagination: {
 }
 ```
 
-#### Response
+### Response
 
 ```json
 {
@@ -177,19 +173,19 @@ Pagination: {
 }
 ```
 
-### Deploy Information
+## <a name="deploy_information" href="#deploy_information">Deploy Information</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/servers/:id/deploys/:number
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 - `id` of the server
 - `number` of the deploy
 
-#### Response
+### Response
 
 ```json
 {
@@ -217,19 +213,19 @@ GET /api/v1/projects/:hash_id/servers/:id/deploys/:number
 }
 ```
 
-### Deploy Log
+## <a name="deploy_log" href="#deploy_log">Deploy Log</a>
 
 ```bash
 GET /api/v1/projects/:hash_id/servers/:id/deploys/:number/log
 ```
 
-#### Arguments
+### Arguments
 
 - `hash_id` of the project
 - `id` of the server
 - `number` of the deploy
 
-#### Response
+### Response
 
 ```json
 {
