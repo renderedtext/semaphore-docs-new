@@ -116,10 +116,15 @@ body {
   text-decoration: none !important;
 }
 
-.docs .panel a[href*="#"]:focus:after,
-.docs .panel a[href*="#"]:hover:after {
+.docs .panel h1 a[href*="#"]:hover:after,
+.docs .panel h2 a[href*="#"]:hover:after,
+.docs .panel h3 a[href*="#"]:hover:after,
+.docs .panel h4 a[href*="#"]:hover:after,
+.docs .panel h5 a[href*="#"]:hover:after,
+.docs .panel h6 a[href*="#"]:hover:after {
   content: " #";
-  font-size: .75em;
+  font-size: .65em;
+  font-weight: normal;
   color: #ccc;
 }
 
