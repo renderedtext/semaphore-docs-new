@@ -102,7 +102,22 @@ body {
 
 /* Style named anchors */
 
-.docs .panel a[href*="#"]:after {
+.docs .panel h1 a[href*="#"],
+.docs .panel h2 a[href*="#"],
+.docs .panel h3 a[href*="#"],
+.docs .panel h4 a[href*="#"],
+.docs .panel h5 a[href*="#"],
+.docs .panel h6 a[href*="#"] {
+  color: inherit;
+}
+
+.docs .panel a[href*="#"]:focus,
+.docs .panel a[href*="#"]:hover {
+  text-decoration: none !important;
+}
+
+.docs .panel a[href*="#"]:focus:after,
+.docs .panel a[href*="#"]:hover:after {
   content: " #";
   font-size: .75em;
   color: #ccc;
