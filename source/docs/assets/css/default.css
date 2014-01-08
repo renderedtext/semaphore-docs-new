@@ -1043,6 +1043,11 @@ footer{
   margin: 28px 0; 
 }
 
+.btn-sm {
+  padding: 4px 7px;
+  font-size: 12px;
+}
+
 .btn-lg {
   padding: 14px 36px;
   font-size: 24px;

@@ -1,14 +1,25 @@
+body {
+  background-color: #f2f2e9;
+}
+
 .docs .navbar-brand {
   color: #4a4a4a;
   font-weight: bold;
   font-size: 30px;
 }
-.docs .navbar-brand span{
+.docs .navbar-brand span {
   line-height: 41px;
   vertical-align: bottom;
   display: inline-block;
   margin-left: 10px;
+  letter-spacing: -1px;
 }
+
+.navbar-nav > li {
+  margin-left: 14px;
+  margin-right: 0;
+}
+
 .docs .navbar-nav > li > a:link,
 .docs .navbar-nav > li > a:visited {
   color: #999999;
@@ -36,15 +47,15 @@
 
 .docs .search {
   clear: both;
-  margin-right: 14px;
+  margin-top: 0;
+  margin-bottom: 2em;
   width: 230px;
   float: right;
 }
 .docs input[type="search"]{
-  background-color: #f9f9f9 !important;
   background-image: url("../img/design/search.png");
   background-repeat: no-repeat;
-  background-position: 95% center;
+  background-position: 98% center;
   padding-right: 30px;
 }
 @media (max-width: 767px){
@@ -56,7 +67,7 @@
 
 .docs .panel{
   padding: 56px;
-  margin-top: 56px;
+  /*margin-top: 56px;*/
   border: 1px solid #ceceb5;
 }
 .docs .panel img {
@@ -71,21 +82,49 @@
   }
 }
 
+/* Adjust margins */
+
+.docs p,
+.docs ol,
+.docs ul,
+.table {
+  margin-bottom: 1.5em;
+}
+
+.docs ol ol,
+.docs ol ul,
+.docs ul ul,
+.docs ul ol,
+.docs .alert > p,
+.docs .alert > ul {
+  margin-bottom: 0;
+}
+
+/* Style named anchors */
+
+.docs .panel a[href*="#"]:after {
+  content: " #";
+  font-size: .75em;
+  color: #ccc;
+}
+
+/* Headings */
+
 .docs h1 {
-  font-size: 48px;
-  font-weight: 800;
-  margin-bottom: 28px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 1.75em 0;
 }
 
 .docs h2 {
   font-size: 30px;
-  font-weight: 800;
-  margin: 56px 0 28px 0;
+  font-weight: 700;
+  margin: 1.75em 0;
 }
 .docs h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 28px 0 14px 0;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 1.75em 0;
 }
 .docs .page-header {
   border-bottom: none;
@@ -93,7 +132,7 @@
   padding: 0;
 }
 .docs .page-header h1 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 30px;
   margin: 0;
 }
@@ -104,6 +143,19 @@
   margin-bottom: 14px;
   display: block;
 }
+
+.docs .edit-link {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .docs .edit-link {
+    float: none;
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
 @media (max-width: 767px){
   .docs h1 {
    font-size: 30px;
