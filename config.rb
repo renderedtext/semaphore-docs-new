@@ -10,9 +10,9 @@ activate :syntax #https://github.com/middleman/middleman-syntax
 
 #Activate sync extension
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                = data.credentials.aws_bucket
-  s3_sync.aws_access_key_id     = data.credentials.aws_access_key_id
-  s3_sync.aws_secret_access_key = data.credentials.aws_secret_access_key
+  s3_sync.bucket                = data.credentials.aws.bucket
+  s3_sync.aws_access_key_id     = data.credentials.aws.access_key_id
+  s3_sync.aws_secret_access_key = data.credentials.aws.secret_access_key
   s3_sync.delete                = false # We delete stray files by default.
   s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
 end
@@ -68,7 +68,6 @@ configure :build do
   # set :http_path, "/Content/images/"
 end
 
-# Used for generating absolute URLs:
 helpers do
 
   def host_with_port
@@ -81,6 +80,32 @@ helpers do
 
   def image_url(source)
     protocol + host_with_port + image_path(source)
+  end
+
+  def sort_pages(pages)
+    pages.sort_by {|p| p.data.title}
+  end
+
+  def categories
+    categories_hash = sitemap.resources.reject{ |p| p.data["category"].nil? }.group_by {|p| p.data["category"] }
+
+    ordered_articles = data.categories.order.map { |index| categories_hash[index] }.flatten.compact
+
+    ordered_articles.group_by {|p| p.data["category"] }
+  end
+
+  def category_link(category)
+    link_to category, category_url(category)
+  end
+
+  def category_url(category)
+    "/docs/#{category.parameterize}.html"
+  end
+
+  def link_to_file_on_github(current_page)
+    path = current_page.source_file.split("/semaphore-docs-new/").last
+
+    link_to "Edit this article on GitHub", "https://github.com/renderedtext/semaphore-docs-new/blob/master/#{path}"
   end
 
 end
@@ -101,4 +126,11 @@ configure :build do
   set :protocol, "https://"
   set :host, "semaphoreapp.com"
   set :port, 80
+end
+
+ready do
+  categories.each do |category, pages|
+    proxy category_url(category), "category.html",
+    :locals => { :category => category, :pages => pages }
+  end
 end

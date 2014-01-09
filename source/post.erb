@@ -1,0 +1,19 @@
+<% wrap_layout :layout do  %>
+
+  <% content_for :title do %>
+    <title><%= current_page.data.title + " — "  + current_page.data.category %></title>
+  <% end %>
+
+  <hgroup class="page-header">
+    <small><%= link_to "Home","/docs" %> / <%= category_link(current_page.data.category) %> /</small>
+
+    <h1><%= current_page.data.title %></h1>
+  </hgroup>
+
+  <title><%= current_page.data.title %></title>
+
+  <%= yield %>
+
+  <small><%= link_to_file_on_github(current_page) %></small>
+
+<% end %>
