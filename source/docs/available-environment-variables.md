@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Before running your build or deploy, Semaphore exports the following environment variables:
 
-<table class="table table-striped">
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -24,53 +24,50 @@ Before running your build or deploy, Semaphore exports the following environment
     </tr>
     <tr>
       <td>BRANCH_NAME</td>
-      <td>% current branch name %</td>
+      <td>Eg. master</td>
     </tr>
     <tr>
       <td>REVISION</td>
-      <td>% current branch name %</td>
+      <td>Eg. 6375073ec483bd2d949fad188d1ab869</td>
     </tr>
     <tr>
       <td>WKHTMLTOPDF_PATH</td>
-      <td>% current branch name %</td>
+      <td>/usr/local/bin/wkhtmltopdf</td>
     </tr>
     <tr>
-      <td>SEMAPHORE_CACHE_DIR</td>
-      <td>/home/runner/my_project/.semaphore_cache</td>
+      <td>SEMAPHORE_CACHE_DR</td>
+      <td>Eg. /home/runner/my_app/.semaphore_cache</td>
     </tr>
     <tr>
       <td>SEMAPHORE_PROJECT_HASH_ID</td>
-      <td>4567556213</td>
+      <td>Eg. 18670db3bd1c017cb5fc6013bec1d75d3</td>
     </tr>
     <tr>
       <td>SEMAPHORE_PROJECT_NAME</td>
-      <td>Base-app</td>
+      <td>Eg. Base-app</td>
     </tr>
     <tr>
       <td>SEMAPHORE_BRANCH_ID</td>
-      <td>Base-app</td>
+      <td>Eg. 85726</td>
     <tr>
       <td>SEMAPHORE_BUILD_NUMBER</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <td>SEMAPHORE_BUILD_NUMBER</td>
-      <td>23</td>
+      <td>Eg. 23</td>
     </tr>
     <tr>
       <td>SEMAPHORE_REPO_SLUG</td>
-      <td>23</td>
+      <td>Eg. rastasheep/my_project</td>
     </tr>
     <tr>
       <td>SEMAPHORE_THREAD_RESULT</td>
-      <td>failed</td>
+      <td>Eg. failed</td>
     </tr>
   </tbody>
 </table>
 
-Available only for deployment:
 
-<table class="table table-striped">
+Variables available only for deployment:
+
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -80,18 +77,18 @@ Available only for deployment:
   <tbody>
     <tr>
       <td>SEMAPHORE_SERVER_NAME</td>
-      <td>true</td>
+      <td>Eg. staging</td>
     </tr>
     <tr>
       <td>HEROKU_API_KEY</td>
-      <td>- available when deploying to Heroku</td>
+      <td>Eg. 12139243 - when deploying to Heroku</td>
     </tr>
   </tbody>
 </table>
 
 Semaphore sets the following locale:
 
-<table class="table table-striped">
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -112,7 +109,7 @@ Semaphore sets the following locale:
 
 The following apply if you are using a MySQL or PostgreSQL database. You can use them in any custom scripts that your build depends on:
 
-<table class="table table-striped">
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -122,26 +119,26 @@ The following apply if you are using a MySQL or PostgreSQL database. You can use
   <tbody>
     <tr>
       <td>DATABASE_USERNAME</td>
-      <td>true</td>
+      <td>runner</td>
     </tr>
     <tr>
       <td>DATABASE_NAME_DEVELOPMENT</td>
-      <td>- available when deploying to Heroku</td>
+      <td>Eg. 18671ad3b3r7bec1d75d3_development</td>
     </tr>
     <tr>
       <td>DATABASE_NAME_TEST</td>
-      <td>- available when deploying to Heroku</td>
+      <td>Eg. 18671ad3b3rVa5fc6017bec1d75d3_test</td>
     </tr>
     <tr>
       <td>DATABASE_PASSWORD</td>
-      <td>- available when deploying to Heroku</td>
+      <td>semaphoredb</td>
     </tr>
   </tbody>
 </table>
 
 If you need to create and manage custom database setup you can use following environment variables as credentials:
 
-<table class="table table-striped">
+<table class="table table-striped table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -151,19 +148,19 @@ If you need to create and manage custom database setup you can use following env
   <tbody>
     <tr>
       <td>DATABASE_MYSQL_USERNAME</td>
-      <td>true</td>
+      <td>root</td>
     </tr>
     <tr>
       <td>DATABASE_MYSQL_PASSWORD</td>
-      <td>- available when deploying to Heroku</td>
+      <td>semaphoredb</td>
     </tr>
     <tr>
       <td>DATABASE_POSTGRESQL_USERNAME</td>
-      <td>- available when deploying to Heroku</td>
+      <td>runner</td>
     </tr>
     <tr>
       <td>DATABASE_POSTGRESQL_PASSWORD</td>
-      <td>- available when deploying to Heroku</td>
+      <td>semaphoredb</td>
     </tr>
   </tbody>
 </table>
