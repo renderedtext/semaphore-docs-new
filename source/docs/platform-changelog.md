@@ -18,6 +18,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 - upgrades:
   - ruby 2.1.0 final
   - jruby 1.7.9
+  - nodejs 0.10.24
   - elasticsearch 0.90.9
   - firefox 26
   - redis 2.8.3
