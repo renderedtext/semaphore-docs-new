@@ -48,7 +48,7 @@ Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). 
 
 ### Other languages & platforms
 
-* Node.js (0.10.22)
+* Node.js (0.10.24)
 * Java (openjdk7 - 7u25-2.3.10)
 * Python (2.7.3)
 * C/C++ (gcc 4.6)
