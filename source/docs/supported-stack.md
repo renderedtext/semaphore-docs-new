@@ -48,13 +48,16 @@ Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). 
 
 ### Other languages & platforms
 
-* Node.js (0.10.24)
-* Java (openjdk7 - 7u25-2.3.10)
-* Python (2.7.3)
 * C/C++ (gcc 4.6)
+* Java (openjdk7 - 7u25-2.3.10)
+* Leiningen 2 for Clojure (2.3.4)
+* Node.js (0.10.24)
 * Perl (5.14.2)
+* Python (2.7.3)
 
 Builds on Semaphore run on Ubuntu 12.04 Precise LTS.
+
+The timezone on the machine is UTC.
 
 We have a number of open source [test apps](/docs/test-apps.html) in various flavors that we use for verification. If your setup is different or you're having problems making your build pass, we encourage you to [contact us](mailto:semaphore@renderedtext.com) - we'd be happy to get your app building on Semaphore as quickly as possible.
 
