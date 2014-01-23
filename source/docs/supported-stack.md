@@ -32,7 +32,7 @@ Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). 
 * 0.8.26
 * 0.10.24
 * 0.11.10
-* NPM
+* NPM 1.3.21
 * Grunt 0.1.11
 * Bower 1.2.8
 
