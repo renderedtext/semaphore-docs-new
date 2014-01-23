@@ -35,7 +35,7 @@ Before running your build or deploy, Semaphore exports the following environment
       <td>/usr/local/bin/wkhtmltopdf</td>
     </tr>
     <tr>
-      <td>SEMAPHORE_CACHE_DR</td>
+      <td>SEMAPHORE_CACHE_DIR</td>
       <td>Eg. /home/runner/my_app/.semaphore_cache</td>
     </tr>
     <tr>
@@ -65,7 +65,7 @@ Before running your build or deploy, Semaphore exports the following environment
 </table>
 
 
-Variables available only for deployment:
+Variables available only during deployment:
 
 <table class="table table-striped table-bordered">
   <thead>
@@ -107,7 +107,7 @@ Semaphore sets the following locale:
   </tbody>
 </table>
 
-The following apply if you are using a MySQL or PostgreSQL database. You can use them in any custom scripts that your build depends on:
+The following variables are available to Ruby projects with selected MySQL or PostgreSQL database in project settings. The same values are used in `config/database.yml` that is automatically generated for your project. You can also use them in any custom script that your build depends on:
 
 <table class="table table-striped table-bordered">
   <thead>
@@ -165,5 +165,5 @@ If you need to create and manage custom database setup you can use following env
   </tbody>
 </table>
 
-More info about managing databases at Semaphore you can find [here](/docs/using-multiple-databases.html).
+You can find more information about available databases on Semaphore [here](/docs/database-access.html).
 
