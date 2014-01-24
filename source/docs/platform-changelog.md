@@ -6,6 +6,19 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 2014-01-24
+
+```
+- nodejs now set up via nvm
+- nodejs versions available:
+  - 0.8.26
+  - 0.10.24
+  - 0.11.10
+  - npm version is 1.3.21
+- other upgrades:
+  - chrome 32
+```
+
 ### 2013-12-30
 
 ```

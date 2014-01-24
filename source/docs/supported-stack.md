@@ -77,7 +77,7 @@ Other important system packages installed by default include:
     </tr>
     <tr>
       <td>Chrome</td>
-      <td>31.0.1650</td>
+      <td>32.0.1700</td>
     </tr>
     <tr>
       <td>chromedriver</td>
