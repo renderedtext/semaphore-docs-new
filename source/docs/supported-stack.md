@@ -4,11 +4,13 @@ title: Supported stack
 category: The Semaphore platform
 ---
 
-Semaphore supports Ruby applications and provides UI for configuring version of Ruby. It also generates `database.yml` for your Ruby application based on selected database engine.
+Semaphore officially supports Ruby and JavaScript applications and provides UI for configuring versions for them.
 
-Apart from Ruby the following languages are also available: JavaScript (Node.js), Java, Python, C/C++ and Perl.
-For those languages application has to be configured manually in your project's [custom build commands](/docs/customizing-build-commands.html).
-If you would like another language to be included out of the box, [send us email](mailto:semaphore@renderedtext.com) or [install it manually](/docs/how-to-install-dependency.html).
+In case of Ruby, it also generates a working `database.yml` or equivalent, based on selected database engine.
+
+The following languages are also available: C/C++, Clojure, Java, Perl and Python.
+For them the application has to be configured manually in [project settings](/docs/customizing-build-commands.html).
+If you would like another language to be included out of the box, please [send us email](mailto:semaphore@renderedtext.com) or [install it manually](/docs/how-to-install-dependency.html).
 
 Below you can find information about installed software.
 
@@ -25,6 +27,17 @@ Below you can find information about installed software.
 
 Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). If you need to install an additional version, please check [this guide](/docs/installing-additional-version-of-ruby.html).
 
+### Node.js versions
+
+* 0.8.26
+* 0.10.24
+* 0.11.10
+* NPM 1.3.21
+* Grunt 0.1.11
+* Bower 1.2.8
+
+Node.js versions are available via [NVM](https://github.com/creationix/nvm).
+
 ### Database engines
 
 * PostgreSQL (9.3.1)
@@ -33,6 +46,8 @@ Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). 
 * Redis (2.8.1)
 * MongoDB (2.4.8)
 * Memcached (1.4.13)
+
+[Read more](/docs/database-access.html) about using databases.
 
 ### Test frameworks and backends
 
@@ -45,6 +60,9 @@ Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). 
 * Poltergeist and PhantomJS
 * Jasmine
 * Minitest
+* Karma
+
+This is a partial list of frameworks known to be used by our users. They are simply a reflection of the supported stack.
 
 ### Other languages & platforms
 

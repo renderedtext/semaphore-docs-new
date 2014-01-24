@@ -22,9 +22,10 @@ Your code will be placed in `~/home/runner/:project_name`.
 
 Xvfb (X Virtual Framebuffer) is launched for running tests that require GUI, such as those backed by Selenium.
 
-### Set Ruby version
+### Language-specific setup
 
-Semaphore uses [rbenv](https://github.com/sstephenson/rbenv) for managing Ruby versions. This has no effect on builds based on other programming languages.
+- [Ruby setup](/docs/ruby-setup.html)
+- [JavaScript setup](/docs/javascript-setup.html)
 
 ### Export all environment variables
 
