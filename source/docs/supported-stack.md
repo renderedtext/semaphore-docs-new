@@ -99,7 +99,7 @@ Other important system packages installed by default include:
     </tr>
     <tr>
       <td>chromedriver</td>
-      <td>2.4</td>
+      <td>2.8</td>
     </tr>
     <tr>
       <td>Elasticsearch</td>
