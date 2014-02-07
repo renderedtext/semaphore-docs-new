@@ -44,6 +44,8 @@ export GITHUB_TOKEN=your_token
 
 Now bundle localy and you are ready to build on Semaphore!
 
-## Third alternative: additional SSH key(s)
+## Third alternative: additional SSH key
 
 As of November 2013 Semaphore supports saving and using custom configuration files, including SSH keys. [Follow this guide](/docs/adding-more-ssh-keys.html) to set up an additional SSH key which can give your build or deploy permissions to pull private dependencies.
+
+This option works only for 1 private gem and SSH key. If you have more than one, use one of the methods listed above.
