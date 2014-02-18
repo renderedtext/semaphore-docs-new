@@ -14,7 +14,7 @@ Code Climate is Semaphore's partner for providing test coverage reports for Ruby
 gem "codeclimate-test-reporter"
 ```
 
-- Start the test reporter at the very beginning of spec_helper.rb or test_helper.rb:
+- Start the test reporter at the very beginning of spec\_helper.rb or test\_helper.rb:
 
 ```ruby
 require "codeclimate-test-reporter"
