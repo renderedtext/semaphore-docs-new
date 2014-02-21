@@ -29,7 +29,7 @@ which actually runs
 $ bundle exec middleman -p 4000
 ```
 
-Now you can open [http://localhost:4000/blog](http://localhost:4000/blog).
+Now you can open [http://localhost:4000/docs](http://localhost:4000/docs).
 
 ### Embedding images
 
