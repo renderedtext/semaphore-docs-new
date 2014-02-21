@@ -31,7 +31,9 @@ Payload is JSON in the same structure as [deploy notification API](/docs/servers
 ```json
 {
   "project_name": "heroku-deploy-test",
+  "project_hash_id": "123-aga-471-6a8",
   "result": "passed",
+  "event": "deploy",
   "server_name": "server-heroku-master-automatic-2",
   "number": 2,
   "created_at": "2013-07-30T13:52:33Z",

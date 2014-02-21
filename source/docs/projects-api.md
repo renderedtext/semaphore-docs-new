@@ -22,6 +22,7 @@ GET /api/v1/projects
       "hash_id": "3f1004b8343faabda63d441734526c854380ab89",
       "name": "testapp-sphinx",
       "owner": "renderedtext",
+      "html_url": "https://semaphoreapp.com/darkofabijan/testapp-sphinx",
       "created_at": "2012-09-04T11:53:22Z",
       "updated_at": "2012-09-04T12:01:17Z",
       "branches": [
@@ -70,6 +71,7 @@ GET /api/v1/projects
       "hash_id": "649e584dc507ca4b73e1374d3125ef0b567a949c",
       "name": "testapp-mongodb",
       "owner": "renderedtext",
+      "html_url": "https://semaphoreapp.com/darkofabijan/testapp-mongodb",
       "created_at": "2012-09-14T10:53:38Z",
       "updated_at": "2012-09-14T11:16:51Z",
       "branches": [

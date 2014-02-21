@@ -33,9 +33,11 @@ Payload is JSON in the same structure as [build notification API](/docs/branches
   "branch_name": "gem_updates",
   "branch_url": "https://semaphoreapp.com/projects/44/branches/50",
   "project_name": "base-app",
+  "project_hash_id": "123-aga-471-6a8",
   "build_url": "https://semaphoreapp.com/projects/44/branches/50/builds/15",
   "build_number": 15,
   "result": "passed",
+  "event": "build",
   "started_at": "2012-07-09T15:23:53Z",
   "finished_at": "2012-07-09T15:30:16Z",
   "commit": {
