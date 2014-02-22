@@ -26,8 +26,8 @@ GET /api/v1/projects/:hash_id/hooks
 [
   {
     "id": 256,
-    "url: "http://semaphoreflag.herokuapp.com/qH36J7zzMAxmF72f",
-    "hook_type: "post_build"
+    "url": "http://semaphoreflag.herokuapp.com/qH36J7zzMAxmF72f",
+    "hook_type": "post_build"
   },
   {
     "id": 257,
