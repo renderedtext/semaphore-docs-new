@@ -4,7 +4,7 @@ title: Caching between builds
 category: The Semaphore platform
 ---
 
-Installing application dependencies can take significant amount of time so we cache them to make your build time shorter. Currently we cache directories for Rails and Node.js projects by default. Check list below for complete list of cached directories.
+Installing application dependencies can take significant amount of time so we cache them to make your build time shorter. Currently we cache directories for Ruby, Node.js and Clojure projects by default. Check list below for complete list of cached directories.
 
 ```
 .bundle
@@ -12,6 +12,7 @@ vendor/bundle
 node_modules
 bower_components
 .semaphore-cache
+~/.m2
 ```
 
 Generic cache directory is e.g. `/home/runner/you-app/.semaphore-cache`. Path is available as `SEMAPHORE_CACHE` environment variable. In case you need to download a lot of dependencies it's good idea to keep them in cache directory.
