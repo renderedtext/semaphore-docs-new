@@ -4,11 +4,11 @@ title: Supported stack
 category: The Semaphore platform
 ---
 
-Semaphore officially supports Ruby and JavaScript applications and provides UI for configuring versions for them.
+Semaphore officially supports Ruby, JavaScript and Clojure projects and provides UI for configuring versions for them.
 
 In case of Ruby, it also generates a working `database.yml` or equivalent, based on selected database engine.
 
-The following languages are also available: C/C++, Clojure, Java, Perl and Python.
+The following languages are also available: C/C++, Java, Perl and Python.
 For them the application has to be configured manually in [project settings](/docs/customizing-build-commands.html).
 If you would like another language to be included out of the box, please [send us email](mailto:semaphore@renderedtext.com) or [install it manually](/docs/how-to-install-dependency.html).
 
@@ -37,6 +37,11 @@ Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). 
 * Bower 1.2.8
 
 Node.js versions are available via [NVM](https://github.com/creationix/nvm).
+
+### Clojure support
+
+* Leiningen 2 (2.3.4)
+* Java (openjdk7 - 7u25-2.3.10)
 
 ### Database engines
 
@@ -68,7 +73,6 @@ This is a partial list of frameworks known to be used by our users. They are sim
 
 * C/C++ (gcc 4.6)
 * Java (openjdk7 - 7u25-2.3.10)
-* Leiningen 2 for Clojure (2.3.4)
 * Node.js (0.10.24)
 * Perl (5.14.2)
 * Python (2.7.3)
