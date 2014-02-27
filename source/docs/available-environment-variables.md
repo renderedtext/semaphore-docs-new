@@ -35,6 +35,10 @@ Before running your build or deploy, Semaphore exports the following environment
       <td>/usr/local/bin/wkhtmltopdf</td>
     </tr>
     <tr>
+      <td>SEMAPHORE_PROJECT_DIR</td>
+      <td>Eg. /home/runner/my_app</td>
+    </tr>
+    <tr>
       <td>SEMAPHORE_CACHE_DIR</td>
       <td>Eg. /home/runner/my_app/.semaphore_cache</td>
     </tr>
