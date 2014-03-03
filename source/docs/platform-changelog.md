@@ -6,6 +6,27 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 2014-03-05 (upcoming)
+
+```
+- additions:
+  - ruby 2.1.1
+- upgrades:
+  - bundler 1.5.3
+  - chromedriver 2.9
+  - elasticsearch 1.0.1
+  - firefox 27
+  - google-chrome-stable 33
+  - grunt 0.1.13
+  - mongodb 2.4.9
+  - node.js 0.10.26, 0.11.11
+  - npm 1.4.3
+  - phantomjs 1.9.7
+  - ruby 1.9.3-p545, 2.0.0-p451
+  - rubygems 2.2.2
+  - use faster APT mirror
+```
+
 ### 2014-01-30
 
 ```
