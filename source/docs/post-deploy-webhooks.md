@@ -41,6 +41,9 @@ Payload is JSON in the same structure as [deploy notification API](/docs/servers
   "started_at": "2013-07-30T13:52:38Z",
   "finished_at": "2013-07-30T13:53:21Z",
   "html_url": "https://semaphoreapp.com/projects/2420/servers/81/deploys/2",
+  "build_number": 10,
+  "branch_name": "master",
+  "branch_html_url": "https://semaphoreapp.com/projects/2420/branches/58394",
   "build_html_url": "https://semaphoreapp.com/projects/2420/branches/58394/builds/7",
   "commit": {
     "author_email": "rastasheep3@gmail.com",
@@ -52,6 +55,14 @@ Payload is JSON in the same structure as [deploy notification API](/docs/servers
   }
 }
 ```
+
+### Note
+
+In case that there is no build present for finished deploy, folowing fields will be `null`:
+- `build_number` 
+- `build_html_url`
+- `branch_name`
+- `branch_html_url`
 
 
 ### Retry on failure
