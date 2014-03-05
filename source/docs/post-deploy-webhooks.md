@@ -59,6 +59,7 @@ Payload is JSON in the same structure as [deploy notification API](/docs/servers
 ### Note
 
 In case that there is no build present for finished deploy, folowing fields will be `null`:
+
 - `build_number` 
 - `build_html_url`
 - `branch_name`
