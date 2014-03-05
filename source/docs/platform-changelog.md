@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 2014-03-05 (upcoming)
+### 2014-03-05
 
 ```
 - additions:
@@ -24,7 +24,6 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - phantomjs 1.9.7
   - ruby 1.9.3-p545, 2.0.0-p451
   - rubygems 2.2.2
-  - use faster APT mirror
 ```
 
 ### 2014-01-30

@@ -16,24 +16,25 @@ Below you can find information about installed software.
 
 ### Ruby versions
 
+* 2.1.1
 * 2.1.0
-* 2.0.0-p353
-* 1.9.3-p484
+* 2.0.0-p451
+* 1.9.3-p545
 * 1.9.2-p320
 * ree-1.8.7-2012.02
-* JRuby 1.7.9
-* Bundler 1.3.5
-* RubyGems 2.1.11
+* JRuby 1.7.11
+* Bundler 1.5.3
+* RubyGems 2.2.2
 
 Ruby versions are available via [rbenv](https://github.com/sstephenson/rbenv/). If you need to install an additional version, please check [this guide](/docs/installing-additional-version-of-ruby.html).
 
 ### Node.js versions
 
 * 0.8.26
-* 0.10.24
-* 0.11.10
-* NPM 1.3.21
-* Grunt 0.1.11
+* 0.10.26
+* 0.11.11
+* NPM 1.4.3
+* Grunt 0.1.13
 * Bower 1.2.8
 
 Node.js versions are available via [NVM](https://github.com/creationix/nvm).
@@ -48,8 +49,8 @@ Node.js versions are available via [NVM](https://github.com/creationix/nvm).
 * PostgreSQL (9.3.1)
 * MySQL (5.5.34)
 * SQLite (3.7.9)
-* Redis (2.8.1)
-* MongoDB (2.4.8)
+* Redis (2.8.6)
+* MongoDB (2.4.9)
 * Memcached (1.4.13)
 
 [Read more](/docs/database-access.html) about using databases.
@@ -73,11 +74,10 @@ This is a partial list of frameworks known to be used by our users. They are sim
 
 * C/C++ (gcc 4.6)
 * Java (openjdk7 - 7u25-2.3.10)
-* Node.js (0.10.24)
 * Perl (5.14.2)
 * Python (2.7.3)
 
-Builds on Semaphore run on Ubuntu 12.04 Precise LTS.
+Builds on Semaphore run on Ubuntu 12.04 Precise LTS 64-bit.
 
 The timezone on the machine is UTC.
 
@@ -95,19 +95,19 @@ Other important system packages installed by default include:
   <tbody>
     <tr>
       <td>Firefox</td>
-      <td>26.0</td>
+      <td>27.0</td>
     </tr>
     <tr>
       <td>Chrome</td>
-      <td>32.0.1700</td>
+      <td>33.0.1750</td>
     </tr>
     <tr>
       <td>chromedriver</td>
-      <td>2.8</td>
+      <td>2.9</td>
     </tr>
     <tr>
       <td>Elasticsearch</td>
-      <td>0.90.9</td>
+      <td>1.0.1</td>
     </tr>
     <tr>
       <td>Sphinx</td>
@@ -115,7 +115,7 @@ Other important system packages installed by default include:
     </tr>
     <tr>
       <td>PhantomJS</td>
-      <td>1.9.2</td>
+      <td>1.9.7</td>
     </tr>
     <tr>
       <td>libqtwebkit4</td>
