@@ -136,4 +136,4 @@ Other important system packages installed by default include:
   </tbody>
 </table>
 
-__Note:__ this is a partial list. You can upgrade or add additional packages for your builds with [apt-get](how-to-install-dependency) - either from Ubuntu's [official distribution channels](http://packages.ubuntu.com) or third-party PPAs.
+__Note:__ this is a partial list. You can upgrade or add additional packages for your builds with [apt-get](/docs/how-to-install-dependency.html) - either from Ubuntu's [official distribution channels](http://packages.ubuntu.com) or third-party PPAs.
