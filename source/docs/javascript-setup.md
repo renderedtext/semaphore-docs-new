@@ -4,7 +4,7 @@ title: JavaScript setup
 category: Build sequence
 ---
 
-Semaphore uses [NVM](https://github.com/creationix/nvm) for managing Node.js versions. You can find more information on the [Supported stack](/docs/supported-stack.html) page.
+Semaphore uses [NVM](https://github.com/creationix/nvm) for managing Node.js versions. You can find more information on the [JavaScript Runtime Support](/docs/languages/javascript.html) page.
 
 Setting Node.js version is performed by the equivalent of the following command:
 
