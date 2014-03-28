@@ -28,7 +28,7 @@ gem 'ventana', git: "https://your_token:x-oauth-basic@github.com/renderedtext/ve
 ### Storing the OAuth token in an environment variable
 
 For additional security you can store your OAuth token in an environment variable. This way your token is not included in your codebase which is insecure.
-However this technique require form you to export OAuth token in your development enviromet too (Best way is to export it in ~/.zshrc or ~/.bashrc).
+However this technique require form you to export OAuth token in your development environment too (Best way is to export it in ~/.zshrc or ~/.bashrc).
 
 Change the line in your Gemfile to
 
