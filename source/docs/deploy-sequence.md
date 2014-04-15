@@ -8,9 +8,9 @@ The deploy sequence on Semaphore consists of the following steps.
 
 ### Checkout revision from GitHub
 
-When a build is finished (in case of automatic deployment) or manual deploy launched, your repository is initialized to the revision specified in the corresponding build.
+When a build is finished in case of automatic deployment, or when a manual deploy is launched, your repository is initialized to the revision specified in the corresponding build.
 
-Caching vendor and bundle directories. For more information, please see [this page](docs/caching-between-builds.html).
+Your repository along with its dependencies will, in most cases, be retrieved from cache. For more information, please see [this page](/docs/caching-between-builds.html).
 
 ### Start build VM
 
@@ -20,9 +20,10 @@ A new virtual machine is booted. It comes preinstalled with the platform's [supp
 
 Your code will be placed in `~/home/runner/:project_name`.
 
-### Set Ruby version
+### Language-specific setup
 
-Semaphore uses [rbenv](https://github.com/sstephenson/rbenv) for managing Ruby versions. This has no effect on builds based on other programming languages.
+- [Ruby setup](/docs/ruby-setup.html)
+- [JavaScript setup](/docs/javascript-setup.html)
 
 ### Export all environment variables
 
