@@ -10,7 +10,7 @@ The build sequence on Semaphore consists of the following steps.
 
 When the GitHub webhook hits Semaphore, your repository is initialized to the specified revision.
 
-Caching vendor and bundle directories. For more information, please see [this page](docs/caching-between-builds.html).
+Your repository along with its dependencies will, in most cases, be retrieved from cache. For more information, please see [this page](/docs/caching-between-builds.html).
 
 ### Start build VM
 
