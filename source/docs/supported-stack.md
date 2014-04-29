@@ -23,7 +23,7 @@ If you would like another language to be included out of the box, please [send u
 
 Semaphore environment comes preinstalled with popular data stores. These are:
 
-* Memcached (1.4.13)
+* Memcached (1.4.18)
 * MongoDB (2.4.9)
 * MySQL (5.6.17)
 * PostgreSQL (9.3.1)

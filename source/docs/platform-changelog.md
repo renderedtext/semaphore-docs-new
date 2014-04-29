@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### planned for 2014-05-07
+### planned for 2014-05-05
 
 ```
 - upgrades:
