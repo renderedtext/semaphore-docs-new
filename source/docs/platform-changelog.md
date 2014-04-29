@@ -6,6 +6,20 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### planned for 2014-05-07
+
+```
+- upgrades:
+  - bundler 1.5.3 -> 1.6.2
+  - elasticsearch 1.0.1 -> 1.1.1
+  - firefox 27 -> 28
+  - jruby 1.7.11 -> 1.7.12
+  - mysql 5.5 -> 5.6
+  - redis 2.8.6 -> 2.8.9
+- other:
+  - timezone changed from UTC+1 to UTC
+```
+
 ### 2014-03-05
 
 ```
