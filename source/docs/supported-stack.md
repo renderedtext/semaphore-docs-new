@@ -25,9 +25,9 @@ Semaphore environment comes preinstalled with popular data stores. These are:
 
 * Memcached (1.4.13)
 * MongoDB (2.4.9)
-* MySQL (5.5.34)
+* MySQL (5.6.17)
 * PostgreSQL (9.3.1)
-* Redis (2.8.6)
+* Redis (2.8.9)
 * SQLite (3.7.9)
 
 [Read more](/docs/database-access.html) about using databases.
@@ -44,7 +44,7 @@ Semaphore environment comes preinstalled with popular data stores. These are:
   <tbody>
     <tr>
       <td>Firefox</td>
-      <td>27.0</td>
+      <td>28.0</td>
     </tr>
     <tr>
       <td>Chrome</td>
@@ -56,7 +56,7 @@ Semaphore environment comes preinstalled with popular data stores. These are:
     </tr>
     <tr>
       <td>Elasticsearch</td>
-      <td>1.0.1</td>
+      <td>1.1.1</td>
     </tr>
     <tr>
       <td>Sphinx</td>
@@ -76,7 +76,7 @@ Semaphore environment comes preinstalled with popular data stores. These are:
     </tr>
     <tr>
       <td>Linux kernel</td>
-      <td>3.2.0</td>
+      <td>3.11.0</td>
     </tr>
     <tr>
       <td>wkhtmltopdf</td>
