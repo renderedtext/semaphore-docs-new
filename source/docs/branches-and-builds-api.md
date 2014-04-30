@@ -10,6 +10,7 @@ category: API
 - [Build Information](#build_information)
 - [Build Log](#build_log)
 - [Rebuild Last Revision](#rebuild)
+- [Run a deploy from build](#deploy)
 
 ## <a name="project_branches" href="#project_branches">Project's branches</a>
 
@@ -292,4 +293,48 @@ POST /api/v1/projects/:project_hash_id/:branch_id/build
     "finished_at": null,
     "html_url": "https://semaphoreapp.com/darkofabijan/semaphore/branches/development/builds/132"
 }
+```
+
+## <a name="deploy" href="#deploy">Run a deploy from build</a>
+
+```bash
+POST /api/v1/projects/:project_hash_id/:branch_id/builds/:build_number/deploy/:server_id
+```
+
+### Arguments
+
+- `project_hash_id`
+- `branch_id`
+- `build_number`
+- `server_id` server where the build is being deployed
+
+### Response
+
+
+```json
+{
+  "project_name": "semaphore",
+  "server_name": "production",
+  "number": 27,
+  "created_at": "2013-07-23T10:57:42+02:00",
+  "updated_at": "2013-07-23T11:00:41+02:00",
+  "html_url": "https://semaphoreapp.com/projects/1/servers/11/deploys/27",
+  "deploy_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27?auth_token=:auth_token",
+  "deploy_log_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27/log?auth_token=:auth_token",
+  "build_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/29803/builds/119?auth_token=:auth_token",
+  "build_html_url": "https://semaphoreapp.com/projects/1/branches/29803/builds/119",
+  "commit": {
+      "id": "222f0123418545f21234184a4725fe16asfa125123",
+      "url": "https://github.com/renderedtext/semaphore/commit/222f0123418545f21234184a4725fe16asfa125123",
+      "author_name": "Marko Anastasov",
+      "author_email": "marko@renderedtext.com",
+      "message": "Merge branch 'staging'",
+      "timestamp": "2013-07-22T17:52:27+02:00"
+  }
+}
+```
+### Response when build is not found
+
+```json
+{ "error": "Build not found." }
 ```
