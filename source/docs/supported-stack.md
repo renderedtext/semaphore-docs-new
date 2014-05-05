@@ -44,7 +44,7 @@ Semaphore environment comes preinstalled with popular data stores. These are:
   <tbody>
     <tr>
       <td>Firefox</td>
-      <td>28.0</td>
+      <td>29.0</td>
     </tr>
     <tr>
       <td>Chrome</td>
