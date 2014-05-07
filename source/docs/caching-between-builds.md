@@ -15,7 +15,7 @@ bower_components
 ~/.m2
 ```
 
-Generic cache directory `.semaphore-cache` is located in `/home/runner/your-app/.semaphore-cache`. The full path is available in `SEMAPHORE_CACHE` environment variable. In case you need to download a lot of dependencies it's a good idea to keep them in this cache directory.
+Generic cache directory `.semaphore-cache` is located in `/home/runner/your-app/.semaphore-cache`. The full path is available in `SEMAPHORE_CACHE_DIR` environment variable. In case you need to download a lot of dependencies it's a good idea to keep them in this cache directory.
 
 We try to keep our cache hit percentage high. At the moment it is around 90%. So in case of writing a custom builds script that facilitates Semaphore cache keep in mind that it might be a miss. Getting to 100% hit rate is our short term goal.
 
