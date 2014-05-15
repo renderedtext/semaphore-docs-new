@@ -6,7 +6,16 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### planned for 2014-05-05
+### 2014-05-15
+
+```
+- additions:
+  - ruby 2.1.2
+- upgrades:
+  - ruby 2.0.0-p451 -> 2.0.0-p481
+```
+
+### 2014-05-05
 
 ```
 - upgrades:
