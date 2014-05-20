@@ -26,7 +26,7 @@ To set up one or more webhooks for your project, follow these steps:
 
 ### Payload format
 
-Payload is JSON in the same structure as [deploy notification API](/docs/servers-and-deploys-api.html).
+Payload is JSON in the same structure as [deploy notification API](/docs/servers-and-deploys-api.html), except the request will be a `POST`.
 
 ```json
 {
