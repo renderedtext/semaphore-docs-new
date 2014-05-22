@@ -12,7 +12,7 @@ Semaphore provides first-class support for the following programming languages:
 
 - [Clojure](/docs/languages/clojure.html)
 - [JavaScript](/docs/languages/javascript.html), via Node.js
-- PHP (coming soon)
+- [PHP] (/docs/languages/php.html)
 - [Ruby](/docs/languages/ruby.html)
 
 Runtimes for the following languages are also available: C/C++, Java, Perl and Python.
