@@ -10,7 +10,7 @@ Semaphore supports the following PHP versions via [phpbrew](http://c9s.github.io
 * 5.4.28
 * 5.5.12
 
-The version specified in project settings will be [set as global](/docs/php-setup.html) before your build commands run.
+The major version specified in project settings will be [set as global](/docs/php-setup.html) to the latest corresponding version.
 
 The following tools are also available for PHP package management and testing:
 
