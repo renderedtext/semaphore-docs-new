@@ -16,7 +16,14 @@ For a new variable you need to specify a variable name and value that you want t
 
 For greater security, the content of your variable can be stored as encrypted data. We strongly recommend that you select this option if you are adding sensitive data. Once created, the encrypted variable cannot be edited. The identity of your variable can be determined by the MD5 hash.
 
+When you choose to use encryption, the environment variable's value is stored in the database using an
+[asymmetric encryption algorithm](http://en.wikipedia.org/wiki/Public-key_cryptography),
+and decrypted right before it gets exported in your build.
+
 <img src="/docs/assets/img/exporting-environment-variables/environment-variable-list.png" class="img-responsive">
+
+Each environment variable is exported before your build starts along with
+the [default set of environment variables](/docs/available-environment-variables.html).
 
 Note that you can also simply have `export VAR=foo` in your build commands.
 
