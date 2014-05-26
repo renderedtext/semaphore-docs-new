@@ -87,7 +87,7 @@ helpers do
   end
 
   def categories
-    categories_hash = sitemap.resources.reject{ |p| p.data["category"].nil? }.group_by {|p| p.data["category"] }
+    categories_hash = sitemap.resources.reject{ |p| p.data["category"].nil? || p.data["on_homepage"] == false }.group_by {|p| p.data["category"] }
 
     ordered_articles = data.categories.order.map { |index| categories_hash[index] }.flatten.compact
 
