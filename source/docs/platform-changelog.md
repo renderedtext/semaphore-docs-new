@@ -6,6 +6,19 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 2014-05-28(planned)
+
+```
+- additions:
+  - php 5.3.28
+  - php 5.4.28
+  - php 5.5.12
+  - phpbrew 1.13.1
+- upgrades:
+  - nodejs 0.8.26 -> 0.8.28
+  - nodejs 0.11.10 -> 0.11.13
+```
+
 ### 2014-05-15
 
 ```
