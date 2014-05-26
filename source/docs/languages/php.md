@@ -14,9 +14,9 @@ The major version specified in project settings will be [set as global](/docs/ph
 
 The following tools are also available for PHP package management and testing:
 
-* Composer
-* PEAR
-* PECL
-* PHPunit
+* [Composer](https://getcomposer.org/)
+* [PEAR](http://pear.php.net/)
+* [PECL](http://pecl.php.net/)
+* [PHPunit 4.1](http://phpunit.de/)
 
 See other available components in the [supported stack](/docs/supported-stack.html).
