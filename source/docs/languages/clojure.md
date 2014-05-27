@@ -2,6 +2,7 @@
 layout: post
 title: Clojure Runtime Support
 category: The Semaphore platform
+on_homepage: false
 ---
 
 The Semaphore stack includes:

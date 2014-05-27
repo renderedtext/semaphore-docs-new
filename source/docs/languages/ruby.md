@@ -2,6 +2,7 @@
 layout: post
 title: Ruby Runtime Support
 category: The Semaphore platform
+on_homepage: false
 ---
 
 Semaphore has the following Ruby versions available via [rbenv](https://github.com/sstephenson/rbenv/):

@@ -2,6 +2,7 @@
 layout: post
 title: JavaScript Runtime Support
 category: The Semaphore platform
+on_homepage: false
 ---
 
 Semaphore provides support for testing and deploying JavaScript projects via [Node.js](http://nodejs.org). The following Node.js versions are available via [NVM](https://github.com/creationix/nvm):

@@ -2,6 +2,7 @@
 layout: post
 title: PHP Runtime Support
 category: The Semaphore platform
+on_homepage: false
 ---
 
 Semaphore supports the following PHP versions via [phpbrew](http://c9s.github.io/phpbrew/):
