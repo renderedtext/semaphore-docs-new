@@ -52,20 +52,16 @@ we write:
 
 ## Deployment
 
-To build a new version of the site locally:
+_for Rendered Text people_
+
+Simply run
 
 ```
-$ bundle exec middleman build
+./deploy
 ```
 
-Before deploying make sure that you have all configuration files with credentials, see configuration for more info.
-When you're ready, deploy the content to Amazon S3 with:
-
-```
-$ bundle exec middleman s3_sync
-```
-
-P.S. You must build the blog before deploying.
+which does `bundle exec middleman build` and uploads the content to an S3
+bucket using the AWS CLI. It requires a valid `~/.aws` configuration.
 
 
 ## Configuration
