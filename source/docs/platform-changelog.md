@@ -6,6 +6,22 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 2014-07-07 (planned)
+
+```
+- additions:
+  - aws cli
+- upgrades:
+  - firefox 29 -> 30
+  - elasticsearch 1.1.1 -> 1.2.1
+  - bundler 1.6.2 -> 1.6.3
+  - jruby 1.7.12 -> 1.7.13
+  - php 5.4.28 -> 5.4.30
+  - php 5.5.12 -> 5.5.14
+  - nodejs 0.8.26 -> 0.8.27
+  - nodejs 0.10.28 -> 0.10.29
+```
+
 ### 2014-05-28
 
 ```
@@ -15,7 +31,6 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - php 5.5.12
   - phpbrew 1.13.1
 - upgrades:
-  - nodejs 0.8.26 -> 0.8.28
   - nodejs 0.11.10 -> 0.11.13
 ```
 
