@@ -4,12 +4,15 @@ title: How can I add or remove a collaborator from my project?
 category: Collaboration
 ---
 
-Semaphore synchronizes the collaborator list with GitHub across all projects on a daily basis.
+You can add a collaborator to your project by simply inviting people via email
+including people who are not collaborators on GitHub.If the user with that 
+specific email already exists, she will automatically be added to project's 
+collaborators. If the invited user does not exist yet, invitation email will be sent. 
+Once the user follows the link in the invitation email and signs up, one 
+will be automatically added to project's collaborators.
 
-If the changes are not reflected in your project on Semaphore, it is likely because your authentication token with GitHub has expired. To update it and complete the collaborator sync, the project owner on Semaphore should go to project settings > “Collaborators” and click on “Sync collaborators from GitHub”.
+You can remove a collaborator from project just by removing him from project's
+collaborators list. Once the user has been removed from this list she will no 
+longer have an access to specific project.
 
-### Missing owners
-
-All organizations on GitHub include a special team called "Owners". If a project has been added to Semaphore by someone who is not in this list, the owners will not have access to the project. This is a limitation of GitHub API.
-
-To resolve the situation, owners should simply be added to a regular GitHub team like other developers.
+<img src="/docs/assets/img/collaboration/invitation.png" class="img-responsive">
