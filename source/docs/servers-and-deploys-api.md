@@ -22,6 +22,10 @@ GET /api/v1/projects/:hash_id/servers
 
 ### Response
 
+```
+Status: 200 OK
+```
+
 ```json
 [
   {
@@ -49,6 +53,10 @@ GET /api/v1/projects/:hash_id/servers/:id/status
 - `id` of the server
 
 ### Response
+
+```
+Status: 200 OK
+```
 
 ```json
 {
@@ -111,6 +119,10 @@ Server deploys are returned paginated by 10 per page. A specific page can be req
 ```
 
 ### Response
+
+```
+Status: 200 OK
+```
 
 ```json
 {
@@ -187,6 +199,10 @@ GET /api/v1/projects/:hash_id/servers/:id/deploys/:number
 
 ### Response
 
+```
+Status: 200 OK
+```
+
 ```json
 {
     "project_name": "semaphore",
@@ -226,6 +242,10 @@ GET /api/v1/projects/:hash_id/servers/:id/deploys/:number/log
 - `number` of the deploy
 
 ### Response
+
+```
+Status: 200 OK
+```
 
 ```json
 {
