@@ -9,6 +9,7 @@ category: API
 - [Server History](#server_history)
 - [Deploy Information](#deploy_information)
 - [Deploy Log](#deploy_log)
+- [Stop Deploy](#stop)
 
 ## <a name="project_servers" href="#project_servers">Project's servers</a>
 
@@ -273,5 +274,49 @@ Status: 200 OK
         }
     ],
     "deploy_info_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27?auth_token=:auth_token"
+}
+```
+
+## <a name="stop" href="#stop">Stop Deploy</a>
+
+```bash
+GET /api/v1/projects/:hash_id/servers/:id/deploys/:number/stop
+```
+
+### Arguments
+
+- `hash_id` of the project
+- `id` of the server
+- `number` of the deploy
+
+### Response
+
+```
+Status: 200 OK
+```
+
+```json
+{
+    "project_name": "semaphore",
+    "server_name": "production",
+    "number": 27,
+    "result": "passed",
+    "created_at": "2013-07-23T10:57:42+02:00",
+    "updated_at": "2013-07-23T11:00:41+02:00",
+    "started_at": "2013-07-23T10:57:49+02:00",
+    "finished_at": "2013-07-23T11:00:41+02:00",
+    "html_url": "https://semaphoreapp.com/projects/1/servers/11/deploys/27",
+    "deploy_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27?auth_token=:auth_token",
+    "deploy_log_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27/log?auth_token=:auth_token",
+    "build_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/29803/builds/119?auth_token=:auth_token",
+    "build_html_url": "https://semaphoreapp.com/projects/1/branches/29803/builds/119",
+    "commit": {
+        "id": "222f0123418545f21234184a4725fe16asfa125123",
+        "url": "https://github.com/renderedtext/semaphore/commit/222f0123418545f21234184a4725fe16asfa125123",
+        "author_name": "Marko Anastasov",
+        "author_email": "marko@renderedtext.com",
+        "message": "Merge branch 'staging'",
+        "timestamp": "2013-07-22T17:52:27+02:00"
+    }
 }
 ```
