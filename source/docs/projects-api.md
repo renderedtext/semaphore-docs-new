@@ -14,6 +14,10 @@ GET /api/v1/projects
 
 ### Response
 
+```
+Status: 200 OK
+```
+
 ```json
 
 [

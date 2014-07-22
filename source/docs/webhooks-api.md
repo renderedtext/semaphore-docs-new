@@ -6,7 +6,7 @@ category: API
 
 - [List hooks](#list_hooks)
 - [Create a hook](#create_hook)
-- [Edit a hook](#edit_hook)
+- [Update a hook](#update_hook)
 - [Delete a hook](#delete_hook)
 
 
@@ -21,6 +21,10 @@ GET /api/v1/projects/:hash_id/hooks
 - `hash_id` of the project
 
 ### Response
+
+```
+Status: 200 OK
+```
 
 ```json
 [
@@ -65,6 +69,10 @@ _Required:_
 
 ### Response
 
+```
+Status: 200 OK
+```
+
 ```json
 {
   "id": 266,
@@ -74,7 +82,7 @@ _Required:_
 ```
 
 
-## <a name="edit_hook" href="#edit_hook">Edit a hook</a>
+## <a name="update_hook" href="#update_hook">Update a hook</a>
 
 ```bash
 PUT /api/v1/projects/:hash_id/hooks/:webhook_id
@@ -101,6 +109,10 @@ _Required:_
 
 ### Response
 
+```
+Status: 200 OK
+```
+
 ```json
 {
   "id": 266,
@@ -123,6 +135,6 @@ DELETE /api/v1/projects/:hash_id/hooks/:webhook_id
 
 ### Response
 
-```json
+```
 Status: 204 No Content
 ```
