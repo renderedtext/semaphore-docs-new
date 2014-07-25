@@ -65,3 +65,6 @@ By now the setup is complete - you are ready to automatically deploy to Heroku.
 ## Additional commands
 
 If your application requires some additional deploy commands (such as running migrations after deploy) you can edit the default commands on the summary page or in project settings under "Deployment" tab.
+
+**Note:** Heroku toolbelt doesn't propagate [exit status code](/docs/failed-heroku-db-migration-reported-as-passed.html), which leads to
+reporting a deploy with a failed Heroku toolbelt command as passed.
