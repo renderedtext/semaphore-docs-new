@@ -12,4 +12,10 @@ Additional dependencies can be added by simply adding an installation command to
 sudo apt-get install -y libawesome-dev
 ```
 
+At the start of your build settings you should have the following:
+
+```
+sudo apt-get update
+```
+
 If you need help, just [email us](mailto:semaphore@renderedtext.com) with your needs. If not, we’d still love to hear from you – knowing that many people are using a particular dependency generally encourages us to add it to platform.
