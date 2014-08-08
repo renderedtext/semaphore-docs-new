@@ -44,3 +44,7 @@ sqlite3 ex3.db "create table tbl1(one varchar(10), two smallint);"
 MongoDB doesn't provide a command to create a "database".
 
 Actually, you don’t need to create it manually, because, MongoDB will create it on the fly, during the first time you save the value into the defined collection (or table in SQL), and database.
+
+### Redis
+
+Redis is running on the default port 6379.
