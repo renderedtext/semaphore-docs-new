@@ -55,7 +55,7 @@ Semaphore environment comes preinstalled with popular data stores. These are:
       <td>2.9</td>
     </tr>
     <tr>
-      <td>Elasticsearch</td>
+      <td><a href="/docs/elasticsearch.html">ElasticSearch</a></td>
       <td>1.2.1</td>
     </tr>
     <tr>
