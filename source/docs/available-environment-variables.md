@@ -171,3 +171,6 @@ If you need to create and manage custom database setup you can use following env
 
 You can find more information about available databases on Semaphore [here](/docs/database-access.html).
 
+Rails users, note that Semaphore does not set `RAILS_ENV` or `RACK_ENV`.
+On one occasion we did start setting them to "test" but too many projects
+experienced unexpected problems.
