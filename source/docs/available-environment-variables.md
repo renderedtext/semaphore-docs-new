@@ -65,6 +65,14 @@ Before running your build or deploy, Semaphore exports the following environment
       <td>SEMAPHORE_THREAD_RESULT</td>
       <td>Eg. failed</td>
     </tr>
+    <tr>
+      <td>SEMAPHORE_CURRENT_THREAD</td>
+      <td>Eg. 1</td>
+    </tr>
+    <tr>
+      <td>SEMAPHORE_THREAD_COUNT</td>
+      <td>Eg. 4</td>
+    </tr>
   </tbody>
 </table>
 
