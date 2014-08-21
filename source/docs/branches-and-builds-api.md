@@ -10,6 +10,7 @@ category: API
 - [Build Information](#build_information)
 - [Build Log](#build_log)
 - [Rebuild Last Revision](#rebuild)
+- [Launch Build](#launch_build)
 - [Stop Build](#stop)
 - [Run a deploy from build](#deploy)
 
@@ -189,25 +190,24 @@ Status: 200 OK
 
 ```json
 {
-  "commits": [
-    {
-      "id": "47b51ec00ce04dd78fdefe65428e4216580ce89a",
-      "url": "https://github.com/renderedtext/base-app/commit/47b51ec00ce04dd78fdefe65428e4216580ce89a",
-      "author_name": "Marko Anastasov",
-      "author_email": "marko@renderedtext.com",
-      "message": "Update cucumber and related stuff.",
-      "timestamp": "2013-03-18T09:59:29Z"
-    }
-  ],
+  "commits": [{
+    "id": "ce0d543b875884f09cf1e287fb303fb91a9e28a0",
+    "url": "https://github.com/renderedtext/base-app/commit/ce0d543b875884f09cf1e287fb303fb91a9e28a0",
+    "author_name": "Marko Anastasov",
+    "author_email": "marko@renderedtext.com",
+    "message": "Upgrade shoulda 1.1.6 -> 1.2.1",
+    "timestamp": "2014-05-16T15:38:49+02:00"
+  }],
   "project_name": "base-app",
   "branch_name": "master",
-  "number": 1,
+  "number": 44,
   "result": "passed",
-  "created_at": "2013-03-18T10:40:13Z",
-  "updated_at": "2013-03-18T10:51:27Z",
-  "started_at": "2013-03-18T10:40:20Z",
-  "finished_at": "2013-03-18T10:51:26Z",
-  "html_url": "https://semaphoreapp.com/projects/653/branches/4204/builds/26"
+  "created_at": "2014-06-19T09:37:18+02:00",
+  "updated_at": "2014-06-19T09:39:42+02:00",
+  "started_at": "2014-06-19T09:37:26+02:00",
+  "finished_at": "2014-06-19T09:39:42+02:00",
+  "html_url": "https://semaphoreapp.com/renderedtext/base-app/branches/master/builds/44",
+  "build_log_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/44/log?auth_token=:auth_token",
 }
 ```
 
@@ -271,6 +271,109 @@ Status: 200 OK
 }
 ```
 
+## <a name="rebuild" href="#rebuild">Rebuild Last Revision</a>
+
+```bash
+POST /api/v1/projects/:project_hash_id/:branch_id/build
+```
+
+### Arguments
+
+- `project_hash_id` project hash id
+- `branch_id` branch id
+
+### Response
+
+```
+Status: 200 OK
+```
+
+```json
+{
+  "commits": [
+    {
+      "id": "ee89ebaaaeasdaasdasdqwewlweqlqwleqlwe",
+      "url": "https://github.com/renderedtext/semaphore/commit/dasadsdasadsdasadsdsaasdasdasd",
+      "author_name": "Rastko Jokic",
+      "author_email": "rastko@renderedtext.com",
+      "message": "Add cucumber_in_groups",
+      "timestamp": "2013-12-25T11:57:44+01:00"
+    },
+    {
+      "id": "2a6e8df4llllll11427e1asdasl97506ffac15",
+      "url": "https://github.com/renderedtext/semaphore/commit/2a6e8dasddasdsasadaf69753d5d06ffac15",
+      "author_name": "Marko Anastasov",
+      "author_email": "marko@renderedtext.com",
+      "message": "Merge pull request #410 from renderedtext/rj/cucumber-groups\n\nAdd cucumber_in_groups",
+      "timestamp": "2013-12-25T12:31:07+01:00"
+    }
+  ],
+  "project_name": "semaphore",
+  "branch_name": "development",
+  "number": 1,
+  "result": null,
+  "created_at": "2013-12-25T14:56:43+01:00",
+  "updated_at": "2013-12-25T14:56:44+01:00",
+  "started_at": null,
+  "finished_at": null,
+  "html_url": "https://semaphoreapp.com/darkofabijan/semaphore/branches/development/builds/1",
+  "build_log_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/1/log?auth_token=:auth_token",
+  "build_info_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/1?auth_token=:auth_token"
+}
+```
+
+## <a name="launch_build" href="#launch_build">Launch build</a>
+
+```bash
+POST /api/v1/projects/:project_hash_id/:branch_id/build
+```
+
+### Arguments
+
+- `project_hash_id` project hash id
+- `branch_id` branch id
+- `commit_sha` commit sha
+
+### Response
+
+```
+Status: 200 OK
+```
+
+```json
+{
+  "commits": [{
+    "id": "9d4a35a78942d52ddc88d6e75dbde44d1ba4fa50",
+    "url": "https://github.com/renderedtext/base-app/commit/9d4a35a78942d52ddc88d6e75dbde44d1ba4fa50",
+    "author_name": "Marko Anastasov",
+    "author_email": "marko@renderedtext.com",
+    "message": "Update cucumber-rails",
+    "timestamp": "2014-01-31T13:02:27+01:00"
+  }],
+  "project_name": "base-app",
+  "branch_name": "master",
+  "number": 45,
+  "result": null,
+  "created_at": "2014-08-18T17:04:52+02:00",
+  "updated_at": "2014-08-18T17:04:53+02:00",
+  "started_at": null,
+  "finished_at": null,
+  "html_url": "https://semaphoreapp.com/renderedtext/base-app/branches/master/builds/45",
+  "build_log_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/45/log?auth_token=:auth_token",
+  "build_info_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/45?auth_token=:auth_token"
+}
+```
+
+### Response when the commit is not found
+
+```
+Status: 404 Not Found
+```
+
+```json
+{ "error": "Commit not found." }
+```
+
 ## <a name="stop" href="#stop">Stop a build</a>
 
 ```bash
@@ -291,73 +394,25 @@ Status: 200 OK
 
 ```json
 {
-  "project_name": "semaphore",
-  "server_name": "production",
+  "commits": [{
+    "id": "222f0123418545f21234184a4725fe16asfa125123",
+    "url": "https://github.com/renderedtext/semaphore/commit/222f0123418545f21234184a4725fe16asfa125123",
+    "author_name": "Marko Anastasov",
+    "author_email": "marko@renderedtext.com",
+    "message": "Merge branch 'staging'",
+    "timestamp": "2013-07-22T17:52:27+02:00"
+  }],
+  "project_name": "base-app",
+  "branch_name": "master",
   "number": 27,
-  "created_at": "2013-07-23T10:57:42+02:00",
-  "updated_at": "2013-07-23T11:00:41+02:00",
-  "html_url": "https://semaphoreapp.com/projects/1/servers/11/deploys/27",
-  "deploy_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27?auth_token=:auth_token",
-  "deploy_log_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27/log?auth_token=:auth_token",
-  "build_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/29803/builds/119?auth_token=:auth_token",
-  "build_html_url": "https://semaphoreapp.com/projects/1/branches/29803/builds/119",
-  "commit": {
-      "id": "222f0123418545f21234184a4725fe16asfa125123",
-      "url": "https://github.com/renderedtext/semaphore/commit/222f0123418545f21234184a4725fe16asfa125123",
-      "author_name": "Marko Anastasov",
-      "author_email": "marko@renderedtext.com",
-      "message": "Merge branch 'staging'",
-      "timestamp": "2013-07-22T17:52:27+02:00"
-  }
-}
-```
-
-## <a name="rebuild" href="#rebuild">Rebuild Last Revision</a>
-
-```bash
-POST /api/v1/projects/:project_hash_id/:branch_id/build
-```
-
-### Arguments
-
-- `project_hash_id` project hash id
-- `branch_id` branch id
-
-### Response
-
-```
-Status: 200 OK
-```
-
-```json
-{
-    "commits": [
-        {
-            "id": "ee89ebaaaeasdaasdasdqwewlweqlqwleqlwe",
-            "url": "https://github.com/renderedtext/semaphore/commit/dasadsdasadsdasadsdsaasdasdasd",
-            "author_name": "Rastko Jokic",
-            "author_email": "rastko@renderedtext.com",
-            "message": "Add cucumber_in_groups",
-            "timestamp": "2013-12-25T11:57:44+01:00"
-        },
-        {
-            "id": "2a6e8df4llllll11427e1asdasl97506ffac15",
-            "url": "https://github.com/renderedtext/semaphore/commit/2a6e8dasddasdsasadaf69753d5d06ffac15",
-            "author_name": "Marko Anastasov",
-            "author_email": "marko@renderedtext.com",
-            "message": "Merge pull request #410 from renderedtext/rj/cucumber-groups\n\nAdd cucumber_in_groups",
-            "timestamp": "2013-12-25T12:31:07+01:00"
-        }
-    ],
-    "project_name": "semaphore",
-    "branch_name": "development",
-    "number": 1,
-    "result": null,
-    "created_at": "2013-12-25T14:56:43+01:00",
-    "updated_at": "2013-12-25T14:56:44+01:00",
-    "started_at": null,
-    "finished_at": null,
-    "html_url": "https://semaphoreapp.com/darkofabijan/semaphore/branches/development/builds/132"
+  "result": "stopped",
+  "created_at": "2014-08-18T17:04:52+02:00",
+  "updated_at": "2014-08-18T17:04:53+02:00",
+  "started_at": "2014-08-18T17:04:59+02:00",
+  "finished_at": null,
+  "html_url": "https://semaphoreapp.com/projects/1/branches/29803/builds/27",
+  "build_log_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/27/log?auth_token=:auth_token",
+  "build_info_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/27?auth_token=:auth_token"
 }
 ```
 
@@ -393,12 +448,12 @@ Status: 200 OK
   "build_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/29803/builds/119?auth_token=:auth_token",
   "build_html_url": "https://semaphoreapp.com/projects/1/branches/29803/builds/119",
   "commit": {
-      "id": "222f0123418545f21234184a4725fe16asfa125123",
-      "url": "https://github.com/renderedtext/semaphore/commit/222f0123418545f21234184a4725fe16asfa125123",
-      "author_name": "Marko Anastasov",
-      "author_email": "marko@renderedtext.com",
-      "message": "Merge branch 'staging'",
-      "timestamp": "2013-07-22T17:52:27+02:00"
+    "id": "222f0123418545f21234184a4725fe16asfa125123",
+    "url": "https://github.com/renderedtext/semaphore/commit/222f0123418545f21234184a4725fe16asfa125123",
+    "author_name": "Marko Anastasov",
+    "author_email": "marko@renderedtext.com",
+    "message": "Merge branch 'staging'",
+    "timestamp": "2013-07-22T17:52:27+02:00"
   }
 }
 ```
