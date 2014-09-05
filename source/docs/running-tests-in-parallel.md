@@ -14,3 +14,8 @@ Combining these two methods lets you test multiple branches across multiple proj
 To split your test suite in multiple parallel threads, simply schedule your build commands in multiple threads:
 
 <img src="/docs/assets/img/running-tests-in-parallel/threads.png" class="img-responsive">
+
+### See also
+
+- [Running Cucumber scenarios in parallel](/docs/running-cucumber-scenarios-in-threads.html)
+- [Running RSpec specs in parallel](/docs/running-rspec-specs-in-threads.html)
