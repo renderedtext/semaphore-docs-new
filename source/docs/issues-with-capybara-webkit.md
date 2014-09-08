@@ -10,7 +10,7 @@ category: Build troubleshooting
 
 - You can dump the content of the page to file with [save_page](http://rubydoc.info/github/jnicklas/capybara/master/Capybara/Session#save_page-instance_method).
 
-That method would just save content of the page to file and return path to file. After that you can just print content of the file to the stdout and insect it in the build logs. Once you see the content of the page that you are testing I should be much easier to understand what’s going on.
+That method would just save content of the page to file and return path to file. After that you can just print content of the file to the stdout and inspect it in the build logs. Once you see the content of the page that you are testing I should be much easier to understand what’s going on.
 
 - Make sure your views don’t have scripts such as Google Analytics running in test environment – they will cause timeouts.
 
