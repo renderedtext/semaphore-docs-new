@@ -1,5 +1,6 @@
 order:
   - "Getting started"
+  - "Languages"
   - "The Semaphore platform"
   - "Customizing your build"
   - "Managing dependencies"
