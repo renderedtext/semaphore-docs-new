@@ -1,23 +1,26 @@
 ---
 layout: post
-title: PHP Runtime Support
-category: The Semaphore platform
-on_homepage: false
+title: PHP
+category: Languages
 ---
 
-Semaphore supports the following PHP versions via [phpbrew](http://c9s.github.io/phpbrew/):
+Semaphore supports the following PHP versions via [phpbrew](http://phpbrew.github.io/phpbrew/):
 
-* 5.3.28
-* 5.4.28
-* 5.5.12
+- 5.3.28
+- 5.4.28
+- 5.5.12
 
-The major version specified in project settings will be [set as global](/docs/php-setup.html) to the latest corresponding version.
+The Semaphore stack includes:
 
-The following tools are also available for PHP package management and testing:
+- [Composer](https://getcomposer.org/)
+- [PEAR](http://pear.php.net/)
+- [PECL](http://pecl.php.net/)
+- [PHPunit 4.1](http://phpunit.de/)
 
-* [Composer](https://getcomposer.org/)
-* [PEAR](http://pear.php.net/)
-* [PECL](http://pecl.php.net/)
-* [PHPunit 4.1](http://phpunit.de/)
+List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
 
-See other available components in the [supported stack](/docs/supported-stack.html).
+The major version specified in project settings will be set as global to the latest corresponding version. Semaphore uses [phpbrew](http://phpbrew.github.io/phpbrew/) for managing PHP versions.
+
+Setting a PHP version is performed by the equivalent of the following command:
+
+    phpbrew switch 5.5.12
