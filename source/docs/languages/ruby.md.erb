@@ -4,21 +4,16 @@ title: Ruby
 category: Languages
 ---
 
-Semaphore has the following Ruby versions available via [rbenv](https://github.com/sstephenson/rbenv/):
+Semaphore has the following Ruby versions available via [<%= package_name("rbenv") %>](<%= package_url("rbenv") %>):
 
-- 2.1.2
-- 2.1.1
-- 2.1.0
-- 2.0.0-p481
-- 1.9.3-p545
-- 1.9.2-p320
-- ree-1.8.7-2012.02
-- JRuby 1.7.12
+<% package_versions("ruby").each do |version| %>
+  - <%= version %>
+<% end %>
 
 The Semaphore stack includes:
 
-- Bundler 1.6.2
-- RubyGems 2.2.2
+- [<%= package_name("bundler") %>](<%= package_url("bundler") %>) (<%= package_version("bundler") %>)
+- [<%= package_name("rubygems") %>](<%= package_url("rubygems") %>) (<%= package_version("rubygems") %>)
 
 List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
 

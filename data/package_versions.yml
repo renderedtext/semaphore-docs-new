@@ -1,0 +1,91 @@
+# List of all packages supported by Semaphore.
+# Keep the list sorted.
+
+bower:
+  name: "Bower"
+  version: "1.2.8"
+  url: "http://bower.io/"
+
+bundler:
+  name: "Bundler"
+  version: "1.6.2"
+  url: "http://bundler.io/"
+
+composer:
+  name: "Composer"
+  url: "https://getcomposer.org/"
+
+grunt:
+  name: "Grunt"
+  version: "0.1.13"
+  url: "http://gruntjs.com/"
+
+java:
+  name: "openjdk7"
+  version: "7u25-2.3.10"
+
+leiningen:
+  name: "Leiningen"
+  version: "2.3.4"
+  url: "http://leiningen.org"
+
+node:
+  name: "Node.js"
+  versions:
+    - "0.8.26"
+    - "0.10.26"
+    - "0.11.11"
+
+npm:
+  name: "NPM"
+  version: "1.4.3"
+  url: "https://www.npmjs.org/"
+
+nvm:
+  name: "NVM"
+  url: "https://github.com/creationix/nvm"
+
+pear:
+  name: "PEAR"
+  url: "http://pear.php.net/"
+
+pecl:
+  name: "PECL"
+  url: "http://pecl.php.net/"
+
+php:
+  name: "PHP"
+  versions:
+    - "5.3.28"
+    - "5.4.28"
+    - "5.5.12"
+
+phpbrew:
+  name: "phpbrew"
+  url: "http://phpbrew.github.io/phpbrew/"
+
+phpunit:
+  name: "PHPunit"
+  url: "http://phpunit.de/"
+  version: "4.1"
+
+rbenv:
+  name: "rbenv"
+  url: "https://github.com/sstephenson/rbenv/"
+
+ruby:
+  name: "Ruby"
+  versions:
+    - "2.1.2"
+    - "2.1.1"
+    - "2.1.0"
+    - "2.0.0-p481"
+    - "1.9.3-p545"
+    - "1.9.2-p320"
+    - "ree-1.8.7-2012.02"
+    - "JRuby 1.7.12"
+
+rubygems:
+  name: "RubyGems"
+  version: "2.2.2"
+  url: "https://rubygems.org"
