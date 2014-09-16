@@ -4,12 +4,12 @@ title: Clojure
 category: Languages
 ---
 
-Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
-
 The Semaphore stack includes:
 
-- Java
-- [Leiningen 2](http://leiningen.org)
+- Java (openjdk7 7u25-2.3.10)
+- [Leiningen 2](http://leiningen.org) (2.3.4)
+
+List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
 
 Leiningen is the project and build management tool for Clojure. See [its homepage](http://leiningen.org) for more information on how to use it.
 

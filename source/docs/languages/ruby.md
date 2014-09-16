@@ -4,13 +4,23 @@ title: Ruby
 category: Languages
 ---
 
-Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
+Semaphore has the following Ruby versions available via [rbenv](https://github.com/sstephenson/rbenv/):
+
+- 2.1.2
+- 2.1.1
+- 2.1.0
+- 2.0.0-p481
+- 1.9.3-p545
+- 1.9.2-p320
+- ree-1.8.7-2012.02
+- JRuby 1.7.12
 
 The Semaphore stack includes:
 
-- [rbenv](https://github.com/sstephenson/rbenv/)
-- Bundler
-- RubyGems
+- Bundler 1.6.2
+- RubyGems 2.2.2
+
+List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
 
 The version specified in project settings will be set as global before your build commands run. Semaphore uses [rbenv](https://github.com/sstephenson/rbenv) for managing Ruby versions. 
 
