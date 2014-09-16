@@ -33,15 +33,7 @@ Now you can open [http://localhost:4000/docs](http://localhost:4000/docs).
 
 ### Embedding images
 
-There's a helper defined in `config.rb` which we use as follows.
-
-First, rename the file from `.md` to `.md.erb`. Then instead of:
-
-    <img src="/blog/assets/images/2012-06-14/semaphore-homepage.png" width="700" />
-
-we write:
-
-    <p><%= image_tag image_url("/blog/assets/images/2012-06-14/semaphore-homepage.png"), :width => 700 %></p>
+    <img src="/docs/assets/img/2012-06-14/semaphore-homepage.png" class="img-responsive" />
 
 ### Escaping Erb
 
