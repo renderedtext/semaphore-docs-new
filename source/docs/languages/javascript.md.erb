@@ -1,0 +1,26 @@
+---
+layout: post
+title: JavaScript
+category: Languages
+---
+
+Semaphore provides support for testing and deploying JavaScript projects via
+Node.js. The following Node.js versions are available via [<%= package_name("nvm") %>](<%= package_url("nvm") %>):
+
+<% package_versions("node").each do |version| %>
+  - <%= version %>
+<% end %>
+
+The Semaphore stack includes:
+
+- [<%= package_name("npm") %>](<%= package_url("npm") %>) (<%= package_version("npm") %>)
+- [<%= package_name("grunt") %>](<%= package_url("grunt") %>) (<%= package_version("grunt") %>)
+- [<%= package_name("bower") %>](<%= package_url("bower") %>) (<%= package_version("bower") %>)
+
+List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
+
+The version specified in project settings will be set as global before your build commands run. Semaphore uses [<%= package_name("nvm") %>](<%= package_url("nvm") %>) for managing Node.js versions.
+
+Setting Node.js version is performed by the equivalent of the following command:
+
+    nvm use 0.10

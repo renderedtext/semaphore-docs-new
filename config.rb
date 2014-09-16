@@ -108,6 +108,21 @@ helpers do
     link_to "Edit this article on GitHub", "https://github.com/renderedtext/semaphore-docs-new/blob/master/#{path}"
   end
 
+  def package_name(package)
+    data.package_versions[package]["name"]
+  end
+
+  def package_version(package)
+    data.package_versions[package]["version"]
+  end
+
+  def package_versions(package)
+    data.package_versions[package]["versions"]
+  end
+
+  def package_url(package)
+    data.package_versions[package]["url"]
+  end
 end
 
 configure :development do
