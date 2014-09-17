@@ -24,7 +24,7 @@ Easiest way to get started is to add expectations and
 [lein-expectations](https://github.com/gar3thjon3s/lein-expectations) to
 your `project.clj`:
 
-```
+```clojure
 (defproject expectations-playground "0.1.0-SNAPSHOT"
   :description "Playground for exploring Expectations"
   :license {:name "Eclipse Public License"
