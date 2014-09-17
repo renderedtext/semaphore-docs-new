@@ -4,6 +4,21 @@ title: Ruby
 category: Languages
 ---
 
+### Setting up a Ruby project on Semaphore
+
+To add your Ruby project on Semaphore, first you’ll need to create an account.
+After that you will be able to add a new project from GitHub, right from your
+dashboard.
+
+After you've selected a branch to build and a brief repository analysis,
+Semaphore will automatically configure your project for testing.  For example,
+after analyzing a project that's using RSpec and Cucumber, Semaphore will
+propose commands for running RSpec and Cucumber tests:
+
+<img src="/docs/assets/img/languages/ruby/ruby-analysis.png" class="img-responsive">
+
+### Semaphore stack
+
 Semaphore has the following Ruby versions available via [<%= package_name("rbenv") %>](<%= package_url("rbenv") %>):
 
 <% package_versions("ruby").each do |version| %>
@@ -16,6 +31,8 @@ The Semaphore stack includes:
 - [<%= package_name("rubygems") %>](<%= package_url("rubygems") %>) (<%= package_version("rubygems") %>)
 
 List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
+
+### Ruby version
 
 The version specified in project settings will be set as global before your build commands run. Semaphore uses [rbenv](https://github.com/sstephenson/rbenv) for managing Ruby versions. 
 
