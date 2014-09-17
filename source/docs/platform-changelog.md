@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 2014-07-07
+### v30 - 2014-07-07
 
 ```
 - additions:
@@ -22,7 +22,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - nodejs 0.10.28 -> 0.10.29
 ```
 
-### 2014-05-28
+### v29 - 2014-05-28
 
 ```
 - additions:
