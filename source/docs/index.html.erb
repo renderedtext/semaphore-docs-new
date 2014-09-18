@@ -2,13 +2,129 @@
   <h1>Developing with Semaphore</h1>
 </hgroup>
 
-<p>Welcome to the help and documentation section of <a href="https://semaphoreapp.com">Semaphore</a>, a hosted continuous integration and deployment service. There's a good chance your question about using it will be answered here. If not, please <a href="mailto:328e3e4aab1aefecc60ed7e4cb33910bc3fbdeb2@incoming.intercom.io">email us</a>. This website is <a href="https://github.com/renderedtext/semaphore-docs-new">open source</a> — we welcome issues and pull requests.</p>
+<p>
+  Welcome to the help and documentation section of
+  <a href="https://semaphoreapp.com">Semaphore</a>, a hosted continuous
+  integration and deployment service. There's a good chance your question about
+  using it will be answered here. If not, please
+  <a href="mailto:328e3e4aab1aefecc60ed7e4cb33910bc3fbdeb2@incoming.intercom.io">email us</a>.
+  This website is <a href="https://github.com/renderedtext/semaphore-docs-new">open source</a>
+  — we welcome issues and pull requests.
+</p>
 
-<% categories.each do |category, pages| %>
-  <h3><%= category %></h3>
-  <ul>
-    <% sort_pages(pages).each do |page| %>
-      <li><%= link_to page.data.title, page.url %></li>
-    <% end %>
-  </ul>
-<% end %>
+<h3>Getting started</h3>
+<ul>
+  <li><a href="/docs/adding-your-github-project-to-semaphore.html">Adding your GitHub project to Semaphore</a></li>
+  <li><a href="/docs/running-tests-in-parallel.html">Running tests in parallel</a></li>
+</ul>
+
+<h3>Languages</h3>
+<ul>
+  <li><a href="/docs/languages/clojure.html">Clojure</a></li>
+  <li><a href="/docs/languages/javascript.html">JavaScript</a></li>
+  <li><a href="/docs/languages/php.html">PHP</a></li>
+  <li><a href="/docs/languages/ruby.html">Ruby</a></li>
+</ul>
+
+<h3>The Semaphore platform</h3>
+<ul>
+  <li><a href="/docs/supported-stack.html">Supported stack</a></li>
+  <li><a href="/docs/platform-changelog.html">Platform changelog</a></li>
+  <li><a href="/docs/database-access.html">Database access</a></li>
+  <li><a href="/docs/available-environment-variables.html">Available Environment Variables</a></li>
+  <li><a href="/docs/build-sequence.html">Build sequence</a></li>
+  <li><a href="/docs/caching-between-builds.html">Caching between builds</a></li>
+  <li><a href="/docs/deploy-sequence.html">Deploy sequence</a></li>
+</ul>
+
+<h3>Customizing your build</h3>
+<ul>
+  <li><a href="/docs/adding-custom-configuration-files.html">Adding custom configuration files</a></li>
+  <li><a href="/docs/adding-more-ssh-keys.html">Adding more SSH keys</a></li>
+  <li><a href="/docs/changing-system-configuration-file.html">Changing a system configuration file</a></li>
+  <li><a href="/docs/customizing-build-commands.html">Customizing build commands</a></li>
+  <li><a href="/docs/executing-postgres-commands.html">Executing Postgres commands</a></li>
+  <li><a href="/docs/exporting-environment-variables.html">Exporting environment variables</a></li>
+  <li><a href="/docs/how-to-skip-building-for-some-commits.html">How to skip building some commits?</a></li>
+  <li><a href="/docs/running-cucumber-scenarios-in-threads.html">Running Cucumber scenarios in parallel</a></li>
+  <li><a href="/docs/running-rspec-specs-in-threads.html">Running RSpec specs in parallel</a></li>
+  <li><a href="/docs/running-build-command-on-specific-branch.html">Running a build command on a specific branch</a></li>
+  <li><a href="/docs/using-post-thread-commands.html">Using post-thread commands</a></li>
+</ul>
+
+<h3>Managing dependencies</h3>
+<ul>
+  <li><a href="/docs/building-project-with-git-submodules.html">Building a project with git submodules</a></li>
+  <li><a href="/docs/building-project-with-private-gems.html">Building a project with private gems</a></li>
+  <li><a href="/docs/how-to-use-postgres-mongodb-and-redis-on-one-project.html">Can I use Postgres, MongoDB and Redis on one project?</a></li>
+  <li><a href="/docs/how-to-install-dependency-from-ppa.html">How to install a dependency from PPA?</a></li>
+  <li><a href="/docs/installing-system-dependency.html">Installing a system dependency</a></li>
+  <li><a href="/docs/how-to-install-dependency.html">My project depends on X and you don’t seem to have it</a></li>
+  <li><a href="/docs/repository-settings.html">Repository settings</a></li>
+  <li><a href="/docs/test-apps.html">Test applications</a></li>
+  <li><a href="/docs/using-wkhtmltopodf.html">Using wkhtmltopodf</a></li>
+</ul>
+
+<h3>Build troubleshooting</h3>
+<ul>
+  <li><a href="/docs/failed-build-on-db-setup.html">Build fails on db:setup</a></li>
+  <li><a href="/docs/build-takes-longer-than-an-hour.html">Building projects that take longer than 60 minutes</a></li>
+  <li><a href="/docs/fail-unknown-database.html">Fail: 'Unknown database 'xyz_test'' or 'FATAL database 'xyx_test' does not exist'</a></li>
+  <li><a href="/docs/fail-could-not-parse-object.html">Fail: 'fatal Could not parse object' during bundle install</a></li>
+  <li><a href="/docs/fail-file-not-found-db-create.html">Fail: 'file not found db:create (ArgumentError)'</a></li>
+  <li><a href="/docs/fail-permission-denied-from-github.html">Fail: Permission denied from GitHub on bundle install</a></li>
+  <li><a href="/docs/fail-sphinx-tests.html">Fail: Sphinx tests</a></li>
+  <li><a href="/docs/failed-heroku-db-migration-reported-as-passed.html">Failed Heroku db:migrate reported as passed</a></li>
+  <li><a href="/docs/failed-build-reported-as-passed.html">Failed build reported as passed</a></li>
+  <li><a href="/docs/issues-with-capybara-webkit.html">I’m having issues with capybara-webkit</a></li>
+  <li><a href="/docs/pending-cucumber-scenarios.html">Pending Cucumber scenarios</a></li>
+  <li><a href="/docs/class-require-fails.html">Requiring a class file fails</a></li>
+  <li><a href="/docs/selenium-unable-to-obtain-connection.html">Selenium tests are unable to obtain connection to Firefox</a></li>
+  <li><a href="/docs/tests-fail-on-semaphore-but-pass-locally.html">Tests fail on Semaphore but pass locally</a></li>
+  <li><a href="/docs/fail-real-http-connections-are-disabled.html">Tests or setup fail with "Real HTTP connections are disabled."</a></li>
+</ul>
+
+<h3>Deploying your application</h3>
+<ul>
+  <li><a href="/docs/deploying-to-heroku.html">Deploying to Heroku</a></li>
+  <li><a href="/docs/deploying-via-cloud66.html">Deploying via Cloud 66</a></li>
+  <li><a href="/docs/deploying-with-capistrano.html">Deploying with Capistrano</a></li>
+  <li><a href="/docs/deploying-with-git-deploy.html">Deploying with git-deploy</a></li>
+  <li><a href="/docs/deployment-fail-permission-denied.html">Fail: 'permission denied (publickey)'</a></li>
+  <li><a href="/docs/manually-triggerring-an-automatic-deploy.html">Manually triggerring an automatic deploy</a></li>
+</ul>
+
+<h3>Collaboration</h3>
+<ul>
+  <li><a href="/docs/how-to-add-or-remove-collaborator.html">How can I add or remove a collaborator from my project?</a></li>
+</ul>
+
+<h3>Notifications</h3>
+<ul>
+  <li><a href="/docs/finding-hipchat-token.html">Finding HipChat token</a></li>
+  <li><a href="/docs/post-build-webhooks.html">Post-build webhooks</a></li>
+  <li><a href="/docs/post-deploy-webhooks.html">Post-deploy webhooks</a></li>
+</ul>
+
+<h3>API</h3>
+<ul>
+  <li><a href="/docs/api_authentication.html">Authentication</a></li>
+  <li><a href="/docs/branches-and-builds-api.html">Branches &amp; builds</a></li>
+  <li><a href="/docs/projects-api.html">Projects</a></li>
+  <li><a href="/docs/servers-and-deploys-api.html">Servers &amp; deploys</a></li>
+  <li><a href="/docs/webhooks-api.html">Webhooks</a></li>
+</ul>
+
+<h3>Integrations</h3>
+<ul>
+  <li><a href="/docs/codeclimate.html">Code Climate</a></li>
+  <li><a href="/docs/cctry.html">CruiseControl status</a></li>
+  <li><a href="/docs/third-party-tools.html">Third-party tools</a></li>
+</ul>
+
+<h3>Billing</h3>
+<ul>
+  <li><a href="/docs/changing-project-after-repository-rename.html">Changing the project after repository or organization rename</a></li>
+  <li><a href="/docs/how-to-change-credit-card-information.html">How to change credit card information?</a></li>
+  <li><a href="/docs/transferring-project-ownership.html">Transferring project ownership</a></li>
+</ul>
