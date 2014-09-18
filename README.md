@@ -59,3 +59,9 @@ bucket using the AWS CLI. It requires a valid `~/.aws` configuration.
 ## Configuration
 
 All sensitive credentials are stored in `data/credentials.yml` check `data/credentials.yml.example` for more info about format of file.
+
+## Importing content from Semaphore Blog
+
+If you turn a blog post into a Semaphore Docs page you should include the
+canonical url in the post meta data. For more info, visit the Semaphore Blog
+[guidelines](https://github.com/renderedtext/semaphore-blog#moving-content-to-semaphore-docs).
