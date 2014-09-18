@@ -23,11 +23,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - php 5.5.14 -> 5.5.16
   - ruby 1.9.2p320 -> 1.9.2p330
   - ruby 1.9.3p545 -> 1.9.3p547
-
-<<<<<<< HEAD
 ```
-=======
->>>>>>> New platform versions scheme
+
 ### v1407 - 2014-07-07
 
 ```
@@ -45,10 +42,14 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### v1405.2 - 2014-05-28
 =======
 ### v1405 - 2014-05-28
 >>>>>>> New platform versions scheme
+=======
+### v1405.2 - 2014-05-28
+>>>>>>> Update platform-changelog.md
 
 ```
 - additions:
