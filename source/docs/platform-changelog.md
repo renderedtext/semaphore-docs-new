@@ -41,15 +41,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - nodejs 0.10.28 -> 0.10.29
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ### v1405.2 - 2014-05-28
-=======
-### v1405 - 2014-05-28
->>>>>>> New platform versions scheme
-=======
-### v1405.2 - 2014-05-28
->>>>>>> Update platform-changelog.md
 
 ```
 - additions:
