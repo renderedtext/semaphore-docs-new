@@ -6,6 +6,25 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1409 - 2014-09-22(planned)
+
+```
+- additions:
+  - php 5.6.0
+- upgrades:
+  - bundler 1.6.3 -> 1.7.2
+  - elasticsearch 1.2.1 -> 1.3.2
+  - firefox 30 -> 32
+  - git 2.0.1 -> 2.1
+  - jruby 1.7.13 -> 1.7.15
+  - nodejs 0.8.27 -> 0.8.28
+  - nodejs 0.10.29 -> 0.10.31
+  - php 5.4.30 -> 5.4.32
+  - php 5.5.14 -> 5.5.16
+  - ruby 1.9.2p320 -> 1.9.2p330
+  - ruby 1.9.3p545 -> 1.9.3p547
+
+```
 ### v1407 - 2014-07-07
 
 ```
