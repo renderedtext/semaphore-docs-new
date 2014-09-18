@@ -24,7 +24,10 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - ruby 1.9.2p320 -> 1.9.2p330
   - ruby 1.9.3p545 -> 1.9.3p547
 
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> New platform versions scheme
 ### v1407 - 2014-07-07
 
 ```
@@ -41,7 +44,11 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - nodejs 0.10.28 -> 0.10.29
 ```
 
+<<<<<<< HEAD
 ### v1405.2 - 2014-05-28
+=======
+### v1405 - 2014-05-28
+>>>>>>> New platform versions scheme
 
 ```
 - additions:
