@@ -43,3 +43,5 @@ Add a build command which looks something like:
 ```bash
 psql -c "some command" -d $DATABASE_NAME_TEST -P pager
 ```
+
+List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.

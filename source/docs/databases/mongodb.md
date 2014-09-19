@@ -13,3 +13,5 @@ on the fly, during the first time you save the value into the defined collection
 If your project requires multiple databases you can read more about [using
 Postgres, MongoDB and
 Redis](docs/how-to-use-postgres-mongodb-and-redis-on-one-project.html) on one project.
+
+List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.

@@ -14,3 +14,5 @@ sqlite3 test_database.db ""
 # create database 'test_database.db' and table 'posts'
 sqlite3 test_database.db "create table posts(title varchar(50));"
 ```
+
+List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
