@@ -35,3 +35,11 @@ createdb test_db -U $DATABASE_POSTGRESQL_USERNAME
 Note that the `createdb` command doesn't require password, since PostgeSQL
 doesn't require password for accessing a database that belongs to the PosgreSQL
 user that has the same name as host operating system user, by default.
+
+### Executing Postgres commands
+
+Add a build command which looks something like:
+
+```bash
+psql -c "some command" -d $DATABASE_NAME_TEST -P pager
+```
