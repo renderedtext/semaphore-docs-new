@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Setting up the BDD stack on a new Rails 4 application
-category: Languages
-on_homepage: false
+category: Ruby
 ---
 
 This tutorial guides you through generating a new Rails 4 application with
