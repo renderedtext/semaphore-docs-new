@@ -4,7 +4,7 @@ title: Supported stack
 category: The Semaphore platform
 ---
 
-Every build and deploy on Semaphore runs in a lightweight, isolated virtual machine based on Ubuntu 12.04 Precise LTS 64-bit. This page describes the software provided in these VMs.
+Every build and deploy on Semaphore runs in a lightweight, isolated virtual machine based on Ubuntu 14.04 LTS 64-bit. This page describes the software provided in these VMs.
 
 ### Language support
 

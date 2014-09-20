@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Using database from a Ruby application
-category: Languages
+title: Using database from a Ruby or Rails application
+category: Ruby
 ---
 
 In case a database engine in selected in project settings, Semaphore will generate a file `config/database.yml` with working [database access](/docs/database-access.html) credentials.

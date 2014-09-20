@@ -4,37 +4,18 @@ title: Clojure
 category: Languages
 ---
 
-### Setting up a Clojure project on Semaphore
+Semaphore offers first class support for Clojure. When you add a Clojure project on
+Semaphore, it will analyze it and propose a set of build commands to test
+the project. Often no more setup is required to enjoy the full power of
+continuous integration on the Clojure project.
 
-To add your Clojure project on Semaphore, first you’ll need to create an account.
-After that you will be able to add a new project from GitHub, right from your
-dashboard.
+<h4>Clojure essentials</h4>
+<ul>
+  <li><a href="/docs/languages/clojure/setting-up-clojure-project-on-semaphore.html">Setting up a Clojure project on Semaphore</a></li>
+  <li><a href="/docs/languages/clojure/clojure-support-on-semaphore.html">Clojure support on Semaphore</a></li>
+</ul>
 
-After you've selected a branch to build and a brief repository analysis,
-Semaphore will automatically configure your project for testing.  For example,
-if your project contains a `project.clj` file in its root directory,
-Semaphore will assume that it’s written in Clojure and propose commands to
-install dependencies and run your tests.
-
-<img src="/docs/assets/img/languages/clojure/clojure-analysis.png" class="img-responsive">
-
-Most projects will only need to run `lein test` as their build command.
-The dependencies will be automatically pulled the first time and
-[cached](/docs/caching-between-builds.html) for later reuse.
-
-Leiningen is the project and build management tool for Clojure. See
-[its homepage](http://leiningen.org) for more information on how to use it.
-
-For more informations about setting up Clojure test libraries see
-[the related page](/docs/clojure-testing-libraries.html).
-
-### Semaphore stack
-
-The Semaphore stack includes:
-
-- <%= package_name("java") %> (<%= package_version("java") %>)
-- [<%= package_name("leiningen") %>](<%= package_url("leiningen") %>)
-(<%= package_version("leiningen") %>)
-
-List of all packages and versions is available on the
-[supported application stack](/docs/supported-stack.html) page.
+<h4>Guides</h4>
+<ul>
+  <li><a href="/docs/clojure-testing-libraries.html">Clojure testing libraries</a></li>
+</ul>

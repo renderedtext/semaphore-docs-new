@@ -1,0 +1,13 @@
+---
+layout: post
+title: Switching Ruby version on a specific branch
+category: Ruby
+---
+
+Add a new [build command](/docs/customizing-build-commands.html) that will set the Ruby version:
+
+```bash
+if [ "$BRANCH_NAME" = "ruby-2" ]; then rbenv local 2.0.0-p247 ; fi
+```
+
+Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using wkhtmltopodf
+title: Using wkhtmltopdf
 category: Managing dependencies
 ---
 

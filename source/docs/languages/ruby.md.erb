@@ -4,62 +4,45 @@ title: Ruby
 category: Languages
 ---
 
-### Setting up a Ruby project on Semaphore
+Semaphore offers first class support for Ruby. When you add a Ruby project on
+Semaphore, it will analyze it and propose a set of build commands to test
+the project. Often no more setup is required to enjoy the full power of
+continuous integration on the Ruby project.
 
-To add your Ruby project on Semaphore, first you’ll need to create an account.
-After that you will be able to add a new project from GitHub, right from your
-dashboard.
+<h4>Ruby essentials</h4>
+<ul>
+  <li><a href="/docs/languages/ruby/setting-up-ruby-project-on-semaphore.html">Setting up a Ruby project on Semaphore</a></li>
+  <li><a href="/docs/languages/ruby/ruby-support-on-semaphore.html">Ruby support on Semaphore</a></li>
+</ul>
 
-After you've selected a branch to build and a brief repository analysis,
-Semaphore will automatically configure your project for testing.  For example,
-after analyzing a project that's using RSpec and Cucumber, Semaphore will
-propose commands for running RSpec and Cucumber tests:
+<h4>Guides</h4>
+<ul>
+  <li><a href="/docs/rails-bdd-stack.html">Setting up the BDD stack on a new Rails 4 application</a></li>
+  <li><a href="/docs/languages/ruby/using-database-in-ruby-application.html">Using database from a Ruby or Rails application</a></li>
+  <li><a href="/docs/using-wkhtmltopdf.html">Using wkhtmltopdf</a></li>
+  <li><a href="https://semaphoreapp.com/blog/2013/06/28/testing-rails-apps-that-use-pusher.html">Testing Rails apps that use Pusher with pusher-fake</a></li>
+</ul>
 
-<img src="/docs/assets/img/languages/ruby/ruby-analysis.png" class="img-responsive">
+<h4>Customizing CI setup for Ruby projects</h4>
+<ul>
+  <li><a href="/docs/building-project-with-private-gems.html">Building a project with private gems</a></li>
+  <li><a href="/docs/running-cucumber-scenarios-in-threads.html">Running Cucumber scenarios in parallel</a></li>
+  <li><a href="/docs/running-rspec-specs-in-threads.html">Running RSpec specs in parallel</a></li>
+  <li><a href="/docs/languages/ruby/switching-ruby-version-on-specific-branch.html">Switching Ruby version on a specific branch</a></li>
+</ul>
 
-### Semaphore stack
-
-Semaphore has the following Ruby versions available via [<%= package_name("rbenv") %>](<%= package_url("rbenv") %>):
-
-<% package_versions("ruby").each do |version| %>
-  - <%= version %>
-<% end %>
-
-The Semaphore stack includes:
-
-- [<%= package_name("bundler") %>](<%= package_url("bundler") %>) (<%= package_version("bundler") %>)
-- [<%= package_name("rubygems") %>](<%= package_url("rubygems") %>) (<%= package_version("rubygems") %>)
-
-List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
-
-Read more about [setting up the BDD stack](/docs/rails-bdd-stack.html) on a new Rails 4 application.
-
-### Ruby version
-
-The version specified in project settings will be set as global before your build commands run. Semaphore uses [rbenv](https://github.com/sstephenson/rbenv) for managing Ruby versions. 
-
-Setting Ruby version is performed by the equivalent of the following commands:
-
-    rm -f .rbenv-version .ruby-version
-    rbenv global 2.0.0-p451
-
-### Installing additional version of Ruby
-
-In case your application requires specific Ruby version which is not available by default in Semaphore VM you can install it via rbenv. It's simple. You would only need to add few lines to your [build commands](/docs/customizing-build-commands.html) like in example below:
-
-```bash
-rbenv install 2.1.0-preview1
-rbenv local 2.1.0-preview1
-gem install bundler --no-ri --no-rdoc
-# followed by your build commands
-```
-
-### Switching Ruby version on a specific branch
-
-Add a new [build command](/docs/customizing-build-commands.html) that will set the Ruby version:
-
-```bash
-if [ "$BRANCH_NAME" = "ruby-2" ]; then rbenv local 2.0.0-p247 ; fi
-```
-
-Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
+<h4>Troubleshooting Ruby builds</h4>
+<ul>
+  <li><a href="/docs/failed-build-on-db-setup.html">Build fails on db:setup</a></li>
+  <li><a href="/docs/fail-unknown-database.html">Fail: 'Unknown database 'xyz_test'' or 'FATAL database 'xyx_test' does not exist'</a></li>
+  <li><a href="/docs/fail-could-not-parse-object.html">Fail: 'fatal Could not parse object' during bundle install</a></li>
+  <li><a href="/docs/fail-file-not-found-db-create.html">Fail: 'file not found db:create (ArgumentError)'</a></li>
+  <li><a href="/docs/fail-permission-denied-from-github.html">Fail: Permission denied from GitHub on bundle install</a></li>
+  <li><a href="/docs/fail-sphinx-tests.html">Fail: Sphinx tests</a></li>
+  <li><a href="/docs/failed-heroku-db-migration-reported-as-passed.html">Failed Heroku db:migrate reported as passed</a></li>
+  <li><a href="/docs/issues-with-capybara-webkit.html">I’m having issues with capybara-webkit</a></li>
+  <li><a href="/docs/pending-cucumber-scenarios.html">Pending Cucumber scenarios</a></li>
+  <li><a href="/docs/class-require-fails.html">Requiring a class file fails</a></li>
+  <li><a href="/docs/selenium-unable-to-obtain-connection.html">Selenium tests are unable to obtain connection to Firefox</a></li>
+  <li><a href="/docs/fail-real-http-connections-are-disabled.html">Tests or setup fail with "Real HTTP connections are disabled."</a></li>
+</ul>

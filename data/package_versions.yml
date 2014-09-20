@@ -15,6 +15,11 @@ composer:
   name: "Composer"
   url: "https://getcomposer.org/"
 
+gcc:
+  name: "gcc"
+  version: "4.6.3"
+  url: "http://gcc.gnu.org/"
+
 grunt:
   name: "Grunt"
   version: "0.1.13"

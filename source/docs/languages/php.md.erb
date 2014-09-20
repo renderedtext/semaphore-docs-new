@@ -4,60 +4,21 @@ title: PHP
 category: Languages
 ---
 
-### Setting up a PHP project on Semaphore
+Semaphore offers first class support for PHP. When you add a PHP project on
+Semaphore, it will analyze it and propose a set of build commands to test
+the project. Often no more setup is required to enjoy the full power of
+continuous integration on the PHP project.
 
-To add your PHP project on Semaphore, first you’ll need to create an account.
-After that you will be able to add a new project from GitHub, right from your
-dashboard.
+<h4>PHP essentials</h4>
+<ul>
+  <li><a href="/docs/languages/php/setting-up-php-project-on-semaphore.html">Setting up a PHP project on Semaphore</a></li>
+  <li><a href="/docs/languages/php/php-support-on-semaphore.html">PHP support on Semaphore</a></li>
+  <li><a href="/docs/languages/php/installing-php-extensions-and-packages.html">Installing PHP extensions and packages</a></li>
+</ul>
 
-After you've selected a branch to build and a brief repository analysis,
-Semaphore will automatically configure your project for testing.  For example,
-if your project contains a `composer.json` file in its root directory,
-Semaphore will assume that it’s written in PHP and propose commands to
-install dependencies and run your tests.
 
-<img src="/docs/assets/img/languages/php/php-analysis.png" class="img-responsive">
+<h4>Guides</h4>
 
-Read more about setting up
-[continuous deployment of PHP applications to Heroku](/docs/continuous-integration-deployment-php-with-github-semaphore-heroku.html)
-from Semaphore.
-
-# Semaphore stack for PHP
-
-Semaphore supports the following PHP versions via
-[<%= package_name("phpbrew") %>](<%= package_url("phpbrew") %>):
-
-<% package_versions("php").each do |version| %>
-  - <%= version %>
-<% end %>
-
-The Semaphore stack includes:
-
-- [<%= package_name("composer") %>](<%= package_url("composer") %>)
-- [<%= package_name("pear") %>](<%= package_url("pear") %>)
-- [<%= package_name("pecl") %>](<%= package_url("pecl") %>)
-- [<%= package_name("phpunit") %>](<%= package_url("phpunit") %>) (<%= package_version("phpunit") %>)
-
-List of all packages and versions is available on the
-[supported application stack](/docs/supported-stack.html) page.
-
-### PHP versions
-
-The major version specified in project settings will be set as global to the
-latest corresponding version. Semaphore uses
-[<%= package_name("phpbrew") %>](<%= package_url("phpbrew") %>) for managing
-PHP versions.
-
-Setting a PHP version is performed by the equivalent of the following command:
-
-    phpbrew switch 5.5.12
-
-### Installing PHP extensions and packages
-
-PHP extensions can be installed with either PECL or PEAR. As an alternative,
-you can use:
-
-    phpbrew ext install <extension>
-
-which downloads, installs, creates a config file and enables the extension.
-Packages can be installed with Composer and cached for reuse across builds.
+<ul>
+  <li><a href="/docs/continuous-integration-deployment-php-with-github-semaphore-heroku.html">Continuous Integration and Deployment of PHP applications from GitHub to Heroku with Semaphore</a></li>
+</ul>

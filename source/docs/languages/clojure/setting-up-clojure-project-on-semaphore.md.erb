@@ -1,0 +1,24 @@
+---
+layout: post
+title: Setting up a Clojure project on Semaphore
+category: Clojure
+---
+
+To add your Clojure project on Semaphore, first you’ll need to create an account.
+After that you will be able to add a new project from GitHub, right from your
+dashboard.
+
+After you've selected a branch to build and a brief repository analysis,
+Semaphore will automatically configure your project for testing.  For example,
+if your project contains a `project.clj` file in its root directory,
+Semaphore will assume that it’s written in Clojure and propose commands to
+install dependencies and run your tests.
+
+<img src="/docs/assets/img/languages/clojure/clojure-analysis.png" class="img-responsive">
+
+Most projects will only need to run `lein test` as their build command.
+The dependencies will be automatically pulled the first time and
+[cached](/docs/caching-between-builds.html) for later reuse.
+
+Leiningen is the project and build management tool for Clojure. See
+[its homepage](http://leiningen.org) for more information on how to use it.
