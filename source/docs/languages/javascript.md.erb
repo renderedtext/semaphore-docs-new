@@ -4,41 +4,18 @@ title: JavaScript
 category: Languages
 ---
 
-### Setting up a JavaScript project on Semaphore
-#
-To add your JavaScript project on Semaphore, first you’ll need to create an account.
-After that you will be able to add a new project from GitHub, right from your
-dashboard.
+Semaphore offers first class support for JavaScript. When you add a JavaScript project on
+Semaphore, it will analyze it and propose a set of build commands to test
+the project. Often no more setup is required to enjoy the full power of
+continuous integration on the JavaScript project.
 
-After you've selected a branch to build and a brief repository analysis,
-Semaphore will automatically configure your project for testing.
+<h4>JavaScript essentials</h4>
+<ul>
+  <li><a href="/docs/languages/javascript/setting-up-javascript-project-on-semaphore.html">Setting up a JavaScript project on Semaphore</a></li>
+  <li><a href="/docs/languages/javascript/javascript-support-on-semaphore.html">JavaScript support on Semaphore</a></li>
+</ul>
 
-For example, after analyzing Grunt project, Semaphore will assume that it’s
-written in JavaScript and propose commands to install dependencies and run tests.
-
-<img src="/docs/assets/img/languages/javascript/javascript-analysis.png" class="img-responsive">
-
-### Semaphore stack
-
-Semaphore provides support for testing and deploying JavaScript projects via
-Node.js. The following Node.js versions are available via [<%= package_name("nvm") %>](<%= package_url("nvm") %>):
-
-<% package_versions("node").each do |version| %>
-  - <%= version %>
-<% end %>
-
-The Semaphore stack includes:
-
-- [<%= package_name("npm") %>](<%= package_url("npm") %>) (<%= package_version("npm") %>)
-- [<%= package_name("grunt") %>](<%= package_url("grunt") %>) (<%= package_version("grunt") %>)
-- [<%= package_name("bower") %>](<%= package_url("bower") %>) (<%= package_version("bower") %>)
-
-List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
-
-### Node.js versions
-
-The version specified in project settings will be set as global before your build commands run. Semaphore uses [<%= package_name("nvm") %>](<%= package_url("nvm") %>) for managing Node.js versions.
-
-Setting Node.js version is performed by the equivalent of the following command:
-
-    nvm use 0.10
+<h4>Guides</h4>
+<ul>
+  <li><a href="https://semaphoreapp.com/blog/2013/05/28/jasmine-javascript-tests-for-continuous-integration.html">Setting up Jasmine JavaScript tests for continuous integration</a></li>
+</ul>
