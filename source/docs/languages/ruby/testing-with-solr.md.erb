@@ -1,0 +1,15 @@
+---
+layout: post
+title: Testing Ruby/Rails applications that use Solr
+category: Ruby
+---
+
+Semaphore has Solr pre-installed, running on the default port 8981.
+
+Before running tests, Solr needs to be manually started with the build command:
+
+```bash
+RAILS_ENV=test bundle exec rake sunspot:solr:start
+```
+
+The command should execute after database is created, but before any test runs.
