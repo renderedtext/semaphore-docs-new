@@ -1,0 +1,17 @@
+---
+layout: post
+title: Setting up a PHP project on Semaphore
+category: PHP
+---
+
+To add your PHP project on Semaphore, first you’ll need to create an account.
+After that you will be able to add a new project from GitHub, right from your
+dashboard.
+
+After you've selected a branch to build and a brief repository analysis,
+Semaphore will automatically configure your project for testing.  For example,
+if your project contains a `composer.json` file in its root directory,
+Semaphore will assume that it’s written in PHP and propose commands to
+install dependencies and run your tests.
+
+<img src="/docs/assets/img/languages/php/php-analysis.png" class="img-responsive">
