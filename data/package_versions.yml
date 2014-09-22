@@ -4,10 +4,12 @@
 bower:
   name: "Bower"
   version: "1.2.8"
+  hide_on_stack_table: true
 
 bundler:
   name: "Bundler"
   version: "1.6.2"
+  hide_on_stack_table: true
 
 chrome:
   name: "Chrome"
@@ -19,6 +21,7 @@ chromedriver:
 
 composer:
   name: "Composer"
+  hide_on_stack_table: true
 
 elasticsearch:
   name: "ElasticSearch"
@@ -35,6 +38,7 @@ gcc:
 grunt:
   name: "Grunt"
   version: "0.1.13"
+  hide_on_stack_table: true
 
 imagemagick:
   name: "ImageMagick"
@@ -48,6 +52,7 @@ java:
 leiningen:
   name: "Leiningen"
   version: "2.3.4"
+  hide_on_stack_table: true
 
 libqtwebkit4:
   name: "libqtwebkit4"
@@ -83,15 +88,19 @@ node:
 npm:
   name: "NPM"
   version: "1.4.3"
+  hide_on_stack_table: true
 
 nvm:
   name: "NVM"
+  hide_on_stack_table: true
 
 pear:
   name: "PEAR"
+  hide_on_stack_table: true
 
 pecl:
   name: "PECL"
+  hide_on_stack_table: true
 
 phantomjs:
   name: "PhantomJS"
@@ -107,10 +116,12 @@ php:
 
 phpbrew:
   name: "phpbrew"
+  hide_on_stack_table: true
 
 phpunit:
   name: "PHPunit"
   version: "4.1"
+  hide_on_stack_table: true
 
 postgresql:
   name: "PostgreSQL"
@@ -123,6 +134,7 @@ qt:
 
 rbenv:
   name: "rbenv"
+  hide_on_stack_table: true
 
 redis:
   name: "Redis"
@@ -144,6 +156,7 @@ ruby:
 rubygems:
   name: "RubyGems"
   version: "2.2.2"
+  hide_on_stack_table: true
 
 sphinx:
   name: "Sphinx"

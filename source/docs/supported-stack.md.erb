@@ -32,22 +32,24 @@ If you would like another language to be included out of the box, please [send u
   </thead>
   <tbody>
     <% data.package_versions.each do |name, package| %>
-      <tr>
-        <td>
-          <% if package["url"] %>
-            <a href="<%= package["url"] %>"><%= package["name"] %></a>
-          <% else %>
-            <%= package["name"] %>
-          <% end %>
-        </td>
-        <td>
-          <% if package["versions"] %>
-            <%= package["versions"].join("<br/>") %>
-          <% else %>
-            <%= package["version"] %>
-          <% end %>
-        </td>
-      </tr>
+      <% unless package["hide_on_stack_table"] %>
+        <tr>
+          <td>
+            <% if package["url"] %>
+              <a href="<%= package["url"] %>"><%= package["name"] %></a>
+            <% else %>
+              <%= package["name"] %>
+            <% end %>
+          </td>
+          <td>
+            <% if package["versions"] %>
+              <%= package["versions"].join("<br/>") %>
+            <% else %>
+              <%= package["version"] %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
