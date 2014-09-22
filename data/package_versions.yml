@@ -4,60 +4,50 @@
 bower:
   name: "Bower"
   version: "1.2.8"
-  url: "http://bower.io/"
 
 bundler:
   name: "Bundler"
   version: "1.6.2"
-  url: "http://bundler.io/"
 
 chrome:
   name: "Chrome"
   version: "36.0.1985"
-  url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
   version: "2.9"
-  url: "https://code.google.com/p/selenium/wiki/ChromeDriver"
 
 composer:
   name: "Composer"
-  url: "https://getcomposer.org/"
 
 elasticsearch:
   name: "ElasticSearch"
   version: "1.2.1"
-  url: "/docs/elasticsearch.html"
 
 firefox:
   name: "Firefox"
   version: "30.0"
-  url: "https://mozilla.org/firefox"
 
 gcc:
   name: "gcc"
   version: "4.6.3"
-  url: "http://gcc.gnu.org/"
 
 grunt:
   name: "Grunt"
   version: "0.1.13"
-  url: "http://gruntjs.com/"
 
 imagemagick:
   name: "ImageMagick"
   version: "6.6.9.7"
-  url: "http://imagemagick.org/"
 
 java:
   name: "openjdk7"
   version: "7u25-2.3.10"
+  url: "/docs/languages/java.html"
 
 leiningen:
   name: "Leiningen"
   version: "2.3.4"
-  url: "http://leiningen.org"
 
 libqtwebkit4:
   name: "libqtwebkit4"
@@ -66,22 +56,21 @@ libqtwebkit4:
 linux:
   name: "Linux Kernel"
   version: "3.13.0"
-  url: "https://www.kernel.org/"
 
 memcached:
   name: "Memcached"
   version: "1.4.13"
-  url: "http://www.memcached.org/"
+  url: "/docs/databases/memcached.html"
 
 mongodb:
   name: "MongoDB"
   version: "2.4.9"
-  url: "https://www.mongodb.org/"
+  url: "/docs/databases/mongodb.html"
 
 mysql:
   name: "MySQL"
   version: "5.6.19"
-  url: "https://www.mysql.com/"
+  url: "/docs/databases/mysql.html"
 
 node:
   name: "Node.js"
@@ -89,28 +78,24 @@ node:
     - "0.8.26"
     - "0.10.26"
     - "0.11.11"
+  url: "/docs/languages/javascript.html"
 
 npm:
   name: "NPM"
   version: "1.4.3"
-  url: "https://www.npmjs.org/"
 
 nvm:
   name: "NVM"
-  url: "https://github.com/creationix/nvm"
 
 pear:
   name: "PEAR"
-  url: "http://pear.php.net/"
 
 pecl:
   name: "PECL"
-  url: "http://pecl.php.net/"
 
 phantomjs:
   name: "PhantomJS"
   version: "1.9.7"
-  url: "http://phantomjs.org/"
 
 php:
   name: "PHP"
@@ -118,34 +103,30 @@ php:
     - "5.3.28"
     - "5.4.28"
     - "5.5.12"
+  url: "/docs/languages/php.html"
 
 phpbrew:
   name: "phpbrew"
-  url: "http://phpbrew.github.io/phpbrew/"
 
 phpunit:
   name: "PHPunit"
-  url: "http://phpunit.de/"
   version: "4.1"
 
 postgresql:
   name: "PostgreSQL"
   version: "9.3.4"
-  url: "http://www.postgresql.org/"
+  url: "/docs/databases/postgresql.html"
 
 qt:
   name: "Qt"
   version: "4.8.1"
-  url: "https://qt-project.org/"
 
 rbenv:
   name: "rbenv"
-  url: "https://github.com/sstephenson/rbenv/"
 
 redis:
   name: "Redis"
   version: "2.8.13"
-  url: "http://redis.io/"
 
 ruby:
   name: "Ruby"
@@ -158,23 +139,21 @@ ruby:
     - "1.9.2-p320"
     - "ree-1.8.7-2012.02"
     - "JRuby 1.7.12"
+  url: "/docs/languages/ruby.html"
 
 rubygems:
   name: "RubyGems"
   version: "2.2.2"
-  url: "https://rubygems.org"
 
 sphinx:
   name: "Sphinx"
   version: "2.0.4"
-  url: "http://sphinxsearch.com"
 
 sqlite:
   name: "SQLite"
   version: "3.7.9"
-  url: "https://sqlite.org/"
+  url: "/docs/databases/sqlite.html"
 
 wkhtmltopdf:
   name: "wkhtmltopdf"
   version: "0.9.6"
-  url: "http://wkhtmltopdf.org/"

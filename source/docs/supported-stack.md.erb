@@ -33,7 +33,13 @@ If you would like another language to be included out of the box, please [send u
   <tbody>
     <% data.package_versions.each do |name, package| %>
       <tr>
-        <td><a href="<%= package["url"] %>"><%= package["name"] %></a></td>
+        <td>
+          <% if package["url"] %>
+            <a href="<%= package["url"] %>"><%= package["name"] %></a>
+          <% else %>
+            <%= package["name"] %>
+          <% end %>
+        </td>
         <td>
           <% if package["versions"] %>
             <%= package["versions"].join("<br/>") %>
