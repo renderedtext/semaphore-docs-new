@@ -4,10 +4,12 @@ title: Clojure
 category: Languages
 ---
 
-Semaphore offers first class support for Clojure. When you add a Clojure project on
-Semaphore, it will analyze it and propose a set of build commands to test
-the project. Often no more setup is required to enjoy the full power of
-continuous integration on the Clojure project.
+Semaphore makes it easy to test Clojure projects with Leiningen and Java
+preinstalled. When you add your repository for the first time, Semaphore will
+analyze the code, recognize that it is a Clojure project and suggest you to
+run `lein test` as your CI step. You can easily customize the build sequence
+to match your needs. Your project dependencies are also automatically cached
+and reused across builds.
 
 <h4>Clojure essentials</h4>
 <ul>
