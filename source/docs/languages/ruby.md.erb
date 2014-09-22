@@ -4,10 +4,16 @@ title: Ruby
 category: Languages
 ---
 
-Semaphore offers first class support for Ruby. When you add a Ruby project on
-Semaphore, it will analyze it and propose a set of build commands to test
-the project. Often no more setup is required to enjoy the full power of
-continuous integration on the Ruby project.
+You can set up continuous integration for Ruby projects on Semaphore in a snap.
+The first time you add your project, Semaphore will analyze the code and propose
+a set of working build commands to test it. In most cases no additional setup
+is required from you to enjoy the full power of continuous integration.
+
+Semaphore detects the version of Ruby and can generate a working
+`database.yml` for various database engines. All Ruby projects on Semaphore are
+using a private RubyGems mirror which makes installing gems faster than using
+the public RubyGems.org repository. Project dependencies are automatically
+cached and reused between builds.
 
 <h4>Ruby essentials</h4>
 <ul>
