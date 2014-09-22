@@ -1,11 +1,11 @@
 ---
 layout: post
 title: PostGIS
-category: Managing dependencies
+category: Databases
 ---
 
-Semaphore doesn't provide PostGIS out of the box. PostGIS can be installed with
-few [build setup commands](/docs/customizing-build-commands.html):
+Semaphore doesn't provide PostGIS (spatial and geographic objects for PostgreSQL) out of the box. PostGIS can be installed with
+a few [build setup commands](/docs/customizing-build-commands.html):
 
 ```bash
 echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" | sudo tee -a /etc/apt/sources.list.d/pgdg.list
