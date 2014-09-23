@@ -9,9 +9,12 @@ Clone the repo and install all necessary gems with
 
 ```
 $ git clone git@github.com:renderedtext/semaphore-docs-new.git
+$ cd semaphore-docs-new
 $ bundle install --path .bundle
+$ cp data/credentials.yml.example data/credentials.yml
 ```
 
+Update `data/credentials.yml`.
 
 ## Writing
 
@@ -30,6 +33,22 @@ $ bundle exec middleman -p 4000
 ```
 
 Now you can open [http://localhost:4000/docs](http://localhost:4000/docs).
+
+### Categories
+
+Categories will be automatically grabbed from the post heading:
+
+```yml
+---
+layout: post
+title: Custom database.yml
+category: Ruby
+---
+```
+
+If the page `/docs/ruby.html` exist, user will be able to reach it from the post
+header. If the page doesn't exist, a page with the list of all posts in the
+category will be automatically generated and displayed.
 
 ### Embedding images
 
@@ -54,7 +73,6 @@ Simply run
 
 which does `bundle exec middleman build` and uploads the content to an S3
 bucket using the AWS CLI. It requires a valid `~/.aws` configuration.
-
 
 ## Configuration
 
