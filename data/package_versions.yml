@@ -26,6 +26,7 @@ composer:
 elasticsearch:
   name: "ElasticSearch"
   version: "1.2.1"
+  url: "/docs/elasticsearch.html"
 
 firefox:
   name: "Firefox"
