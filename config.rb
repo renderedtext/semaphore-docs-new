@@ -87,11 +87,7 @@ helpers do
   end
 
   def categories
-    categories_hash = sitemap.resources.reject{ |p| p.data["category"].nil? || p.data["on_homepage"] == false }.group_by {|p| p.data["category"] }
-
-    ordered_articles = data.categories.order.map { |index| categories_hash[index] }.flatten.compact
-
-    ordered_articles.group_by {|p| p.data["category"] }
+    sitemap.resources.reject { |p| p.data["category"].nil? }.group_by {|p| p.data["category"] }
   end
 
   def category_link(category)
@@ -123,6 +119,10 @@ helpers do
   def package_url(package)
     data.package_versions[package]["url"]
   end
+
+  def page_exists?(url)
+    sitemap.resources.find { |p| p.url == url }
+  end
 end
 
 configure :development do
@@ -145,7 +145,9 @@ end
 
 ready do
   categories.each do |category, pages|
-    proxy category_url(category), "category.html",
-    :locals => { :category => category, :pages => pages }
+    url = category_url(category)
+    unless page_exists?(url)
+      proxy url, "category.html", :locals => { :category => category, :pages => pages }
+    end
   end
 end
