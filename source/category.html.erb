@@ -3,12 +3,11 @@
 <% end %>
 
 <hgroup class="page-header">
-<small><%= link_to "Home","/docs" %> /</small>
-<h1>
-  <%= category %>
-</h1>
+  <small><%= link_to "Home","/docs" %> /</small>
+  <h1>
+    <%= category %>
+  </h1>
 </hgroup>
-
 
 <ul>
   <% sort_pages(pages).each do |page| %>
