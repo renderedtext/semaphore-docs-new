@@ -14,7 +14,8 @@ $ bundle install --path .bundle
 $ cp data/credentials.yml.example data/credentials.yml
 ```
 
-Update `data/credentials.yml`.
+For writing new articles or making updates, feel free to leave dummy credentials
+in `data/credentials.yml`.
 
 ## Writing
 
@@ -46,8 +47,8 @@ category: Ruby
 ---
 ```
 
-If the page `/docs/ruby.html` exist, user will be able to reach it from the post
-header. If the page doesn't exist, a page with the list of all posts in the
+If the page `/docs/ruby.html` exists, user will be able to reach it from the post
+breadcrumbs. If the page doesn't exist, a page with the list of all posts in the
 category will be automatically generated and displayed.
 
 ### Embedding images
