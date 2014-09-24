@@ -9,6 +9,7 @@ bower:
 bundler:
   name: "Bundler"
   version: "1.7.3"
+  hide_on_stack_table: true
   url: "http://bundler.io/"
 
 chrome:
@@ -31,12 +32,8 @@ elasticsearch:
 
 firefox:
   name: "Firefox"
-<<<<<<< HEAD
-  version: "30.0"
-=======
   version: "32.0"
   url: "https://mozilla.org/firefox"
->>>>>>> Changes for final release of 1409.
 
 gcc:
   name: "gcc"
@@ -53,12 +50,8 @@ imagemagick:
 
 java:
   name: "openjdk7"
-<<<<<<< HEAD
-  version: "7u25-2.3.10"
-  url: "/docs/languages/java.html"
-=======
   version: "7u65-2.5.1"
->>>>>>> Changes for final release of 1409.
+  url: "/docs/languages/java.html"
 
 leiningen:
   name: "Leiningen"
@@ -85,13 +78,8 @@ mongodb:
 
 mysql:
   name: "MySQL"
-<<<<<<< HEAD
-  version: "5.6.19"
-  url: "/docs/databases/mysql.html"
-=======
   version: "5.6.20"
-  url: "https://www.mysql.com/"
->>>>>>> Changes for final release of 1409.
+  url: "/docs/databases/mysql.html"
 
 node:
   name: "Node.js"
@@ -125,17 +113,11 @@ phantomjs:
 php:
   name: "PHP"
   versions:
-<<<<<<< HEAD
-    - "5.3.28"
-    - "5.4.28"
-    - "5.5.12"
-  url: "/docs/languages/php.html"
-=======
     - "5.3.29"
     - "5.4.32"
     - "5.5.16"
     - "5.6.0"
->>>>>>> Changes for final release of 1409.
+  url: "/docs/languages/php.html"
 
 phpbrew:
   name: "phpbrew"
@@ -143,13 +125,9 @@ phpbrew:
 
 phpunit:
   name: "PHPunit"
-<<<<<<< HEAD
-  version: "4.1"
   hide_on_stack_table: true
-=======
   url: "http://phpunit.de/"
   version: "4.2"
->>>>>>> Changes for final release of 1409.
 
 postgresql:
   name: "PostgreSQL"
@@ -166,12 +144,8 @@ rbenv:
 
 redis:
   name: "Redis"
-<<<<<<< HEAD
-  version: "2.8.13"
-=======
   version: "2.8.17"
   url: "http://redis.io/"
->>>>>>> Changes for final release of 1409.
 
 ruby:
   name: "Ruby"
@@ -184,12 +158,8 @@ ruby:
     - "1.9.3-p547"
     - "1.9.2-p330"
     - "ree-1.8.7-2012.02"
-<<<<<<< HEAD
-    - "JRuby 1.7.12"
-  url: "/docs/languages/ruby.html"
-=======
     - "JRuby 1.7.15"
->>>>>>> Changes for final release of 1409.
+  url: "/docs/languages/ruby.html"
 
 rubygems:
   name: "RubyGems"
