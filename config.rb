@@ -8,7 +8,7 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 activate :syntax #https://github.com/middleman/middleman-syntax
 
-activate :sitemap, :hostname => "http://semahoreapp.com/docs"
+activate :sitemap, :hostname => "https://semaphoreapp.com"
 
 #Activate sync extension
 activate :s3_sync do |s3_sync|
