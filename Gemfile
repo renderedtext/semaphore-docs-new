@@ -7,6 +7,7 @@ gem "middleman-syntax"
 
 gem "middleman-s3_sync"
 
-gem "nokogiri"
+gem "middleman-sitemap"
 
+gem "nokogiri"
 gem "debugger"

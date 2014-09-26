@@ -8,6 +8,8 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 activate :syntax #https://github.com/middleman/middleman-syntax
 
+activate :sitemap, :hostname => "http://semahoreapp.com/docs"
+
 #Activate sync extension
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                = data.credentials.aws.bucket
@@ -44,7 +46,6 @@ set :css_dir, 'assets/css'
 set :js_dir, 'assets/js'
 
 set :images_dir, 'assets/images'
-
 
 ignore "post.html"
 ignore "category.html"
