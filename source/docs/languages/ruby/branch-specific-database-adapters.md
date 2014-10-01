@@ -4,8 +4,11 @@ title: Branch specific database adapters
 category: Ruby
 ---
 
-A prerequisite to selecting a database adapter for a branch is to [use a custom database.yml](/docs/languages/ruby/custom-database-yml.html)
-file which uses an environment variable to define the adapter.
+Let's say you are migrating your project from MySQL to PostgreSQL. You want one
+or more branches to use PostgreSQL, but you have chosen MySQL in your build settings on Semaphore.
+
+One way of doing that on Semaphore is to [use a custom database.yml](/docs/languages/ruby/custom-database-yml.html)
+and conditionally set an environment variable in your build commands to differentiate between adapters.
 
 In the build command, depending on the branch name, export the environment variable like shown below.
 
