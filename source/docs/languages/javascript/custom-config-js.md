@@ -27,11 +27,11 @@ module.exports = {
 ```
 
 You can use credentials in `config.js` to instantiate
-[Seqelize](http://sequelizejs.com/):
+[Sequelize](http://sequelizejs.com/):
 
 ```javascript
 var Sequelize = require('sequelize')
-    ,config = require(__dirname + "/../config/config")
+  , config = require(__dirname + "/../config/config")
 
 var sequelize = new Sequelize(config.postgres.database,
 config.postgres.username, config.postgres.password, {
