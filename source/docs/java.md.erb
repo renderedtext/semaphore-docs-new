@@ -8,5 +8,25 @@ The Semaphore stack includes:
 
 - <%= package_name("java") %> (<%= package_version("java") %>)
 
+Starting with platform version v1410, we support multiple Java versions. Switching
+between them is done by adding the following command to your build commands:
+
+```
+echo 1 | sudo update-alternatives --config java
+```
+
+Replace the number after the echo with the desired Java version's ordinal number
+from the table below.
+
+```
+There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                            Priority   Status
+  -----------------------------------------------------------
+  0            /usr/lib/jvm/java-8-oracle/jre/bin/java          1072      auto mode
+* 1            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java   1071      manual mode
+  2            /usr/lib/jvm/java-8-oracle/jre/bin/java          1072      manual mode
+```
+
 List of all packages and versions is available on the
 [supported application stack](/docs/supported-stack.html) page.
