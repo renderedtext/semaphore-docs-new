@@ -6,6 +6,26 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1410 (planned for 2014-10-23)
+```
+- additions:
+  - elixir 1.0.1
+  - erlang 17.3
+  - cassandra 2.10
+  - maven 3.0.5
+  - oracle jdk8 update 20
+  - postgis 2.1.4
+  - rethinkdb 1.15.1
+  - scala 2.11.2
+- upgrades:
+  - firefox 32 -> 33
+  - git 2.1.0 -> 2.1.1
+  - jruby 1.7.15 -> 1.7.16
+  - php 5.4.32 -> 5.4.33
+  - php 5.5.16 -> 5.5.17
+  - php 5.6.0 -> 5.6.1
+```
+
 ### v1409 - 2014-09-24
 ```
 - additions:
