@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Clojure Testing Libraries
-category: Languages
-on_homepage: false
+category: Clojure
 ---
 
 ### clojure.test

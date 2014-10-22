@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Continuous Integration and Deployment of PHP applications from GitHub to Heroku with Semaphore
-category: Languages
-on_homepage: false
+category: PHP
 ---
 
 In this post we will show you how to set up continuous integration and deployment
