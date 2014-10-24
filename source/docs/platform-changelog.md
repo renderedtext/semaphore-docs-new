@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1410 (planned for 2014-10-23)
+### v1410
 ```
 - additions:
   - elixir 1.0.1
@@ -24,6 +24,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - php 5.4.32 -> 5.4.33
   - php 5.5.16 -> 5.5.17
   - php 5.6.0 -> 5.6.1
+  - qt 4.8.1 -> 4.8.5
 ```
 
 ### v1409 - 2014-09-24
