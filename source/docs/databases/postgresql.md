@@ -48,4 +48,4 @@ List of all packages and versions is available on the [supported application sta
 
 ### Extensions
 
-- [How to enable PostGIS on Semaphore](/docs/databases/postgis.html)
+- [PostGIS support on Semaphore](/docs/databases/postgis.html)

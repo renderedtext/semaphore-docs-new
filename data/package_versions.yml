@@ -15,6 +15,7 @@ bundler:
 cassandra:
   name: "Cassandra"
   version: "2.1.0"
+  url: "/docs/databases/cassandra.html"
 
 chrome:
   name: "Chrome"
@@ -37,10 +38,12 @@ elasticsearch:
 elixir:
   name: "Elixir"
   version: "1.0.1"
+  url: "/docs/elixir.html"
 
 erlang:
   name: "Erlang"
   version: "17.3"
+  url: "/docs/erlang.html"
 
 firefox:
   name: "Firefox"
@@ -65,7 +68,7 @@ java:
   versions:
     - "openjdk-7u65-2.5.1"
     - "Oracle jdk-8u25"
-  url: "/docs/languages/java.html"
+  url: "/docs/java.html"
 
 leiningen:
   name: "Leiningen"
@@ -150,6 +153,7 @@ phpunit:
 postgis:
  name: "PostGIS"
  version: "2.1.4"
+ url: "/docs/databases/postgis.html"
 
 postgresql:
   name: "PostgreSQL"
@@ -172,6 +176,7 @@ redis:
 rethinkdb:
   name: "RethinkDB"
   version: "1.15.1"
+  url: "/docs/databases/rethinkdb.html"
 
 ruby:
   name: "Ruby"
@@ -199,6 +204,7 @@ sphinx:
 scala:
   name: "Scala"
   version: "2.11.2"
+  url: "/docs/scala.html"
 
 sqlite:
   name: "SQLite"
