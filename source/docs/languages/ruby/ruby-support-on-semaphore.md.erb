@@ -31,9 +31,9 @@ Setting Ruby version is performed by the equivalent of the following commands:
 In case your application requires specific Ruby version which is not available by default in Semaphore VM you can install it via rbenv. It's simple. You would only need to add few lines to your [build commands](/docs/customizing-build-commands.html) like in example below:
 
 ```bash
+cd ~/.rbenv/plugins/ruby-build && git pull && cd $SEMAPHORE_PROJECT_DIR
 rbenv install 2.1.0-preview1
-rbenv global 2.1.0-preview1
+rbenv local 2.1.0-preview1
 gem install bundler --no-ri --no-rdoc
-cd $SEMAPHORE_PROJECT_DIR
 # followed by your build commands
 ```
