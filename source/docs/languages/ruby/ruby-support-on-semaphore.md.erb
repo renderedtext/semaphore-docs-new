@@ -19,7 +19,7 @@ List of all packages and versions is available on the [supported application sta
 
 ### Ruby version
 
-The version specified in project settings will be set as global before your build commands run. Semaphore uses [rbenv](https://github.com/sstephenson/rbenv) for managing Ruby versions. 
+The version specified in project settings will be set as global before your build commands run. Semaphore uses [rbenv](https://github.com/sstephenson/rbenv) for managing Ruby versions.
 
 Setting Ruby version is performed by the equivalent of the following commands:
 
@@ -32,7 +32,8 @@ In case your application requires specific Ruby version which is not available b
 
 ```bash
 rbenv install 2.1.0-preview1
-rbenv local 2.1.0-preview1
+rbenv global 2.1.0-preview1
 gem install bundler --no-ri --no-rdoc
+cd $SEMAPHORE_PROJECT_DIR
 # followed by your build commands
 ```
