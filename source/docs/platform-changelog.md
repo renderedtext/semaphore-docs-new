@@ -6,6 +6,17 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1410.1
+```
+- additions:
+  - ruby 2.1.4
+- upgrades:
+  - openjdk7 update 65 -> update 71
+  - cassandra 2.1.0 -> 2.1.1
+- downgrades
+  - qt 4.8.5 -> 4.8.1
+```
+
 ### v1410
 ```
 - additions:
