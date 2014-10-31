@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1410.1 (October 31st, 2014)
+### v1410.1 - 2014-10-31
 ```
 - additions:
   - ruby 2.1.4
@@ -17,7 +17,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - qt 4.8.5 -> 4.8.1
 ```
 
-### v1410 (October 23rd, 2014)
+### v1410 - 2014-10-23
 ```
 - additions:
   - elixir 1.0.1
