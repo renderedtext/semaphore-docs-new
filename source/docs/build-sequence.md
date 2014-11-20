@@ -24,11 +24,6 @@ Your code will be placed in `~/home/runner/:project_name`.
 
 Xvfb (X Virtual Framebuffer) is launched for running tests that require GUI, such as those backed by Selenium.
 
-### Language-specific setup
-
-- [Ruby setup](/docs/ruby-setup.html)
-- [JavaScript setup](/docs/javascript-setup.html)
-
 ### Export all environment variables
 
 For a full list of available variables, please see [this page](/docs/available-environment-variables.html).
@@ -44,6 +39,8 @@ Any [custom configuration files](/docs/adding-custom-configuration-files.html) y
 ### Run your build commands
 
 These are the commands specified in your project's build settings. The current directory is set to `/home/runner/:project_name`.
+
+For language related questions please consult one of [our dedicated guides](docs/languages.html).
 
 ### Export thread result
 
