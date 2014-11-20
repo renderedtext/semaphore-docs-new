@@ -20,11 +20,6 @@ A new virtual machine is booted. It comes preinstalled with the platform's [supp
 
 Your code will be placed in `~/home/runner/:project_name`.
 
-### Language-specific setup
-
-- [Ruby setup](/docs/ruby-setup.html)
-- [JavaScript setup](/docs/javascript-setup.html)
-
 ### Export all environment variables
 
 For a full list of available variables, please see [this page](/docs/available-environment-variables.html).
