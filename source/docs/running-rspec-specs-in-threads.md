@@ -12,7 +12,7 @@ For the first time run all specs at once with enabled report generator. Set up y
 
 <img src="/docs/assets/img/running-rspec-specs-in-threads/knapsack-generate-report.png" class="img-responsive">
 
-After tests pass your should copy knapsack json report which is rendered at the end of rspec results. Save it into your repository as `knapsack_report.json` file and commit. More info about generating report you will find in [knapsack docs](https://github.com/ArturT/knapsack#usage).
+After tests pass your should copy knapsack json report which is rendered at the end of rspec results. Save it into your repository as `knapsack_rspec_report.json` file and commit. More info about generating report you will find in [knapsack docs](https://github.com/ArturT/knapsack#usage).
 
 ### Set up knapsack rspec command
 
