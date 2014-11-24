@@ -6,17 +6,18 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1411 - 2014-11-24 (planned)
+### v1411 - 2014-11-25 (planned)
 ```
 - additions:
   - ruby 2.1.5
 - upgrades:
   - chromedriver 2.9 -> 2.12
   - git 2.1.1 -> 2.1.3
+  - libmysqlclient-dev 5.5.40 -> 5.6.21
   - php 5.4.33 -> 5.4.34
   - php 5.5.17 -> 5.5.18
   - php 5.6.1 -> 5.6.2
-  - rehinkdb 1.15.1 -> 1.15.2
+  - rethinkdb 1.15.1 -> 1.15.2
   - ruby 1.9.3p547 -> 1.9.3p551
   - ruby 2.0.0p481 -> 2.0.0p598
 ```
