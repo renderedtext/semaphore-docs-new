@@ -6,13 +6,14 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1411 - 2014-11-25 (planned)
+### v1411 - 2014-11-25
 ```
 - additions:
   - ruby 2.1.5
 - upgrades:
   - chromedriver 2.9 -> 2.12
   - git 2.1.1 -> 2.1.3
+  - chrome 38.0.2125.104 -> 39.0.2171.85
   - libmysqlclient-dev 5.5.40 -> 5.6.21
   - php 5.4.33 -> 5.4.34
   - php 5.5.17 -> 5.5.18
