@@ -6,6 +6,14 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1411.1 - 2014-11-27
+```
+- additions:
+  - rabbitmq 3.2.4
+- upgrades:
+  - phantomjs 1.9.8 -> 1.9.8 (incl. guard-jasmine fix)
+```
+
 ### v1411 - 2014-11-25
 ```
 - additions:
