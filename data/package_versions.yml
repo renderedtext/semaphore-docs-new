@@ -59,6 +59,10 @@ grunt:
   version: "0.1.13"
   hide_on_stack_table: true
 
+heroku-toolbelt:
+  name: "Heroku Toolbelt"
+  version: "1.16.2"
+
 imagemagick:
   name: "ImageMagick"
   version: "6.7.7.11"
