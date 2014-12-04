@@ -8,7 +8,14 @@ Semaphore lets you run RSpec specs in [parallel threads](https://semaphoreapp.co
 
 ### Generate knapsack report
 
-For the first time run all specs at once with enabled report generator. Set up your build command:
+- Ensure you've added the `knapsack` gem to your Gemfile.
+- Add at the beginning of your spec_helper.rb:
+```ruby
+require 'knapsack'
+
+Knapsack::Adapters::RspecAdapter.bind
+```
+- For the first time run all specs at once with enabled report generator. Set up your build command:
 
 <img src="/docs/assets/img/running-rspec-specs-in-threads/knapsack-generate-report.png" class="img-responsive">
 
