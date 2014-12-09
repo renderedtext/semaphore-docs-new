@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prioritize a branch?
+title: Set high priority branches
 category: Customizing your build
 ---
 

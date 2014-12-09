@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to skip building new branches?
+title: Turn off automatic testing of new branches
 category: Customizing your build
 ---
 

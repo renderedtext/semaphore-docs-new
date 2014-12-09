@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to skip building some commits?
+title: How to skip building some commits with [ci skip]
 category: Customizing your build
 ---
 
