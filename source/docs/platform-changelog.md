@@ -6,6 +6,21 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1412 - 2014-12-23 (planned)
+```
+- additions:
+  - go 1.4
+- upgrades:
+  - bundler 1.7.3 -> 1.7.9
+  - firefox 33.0 -> 34.0
+  - git 2.1.3 -> 2.2.0
+  - libmysqlclient 5.6.21 -> 5.6.22
+  - php 5.4.34 -> 5.4.35
+  - php 5.5.18 -> 5.5.19
+  - php 5.6.2 -> 5.6.3
+  - redis 2.8.17 -> 2.8.18
+```
+
 ### v1411.1 - 2014-11-27
 ```
 - additions:
