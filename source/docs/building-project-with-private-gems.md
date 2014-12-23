@@ -48,4 +48,51 @@ Now bundle localy and you are ready to build on Semaphore!
 
 As of November 2013 Semaphore supports saving and using custom configuration files, including SSH keys. [Follow this guide](/docs/adding-more-ssh-keys.html) to set up an additional SSH key which can give your build or deploy permissions to pull private dependencies.
 
-This option works only for 1 private gem and SSH key. If you have more than one, use one of the methods listed above.
+### Multiple private gems
+
+If you have more than 1 private gem, simply adding a SSH key won't work. Follow the steps below to configure Semaphore:
+
+#### 1. Add your gems to Gemfile
+
+Do this as usual:
+
+```bash
+gem 'my-private-gem',    git: 'git@github.com:my-org/my-private-gem'
+gem 'other-private-gem', git: 'git@github.com:my-org/other-private-gem'
+```
+
+#### 2. Add deploy keys to your repositories
+
+[Follow this guide](https://developer.github.com/guides/managing-deploy-keys/) to set up your deploy keys for each private gem you use.
+
+#### 3. Add private keys from your repositories to Semaphore
+
+For each private gem, add it private deploy key to Semaphore, encrypting its content ([see here](/docs/adding-more-ssh-keys.html)).
+
+```bash
+/home/runner/.ssh/github.com/my-private-gem
+/home/runner/.ssh/github.com/other-private-gem
+```
+
+#### 4. Add a custom ssh config file into your "Configuration Files"
+
+Create a file at  ```/home/runner/.ssh/config``` with the content below:
+
+```bash
+Host github.com
+    User git
+    HostName github.com
+    StrictHostKeyChecking no
+    IdentityFile ~/.ssh/github.com/my-private-gem
+    IdentityFile ~/.ssh/github.com/other-private-gem
+```
+
+#### 5. Customize your "Bulding Settings"
+
+[Follow this guide](/docs/customizing-build-commands.html) and add these commands at the top of your "Bulding Settings":
+
+```bash
+ssh-add -D
+ssh-add ~/.ssh/github.com/my-private-gem
+ssh-add ~/.ssh/github.com/other-private-gem
+```
