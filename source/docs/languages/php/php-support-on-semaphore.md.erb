@@ -31,3 +31,17 @@ PHP versions.
 Setting a PHP version is performed by the equivalent of the following command:
 
     phpbrew switch 5.5.12
+
+### Modifying the PHP configuration file
+
+For simple changes like setting a different timezone you can use a build command
+like below which changes the timezone from `UTC` to `America/Denver`. We're using
+`|` as a delimiter in `sed` to avoid escaping the forward slash in the timezone.
+
+    phpbrew cd etc && sed -i "s|date.timezone = UTC|date.timezone = 'America/Denver'|" php.ini && cd -
+
+You can also use your custom `php.ini` file. Include the configuration file in
+Project Settings > Configuration Files and add the line below as a build command.
+In this case, the configuration file is called `custom_php.ini`.
+
+    phpbrew cd etc && cp /home/runner/custom_php.ini php.ini && cd -
