@@ -37,12 +37,12 @@ elasticsearch:
 
 elixir:
   name: "Elixir"
-  version: "1.0.1"
+  version: "1.0.2"
   url: "/docs/elixir.html"
 
 erlang:
   name: "Erlang"
-  version: "17.3"
+  version: "17.4"
   url: "/docs/erlang.html"
 
 firefox:
@@ -65,7 +65,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "1.16.2"
+  version: "3.21.3"
 
 imagemagick:
   name: "ImageMagick"
@@ -110,8 +110,8 @@ node:
   name: "Node.js"
   versions:
     - "0.8.28"
-    - "0.10.31"
-    - "0.11.11"
+    - "0.10.35"
+    - "0.11.14"
   url: "/docs/languages/javascript.html"
 
 npm:
@@ -139,9 +139,9 @@ php:
   name: "PHP"
   versions:
     - "5.3.29"
-    - "5.4.35"
-    - "5.5.19"
-    - "5.6.3"
+    - "5.4.36"
+    - "5.5.20"
+    - "5.6.4"
   url: "/docs/languages/php.html"
 
 phpbrew:
@@ -152,11 +152,11 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "4.3.5"
+  version: "4.4.1"
 
 postgis:
  name: "PostGIS"
- version: "2.1.4"
+ version: "2.1.5"
  url: "/docs/databases/postgis.html"
 
 postgresql:
@@ -185,6 +185,7 @@ rethinkdb:
 ruby:
   name: "Ruby"
   versions:
+    - "2.2.0"
     - "2.1.5"
     - "2.1.4"
     - "2.1.3"
