@@ -15,12 +15,12 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - erlang 17.3 -> 17.4
   - git 2.2.0 -> 2.2.1
   - jruby 1.7.16 -> 1.7.18
+  - node 10.31 -> 10.35
+  - node 11.13 -> 11.14
   - postgis 2.1.4 -> 2.1.5
   - php 5.4.35 -> 5.4.36
   - php 5.5.19 -> 5.5.20
   - php 5.6.3 -> 5.6.4
-  - node 10.31 -> 10.35
-  - node 11.13 -> 11.14
 ```
 
 ### v1412 - 2014-12-23
