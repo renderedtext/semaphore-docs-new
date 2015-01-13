@@ -6,6 +6,16 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1501 - 2015-01-20 (planned)
+```
+- upgrades:
+  - chromedriver 2.12 -> 2.13
+  - elasticsearch 1.3.2 -> 1.3.7
+  - mongodb 2.4.9 -> 2.4.12
+  - rethinkdb 1.15.2 -> 1.15.3
+  - scala 2.11.2 -> 2.11.4
+```
+
 ### v1412.1 - 2014-12-30
 ```
 - additions:
