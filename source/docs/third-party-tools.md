@@ -27,3 +27,6 @@ If you have something similar in the making, please tell us via email or at [@se
 
 ### Node.js
 - [Semaphore status](https://github.com/mojotech/semaphorestatus) by [Sam Saccone](https://github.com/samccone)
+
+### Python
+- [semaphore-ci-monitor](https://github.com/lucianoratamero/semaphore-ci-monitor) by Luciano Ratamero
