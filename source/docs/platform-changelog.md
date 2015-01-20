@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1501 - 2015-01-20 (planned)
+### v1501 - 2015-01-20
 ```
 - upgrades:
   - chromedriver 2.12 -> 2.13

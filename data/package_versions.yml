@@ -24,7 +24,7 @@ chrome:
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.12"
+  version: "2.13"
 
 composer:
   name: "Composer"
@@ -32,7 +32,7 @@ composer:
 
 elasticsearch:
   name: "ElasticSearch"
-  version: "1.3.2"
+  version: "1.3.7"
   url: "/docs/elasticsearch.html"
 
 elixir:
@@ -98,7 +98,7 @@ memcached:
 
 mongodb:
   name: "MongoDB"
-  version: "2.4.9"
+  version: "2.4.12"
   url: "/docs/databases/mongodb.html"
 
 mysql:
@@ -179,7 +179,7 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "1.15.2"
+  version: "1.15.3"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
@@ -210,7 +210,7 @@ sphinx:
 
 scala:
   name: "Scala"
-  version: "2.11.2"
+  version: "2.11.4"
   url: "/docs/scala.html"
 
 sqlite:
