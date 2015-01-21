@@ -8,6 +8,7 @@ category: Integrations
 
 - [Dashing widget](https://github.com/rastasheep/semaphore-dashing): simple [Dashing](https://github.com/Shopify/dashing) widget to display the status of the latest build for a repository on Semaphore.
 - [Project Monitor](https://github.com/pivotal/projectmonitor): Big visible chart CI aggregator by Pivotal Labs. Made for big screens.
+- [Semaphore CI monitor](https://github.com/lucianoratamero/semaphore-ci-monitor): Python based CI monitor for Semaphore. You can run it locally to keep an eye on your projects statuses. It uses Twitter Bootstrap and is mobile ready.
 
 ## API clients
 
@@ -28,5 +29,3 @@ If you have something similar in the making, please tell us via email or at [@se
 ### Node.js
 - [Semaphore status](https://github.com/mojotech/semaphorestatus) by [Sam Saccone](https://github.com/samccone)
 
-### Python
-- [semaphore-ci-monitor](https://github.com/lucianoratamero/semaphore-ci-monitor) by Luciano Ratamero
