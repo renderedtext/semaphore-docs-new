@@ -99,4 +99,4 @@ Status: 200 OK
 ```
 
 
-A build's result can be either "passed", "failed" or "pending".
+A build's result can be either "passed", "failed", "stopped" or "pending".
