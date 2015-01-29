@@ -36,7 +36,7 @@ click to add a new key.
 
 <img src="/docs/assets/img/public-ssh-keys/first-public-ssh-key.png" class="img-responsive">
 
-Enter a name for your key and copy the content of your public ssh key.
+Enter a name for your key and copy the content of your public SSH key.
 
 <img src="/docs/assets/img/public-ssh-keys/adding-public-ssh-keys.png" class="img-responsive">
 
