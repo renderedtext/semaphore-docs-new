@@ -1,0 +1,38 @@
+---
+layout: post
+title: Scheduling jobs
+category: Customizing your build
+---
+
+Using Semaphore’s build scheduler allows you to run a build, or any kind
+of job, on a daily or hourly basis. This is useful in a number of use cases:
+
+- Your workflow depends on performing nightly builds.
+- Performing automated QA tests on a remote application.
+- You have an inactive project but would like to be sure that the code
+  still works with its dependencies.
+- An easy way to periodically execute arbitrary code, track results and
+receive notifications.
+
+To use the scheduler, go to your project settings and open the “Build
+Scheduler” tab.
+
+<img src="/docs/assets/img/scheduling-jobs/build-scheduler.png" class="img-responsive">
+
+1. Select the branch on which the build scheduler should perform. By default
+  this is the master branch.
+
+2. Select whether you’d like your builds to run daily or hourly. Note that in
+case of daily builds, the time you select is in UTC time zone. For hourly
+builds, you can choose whether they will run at the beginning of every hour
+(XX:00), or mid-hour (XX:30).
+
+3. Finally, click on “Enable build scheduler” and save your settings.
+
+Your scheduled builds will appear in the project timeline.
+
+<img src="/docs/assets/img/scheduling-jobs/timeline-snippet.png" class="img-responsive">
+
+From the moment they run, scheduled builds behave exactly like any other build
+on Semaphore: they execute currently configured build commands and, depending
+on your other configuration, may trigger notifications or an automated deploy.
