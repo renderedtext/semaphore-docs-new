@@ -18,3 +18,13 @@ below shows the merging of a feature branch into the master branch.
 git checkout master
 git merge feature-1 --no-ff
 ```
+
+To avoid the need to ask other git users to make any changes to their local or 
+global environment, and prevent accidental fast-forward merges you can configure 
+your repository to never fast-forward a branch. The example below disables 
+fast-forwarding for the `master` branch, by creating/updating `.gitconfig` in 
+your project root.
+
+```
+git config --file .gitconfig branch.master.mergeoptions "--no-ff"
+```
