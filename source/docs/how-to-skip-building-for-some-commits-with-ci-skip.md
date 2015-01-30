@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to skip building some commits with [ci skip]
-category: Customizing your build
+category: Adapting Semaphore to your workflow
 ---
 
 If you'd like your commit, or a series of commits that you're pushing, to not

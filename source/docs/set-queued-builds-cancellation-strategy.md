@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set queued builds cancellation strategy
-category: Customizing your build
+category: Adapting Semaphore to your workflow
 ---
 
 Semaphore supports 2 cancellation strategies for queued builds on a single branch 
