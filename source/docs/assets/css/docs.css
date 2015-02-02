@@ -45,26 +45,6 @@ body {
   }
 }
 
-.docs .search {
-  clear: both;
-  margin-top: 0;
-  margin-bottom: 2em;
-  width: 230px;
-  float: right;
-}
-.docs input[type="search"]{
-  background-image: url("../img/design/search.png");
-  background-repeat: no-repeat;
-  background-position: 98% center;
-  padding-right: 30px;
-}
-@media (max-width: 767px){
-  .docs .search {
-    float: none;
-    margin: 14px auto;
-  }
-}
-
 .docs .panel{
   padding: 56px;
   /*margin-top: 56px;*/
