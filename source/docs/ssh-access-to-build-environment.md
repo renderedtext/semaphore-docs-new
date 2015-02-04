@@ -1,0 +1,38 @@
+---
+layout: post
+title: SSH access to build environment
+category: The Semaphore platform
+---
+
+Semaphore allows you to interactively access your project’s build environment 
+through an SSH session. Launching an SSH session allows you to troubleshoot 
+build failures, explore the platform and helps you configure projects with 
+specific needs quickly.
+
+After your build or deploy is finished, Semaphore lets you start an identical
+build environment where you can run your build commands. All in the comfort 
+of your terminal.
+
+### Requirements
+
+To launch an SSH session on Semaphore you'll need to add a 
+[public SSH key](https://semaphoreapp.com/docs/managing-public-ssh-keys-for-ssh-sessions.html) 
+to your account settings.
+
+### Launching a new SSH session
+
+To launch such a build environment, visit the build or deploy page and click
+on the Launch SSH button above your thread's output.
+
+<img src="/docs/assets/img/ssh-session/create-ssh-session-1.png" class="img-responsive">
+
+<img src="/docs/assets/img/ssh-session/create-ssh-session-2.png" class="img-responsive">
+
+<img src="/docs/assets/img/ssh-session/create-ssh-session-3.png" class="img-responsive">
+
+Semaphore will start a build environment identical to the one where your current
+build or deploy ran. Your project’s Git repository will be checked out at the same
+revision. Semaphore will also export any 
+[configuration files](https://semaphoreapp.com/docs/adding-custom-configuration-files.html) and 
+[environment variables](https://semaphoreapp.com/docs/exporting-environment-variables.html) 
+which you have configured in your project's settings.
