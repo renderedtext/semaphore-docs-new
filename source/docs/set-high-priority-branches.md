@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set high priority branches
-category: Customizing your build
+category: Adapting Semaphore to your workflow
 ---
 
 With high priority branches you can choose one or more branches that will be

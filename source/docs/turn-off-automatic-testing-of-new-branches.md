@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Turn off automatic testing of new branches
-category: Customizing your build
+category: Adapting Semaphore to your workflow
 ---
 
 Semaphore automatically builds new branches when they are created.
