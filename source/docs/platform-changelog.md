@@ -6,6 +6,29 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1502 - 2015-02-24 (planned)
+```
+- additions
+  - node 0.12.0
+  - io.js 1.2.0
+- upgrades
+  - chromedriver 2.13 -> 2.14
+  - bundler 1.7.9 -> 1.7.13
+  - elasticsearch 1.3.7 -> 1.3.8
+  - elixir 1.0.2 -> 1.0.3
+  - firefox 34 -> 35.0.1
+  - git 2.2.1 -> 2.3.0
+  - mysql 5.6.22 -> 5.6.23
+  - node 0.10.35 -> 0.10.36
+  - openjdk7 update 71 -> update 75
+  - oracle jdk8 update 25 -> update 31
+  - php 5.6.4 -> 5.6.5
+  - php 5.5.20 -> 5.5.21
+  - php 5.4.36 -> 5.4.37
+  - rethinkdb 1.15.3 -> 1.16.2
+  - scala 2.11.4 -> 2.11.5
+```
+
 ### v1501 - 2015-01-20
 ```
 - upgrades:
