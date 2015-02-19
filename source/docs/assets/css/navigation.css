@@ -438,3 +438,43 @@ section + section > .navigation-top {
 
 .listing-tutorials .navigation-bottom {
   border-bottom: none; }
+
+
+/* ==========================================================================
+   footer
+   ========================================================================== */ 
+footer{margin: 0;}
+
+.page-footer {
+  background-color: #f2f2e9;
+  padding: 50px 10px;
+  font-size: 14px;
+  border-top: 2px solid #ceceb8;
+  color: #5C5C5C;
+}
+.footer-section-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #5C5C5C;
+  margin-bottom: 20px;
+}
+.footer-contact {
+  overflow: hidden;
+}
+.footer-logo {
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+}
+
+.footer-logo a img{margin-bottom: 8px;}
+.page-footer .container{max-width: 980px;}
+
+@media (min-width: 992px) {
+  .page-footer{padding: 100px 0;}
+  .footer-logo{width: auto;}
+}
+
+@media (min-width: 767px) {
+  footer{margin-top: 56px;}
+}
