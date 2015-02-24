@@ -8,13 +8,13 @@ bower:
 
 bundler:
   name: "Bundler"
-  version: "1.7.9"
+  version: "1.7.13"
   hide_on_stack_table: true
   url: "http://bundler.io/"
 
 cassandra:
   name: "Cassandra"
-  version: "2.1.1"
+  version: "2.1.3"
   url: "/docs/databases/cassandra.html"
 
 chrome:
@@ -24,7 +24,7 @@ chrome:
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.13"
+  version: "2.14"
 
 composer:
   name: "Composer"
@@ -32,12 +32,12 @@ composer:
 
 elasticsearch:
   name: "ElasticSearch"
-  version: "1.3.7"
+  version: "1.3.8"
   url: "/docs/elasticsearch.html"
 
 elixir:
   name: "Elixir"
-  version: "1.0.2"
+  version: "1.0.3"
   url: "/docs/elixir.html"
 
 erlang:
@@ -66,7 +66,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.21.3"
+  version: "3.26.1"
 
 imagemagick:
   name: "ImageMagick"
@@ -75,8 +75,8 @@ imagemagick:
 java:
   name: "Java"
   versions:
-    - "openjdk-7u71-2.5.1"
-    - "Oracle jdk-8u25"
+    - "openjdk-7u75"
+    - "Oracle jdk-8u31"
   url: "/docs/java.html"
 
 leiningen:
@@ -104,15 +104,16 @@ mongodb:
 
 mysql:
   name: "MySQL"
-  version: "5.6.22"
+  version: "5.6.23"
   url: "/docs/databases/mysql.html"
 
 node:
   name: "Node.js"
   versions:
     - "0.8.28"
-    - "0.10.35"
+    - "0.10.36"
     - "0.11.14"
+    - "0.12.0"
   url: "/docs/javascript.html"
 
 npm:
@@ -140,9 +141,9 @@ php:
   name: "PHP"
   versions:
     - "5.3.29"
-    - "5.4.36"
-    - "5.5.20"
-    - "5.6.4"
+    - "5.4.37"
+    - "5.5.21"
+    - "5.6.5"
   url: "/docs/php.html"
 
 phpbrew:
@@ -153,7 +154,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "4.4.1"
+  version: "4.5.0"
 
 postgis:
  name: "PostGIS"
@@ -167,7 +168,9 @@ postgresql:
 
 qt:
   name: "Qt"
-  version: "4.8.1"
+  versions:
+    - "4.8.1"
+    - "5.2.1"
 
 rbenv:
   name: "rbenv"
@@ -180,7 +183,7 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "1.15.3"
+  version: "1.16.2"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
@@ -197,7 +200,7 @@ ruby:
     - "1.9.3-p551"
     - "1.9.2-p330"
     - "ree-1.8.7-2012.02"
-    - "JRuby 1.7.15"
+    - "JRuby 1.7.19"
   url: "/docs/ruby.html"
 
 rubygems:
@@ -211,7 +214,7 @@ sphinx:
 
 scala:
   name: "Scala"
-  version: "2.11.4"
+  version: "2.11.5"
   url: "/docs/scala.html"
 
 sqlite:

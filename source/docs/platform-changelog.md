@@ -6,18 +6,19 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1502 - 2015-02-24 (planned)
+### v1502 - 2015-02-24
 ```
 - additions
   - node 0.12.0
   - io.js 1.2.0
 - upgrades
   - chromedriver 2.13 -> 2.14
+  - cassandra 2.1.1 -> 2.1.3
   - bundler 1.7.9 -> 1.7.13
   - elasticsearch 1.3.7 -> 1.3.8
   - elixir 1.0.2 -> 1.0.3
-  - firefox 34 -> 35.0.1
   - git 2.2.1 -> 2.3.0
+  - jruby 1.7.18 -> 1.7.19
   - mysql 5.6.22 -> 5.6.23
   - node 0.10.35 -> 0.10.36
   - openjdk7 update 71 -> update 75
