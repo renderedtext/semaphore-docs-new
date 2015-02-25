@@ -16,7 +16,6 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colorize (0.6.0)
-    columnize (0.8.9)
     compass (1.0.1)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.1)
@@ -29,12 +28,6 @@ GEM
       sass (>= 3.3.0, < 3.5)
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
-    debugger (1.6.8)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.5)
-    debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.7)
     erubis (2.7.0)
     excon (0.31.0)
     execjs (2.2.1)
@@ -162,7 +155,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  debugger
   middleman
   middleman-s3_sync
   middleman-sitemap

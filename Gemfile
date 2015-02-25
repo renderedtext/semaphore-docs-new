@@ -10,4 +10,3 @@ gem "middleman-s3_sync"
 gem "middleman-sitemap"
 
 gem "nokogiri"
-gem "debugger"
