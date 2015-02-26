@@ -1,0 +1,21 @@
+---
+layout: post
+title: Qt
+category: Docs
+---
+
+Semaphore supports the following versions of the Qt runtime:
+
+<% package_versions("qt").each do |version| %>
+  - <%= version %>
+<% end %>
+
+Switching between Qt versions is done through creating an environment variable
+called `QT_SELECT`.
+
+The value of this variable can be set to:
+
+  - `5` or `qt5` to select version <%= package_versions("qt").last %>
+  - `4` or `qt4` to select version <%= package_versions("qt").first %>
+
+The default version is <%= package_versions("qt").first %>

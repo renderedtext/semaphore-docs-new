@@ -171,6 +171,7 @@ qt:
   versions:
     - "4.8.1"
     - "5.2.1"
+  url: "/docs/qt.html"
 
 rbenv:
   name: "rbenv"
