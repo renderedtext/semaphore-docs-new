@@ -11,6 +11,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 - additions
   - node 0.12.0
   - io.js 1.2.0
+  - qt 5.2.1
 - upgrades
   - chromedriver 2.13 -> 2.14
   - cassandra 2.1.1 -> 2.1.3
