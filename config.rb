@@ -106,7 +106,7 @@ helpers do
   def link_to_file_on_github(current_page)
     path = current_page.source_file.split("/semaphore-docs-new/").last
 
-    link_to "Edit this article on GitHub", "https://github.com/renderedtext/semaphore-docs-new/blob/master/#{path}"
+    link_to "Edit this article on GitHub", "https://github.com/renderedtext/semaphore-docs-new/blob/master/#{path}", :class => "btn btn-default btn-sm pull-right"
   end
 
   def package_name(package)

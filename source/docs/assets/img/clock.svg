@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.1 (9977) - http://www.bohemiancoding.com/sketch -->
+    <title>clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="single-post" sketch:type="MSArtboardGroup" transform="translate(-92.000000, -762.000000)" fill="#CECEB8">
+            <g id="aside" sketch:type="MSLayerGroup" transform="translate(90.000000, 183.000000)">
+                <path d="M13.689645,592.974569 C13.7907872,592.991311 13.8944386,593 14,593 C15.1045695,593 16,592.048605 16,590.875 C16,590.08845 15.5978014,589.40171 15,589.034287 L15,589.034287 L15,583 L13,583 L13,589.034287 C12.4021986,589.40171 12,590.08845 12,590.875 C12,591.161919 12.0535188,591.435557 12.1505282,591.685258 L8.99479618,594.84099 L10.4090097,596.255204 L13.689645,592.974569 Z M14,603 C20.627417,603 26,597.627417 26,591 C26,584.372583 20.627417,579 14,579 C7.372583,579 2,584.372583 2,591 C2,597.627417 7.372583,603 14,603 Z M14,601.06 C19.5559846,601.06 24.06,596.555985 24.06,591 C24.06,585.444015 19.5559846,580.94 14,580.94 C8.44401542,580.94 3.94,585.444015 3.94,591 C3.94,596.555985 8.44401542,601.06 14,601.06 Z" id="clock" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

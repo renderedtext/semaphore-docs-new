@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>alert</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="alert" sketch:type="MSLayerGroup">
+            <circle id="Oval-21" fill="#237FC6" sketch:type="MSShapeGroup" cx="22" cy="22" r="22"></circle>
+            <path d="M23.3345287,25.8173793 L23.9818851,11.2842299 L19.0296092,11.2842299 L19.7093333,25.8173793 L23.3345287,25.8173793 L23.3345287,25.8173793 Z M21.521931,33.1972414 C22.9461149,33.1972414 24.1437241,31.9996322 24.1437241,30.6078161 C24.1437241,29.1836322 22.9461149,27.986023 21.521931,27.986023 C20.0977471,27.986023 18.9325057,29.1836322 18.9325057,30.6078161 C18.9325057,31.9996322 20.0977471,33.1972414 21.521931,33.1972414 L21.521931,33.1972414 L21.521931,33.1972414 Z" id="!" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
