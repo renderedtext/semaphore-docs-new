@@ -8,7 +8,7 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 activate :syntax #https://github.com/middleman/middleman-syntax
 
-activate :sitemap, :hostname => "https://semaphoreapp.com"
+activate :sitemap, :hostname => "https://semaphoreci.com"
 
 #Activate sync extension
 activate :s3_sync do |s3_sync|
@@ -137,14 +137,14 @@ configure :development do
     set :port, Middleman::PreviewServer.port
   else
     set :protocol, "https://"
-    set :host, "semaphoreapp.com"
+    set :host, "semaphoreci.com"
     set :port, 80
   end
 end
 
 configure :build do
   set :protocol, "https://"
-  set :host, "semaphoreapp.com"
+  set :host, "semaphoreci.com"
   set :port, 80
 end
 
