@@ -1,159 +1,163 @@
-<hgroup class="page-header">
-  <h1>Developing with Semaphore</h1>
-</hgroup>
+<% content_for :page_illustration do %>
+  <div class="page-illustration page-illustration-right" style="background-image:url(docs/assets/img/single-post-documentation.jpg);">
+<% end %>
 
-<p>
-  Welcome to the help and documentation section of
-  <a href="https://semaphoreapp.com">Semaphore</a>, a hosted continuous
-  integration and deployment service. There's a good chance your question about
-  using it will be answered here. If not, please
-  <a href="mailto:328e3e4aab1aefecc60ed7e4cb33910bc3fbdeb2@incoming.intercom.io">email us</a>.
-  This website is <a href="https://github.com/renderedtext/semaphore-docs-new">open source</a>
-  — we welcome issues and pull requests.
-</p>
+<article class="block-longform post-header">
+  <div class="block-intro">
 
-<h3>Getting started</h3>
-<ul>
-  <li><a href="/docs/adding-your-github-project-to-semaphore.html">Adding your GitHub project to Semaphore</a></li>
-  <li><a href="/docs/adding-your-bitbucket-project-to-semaphore.html">Adding your Bitbucket project to Semaphore</a></li>
-  <li><a href="/docs/running-tests-in-parallel.html">Running tests in parallel</a></li>
-  <li><a href="/docs/how-to-get-build-badge.html">How to get a build badge</a></li>
-</ul>
+    <h1>Developing with Semaphore</h1>
+    <p>
+      Welcome to the help and documentation section of <a href="/">Semaphore</a>,
+      a hosted continuous integration and deployment service.
+      There's a good chance your question about using it will be answered here.
+      If not, please <a href="mailto:328e3e4aab1aefecc60ed7e4cb33910bc3fbdeb2@incoming.intercom.io">email us</a>.
+      This website is <a href="https://github.com/renderedtext/semaphore-docs-new">open source</a> - we welcome your issue reports and pull requests.
+    </p>
+  </div>
 
-<h3>Language Support</h3>
-<ul>
-  <li><a href="/docs/c.html">C/C++</a></li>
-  <li><a href="/docs/clojure.html">Clojure</a></li>
-  <li><a href="/docs/elixir.html">Elixir</a></li>
-  <li><a href="/docs/erlang.html">Erlang</a></li>
-  <li><a href="/docs/go.html">Go</a></li>
-  <li><a href="/docs/java.html">Java</a></li>
-  <li><a href="/docs/javascript.html">JavaScript</a></li>
-  <li><a href="/docs/php.html">PHP</a></li>
-  <li><a href="/docs/ruby.html">Ruby</a></li>
-  <li><a href="/docs/scala.html">Scala</a></li>
-</ul>
+  <h3>Getting started</h3>
+  <ul>
+    <li><a href="/docs/adding-your-github-project-to-semaphore.html">Adding your GitHub project to Semaphore</a></li>
+    <li><a href="/docs/adding-your-bitbucket-project-to-semaphore.html">Adding your Bitbucket project to Semaphore</a></li>
+    <li><a href="/docs/running-tests-in-parallel.html">Running tests in parallel</a></li>
+    <li><a href="/docs/how-to-get-build-badge.html">How to get a build badge</a></li>
+  </ul>
 
-<h3>Database support</h3>
-<ul>
-  <li><a href="/docs/databases/cassandra.html">Cassandra</a></li>
-  <li><a href="/docs/databases/memcached.html">Memcached</a></li>
-  <li><a href="/docs/databases/mongodb.html">MongoDB</a></li>
-  <li><a href="/docs/databases/mysql.html">MySQL</a></li>
-  <li><a href="/docs/databases/postgresql.html">PostgreSQL</a></li>
-  <li><a href="/docs/databases/redis.html">Redis</a></li>
-  <li><a href="/docs/databases/rethinkdb.html">RethinkDB</a></li>
-  <li><a href="/docs/databases/sqlite.html">SQLite</a></li>
-</ul>
+  <h3>Language Support</h3>
+  <ul>
+    <li><a href="/docs/c.html">C/C++</a></li>
+    <li><a href="/docs/clojure.html">Clojure</a></li>
+    <li><a href="/docs/elixir.html">Elixir</a></li>
+    <li><a href="/docs/erlang.html">Erlang</a></li>
+    <li><a href="/docs/go.html">Go</a></li>
+    <li><a href="/docs/java.html">Java</a></li>
+    <li><a href="/docs/javascript.html">JavaScript</a></li>
+    <li><a href="/docs/php.html">PHP</a></li>
+    <li><a href="/docs/ruby.html">Ruby</a></li>
+    <li><a href="/docs/scala.html">Scala</a></li>
+  </ul>
 
-<h3>The Semaphore platform</h3>
-<ul>
-  <li><a href="/docs/supported-stack.html">Supported stack</a></li>
-  <li><a href="/docs/platform-changelog.html">Platform changelog</a></li>
-  <li><a href="/docs/platform-updates.html">Platform updates</a></li>
-  <li><a href="/docs/available-environment-variables.html">Available environment variables</a></li>
-  <li><a href="/docs/managing-public-ssh-keys-for-ssh-sessions.html">Managing public SSH keys for SSH session</a></li>
-  <li><a href="/docs/ssh-access-to-build-environment.html">SSH access to build environment</a></li>
-  <li><a href="/docs/caching-between-builds.html">Caching between builds</a></li>
-  <li>
-    Advanced topics
-    <ul>
-      <li><a href="/docs/build-sequence.html">Build sequence</a></li>
-      <li><a href="/docs/deploy-sequence.html">Deploy sequence</a></li>
-    </ul>
-  </li>
-</ul>
+  <h3>Database support</h3>
+  <ul>
+    <li><a href="/docs/databases/cassandra.html">Cassandra</a></li>
+    <li><a href="/docs/databases/memcached.html">Memcached</a></li>
+    <li><a href="/docs/databases/mongodb.html">MongoDB</a></li>
+    <li><a href="/docs/databases/mysql.html">MySQL</a></li>
+    <li><a href="/docs/databases/postgresql.html">PostgreSQL</a></li>
+    <li><a href="/docs/databases/redis.html">Redis</a></li>
+    <li><a href="/docs/databases/rethinkdb.html">RethinkDB</a></li>
+    <li><a href="/docs/databases/sqlite.html">SQLite</a></li>
+  </ul>
 
-<h3>Customizing your build</h3>
-<ul>
-  <li><a href="/docs/customizing-build-commands.html">Customizing build commands</a></li>
-  <li><a href="/docs/running-build-command-on-specific-branch.html">Running a build command on a specific branch</a></li>
-  <li><a href="/docs/using-post-thread-commands.html">Using post-thread commands</a></li>
-  <li><a href="/docs/adding-custom-configuration-files.html">Adding custom configuration files</a></li>
-  <li><a href="/docs/exporting-environment-variables.html">Exporting environment variables</a></li>
-  <li><a href="/docs/adding-more-ssh-keys.html">Adding more SSH keys</a></li>
-  <li><a href="/docs/caching-between-builds.html">How to cache anything between builds</a></li>
-  <li><a href="/docs/changing-system-configuration-file.html">Changing a system configuration file</a></li>
-</ul>
+  <h3>The Semaphore platform</h3>
+  <ul>
+    <li><a href="/docs/supported-stack.html">Supported stack</a></li>
+    <li><a href="/docs/platform-changelog.html">Platform changelog</a></li>
+    <li><a href="/docs/platform-updates.html">Platform updates</a></li>
+    <li><a href="/docs/available-environment-variables.html">Available environment variables</a></li>
+    <li><a href="/docs/managing-public-ssh-keys-for-ssh-sessions.html">Managing public SSH keys for SSH session</a></li>
+    <li><a href="/docs/ssh-access-to-build-environment.html">SSH access to build environment</a></li>
+    <li><a href="/docs/caching-between-builds.html">Caching between builds</a></li>
+    <li>
+      Advanced topics
+      <ul>
+        <li><a href="/docs/build-sequence.html">Build sequence</a></li>
+        <li><a href="/docs/deploy-sequence.html">Deploy sequence</a></li>
+      </ul>
+    </li>
+  </ul>
 
-<h3>Adapting Semaphore to your workflow</h3>
-<ul>
-  <li><a href="/docs/how-to-skip-building-for-some-commits-with-ci-skip.html">How to skip building some commits with [ci skip]</a></li>
-  <li><a href="/docs/set-high-priority-branches.html">Set high priority branches</a></li>
-  <li><a href="/docs/set-queued-builds-cancellation-strategy.html">Set queued builds cancellation strategy</a></li>
-  <li><a href="/docs/turn-off-automatic-testing-of-new-branches.html">Turn off automatic testing of new branches</a></li>
-  <li><a href="/docs/scheduling-builds.html">Scheduling builds</a></li>
-</ul>
+  <h3>Customizing your build</h3>
+  <ul>
+    <li><a href="/docs/customizing-build-commands.html">Customizing build commands</a></li>
+    <li><a href="/docs/running-build-command-on-specific-branch.html">Running a build command on a specific branch</a></li>
+    <li><a href="/docs/using-post-thread-commands.html">Using post-thread commands</a></li>
+    <li><a href="/docs/adding-custom-configuration-files.html">Adding custom configuration files</a></li>
+    <li><a href="/docs/exporting-environment-variables.html">Exporting environment variables</a></li>
+    <li><a href="/docs/adding-more-ssh-keys.html">Adding more SSH keys</a></li>
+    <li><a href="/docs/caching-between-builds.html">How to cache anything between builds</a></li>
+    <li><a href="/docs/changing-system-configuration-file.html">Changing a system configuration file</a></li>
+  </ul>
 
-<h3>Managing dependencies</h3>
-<ul>
-  <li><a href="/docs/building-project-with-git-submodules.html">Building a project with git submodules</a></li>
-  <li><a href="/docs/how-to-use-postgres-mongodb-and-redis-on-one-project.html">Can I use Postgres, MongoDB and Redis on one project?</a></li>
-  <li><a href="/docs/installing-system-dependency.html">Installing a system dependency</a></li>
-  <li><a href="/docs/how-to-install-dependency.html">My project depends on X and you don’t seem to have it</a></li>
-  <li><a href="/docs/how-to-install-dependency-from-ppa.html">How to install a dependency from PPA?</a></li>
-  <li><a href="/docs/repository-settings.html">Repository settings</a></li>
-  <li><a href="/docs/databases/postgis.html">How to install PostGIS?</a></li>
-  <li><a href="/docs/test-apps.html">Test applications</a></li>
-</ul>
+  <h3>Adapting Semaphore to your workflow</h3>
+  <ul>
+    <li><a href="/docs/how-to-skip-building-for-some-commits-with-ci-skip.html">How to skip building some commits with [ci skip]</a></li>
+    <li><a href="/docs/set-high-priority-branches.html">Set high priority branches</a></li>
+    <li><a href="/docs/set-queued-builds-cancellation-strategy.html">Set queued builds cancellation strategy</a></li>
+    <li><a href="/docs/turn-off-automatic-testing-of-new-branches.html">Turn off automatic testing of new branches</a></li>
+    <li><a href="/docs/scheduling-builds.html">Scheduling builds</a></li>
+  </ul>
 
-<h3>Build troubleshooting</h3>
+  <h3>Managing dependencies</h3>
+  <ul>
+    <li><a href="/docs/building-project-with-git-submodules.html">Building a project with git submodules</a></li>
+    <li><a href="/docs/how-to-use-postgres-mongodb-and-redis-on-one-project.html">Can I use Postgres, MongoDB and Redis on one project?</a></li>
+    <li><a href="/docs/installing-system-dependency.html">Installing a system dependency</a></li>
+    <li><a href="/docs/how-to-install-dependency.html">My project depends on X and you don’t seem to have it</a></li>
+    <li><a href="/docs/how-to-install-dependency-from-ppa.html">How to install a dependency from PPA?</a></li>
+    <li><a href="/docs/repository-settings.html">Repository settings</a></li>
+    <li><a href="/docs/databases/postgis.html">How to install PostGIS?</a></li>
+    <li><a href="/docs/test-apps.html">Test applications</a></li>
+  </ul>
 
-<%= partial "docs/build_troubleshooting" %>
+  <h3>Build troubleshooting</h3>
 
-<h3>Deploying your application</h3>
-<ul>
-  <li><a href="/docs/deploying-to-heroku.html">Deploying to Heroku</a></li>
-  <li><a href="/docs/deploying-via-cloud66.html">Deploying via Cloud 66</a></li>
-  <li><a href="/docs/deploying-with-capistrano.html">Deploying with Capistrano</a></li>
-  <li><a href="/docs/deploying-with-git-deploy.html">Deploying with git-deploy</a></li>
-  <li><a href="/docs/deployment-fail-permission-denied.html">Fail: 'permission denied (publickey)'</a></li>
-  <li><a href="/docs/manually-triggerring-an-automatic-deploy.html">Manually triggerring an automatic deploy</a></li>
-  <li><a href="https://semaphoreapp.com/blog/2014/02/05/hands-free-deployment-of-static-websites.html">Hands-free deployment of static websites with Semaphore</a></li>
-</ul>
+  <%= partial "docs/build_troubleshooting" %>
 
-<h3>Collaboration</h3>
-<ul>
-  <li><a href="/docs/how-to-add-or-remove-collaborator.html">How can I add or remove a collaborator from my project?</a></li>
-</ul>
+  <h3>Deploying your application</h3>
+  <ul>
+    <li><a href="/docs/deploying-to-heroku.html">Deploying to Heroku</a></li>
+    <li><a href="/docs/deploying-via-cloud66.html">Deploying via Cloud 66</a></li>
+    <li><a href="/docs/deploying-with-capistrano.html">Deploying with Capistrano</a></li>
+    <li><a href="/docs/deploying-with-git-deploy.html">Deploying with git-deploy</a></li>
+    <li><a href="/docs/deployment-fail-permission-denied.html">Fail: 'permission denied (publickey)'</a></li>
+    <li><a href="/docs/manually-triggerring-an-automatic-deploy.html">Manually triggerring an automatic deploy</a></li>
+    <li><a href="https://semaphoreapp.com/blog/2014/02/05/hands-free-deployment-of-static-websites.html">Hands-free deployment of static websites with Semaphore</a></li>
+  </ul>
 
-<h3>Notifications</h3>
-<ul>
-  <li><a href="/docs/managing-email-addresses.html">Managing email addresses</a></li>
-  <li><a href="/docs/subscribe-to-your-work.html">Subscribe only to my work</a></li>
-  <li><a href="/docs/finding-hipchat-token.html">Finding HipChat token</a></li>
-  <li><a href="/docs/post-build-webhooks.html">Post-build webhooks</a></li>
-  <li><a href="/docs/post-deploy-webhooks.html">Post-deploy webhooks</a></li>
-</ul>
+  <h3>Collaboration</h3>
+  <ul>
+    <li><a href="/docs/how-to-add-or-remove-collaborator.html">How can I add or remove a collaborator from my project?</a></li>
+  </ul>
 
-<h3>API</h3>
-<ul>
-  <li><a href="/docs/api_authentication.html">Authentication</a></li>
-  <li><a href="/docs/branches-and-builds-api.html">Branches &amp; builds</a></li>
-  <li><a href="/docs/projects-api.html">Projects</a></li>
-  <li><a href="/docs/servers-and-deploys-api.html">Servers &amp; deploys</a></li>
-  <li><a href="/docs/webhooks-api.html">Webhooks</a></li>
-</ul>
+  <h3>Notifications</h3>
+  <ul>
+    <li><a href="/docs/managing-email-addresses.html">Managing email addresses</a></li>
+    <li><a href="/docs/subscribe-to-your-work.html">Subscribe only to my work</a></li>
+    <li><a href="/docs/finding-hipchat-token.html">Finding HipChat token</a></li>
+    <li><a href="/docs/post-build-webhooks.html">Post-build webhooks</a></li>
+    <li><a href="/docs/post-deploy-webhooks.html">Post-deploy webhooks</a></li>
+  </ul>
 
-<h3>Integrations</h3>
-<ul>
-  <li><a href="/docs/codeclimate.html">Code Climate</a></li>
-  <li><a href="/docs/cctry.html">CruiseControl status</a></li>
-  <li><a href="/docs/third-party-tools.html">Third-party tools</a></li>
-</ul>
+  <h3>API</h3>
+  <ul>
+    <li><a href="/docs/api_authentication.html">Authentication</a></li>
+    <li><a href="/docs/branches-and-builds-api.html">Branches &amp; builds</a></li>
+    <li><a href="/docs/projects-api.html">Projects</a></li>
+    <li><a href="/docs/servers-and-deploys-api.html">Servers &amp; deploys</a></li>
+    <li><a href="/docs/webhooks-api.html">Webhooks</a></li>
+  </ul>
 
-<h3>Billing</h3>
-<ul>
-  <li><a href="/docs/changing-project-after-repository-rename.html">Changing the project after repository or organization rename</a></li>
-  <li><a href="/docs/how-to-change-credit-card-information.html">How to change credit card information?</a></li>
-  <li><a href="/docs/transferring-project-ownership.html">Transferring project ownership</a></li>
-</ul>
+  <h3>Integrations</h3>
+  <ul>
+    <li><a href="/docs/codeclimate.html">Code Climate</a></li>
+    <li><a href="/docs/cctry.html">CruiseControl status</a></li>
+    <li><a href="/docs/third-party-tools.html">Third-party tools</a></li>
+  </ul>
 
-<h3>Guides</h3>
-<ul>
-  <li><a href="https://semaphoreapp.com/blog/2013/09/19/multi-deployment-approaches.html">Multi-deployment approaches</a></li>
-  <li><a href="https://semaphoreapp.com/blog/2013/02/14/clis-and-tools-for-semaphore.html">CLIs and tools for Semaphore</a></li>
-  <li><a href="https://semaphoreapp.com/blog/2014/07/10/tdd-antipatterns-local-hero.html">TDD Antipatterns: Local Hero</a></li>
-  <li><a href="https://semaphoreapp.com/blog/2014/06/24/tdd-antipatterns-the-free-ride.html">TDD Antipatterns: The Free Ride</a></li>
-  <li><a href="https://semaphoreapp.com/blog/2014/09/08/semaphore-stickers-are-here.html">How to order Semaphore stickers?</a></li>
-</ul>
+  <h3>Billing</h3>
+  <ul>
+    <li><a href="/docs/changing-project-after-repository-rename.html">Changing the project after repository or organization rename</a></li>
+    <li><a href="/docs/how-to-change-credit-card-information.html">How to change credit card information?</a></li>
+    <li><a href="/docs/transferring-project-ownership.html">Transferring project ownership</a></li>
+  </ul>
+
+  <h3>Guides</h3>
+  <ul>
+    <li><a href="https://semaphoreapp.com/blog/2013/09/19/multi-deployment-approaches.html">Multi-deployment approaches</a></li>
+    <li><a href="https://semaphoreapp.com/blog/2013/02/14/clis-and-tools-for-semaphore.html">CLIs and tools for Semaphore</a></li>
+    <li><a href="https://semaphoreapp.com/blog/2014/07/10/tdd-antipatterns-local-hero.html">TDD Antipatterns: Local Hero</a></li>
+    <li><a href="https://semaphoreapp.com/blog/2014/06/24/tdd-antipatterns-the-free-ride.html">TDD Antipatterns: The Free Ride</a></li>
+    <li><a href="https://semaphoreapp.com/blog/2014/09/08/semaphore-stickers-are-here.html">How to order Semaphore stickers?</a></li>
+  </ul>
+</article>

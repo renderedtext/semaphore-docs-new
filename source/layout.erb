@@ -3,82 +3,55 @@
 
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <% if content_for?(:title) %>
       <%= yield_content :title %>
-    <% else%>
+    <% else %>
       <title>Semaphore Documentation</title>
     <% end %>
 
     <!-- Icons -->
-    <link rel="shortcut icon" type="image/x-ico" href="/docs/assets/img/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-ico" href="/docs/assets/img/favicon.ico" />
 
     <!-- Bootstrap -->
-    <link href="/docs/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/docs/assets/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom styles -->
-    <link href="/docs/assets/css/default.css" rel="stylesheet">
-    <link href="/docs/assets/css/docs.css" rel="stylesheet">
-    <link href="/docs/assets/css/navigation.css" rel="stylesheet">
-    <link href="/docs/assets/css/highlighting.css" rel="stylesheet">
+    <link href="/docs/assets/css/styles.css" rel="stylesheet" />
 
-    <script type="text/javascript" src="//use.typekit.net/let5ztq.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="/docs/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="//use.typekit.net/huv6nfe.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
   </head>
 
   <body class="docs-new">
 
-    <header>
-      <nav class="navbar navbar-default main-navigation" role="navigation">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/docs">
-              <img src="/docs/assets/img/design/logo-documentation.svg" height="47" width="181" alt="Semaphore Documentation">
-            </a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar-collapse-1">
-            <form class="search-form navbar-search" role="search">
-              <input type="text" class="form-control" id="st-search-input" placeholder="Search Documentation">
-            </form>
-            <ul class="nav navbar-nav navbar-right navbar-blue">
-              <li><a href="https://semaphoreci.com">Back to Semaphore →</a></li>
-              <li><a href="mailto:328e3e4aab1aefecc60ed7e4cb33910bc3fbdeb2@incoming.intercom.io" id="Intercom">Contact Support</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-    </header>
+    <%= partial(:header) %>
 
-    <div class="page-block with-background docs">
+    <% if content_for?(:page_illustration)%>
+      <%= yield_content :page_illustration %>
+    <% else %>
+      <div class="page-illustration no-illustration">
+      <% end %>
+
       <div class="container">
-        <article>
-          <div class="row">
-            <div class="col-lg-10 col-sm-12 col-12  col-lg-offset-1">
-              <div class="panel panel-default">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
 
-                <%= yield  %>
+            <%= yield  %>
 
-              </div> <!--/.panel-->
-            </div>
-          </div> <!--/.row-->
-        </article>
-      </div>  <!-- .container -->
-    </div>  <!-- .page-block -->
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <%= partial(:footer) %>
 
-    <script src="//code.jquery.com/jquery.js"></script>
     <script src="/docs/assets/js/bootstrap.min.js"></script>
 
     <%= partial(:swiftype_search)%>

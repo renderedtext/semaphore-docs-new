@@ -4,16 +4,20 @@
     <title><%= current_page.data.title + " - Semaphore" %></title>
   <% end %>
 
-  <hgroup class="page-header">
-    <small><%= link_to "Home","/docs" %> / <%= category_link(current_page.data.category) %> /</small>
+  <article class="block-longform single-no-post-header">
+    <hgroup class="page-header">
+      <small>
+        <span class="edit-link"><%= link_to_file_on_github(current_page) %></span>
+        <%= link_to "Home","/docs" %> / <%= category_link(current_page.data.category) %> /
+      </small>
 
-    <h1><%= current_page.data.title %></h1>
-  </hgroup>
+      <h1><%= current_page.data.title %></h1>
+    </hgroup>
 
-  <title><%= current_page.data.title %></title>
+    <title><%= current_page.data.title %></title>
 
-  <%= yield %>
+    <%= yield %>
 
-  <small><%= link_to_file_on_github(current_page) %></small>
+  </article>
 
 <% end %>
