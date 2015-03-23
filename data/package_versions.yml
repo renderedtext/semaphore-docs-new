@@ -213,9 +213,13 @@ sphinx:
   name: "Sphinx"
   version: "2.0.4"
 
+sbt:
+  name: "sbt"
+  version: "0.13.7"
+
 scala:
   name: "Scala"
-  version: "2.11.5"
+  version: "2.11.6"
   url: "/docs/scala.html"
 
 sqlite:

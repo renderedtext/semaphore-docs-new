@@ -4,7 +4,33 @@ title: Scala
 category: Languages
 ---
 
-The Semaphore provides Scala version <%= package_version("scala") %> preinstalled.
+Semaphore makes it easy to add Scala projects with [Java](/docs/java.html)
+preinstalled. The first time you add a Scala project, Semaphore will analyze it
+and suggest to run the tests with the current Scala version and `sbt`.
 
-List of all packages and versions is available on the
-[supported application stack](/docs/supported-stack.html) page.
+After the analysis determintes that the project is written in Scala, the
+following command is suggested.
+
+```bash
+sbt ++$SEMAPHORE_SCALA_VERSION test
+```
+
+## CI environment for Scala projects
+
+The [Semaphore platform](/docs/supported-stack.html) supports Scala version
+<%= package_version("scala") %>. Version <%= package_version("sbt") %> of the
+[sbt](http://www.scala-sbt.org/) build tool is pre-installed. The current
+version of Scala is also avaliable through the `SEMAPHORE_SCALA_VERSION`
+environment variable.
+
+## Dependency management
+
+Cached resolution is added to `sbt` as an [experimental feature]
+(http://www.scala-sbt.org/0.13/docs/Cached-Resolution.html#Cached+resolution)
+starting with version `0.13.7`. If you use this feature, the contents of
+`~/.sbt/0.13/dependency/` is [cached between builds](/docs/caching-between-builds.html).
+
+## Guides
+
+- [Setting up continuous integration for a Scala project on Semaphore]
+(/docs/languages/scala/setting-up-continuous-integration-for-a-scala-project-on-semaphore.html)
