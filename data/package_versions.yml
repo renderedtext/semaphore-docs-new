@@ -68,6 +68,10 @@ heroku-toolbelt:
   name: "Heroku Toolbelt"
   version: "3.26.1"
 
+io.js:
+  name: "io.js"
+  version: "1.5.1"
+
 imagemagick:
   name: "ImageMagick"
   version: "6.7.7.11"
@@ -76,7 +80,7 @@ java:
   name: "Java"
   versions:
     - "openjdk-7u75"
-    - "Oracle jdk-8u31"
+    - "Oracle jdk-8u40"
   url: "/docs/java.html"
 
 leiningen:
@@ -99,7 +103,7 @@ memcached:
 
 mongodb:
   name: "MongoDB"
-  version: "2.4.12"
+  version: "2.6.8"
   url: "/docs/databases/mongodb.html"
 
 mysql:
@@ -111,7 +115,7 @@ node:
   name: "Node.js"
   versions:
     - "0.8.28"
-    - "0.10.36"
+    - "0.10.37"
     - "0.11.14"
     - "0.12.0"
   url: "/docs/javascript.html"
@@ -141,9 +145,9 @@ php:
   name: "PHP"
   versions:
     - "5.3.29"
-    - "5.4.37"
-    - "5.5.21"
-    - "5.6.5"
+    - "5.4.38"
+    - "5.5.22"
+    - "5.6.6"
   url: "/docs/php.html"
 
 phpbrew:
@@ -163,7 +167,7 @@ postgis:
 
 postgresql:
   name: "PostgreSQL"
-  version: "9.3.4"
+  version: "9.3.7"
   url: "/docs/databases/postgresql.html"
 
 qt:
@@ -190,6 +194,7 @@ rethinkdb:
 ruby:
   name: "Ruby"
   versions:
+    - "2.2.1"
     - "2.2.0"
     - "2.1.5"
     - "2.1.4"
@@ -215,7 +220,7 @@ sphinx:
 
 scala:
   name: "Scala"
-  version: "2.11.5"
+  version: "2.11.6"
   url: "/docs/scala.html"
 
 sqlite:

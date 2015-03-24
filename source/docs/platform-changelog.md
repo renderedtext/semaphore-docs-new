@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1503 - 2015-03-24 (planned)
+### v1503 - 2015-03-24
 ```
 - additions
   - ruby 2.2.1
@@ -14,10 +14,12 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - git 2.3.0 -> 2.3.3
   - io.js 1.2.0 -> 1.5.1
   - mongodb 2.4.12 -> 2.6.8
+  - node.js 0.10.36 -> 0.10.37
   - oracle jdk8 update 31 -> update 40
   - php 5.6.5 -> 5.6.6
   - php 5.5.21 -> 5.5.22
   - php 5.4.37 -> 5.4.38
+  - scala 2.11.5 -> 2.11.6
 ```
 
 ### v1502 - 2015-02-24
