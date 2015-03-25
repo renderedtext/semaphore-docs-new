@@ -4,7 +4,7 @@ title: Caching between builds
 category: The Semaphore platform
 ---
 
-Installing application dependencies can take a significant amount of time, so Semaphore caches them to make your build time shorter. Dependency directories for Ruby, Node.js and Clojure projects are currently cached by default. The full list of cached directories, relative to your repository is as follows:
+Installing application dependencies can take a significant amount of time, so Semaphore caches them to make your build time shorter. Dependency directories for Clojure, Node.js, Ruby and Scala projects are currently cached by default. The full list of cached directories, relative to your repository is as follows:
 
 ```
 .bundle
