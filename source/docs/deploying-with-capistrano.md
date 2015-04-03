@@ -16,7 +16,7 @@ This will launch a simple 5 step process.
 
 The first step is to select Capistrano as your deployment method.
 
-<img src="/docs/assets/img/deploying-with-capistrano/deployment-method.png" class="img-responsive">
+<img src="/docs/assets/img/deployment-method.png" class="img-responsive">
 
 
 ## Choosing your deployment strategy

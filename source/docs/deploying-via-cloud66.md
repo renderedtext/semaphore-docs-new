@@ -18,7 +18,7 @@ If you have no deployments configured, you can add your first server.
 
 Select Cloud 66 from the list of Deployment Methods and choose Automatic.
 
-<img src="/docs/assets/img/cloud66-integration/deployment_method.png" class="img-responsive">
+<img src="/docs/assets/img/deployment-method.png" class="img-responsive">
 
 You will be redirected to your Cloud 66 account and asked if you give Semaphore permission to deploy your stacks on your behalf.
 
