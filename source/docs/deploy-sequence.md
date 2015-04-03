@@ -30,7 +30,7 @@ Any [custom configuration files](/docs/adding-custom-configuration-files.html) y
 
 ### SSH key initialization
 
-This is executed in case the deploy is using an SSH keypair ([Capistrano method](/docs/deploying-with-capistrano.html)). Your key is saved to `~/.ssh/id_rsa` and initialized with `ssh-add ~/.ssh/id_rsa`.
+This is executed in case the deploy is using an SSH keypair ([Capistrano](/docs/deploying-with-capistrano.html) or Generic method). Your key is saved to `~/.ssh/id_rsa` and initialized with `ssh-add ~/.ssh/id_rsa`.
 
 ### Run your deploy commands
 
