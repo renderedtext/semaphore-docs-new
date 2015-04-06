@@ -57,6 +57,11 @@ git push --force production $BRANCH_NAME:master
 
 <img src="/docs/assets/img/deploying-with-git-deploy/git-deploy-commands.png" class="img-responsive">
 
+Some users have reported that running `git remote rm production || true` before
+`git remote add ...` helps solve problems that might occur if you change the
+value of remote, since Semaphore is [caching your git repository between builds
+and deploys](/docs/caching-between-builds.html).
+
 ### Step 4: Paste your private SSH key on Semaphore
 
 On the next screen, simply paste the private SSH key that you generated earlier
