@@ -73,6 +73,10 @@ Before running your build or deploy, Semaphore exports the following environment
       <td>SEMAPHORE_THREAD_COUNT</td>
       <td>Eg. 4</td>
     </tr>
+    <tr>
+      <td>SEMAPHORE_TRIGGER_SOURCE</td>
+      <td>Eg. push, manual, api,  scheduler</td>
+    </tr>
   </tbody>
 </table>
 
