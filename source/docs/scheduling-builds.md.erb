@@ -36,3 +36,13 @@ Your scheduled builds will appear in the project timeline.
 From the moment they run, scheduled builds behave exactly like any other build
 on Semaphore: they execute currently configured build commands and, depending
 on your other configuration, may trigger notifications or an automated deploy.
+
+__Note:__
+There is an automatically exported environment variable called
+`SEMAPHORE_TRIGGER_SOURCE` which will  be set to "scheduler" if the build is
+triggered by the build scheduler. This can be used for specifying commands that
+you want to execute only in this kind of builds like:
+
+```bash
+if [ "$SEMAPHORE_TRIGGER_SOURCE" = "scheduler" ]; then bundle exec rake spec:nightly ; fi
+```
