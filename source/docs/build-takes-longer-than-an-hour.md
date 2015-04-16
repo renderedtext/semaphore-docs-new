@@ -14,4 +14,4 @@ bundle exec cucumber features/reporting/*
 bundle exec cucumber features/something_else/*
 ```
 
-You can then leverage Semaphore’s [build parallelization feature](https://semaphoreapp.com/blog/2012/10/25/semaphore-can-now-parallelize-your-builds.html) and run these simultaneously.
+You can then leverage Semaphore’s [build parallelization feature](https://semaphoreci.com/blog/2012/10/25/semaphore-can-now-parallelize-your-builds.html) and run these simultaneously.

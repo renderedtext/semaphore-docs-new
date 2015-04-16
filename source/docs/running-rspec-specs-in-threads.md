@@ -4,7 +4,7 @@ title: Running RSpec specs in parallel
 category: Customizing your build
 ---
 
-Semaphore lets you run RSpec specs in [parallel threads](https://semaphoreapp.com/parallelism). If you want to get faster feedback from CI then you can try [knapsack](https://github.com/ArturT/knapsack) gem. It will split tests across threads and make sure that tests will run comparable time on each thread.
+Semaphore lets you run RSpec specs in [parallel threads](https://semaphoreci.com/parallelism). If you want to get faster feedback from CI then you can try [knapsack](https://github.com/ArturT/knapsack) gem. It will split tests across threads and make sure that tests will run comparable time on each thread.
 
 ### Generate knapsack report
 

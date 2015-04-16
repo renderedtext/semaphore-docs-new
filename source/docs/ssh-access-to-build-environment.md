@@ -16,7 +16,7 @@ of your terminal.
 ### Requirements
 
 To launch an SSH session on Semaphore you'll need to add a 
-[public SSH key](https://semaphoreapp.com/docs/managing-public-ssh-keys-for-ssh-sessions.html) 
+[public SSH key](https://semaphoreci.com/docs/managing-public-ssh-keys-for-ssh-sessions.html) 
 to your account settings.
 
 ### Launching a new SSH session
@@ -33,6 +33,6 @@ on the Launch SSH button above your thread's output.
 Semaphore will start a build environment identical to the one where your current
 build or deploy ran. Your project’s Git repository will be checked out at the same
 revision. Semaphore will also export any 
-[configuration files](https://semaphoreapp.com/docs/adding-custom-configuration-files.html) and 
-[environment variables](https://semaphoreapp.com/docs/exporting-environment-variables.html) 
+[configuration files](https://semaphoreci.com/docs/adding-custom-configuration-files.html) and 
+[environment variables](https://semaphoreci.com/docs/exporting-environment-variables.html) 
 which you have configured in your project's settings.

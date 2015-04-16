@@ -35,17 +35,17 @@ Status: 200 OK
    {
       "id": 1324,
       "name": "new-build-page",
-      "branch_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/1324/status?auth_token=:auth_token"
+      "branch_url": "https://semaphoreci.com/api/v1/projects/:hash_id/1324/status?auth_token=:auth_token"
    },
    {
       "id": 1120,
       "name": "development",
-      "branch_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/1120/status?auth_token=:auth_token"
+      "branch_url": "https://semaphoreci.com/api/v1/projects/:hash_id/1120/status?auth_token=:auth_token"
    },
    {
       "id": 987,
       "name": "branches_api",
-      "branch_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/987/status?auth_token=:auth_token"
+      "branch_url": "https://semaphoreci.com/api/v1/projects/:hash_id/987/status?auth_token=:auth_token"
    }
 ]
 ```
@@ -70,12 +70,12 @@ Status: 200 OK
 ```json
 {
    "branch_name": "gem_updates",
-   "branch_url": "https://semaphoreapp.com/projects/44/branches/50",
-   "branch_status_url": "https://semaphoreapp.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/status?auth_token=Yds3w6o26FLfJTnVK2y9",
-   "branch_history_url": "https://semaphoreapp.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "branch_url": "https://semaphoreci.com/projects/44/branches/50",
+   "branch_status_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/status?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "branch_history_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89?auth_token=Yds3w6o26FLfJTnVK2y9",
    "project_name": "base-app",
-   "build_url": "https://semaphoreapp.com/projects/44/branches/50/builds/15",
-   "build_info_url": "https://semaphoreapp.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "build_url": "https://semaphoreci.com/projects/44/branches/50/builds/15",
+   "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
    "build_number": 15,
    "result": "passed",
    "started_at": "2012-07-09T15:23:53Z",
@@ -129,14 +129,14 @@ Status: 200 OK
 ```json
 {
    "branch_name": "gem_updates",
-   "branch_url": "https://semaphoreapp.com/projects/44/branches/50",
-   "branch_status_url": "https://semaphoreapp.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/status?auth_token=Yds3w6o26FLfJTnVK2y9",
-   "branch_history_url": "https://semaphoreapp.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "branch_url": "https://semaphoreci.com/projects/44/branches/50",
+   "branch_status_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/status?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "branch_history_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89?auth_token=Yds3w6o26FLfJTnVK2y9",
    "project_name": "base-app",
    "builds": [
       {
-         "build_url": "https://semaphoreapp.com/projects/57/branches/80/builds/46",
-         "build_info_url": "https://semaphoreapp.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/80/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
+         "build_url": "https://semaphoreci.com/projects/57/branches/80/builds/46",
+         "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/80/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
          "build_number": 46,
          "result": "failed",
          "started_at": "2012-10-02T15:01:41Z",
@@ -151,8 +151,8 @@ Status: 200 OK
          }
       },
       {
-         "build_url": "https://semaphoreapp.com/projects/57/branches/80/builds/45",
-         "build_info_url": "https://semaphoreapp.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/80/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
+         "build_url": "https://semaphoreci.com/projects/57/branches/80/builds/45",
+         "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/80/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
          "build_number": 45,
          "result": "passed",
          "started_at": "2012-10-02T14:47:06Z",
@@ -206,8 +206,8 @@ Status: 200 OK
   "updated_at": "2014-06-19T09:39:42+02:00",
   "started_at": "2014-06-19T09:37:26+02:00",
   "finished_at": "2014-06-19T09:39:42+02:00",
-  "html_url": "https://semaphoreapp.com/renderedtext/base-app/branches/master/builds/44",
-  "build_log_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/44/log?auth_token=:auth_token",
+  "html_url": "https://semaphoreci.com/renderedtext/base-app/branches/master/builds/44",
+  "build_log_url": "https://semaphoreci.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/44/log?auth_token=:auth_token",
 }
 ```
 
@@ -267,7 +267,7 @@ Status: 200 OK
       ]
     }
   ],
-  "build_info_url": "https://semaphoreapp.com/api/v1/projects/3f1004b8343faabda63d441734526c854380ab89/85/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9"
+  "build_info_url": "https://semaphoreci.com/api/v1/projects/3f1004b8343faabda63d441734526c854380ab89/85/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9"
 }
 ```
 
@@ -316,9 +316,9 @@ Status: 200 OK
   "updated_at": "2013-12-25T14:56:44+01:00",
   "started_at": null,
   "finished_at": null,
-  "html_url": "https://semaphoreapp.com/darkofabijan/semaphore/branches/development/builds/1",
-  "build_log_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/1/log?auth_token=:auth_token",
-  "build_info_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/1?auth_token=:auth_token"
+  "html_url": "https://semaphoreci.com/darkofabijan/semaphore/branches/development/builds/1",
+  "build_log_url": "https://semaphoreci.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/1/log?auth_token=:auth_token",
+  "build_info_url": "https://semaphoreci.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/1?auth_token=:auth_token"
 }
 ```
 
@@ -358,9 +358,9 @@ Status: 200 OK
   "updated_at": "2014-08-18T17:04:53+02:00",
   "started_at": null,
   "finished_at": null,
-  "html_url": "https://semaphoreapp.com/renderedtext/base-app/branches/master/builds/45",
-  "build_log_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/45/log?auth_token=:auth_token",
-  "build_info_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/45?auth_token=:auth_token"
+  "html_url": "https://semaphoreci.com/renderedtext/base-app/branches/master/builds/45",
+  "build_log_url": "https://semaphoreci.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/45/log?auth_token=:auth_token",
+  "build_info_url": "https://semaphoreci.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/45?auth_token=:auth_token"
 }
 ```
 
@@ -410,9 +410,9 @@ Status: 200 OK
   "updated_at": "2014-08-18T17:04:53+02:00",
   "started_at": "2014-08-18T17:04:59+02:00",
   "finished_at": null,
-  "html_url": "https://semaphoreapp.com/projects/1/branches/29803/builds/27",
-  "build_log_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/27/log?auth_token=:auth_token",
-  "build_info_url": "https://semaphoreapp.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/27?auth_token=:auth_token"
+  "html_url": "https://semaphoreci.com/projects/1/branches/29803/builds/27",
+  "build_log_url": "https://semaphoreci.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/27/log?auth_token=:auth_token",
+  "build_info_url": "https://semaphoreci.com/api/v1/projects/73c4b979-0a40-49db-b10e-571d41e10d9a/133529/builds/27?auth_token=:auth_token"
 }
 ```
 
@@ -442,11 +442,11 @@ Status: 200 OK
   "number": 27,
   "created_at": "2013-07-23T10:57:42+02:00",
   "updated_at": "2013-07-23T11:00:41+02:00",
-  "html_url": "https://semaphoreapp.com/projects/1/servers/11/deploys/27",
-  "deploy_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27?auth_token=:auth_token",
-  "deploy_log_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/servers/11/deploys/27/log?auth_token=:auth_token",
-  "build_url": "https://semaphoreapp.com/api/v1/projects/:hash_id/29803/builds/119?auth_token=:auth_token",
-  "build_html_url": "https://semaphoreapp.com/projects/1/branches/29803/builds/119",
+  "html_url": "https://semaphoreci.com/projects/1/servers/11/deploys/27",
+  "deploy_url": "https://semaphoreci.com/api/v1/projects/:hash_id/servers/11/deploys/27?auth_token=:auth_token",
+  "deploy_log_url": "https://semaphoreci.com/api/v1/projects/:hash_id/servers/11/deploys/27/log?auth_token=:auth_token",
+  "build_url": "https://semaphoreci.com/api/v1/projects/:hash_id/29803/builds/119?auth_token=:auth_token",
+  "build_html_url": "https://semaphoreci.com/projects/1/branches/29803/builds/119",
   "commit": {
     "id": "222f0123418545f21234184a4725fe16asfa125123",
     "url": "https://github.com/renderedtext/semaphore/commit/222f0123418545f21234184a4725fe16asfa125123",
