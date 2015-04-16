@@ -4,7 +4,7 @@ title: Running Cucumber scenarios in parallel
 category: Customizing your build
 ---
 
-Semaphore lets you run Cucumber scenarios in [parallel threads](https://semaphoreapp.com/parallelism). There are couple of ways to use this great feature:
+Semaphore lets you run Cucumber scenarios in [parallel threads](https://semaphoreci.com/parallelism). There are couple of ways to use this great feature:
 
 ### 1. Using tags
 

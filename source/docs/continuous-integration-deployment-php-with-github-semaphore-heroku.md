@@ -36,7 +36,7 @@ Semaphore will need this key to deploy your application.
 
 ### Setting up continuous integration from GitHub to Semaphore
 
-[Sign up for a Semaphore account](https://semaphoreapp.com) and connect
+[Sign up for a Semaphore account](https://semaphoreci.com) and connect
 with GitHub.
 
 <img src="/docs/assets/img/languages/php/welcome-screen.png" class="img-responsive">

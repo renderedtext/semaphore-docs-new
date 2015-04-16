@@ -23,9 +23,9 @@ This endpoint requires the user to provide his authentication token via <strong>
 
 ```xml
 <Projects>
-  <Project name="semaphore - development" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="1197" lastBuildTime="2013-08-20T12:48:38+00:00" webUrl="https://semaphoreapp.com/projects/XXX/branches/XXX/builds/XXX"></Project>
-  <Project name="semaphore - shields_badges" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="2" lastBuildTime="2013-04-10T11:04:49+00:00" webUrl="https://semaphoreapp.com/projects/XXX/branches/XXX/builds/XXX"></Project>
-  <Project name="semaphore - master" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="143" lastBuildTime="2013-08-20T12:51:44+00:00" webUrl="https://semaphoreapp.com/projects/XXX/branches/XXX/builds/XXX"></Project>
-  <Project name="semaphore - staging" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="62" lastBuildTime="2013-08-20T12:50:09+00:00" webUrl="https://semaphoreapp.com/projects/XXX/branches/XXX/builds/XXX"></Project>
+  <Project name="semaphore - development" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="1197" lastBuildTime="2013-08-20T12:48:38+00:00" webUrl="https://semaphoreci.com/projects/XXX/branches/XXX/builds/XXX"></Project>
+  <Project name="semaphore - shields_badges" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="2" lastBuildTime="2013-04-10T11:04:49+00:00" webUrl="https://semaphoreci.com/projects/XXX/branches/XXX/builds/XXX"></Project>
+  <Project name="semaphore - master" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="143" lastBuildTime="2013-08-20T12:51:44+00:00" webUrl="https://semaphoreci.com/projects/XXX/branches/XXX/builds/XXX"></Project>
+  <Project name="semaphore - staging" activity="Sleeping" lastBuildStatus="Success" lastBuildLabel="62" lastBuildTime="2013-08-20T12:50:09+00:00" webUrl="https://semaphoreci.com/projects/XXX/branches/XXX/builds/XXX"></Project>
 </Projects>
 ```
