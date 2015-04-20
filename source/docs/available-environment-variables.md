@@ -92,6 +92,10 @@ Variables available only during deployment:
   </thead>
   <tbody>
     <tr>
+      <td>SEMAPHORE_DEPLOY_NUMBER</td>
+      <td>Eg. 17</td>
+    </tr>
+    <tr>
       <td>SEMAPHORE_SERVER_NAME</td>
       <td>Eg. staging</td>
     </tr>
