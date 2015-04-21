@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1504 - 2015-04-21 (planned)
+### v1504 - 2015-04-21
 ```
 - additions
   - gradle 2.3
