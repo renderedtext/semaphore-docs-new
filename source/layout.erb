@@ -35,19 +35,19 @@
       <%= yield_content :page_illustration %>
     <% else %>
       <div class="page-illustration no-illustration">
-      <% end %>
+        <div class="container">
+    <% end %>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8">
+          <%= partial(:search_form) %>
 
-            <%= yield  %>
-
+          <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+              <%= yield  %>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
 
+        </div><!-- .container -->
+      </div><!-- .page-illustration -->
 
     <%= partial(:footer) %>
 
