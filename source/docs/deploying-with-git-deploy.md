@@ -22,9 +22,10 @@ The private SSH key will be added to Semaphore later.
 
 ### Step 2: Create a new deploy server on Semaphore
 
-Open your project settings, Deployment tab. Click to set up a new server.
+To get started, find your desired project and follow "Set Up Deployment" link
+under list of the branches.
 
-<img src="/docs/assets/img/deploying-to-heroku/settings.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-git-deploy/set-up-deployment.png" class="img-responsive">
 
 When asked about the deployment method, choose the "Generic" option.
 
@@ -43,7 +44,7 @@ before your deploy commands](/docs/deploy-sequence.html).
 In order for our git-deploy deployment to work, we need to do the following.
 
 - Gather the public SSH host keys of your server(s) to avoid an authorization
-  prompt during deploy.
+prompt during deploy.
 - Add a git remote to where you are about to push your code on the server.
 - Push to the branch that is currently checked out in to remote.
 
