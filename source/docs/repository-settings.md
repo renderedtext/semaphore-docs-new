@@ -36,3 +36,9 @@ your deploy key or webhook is invalid, an option for reseting these two will be
 presented.
 
 <img src="/docs/assets/img/repositor-tab/repository-status-bad.png" class="img-responsive">
+
+### Repository or organization rename
+
+If a project's repository or owning organization has been renamed on GitHub,
+you need to switch the repository on Semaphore. This will update the project
+deploy key and webhook and clear the dependency cache.
