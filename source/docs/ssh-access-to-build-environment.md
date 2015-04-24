@@ -24,11 +24,11 @@ to your account settings.
 To launch such a build environment, visit the build or deploy page and click
 on the Launch SSH button above your thread's output.
 
-<img src="/docs/assets/img/ssh-session/create-ssh-session-1.png" class="img-responsive">
+<img src="/docs/assets/img/ssh-session/ssh-session-1.png" class="img-responsive">
 
-<img src="/docs/assets/img/ssh-session/create-ssh-session-2.png" class="img-responsive">
+<img src="/docs/assets/img/ssh-session/ssh-session-2.png" class="img-responsive">
 
-<img src="/docs/assets/img/ssh-session/create-ssh-session-3.png" class="img-responsive">
+<img src="/docs/assets/img/ssh-session/ssh-session-3.png" class="img-responsive">
 
 Semaphore will start a build environment identical to the one where your current
 build or deploy ran. Your project’s Git repository will be checked out at the same
@@ -44,7 +44,7 @@ automatically. To close the SSH session manually you can either close it from
 the build or deploy page where it was activated or to trigger a shutdown from
 the console.
 
-<img src="/docs/assets/img/ssh-session/close-ssh-session.png" class="img-responsive">
+<img src="/docs/assets/img/ssh-session/ssh-session-4.png" class="img-responsive">
 
 To close the session from the console, execute the following command in the SSH
 session:
