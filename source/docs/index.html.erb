@@ -1,19 +1,27 @@
 <% content_for :page_illustration do %>
-  <div class="page-illustration page-illustration-right" style="background-image:url(/docs/assets/img/page-intro-documentation.jpg);">
+  <div class="page-illustration page-illustration-single-post page-illustration-none" style="background-image:url(/docs/assets/img/page-intro-documentation.jpg);">
+    <div class="container">
+
+      <section class="intro-block">
+        <div class="intro-content">
+          <h1 class="page-title">Documentation</h1>
+          <h2 class="page-subtitle">
+            Welcome to the help and documentation section of <a href="/">Semaphore</a>,
+            a hosted continuous integration and deployment service.
+          </h2>
+          <p class="page-tagline">
+            There's a good chance your question about using it will be answered here.
+            If not, please <a href="mailto:328e3e4aab1aefecc60ed7e4cb33910bc3fbdeb2@incoming.intercom.io">
+            email us</a>. This website is <a href="https://github.com/renderedtext/semaphore-docs-new">
+            open source</a> - we welcome your issue reports and pull requests.
+          </p>
+        </div>
+      </section>
 <% end %>
 
 <article class="block-longform post-header">
-  <div class="block-intro">
 
-    <h1>Developing with Semaphore</h1>
-    <p>
-      Welcome to the help and documentation section of <a href="/">Semaphore</a>,
-      a hosted continuous integration and deployment service.
-      There's a good chance your question about using it will be answered here.
-      If not, please <a href="mailto:328e3e4aab1aefecc60ed7e4cb33910bc3fbdeb2@incoming.intercom.io">email us</a>.
-      This website is <a href="https://github.com/renderedtext/semaphore-docs-new">open source</a> - we welcome your issue reports and pull requests.
-    </p>
-  </div>
+  <h2>Table of Contents</h2>
 
   <h3>Getting started</h3>
   <ul>
@@ -161,4 +169,5 @@
     <li><a href="https://semaphoreci.com/blog/2014/06/24/tdd-antipatterns-the-free-ride.html">TDD Antipatterns: The Free Ride</a></li>
     <li><a href="https://semaphoreci.com/blog/2014/09/08/semaphore-stickers-are-here.html">How to order Semaphore stickers?</a></li>
   </ul>
+
 </article>
