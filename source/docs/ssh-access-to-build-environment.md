@@ -26,9 +26,10 @@ on the Launch SSH button above your thread's output.
 
 <img src="/docs/assets/img/ssh-session/ssh-session-1.png" class="img-responsive">
 
-<img src="/docs/assets/img/ssh-session/ssh-session-2.png" class="img-responsive">
+When the popover appears click on the Launch Session button, this will enqueue
+and prepare your session.
 
-<img src="/docs/assets/img/ssh-session/ssh-session-3.png" class="img-responsive">
+<img src="/docs/assets/img/ssh-session/ssh-session-2.png" class="img-responsive">
 
 Semaphore will start a build environment identical to the one where your current
 build or deploy ran. Your project’s Git repository will be checked out at the same
@@ -36,6 +37,11 @@ revision. Semaphore will also export any
 [configuration files](https://semaphoreci.com/docs/adding-custom-configuration-files.html) and
 [environment variables](https://semaphoreci.com/docs/exporting-environment-variables.html)
 which you have configured in your project's settings.
+
+When the session is ready you will receive a command with which you can ssh
+into your build server.
+
+<img src="/docs/assets/img/ssh-session/ssh-session-3.png" class="img-responsive">
 
 ### Closing an SSH session
 
