@@ -4,15 +4,15 @@ Organizations enable businesses and teams to give different permissions to their
 
 1. Go to your **Account** in the main menu.
 
-2. Click on the **Organisations** tab.
+2. Click on the **Organizations** tab.
 
-3. Under Organisations, click on **Create new organization**.
+3. Under Organizations, click on **Create new organization**.
 
 4. Under _Organization name_, give your organization a name.
 
-5. Under _Semaphore URL_, type your organisation’s new URL.
+5. Under _Semaphore URL_, type your desired organization URL.
 
-6. Add your organisation’s _Location_, _Website_ and _Gravatar email_ (optional).
+6. Add your organization’s _Location_, _Website_ and _Gravatar email_ (optional).
 
 7. Select a payment type.
 
@@ -29,4 +29,4 @@ When you fill in the form, you will be able to:
 
 ##Further reading
 
-You can learn more about organisations on [our organizations page](/organizations), or by visiting our [help and documentation section](docs/). 
+You can learn more about organizations on [our organizations page](/organizations), or by visiting our [help and documentation section](docs/). 
