@@ -1,3 +1,9 @@
+---
+layout: post
+title: Setting up an organization
+category: Organizations
+---
+
 Organizations enable businesses and teams to give different permissions to their team members and have multiple project owners. 
 
 ##Creating a new organization
