@@ -10,5 +10,5 @@ You need to create an organization, which you will then be able to manage.
 
 ##Futher reading
 
-Read more about emaphore organizations on our Organizations page.
+Read more about Semaphore organizations on our Organizations page.
 You can learn how to set up an organization here.
