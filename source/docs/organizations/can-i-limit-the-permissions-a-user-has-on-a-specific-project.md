@@ -70,8 +70,4 @@ the desired permissions.
 
 ##Further reading
 
-[Setting up an organization]
-
-[Adding a user to an organization]
-
-[Removing a user from a team in your organization]
+[Setting up an organization](/docs/organizations/setting-up-an-organization.html)

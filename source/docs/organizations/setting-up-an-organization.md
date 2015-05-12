@@ -44,4 +44,4 @@ When you fill in the form, you will be able to:
 
 ##Further reading
 
-You can learn more about organizations on [our organizations page](/organizations), or by visiting our [help and documentation section](docs/). 
+You can learn more about organizations on [our organizations page](/docs/organizations.html).
