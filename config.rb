@@ -10,6 +10,8 @@ activate :syntax #https://github.com/middleman/middleman-syntax
 
 activate :sitemap, :hostname => "https://semaphoreci.com"
 
+activate :alias
+
 #Activate sync extension
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                = data.credentials.aws.bucket
