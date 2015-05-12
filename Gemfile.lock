@@ -68,6 +68,8 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-alias (0.0.9)
+      middleman-core (~> 3.2)
     middleman-core (3.3.6)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -156,6 +158,7 @@ PLATFORMS
 
 DEPENDENCIES
   middleman
+  middleman-alias
   middleman-s3_sync
   middleman-sitemap
   middleman-syntax

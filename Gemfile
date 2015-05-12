@@ -4,6 +4,7 @@ gem "middleman"
 
 gem "redcarpet"
 gem "middleman-syntax"
+gem "middleman-alias"
 
 gem "middleman-s3_sync"
 
