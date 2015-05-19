@@ -3,28 +3,28 @@
 
 bower:
   name: "Bower"
-  version: "1.2.8"
+  version: "1.4.1"
   hide_on_stack_table: true
 
 bundler:
   name: "Bundler"
-  version: "1.9.3"
+  version: "1.9.7"
   hide_on_stack_table: true
   url: "http://bundler.io/"
 
 cassandra:
   name: "Cassandra"
-  version: "2.1.4"
+  version: "2.1.5"
   url: "/docs/databases/cassandra.html"
 
 chrome:
   name: "Chrome"
-  version: "41.0.2272.89"
+  version: "42.0.2311.152"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.14"
+  version: "2.15"
 
 composer:
   name: "Composer"
@@ -71,11 +71,11 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.31.3"
+  version: "3.36.5"
 
 io.js:
   name: "io.js"
-  version: "1.6.4"
+  version: "1.8.1"
 
 imagemagick:
   name: "ImageMagick"
@@ -84,8 +84,8 @@ imagemagick:
 java:
   name: "Java"
   versions:
-    - "openjdk-7u75"
-    - "Oracle jdk-8u40"
+    - "openjdk-7u79"
+    - "Oracle jdk-8u45"
   url: "/docs/java.html"
 
 leiningen:
@@ -127,7 +127,7 @@ node:
 
 npm:
   name: "NPM"
-  version: "1.4.3"
+  version: "1.4.28"
   hide_on_stack_table: true
 
 nvm:
@@ -150,9 +150,9 @@ php:
   name: "PHP"
   versions:
     - "5.3.29"
-    - "5.4.39"
-    - "5.5.23"
-    - "5.6.7"
+    - "5.4.40"
+    - "5.5.24"
+    - "5.6.8"
   url: "/docs/php.html"
 
 phpbrew:
@@ -163,7 +163,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "4.5.0"
+  version: "4.6.6"
 
 postgis:
  name: "PostGIS"
@@ -172,7 +172,7 @@ postgis:
 
 postgresql:
   name: "PostgreSQL"
-  version: "9.3.7"
+  version: "9.4.1"
   url: "/docs/databases/postgresql.html"
 
 qt:
@@ -188,12 +188,12 @@ rbenv:
 
 redis:
   name: "Redis"
-  version: "3.0.0"
+  version: "3.0.1"
   url: "http://redis.io/"
 
 rethinkdb:
   name: "RethinkDB"
-  version: "1.16.3"
+  version: "2.0.1"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
@@ -218,7 +218,7 @@ ruby:
 
 rubygems:
   name: "RubyGems"
-  version: "2.4.5"
+  version: "2.4.6"
   hide_on_stack_table: true
 
 sphinx:
@@ -236,7 +236,7 @@ scala:
 
 sqlite:
   name: "SQLite"
-  version: "3.7.9"
+  version: "3.8.2"
   url: "/docs/databases/sqlite.html"
 
 wkhtmltopdf:
