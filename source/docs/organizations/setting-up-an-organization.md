@@ -10,13 +10,13 @@ Organizations enable businesses and teams to give different permissions to their
 
 1. Go to your **Account** in the main menu.
 
-  <img src="/docs/assets/img/setting-up-an-organization/account.png" class="img-responsive">
+  <img src="/docs/assets/img/setting-up-an-organization/account.png" class="img-responsive img-bordered">
 
 2. Click on the **Organizations** tab.
 
 3. Under Organizations, click on **Create new organization**.
 
-  <img src="/docs/assets/img/setting-up-an-organization/organizations-tab.png" class="img-responsive">
+  <img src="/docs/assets/img/setting-up-an-organization/organizations-tab.png" class="img-responsive img-bordered">
 
 4. Under _Organization name_, give your organization a name.
 
@@ -24,15 +24,15 @@ Organizations enable businesses and teams to give different permissions to their
 
 6. Add your organization’s _Location_, _Website_ and _Gravatar email_ (optional).
 
-  <img src="/docs/assets/img/setting-up-an-organization/organization-details.png" class="img-responsive">
+  <img src="/docs/assets/img/setting-up-an-organization/organization-details.png" class="img-responsive img-bordered">
 
 7. Select the payment type and plan.
 
-  <img src="/docs/assets/img/setting-up-an-organization/payment-and-plans.png" class="img-responsive">
+  <img src="/docs/assets/img/setting-up-an-organization/payment-and-plans.png" class="img-responsive img-bordered">
 
 8. Click **Create Organization**.
 
-  <img src="/docs/assets/img/setting-up-an-organization/create-organization.png" class="img-responsive">
+  <img src="/docs/assets/img/setting-up-an-organization/create-organization.png" class="img-responsive img-bordered">
 
 ##Next steps
 
