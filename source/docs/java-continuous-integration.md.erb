@@ -14,19 +14,10 @@ Semaphore supports the following Java versions:
 Switching between Java versions is done by adding the following command to your
 build commands:
 
-`echo 1 | sudo update-alternatives --config java`
+`change-java-version <version>`
 
-Replace the number after the echo with the desired Java version's ordinal number
-from the table below. The default is `openjdk-7`.
-
-```
-There are 2 choices for the alternative java (providing /usr/bin/java).
-Selection Path Priority Status
------------------------------------------------------------
-0 /usr/lib/jvm/java-8-oracle/jre/bin/java 1072 auto mode
-* 1 /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java 1071 manual mode
-2 /usr/lib/jvm/java-8-oracle/jre/bin/java 1072 manual mode
-```
+Valid values for `<version>` are `1.7` or `7` for OpenJDK 7 and `1.8` or `8` for Oracle
+JDK 8. The default Java version is `openjdk-7`.
 
 The Semaphore stack includes:
 
