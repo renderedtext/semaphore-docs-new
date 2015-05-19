@@ -2,6 +2,7 @@
 layout: post
 title: Adding your GitHub or Bitbucket project to Semaphore
 category: Getting started
+alias: ["docs/adding-your-github-project-to-semaphore.html", "docs/adding-your-bitbucket-project-to-semaphore.html"]
 ---
 
 Setting up continuous integration for a project hosted on GitHub or Bitbucket
