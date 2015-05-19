@@ -3595,7 +3595,7 @@ button.close, .drawer-header button.close-drawer {
 .clearfix:after {
   clear: both; }
 
-.center-block, .block-center-img img {
+.center-block, .block-center-img img, .image-center {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -4752,11 +4752,13 @@ p + .tag-list {
 .listing-series-related .listing-item {
   padding: 20px 0;
   border-bottom: 1px solid #ebebd8;
-  border-top: none; }
-  .listing-series-related .listing-item:last-child {
-    border: none; }
+  border-top: none;
+  padding-left: 70px; }
   .listing-series-related .listing-item:before {
-    top: 30px; }
+    top: 30px;
+    left: 0; }
+.listing-series-related .listing-item.active:after {
+  left: 49px; }
 
 @media (min-width: 992px) {
   .page-illustration-tutorials {
@@ -4959,6 +4961,9 @@ p + .tag-list {
     .jumbotron {
       padding: 10px; } }
 
+.jumbotron_img {
+  margin-right: 10px; }
+
 .tutorial-success {
   padding: 50px; }
 
@@ -5061,10 +5066,11 @@ p + .tag-list {
         margin-bottom: 0;
         margin-right: 10px; } }
   .block-subscribe-to-tag .likes {
-    margin: 20px auto 0 auto; }
+    margin: 20px auto 0 auto;
+    float: none !important; }
     @media (min-width: 768px) {
       .block-subscribe-to-tag .likes {
-        float: right;
+        float: right !important;
         position: relative;
         top: 3px;
         margin-top: 0; } }
@@ -5469,3 +5475,6 @@ p + .tag-list {
 
 a.link-heading {
   color: #5C5C5C; }
+
+.img-bordered {
+  border: 2px solid #f2f2e9; }
