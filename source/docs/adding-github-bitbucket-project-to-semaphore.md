@@ -12,10 +12,10 @@ If you don't already have a Semaphore account, [sign up](/users/sign_up) and
 confirm your email address. The free account gives you unlimited CI service for
 open-source projects and up to 100 private builds per month.
 
-After you sign in on Semaphore for the first time, a welcome screen will prompt
-you to add your first project. Click on the "Build a New Project" button to get
-started.  If you have already added some projects on Semaphore, use the "Add new
-project" link at the top of your dashboard.
+After you have signed in on Semaphore for the first time, a welcome screen will
+prompt you to add your first project. Click on the "Build a New Project" button
+to get started.  If you have already added some projects on Semaphore, use the
+"Add new project" link at the top of your dashboard.
 
 <img src="/docs/assets/img/adding-new-project/build-new-project.png" class="img-responsive img-bordered">
 
