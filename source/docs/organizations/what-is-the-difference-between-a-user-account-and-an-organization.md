@@ -4,19 +4,20 @@ title: What is the difference between a user account and an organization?
 category: Organizations
 ---
 
-Organizations differ from user accounts.  A **user account** allows you to
-create projects and invite collaborators.
+Organizations differ from user accounts. A user account is an
+account created and used by a single person, while an organization is a group
+that one or more users can own and manage.
 
-On the other hand, **organizations** are perfect for businesses and teams which
+A **user account** allows you to create projects and invite collaborators. On
+the other hand, **organizations** are used by businesses and teams which
 have the need to be able to allow more than one user to manage their projects,
-or who would like to be able to give different permissions to different teams
-and/or collaborators.
+or to set different permission levels for different teams and/or collaborators.
 
 ## Next steps
 
 If you are interested in creating an organization, here are the next steps
 you can take:
-- [Set up an organization](docs/organizations/setting-up-an-organization.html)
+- Set up an organization
 - Create teams with different permissions
 - Grant other users permission to manage projects
 
