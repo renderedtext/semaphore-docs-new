@@ -80,6 +80,22 @@ Before running your build or deploy, Semaphore exports the following environment
   </tbody>
 </table>
 
+Variables available only for pull requests:
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PULL_REQUEST_NUMBER</td>
+      <td>Eg. 121</td>
+    </tr>
+  </tbody>
+</table>
 
 Variables available only during deployment:
 
