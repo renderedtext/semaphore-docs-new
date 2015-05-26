@@ -43,7 +43,7 @@ projects.
 
  <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/team-permissions.png" class="img-responsive img-bordered">
 
-7. Click on click on _Create Team_.
+7. Click on _Create Team_.
 
  <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/create-team.png" class="img-responsive img-bordered">
 
