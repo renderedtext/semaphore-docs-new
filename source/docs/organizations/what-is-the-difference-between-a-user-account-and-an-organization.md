@@ -17,6 +17,7 @@ or to set different permission levels for different teams and/or collaborators.
 
 If you are interested in creating an organization, here are the next steps
 you can take:
+
 - Set up an organization
 - Create teams with different permissions
 - Grant other users permission to manage projects
