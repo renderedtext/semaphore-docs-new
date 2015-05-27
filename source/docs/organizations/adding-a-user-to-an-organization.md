@@ -5,14 +5,14 @@ category: Organizations
 ---
 
 Once you have created an organization, you can add users and grant them access
-to different projects. To add an user to an organization, you need to add them
-to an existing team, or
+to different projects, as well as give them different permissions. To add a user
+ to an organization, you need to add them to an existing team, or
 [create a new team within that organization](/docs/organizations/creating-a-team.html).
 
 ##Adding a user to a team
 
-Only users who in the _Owners_ team can add other users to different teams. In
-order to add a user to a team, you need to:
+Only users who are in the _Owners_ team can add other users to different teams.
+In order to add a user to a team, you need to:
 
 1. Go to your **Account** in the main menu.
 
@@ -37,13 +37,13 @@ or the email address in the _Invite by username or email_ field.
 
  <img src="/docs/assets/img/adding-a-user-to-an-organization/add-user-to-a-team.png" class="img-responsive img-bordered">
 
- If you invite the new user by email, they will need to accept the invitation
- before becoming a member of the organization.
+If you invite a new user who does not have an existing Semaphore account by
+email, they will need to accept the invitation before becoming a member of the
+organization.
 
 ##Next steps
 
-Once you have added a user to your organization, you will be able
-to:
+Once you have added a user to your organization, you will be able to:
 
 - [Limit their permissions on a specific project](/docs/organizations/can-i-limit-the-permissions-a-user-has-on-a-specific-project.html)
 - [Grant them the permission to manage projects](/docs/organizations/granting-users-permission-to-manage-projects-within-an-organization.html)
