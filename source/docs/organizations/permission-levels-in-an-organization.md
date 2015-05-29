@@ -51,7 +51,7 @@ The Owners team is able to:
 - Change settings
 - Add branches
 - Manually trigger builds and deploys
-- Add and remove projects
+- Add and remove projects from the organization account
 - Manage teams
 - Manage billing
 - Edit the organization profile
