@@ -17,7 +17,7 @@ There are four types of access permissions available in an organization:
 3. Admin
 4. Owner
 
-### 1.Access
+### 1. Access
 
 The teams with the _Access_ permission level can:
 
