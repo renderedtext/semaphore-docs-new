@@ -37,6 +37,6 @@ _Manage Organization_.
 ##Further reading
 
 - [Learn more about organizations](/docs/organizations.html)
-- [Removing a user from a team in your organization](/docs/organizations/removing-a-user-from-a-team-in-your-organization)
+- [Removing a user from a team in your organization](/docs/organizations/removing-a-user-from-a-team-in-your-organization.html)
 - [Adding a user to an organization](/docs/organizations/adding-a-user-to-an-organization.html)
 - [Limiting the permissions a user has on a project](/docs/organizations/can-i-limit-the-permissions-a-user-has-on-a-specific-project.html)
