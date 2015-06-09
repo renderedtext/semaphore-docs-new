@@ -2,3 +2,4 @@
 - [Failed build reported as passed](/docs/failed-build-reported-as-passed.html)
 - [Tests fail on Semaphore but pass locally](/docs/tests-fail-on-semaphore-but-pass-locally.html)
 - [Pushing to Bitbucket doesn't always trigger a build](/docs/pushing-to-bitbucket-doesnt-always-trigger-a-build.html)
+- [Building a new Bitbucket branch causes authentication error](/docs/building-new-bitbucket-branch-causes-authentication-error.html)
