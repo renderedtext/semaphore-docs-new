@@ -1,15 +1,17 @@
 ---
 layout: post
-title: My project depends on X and you don’t seem to have it
+title: How to install a dependency?
 category: Managing dependencies
 ---
 
-Important packages that are available in the platform are listed in the [Supported application stack](/docs/supported-stack.html) article.
+Semaphore platform has most of the popular programming languages and databases preinstalled. To learn more about installed dependencies check our [Supported stack](/docs/supported-stack.html) article.
 
-Additional dependencies can be added by simply adding an installation command to your build settings:
+If dependency you need is not already installed you can install it with Ubuntu package manager or with alternative method such as compiling it from source or manually downloading binaries.
+
+To install dependecies with package manager (`apt-get`) you can use template command below and add it to your [build settings](/docs/customizing-build-commands.html):
 
 ```bash
-sudo apt-get install -y libawesome-dev
+sudo apt-get install -y your-dependency
 ```
 
 At the start of your build settings you should have the following:
