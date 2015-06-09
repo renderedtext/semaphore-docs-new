@@ -4,14 +4,19 @@ title: Changing a system configuration file
 category: Customizing your build
 ---
 
-If it’s short, this will do:
+Semaphore allows you to change all system configuration settings as a super
+user. This means that you can use standard bash commands for updating the
+content of all files from your build commands.
+
+For example, the following command allows you to update your `/etc/hosts` file:
 
 ```bash
 sudo sh -c "echo 'yourchange' >> /etc/hosts"
 ```
 
-If it’s longer, we recommend saving your content in a private gist and then downloading via raw URL:
+As an alternative, you can [create a custom configuration file](/docs/adding-custom-configuration-files.html)
+from the Semaphore interface and then copy or move it to the desired location:
 
 ```bash
-sudo sh -c "curl https://raw.github.com/gist/raw_url >> /etc/hosts"
+sudo mv /home/runner/my_custom_hosts /etc/hosts
 ```
