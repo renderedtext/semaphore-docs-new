@@ -16,26 +16,26 @@ In order to add a user to a team, you need to:
 
 1. Go to your **Account** in the main menu.
 
-  <img src="/docs/assets/img/setting-up-an-organization/account.png" class="img-responsive img-bordered">
+  <img src="/docs/assets/img/setting-up-an-organization/account.png" alt="Semaphore account" class="img-responsive img-bordered">
 
 2. Click on the **Organizations** tab and select the organization you would like
 to manage.
 
- <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/select-organization.png" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/select-organization.png" alt="Select organization" class="img-responsive img-bordered">
 
 3. On the left side of your organization page, under _Manage Organization_,
 click on **Teams**.
 
- <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/teams.png" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/teams.png" alt="Select teams" class="img-responsive img-bordered">
 
 4. Click on the team name.
 
- <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/team-name.png" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/team-name.png" alt="Team name" class="img-responsive img-bordered">
 
 5. Add the user to the team by searching for them by their username
 or the email address in the _Invite by username or email_ field.
 
- <img src="/docs/assets/img/adding-a-user-to-an-organization/add-user-to-a-team.png" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/adding-a-user-to-an-organization/add-user-to-a-team.png" alt="Add user" class="img-responsive img-bordered">
 
 If you invite a new user who does not have an existing Semaphore account by
 email, they will need to accept the invitation before becoming a member of the

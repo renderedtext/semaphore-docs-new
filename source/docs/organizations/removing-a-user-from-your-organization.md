@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Removing a user from a team in your organization
+title: Removing a user from your organization
 category: Organizations
 ---
 
@@ -14,25 +14,25 @@ organization. In order to remove a user from your organization, you need to:
 
 1. Go to your **Account** in the main menu.
 
-  <img src="/docs/assets/img/setting-up-an-organization/account.png" class="img-responsive img-bordered">
+  <img src="/docs/assets/img/setting-up-an-organization/account.png" alt="Semaphore account" class="img-responsive img-bordered">
 
 2. Click on the **Organizations** tab and select the organization you would like
 to manage.
 
- <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/select-organization.png" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/select-organization.png" alt="Organizations tab" class="img-responsive img-bordered">
 
 3. On the left side of your organization page, click on **Members** under
 _Manage Organization_.
 
- <img src="/docs/assets/img/removing-a-user-from-your-organization/members.png" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/removing-a-user-from-your-organization/members.png" alt="Organization members" class="img-responsive img-bordered">
 
 4. Select the member you would like to remove from all teams.
 
- <img src="/docs/assets/img/removing-a-user-from-your-organization/select-member.png" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/removing-a-user-from-your-organization/select-member.png" alt="Select member" class="img-responsive img-bordered">
 
 5. Remove the user from the organization by clicking on **Remove Selected**.
 
- <img src="/docs/assets/img/removing-a-user-from-your-organization/remove-selected-member.png" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/removing-a-user-from-your-organization/remove-selected-member.png" alt="Remove selected member" class="img-responsive img-bordered">
 
 ##Further reading
 
