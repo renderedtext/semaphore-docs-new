@@ -27,5 +27,5 @@ If you have something similar in the making, please tell us via email or at [@se
 - [Semaphoreci](https://github.com/mytrile/semaphoreci) by [Dimitar Kostov](https://github.com/mytrile)
 
 ### Node.js
-- [Semaphore status](https://github.com/mojotech/semaphorestatus) by [Sam Saccone](https://github.com/samccone)
-
+- [semaphore-api](https://github.com/gottfrois/semaphore-api) by [Pierre-Louis Gottfrois](https://github.com/gottfrois) - Hubot-compatible Semaphore API wrapper for Node.js.
+- [Semaphore status](https://github.com/mojotech/semaphorestatus) by [Sam Saccone](https://github.com/samccone) - Check Semaphore from the CLI.
