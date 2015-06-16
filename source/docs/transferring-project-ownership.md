@@ -4,6 +4,12 @@ title: Transferring project ownership
 category: Billing
 ---
 
-We used to do project transfers on request, but after some conversations with GitHub decided not to any more, primarily for security reasons.
+Semaphore doesn't support transferring projects between user accounts for
+security reasons.
 
-The person and account who will be paying for the projects will need to (re)add them on Semaphore.
+Semaphore does support [organization
+accounts](/docs/organizations/what-is-the-difference-between-a-user-account-and-an-organization.html)
+that enable sharing project ownership with with a group of users and advanced
+project access management. An organization can have multiple owners and project
+administrators. Ownership of an organization can be [transferred between
+users](/docs/organizations/transferring-organization-ownership.html).
