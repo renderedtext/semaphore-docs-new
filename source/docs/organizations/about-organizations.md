@@ -9,6 +9,7 @@ require multiple project owners and different permission levels for
 collaborators on their projects.
 
 Organizations include:
+
 - [Shared project and billing management](/docs/organizations/granting-users-permission-to-manage-projects-within-an-organization.html)
 - [Different permission levels](/docs/organizations/permission-levels-in-an-organization.html)
 - [Teams with access to different projects](/docs/organizations/creating-a-team.html)
