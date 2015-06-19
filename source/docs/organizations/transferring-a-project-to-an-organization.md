@@ -8,8 +8,7 @@ Any project in your user account can be transferred to an organization.
 Organizations allow teams to have multiple project owners and different
 permission levels for collaborators on different projects.
 
-Only Owners and members of teams with [Admin
-access](/docs/organizations/permission-levels-in-an-organization.html) can add
+Only Owners and members of teams with [Admin access](/docs/organizations/permission-levels-in-an-organization.html) can add
 projects to an organization.
 
 ##How to transfer a project to an organization
@@ -33,7 +32,9 @@ and click on **Transfer**.
 
 Your project has now been successfully transferred to your organization. You
 can access it and manage its settings under _Projects_ on your organization's
-page.
+page. Note that once you have transferred a project to an organization, you
+cannot transfer it back to your user account, you can only remove it from the
+organization and re-add it to your user account.
 
 ##Next steps
 
