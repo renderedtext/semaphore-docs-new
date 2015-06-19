@@ -14,7 +14,7 @@ For all SSH keys you add Semaphore will automatically:
 
 1. Create a file with the name you choose.
 2. Run `chmod 600 ~/.ssh/ssh_key_name` to make the key usable by OpenSSH.
-3. Run `ssh-agent add ~/.ssh/ssh_key_name`.
+3. Run `ssh-add ~/.ssh/ssh_key_name`.
 
 Here's how you can do that. Open your project settings, "Configuration Files" tab. Click to add a new file.
 
