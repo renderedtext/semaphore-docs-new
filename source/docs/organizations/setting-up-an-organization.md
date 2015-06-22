@@ -38,7 +38,7 @@ Organizations enable businesses and teams to give different permissions to their
 
 When you fill in the form, you will be able to:
 
-- Add a new or transfer an existing project to the organization
+- [Add a new project](/docs/adding-github-bitbucket-project-to-semaphore.html) or [transfer an existing project to the organization](/docs/organizations/transferring-a-project-to-an-organization.html)
 - [Create teams with different permissions](/docs/organizations/creating-a-team.html)
 - [Grant other users permission to manage projects](/docs/organizations/granting-users-permission-to-manage-projects-within-an-organization.html)
 
