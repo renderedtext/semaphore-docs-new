@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1506 - 2015-06-23 (planned)
+### v1506 - 2015-06-23
 ```
 - upgrades
   - bundler 1.9.7 -> 1.9.9

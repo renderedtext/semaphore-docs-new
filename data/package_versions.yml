@@ -8,18 +8,18 @@ bower:
 
 bundler:
   name: "Bundler"
-  version: "1.9.7"
+  version: "1.9.9"
   hide_on_stack_table: true
   url: "http://bundler.io/"
 
 cassandra:
   name: "Cassandra"
-  version: "2.1.5"
+  version: "2.1.6"
   url: "/docs/databases/cassandra.html"
 
 chrome:
   name: "Chrome"
-  version: "42.0.2311.152"
+  version: "43.0.2357.130"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
@@ -71,11 +71,11 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.36.5"
+  version: "3.38.1"
 
 io.js:
   name: "io.js"
-  version: "1.8.1"
+  version: "1.8.2"
 
 imagemagick:
   name: "ImageMagick"
@@ -108,12 +108,12 @@ memcached:
 
 mongodb:
   name: "MongoDB"
-  version: "2.6.9"
+  version: "2.6.10"
   url: "/docs/databases/mongodb.html"
 
 mysql:
   name: "MySQL"
-  version: "5.6.24"
+  version: "5.6.25"
   url: "/docs/databases/mysql.html"
 
 node:
@@ -122,7 +122,7 @@ node:
     - "0.8.28"
     - "0.10.38"
     - "0.11.16"
-    - "0.12.2"
+    - "0.12.4"
   url: "/docs/javascript.html"
 
 npm:
@@ -150,9 +150,9 @@ php:
   name: "PHP"
   versions:
     - "5.3.29"
-    - "5.4.40"
-    - "5.5.24"
-    - "5.6.8"
+    - "5.4.42"
+    - "5.5.26"
+    - "5.6.10"
   url: "/docs/php.html"
 
 phpbrew:
@@ -163,7 +163,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "4.6.6"
+  version: "4.7.3"
 
 postgis:
  name: "PostGIS"
@@ -188,12 +188,12 @@ rbenv:
 
 redis:
   name: "Redis"
-  version: "3.0.1"
+  version: "3.0.2"
   url: "http://redis.io/"
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.0.1"
+  version: "2.0.3"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
@@ -218,7 +218,7 @@ ruby:
 
 rubygems:
   name: "RubyGems"
-  version: "2.4.6"
+  version: "2.4.8"
   hide_on_stack_table: true
 
 sphinx:
