@@ -86,5 +86,5 @@ If your application requires some additional deploy commands (such as running
 page or in project settings under "Deployment" tab.
 
 **Note:** Heroku toolbelt doesn't propagate [exit status
-code](/docs/failed-heroku-db-migration-reported-as-passed.html), which leads to
+code](/docs/failed-heroku-db-migration-reported-as-passed.html) by default, which leads to
 reporting a deploy with a failed Heroku toolbelt command as passed.
