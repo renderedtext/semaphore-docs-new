@@ -3870,7 +3870,7 @@ a.bug-series:hover {
   position: relative; }
   @media (min-width: 992px) {
     .intro-content {
-      width: 50%;
+      width: 40%;
       box-sizing: border-box;
       position: absolute;
       top: 50%;
@@ -5052,9 +5052,16 @@ p + .tag-list {
 
 .block-subscribe-to-tag {
   text-align: center; }
+  .block-subscribe-to-tag .form-control {
+    margin-bottom: 20px; }
   @media (min-width: 768px) {
     .block-subscribe-to-tag {
-      text-align: left; } }
+      text-align: left; }
+      .block-subscribe-to-tag form {
+        display: inline-block;
+        vertical-align: middle; }
+      .block-subscribe-to-tag .form-control {
+        margin-bottom: 0px; } }
   .block-subscribe-to-tag img {
     width: 40px;
     height: 40px;
@@ -5074,6 +5081,11 @@ p + .tag-list {
         position: relative;
         top: 3px;
         margin-top: 0; } }
+
+.block-subscribe-to-tag_helper {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 !important; }
 
 .media-twitter iframe {
   position: relative;
@@ -5455,6 +5467,9 @@ p + .tag-list {
 .form-control-border {
   border: 2px solid #ceceb8;
   height: 66px; }
+
+.form-control-border--sm {
+  height: 36px; }
 
 .page-blog-listing .single-item {
   border-top: 1px solid #ceceb8;
