@@ -6,13 +6,10 @@ category: Build troubleshooting
 
 For Semaphore, a command has failed if its exit status code is != 0 (zero means success).
 
-Heroku toolbelt command `heroku run` doesn't propagate exit status code:
+Using the Heroku toolbelt, the `heroku run --exit-code -- COMMAND` command will propagate the exit code of `COMMAND` up to Semaphore. For example, the following command will correctly report the exit code of a database migration in Rails.
 
-- [https://github.com/heroku/heroku/issues/186](https://github.com/heroku/heroku/issues/186)
-- [https://github.com/heroku/heroku/issues/953](https://github.com/heroku/heroku/issues/953)
+```
+heroku run --exit-code -- bundle exec rake db:migrate
+```
 
-This leads to reporting a deploy to Heroku with a failed migration as passed.
-
-A possible solution is the Heroku toolbelt plugin:
-
-- [https://github.com/glenngillen/heroku-exit-status](https://github.com/glenngillen/heroku-exit-status)
+See the `heroku help run` command for more details.
