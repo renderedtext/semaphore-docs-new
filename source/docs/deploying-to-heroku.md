@@ -82,9 +82,23 @@ By now the setup is complete - you are ready to automatically deploy to Heroku.
 ## Additional commands
 
 If your application requires some additional deploy commands (such as running
-    migrations after deploy) you can edit the default commands on the summary
+migrations after deploy) you can edit the default commands on the summary
 page or in project settings under "Deployment" tab.
 
-**Note:** Heroku toolbelt doesn't propagate [exit status
-code](/docs/failed-heroku-db-migration-reported-as-passed.html), which leads to
-reporting a deploy with a failed Heroku toolbelt command as passed.
+## Propagating exit status codes
+
+Heroku toolbelt doesn't propagate exit status codes by default. This may result
+in a failed deploy to be reported as passed. A common example is the failure of
+a `db:migrate` task. This is because for Semaphore a command has failed if its
+exit status code is != 0 (zero means success).
+
+To make a Heroku command propagate the exit code up to Semaphore, use the
+`--exit-code` option: `heroku run --exit-code -- COMMAND`.
+For example, the following command will correctly report the exit code of a
+database migration in Rails.
+
+```
+heroku run --exit-code -- bundle exec rake db:migrate
+```
+
+See the `heroku help run` command for more details.
