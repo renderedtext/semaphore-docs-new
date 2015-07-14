@@ -6,6 +6,27 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1507 - 2015-07-21 (planned)
+```
+- upgrades
+  - bundler 1.9.9 -> 1.10.5
+  - cassandra 2.1.6 -> 2.1.8
+  - elixir 1.0.4 -> 1.0.5
+  - erlang 17.5 -> 18.0
+  - git 2.4.3 -> 2.4.5
+  - go 1.4 -> 1.4.2
+  - io.js 1.8.2 -> 1.8.4
+  - jruby 1.7.20.1 -> 1.7.21
+  - maven 3.0.2 -> 3.3.3
+  - node.js 0.12.4 -> 0.12.7
+  - node.js 0.10.38 -> 0.10.40
+  - php 5.4.42 -> 5.4.43
+  - php 5.5.26 -> 5.5.27
+  - php 5.6.10 -> 5.6.11
+  - rethinkdb 2.0.3 -> 2.0.4
+  - scala 2.11.6 -> 2.11.7
+```
+
 ### v1506 - 2015-06-23
 ```
 - upgrades
