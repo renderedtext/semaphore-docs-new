@@ -24,7 +24,7 @@ CodeClimate::TestReporter.start
 - Set your CODECLIMATE\_REPO\_TOKEN environment variable. In Semaphore, this is done using the form located at **Project Settings > Integrations > Code Climate**. To find your repo token on Code Climate, click on **Set Up Test Coverage** on the right-hand side of your repository's feed. You will then see a code block similar to:
 
 <pre>
-$ CODECLIMATE_REPO_TOKEN=<span style="color: #dd1144">0e9f8b1974bf87a6fdbc25747fafe7adfeffc372575483f37c68056c841ba2d2</span> bundle exec rake
+$ CODECLIMATE_REPO_TOKEN=<b>0e9f8b1974bf87a6fdbc25747fafe7adfeffc372575483f37c68056c841ba2d2</b> bundle exec rake
 </pre>
 
-**Note:** Only copy the highlighted portion of the above code block.
+**Note:** Only copy the bold portion of the above code block.
