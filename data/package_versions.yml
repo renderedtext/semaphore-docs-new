@@ -8,13 +8,13 @@ bower:
 
 bundler:
   name: "Bundler"
-  version: "1.9.9"
+  version: "1.10.5"
   hide_on_stack_table: true
   url: "http://bundler.io/"
 
 cassandra:
   name: "Cassandra"
-  version: "2.1.6"
+  version: "2.1.8"
   url: "/docs/databases/cassandra.html"
 
 chrome:
@@ -37,12 +37,12 @@ elasticsearch:
 
 elixir:
   name: "Elixir"
-  version: "1.0.4"
+  version: "1.0.5"
   url: "/docs/elixir.html"
 
 erlang:
   name: "Erlang"
-  version: "17.5"
+  version: "18.0"
   url: "/docs/erlang.html"
 
 firefox:
@@ -54,9 +54,13 @@ gcc:
   name: "gcc"
   version: "4.8.2"
 
+git:
+  name: "Git"
+  version: "2.4.5"
+
 go:
   name: "Go"
-  version: "1.4"
+  version: "1.4.2"
   url: "/docs/go.html"
 
 gradle:
@@ -71,11 +75,11 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.38.1"
+  version: "3.39.5"
 
 io.js:
   name: "io.js"
-  version: "1.8.2"
+  version: "1.8.4"
 
 imagemagick:
   name: "ImageMagick"
@@ -99,7 +103,7 @@ linux:
 
 maven:
   name: "Apache Maven"
-  version: "3.0.5"
+  version: "3.3.3"
 
 memcached:
   name: "Memcached"
@@ -120,9 +124,9 @@ node:
   name: "Node.js"
   versions:
     - "0.8.28"
-    - "0.10.38"
+    - "0.10.40"
     - "0.11.16"
-    - "0.12.4"
+    - "0.12.7"
   url: "/docs/javascript.html"
 
 npm:
@@ -150,9 +154,9 @@ php:
   name: "PHP"
   versions:
     - "5.3.29"
-    - "5.4.42"
-    - "5.5.26"
-    - "5.6.10"
+    - "5.4.43"
+    - "5.5.27"
+    - "5.6.11"
   url: "/docs/php.html"
 
 phpbrew:
@@ -163,7 +167,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "4.7.3"
+  version: "4.7.7"
 
 postgis:
  name: "PostGIS"
@@ -193,7 +197,7 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.0.3"
+  version: "2.0.4"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
@@ -213,7 +217,7 @@ ruby:
     - "1.9.3-p551"
     - "1.9.2-p330"
     - "ree-1.8.7-2012.02"
-    - "JRuby 1.7.19"
+    - "JRuby 1.7.21"
   url: "/docs/ruby.html"
 
 rubygems:
@@ -231,7 +235,7 @@ sbt:
 
 scala:
   name: "Scala"
-  version: "2.11.6"
+  version: "2.11.7"
   url: "/docs/scala.html"
 
 sqlite:
