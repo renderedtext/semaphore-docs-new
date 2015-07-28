@@ -1,0 +1,47 @@
+---
+layout: post
+title: Python Continuous Integration
+alias: docs/python.html
+category: Languages
+---
+
+Semaphore makes it easy to setup continuous integration for Python projects.
+When you add a project from a Python repository, Semaphore will run a brief
+analysis and suggest some common commands based on the structure of your repository.
+
+For example, after the analysis determines that the project is written in Python
+and it has a `requirements.txt` file, the following commands will be suggested:
+
+```bash
+pip install -r requirements.txt
+python setup.py test
+```
+
+You can easily [change or add more build commands](/docs/customizing-build-commands.html),
+customize your build environment with [custom configuration files](/docs/adding-custom-configuration-files.html),
+[environment variables](/docs/exporting-environment-variables.html) and more
+(see the [Customizing your build](/docs/customizing-your-build.html) section for more
+information).
+
+## CI environment for Python projects
+
+The [Semaphore platform](/docs/supported-stack.html) supports a wide range of
+Python versions:
+
+<% package_versions("python").each do |version| %>
+  - <%= version %>
+<% end %>
+
+Python environments are managed with `virtualenv`. Selecting a Python version in
+`Project Settings` activates the corresponding Python environment in your build.
+Virtual environments are created in the following path:
+`/home/runner/.pyenv/<version>`.
+
+Pre-installed packages include [pip](https://pip.pypa.io/en/stable/), [mock](https://pypi.python.org/pypi/mock),
+[pytest](http://pytest.org/latest/), [virtualenv](https://virtualenv.pypa.io/en/latest/),
+and [nose](https://nose.readthedocs.org/en/latest/).
+
+## Dependency management
+
+Python packages installed with `pip` are [cached between builds](/docs/caching-between-builds.html)
+on Semaphore. By default, `pip` packages are downloaded to `/home/runner/.pip_download_cache`.
