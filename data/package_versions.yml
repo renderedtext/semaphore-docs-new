@@ -171,6 +171,10 @@ phpunit:
   url: "http://phpunit.de/"
   version: "4.7.7"
 
+pip:
+  name: "pip"
+  version: "7.1.0"
+
 postgis:
   name: "PostGIS"
   version: "2.1.5"
@@ -189,6 +193,8 @@ python:
   - "3.2"
   - "3.3"
   - "3.4"
+  - "pypy 2.4.0"
+  - "pypy3 2.6.0"
 
 qt:
   name: "Qt"
