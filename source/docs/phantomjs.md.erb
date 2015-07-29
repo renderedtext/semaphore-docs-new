@@ -1,0 +1,19 @@
+---
+layout: post
+title: PhantomJS
+category: Docs
+---
+
+Semaphore supports the following versions of PhantomJS:
+
+<% package_versions("phantomjs").each do |version| %>
+  - <%= version %>
+<% end %>
+
+Switching between PhantomJS versions is done by adding the following command
+to your build commands:
+
+`change-phantomjs-version <version>`
+
+Valid values for `<version>` are `1.9.8` and `2.0.0`. The default PhantomJS
+version is `1.9.8`.

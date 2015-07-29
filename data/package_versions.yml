@@ -8,7 +8,7 @@ bower:
 
 bundler:
   name: "Bundler"
-  version: "1.10.5"
+  version: "1.10.6"
   hide_on_stack_table: true
   url: "http://bundler.io/"
 
@@ -148,7 +148,10 @@ pecl:
 
 phantomjs:
   name: "PhantomJS"
-  version: "1.9.8"
+  versions:
+    - "1.9.8"
+    - "2.0.0"
+  url: "/docs/phantomjs.html"
 
 php:
   name: "PHP"
@@ -169,15 +172,30 @@ phpunit:
   url: "http://phpunit.de/"
   version: "4.7.7"
 
+pip:
+  name: "pip"
+  version: "7.1.0"
+
 postgis:
- name: "PostGIS"
- version: "2.1.5"
- url: "/docs/databases/postgis.html"
+  name: "PostGIS"
+  version: "2.1.5"
+  url: "/docs/databases/postgis.html"
 
 postgresql:
   name: "PostgreSQL"
   version: "9.4.1"
   url: "/docs/databases/postgresql.html"
+
+python:
+  name: "Python"
+  versions:
+  - "2.6"
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+  - "pypy 2.4.0"
+  - "pypy3 2.6.0"
 
 qt:
   name: "Qt"
@@ -218,6 +236,7 @@ ruby:
     - "1.9.2-p330"
     - "ree-1.8.7-2012.02"
     - "JRuby 1.7.21"
+    - "JRuby 9.0.0.0"
   url: "/docs/ruby.html"
 
 rubygems:
