@@ -7,6 +7,7 @@ category: The Semaphore platform
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
 ### v1507.1 - 2015-07-29
+```
 - additions
   - phantomjs 2.0.0
   - python 2.6
@@ -17,6 +18,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - jruby 9.0.0.0
 - upgrades
   - bundler 1.10.5 -> 1.10.6
+```
 
 ### v1507 - 2015-07-21
 ```
