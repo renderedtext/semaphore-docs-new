@@ -12,7 +12,7 @@ Semaphore.
 To get started, find your desired project and follow "Set Up Deployment" link
 under branches list.
 
-<img src="/docs/assets/img/deploying-to-heroku/set-up-deployment.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-to-heroku/set-up-deployment.png" alt="Set Up Deployment" class="img-responsive img-bordered">
 
 This will launch a simple 5-step process.
 
@@ -20,11 +20,11 @@ This will launch a simple 5-step process.
 
 The first step is to select Heroku as your deployment method.
 
-<img src="/docs/assets/img/deployment-method.png" class="img-responsive">
+<img src="/docs/assets/img/deployment-method.png" alt="Deployment Method" class="img-responsive img-bordered">
 
 ## Choosing your deployment strategy
 
-<img src="/docs/assets/img/deploying-to-heroku/deployment-strategy.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-to-heroku/deployment-strategy.png" alt="Deployment Strategy" class="img-responsive img-bordered">
 
 There are two deployment strategies on Semaphore: "automatic" and "manual".
 
@@ -40,20 +40,20 @@ automatically deployed after each passed build.
 **Note**: You can easily change the deployment strategy from server settings at
 any time after the setup is complete.
 
-## Providing Heroku API token
+## Providing a Heroku API key
 
-<img src="/docs/assets/img/deploying-to-heroku/heroku-api-key.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-to-heroku/heroku-api-key.png" alt="Heroku API key" class="img-responsive img-bordered">
 
-At this point you need to paste your Heroku API token. You can find it under
+At this point you need to paste your Heroku API key. You can find it under
 [account information](https://dashboard.heroku.com/account) on the Heroku
 dashboard.
 
-By providing your Heroku API token, you authorize Semaphore to configure and set
+By providing your Heroku API key, you authorize Semaphore to configure and set
 SSH keys that are needed for deployment.
 
 ## Choosing the target Heroku application
 
-<img src="/docs/assets/img/deploying-to-heroku/select-heroku-application.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-to-heroku/select-heroku-application.png" alt="Select Heroku application" class="img-responsive img-bordered">
 
 After you select your application from the list, Semaphore will generate and set
 new pair of SSH keys for you:
@@ -68,16 +68,18 @@ you to run any Heroku command during deployment.
 
 ## Naming your server on Semaphore
 
-<img src="/docs/assets/img/deploying-to-heroku/server-name.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-to-heroku/server-name.png" alt="Server Name" class="img-responsive img-bordered">
 
 In this step you need to provide a name for your server, which can be any name
 you like. It will be used on your Semaphore dashboard and deployment timeline.
+During this step, you may also choose to set a server URL for quick access to
+wherever you are deploying your application.
 
 Each server has its own _alias_ which represents server's name in a safe string
 form. The alias is also available in the deploy environment via
 `SEMAPHORE_SERVER_NAME` environment variable.
 
-By now the setup is complete - you are ready to automatically deploy to Heroku.
+By now the setup is complete - you are ready to deploy to Heroku.
 
 ## Additional commands
 

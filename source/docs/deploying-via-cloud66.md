@@ -14,16 +14,18 @@ Rails stacks with Cloud 66](https://www.cloud66.com/help/first_stack).
 To get started, find your desired project and follow "Set Up Deployment" link
 under list of the branches.
 
-<img src="/docs/assets/img/cloud66-integration/set-up-deployment.png" class="img-responsive">
+<img src="/docs/assets/img/cloud66-integration/set-up-deployment.png" alt="Set Up Deployment" class="img-responsive img-bordered">
 
 Select Cloud 66 from the list of Deployment Methods and choose Automatic.
 
-<img src="/docs/assets/img/deployment-method.png" class="img-responsive">
+<img src="/docs/assets/img/deployment-method.png" alt="Deployment Method" class="img-responsive img-bordered">
+
+<img src="/docs/assets/img/cloud66-integration/deployment-strategy.png" alt="Deployment Strategy" class="img-responsive img-bordered">
 
 You will be redirected to your Cloud 66 account and asked if you give Semaphore
 permission to deploy your stacks on your behalf.
 
-<img src="/docs/assets/img/cloud66-integration/oauth_access_rights.png" class="img-responsive">
+<img src="/docs/assets/img/cloud66-integration/oauth_access_rights.png" alt="OAuth Access Rights" class="img-responsive img-bordered">
 
 Select the project you would like to deploy once the tests are successful.
 
