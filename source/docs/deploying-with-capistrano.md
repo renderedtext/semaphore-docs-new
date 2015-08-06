@@ -11,7 +11,7 @@ Capistrano scripts to set up automatic deployment.
 To get started, go to your project's settings and under "Deployment" tab follow
 the link to add a new server.
 
-<img src="/docs/assets/img/deploying-with-capistrano/set-up-deployment.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-capistrano/set-up-deployment.png" alt="Set Up Deployment" class="img-responsive img-bordered">
 
 This will launch a simple 5 step process.
 
@@ -19,12 +19,12 @@ This will launch a simple 5 step process.
 
 The first step is to select Capistrano as your deployment method.
 
-<img src="/docs/assets/img/deployment-method.png" class="img-responsive">
+<img src="/docs/assets/img/deployment-method.png" alt="Deployment Method" class="img-responsive img-bordered">
 
 
 ## Choosing your deployment strategy
 
-<img src="/docs/assets/img/deploying-with-capistrano/deployment-strategy.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-capistrano/deployment-strategy.png" alt="Deployment Strategy" class="img-responsive img-bordered">
 
 There are two deployment strategies on Semaphore: "automatic" and "manual".
 
@@ -42,7 +42,7 @@ any time after the setup is complete.
 
 ## Writing deploy commands
 
-<img src="/docs/assets/img/deploying-with-capistrano/deploy-commands.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-capistrano/deploy-commands.png" alt="Deploy Commands" class="img-responsive img-bordered">
 
 Writing custom deploy commands gives you an ability to use the deploy steps that
 match your server setup. During a deploy, Semaphore sets `REVISION` environment
@@ -53,7 +53,7 @@ variable which contains the current Git revision being deployed.
 At this point you need to provide a private SSH key which Semaphore will use to
 deploy your code.
 
-<img src="/docs/assets/img/deploying-with-capistrano/add-ssh-key.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-capistrano/add-ssh-key.png" alt="Add SSH key" class="img-responsive img-bordered">
 
 We recommend that you create separate SSH keys specifically for Semaphore
 deployment.
@@ -78,14 +78,16 @@ GitHub repository as well.
 
 ## Naming your server on Semaphore
 
-<img src="/docs/assets/img/deploying-with-capistrano/server-name.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-capistrano/server-name.png" alt="Server Name" class="img-responsive img-bordered">
 
-Here you just give your server a name, which can be anything you like. It will
-be used on your Semaphore dashboard and deployment timeline.
+In this step you need to provide a name for your server, which can be any name
+you like. It will be used on your Semaphore dashboard and deployment timeline.
+During this step, you may also choose to set a server URL for quick access to
+wherever you are deploying your application.
 
 Each server has its own _alias_ which represents server's name in a safe string
 form. The alias is also available in the deploy environment via
 `SEMAPHORE_SERVER_NAME` environment variable.
 
 By now the setup is complete - you are ready to automatically deploy to your
-server(s).
+server.

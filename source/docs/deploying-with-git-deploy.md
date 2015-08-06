@@ -25,11 +25,11 @@ The private SSH key will be added to Semaphore later.
 To get started, find your desired project and follow "Set Up Deployment" link
 under list of the branches.
 
-<img src="/docs/assets/img/deploying-with-git-deploy/set-up-deployment.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-git-deploy/set-up-deployment.png" alt="Set Up Deployment" class="img-responsive img-bordered">
 
 When asked about the deployment method, choose the "Generic" option.
 
-<img src="/docs/assets/img/deployment-method.png" class="img-responsive">
+<img src="/docs/assets/img/deployment-method.png" alt="Deployment Method" class="img-responsive img-bordered">
 
 After that, select either Automatic or Manual deployment strategy. See
 [understanding automatic and manual deployment on
@@ -56,7 +56,7 @@ git remote add production "user@yourserver.com:/apps/myapp/current" || true
 git push --force production $BRANCH_NAME:master
 ```
 
-<img src="/docs/assets/img/deploying-with-git-deploy/git-deploy-commands.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-git-deploy/git-deploy-commands.png" alt="git Deploy Commands" class="img-responsive img-bordered">
 
 Some users have reported that running `git remote rm production || true` before
 `git remote add ...` helps solve problems that might occur if you change the
@@ -68,17 +68,19 @@ and deploys](/docs/caching-between-builds.html).
 On the next screen, simply paste the private SSH key that you generated earlier
 in Step 1.
 
-<img src="/docs/assets/img/deploying-with-git-deploy/ssh-private-key.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-git-deploy/ssh-private-key.png" alt="SSH Private Key" class="img-responsive img-bordered">
 
 ### Step 5: Name your server
 
-This can be anything you want which described your deploy target the best.
-Typical examples are "production" and "domain.io".
+In this step you need to provide a name for your server, which can be any name
+you like. It will be used on your Semaphore dashboard and deployment timeline.
+During this step, you may also choose to set a server URL for quick access to
+wherever you are deploying your application.
 
-<img src="/docs/assets/img/deploying-with-git-deploy/server-name.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-git-deploy/server-name.png" alt="Server Name" class="img-responsive img-bordered">
 
 The final screen will show you an overview of what you've configured.
 
-<img src="/docs/assets/img/deploying-with-git-deploy/server-overview.png" class="img-responsive">
+<img src="/docs/assets/img/deploying-with-git-deploy/server-overview.png" alt="Server Overview" class="img-responsive img-bordered">
 
 You are now ready to finish up the process and start deploying.
