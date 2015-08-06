@@ -53,7 +53,16 @@ category will be automatically generated and displayed.
 
 ### Embedding images
 
-    <img src="/docs/assets/img/2012-06-14/semaphore-homepage.png" class="img-responsive" />
+All images must be in the PNG file format, and processed using
+[ImageOptim](https://imageoptim.com/). If you do not have access to an OS X
+machine, please notify us in the pull request, and we'll make sure to run them
+through ImageOptim.
+
+Give all images appropriate alt text, as well as the following CSS classes:
+
+```html
+<img src="/docs/assets/img/2012-06-14/semaphore-homepage.png" alt="Semaphore Homepage" class="img-responsive img-bordered">
+```
 
 ### Escaping Erb
 
