@@ -64,12 +64,14 @@ Give all images appropriate alt text, as well as the following CSS classes:
 <img src="/docs/assets/img/2012-06-14/semaphore-homepage.png" alt="Semaphore Homepage" class="img-responsive img-bordered">
 ```
 
-### Escaping Erb
+### Escaping ERB
 
-    You must escape Erb code snippets in files with `.erb` extension ([via](https://github.com/middleman/middleman-syntax/issues/29)):
+You must escape ERB code snippets in files with `.erb` extension
+([via](https://github.com/middleman/middleman-syntax/issues/29)):
 
-    <%%= foo %>
-
+```
+<%%= foo %>
+```
 
 ## Deployment
 
