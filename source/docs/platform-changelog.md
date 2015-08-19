@@ -6,6 +6,22 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1508 - 2015-08-25 (planned)
+```
+  - upgrades
+    - cassandra 2.1.8 -> 2.2.0
+    - chromedriver 2.15 -> 2.16
+    - mongodb 2.6.10 -> 2.6.11
+    - mysql 5.6.25 -> 5.6.26
+    - oracle jdk8 update 45 -> update 51
+    - php 5.4.43 -> 5.4.44
+    - php 5.5.27 -> 5.5.28
+    - php 5.6.25 -> 5.6.26
+    - qt 5.2.1 -> 5.4.1
+    - redis 3.0.2 -> 3.0.3
+    - rethinkdb 2.0.4 -> 2.1.1
+```
+
 ### v1507.1 - 2015-07-29
 ```
 - additions
