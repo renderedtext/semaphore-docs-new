@@ -19,3 +19,4 @@ To split your test suite in multiple parallel threads, simply schedule your buil
 
 - [Running Cucumber scenarios in parallel](/docs/running-cucumber-scenarios-in-threads.html)
 - [Running RSpec specs in parallel](/docs/running-rspec-specs-in-threads.html)
+- [Running Minitest tests in parallel](/docs/running-minitest-tests-in-threads.html)
