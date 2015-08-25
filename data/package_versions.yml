@@ -14,17 +14,17 @@ bundler:
 
 cassandra:
   name: "Cassandra"
-  version: "2.1.8"
+  version: "2.2.0"
   url: "/docs/databases/cassandra.html"
 
 chrome:
   name: "Chrome"
-  version: "43.0.2357.130"
+  version: "44.0.2403.155"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.15"
+  version: "2.16"
 
 composer:
   name: "Composer"
@@ -56,7 +56,7 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.4.5"
+  version: "2.5.0"
 
 go:
   name: "Go"
@@ -75,7 +75,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.39.5"
+  version: "3.41.3"
 
 io.js:
   name: "io.js"
@@ -89,7 +89,7 @@ java:
   name: "Java"
   versions:
     - "openjdk-7u79"
-    - "Oracle jdk-8u45"
+    - "Oracle jdk-8u60"
   url: "/docs/java.html"
 
 leiningen:
@@ -112,12 +112,12 @@ memcached:
 
 mongodb:
   name: "MongoDB"
-  version: "2.6.10"
+  version: "2.6.11"
   url: "/docs/databases/mongodb.html"
 
 mysql:
   name: "MySQL"
-  version: "5.6.25"
+  version: "5.6.26"
   url: "/docs/databases/mysql.html"
 
 node:
@@ -157,9 +157,9 @@ php:
   name: "PHP"
   versions:
     - "5.3.29"
-    - "5.4.43"
-    - "5.5.27"
-    - "5.6.11"
+    - "5.4.44"
+    - "5.5.28"
+    - "5.6.12"
   url: "/docs/php.html"
 
 phpbrew:
@@ -201,7 +201,7 @@ qt:
   name: "Qt"
   versions:
     - "4.8.1"
-    - "5.2.1"
+    - "5.4.1"
   url: "/docs/qt.html"
 
 rbenv:
@@ -210,17 +210,18 @@ rbenv:
 
 redis:
   name: "Redis"
-  version: "3.0.2"
+  version: "3.0.3"
   url: "http://redis.io/"
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.0.4"
+  version: "2.1.1"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
   name: "Ruby"
   versions:
+    - "2.2.3"
     - "2.2.2"
     - "2.2.1"
     - "2.2.0"
