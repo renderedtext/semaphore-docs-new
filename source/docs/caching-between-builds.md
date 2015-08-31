@@ -8,10 +8,12 @@ Installing application dependencies can take a significant amount of time, so Se
 
 ```
 .bundle
-vendor/bundle
-node_modules
-bower_components
 .semaphore-cache
+node_modules
+vendor/bundle
+~/.composer
+~/.hex
+~/.ivy2
 ~/.m2
 ```
 
