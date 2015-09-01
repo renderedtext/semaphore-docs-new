@@ -6,6 +6,14 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1508.1 - 2015-09-01
+```
+  - additions
+    - ruby 2.1.7
+  - upgrades
+    - chromedriver 2.16 -> 2.18
+```
+
 ### v1508 - 2015-08-25
 ```
   - additions
