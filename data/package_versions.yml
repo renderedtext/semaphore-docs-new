@@ -24,7 +24,7 @@ chrome:
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.16"
+  version: "2.18"
 
 composer:
   name: "Composer"
@@ -225,6 +225,7 @@ ruby:
     - "2.2.2"
     - "2.2.1"
     - "2.2.0"
+    - "2.1.7"
     - "2.1.6"
     - "2.1.5"
     - "2.1.4"
