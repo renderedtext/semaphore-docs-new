@@ -19,6 +19,15 @@ build commands:
 Valid values for `<version>` are `1.7` or `7` for OpenJDK 7 and `1.8` or `8` for Oracle
 JDK 8. The default Java version is `openjdk-7`.
 
+To use `change-java-version` in a bash script, use the following command to load
+it:
+
+```bash
+#!/bin/sh
+
+source /opt/change-java-version.sh
+```
+
 The Semaphore stack includes:
 
 - <%= package_name("maven") %> (<%= package_version("maven") %>)
