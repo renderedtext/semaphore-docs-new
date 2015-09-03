@@ -11,8 +11,8 @@ project already set up.
 
 The sample application will be deployed automatically by Semaphore every time all
 tests pass on the master branch. Semaphore lets us easily set up this kind of
-deployment which is also known as continuous deployment. With this in place,
-we can be sure that we have a working code on our server at all times.
+deployment, which is also known as continuous deployment. With this in place,
+we can be sure that we have working code on our server at all times.
 
 The sample application will be deployed to Heroku. Both [Semaphore](https://semaphoreci.com/docs/python-continuous-integration.html)
 and [Heroku](https://devcenter.heroku.com/articles/getting-started-with-python#introduction)
@@ -41,7 +41,7 @@ the settings for your project. These settings can be changed at any time in
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_analysis_complete.png" class="img-responsive" alt="Semaphore analysis complete">
 
-Completing the setup will launch your the first build.
+Completing the setup will launch your first build.
 
 <first-build-success>
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_first_build.png" class="img-responsive" alt="Semaphore first successful build">
