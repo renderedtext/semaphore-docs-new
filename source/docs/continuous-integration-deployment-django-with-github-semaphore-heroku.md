@@ -4,13 +4,13 @@ title: Continuous Integration and Deployment of a Django application from GitHub
 category: Python
 ---
 
-In this guide, I will show you how to deploy a Django application to Heroku
-using Semaphore. I will be using a barebones, open-source [Django repository](https://github.com/ervinb/django_example)
+In this guide, we will show you how to deploy a Django application to Heroku
+using Semaphore. We will be using a barebones, open-source [Django repository](https://github.com/ervinb/django_example)
 on GitHub. Feel free to fork it and use it to follow along if you don't have a
 project already set up.
 
-The sample application will be deployed automatically by Semaphore each time the
-master branch is built successfully. Semaphore let's us easily setup this kind of
+The sample application will be deployed automatically by Semaphore every time all
+tests pass on the master branch. Semaphore lets us easily set up this kind of
 deployment which is also known as continuous deployment. With this in place,
 we can be sure that we have a working code on our server at all times.
 
@@ -22,26 +22,26 @@ a breeze.
 ### Requirements
 
   - Heroku account
-  - Semaphore account
+  - Semaphore account ([create on here](https://semaphoreci.com/users/sign_up))
   - Python with virtualenv installed on your machine
   - git installed on your machine
 
 ### Setting up continuous integration with Semaphore and GitHub
 
 After creating a Semaphore account and hooking it up with your GitHub or BitBucket
-account, you are ready to start. The next step is to [add](https://semaphoreci.com/docs/adding-github-bitbucket-project-to-semaphore.html)
+account, you are ready to [add](https://semaphoreci.com/docs/adding-github-bitbucket-project-to-semaphore.html)
 the Django project from the list of your available repositories.
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_project_list.png">
 
-In the following steps, selecting the branch and the account where to add the
-project will bring you to the analysis page, where Semaphore determines the
-settings for your project. These settings can be [changed at any time in
+In the following steps, selecting the branch and the account to which you wish
+to add the project will bring you to the analysis page, where Semaphore determines
+the settings for your project. These settings can be changed at any time in
 [Project Settings](https://semaphoreci.com/docs/customizing-build-commands.html).
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_analysis_complete.png">
 
-Completing the setup will trigger the first build.
+Completing the setup will launch your the first build.
 
 <first-build-success>
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_first_build.png">
@@ -50,7 +50,7 @@ Completing the setup will trigger the first build.
 
 By installing [heroku-toolbelt](https://toolbelt.heroku.com/debian), you gain
 access to [Heroku CLI](https://github.com/heroku/heroku). With this tool, you can
-setup your application on Heroku without leaving the comfort of your terminal.
+set up your application on Heroku without leaving the comfort of your terminal.
 
 ```
 $ heroku login
@@ -74,14 +74,14 @@ deploy.
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_deployment_type.png">
 
-Select the branch which will be tied to the deployment.
+Select the branch from which you would like to deploy.
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_deployment_branch.png">
 
 When asked for your Heroku API key, it can be found by going to [account settings](https://dashboard.heroku.com/account)
-on Heroku and clicking the "Show API Key" button on the bottom.
+on Heroku and clicking the "Show API Key" button at the bottom.
 
-Comming back to Semaphore, select the Heroku application to which Semaphore will
+Go back to Semaphore and select the Heroku application to which Semaphore will
 deploy your code.
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_deployment_heroku_app.png">
@@ -104,6 +104,5 @@ will present you the Django application running on Heroku.
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_deployment_app_page.png">
 
-After completing these steps, your project has continuous integration and deployment
-set up and you can enjoy the [befefits](https://semaphoreci.com/community/tutorials/continuous-integration)
-of this agile practice.
+After completing these steps, your project has [continuous integration and deployment](https://semaphoreci.com/community/tutorials/continuous-integration)
+set up and you can enjoy the benefits of this agile practice.
