@@ -22,7 +22,7 @@ a breeze.
 ### Requirements
 
   - Heroku account
-  - Semaphore account ([create on here](https://semaphoreci.com/users/sign_up))
+  - Semaphore account ([create one here](https://semaphoreci.com/users/sign_up))
   - Python with virtualenv installed on your machine
   - git installed on your machine
 
@@ -78,8 +78,9 @@ Select the branch from which you would like to deploy.
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_deployment_branch.png" class="img-responsive img-bordered" alt="Semaphore deployment branch">
 
-When asked for your Heroku API key, it can be found by going to [account settings](https://dashboard.heroku.com/account)
-on Heroku and clicking the "Show API Key" button at the bottom.
+At this point, you will be asked for your Heroku API key. It can be found by
+going to [account settings](https://dashboard.heroku.com/account) on Heroku and
+clicking the "Show API Key" button at the bottom.
 
 Go back to Semaphore and select the Heroku application to which Semaphore will
 deploy your code.
@@ -91,7 +92,7 @@ In the last step, name your deploy server and optionally add an URL.
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_deployment_server_name.png" class="img-responsive img-bordered" alt="Semaphore deployment server name">
 
 A deploy can be triggered right away. Every new commit to the master branch will
-trigger a new build, which if successful, will run the deploy to Heroku.
+trigger a new build, which, if successful, will run the deploy to Heroku.
 
 <img src="/docs/assets/img/languages/python/deploy-django-to-heroku/django_deployment_setup_complete.png" class="img-responsive img-bordered" alt="Semaphore deployment setup complete">
 
