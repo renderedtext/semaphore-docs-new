@@ -5095,6 +5095,9 @@ p + .tag-list {
 .block-longform.post-header h2:first-child, .block-longform.single-no-post-header hgroup:first-child {
   margin-top: 0 !important; }
 
+.edit-link a {
+  margin-top: -2px; }
+
 .comments {
   margin: 50px 0 100px 0; }
 
@@ -5493,3 +5496,9 @@ a.link-heading {
 
 .img-bordered {
   border: 2px solid #f2f2e9; }
+
+.u-mr-0 {
+  margin-right: 0; }
+
+.u-mr-5 {
+  margin-right: 5px; }
