@@ -18,4 +18,9 @@ The value of this variable can be set to:
   - `5` or `qt5` to select version <%= package_versions("qt").last %>
   - `4` or `qt4` to select version <%= package_versions("qt").first %>
 
-The default version is <%= package_versions("qt").first %>
+The default version is <%= package_versions("qt").first %>.
+
+If you use the `capybara-webkit` gem and decide to change the version of Qt, the
+gem has to be reinstalled. One way to achieve this, is by expiring your project's
+cache in Project Settings. On the other hand, if you'd like to preserve your
+cache, please send your request to our support.
