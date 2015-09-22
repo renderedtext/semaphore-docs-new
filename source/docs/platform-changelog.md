@@ -6,12 +6,12 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1509 - 2015-09-22 (planned)
+### v1509 - 2015-09-22
 ```
   - additions
-    - go 1.5
+    - go 1.5.1
     - io.js 2.5.0
-    - io.js 3.4.0
+    - io.js 3.3.0
     - node.js 4.0.0
   - upgrades
     - cassandra 2.2.0 -> 2.2.1
