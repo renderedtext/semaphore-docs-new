@@ -14,17 +14,17 @@ bundler:
 
 cassandra:
   name: "Cassandra"
-  version: "2.2.0"
+  version: "2.2.1"
   url: "/docs/databases/cassandra.html"
 
 chrome:
   name: "Chrome"
-  version: "44.0.2403.155"
+  version: "45.0.2454.85"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.18"
+  version: "2.19"
 
 composer:
   name: "Composer"
@@ -52,15 +52,17 @@ firefox:
 
 gcc:
   name: "gcc"
-  version: "4.8.2"
+  version: "4.8.4"
 
 git:
   name: "Git"
-  version: "2.5.0"
+  version: "2.5.2"
 
 go:
   name: "Go"
-  version: "1.4.2"
+  versions:
+    - "1.4.2"
+    - "1.5.1"
   url: "/docs/go.html"
 
 gradle:
@@ -75,11 +77,14 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.41.3"
+  version: "3.41.5"
 
 io.js:
   name: "io.js"
-  version: "1.8.4"
+  versions:
+    - "1.8.4"
+    - "2.5.0"
+    - "3.3.0"
 
 imagemagick:
   name: "ImageMagick"
@@ -127,6 +132,7 @@ node:
     - "0.10.40"
     - "0.11.16"
     - "0.12.7"
+    - "4.0.0"
   url: "/docs/javascript.html"
 
 npm:
@@ -157,9 +163,9 @@ php:
   name: "PHP"
   versions:
     - "5.3.29"
-    - "5.4.44"
-    - "5.5.28"
-    - "5.6.12"
+    - "5.4.45"
+    - "5.5.29"
+    - "5.6.13"
   url: "/docs/php.html"
 
 phpbrew:
@@ -170,11 +176,11 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "4.7.7"
+  version: "4.8.7"
 
 pip:
   name: "pip"
-  version: "7.1.0"
+  version: "7.1.2"
 
 postgis:
   name: "PostGIS"
@@ -210,12 +216,12 @@ rbenv:
 
 redis:
   name: "Redis"
-  version: "3.0.3"
+  version: "3.0.4"
   url: "http://redis.io/"
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.1.1"
+  version: "2.1.3"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
