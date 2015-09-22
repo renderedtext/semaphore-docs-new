@@ -12,7 +12,27 @@ commands to speed up the setup process. If needed, these commands can be
 
 ## CI environment for Go projects
 
-The [Semaphore platform](/docs/supported-stack.html) supports Go version <%= package_version("go") %>.
+The [Semaphore platform](/docs/supported-stack.html) supports the following Go versions:
+
+<% package_versions("go").each do |version| %>
+  - <%= version %>
+<% end %>
+
+Switching between different Go versions can be done in Project Settings or by
+adding the following command to your build commands:
+
+`change-go-version <version>`
+
+Valid values for `<version>` are `1.4` and `1.5`.
+
+To use `change-go-version` in a bash script, use the following command to load
+it:
+
+```bash
+#!/bin/sh
+
+source /opt/change-go-version.sh
+```
 
 The `$GOPATH` environment variable is set to `/home/runner/workspace` which
 contains the `bin`, `pkg` and `src` folders.
