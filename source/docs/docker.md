@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Semaphore currently offers [Docker](https://docs.docker.com/) support in a beta
 platform. If you wan't to use this platform for your projects, contact us on
-[support](semaphore@renderedtext.com) with your request. After we approve your
+[support](mailto:semaphore@renderedtext.com) with your request. After we approve your
 account for the beta, you can switch to this platform in
 `Project Settings > Platform`.
 
