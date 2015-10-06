@@ -28,7 +28,7 @@ pull request status. Select your preferred Git host.
 
 We will now assume that you chose GitHub. On the next screen, select whether you
 would like to give Semaphore access to your public (open-source) or
-private projects. Access to private projects also includes access to public 
+private projects. Access to private projects also includes access to public
 projects.
 
 If you are using Bitbucket, this step does not exist because Bitbucket only supports
@@ -76,14 +76,14 @@ language.
 <img src="/docs/assets/img/adding-new-project/analysis-results.png" class="img-responsive img-bordered">
 
 In this case, we have a Ruby on Rails application for which we would like to run
-`bundle exec rake cucumber` in a second, parallel thread, so we'll select
-"Thread #2" from the associated select box.
+`bundle exec rake cucumber` in a second, parallel thread. That's why  we'll add
+a new parallel thread and drag and drop `bundle exec rake cucumber` command to
+the new thread.
 
 <img src="/docs/assets/img/adding-new-project/thread2.png" class="img-responsive img-bordered">
 
 If your project needs to run commands that are different from what Semaphore has
-suggested, just click on the "Customize build" link at the bottom of the
-commands list to customize them to your needs.
+suggested, just use the commands editor to customize them to your needs.
 
 At this point, you'll be ready to launch your first build. Click on "Build With
 These Settings" to do so. If all goes well, you should see your first successful
