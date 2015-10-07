@@ -27,63 +27,80 @@ This installs all dependecies which are needed to properly run a Laravel
 application.  Either way, the new application will appear in your "Apps" screen
 on Heroku.
 
-<img src="/docs/assets/img/languages/php/heroku-apps.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/heroku-apps.png" class="img-bordered img-responsive">
 
 While you're here, copy your Heroku API key from the Account settings.
 Semaphore will need this key to deploy your application.
 
-<img src="/docs/assets/img/languages/php/heroku-account-settings.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/heroku-account-settings.png" class="img-bordered img-responsive">
 
 ### Setting up continuous integration from GitHub to Semaphore
 
 [Sign up for a Semaphore account](https://semaphoreci.com) and connect
 with GitHub.
 
-<img src="/docs/assets/img/languages/php/welcome-screen.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/welcome-screen.png" class="img-bordered img-responsive">
 
 If you are working on an open source project, select "Build Public Project".
 After receiving access to public information on GitHub, Semaphore will
 present you a list of available projects to choose from.
 
-<img src="/docs/assets/img/languages/php/project-list.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/project-list.png" class="img-bordered img-responsive">
 
 After you select a project, Semaphore will analyze it and suggest some common
 build commands.
 
-<img src="/docs/assets/img/languages/php/project-analyzed.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/php-analysis.png" class="img-bordered img-responsive">
 
 At this point, you are ready to launch the first build.
 
-<img src="/docs/assets/img/languages/php/build-passed.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/build-passed.png" class="img-bordered img-responsive">
 
 Every time you or other people push new code to GitHub, Semaphore will run
 a build to test it.
 
 ### Setting up continuous deployment to Heroku
 
-Opening the deployment section of project settings allows you to add a server
+Visiting the project page allows you to add a server
 to which Semaphore is going to deploy the application.
 
-<img src="/docs/assets/img/languages/php/project-settings.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/deployment-setup.png" class="img-bordered img-responsive">
 
 Choose Heroku from supported deployment methods.
 
-<img src="/docs/assets/img/languages/php/deployment-method.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/deployment-method.png" class="img-bordered img-responsive">
 
 The deployment can be automatic or manual. In the spirit of continuous delivery,
 we'll go with automatic deployment.
 
-<img src="/docs/assets/img/languages/php/deployment-strategy.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/deployment-strategy.png" class="img-bordered img-responsive">
 
-After pasting your Heroku API key on Semaphore, choose the previously created
-Heroku app, name the server and you're ready to go.
+Next, we need to choose the branch which we want to automatically deploy after a successful build.
 
-<img src="/docs/assets/img/languages/php/deployment-summary.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/choose-branch-heroku.png" class="img-bordered img-responsive">
 
-Clicking the Get Started button will finish the deployment setup. Semaphore now
+After that, we will paste our Heroku API key.
+
+<img src="/docs/assets/img/languages/php/api-key-heroku.png" class="img-bordered img-responsive">
+
+Select the Heroku application which we want to deploy.
+
+<img src="/docs/assets/img/languages/php/choose-app-heroku.png" class="img-bordered img-responsive">
+
+Finaly, we need to enter a name for our deployment server. Semaphore will
+provide a generic name, but it's preferable to replace it with a meaningful one.
+
+<img src="/docs/assets/img/languages/php/server-name-heroku.png" class="img-bordered img-responsive">
+
+Clicking the Create Server button will finish the deployment setup. Semaphore now
 has all the information it needs to automatically deploy your application.
 
-<img src="/docs/assets/img/languages/php/deploy-passed.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/deployment-summary.png" class="img-bordered img-responsive">
+
+After we have completed the steps above, we're ready to deploy our Heroku
+application.
+
+<img src="/docs/assets/img/languages/php/deploy-passed.png" class="img-bordered img-responsive">
 
 Now every time you push a new commit to Github and all tests pass,
 Semaphore will deploy the new version of your application to Heroku.
@@ -95,7 +112,7 @@ One thing to note is that by default many projects include
 the `composer.lock` file in `.gitignore` but that way deploying to Heroku
 will not work, so it's a good idea to remove it from there.
 
-<img src="/docs/assets/img/languages/php/laravel-landing-window.png" class="img-responsive">
+<img src="/docs/assets/img/languages/php/laravel-landing-window.png" class="img-bordered img-responsive">
 
 That's it. Make something awesome and rest assured that your application will
 automagically reach its audience. Happy building!
