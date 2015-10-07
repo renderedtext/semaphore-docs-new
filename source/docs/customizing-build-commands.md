@@ -15,20 +15,87 @@ Typical use cases for custom build commands that we have seen so far are:
 
 Each build or deploy command is executed as a Linux shell command.
 
-To change commands follow the simple steps bellow.
-
-### 1. Click on "settings" next to your project on the dashboard.
+To edit a project build commands, click on "settings" next to your project on the dashboard.
 
 <img src="/docs/assets/img/custom-build-commands/cbc-project-settings-link.png" class="img-responsive">
 
-### 2. Review your commands
+You will see the commands editor page with your current build commands.
 
-If your plan allows, you can schedule your commands to run in multiple threads. Click "Change build commands" to edit them.
+<img src="/docs/assets/img/custom-build-commands/build-settings.png" class="img-responsive">
 
-<img src="/docs/assets/img/custom-build-commands/cbc-commands.png" class="img-responsive">
+## Adding a new command
 
-### 3. Edit and save your new commands
+If your plan allows multiple threads, you can add a new thread by clicking on
+"Parallel thread" link.
 
-<img src="/docs/assets/img/custom-build-commands/cbc-edit.png" class="img-responsive">
+<img src="/docs/assets/img/custom-build-commands/parallel-thread.png" class="img-responsive">
 
-Note that Semaphore exports some [environment variables](/docs/available-environment-variables.html) which might be useful to you. You can also [install additional packages](/docs/how-to-install-dependency.html) with commands like `sudo apt-get install -y something`.
+A new thread will show up, where you can add new commands.
+
+Alternatively, you can drag an existing command to the new thread. The drag
+handler will show up when you move the mouse pointer over a command.
+
+<img src="/docs/assets/img/custom-build-commands/drag-command.png" class="img-responsive">
+
+## Deleting a command
+
+When you move the mouse pointer over a command, you will see an option that
+allows you to remove the command.
+
+<img src="/docs/assets/img/custom-build-commands/delete-command.png" class="img-responsive">
+
+## Editing a command
+
+If you want to edit a single command, click on the command to activate editing.
+You can confirm the new command by pressing Enter or cancel editing by pressing
+Escape key.
+
+<img src="/docs/assets/img/custom-build-commands/edit-command.png" class="img-responsive">
+
+## Setup commands
+
+Setup commands are executed before each threads. Usually, setup commands install
+the application dependencies, gems, create database and set configuration files.
+
+To create a new setup, click on the "Setup" link on the bottom of the page.
+
+<img src="/docs/assets/img/custom-build-commands/setup-button.png" class="img-responsive">
+
+This will create the Setup area where you can add setup commands.
+
+<img src="/docs/assets/img/custom-build-commands/setup-commands.png" class="img-responsive">
+
+A project can have only one setup.
+
+## Editing a thread
+
+If you want to edit multiple commands at once or you want to paste few commands,
+click on the "Edit thread" link. This will show text area where you can insert
+your commands.
+
+<img src="/docs/assets/img/custom-build-commands/edit-thread.png" class="img-responsive">
+
+## Deleting a thread
+
+To delete a thread, click "x" link in the top right corner of the tread. If the
+tread is not empty - you need to confirm that the thread and all commands should
+be deleted.
+
+<img src="/docs/assets/img/custom-build-commands/delete-thread.png" class="img-responsive">
+
+## Renaming a thread
+
+Threads can be named. The name of a thread will be displayed on the build page.
+To name a thread, click on the "Rename" link.
+
+<img src="/docs/assets/img/custom-build-commands/rename-thread.png" class="img-responsive">
+
+Commands editor allows you to add [post
+thread commands](/docs/using-post-thread-commands.html) that execute after each
+thread, even if a thread command failed.
+
+Note that Semaphore exports some [environment
+variables](/docs/available-environment-variables.html) which might be useful to
+you. You can also [install additional
+packages](/docs/how-to-install-dependency.html) with commands like `sudo apt-get
+install -y something`.
