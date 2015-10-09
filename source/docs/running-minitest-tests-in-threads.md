@@ -28,6 +28,6 @@ After tests pass your should copy knapsack json report which is rendered at the 
 
 Knapsack supports Semaphore ENVs `SEMAPHORE_THREAD_COUNT` and `SEMAPHORE_CURRENT_THREAD`. The only thing you need to do is set up knapsack minitest command for as many threads as you need. Here is an example:
 
-<img src="/docs/assets/img/running-minitest-tests-in-threads/knapsack-config-threads.png" class="img-responsive">
+<img src="/docs/assets/img/running-minitest-tests-in-threads/knapsack-config-threads.png" class="img-bordered-padding img-responsive">
 
 Tests will be split across threads.
