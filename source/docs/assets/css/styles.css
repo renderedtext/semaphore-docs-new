@@ -4338,6 +4338,7 @@ a.btn-cta {
   margin-left: -10px;
   margin-right: -10px; }
   .navigation .navigation-group {
+    transition: all .3s ease;
     width: 100%;
     border-bottom: 2px solid #ceceb8;
     line-height: 60px;
@@ -4509,22 +4510,32 @@ a.btn-cta {
       .navigation-section-title.tags:before {
         left: 0; } }
 
-.search-form .form-control {
-  font-size: 14px;
-  display: block;
-  border: none;
-  box-shadow: none;
-  min-width: 220px;
-  padding-left: 47px;
-  height: 60px;
-  background-image: url("/docs/assets/img/search.svg");
-  background-repeat: no-repeat;
-  background-size: 27px 27px;
-  background-position: 10px center;
-  transition: all .2s ease; }
-  .search-form .form-control:focus {
-    background-color: #f2f2e9;
-    outline: none; }
+.search-form {
+  position: relative;
+  z-index: 10; }
+  .search-form .form-control {
+    font-size: 14px;
+    display: block;
+    border: none;
+    box-shadow: none;
+    min-width: 220px;
+    padding-left: 47px;
+    height: 60px;
+    background-image: url("/docs/assets/img/search.svg");
+    background-repeat: no-repeat;
+    background-size: 27px 27px;
+    background-position: 10px center;
+    transition: all .2s ease; }
+    .search-form .form-control:focus {
+      background-color: #f2f2e9;
+      outline: none; }
+
+.search-form-active .navigation-group {
+  display: none !important; }
+.search-form-active .navigation-group--search {
+  width: 100%;
+  display: block !important;
+  /*border: 2px solid $foggy-gray;*/ }
 
 section + section > .navigation-top {
   border-top: 2px solid #ceceb8; }
@@ -4618,7 +4629,7 @@ p + .tag-list {
 .listing-item-bug {
   position: absolute;
   left: 5px;
-  top: 0;
+  top: 8px;
   max-width: 75px; }
   @media (min-width: 768px) {
     .listing-item-bug {
@@ -5046,8 +5057,8 @@ p + .tag-list {
   top: -2px; }
 
 .post-photo img {
-  max-width: 100%;
-  height: auto;
+  width: auto;
+  max-height: 400px;
   margin: 40px auto 0 auto; }
 
 .block-subscribe-to-tag {
@@ -5496,6 +5507,10 @@ a.link-heading {
 
 .img-bordered {
   border: 2px solid #f2f2e9; }
+
+.img-bordered-padding {
+  border: 2px solid #f2f2e9;
+  padding: 40px; }
 
 .u-mr-0 {
   margin-right: 0; }
