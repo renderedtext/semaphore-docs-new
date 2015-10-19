@@ -8,6 +8,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### v1510 - 2015-10-20
 ```
+  - additions
+    - node.js 4.2.1
   - upgrades
     - cassandra 2.2.1 -> 2.2.3
     - git 2.5.2 -> 2.6.2
