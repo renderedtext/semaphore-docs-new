@@ -6,11 +6,11 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1510 - 2015-10-20 (planned)
+### v1510 - 2015-10-20
 ```
   - upgrades
-    - cassandra 2.2.1 -> 2.2.2
-    - git 2.5.2 -> 2.6.1
+    - cassandra 2.2.1 -> 2.2.3
+    - git 2.5.2 -> 2.6.2
     - go 1.4.2 -> 1.4.3
     - io.js 3.3.0 -> 3.3.1
     - mysql 5.6.26 -> 5.6.27
@@ -18,6 +18,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
     - php 5.5.29 -> 5.5.30
     - php 5.6.13 -> 5.6.14
     - rethinkdb 2.1.3 -> 2.1.5
+    - redis 3.0.4 -> 3.0.5
+    - qtwebkit 5.4.1 -> 5.4.2
 ```
 
 ### v1509 - 2015-09-22
