@@ -30,6 +30,16 @@ composer:
   name: "Composer"
   hide_on_stack_table: true
 
+docker:
+  name: "Docker"
+  version: "1.8.3"
+  url: "/docs/docker.html"
+
+docker-machine:
+  name: "docker-machine"
+  version: "0.4.0"
+  url: "https://docs.docker.com/machine/"
+
 elasticsearch:
   name: "ElasticSearch"
   version: "1.3.9"
