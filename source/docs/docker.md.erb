@@ -10,8 +10,9 @@ platform. If you wan't to use this platform for your projects, contact us on
 account for the beta, you can switch to this platform in
 `Project Settings > Platform`.
 
-The beta platform has Docker pre-installed, so once you make the switch, you're
-ready to use the Docker [CLI](https://docs.docker.com/reference/commandline/cli/)
+The beta platform has Docker <%= package_version("docker") %> and [docker-machine](https://docs.docker.com/machine/)
+ <%= package_version("docker-machine") %> pre-installed, so once you make the switch,
+you're ready to use the Docker [CLI](https://docs.docker.com/reference/commandline/cli/)
 in your build commands.
 
 To avoid permission problems when using the Docker CLI, commands should be used
