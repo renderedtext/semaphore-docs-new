@@ -58,3 +58,12 @@ session:
 ``` sh
 sudo poweroff
 ```
+
+### Tip: rsync files into an SSH session
+
+Take note of your assigned IP address and port, and run `rsync` with the
+following command options:
+
+```
+rsync -avz -e "ssh -p <port>" testfile runner@<ip-address>:somefile
+```
