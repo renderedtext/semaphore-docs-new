@@ -1,26 +1,24 @@
 ---
 layout: post
-title: Deploy via Elastic Beanstalk
+title: Deploy to AWS Elastic Beanstalk
 category: Deploying your application
 ---
 
-Amazon Web Services (AWS) is a set of web services that help you manage your web applications,
-servers, databases and many more. <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html"
-alt="What Is Elastic Beanstalk and Why Do I Need It?" target="_blank">Elastic Beanstalk</a>
-is one of their services which brings together couple of services for managing your applications.
-Idea behind Elastic Beanstalk is that users doesn't have to worry about the infrastructure that runs
-behind their applications.
+Amazon Web Services (AWS) is a set of cloud services that help you manage your web applications,
+servers, databases and more. <a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html" rel="nofollow">Elastic Beanstalk</a>
+is a platform which brings together various other AWS services. The idea behind
+Elastic Beanstalk is that users doesn't have to worry about the infrastructure
+that runs their applications.
 
-Being that easy for user to deploy their applications, we decided to make it even easier with
-our Elastic Beanstalk deployment method.
+Semaphore has a built-in integration which makes continuous deployment to
+AWS Elastic Beanstalk very easy. This guide will show you how to set it up,
+and assumes that you have an application already configured on Elastic Beanstalk.
 
-To get started, go to your project's settings and under "Deployment" tab follow the link to
-add a new server.
+To get started, on your project page on Semaphore follow the link to set up
+deployment.
 
 <img src="https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/172/Screen_Shot_2015-10-23_at_4.45.18_PM.png"
 alt="Set up Deployment" class="img-responsive img-bordered">
-
-This will lead you to a wizard for deployment to Elastic Beanstalk.
 
 ## Choosing your deployment method
 
@@ -55,10 +53,13 @@ alt="Choose branch" class="img-responsive img-bordered">
 
 ## Enter AWS Credentials
 
-Enter the AWS credentials like described in <a href="https://semaphoreci.com/community/tutorials/how-to-deploy-a-ruby-on-rails-application-to-elastic-beanstalk-with-semaphore" alt="How to Deploy a Ruby on Rails Application to Elastic Beanstalk with Semaphore"
-target="_blank">this tutorials</a> we made in "Retrieving Security Credentials" part.
-Then you can select the region your application resides in.
-This will enable Semaphore to list the application and environments you have in the region you specified.
+On the following screen, enter your AWS credentials. If you need help getting
+these credentials, consult the "Retrieving Security Credentials" in Semaphore's
+<a href="https://semaphoreci.com/community/tutorials/how-to-deploy-a-ruby-on-rails-application-to-elastic-beanstalk-with-semaphore" alt="How to Deploy a Ruby on Rails Application to Elastic Beanstalk with Semaphore">tutorial for deploying a web application on Elastic Beanstalk</a>.
+
+After entering the credentials, on the same screen, select the region your
+application resides in. This will enable Semaphore to list the application and
+environments you have in the region you specified.
 
 <img src="https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/107/Screen_Shot_2015-10-01_at_11.11.25_AM.png"
 alt="Enter AWS Credentials" class="img-responsive img-bordered">
@@ -74,9 +75,9 @@ alt="Select target application" class="img-responsive img-bordered">
 
 ## Configuring the database
 
-If your application has a database you can configure it in this step.
+If your application is using a database you can configure it in this step.
 You will need to specify database adapter your application is using, as well as
-database environment in which it will run.
+database environment in which it is configured to run on AWS.
 
 <img src="https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/115/db-setup.png"
 alt="Configure the database" class="img-responsive img-bordered">
@@ -85,8 +86,8 @@ alt="Configure the database" class="img-responsive img-bordered">
 
 In this step you need to provide a name for your server, which can be any name
 you like. It will be used on your Semaphore dashboard and deployment timeline.
-During this step, you may also choose to set a server URL for quick access to
-wherever you are deploying your application.
+During this step, you may also choose to set a server URL for quick access on
+Semaphore.
 
 <img src="https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/145/Screen_Shot_2015-10-12_at_2.11.50_PM.png"
 alt="Naming your server" class="img-responsive img-bordered">
