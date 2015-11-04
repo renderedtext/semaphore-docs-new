@@ -5,8 +5,9 @@ category: Deploying your application
 ---
 
 [Capistrano](http://www.capistranorb.com) is a widely used server automation and
-deployment tool written in Ruby. Semaphore lets you easily use your existing
-Capistrano scripts to set up automatic deployment.
+deployment tool written in Ruby and various other programming languages.
+Semaphore lets you easily use your existing Capistrano scripts to set up
+automatic deployment.
 
 To get started, go to your project's settings and under "Deployment" tab follow
 the link to add a new server.
