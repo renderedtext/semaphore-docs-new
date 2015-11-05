@@ -4,9 +4,8 @@ title: Generic Deployment
 category: Deploying your application
 ---
 
-Semaphore has built-in support for Heroku, Capistrano and Cloud66. However, if
-this does not meet your needs, Semaphore also supports generic deployment with
-which you can select your own tools and servers.
+Using the Generic deployment method on Semaphore is an easy way to set up
+continuous deployment for your own tools and servers.
 
 To get started, go to your project's page and click on the "Set Up Deployment"
 button.
