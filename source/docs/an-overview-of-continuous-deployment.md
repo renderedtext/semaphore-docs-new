@@ -5,22 +5,22 @@ category: Deploying your application
 ---
 
 Semaphore lets you continuously deploy your applications and services when all
-automated tests pass. This way, developers need only to push new code to a Git
-repository for Semaphore to run all tests and deploy a new version.
+automated tests pass. This way, developers only need to push new code to a Git
+repository in order for Semaphore to run all tests and deploy a new version.
 
 To accomplish this is very easy. You only need to set up a target **server**, an
 entity which encapsulates deployment settings and history on Semaphore. The
-server can be linked to a particular branch and trigger deployment on every
-successful build on that branch.
+server can be linked to a particular branch, and it will trigger deployment 
+after every successful build on that branch.
 
-It is also possible to set up a deployment server without continuous deployment
-and perform manual, one-click deployment from any branch.
+Note: It is also possible to set up a deployment server without continuous 
+deployment and perform manual, one-click deployment from any branch.
 
 Servers, which can can be accessed from project pages, display a detailed deploy
-history in a form similar to a changelog. This way your team can keep track of
+history in a form similar to a changelog. This way, your team can keep track of
 who delivered what and when.
 
-<img src="/docs/assets/img/an-overview-of-continuous-deployment/server-history.png" class="img-bordered-padding img-responsive" alt="continuous deployment changelog">
+<img src="/docs/assets/img/an-overview-of-continuous-deployment/server-history.png" class="img-bordered-padding img-responsive" alt="Continuous deployment changelog">
 
 In addition, each deploy can trigger a [notification in your favorite group chat
 channel](/docs/managing-chat-notifications.html).
@@ -30,10 +30,10 @@ over launching deploys from individual developers' local machines and
 ad-hoc communication. They also empower new team members to deploy their first
 contributions on their first day at the job quickly and without friction.
 
-### Guides to set up deployment
+### Guides to help you set up deployment
 
 The following guides show you how to set up deployment to one of the cloud
-platforms or tools Semaphore integrates with. If your service is not listed or
+platforms and tools Semaphore integrates with. If your service is not listed, or
 you have custom scripts and infrastructure, we recommend going with the [Generic
 deployment method](/docs/managing-chat-notifications.html).
 
@@ -46,5 +46,5 @@ deployment method](/docs/managing-chat-notifications.html).
 - <a href="/docs/ftp-deployment.html">FTP deployment</a></li>
 
 We also very much welcome any <a
-href="mailto:semaphore@renderedtext.com">feedback</a> you may have or
-suggestions which deployment integrations you would love to see next.
+href="mailto:semaphore@renderedtext.com">feedback</a> you may have, as well as
+suggestions which deployment integrations you would like to see next.
