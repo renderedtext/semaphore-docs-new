@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An Overview of Continuous Deployment
+title: Continuous Deployment Options
 category: Deploying your application
 ---
 
@@ -10,10 +10,10 @@ repository in order for Semaphore to run all tests and deploy a new version.
 
 To accomplish this is very easy. You only need to set up a target **server**, an
 entity which encapsulates deployment settings and history on Semaphore. The
-server can be linked to a particular branch, and it will trigger deployment 
+server can be linked to a particular branch, and it will trigger deployment
 after every successful build on that branch.
 
-Note: It is also possible to set up a deployment server without continuous 
+Note: It is also possible to set up a deployment server without continuous
 deployment and perform manual, one-click deployment from any branch.
 
 Servers, which can can be accessed from project pages, display a detailed deploy
