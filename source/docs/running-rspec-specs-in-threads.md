@@ -9,6 +9,10 @@ Semaphore lets you run RSpec specs in [parallel threads](https://semaphoreci.com
 ### Generate knapsack report
 
 - Ensure you've added the `knapsack` gem to your Gemfile.
+- Add this line at the bottom of Rakefile:
+```
+Knapsack.load_tasks if defined?(Knapsack)
+```
 - Add at the beginning of your spec_helper.rb:
 
 ```ruby
