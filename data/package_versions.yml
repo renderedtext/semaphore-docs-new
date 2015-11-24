@@ -62,7 +62,7 @@ firefox:
   versions:
     - "34.0"
     - "38.4 ESR"
-  url: "https://mozilla.org/firefox"
+  url: "/docs/firefox.html"
 
 gcc:
   name: "gcc"
