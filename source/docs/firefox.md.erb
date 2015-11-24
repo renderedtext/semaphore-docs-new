@@ -1,0 +1,24 @@
+---
+layout: post
+title: Firefox
+category: Docs
+---
+
+<% default_version = package_versions("firefox").first %>
+<% esr_version = package_versions("firefox").last %>
+
+Semaphore supports the following versions of Firefox:
+
+<% package_versions("firefox").each do |version| %>
+  - <%= version %>
+<% end %>
+
+Switching between Firefox versions is done by adding the following command
+to your build commands:
+
+`change-firefox-version <version>`
+
+Valid values for `<version>` are `default` or `34` for <%= default_version %>,
+and `esr` or `38` for <%= esr_version %>.
+
+The default Firefox version is <%= default_version %>.
