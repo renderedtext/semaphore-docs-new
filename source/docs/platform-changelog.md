@@ -6,10 +6,10 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1511 - 2015-11-24 (planned)
+### v1511 - 2015-11-24
 ```
   - additions
-    - elixir 1.1.0
+    - elixir 1.1.1
     - firefox 38.4.0esr
     - node.js 5.0.0
     - python 3.5
@@ -19,8 +19,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
     - openjdk7 update 79 -> update 85
     - oracle jdk8 update 60 -> update 66
     - php 5.6.14 -> 5.6.15
-    - rethinkdb 2.1.5 -> 2.2.0
-    - rubygems 2.4.8 -> 2.5.0
+    - rethinkdb 2.1.5 -> 2.2.1
 ```
 
 ### v1510 - 2015-10-20

@@ -26,9 +26,15 @@ information).
 
 ## CI environment for Elixir projects
 
-The build environment has Erlang <%= package_version("erlang") %> and Elixir
-<%= package_version("elixir") %> pre-installed. Elixir is part of the `PATH` so
-no extra configuration is required. This means that tools like [mix](http://elixir-lang.org/docs/v1.0/mix/) are readily available.
+The build environment has Erlang <%= package_version("erlang") %> and the
+following Elixir versions pre-installed:
+
+<% package_versions("elixir").each do |version| %>
+  - <%= version %>
+<% end %>
+
+Elixir is part of the `PATH` so no extra configuration is required. This means
+that tools like [mix](http://elixir-lang.org/docs/v1.0/mix/) are readily available.
 
 Elixir is managed with [kiex](https://github.com/taylor/kiex) which means that
 any version can be [installed](https://github.com/taylor/kiex#usage) with Semaphore

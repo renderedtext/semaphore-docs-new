@@ -19,12 +19,12 @@ cassandra:
 
 chrome:
   name: "Chrome"
-  version: "46.0.2490.71"
+  version: "46.0.2490.86"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.19"
+  version: "2.20"
 
 composer:
   name: "Composer"
@@ -32,7 +32,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.8.3"
+  version: "1.9.0"
   url: "/docs/docker.html"
 
 docker-machine:
@@ -47,7 +47,9 @@ elasticsearch:
 
 elixir:
   name: "Elixir"
-  version: "1.0.5"
+  versions:
+    - "1.0.5"
+    - "1.1.1"
   url: "/docs/elixir.html"
 
 erlang:
@@ -57,7 +59,9 @@ erlang:
 
 firefox:
   name: "Firefox"
-  version: "34.0"
+  versions:
+    - "34.0"
+    - "38.4 ESR"
   url: "https://mozilla.org/firefox"
 
 gcc:
@@ -66,7 +70,7 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.6.2"
+  version: "2.6.3"
 
 go:
   name: "Go"
@@ -87,7 +91,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.42.17"
+  version: "3.42.21"
 
 io.js:
   name: "io.js"
@@ -103,8 +107,8 @@ imagemagick:
 java:
   name: "Java"
   versions:
-    - "openjdk-7u79"
-    - "Oracle jdk-8u60"
+    - "openjdk-7u85"
+    - "Oracle jdk-8u66"
   url: "/docs/java.html"
 
 leiningen:
@@ -144,6 +148,7 @@ node:
     - "0.12.7"
     - "4.1.2"
     - "4.2.1"
+    - "5.0.0"
   url: "/docs/javascript.html"
 
 npm:
@@ -176,7 +181,7 @@ php:
     - "5.3.29"
     - "5.4.45"
     - "5.5.30"
-    - "5.6.14"
+    - "5.6.15"
   url: "/docs/php.html"
 
 phpbrew:
@@ -187,7 +192,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.0.5"
+  version: "5.0.9"
 
 pip:
   name: "pip"
@@ -210,7 +215,8 @@ python:
   - "2.7.10"
   - "3.2.6"
   - "3.3.6"
-  - "3.4.0"
+  - "3.4.3"
+  - "3.5.0"
   - "pypy 2.4.0"
   - "pypy3 2.6.0"
 
@@ -232,7 +238,7 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.1.5"
+  version: "2.2.1"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
