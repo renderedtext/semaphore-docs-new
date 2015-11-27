@@ -37,17 +37,22 @@ There are a few ways to pass configuration options to RSpec runner:
 - `.rspec` file
 - command line options
 
-When you turn RSpec Insights on on a project, Semaphore will generate an
-`.rspec` file if it does not already exist, and inject `--format json` option in
-the file.  However, if your project is using the `SPEC_OPTS` environment
-variable to pass options to the RSpec runner, they will override the options in
-the `.rspec` file and Semaphore will not be able to gather stats for the
-Insights.
-
-A typical RSpec command with `SPEC_OPTS` might look like this:
+When you turn RSpec Insights on on a project, Semaphore will set the value of
+`SPEC_OPTS` environment variable:
 
 ```bash
-bundle exec rake spec SPEC_OPTS="--format documentation"
+export SPEC_OPTS="--format documentation --format json --out rspec_report.json"
+```
+
+However, if your project is using the `SPEC_OPTS` environment variable to pass
+options to the RSpec runner, they will override the options that Semaphore
+previously set and Semaphore will not be able to gather stats for the Insights.
+
+A typical user RSpec command with the `SPEC_OPTS` environment variable might
+look like this:
+
+```bash
+bundle exec rake spec SPEC_OPTS="--order random"
 ```
 
 To use Insights, replace the `SPEC_OPTS` environment variable with an `.rspec`
@@ -57,6 +62,10 @@ you don't want to commit the `.rspec` file to the project repository, you can
 create the file using [custom configuration
 files](/docs/adding-custom-configuration-files.html). That way, the `.rspec`
 file will be available only on Semaphore.
+
+An alternative is to construct the `SPEC_OPTS` environment variable yourself.
+The variable should include `--out rspec_report.json` and all the options you
+need.
 
 #### Your tests are executed using parallel_test gem
 
