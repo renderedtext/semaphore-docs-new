@@ -6,6 +6,12 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1511.1 - 2015-12-1
+```
+  - upgrades
+    - heroku-toolbelt 3.42.21 -> 3.42.22
+```
+
 ### v1511 - 2015-11-24
 ```
   - additions

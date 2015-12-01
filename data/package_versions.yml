@@ -91,7 +91,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.42.21"
+  version: "3.42.22"
 
 io.js:
   name: "io.js"
