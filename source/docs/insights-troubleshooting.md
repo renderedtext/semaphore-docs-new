@@ -73,3 +73,25 @@ If you run your RSpec tests using parallel_test gem, the report with stats for
 each test example will not be in valid format, and you will not be able to use
 Insights. The issue is described in detail at the official [parallel_tests
 issues](https://github.com/grosser/parallel_tests/issues/266) page.
+
+#### Your tests are executed using rspec_rerun gem
+
+`rspec_rerun` gem is using a special formatter to save the report about failed
+tests. When you turn on Insights for a project that's using `rspec_rerun`,
+Semaphore overrides the formatter used by `rspec_rerun` and your tests will fail
+with an error such as:
+
+```
+Errno::ENOENT: No such file or directory @ rb_sysopen - rspec.failures
+```
+
+To use RSpec Insights in combination with `rspec_rerun`, you need to set options
+for both Semaphore Insights and `rspec_rerun` in the `SPEC_OPTS` environment
+variable. Change your RSpec command to look like this:
+
+```bash
+SPEC_OPTS="--format documentation --format json --out rspec_report.json --require rspec-rerun/formatter --format RSpec::Rerun::Formatter" bundle exec rake rspec-rerun:spec
+```
+
+After that, your tests should work as expected and Semaphore should be able to
+collect Insights data for the project.
