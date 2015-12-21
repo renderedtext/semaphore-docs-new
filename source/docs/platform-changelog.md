@@ -6,21 +6,27 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1512 - 2015-12-22 (planned)
+### v1512 - 2015-12-22
 ```
   - additions
     - node.js 5.1.1
     - node.js 5.2.0
+    - node.js 5.3.0
     - php 7.0.0
+    - ruby 2.1.8
+    - ruby 2.2.4
   - upgrades
-    - cassandra 2.2.1 -> 2.2.4
+    - cassandra 2.2.3 -> 2.2.4
     - go 1.5.1 -> 1.5.2
+    - git 2.6.3 -> 2.6.4
     - heroku-toolbelt 3.42.22 -> 3.42.25
     - maven 3.3.3 -> 3.3.9
+    - mysql 5.6.27 -> 5.6.28
     - node.js 0.10.40 -> 0.10.41
     - node.js 0.12.7 -> 0.12.9
     - node.js 4.2.1 -> 4.2.3
     - openjdk 7u85 -> 7u91
+    - php 5.6.15 -> 5.6.16
 ```
 
 ### v1511.1 - 2015-12-1
