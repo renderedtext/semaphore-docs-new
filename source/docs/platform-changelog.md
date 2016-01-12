@@ -6,6 +6,23 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1601 - 2016-01-19 (planned)
+```
+  - additions
+    - elixir 1.2.0
+    - node.js 5.4.0
+    - ruby 2.3.0
+  - upgrades
+    - erlang 18.1 -> 18.2.1
+    - git 2.6.4 -> 2.7.0
+    - heroku-toolbelt 3.42.25 -> 3.42.27
+    - node.js 4.2.3 -> 4.2.4
+    - php 5.6.17
+    - php 5.5.31
+    - redis 3.0.5 -> 3.0.6
+    - rethinkdb 2.2.1 -> 2.2.3
+```
+
 ### v1512 - 2015-12-22
 ```
   - additions
