@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1601 - 2016-01-19 (planned)
+### v1601 - 2016-01-19
 ```
   - additions
     - elixir 1.2.0
@@ -15,6 +15,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - upgrades
     - erlang 18.1 -> 18.2.1
     - git 2.6.4 -> 2.7.0
+    - go 1.5.2 -> 1.5.3
     - heroku-toolbelt 3.42.25 -> 3.42.27
     - node.js 4.2.3 -> 4.2.4
     - php 5.6.17
