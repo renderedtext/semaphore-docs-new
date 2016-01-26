@@ -20,7 +20,7 @@ Servers, which can can be accessed from project pages, display a detailed deploy
 history in a form similar to a changelog. This way, your team can keep track of
 who delivered what and when.
 
-<img src="/docs/assets/img/an-overview-of-continuous-deployment/server-history.png" class="img-bordered-padding img-responsive" alt="Continuous deployment changelog">
+<img src="https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/273/continuous-deployment-server-page-semaphoreci.png" class="img-bordered-padding img-responsive" alt="Continuous deployment changelog">
 
 In addition, each deploy can trigger a [notification in your favorite group chat
 channel](/docs/managing-chat-notifications.html).
