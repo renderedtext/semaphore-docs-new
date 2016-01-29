@@ -32,6 +32,7 @@ The teams with the _Edit_ permission level can:
 - Change settings
 - Add branches
 - Manually trigger builds and deploys
+- Start SSH sessions
 
 ### 3. Admin
 
@@ -41,6 +42,7 @@ The teams with the _Admin_ permission level can:
 - Change settings
 - Add branches
 - Manually trigger builds and deploys
+- Start SSH sessions
 - Add and remove projects from the organization account
 
 ### 4. Owner
@@ -51,6 +53,7 @@ The Owners team is able to:
 - Change settings
 - Add branches
 - Manually trigger builds and deploys
+- Start SSH sessions
 - Add and remove projects from the organization account
 - Manage teams
 - Manage billing
