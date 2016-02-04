@@ -19,10 +19,10 @@ The Semaphore stack includes:
 
 List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
 
-### Node.js versions
+### Changing Node.js version
 
 The version specified in project settings will be set as global before your build commands run. Semaphore uses [<%= package_name("nvm") %>](<%= package_url("nvm") %>) for managing Node.js versions.
 
-Setting Node.js version is performed by the equivalent of the following command:
+To change Node.js version, you can use the equivalent of the following command:
 
     nvm use 0.10
