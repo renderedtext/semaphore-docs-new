@@ -16,7 +16,7 @@ after every successful build on that branch.
 Note: It is also possible to set up a deployment server without continuous
 deployment and perform manual, one-click deployment from any branch.
 
-Servers, which can can be accessed from project pages, display a detailed deploy
+Servers, which can be accessed from project pages, display a detailed deploy
 history in a form similar to a changelog. This way, your team can keep track of
 who delivered what and when.
 
