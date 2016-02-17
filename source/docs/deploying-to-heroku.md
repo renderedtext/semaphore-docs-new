@@ -84,8 +84,8 @@ By now the setup is complete - you are ready to deploy to Heroku.
 ## Additional commands
 
 If your application requires some additional deploy commands (such as running
-migrations after deploy) you can edit the default commands on the summary
-page or in project settings under "Deployment" tab.
+migrations after deploy) you can edit the default commands by editing the related server
+on the server page for your project.
 
 ## Propagating exit status codes
 
