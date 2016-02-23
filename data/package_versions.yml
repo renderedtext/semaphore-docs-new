@@ -8,23 +8,23 @@ bower:
 
 bundler:
   name: "Bundler"
-  version: "1.10.6"
+  version: "1.11.2"
   hide_on_stack_table: true
   url: "http://bundler.io/"
 
 cassandra:
   name: "Cassandra"
-  version: "2.2.4"
+  version: "2.2.5"
   url: "/docs/databases/cassandra.html"
 
 chrome:
   name: "Chrome"
-  version: "47.0.2526.106"
+  version: "48.0.2564.109"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.20"
+  version: "2.21"
 
 composer:
   name: "Composer"
@@ -50,7 +50,7 @@ elixir:
   versions:
     - "1.0.5"
     - "1.1.1"
-    - "1.2.0"
+    - "1.2.2"
   url: "/docs/elixir.html"
 
 erlang:
@@ -92,7 +92,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.42.27"
+  version: "3.42.36"
 
 io.js:
   name: "io.js"
@@ -137,7 +137,7 @@ mongodb:
 
 mysql:
   name: "MySQL"
-  version: "5.6.28"
+  version: "5.6.29"
   url: "/docs/databases/mysql.html"
 
 node:
@@ -146,14 +146,16 @@ node:
     - "0.8.28"
     - "0.10.41"
     - "0.11.16"
-    - "0.12.9"
+    - "0.12.10"
     - "4.1.2"
     - "4.2.4"
+    - "4.3.0"
     - "5.0.0"
     - "5.1.1"
     - "5.2.0"
     - "5.3.0"
     - "5.4.0"
+    - "5.6.0"
   url: "/docs/javascript.html"
 
 npm:
@@ -178,6 +180,7 @@ phantomjs:
   versions:
     - "1.9.8"
     - "2.0.0"
+    - "2.1.1"
   url: "/docs/phantomjs.html"
 
 php:
@@ -185,9 +188,9 @@ php:
   versions:
     - "5.3.29"
     - "5.4.45"
-    - "5.5.31"
-    - "5.6.17"
-    - "7.0.0"
+    - "5.5.32"
+    - "5.6.18"
+    - "7.0.3"
   url: "/docs/php.html"
 
 phpbrew:
@@ -198,11 +201,11 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.1.4"
+  version: "5.2.5"
 
 pip:
   name: "pip"
-  version: "7.1.2"
+  version: "8.0.2"
 
 postgis:
   name: "PostGIS"
@@ -219,7 +222,6 @@ python:
   versions:
   - "2.6.9"
   - "2.7.10"
-  - "3.2.6"
   - "3.3.6"
   - "3.4.3"
   - "3.5.0"
@@ -244,7 +246,7 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.2.3"
+  version: "2.2.4"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
