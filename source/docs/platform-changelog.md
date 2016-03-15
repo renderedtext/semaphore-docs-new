@@ -6,6 +6,31 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1603 - 2016-03-22 (planned)
+```
+- additions
+  - firefox 45.0esr
+  - go 1.6
+  - node.js 4.4.0
+  - node.js 5.8.0
+- upgrades
+  - git 2.7.1 -> 2.7.3
+  - node.js 0.10.41 -> 0.10.43
+  - node.js 0.12.10 -> 0.12.12
+  - node.js 4.2.4 -> 4.2.6
+  - node.js 4.3.0 -> 4.3.2
+  - node.js 5.4.0 -> 5.4.1
+  - oracle jdk 8u72 -> 8u74
+  - php 5.5.32 -> 5.5.33
+  - php 5.6.18 -> 5.6.19
+  - php 7.0.3 -> 7.0.4
+  - pip 8.0.1 -> 8.1.0
+  - rethinkdb 2.2.3 -> 2.2.5
+  - sbt 0.13.8 -> 0.13.11
+  - scala 2.11.7 -> 2.11.8
+  - virtualenv 13.1.2 -> 14.0.6
+```
+
 ### v1602 - 2016-02-23
 ```
 - additions
