@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manually triggerring an automatic deploy
+title: Manually triggering an automatic deploy
 category: Deploying your application
 ---
 
@@ -13,7 +13,7 @@ release message to something more descriptive.
 
 <img src="/docs/assets/img/how-to-trigger-an-automatic-deploy/click-deploy.png" class="img-bordered-padding img-responsive">
 
-You can edit your deploy message by clicking on it. After you've done typing your message, click Save. Now
+You can edit your deploy message by clicking on it. After you've finished typing your message, click Save. Now
 you and your team members can read a more descriptive message about what you deployed.
 
 <img src="/docs/assets/img/how-to-trigger-an-automatic-deploy/edit-deploy-message.png" class="img-bordered-padding img-responsive">
