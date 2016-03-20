@@ -35,7 +35,7 @@ contributions on their first day at the job quickly and without friction.
 The following guides show you how to set up deployment to one of the cloud
 platforms and tools Semaphore integrates with. If your service is not listed, or
 you have custom scripts and infrastructure, we recommend going with the [Generic
-deployment method](/docs/managing-chat-notifications.html).
+deployment method](/docs/generic-deployment.html).
 
 - <a href="/docs/deploying-to-heroku.html">Deploying to Heroku</a></li>
 - <a href="/docs/deploying-via-cloud66.html">Deploying via Cloud 66</a></li>
