@@ -302,6 +302,10 @@ sqlite:
   version: "3.8.2"
   url: "/docs/databases/sqlite.html"
 
+virtualenv:
+  name: "virtualenv"
+  version: "14.0.6"
+
 wkhtmltopdf:
   name: "wkhtmltopdf"
   version: "0.9.6"
