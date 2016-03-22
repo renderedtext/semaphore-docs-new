@@ -19,7 +19,7 @@ cassandra:
 
 chrome:
   name: "Chrome"
-  version: "48.0.2564.109"
+  version: "49.0.2623.87"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
@@ -32,7 +32,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.10.1"
+  version: "1.10.3"
   url: "/docs/docker.html"
 
 docker-machine:
@@ -63,6 +63,7 @@ firefox:
   versions:
     - "34.0"
     - "38.4 ESR"
+    - "45.0 ESR"
   url: "/docs/firefox.html"
 
 gcc:
@@ -71,13 +72,14 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.7.0"
+  version: "2.7.3"
 
 go:
   name: "Go"
   versions:
     - "1.4.3"
     - "1.5.3"
+    - "1.6"
   url: "/docs/go.html"
 
 gradle:
@@ -92,7 +94,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.42.36"
+  version: "3.42.42"
 
 io.js:
   name: "io.js"
@@ -109,7 +111,7 @@ java:
   name: "Java"
   versions:
     - "openjdk-7u91"
-    - "Oracle jdk-8u66"
+    - "Oracle jdk-8u74"
   url: "/docs/java.html"
 
 leiningen:
@@ -144,18 +146,20 @@ node:
   name: "Node.js"
   versions:
     - "0.8.28"
-    - "0.10.41"
+    - "0.10.43"
     - "0.11.16"
-    - "0.12.10"
+    - "0.12.12"
     - "4.1.2"
-    - "4.2.4"
-    - "4.3.0"
+    - "4.2.6"
+    - "4.3.2"
+    - "4.4.0"
     - "5.0.0"
     - "5.1.1"
     - "5.2.0"
     - "5.3.0"
-    - "5.4.0"
+    - "5.4.1"
     - "5.6.0"
+    - "5.8.0"
   url: "/docs/javascript.html"
 
 npm:
@@ -188,9 +192,9 @@ php:
   versions:
     - "5.3.29"
     - "5.4.45"
-    - "5.5.32"
-    - "5.6.18"
-    - "7.0.3"
+    - "5.5.33"
+    - "5.6.19"
+    - "7.0.4"
   url: "/docs/php.html"
 
 phpbrew:
@@ -201,11 +205,11 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.2.5"
+  version: "5.2.12"
 
 pip:
   name: "pip"
-  version: "8.0.2"
+  version: "8.1.0"
 
 postgis:
   name: "PostGIS"
@@ -246,7 +250,7 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.2.4"
+  version: "2.2.5"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
@@ -286,17 +290,21 @@ sphinx:
 
 sbt:
   name: "sbt"
-  version: "0.13.8"
+  version: "0.13.11"
 
 scala:
   name: "Scala"
-  version: "2.11.7"
+  version: "2.11.8"
   url: "/docs/scala.html"
 
 sqlite:
   name: "SQLite"
   version: "3.8.2"
   url: "/docs/databases/sqlite.html"
+
+virtualenv:
+  name: "virtualenv"
+  version: "14.0.6"
 
 wkhtmltopdf:
   name: "wkhtmltopdf"
