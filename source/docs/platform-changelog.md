@@ -11,8 +11,6 @@ Current package versions are listed on the [Supported application stack](/docs/s
 - additions
   - firefox 45.0esr
   - go 1.6
-  - node.js 4.4.0
-  - node.js 5.8.0
 - upgrades
   - git 2.7.1 -> 2.7.3
   - node.js 0.10.41 -> 0.10.43
