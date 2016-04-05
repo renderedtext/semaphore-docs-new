@@ -1,68 +1,79 @@
-<footer class="page-footer">
+<footer class="c-footer u-mb-xs-20 u-mb-60">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <section class="footer-contact">
-          <div class="pull-left footer-logo">
-            <a href="/community"><img alt="Semaphore" height="45" src="/docs/assets/img/design/logo-semaphore.svg" width="181"></a>
+      <div class="c-footer__border"></div>
+      <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+        <h4 class="u-text-normal text-uppercase">Subscribe to our newsletter</h4>
+
+        <form role="newsletter" class="" action="http://semaphoreapp.us5.list-manage.com/subscribe/post?u=72b30480e518914855ca55a85&amp;id=d442447559" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+          <div class="input-group u-mb-20 u-pt-5">
+            <input type="text" name="EMAIL" class="form-control" placeholder="Enter your email address">
+
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_72b30480e518914855ca55a85_d442447559" value=""></div>
+
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-semaphore-green" name="subscribe" id="mc-embedded-subscribe" onclick="
+                var _this = this;
+                ga.('send', ('event', 'Blog sidebar', 'Newsletter signup');
+                setTimeout(function() {$(_this).parents('form').submit()}, 150);
+                return false;">Subscribe</button>
+            </span>
           </div>
-          <div class="pull-left">
-            <ul class="list-unstyled">
-              <li>Semaphore is © 2009-<%= Date.today.year %> Rendered Text.</li>
-              <li>All rights reserved.</li>
-              <li>
-                Follow us on <a href="https://twitter.com/semaphoreci" rel="publisher">Twitter</a>,
-                <a href="https://www.facebook.com/SemaphoreCI" rel="publisher">Facebook</a> and
-                <a href="https://plus.google.com/106136977036322666905" rel="publisher">Google+</a>.
-              </li>
-            </ul>
-          </div>
-        </section>
+        </form>
+
+        <div class="btn-group u-mb-20" role="group" aria-label="...">
+          <a class="btn btn-muted" href="https://twitter.com/semaphoreci" role="button">
+            <img width="14" alt="Follow @semaphoreci on Twitter" src="/docs/assets/img/social-twitter.svg">
+          </a>
+          <a class="btn btn-muted" href="https://www.facebook.com/SemaphoreCI" role="button">
+            <img width="7" alt="Follow SemaphoreCI on Facebook" src="/docs/assets/img/social-facebook.svg">
+          </a>
+          <a class="btn btn-muted" href="/blog/feed.xml" role="button">
+            <img width="14" alt="Subscribe to blog RSS feed" src="/docs/assets/img/social-rss.svg">
+          </a>
+        </div>
+
+        <p class="hidden-xs">© 2009-2016 Rendered Text. All rights reserved.</p>
       </div>
-      <div class="col-md-2">
-        <section>
-          <h2 class="footer-section-title">Product</h2>
-          <ul class="list-unstyled">
-            <li><a href="/automatic_testing">Continuous integration</a></li>
-            <li><a href="/deployment">Continuous deployment</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-          </ul>
-        </section>
+
+      <div class="col-xs-4 col-sm-2 col-md-2 col-md-offset-1 col-lg-offset-2">
+        <h4 class="u-text-normal text-uppercase">Semaphore</h4>
+        <ul class="list-unstyled">
+          <li><a class="u-link-quiet" href="/product">Product</a></li>
+          <li><a class="u-link-quiet" href="/renderedtext/semaphoreci/changelog">Changelog</a></li>
+          <li><a class="u-link-quiet" href="/pricing">Pricing</a></li>
+        </ul>
       </div>
-      <div class="col-md-2">
-        <section>
-          <h2 class="footer-section-title">Resources</h2>
-          <ul class="list-unstyled">
-            <li><a href="/docs">Documentation</a></li>
-            <li><a href="/community/tutorials">Tutorials</a></li>
-            <li><a href="/community/open-source">Open source</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/docs/api.html">API</a>
-          </li></ul>
-        </section>
+
+      <div class="col-xs-4 col-sm-2">
+        <h4 class="u-text-normal text-uppercase">Resources</h4>
+        <ul class="list-unstyled">
+          <li><a class="u-link-quiet" href="/contact">Contact us</a></li>
+          <li><a class="u-link-quiet" href="/docs">Documentation</a></li>
+          <li><a class="u-link-quiet" href="/community/tutorials">Tutorials</a></li>
+          <li><a class="u-link-quiet" href="/blog">Blog</a></li>
+          <li><a class="u-link-quiet" href="/docs/api.html">API</a></li>
+        </ul>
       </div>
-      <div class="col-md-2">
-        <section>
-          <h2 class="footer-section-title">Support</h2>
-          <ul class="list-unstyled">
-            <li><a href="mailto:semaphore@renderedtext.com">Contact us</a></li>
-            <li><a href="/tos">Terms of service</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/security">Security</a></li>
-          </ul>
-        </section>
+
+      <div class="col-xs-4 col-sm-2">
+        <h4 class="u-text-normal text-uppercase">About</h4>
+        <ul class="list-unstyled">
+          <li><a class="u-link-quiet" href="/about">Our story</a></li>
+          <li><a class="u-link-quiet" href="http://renderedtext.com">Company</a></li>
+          <li><a class="u-link-quiet" href="https://renderedtext.workable.com">Jobs</a></li>
+          <!--<li><a class="u-link-quiet" href="#">Media kit</a></li>-->
+          <li><a class="u-link-quiet" href="/tos">Terms</a></li>
+          <li><a class="u-link-quiet" href="/privacy">Privacy</a></li>
+          <li><a class="u-link-quiet" href="/security">Security</a></li>
+        </ul>
       </div>
-      <div class="col-md-2">
-        <section>
-          <h2 class="footer-section-title">About</h2>
-          <ul class="list-unstyled">
-            <li><a href="/about">About Semaphore</a></li>
-            <li><a href="http://renderedtext.com">Company</a></li>
-            <li><a href="/our_users">Customers</a></li>
-            <li><a href="https://www.dropbox.com/s/uybgnqx86hwm3q0/Semaphore_Media_Kit.zip?dl=0">Media kit</a></li>
-          </ul>
-        </section>
+
+      <div class="col-xs-12 visible-xs u-mt-20">
+        <p>© 2009-2016 <a href="http://renderedtext.com/">Rendered Text</a>. All rights reserved.</p>
       </div>
+
     </div>
   </div>
 </footer>
