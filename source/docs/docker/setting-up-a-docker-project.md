@@ -7,7 +7,7 @@ category: Docker
 Setting up continuous integration for your Docker project and running your
 first build on Semaphore is easy and intuitive.
 
-If you don't already have a Semaphore account, you can [sign_up](/users/sign_up)
+If you don't already have a Semaphore account, you can [sign up](/users/sign_up)
 and confirm your email address. The free account gives you unlimited CI
 service for open-source projects and up to 100 private builds per month.
 
@@ -20,11 +20,11 @@ started.
 If you already have some projects on Semaphore, you can easily add new project
 by clicking "Add new project" button.
 
-#### "Add new project" screenshot
+<img src="/docs/assets/img/adding-new-project/add-new-project.png" class="img-responsive img-bordered">
 
 If the next step prompts you to connect your Semaphore account with your
 GitHub/Bitbucker account, please consult
-[adding your GitHub or Bitbucket project to Semaphore](/adding-github-bitbucket-project-to-semaphore.html)
+[adding your GitHub or Bitbucket project to Semaphore](/docs/adding-github-bitbucket-project-to-semaphore.html)
 page in docs which explains it in details.
 
 After you have connected your version control account with your Semaphore
@@ -56,11 +56,12 @@ option. You can change the platform later in the project's settings page.
 
 Once you have chosen a platform, you can add your container registry host.
 We support:
+
  - Docker Hub
  - Amazon EC2 Container Registry (ECR)
  - Google Container Registry (GCR)
  - Quay.io
- - Any private registry you use
+ - Custom container registries
 
 This step is optional, so if you don't use any of the above you can click
 "Skip this step" link and proceed.
