@@ -46,8 +46,8 @@ any time after the setup is complete.
 <img src="/docs/assets/img/deploying-with-capistrano/deploy-commands.png" alt="Deploy Commands" class="img-responsive img-bordered">
 
 Writing custom deploy commands gives you an ability to use the deploy steps that
-match your server setup. During a deploy, Semaphore sets `REVISION` environment
-variable which contains the current Git revision being deployed.
+match your server setup. During a deploy, Semaphore sets the `REVISION` [environment
+variable](/docs/available-environment-variables.html) which contains the current Git revision being deployed.
 
 ## Adding a private SSH key for deploy
 
