@@ -59,6 +59,20 @@ settings page.
 
 <img src="/docs/assets/img/adding-new-project/choose-platform-step.png" class="img-responsive img-bordered" alt="Analysis results">
 
+Once you have chosen a platform, you can add your container registry host.
+Semaphore supports:
+
+ - [Docker Hub](/docs/docker/setting-up-docker-hub-for-your-project.html),
+ - [Amazon EC2 Container Registry (ECR)](/docs/docker/setting-up-amazon-container-registry-for-your-project.html),
+ - [Google Container Registry (GCR)](/docs/docker/setting-up-google-container-registry-for-your-project.html),
+ - [Quay.io](/docs/docker/setting-up-quay-io-for-your-project.html),
+ - [Custom Container Registry](/docs/docker/setting-up-custom-container-registry-for-your-project.html).
+
+This step is optional, so if you don't use any of the above, you can click
+"Skip this step".
+
+<img src="/docs/assets/img/adding-new-project/docker-registry-hosts-list.png" class="img-responsive img-bordered" alt="Container Registry Hosts list">
+
 If your project needs to run commands that are different from what Semaphore has
 suggested, just use the commands editor to customize them for your needs.
 
