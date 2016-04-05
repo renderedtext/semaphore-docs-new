@@ -29,7 +29,7 @@ If you need to create a MySQL database manually, you can use the following
 command:
 
 ```bash
-mysql -u $DATABASE_MYSQL_USERNAME -p$DATABASE_MYSQL_PASSWORD -e "CREATE DATABASE IF NOT EXISTS "test_db";"
+mysql -u $DATABASE_MYSQL_USERNAME -p$DATABASE_MYSQL_PASSWORD -e "CREATE DATABASE IF NOT EXISTS test_db;"
 ```
 
 List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
