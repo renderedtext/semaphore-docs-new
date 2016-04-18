@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Insights troubleshooting
-category: Insights troubleshooting
+category: Insights
 ---
 
 If you have turned Insights on for a project on Semaphore, but you don't see any

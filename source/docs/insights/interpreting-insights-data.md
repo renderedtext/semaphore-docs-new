@@ -10,11 +10,12 @@ can see the report by clicking **Add-ons** link on the project page and then
 following the **Insights** link.
 
 From the _Insights_ page, you choose a framework for which you want to see the
-report. For example, if you want to see which RSpec files are the slowest in
-your test suite, when you follow the **RSpec** link, you will see a table like
-the one in the picture below.
+report. For example, if you want to see which Cucumber files are the slowest in
+your test suite, when you follow the **Cucumber** link, you will see a table
+like the one in the picture below.
 
-image
+<img src="/docs/assets/img/insights/cucumber_table.png" alt="Cucumber
+table" class="img-responsive img-bordered">
 
 ## Report data
 The table contains all test files which take more than a minute to run, and if
@@ -27,7 +28,8 @@ Each table row can be expanded to show more info on the file's build history.
 Bar height indicates running time and build outcome is color-coded. The data
 in the report is based on the last 50 builds.
 
-image
+<img src="/docs/assets/img/insights/insights_graph.png" alt="Insights
+graph" class="img-responsive img-bordered">
 
 ## How to use Insights data to enhance your tests
 If you notice some test files with lower build pass rate and you're not sure
@@ -46,6 +48,7 @@ some setup and teardown operations that may exist for your project.
 
 Semaphore Community has some articles which can help you learn more about
 writing good specs:
+
 - [Learn RSpec](https://semaphoreci.com/community/series/learn-rspec)
 - [Working Effectively with Data Factories Using
 FactoryGirl](https://semaphoreci.com/community/tutorials/working-effectively-with-data-factories-using-factorygirl)
