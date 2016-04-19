@@ -23,9 +23,9 @@ Like Insights, Test Boosters work for the frameworks you use in your project.
 So if you use both Cucumber and RSpec, you can choose to split only one type of
 test files, or both.
 
-When you click the RSpec link, assuming you have a previously generated
-Insights report for RSpec, you will see a slider like the one in the image
-below.
+When you click the **RSpec** link, assuming you have a previously generated
+Insights report for RSpec, you will see a slider similar to the one in the
+screenshot below.
 
 <img src="/docs/assets/img/test_boosters/tb_slider.png" alt="Framework
 list" class="img-responsive img-bordered">
