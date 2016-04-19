@@ -46,8 +46,9 @@ It can become a problem if you have a test file that takes 5 minutes to
 complete, then your whole build cannot complete sooner than 5 minutes, plus
 some setup and teardown operations that may exist for your project.
 
-Semaphore Community has some articles which can help you learn more about
-writing good specs:
+High values in _Standard deviation_ column usually indicate there is potential
+for optimization. Semaphore Community has some articles which can help you
+learn more about writing good specs:
 
 - [Learn RSpec](https://semaphoreci.com/community/series/learn-rspec)
 - [Working Effectively with Data Factories Using
