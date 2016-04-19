@@ -6,6 +6,30 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1604 - 2016-04-26 (planned)
+```
+-additions
+  - node.js 5.10.1
+  - ruby 2.1.9
+-upgrades
+  - elixir 1.2.2 -> 1.2.4
+  - erlang 18.2.1 -> 18.3
+  - go 1.5.3 -> 1.5.4
+  - go 1.6 -> 1.6.1
+  - oracle jdk 8u74 -> 8u77
+  - jruby 1.7.21 -> 1.7.25
+  - jruby 9.0.0.0 -> 9.0.5.0
+  - mongodb 2.6.11 -> 2.6.12
+  - mysql 5.6.29 -> 5.6.30
+  - node.js 0.10.44 -> 0.10.45
+  - node.js 0.12.12 -> 0.12.13
+  - node.js 4.3.0 -> 4.3.4
+  - php 5.5.33 -> 5.5.34
+  - php 5.6.19 -> 5.6.20
+  - php 7.0.4 -> 7.0.5
+  - rethinkdb 2.2.5 -> 2.3.0
+```
+
 ### v1603 - 2016-03-22
 ```
 - additions
