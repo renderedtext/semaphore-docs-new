@@ -16,5 +16,6 @@ you are free to choose the number of threads within your current subscription
 plan or upgrade.
 
 ## Further reading
-- Splitting your test suite with Test Boosters
-- Test Booster threads
+- [Splitting your test suite with Test
+Boosters](/docs/test_boosters/splitting-your-test-suite-with-test-boosters.html)
+- [Test Booster threads](/docs/test_boosters/test-booster-threads.html)

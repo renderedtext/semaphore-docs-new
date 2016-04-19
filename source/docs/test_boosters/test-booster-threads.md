@@ -12,7 +12,8 @@ You cannot change the commands for Test Booster threads, because they are
 generated automatically. You can see these threads in project settings labeled
 as `Test Booster threads`.
 
-test booster thread image
+<img src="/docs/assets/img/test_boosters/tb_thread.png" alt="Test Booster
+thread" class="img-responsive img-bordered">
 
 You can still add some additional build threads for whatever you want, if your
 subscription plan allows it. You might also want to remove some of your
