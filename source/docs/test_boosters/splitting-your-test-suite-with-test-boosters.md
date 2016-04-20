@@ -6,11 +6,16 @@ category: Test Boosters
 
 Before you start, you should have Insights report on build duration. This
 information is necessary to make better suggestions when splitting your test
-suite. You can read about enabling Insights [here]().
+suite. You can read about enabling Insights [here](/docs/insights/enabling-insights.html).
 
 Test Boosters feature is located in _Add-ons_ section on project page.
 
 <img src="/docs/assets/img/test_boosters/project_header.png" alt="Add-ons
+feature" class="img-responsive img-bordered">
+
+Next, click on **Test Boosters**.
+
+<img src="/docs/assets/img/test_boosters/tb_add_on.png" alt="Test Booster
 feature" class="img-responsive img-bordered">
 
 When you follow the link, you will see a list of currently supported
@@ -51,9 +56,10 @@ building your projects. These are the threads you have entered on project
 settings page and it is the number of threads which appear on your build page.
 
 Test Booster threads are marked by red color in this bar to differentiate them
-from the rest of the threads you use. To read more about Test Booster threads
-and how they impact your build settings, check out
-[this](/docs/test_boosters/test-booster-threads.html) section.
+from the rest of the threads you use. To read more about Test Booster threads,
+how they relate to the usual build threads, and how they impact your build
+settings, check out [this](/docs/test_boosters/test-booster-threads.html)
+section.
 
 The number of available threads can be increased by upgrading your subscription
 plan or deleting some of your existing build threads. You should note that
@@ -65,7 +71,7 @@ class="img-responsive img-bordered">
 
 When you click **Select** you will see the _Start build_ option. This will
 build your project's latest code revision with the selected number of Test
-Booster and your own build threads.
+Booster and all the build threads you already had.
 
 <img src="/docs/assets/img/test_boosters/start_build_tip.png" alt="Start build
 tip" class="img-responsive img-bordered">

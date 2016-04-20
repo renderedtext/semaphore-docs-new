@@ -8,8 +8,8 @@ Test Boosters is a Semaphore feature which evenly distributes your tests in
 parallel threads in order to optimize your build running time.
 
 It works by using the information on your project's build duration gathered by
-Insights, so if you want to use Test Boosters, make sure you have Insights
-enabled.
+Insights, so if you want to use Test Boosters, make sure you have [Insights
+enabled](/docs/insights/enabling-insights.html).
 
 Semaphore will suggest you an optimal number of threads for your project, but
 you are free to choose the number of threads within your current subscription
