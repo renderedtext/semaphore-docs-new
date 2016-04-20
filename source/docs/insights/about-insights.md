@@ -17,4 +17,4 @@ you use in your project.
 ## Further reading
 - [Enabling Insights](/docs/insights/enabling-insights.html)
 - [Interpreting Insights data](/docs/insights/interpreting-insights-data.html)
-- [Insights troubleshooting](/docs/insights/insights-troubleshooting.html)
+- [Insights troubleshooting](/docs/insights/troubleshooting-insights.html)

@@ -18,8 +18,7 @@ Next, click on **Insights**.
 <img src="/docs/assets/img/insights/insights_option.png" alt="Insights
 option" class="img-responsive img-bordered">
 
-You will see a list of currently supported currently supported
-frameworks.
+You will see a list of currently supported frameworks.
 
 <img src="/docs/assets/img/insights/framework_list.png" alt="Framework
 list" class="img-responsive img-bordered">
@@ -47,4 +46,4 @@ build" class="img-responsive img-bordered">
 
 ## Further reading
 - [Interpreting Insights data](/docs/insights/interpreting-insights-data.html)
-- [Insights troubleshooting](/docs/insights/insights-troubleshooting.html)
+- [Insights troubleshooting](/docs/insights/troubleshooting-insights.html)
