@@ -13,7 +13,7 @@ and then following the **Insights** link.
 You can choose the framework for which you want to see the report from the
 Insights page. For example, if you want to see which Cucumber files are the
 slowest in your test suite, if you follow the **Cucumber** link, you will see
-a table similar to the one in the screenshot below..
+a table similar to the one in the screenshot below.
 
 <img src="/docs/assets/img/insights/cucumber_table.png" alt="Cucumber
 table" class="img-responsive img-bordered">
@@ -60,4 +60,4 @@ FactoryGirl](https://semaphoreci.com/community/tutorials/working-effectively-wit
 Rails](https://semaphoreci.com/community/tutorials/stubbing-external-services-in-rails)
 
 ## Further reading
-- [Insights troubleshooting](/docs/insights/insights-troubleshooting.html)
+- [Insights troubleshooting](/docs/insights/troubleshooting-insights.html)
