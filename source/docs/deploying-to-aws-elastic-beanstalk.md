@@ -13,7 +13,8 @@ that runs their applications.
 Semaphore has a built-in integration, which makes continuous deployment to
 AWS Elastic Beanstalk very easy. This guide shows you how to set it up,
 and assumes that you have an application that is already configured on Elastic
-Beanstalk.
+Beanstalk. We recommend [creating a user for Semaphore on AWS IAM](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
+and attaching a custom policy provided at the end of this article.
 
 To get started, click on _Set Up Deployment_ on your project page on Semaphore.
 
@@ -102,3 +103,104 @@ Beanstalk. All you need to do is click "Deploy".
 alt="Ready to deploy" class="img-responsive img-bordered">
 
 Happy building!
+
+## Example AWS IAM policy
+This example shows a policy which provides Semaphore with access to manage your
+Elastic Beanstalk applications and environments. [This
+section](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#create-managed-policy-console)
+of AWS documentation explains how to create a custom policy. You can copy the
+policy shown below.
+
+``` json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteObject",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicy",
+                "s3:GetObject",
+                "s3:GetObjectAcl",
+                "s3:GetObjectVersion",
+                "s3:ListBucket",
+                "s3:ListAllMyBuckets",
+                "s3:PutObject",
+                "s3:PutObjectAcl",
+                "s3:PutObjectVersionAcl"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "elasticbeanstalk:CreateApplicationVersion",
+                "elasticbeanstalk:DeleteApplicationVersion",
+                "elasticbeanstalk:Describe*",
+                "elasticbeanstalk:ListAvailableSolutionStacks",
+                "elasticbeanstalk:RequestEnvironmentInfo",
+                "elasticbeanstalk:UpdateApplicationVersion",
+                "elasticbeanstalk:UpdateEnvironment"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:CancelUpdateStack",
+                "cloudformation:GetTemplate",
+                "cloudformation:Describe*",
+                "cloudformation:UpdateStack"
+            ],
+            "Resource": [
+                "arn:aws:cloudformation:[region]:[user-id]:*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeImages",
+                "ec2:DescribeKeyPairs"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling:DescribeAutoScalingGroups",
+                "autoscaling:DescribeScalingActivities",
+                "autoscaling:ResumeProcesses",
+                "autoscaling:SuspendProcesses"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "rds:Describe*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sns:GetTopicAttributes",
+                "sns:ListSubscriptionsByTopic"
+            ],
+            "Resource": "arn:aws:sns:[region]:[user-id]:*"
+        }
+    ]
+}
+```
+
