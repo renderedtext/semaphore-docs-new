@@ -4,7 +4,7 @@ title: About Insights
 category: Insights
 ---
 
-Insights is a Semaphore feature which provides a report on your slowest test
+Insights is a Semaphore add-on which provides a report on your slowest test
 files. Its goal is to give you useful feedback on your continuous
 integration process.
 

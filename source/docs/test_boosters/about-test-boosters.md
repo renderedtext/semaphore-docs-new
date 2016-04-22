@@ -4,7 +4,7 @@ title: About Test Boosters
 category: Test Boosters
 ---
 
-Test Boosters is a Semaphore feature which evenly distributes your tests in
+Test Boosters is a Semaphore add-on which evenly distributes your test files in
 parallel threads in order to optimize your build running time.
 
 It works by using the information on your project's build duration gathered by
