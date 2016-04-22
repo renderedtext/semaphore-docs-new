@@ -44,6 +44,10 @@ As you drag the slider, the estimated run time per thread is shown above the
 slider. You can choose the number of threads you think is best regarding your
 current needs and subscription plan.
 
+The estimates are made based on your Insights report and may vary as your test
+suite changes. Generally, Test Boosters can make better estimates if you have
+more entries in your Insights report history.
+
 As you move the slider to the right, if you exceed the number of threads
 available on your current subscription plan, you will see a horizontal bar
 below the slider with information on your current thread usage.
