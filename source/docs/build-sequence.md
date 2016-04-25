@@ -18,7 +18,7 @@ A new virtual machine is booted. It comes preinstalled with the platform's [supp
 
 ### Copy code to VM
 
-Your code will be placed in `~/home/runner/:project_name`.
+Your code will be placed in `/home/runner/:project_name`.
 
 ### Emulate display
 
