@@ -19,7 +19,7 @@ cassandra:
 
 chrome:
   name: "Chrome"
-  version: "49.0.2623.87"
+  version: "50.0.2661.75"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
@@ -32,7 +32,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.10.3"
+  version: "1.11.0"
   url: "/docs/docker.html"
 
 docker-machine:
@@ -50,12 +50,12 @@ elixir:
   versions:
     - "1.0.5"
     - "1.1.1"
-    - "1.2.2"
+    - "1.2.4"
   url: "/docs/elixir.html"
 
 erlang:
   name: "Erlang"
-  version: "18.2.1"
+  version: "18.3"
   url: "/docs/erlang.html"
 
 firefox:
@@ -72,14 +72,14 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.7.3"
+  version: "2.8.1"
 
 go:
   name: "Go"
   versions:
     - "1.4.3"
-    - "1.5.3"
-    - "1.6"
+    - "1.5.4"
+    - "1.6.1"
   url: "/docs/go.html"
 
 gradle:
@@ -94,7 +94,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.42.42"
+  version: "3.42.50"
 
 io.js:
   name: "io.js"
@@ -111,7 +111,7 @@ java:
   name: "Java"
   versions:
     - "openjdk-7u91"
-    - "Oracle jdk-8u74"
+    - "Oracle jdk-8u77"
   url: "/docs/java.html"
 
 leiningen:
@@ -134,25 +134,25 @@ memcached:
 
 mongodb:
   name: "MongoDB"
-  version: "2.6.11"
+  version: "2.6.12"
   url: "/docs/databases/mongodb.html"
 
 mysql:
   name: "MySQL"
-  version: "5.6.29"
+  version: "5.6.30"
   url: "/docs/databases/mysql.html"
 
 node:
   name: "Node.js"
   versions:
     - "0.8.28"
-    - "0.10.43"
+    - "0.10.44"
     - "0.11.16"
-    - "0.12.12"
+    - "0.12.13"
     - "4.1.2"
     - "4.2.6"
     - "4.3.2"
-    - "4.4.0"
+    - "4.4.3"
     - "5.0.0"
     - "5.1.1"
     - "5.2.0"
@@ -160,11 +160,12 @@ node:
     - "5.4.1"
     - "5.6.0"
     - "5.8.0"
+    - "5.10.1"
   url: "/docs/javascript.html"
 
 npm:
   name: "NPM"
-  version: "2.14.9"
+  version: "2.15.0"
   hide_on_stack_table: true
 
 nvm:
@@ -192,9 +193,9 @@ php:
   versions:
     - "5.3.29"
     - "5.4.45"
-    - "5.5.33"
-    - "5.6.19"
-    - "7.0.4"
+    - "5.5.34"
+    - "5.6.20"
+    - "7.0.5"
   url: "/docs/php.html"
 
 phpbrew:
@@ -205,11 +206,11 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.2.12"
+  version: "5.3.2"
 
 pip:
   name: "pip"
-  version: "8.1.0"
+  version: "8.1.1"
 
 postgis:
   name: "PostGIS"
@@ -250,7 +251,7 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.2.5"
+  version: "2.3.0"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
@@ -262,6 +263,7 @@ ruby:
     - "2.2.2"
     - "2.2.1"
     - "2.2.0"
+    - "2.1.9"
     - "2.1.8"
     - "2.1.7"
     - "2.1.6"
@@ -275,8 +277,8 @@ ruby:
     - "1.9.3-p551"
     - "1.9.2-p330"
     - "ree-1.8.7-2012.02"
-    - "JRuby 1.7.21"
-    - "JRuby 9.0.0.0"
+    - "JRuby 1.7.25"
+    - "JRuby 9.0.5.0"
   url: "/docs/ruby.html"
 
 rubygems:
