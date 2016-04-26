@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1604 - 2016-04-26 (planned)
+### v1604 - 2016-04-26
 ```
 -additions
   - node.js 5.10.1
