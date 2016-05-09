@@ -20,7 +20,10 @@ The value of this variable can be set to:
 
 The default version is <%= package_versions("qt").first %>.
 
+The environment variable user-interface may not work in setting this variable. 
+Instead, use a build command: `export QT_SELECT=5`
+
 If you use the `capybara-webkit` gem and decide to change the version of Qt, the
 gem has to be reinstalled. One way to achieve this, is by expiring your project's
-cache in Project Settings. On the other hand, if you'd like to preserve your
-cache, please send your request to our support.
+cache in Project Settings (you must be the project owner to expire the cache). 
+On the other hand, if you'd like to preserve your cache, please send your request to our support.
