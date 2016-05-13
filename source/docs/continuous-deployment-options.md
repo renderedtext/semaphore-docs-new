@@ -42,6 +42,7 @@ deployment method](/docs/generic-deployment.html).
 - <a href="/docs/deploying-with-capistrano.html">Deploying with Capistrano</a></li>
 - <a href="/docs/deploying-to-aws-elastic-beanstalk.html">Deploying to AWS Elastic Beanstalk</a></li>
 - <a href="/docs/deploying-to-amazon-s3.html">Deploying to Amazon S3</a></li>
+- <a href="/docs/deploying-to-aws-lambda.html">Deploying to AWS Lambda</a></li>
 - <a href="/docs/deploying-with-git-deploy.html">Deploying with git-deploy</a></li>
 - <a href="/docs/ftp-deployment.html">FTP deployment</a></li>
 
