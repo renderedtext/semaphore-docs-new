@@ -6,12 +6,35 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1605 - 2016-05-24
+```
+- additions
+  - node.js 5.11.1
+  - node.js 6.1.0
+  - ruby 2.2.5
+  - ruby 2.3.1
+- upgrades
+  - cassandra 2.2.5 -> 2.2.6
+  - elixir 1.2.4 -> 1.2.5
+  - git 2.8.1 -> 2.8.2
+  - go 1.6.1 -> 1.6.2
+  - jruby 9.0.5.0 -> 9.1.0.0
+  - node.js 0.10.44 -> 0.10.45
+  - node.js 0.12.13 -> 0.12.14
+  - node.js 4.4.3 -> 4.4.4
+  - node.js 5.10.0 -> 5.10.1
+  - oracle jdk 8u77 -> 8u91
+  - php 5.5.34 -> 5.5.35
+  - php 5.6.20 -> 5.6.21
+  - php 7.0.5 -> 7.0.6
+```
+
 ### v1604 - 2016-04-26
 ```
--additions
+- additions
   - node.js 5.10.1
   - ruby 2.1.9
--upgrades
+- upgrades
   - elixir 1.2.2 -> 1.2.4
   - erlang 18.2.1 -> 18.3
   - go 1.5.3 -> 1.5.4
