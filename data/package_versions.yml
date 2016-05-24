@@ -3,7 +3,7 @@
 
 bower:
   name: "Bower"
-  version: "1.5.3"
+  version: "1.7.9"
   hide_on_stack_table: true
 
 bundler:
@@ -14,12 +14,12 @@ bundler:
 
 cassandra:
   name: "Cassandra"
-  version: "2.2.5"
+  version: "2.2.6"
   url: "/docs/databases/cassandra.html"
 
 chrome:
   name: "Chrome"
-  version: "50.0.2661.75"
+  version: "50.0.2661.102"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
@@ -32,13 +32,18 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.11.0"
+  version: "1.11.1"
   url: "/docs/docker.html"
 
 docker-machine:
   name: "docker-machine"
-  version: "0.5.6"
+  version: "0.7.0"
   url: "https://docs.docker.com/machine/"
+
+docker-compose:
+  name: "docker-compose"
+  version: "1.7.1"
+  url: "https://docs.docker.com/compose/"
 
 elasticsearch:
   name: "ElasticSearch"
@@ -50,7 +55,7 @@ elixir:
   versions:
     - "1.0.5"
     - "1.1.1"
-    - "1.2.4"
+    - "1.2.5"
   url: "/docs/elixir.html"
 
 erlang:
@@ -72,14 +77,14 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.8.1"
+  version: "2.8.2"
 
 go:
   name: "Go"
   versions:
     - "1.4.3"
     - "1.5.4"
-    - "1.6.1"
+    - "1.6.2"
   url: "/docs/go.html"
 
 gradle:
@@ -94,7 +99,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.42.50"
+  version: "3.43.2"
 
 io.js:
   name: "io.js"
@@ -110,8 +115,8 @@ imagemagick:
 java:
   name: "Java"
   versions:
-    - "openjdk-7u91"
-    - "Oracle jdk-8u77"
+    - "openjdk-7u95"
+    - "Oracle jdk-8u91"
   url: "/docs/java.html"
 
 leiningen:
@@ -146,13 +151,13 @@ node:
   name: "Node.js"
   versions:
     - "0.8.28"
-    - "0.10.44"
+    - "0.10.45"
     - "0.11.16"
-    - "0.12.13"
+    - "0.12.14"
     - "4.1.2"
     - "4.2.6"
     - "4.3.2"
-    - "4.4.3"
+    - "4.4.4"
     - "5.0.0"
     - "5.1.1"
     - "5.2.0"
@@ -161,11 +166,13 @@ node:
     - "5.6.0"
     - "5.8.0"
     - "5.10.1"
+    - "5.11.1"
+    - "6.1.0"
   url: "/docs/javascript.html"
 
 npm:
   name: "NPM"
-  version: "2.15.0"
+  version: "2.15.1"
   hide_on_stack_table: true
 
 nvm:
@@ -193,9 +200,9 @@ php:
   versions:
     - "5.3.29"
     - "5.4.45"
-    - "5.5.34"
-    - "5.6.20"
-    - "7.0.5"
+    - "5.5.35"
+    - "5.6.21"
+    - "7.0.6"
   url: "/docs/php.html"
 
 phpbrew:
@@ -206,11 +213,11 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.3.2"
+  version: "5.3.4"
 
 pip:
   name: "pip"
-  version: "8.1.1"
+  version: "8.1.2"
 
 postgis:
   name: "PostGIS"
@@ -251,13 +258,15 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.3.0"
+  version: "2.3.2"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
   name: "Ruby"
   versions:
+    - "2.3.1"
     - "2.3.0"
+    - "2.2.5"
     - "2.2.4"
     - "2.2.3"
     - "2.2.2"
@@ -278,7 +287,7 @@ ruby:
     - "1.9.2-p330"
     - "ree-1.8.7-2012.02"
     - "JRuby 1.7.25"
-    - "JRuby 9.0.5.0"
+    - "JRuby 9.1.0.0"
   url: "/docs/ruby.html"
 
 rubygems:
