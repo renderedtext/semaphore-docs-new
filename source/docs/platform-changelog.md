@@ -15,6 +15,9 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - ruby 2.3.1
 - upgrades
   - cassandra 2.2.5 -> 2.2.6
+  - docker-engine 1.11.0 -> 1.11.1
+  - docker-compose 1.6.0 -> 1.7.1
+  - docker-machine 0.5.6 -> 0.7.0
   - elixir 1.2.4 -> 1.2.5
   - git 2.8.1 -> 2.8.2
   - go 1.6.1 -> 1.6.2
@@ -27,6 +30,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - php 5.5.34 -> 5.5.35
   - php 5.6.20 -> 5.6.21
   - php 7.0.5 -> 7.0.6
+  - rethinkdb 2.3.0 -> 2.3.2
 ```
 
 ### v1604 - 2016-04-26
