@@ -611,7 +611,7 @@ blockquote {
   padding: 11px 22px;
   margin: 0 0 22px;
   font-size: 20px;
-  border-left: 5px solid #ceceb8; }
+  border-left: 3px solid #edede5; }
   blockquote p:last-child,
   blockquote ul:last-child,
   blockquote ol:last-child {
@@ -4890,13 +4890,16 @@ a.bug-series:hover {
   position: relative; }
   @media (min-width: 992px) {
     .intro-content {
-      width: 40%;
+      width: 50%;
       box-sizing: border-box;
       position: absolute;
       top: 50%;
       -ms-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%); } }
+  @media (min-width: 1200px) {
+    .intro-content {
+      width: 40%; } }
   .intro-content .page-tagline {
     width: 75%; }
 
@@ -5580,7 +5583,7 @@ a.btn-cta {
   float: left !important; }
   @media (min-width: 768px) {
     .navigation-group--docs {
-      width: calc(100% - 147px) !important; } }
+      width: 100% !important; } }
 
 section + section > .navigation-top {
   border-top: 2px solid #ceceb8; }
@@ -6456,11 +6459,13 @@ pre span {
     max-width: none; }
   .block-longform blockquote {
     font-size: 18px;
-    opacity: 0.7;
-    padding-left: 40px; }
+    padding-left: 40px;
+    font-style: italic; }
     .block-longform blockquote.lead {
       font-size: 36px;
       border: none; }
+    .block-longform blockquote p:last-child {
+      margin-bottom: 5px; }
   .block-longform .page-subtitle {
     margin-bottom: 18px; }
   .block-longform code {
@@ -6470,6 +6475,12 @@ pre span {
 @media (min-width: 992px) {
   .page-illustration-blog {
     background-image: url("../images/page-intro-blog.jpg"); } }
+@media (min-width: 992px) {
+  .page-illustration-blog {
+    background-position: 0px top; } }
+@media (min-width: 1200px) {
+  .page-illustration-blog {
+    background-position: center top; } }
 
 .blog-dropdown .btn {
   font-weight: bold;
@@ -6515,14 +6526,16 @@ pre span {
   background: #f2f2e9;
   border-radius: 4px;
   border: 2px solid #ceceb8;
-  padding: 20px 0 40px 0; }
+  padding: 20px 0 20px 0; }
   .block-newsletter:before, .block-newsletter:after {
     content: " ";
     display: table; }
   .block-newsletter:after {
     clear: both; }
   .block-newsletter h3 {
-    font-weight: bold; }
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 1px; }
   .block-newsletter .icons-share {
     width: 24px;
     height: 24px;
@@ -6570,7 +6583,7 @@ pre span {
   border-left: none;
   border-right: none;
   padding: 20px 10px;
-  margin: 30px 0 40px 0; }
+  margin: 30px 0 20px 0; }
   .form-newsletter:before, .form-newsletter:after {
     content: " ";
     display: table; }
@@ -6586,7 +6599,7 @@ pre span {
 
 .form-control-border {
   border: 2px solid #ceceb8;
-  height: 66px; }
+  height: 38px; }
 
 .form-control-border--sm {
   height: 36px; }
