@@ -4,11 +4,15 @@ title: Docker
 category: The Semaphore platform
 ---
 
-Semaphore currently offers [Docker](https://docs.docker.com/) support in a beta
-platform. If you want to use this platform for your projects, you can switch to
-it in `Project Settings > Platform`.
+Semaphore fully supports using [Docker](https://www.docker.com) in a
+continuous delivery process. Docker's container technology can be used in
+various use cases, which you can learn about in official [Docker
+documentation](https://docs.docker.com).
 
-The beta platform has Docker <%= package_version("docker") %>, [docker-machine](https://docs.docker.com/machine/)
+To use Docker tools, set your Semaphore project to use the Docker platform in
+`Project Settings > Platform`.
+
+Semaphore's Docker platform has Docker <%= package_version("docker") %>, [docker-machine](https://docs.docker.com/machine/)
  <%= package_version("docker-machine") %>, and [docker-compose](https://docs.docker.com/compose/) <%= package_version("docker-compose") %> pre-installed, so once you make the switch,
 you're ready to use the Docker [CLI](https://docs.docker.com/reference/commandline/cli/)
 in your build commands.
@@ -16,7 +20,16 @@ in your build commands.
 To avoid permission problems when using the Docker CLI, commands should be used
 with `sudo`.
 
-Docker guides:
+To learn more about using Docker, please consult the following guides:
 
-- [Setting up a continuous integration for a Docker project](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
+- [Setting up a continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
 - [Testing multi-container applications with Docker Compose and Semaphore](/docs/docker/testing-multicontainer-apps-with-docker-compose-and-semaphore.html)
+- Semaphore's integrations with container registries
+  - [AWS EC2 Container Registry](/docs/docker/continuous-delivery-aws-container-registry.html)
+  - [Docker Hub](/docs/docker/continuous-delivery-docker-hub.html)
+  - [Google Container Registry](/docs/docker/continuous-delivery-google-container-registry.html)
+  - [Quay.io](/docs/docker/continuous-delivery-quayio.html)
+  - [Custom or self-hosted container registry](/docs/docker/continuous-delivery-on-premise-container-registry.html)
+
+If you have questions about using Docker that are not covered here, please
+[contact us](/contact).
