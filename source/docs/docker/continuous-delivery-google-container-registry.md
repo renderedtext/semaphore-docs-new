@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Google Container Registry for your project
+title: Setting up continuous delivery with Google Container Registry
 category: Docker
 ---
 

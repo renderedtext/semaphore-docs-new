@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Amazon EC2 Container Registry for your project
+title: Setting up continuous delivery with AWS EC2 Container Registry
 category: Docker
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Quay.io for your project
+title: Setting up continuous delivery with Quay.io
 category: Docker
 ---
 

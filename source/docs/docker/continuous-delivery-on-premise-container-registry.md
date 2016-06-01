@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Custom Container Registry for your project
+title: Setting up continuous delivery with a custom or on premise container registry
 category: Docker
 ---
 

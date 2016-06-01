@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Docker Hub for your project
+title: Setting up continuous delivery with Docker Hub
 category: Docker
 ---
 
