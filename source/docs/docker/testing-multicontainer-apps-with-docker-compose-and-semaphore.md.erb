@@ -1,0 +1,43 @@
+---
+layout: post
+title: Testing multi-container applications with Docker Compose and Semaphore
+category: Docker
+---
+
+Docker Compose is right at home in a continuous integration environment, given its
+ability to easily bootstrap your containers and their interconnectedness for
+testing and development purposes. This page will guide you through setting up
+and testing a simple, multi-container project on Semaphore.
+
+After signing up for a Semaphore account, you're ready to add your first project.
+To follow along, you can fork the [GitHub repository](https://github.com/ervinb/docker-compose-example)
+used in this guide. As the repository is open-source, clicking on "Build Public Project"
+will pull a list of public projects from your connected repository host account,
+in this case, from GitHub.
+
+<img src="/docs/assets/img/testing-with-docker-compose/docker-compose-select-repo.png" alt="Selecting the repository" class="img-responsive img-bordered">
+
+Choosing the repository will fetch it's branches and show you the branch
+selection page. This is where we choose the branch for our initial build. Other,
+pre-existing branches, can be added later on and new branches will be added
+automatically by Semaphore.
+
+<img src="/docs/assets/img/testing-with-docker-compose/docker-compose-select-branch.png" alt="Selecting a branch for the initial build" class="img-responsive img-bordered">
+
+A brief analysis will gather some information about your repository and show
+you the platform selection screen. If the repository has a `Dockerfile` or
+`docker-compose.yml`, the Docker-enabled platform will be pre-selected.
+
+<img src="/docs/assets/img/adding-new-project/choose-platform-step.png" alt="Choosing a platform" class="img-responsive img-bordered">
+
+Next, Semaphore will suggest some build commands. If you need to, you can tailor
+them to your needs with the commands editor, or later in Project Settings.
+
+<img src="/docs/assets/img/testing-with-docker-compose/docker-compose-commands.png" alt="Setting up build commands" class="img-responsive img-bordered">
+
+Clicking "Build" will kick-off your first build. Sit back, and let Semaphore do
+all the work. After a short while, you will be greeted with a successful build.
+
+<img src="/docs/assets/img/testing-with-docker-compose/docker-compose-first-build-details.png" alt="First successful build with Docker Compose and Semaphore" class="img-responsive img-bordered">
+
+Happy building!
