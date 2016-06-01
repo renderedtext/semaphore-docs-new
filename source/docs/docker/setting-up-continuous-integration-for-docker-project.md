@@ -53,8 +53,8 @@ customize the commands once the analysis is finished.
 
 Next, Semaphore will prompt you to choose a platform for your project based on
 the project analysis. If you have `Dockerfile` or `docker-compose.yml` in your
-project, Semaphore will preselect the platform with Docker support enabled.
-Click on "Docker" option. You can change the platform later on the project's
+project, Semaphore will preselect the platform with enabled Docker support.
+Click on the "Docker" option. You can change the platform later on the project's
 settings page.
 
 <img src="/docs/assets/img/adding-new-project/choose-platform-step.png" class="img-responsive img-bordered" alt="Analysis results">
@@ -68,8 +68,8 @@ Semaphore supports:
  - [Quay.io](/docs/docker/setting-up-quay-io-for-your-project.html),
  - [Custom Container Registry](/docs/docker/setting-up-custom-container-registry-for-your-project.html).
 
-This step is optional, so if you don't use any of the above, you can click
-"Skip this step".
+This step is optional, so you can click "Skip this step" if you're not using any
+of the above mentioned registry hosts.
 
 <img src="/docs/assets/img/adding-new-project/docker-registry-hosts-list.png" class="img-responsive img-bordered" alt="Container Registry Hosts list">
 
@@ -77,8 +77,8 @@ If your project needs to run commands that are different from what Semaphore has
 suggested, just use the commands editor to customize them for your needs.
 
 At this point, you'll be ready to launch your first **Docker** build. Click on
-"Build With These Settings" to do so. If all goes well, you should see your
-first successful build on Semaphore.
+"Build With These Settings" to launch the build. If all goes well, you should
+see your first successful build on Semaphore.
 
 <img src="/docs/assets/img/adding-new-docker-project/green-build.png" class="img-responsive img-bordered">
 
