@@ -13,7 +13,7 @@ will only take a few clicks.
 
 In order to enable **Docker Registry integrations**, you first need to set up
 your project as a Docker project on Semaphore. Read
-[Setting up a continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
+[Setting up continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
 for more information.
 
 Configuring the **Quay.io** project add-on will enable you to **push** and

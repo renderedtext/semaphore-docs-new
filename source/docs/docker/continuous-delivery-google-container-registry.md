@@ -13,7 +13,7 @@ and straightforward.
 
 If your project is not set up as a **Docker project**, you should check out our
 documentation page on
-[setting up a continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html) for more information.
+[setting up continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html) for more information.
 
 Configuring your project as a **Docker** project will enable you to set up
 Docker registry integrations in project add-ons.

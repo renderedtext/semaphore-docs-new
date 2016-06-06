@@ -14,7 +14,7 @@ and it will only take a minute of your time.
 If your project is set up to use **Docker**, all Docker container registry
 integrations will be available in your project add-ons. For more information on
 how to set up a Docker project on Semaphore, you can read
-[Setting up a continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html).
+[Setting up continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html).
 
 Configuring the Docker Hub project add-on will enable you to **push** and
 **pull** your images without having to log into Docker Hub during
