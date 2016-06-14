@@ -6,6 +6,24 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1606 - 2016-06-21 (planned)
+```
+- additions
+  - node.js 6.2.1
+  - qt 5.5.1
+- upgrades
+  - chromedriver 2.21 -> 2.22
+  - elixir 1.2.5 -> 1.2.6
+  - git 2.8.2 -> 2.9.0
+  - mysql 5.6.30 -> 5.6.31
+  - node.js 4.4.4 -> 4.4.5
+  - php 5.5.35 -> 5.5.36
+  - php 5.6.21 -> 5.6.22
+  - php 7.0.6 -> 7.0.7
+  - rabbitmq 3.2.4 -> 3.6.2
+  - rethinkdb 2.3.2 -> 2.3.4
+```
+
 ### v1605 - 2016-05-24
 ```
 - additions
