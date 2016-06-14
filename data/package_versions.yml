@@ -247,6 +247,10 @@ qt:
     - "5.4.2"
   url: "/docs/qt.html"
 
+rabbitmq:
+  name: "RabbitMQ"
+  version: "3.2.4"
+
 rbenv:
   name: "rbenv"
   hide_on_stack_table: true
