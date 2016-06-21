@@ -15,8 +15,9 @@ called `QT_SELECT`.
 
 The value of this variable can be set to:
 
-  - `5` or `qt5` to select version <%= package_versions("qt").last %>
-  - `4` or `qt4` to select version <%= package_versions("qt").first %>
+  - `48`, `4` or `qt4` to select version <%= package_versions("qt")[0] %>
+  - `54`, `5` or `qt5` to select version <%= package_versions("qt")[1] %>
+  - `55` or `qt55` to select version <%= package_versions("qt")[2] %>
 
 The default version is <%= package_versions("qt").first %>.
 
