@@ -19,12 +19,12 @@ cassandra:
 
 chrome:
   name: "Chrome"
-  version: "50.0.2661.102"
+  version: "51.0.2704.84"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.21"
+  version: "2.22"
 
 composer:
   name: "Composer"
@@ -32,7 +32,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.11.1"
+  version: "1.11.2"
   url: "/docs/docker.html"
 
 docker-machine:
@@ -55,7 +55,7 @@ elixir:
   versions:
     - "1.0.5"
     - "1.1.1"
-    - "1.2.5"
+    - "1.2.6"
   url: "/docs/elixir.html"
 
 erlang:
@@ -77,7 +77,7 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.8.2"
+  version: "2.9.0"
 
 go:
   name: "Go"
@@ -99,7 +99,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.43.2"
+  version: "3.43.3"
 
 io.js:
   name: "io.js"
@@ -144,7 +144,7 @@ mongodb:
 
 mysql:
   name: "MySQL"
-  version: "5.6.30"
+  version: "5.6.31"
   url: "/docs/databases/mysql.html"
 
 node:
@@ -157,7 +157,7 @@ node:
     - "4.1.2"
     - "4.2.6"
     - "4.3.2"
-    - "4.4.4"
+    - "4.4.5"
     - "5.0.0"
     - "5.1.1"
     - "5.2.0"
@@ -168,6 +168,7 @@ node:
     - "5.10.1"
     - "5.11.1"
     - "6.1.0"
+    - "6.2.1"
   url: "/docs/javascript.html"
 
 npm:
@@ -200,9 +201,9 @@ php:
   versions:
     - "5.3.29"
     - "5.4.45"
-    - "5.5.35"
-    - "5.6.21"
-    - "7.0.6"
+    - "5.5.36"
+    - "5.6.22"
+    - "7.0.7"
   url: "/docs/php.html"
 
 phpbrew:
@@ -213,7 +214,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.3.4"
+  version: "5.4.4"
 
 pip:
   name: "pip"
@@ -245,11 +246,12 @@ qt:
   versions:
     - "4.8.1"
     - "5.4.2"
+    - "5.5.1"
   url: "/docs/qt.html"
 
 rabbitmq:
   name: "RabbitMQ"
-  version: "3.2.4"
+  version: "3.6.2"
 
 rbenv:
   name: "rbenv"
@@ -262,7 +264,7 @@ redis:
 
 rethinkdb:
   name: "RethinkDB"
-  version: "2.3.2"
+  version: "2.3.4"
   url: "/docs/databases/rethinkdb.html"
 
 ruby:
