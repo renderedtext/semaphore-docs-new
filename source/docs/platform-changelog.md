@@ -6,13 +6,14 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1606 - 2016-06-21 (planned)
+### v1606 - 2016-06-21
 ```
 - additions
   - node.js 6.2.1
   - qt 5.5.1
 - upgrades
   - chromedriver 2.21 -> 2.22
+  - docker-engine 1.11.1 -> 1.11.2
   - elixir 1.2.5 -> 1.2.6
   - git 2.8.2 -> 2.9.0
   - mysql 5.6.30 -> 5.6.31
