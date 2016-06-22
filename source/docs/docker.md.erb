@@ -17,8 +17,16 @@ Semaphore's Docker platform has Docker <%= package_version("docker") %>, [docker
 you'll be ready to use the Docker [CLI](https://docs.docker.com/reference/commandline/cli/)
 once you've made the switch in your build commands.
 
-To avoid permission problems when using the Docker CLI, commands should be used
-with `sudo`.
+To avoid including the project's [dependency cache](/docs/caching-between-builds.html)
+in Docker's build context, add `.semaphore-cache` to the
+[dockerignore file](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
+in your repository.
+
+Docker images can be cached using the included `docker-cache` tool. Add
+`docker-cache restore` to your project's [setup commands](https://semaphoreci.com/docs/customizing-build-commands.html)
+to load the cached images. Images can be saved by adding `docker-cache snapshot`
+as a [post-thread](https://semaphoreci.com/docs/using-post-thread-commands.html)
+command.
 
 To learn more about using Docker, please consult the following guides:
 
