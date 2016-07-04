@@ -57,7 +57,9 @@
 
     <%= partial(:swiftype_search)%>
 
-    <%= partial(:google_analytics)%>
-
+    <% if !development? %>
+      <%= partial(:google_analytics)%>
+      <%= partial(:hubspot_analytics)%>
+    <% end %>
   </body>
 </html>
