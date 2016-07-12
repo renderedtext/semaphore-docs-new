@@ -64,8 +64,8 @@ files](/docs/adding-custom-configuration-files.html). That way, the `.rspec`
 file will be available only on Semaphore.
 
 An alternative is to construct the `SPEC_OPTS` environment variable yourself.
-The variable should include `--out rspec_report.json` and all the options you
-need.
+The variable should include `--format json --out rspec_report.json` and all the
+options you need.
 
 #### Your tests are executed using parallel_test gem
 
