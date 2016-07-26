@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1607 - 2016-07-26 (planned)
+### v1607 - 2016-07-26
 ```
 - additions
   - elixir 1.3.2
