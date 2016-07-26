@@ -24,7 +24,7 @@ The version specified in project settings will be set as global before your buil
 Setting Ruby version is performed by the equivalent of the following commands:
 
     rm -f .rbenv-version .ruby-version
-    rbenv global 2.0.0-p451
+    rbenv global <%= package_versions("ruby").first %>
 
 ### Installing additional version of Ruby
 
