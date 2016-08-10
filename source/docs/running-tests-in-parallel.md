@@ -23,7 +23,7 @@ for the front end. Your build settings might look similar to this:
 <img src="/docs/assets/img/running-tests-in-parallel/starting-point.png" class="img-responsive">
 
 Here's what you need to do to run RSpec, Cucumber and JavaScript tests in parallel.
-First, add a new "Parallel thread" near the bottom of the screen:
+First, add a new "Parallel job" near the bottom of the screen:
 
 <img src="/docs/assets/img/running-tests-in-parallel/adding-parallel-thread.png" class="img-responsive">
 
@@ -48,7 +48,7 @@ following screenshot:
 
 From this point on, all new builds will run in three parallel jobs — faster than
 if all tests ran sequentially, i.e. one by one. Note that the total build time
-duration is now determined by the longest running thread.
+duration is now determined by the longest running job.
 
 <img src="/docs/assets/img/running-tests-in-parallel/resulting-build.png" class="img-responsive">
 

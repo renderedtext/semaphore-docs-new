@@ -22,7 +22,7 @@ to your account settings.
 ### Launching a new SSH session
 
 To launch such a build environment, visit the build or deploy page and click
-on the Launch SSH button above your thread's output.
+on the Launch SSH button above your jobs's output.
 
 <img src="/docs/assets/img/ssh-session/ssh-session-1.png" class="img-responsive">
 

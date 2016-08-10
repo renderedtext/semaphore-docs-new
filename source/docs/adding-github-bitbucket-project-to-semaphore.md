@@ -76,9 +76,9 @@ language.
 <img src="/docs/assets/img/adding-new-project/analysis-results.png" class="img-responsive img-bordered">
 
 In this case, we have a Ruby on Rails application for which we would like to run
-`bundle exec rake cucumber` in a second, parallel thread. That's why  we'll add
-a new parallel thread and drag and drop `bundle exec rake cucumber` command to
-the new thread.
+`bundle exec rake cucumber` in a second, parallel job. That's why  we'll add
+a new parallel job and drag and drop `bundle exec rake cucumber` command to
+the new job.
 
 <img src="/docs/assets/img/adding-new-project/thread2.png" class="img-responsive img-bordered">
 

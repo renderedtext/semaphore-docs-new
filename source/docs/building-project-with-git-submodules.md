@@ -11,7 +11,7 @@ git submodule init
 git submodule update
 ```
 
-and as post-thread command add:
+and as post-job command add:
 
 ```bash
 git submodule deinit --force .

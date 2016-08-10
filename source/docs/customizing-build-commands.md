@@ -25,14 +25,14 @@ You will see the commands editor page with your current build commands.
 
 ## Adding a new command
 
-If your plan allows multiple threads, you can add a new thread by clicking on
-"Parallel thread" link.
+If your plan allows multiple jobs, you can add a new job by clicking on
+"Parallel job" link.
 
 <img src="/docs/assets/img/custom-build-commands/parallel-thread.png" class="img-bordered-padding img-responsive">
 
-A new thread will show up, where you can add new commands.
+A new job will show up, where you can add new commands.
 
-Alternatively, you can drag an existing command to the new thread. The drag
+Alternatively, you can drag an existing command to the new job. The drag
 handler will show up when you move the mouse pointer over a command.
 
 <img src="/docs/assets/img/custom-build-commands/drag-command.png" class="img-bordered-padding img-responsive">
@@ -54,7 +54,7 @@ Escape key.
 
 ## Setup commands
 
-Setup commands are executed before each threads. Usually, setup commands install
+Setup commands are executed before each job. Usually, setup commands install
 the application dependencies, gems, create database and set configuration files.
 
 To create a new setup, click on the "Setup" link on the bottom of the page.
@@ -67,32 +67,32 @@ This will create the Setup area where you can add setup commands.
 
 A project can have only one setup.
 
-## Editing a thread
+## Editing a job
 
 If you want to edit multiple commands at once or you want to paste few commands,
-click on the "Edit thread" link. This will show text area where you can insert
+click on the "Edit job" link. This will show text area where you can insert
 your commands.
 
 <img src="/docs/assets/img/custom-build-commands/edit-thread.png" class="img-bordered-padding img-responsive">
 
-## Deleting a thread
+## Deleting a job
 
-To delete a thread, click "x" link in the top right corner of the tread. If the
-tread is not empty - you need to confirm that the thread and all commands should
+To delete a job, click "x" link in the top right corner of the tread. If the
+tread is not empty - you need to confirm that the job and all commands should
 be deleted.
 
 <img src="/docs/assets/img/custom-build-commands/delete-thread.png" class="img-bordered-padding img-responsive">
 
-## Renaming a thread
+## Renaming a job
 
-Threads can be named. The name of a thread will be displayed on the build page.
-To name a thread, click on the "Rename" link.
+Jobs can be named. The name of a jobs will be displayed on the build page.
+To name a job, click on the "Rename" link.
 
 <img src="/docs/assets/img/custom-build-commands/rename-thread.png" class="img-bordered-padding img-responsive">
 
 Commands editor allows you to add [post
-thread commands](/docs/using-post-thread-commands.html) that execute after each
-thread, even if a thread command failed.
+job commands](/docs/using-post-thread-commands.html) that execute after each
+job, even if a job command failed.
 
 Note that Semaphore exports some [environment
 variables](/docs/available-environment-variables.html) which might be useful to
