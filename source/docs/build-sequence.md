@@ -42,13 +42,13 @@ These are the commands specified in your project's build settings. The current d
 
 For language related questions please consult one of [our dedicated guides](/docs/languages.html).
 
-### Export thread result
+### Export job result
 
-After all build commands for a specific thread are completed, Semaphore exports `SEMAPHORE_THREAD_RESULT` which can be used in post-thread commands.
+After all build commands for a specific job are completed, Semaphore exports `SEMAPHORE_THREAD_RESULT` which can be used in post-job commands.
 
-### Run post-thread commands
+### Run post-job commands
 
-[Post-thread commands](/docs/using-post-thread-commands.html) are executed after build commands on each thread, regardless of whether the build commands passed or failed.
+[Post-job commands](/docs/using-post-thread-commands.html) are executed after build commands on each job, regardless of whether the build commands passed or failed.
 
 ### Cache repository and vendor dependencies
 
