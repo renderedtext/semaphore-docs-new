@@ -25,7 +25,7 @@ in your repository.
 Docker images can be cached using the included `docker-cache` tool. Add
 `docker-cache restore` to your project's [setup commands](https://semaphoreci.com/docs/customizing-build-commands.html)
 to load the cached images. Images can be saved by adding `docker-cache snapshot`
-as a [post-job](https://semaphoreci.com/docs/using-post-thread-commands.html)
+as a [after job](https://semaphoreci.com/docs/using-post-thread-commands.html)
 command.
 
 If you need to use `docker-cache` tool in a bash script, add the following command in order to enable it:
