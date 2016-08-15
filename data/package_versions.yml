@@ -135,7 +135,6 @@ java:
 leiningen:
   name: "Leiningen"
   version: "2.3.4"
-  hide_on_stack_table: true
 
 linux:
   name: "Linux Kernel"
