@@ -48,7 +48,7 @@ If you would like a language which is not listed above to be supported out of th
           </td>
           <td>
             <% if package["versions"] %>
-              <%= package["versions"].join("<br/>") %>
+              <%= package["versions"].map{ |version| [version] == package["default"] ? "#{version} (default)" : version }.join("<br/>")  %>
             <% else %>
               <%= package["version"] %>
             <% end %>

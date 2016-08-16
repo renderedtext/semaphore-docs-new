@@ -95,7 +95,7 @@ go:
     - "1.5.4"
     - "1.6.3"
   default:
-    - "1.4"
+    - "1.4.3"
   url: "/docs/go.html"
 
 gradle:
