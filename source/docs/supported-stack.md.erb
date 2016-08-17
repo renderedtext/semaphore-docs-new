@@ -4,7 +4,9 @@ title: Supported stack
 category: The Semaphore platform
 ---
 
-Every build and deploy on Semaphore runs in a lightweight, isolated virtual machine based on Ubuntu 14.04 LTS 64-bit. This page describes the software provided in these VMs.
+Every build and deploy on Semaphore runs in a lightweight, isolated virtual
+machine based on Ubuntu 14.04 LTS 64-bit. This page describes the software
+provided in these VMs.
 
 The timezone in the virtual machine is set to UTC.
 
@@ -23,8 +25,24 @@ Semaphore provides first-class support for the following programming languages:
 - [Ruby](/docs/ruby-continuous-integration.html)
 - [Scala](/docs/scala-continuous-integration.html)
 
-Note that applications in any programming language can be configured manually in [project settings](/docs/customizing-build-commands.html).
-If you would like a language which is not listed above to be supported out of the box, please [send us email](mailto:semaphore@renderedtext.com) or [install it manually](/docs/how-to-install-dependency.html).
+Note that applications in any programming language can be configured manually
+in [project settings](/docs/customizing-build-commands.html).
+If you would like a language which is not listed above to be supported
+out of the box, please [send us email](mailto:support@semaphoreci.com) or
+[install it manually](/docs/how-to-install-dependency.html).
+
+Besides using the language which is selected in the project settings,
+you can utilize any combination of languages and versions
+from the table bellow. For example, to use Node.js `5.6.0`
+with a project which is not configured as such, add a following line as a
+[setup command](/docs/customizing-build-commands.html#sts=Setup commands).
+
+```bash
+nvm use 5.6.0
+```
+
+To find more information about managing different language versions
+on Semaphore, please refer to a corresponding [language page](/docs).
 
 ### Available components & services
 
