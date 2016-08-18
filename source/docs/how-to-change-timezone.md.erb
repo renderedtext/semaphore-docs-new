@@ -1,0 +1,16 @@
+---
+layout: post
+title: How to change the timezone?
+category: Managing dependencies
+---
+
+Default timezone in the virtual machine is set to UTC. In order to customize its value,
+add an [environment variable](/docs/exporting-environment-variables.html) called `TZ`
+with a value from this [table](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+For example:
+
+```
+TZ=America/Los_Angeles
+```
+
+List of the available environment variables in the VMs can be found on [this page](/docs/available-environment-variables.html).
