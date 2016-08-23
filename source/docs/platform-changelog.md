@@ -11,6 +11,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - go 1.7
 - upgrades
   - chromedriver 2.22 -> 2.23
+  - docker-machine 1.11.2 -> 1.12.0
+  - docker-compose 1.7.1 -> 1.8.0
   - git 2.9.2 -> 2.9.3
   - mysql 5.6.31 -> 5.6.32
   - node.js 6.3.0 -> 6.3.1
