@@ -5,7 +5,7 @@ category: The Semaphore platform
 ---
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
-### v1608 - 2016-08-23 (planned)
+### v1608 - 2016-08-23
 ```
 - additions
   - go 1.7
@@ -14,6 +14,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - git 2.9.2 -> 2.9.3
   - mysql 5.6.31 -> 5.6.32
   - node.js 6.3.0 -> 6.3.1
+  - openjdk 7u101 -> 7u111
   - oracle jdk 8u91 -> 8u101
   - php 7.0.8 -> 7.0.9
   - php 5.6.23 -> 5.6.24

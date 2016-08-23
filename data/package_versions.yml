@@ -19,12 +19,12 @@ cassandra:
 
 chrome:
   name: "Chrome"
-  version: "51.0.2704.106"
+  version: "52.0.2743.116"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.22"
+  version: "2.23"
 
 composer:
   name: "Composer"
@@ -32,7 +32,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.11.2"
+  version: "1.12.0"
   url: "/docs/docker.html"
 
 docker-machine:
@@ -42,7 +42,7 @@ docker-machine:
 
 docker-compose:
   name: "docker-compose"
-  version: "1.7.1"
+  version: "1.8.0"
   url: "https://docs.docker.com/compose/"
 
 elasticsearch:
@@ -86,7 +86,7 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.9.2"
+  version: "2.9.3"
 
 go:
   name: "Go"
@@ -94,6 +94,7 @@ go:
     - "1.4.3"
     - "1.5.4"
     - "1.6.3"
+    - "1.7"
   default:
     - "1.4.3"
   url: "/docs/go.html"
@@ -110,7 +111,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.43.5"
+  version: "3.43.9"
 
 io.js:
   name: "io.js"
@@ -126,10 +127,10 @@ imagemagick:
 java:
   name: "Java"
   versions:
-    - "openjdk-7u101"
-    - "Oracle jdk-8u91"
+    - "openjdk-7u111"
+    - "Oracle jdk-8u101"
   default:
-    - "openjdk-7u101"
+    - "openjdk-7u111"
   url: "/docs/java.html"
 
 leiningen:
@@ -156,7 +157,7 @@ mongodb:
 
 mysql:
   name: "MySQL"
-  version: "5.6.31"
+  version: "5.6.32"
   url: "/docs/databases/mysql.html"
 
 node:
@@ -181,7 +182,7 @@ node:
     - "5.11.1"
     - "6.1.0"
     - "6.2.2"
-    - "6.3.0"
+    - "6.3.1"
   default:
     - "0.12.15"
   url: "/docs/javascript.html"
@@ -218,9 +219,9 @@ php:
   versions:
     - "5.3.29"
     - "5.4.45"
-    - "5.5.37"
-    - "5.6.23"
-    - "7.0.8"
+    - "5.5.38"
+    - "5.6.24"
+    - "7.0.9"
   default:
     - "5.6.23"
   url: "/docs/php.html"
@@ -233,7 +234,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.4.6"
+  version: "5.5.0"
 
 pip:
   name: "pip"
@@ -274,7 +275,7 @@ qt:
 
 rabbitmq:
   name: "RabbitMQ"
-  version: "3.6.3"
+  version: "3.6.5"
 
 rbenv:
   name: "rbenv"
