@@ -5,6 +5,27 @@ category: The Semaphore platform
 ---
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
+
+### v1609 - 2016-09-27 (planned)
+```
+- additions
+  - node.js 6.6.0
+  - node.js 4.5.0
+  - ecs-cli 0.4.4
+- upgrades
+  - bundler 1.12.5 -> 1.13.0
+  - chromedriver 2.23 -> 2.24
+  - firefox 45.2.0 -> 45.3.0
+  - go 1.7 -> 1.7.1
+  - jruby 1.7.25 -> 1.7.26
+  - jruby 9.1.2.0 -> 9.1.5.0
+  - mysql 5.6.32 -> 5.6.33
+  - php 5.6.24 -> 5.6.26
+  - php 7.0.9 -> 7.0.11
+  - rethinkdb 2.3.4 -> 2.3.5
+  - wkhtmltopdf 0.9.9 -> 0.12.3
+```
+
 ### v1608 - 2016-08-23
 ```
 - additions
