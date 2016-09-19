@@ -29,6 +29,7 @@ chromedriver:
 composer:
   name: "Composer"
   hide_on_stack_table: true
+  url: "https://getcomposer.org/"
 
 docker:
   name: "Docker"
@@ -199,10 +200,12 @@ nvm:
 pear:
   name: "PEAR"
   hide_on_stack_table: true
+  url: "https://pear.php.net/"
 
 pecl:
   name: "PECL"
   hide_on_stack_table: true
+  url: "https://pecl.php.net/"
 
 phantomjs:
   name: "PhantomJS"
@@ -229,6 +232,7 @@ php:
 phpbrew:
   name: "phpbrew"
   hide_on_stack_table: true
+  url: "http://phpbrew.github.io/phpbrew/"
 
 phpunit:
   name: "PHPunit"
