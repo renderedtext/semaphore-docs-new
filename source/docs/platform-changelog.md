@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1609 - 2016-09-27 (planned)
+### v1609 - 2016-09-27
 ```
 - additions
   - node.js 6.6.0
@@ -24,6 +24,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - php 7.0.9 -> 7.0.11
   - rethinkdb 2.3.4 -> 2.3.5
   - wkhtmltopdf 0.9.9 -> 0.12.3
+- downgrades
+  - docker-engine 1.12.0 -> 1.11.2
 ```
 
 ### v1608 - 2016-08-23
