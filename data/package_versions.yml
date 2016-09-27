@@ -33,7 +33,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.11.2"
+  version: "1.12.1"
   url: "/docs/docker.html"
 
 docker-machine:

@@ -15,6 +15,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 - upgrades
   - bundler 1.12.5 -> 1.13.0
   - chromedriver 2.23 -> 2.24
+  - docker-engine 1.12.0 -> 1.12.1
   - firefox 45.2.0 -> 45.3.0
   - go 1.7 -> 1.7.1
   - jruby 1.7.25 -> 1.7.26
@@ -24,8 +25,6 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - php 7.0.9 -> 7.0.11
   - rethinkdb 2.3.4 -> 2.3.5
   - wkhtmltopdf 0.9.9 -> 0.12.3
-- downgrades
-  - docker-engine 1.12.0 -> 1.11.2
 ```
 
 ### v1608 - 2016-08-23
