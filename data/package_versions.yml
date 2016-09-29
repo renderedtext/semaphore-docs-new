@@ -8,7 +8,7 @@ bower:
 
 bundler:
   name: "Bundler"
-  version: "1.13.0"
+  version: "1.12.5"
   hide_on_stack_table: true
   url: "http://bundler.io/"
 
