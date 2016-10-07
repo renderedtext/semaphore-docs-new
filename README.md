@@ -2,6 +2,8 @@
 
 Semaphore Docs, powered by [Middleman](http://middlemanapp.com) and Amazon S3.
 
+[![Build Status](https://semaphoreci.com/api/v1/renderedtext/semaphore-docs-new/branches/master/badge.svg)](https://semaphoreci.com/renderedtext/semaphore-docs-new)
+
 
 ## Setup
 
