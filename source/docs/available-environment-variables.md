@@ -40,7 +40,7 @@ Before running your build or deploy, Semaphore exports the following environment
     </tr>
     <tr>
       <td>SEMAPHORE_CACHE_DIR</td>
-      <td>Eg. /home/runner/my_app/.semaphore_cache</td>
+      <td>Eg. /home/runner/my_app/.semaphore-cache</td>
     </tr>
     <tr>
       <td>SEMAPHORE_PROJECT_HASH_ID</td>
