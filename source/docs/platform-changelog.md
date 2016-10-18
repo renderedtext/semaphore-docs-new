@@ -6,6 +6,23 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1610 - 2016-10-25 (planned)
+```
+- additions
+  - node.js 4.6.0
+  - node.js 6.8.1
+
+- upgrades
+  - cassandra 2.2.7 -> 2.2.8
+  - elixir 1.3.2 -> 1.3.4
+  - erlang 19.0 -> 19.1
+  - git 2.9.3 -> 2.10.1
+  - gradle 3.0 -> 3.1
+  - mysql 5.6.33 -> 5.6.34
+  - php 5.6.26 -> 5.6.27
+  - php 7.0.11 -> 7.0.12
+```
+
 ### v1609.1 - 2016-09-29
 ```
 - downgrades
