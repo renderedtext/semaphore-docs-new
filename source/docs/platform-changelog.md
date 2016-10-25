@@ -14,6 +14,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 - upgrades
   - cassandra 2.2.7 -> 2.2.8
+  - docker-engine 1.12.1 -> 1.12.2
   - elixir 1.3.2 -> 1.3.4
   - erlang 19.0 -> 19.1
   - git 2.9.3 -> 2.10.1
