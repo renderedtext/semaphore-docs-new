@@ -14,12 +14,12 @@ bundler:
 
 cassandra:
   name: "Cassandra"
-  version: "2.2.7"
+  version: "2.2.8"
   url: "/docs/databases/cassandra.html"
 
 chrome:
   name: "Chrome"
-  version: "53.0.2785.116"
+  version: "54.0.2840.59"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
@@ -33,12 +33,12 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.12.1"
+  version: "1.12.2"
   url: "/docs/docker.html"
 
 docker-machine:
   name: "docker-machine"
-  version: "0.7.0"
+  version: "0.8.2"
   url: "https://docs.docker.com/machine/"
 
 docker-compose:
@@ -57,7 +57,7 @@ elixir:
     - "1.0.5"
     - "1.1.1"
     - "1.2.6"
-    - "1.3.2"
+    - "1.3.4"
   default:
     - "1.2.6"
   url: "/docs/elixir.html"
@@ -66,7 +66,7 @@ erlang:
   name: "Erlang"
   versions:
     - "18.3"
-    - "19.0"
+    - "19.1"
   default:
     - "18.3"
   url: "/docs/erlang.html"
@@ -87,7 +87,7 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.9.3"
+  version: "2.10.1"
 
 go:
   name: "Go"
@@ -102,7 +102,7 @@ go:
 
 gradle:
   name: "Gradle"
-  version: "3.0"
+  version: "3.1"
   url: "https://gradle.org/"
 
 grunt:
@@ -158,21 +158,22 @@ mongodb:
 
 mysql:
   name: "MySQL"
-  version: "5.6.33"
+  version: "5.6.34"
   url: "/docs/databases/mysql.html"
 
 node:
   name: "Node.js"
   versions:
     - "0.8.28"
-    - "0.10.46"
+    - "0.10.48"
     - "0.11.16"
-    - "0.12.15"
+    - "0.12.17"
     - "4.1.2"
     - "4.2.6"
     - "4.3.2"
     - "4.4.7"
     - "4.5.0"
+    - "4.6.1"
     - "5.0.0"
     - "5.1.1"
     - "5.2.0"
@@ -186,6 +187,7 @@ node:
     - "6.2.2"
     - "6.3.1"
     - "6.6.0"
+    - "6.9.1"
   default:
     - "0.12.15"
   url: "/docs/javascript.html"
@@ -225,8 +227,8 @@ php:
     - "5.3.29"
     - "5.4.45"
     - "5.5.38"
-    - "5.6.26"
-    - "7.0.11"
+    - "5.6.27"
+    - "7.0.12"
   default:
     - "5.6.26"
   url: "/docs/php.html"
@@ -240,7 +242,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.5.4"
+  version: "5.6.1"
 
 pip:
   name: "pip"
