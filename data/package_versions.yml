@@ -189,7 +189,7 @@ node:
     - "6.6.0"
     - "6.9.1"
   default:
-    - "0.12.15"
+    - "0.12.17"
   url: "/docs/javascript.html"
 
 npm:
