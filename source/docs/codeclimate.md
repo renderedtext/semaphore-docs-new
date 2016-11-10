@@ -8,25 +8,6 @@ Code Climate is Semaphore's partner for providing test coverage reports for Ruby
 
 - [Sign up for Code Climate](https://codeclimate.com/partners/semaphore). Semaphore customers receive 20% off their first three months.
 
-- Add the codeclimate-test-reporter gem to your `Gemfile`:
-
-```ruby
-gem "codeclimate-test-reporter", group: :test, require: nil
-```
-
-- Start the test reporter **on the very first line** of `spec_helper.rb` or `test_helper.rb`:
-
-```ruby
-require "codeclimate-test-reporter"
-CodeClimate::TestReporter.start
-```
-
-- Find your repo token on Code Climate by clicking on **Set Up Test Coverage** on the right-hand side of your repository's feed. You will then see a code block similar to:
-
-<pre>
-$ CODECLIMATE_REPO_TOKEN=<b>0e9f8b1974bf87a6fdbc25747fafe7adfeffc372575483f37c68056c841ba2d2</b> bundle exec rake
-</pre>
-
-- Copy the bold portion of the above code block.
+- Follow the instructions [here](https://docs.codeclimate.com/docs/setting-up-test-coverage#section-how-to).
 
 - Paste your Code Climate repo token into the form located at **Project Settings > Integrations > Code Climate**.
