@@ -6,6 +6,23 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### v1611 - 2016-11-22 (planned)
+```
+- additions
+  - node.js 7.1.0
+
+- upgrades
+  - chromedriver 2.24 -> 2.25
+  - git 2.10.1 -> 2.10.2
+  - go 1.7.1 -> 1.7.3
+  - jruby 9.1.5.0 -> 9.1.6.0
+  - node.js 4.6.1 -> 4.6.2
+  - oracle jdk 8u101 -> 8u111
+  - php 5.6.27 -> php 5.6.28
+  - php 7.0.12 -> 7.0.13
+  - pip 8.1.2 -> 9.0.1
+```
+
 ### v1610 - 2016-10-25
 ```
 - additions
