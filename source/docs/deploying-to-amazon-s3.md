@@ -58,6 +58,7 @@ If you choose `AmazonS3FullAccess`,
 your setup will work, but this is usually not recommended. By following
 the standard security advice of granting the least possible privilege,
 you should grant only the permission required to perform this task.
+You can use the example policy provided at the end of this article.
 
 ## Setting Up the Website
 Amazon S3 stores data as objects within buckets. An Amazon S3 bucket is a
@@ -159,3 +160,39 @@ you can click the link to your website to see your homepage.
 
 Congratulations! You have successfully configured your website to be
 automatically updated with Semaphore.
+
+### Example AWS IAM policy
+This example shows a policy which provides Semaphore with access to manage your
+S3 buckets in the process of setting up your deployment. [This
+section](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#create-managed-policy-console)
+of AWS documentation explains how to create a custom policy. You can copy the
+policy shown below.
+
+``` json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1461232964000",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket",
+                "s3:DeleteObject",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicy",
+                "s3:GetBucketWebsite",
+                "s3:GetObject",
+                "s3:GetObjectAcl",
+                "s3:ListAllMyBuckets",
+                "s3:ListBucket",
+                "s3:PutBucketWebsite",
+                "s3:PutObject",
+                "s3:PutObjectAcl"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*"
+            ]
+        }
+    ]
+}
+```
