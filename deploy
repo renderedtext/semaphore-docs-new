@@ -5,4 +5,4 @@ bundle exec middleman build
 mv build/sitemap.xml build/docs/sitemap.xml
 mv build/sitemap.xml.gz build/docs/sitemap.xml.gz
 
-aws --profile=rt s3 sync build/ s3://semaphore-docs/ --acl=public-read --delete --cache-control="max-age=0, no-cache" --exclude "logs/*"
+aws --profile=rt s3 sync build/ s3://semaphore-docs/ --acl=public-read --delete --cache-control="max-age=0, no-cache" --exclude "logs/*" --size-only
