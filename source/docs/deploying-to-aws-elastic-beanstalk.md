@@ -111,7 +111,7 @@ section](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed
 of AWS documentation explains how to create a custom policy. You can copy the
 policy shown below.
 
-``` json
+```javascript
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -203,4 +203,3 @@ policy shown below.
     ]
 }
 ```
-
