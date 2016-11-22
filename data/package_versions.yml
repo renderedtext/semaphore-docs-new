@@ -19,12 +19,12 @@ cassandra:
 
 chrome:
   name: "Chrome"
-  version: "54.0.2840.59"
+  version: "54.0.2840.100"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.24"
+  version: "2.25"
 
 composer:
   name: "Composer"
@@ -33,7 +33,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.12.2"
+  version: "1.12.3"
   url: "/docs/docker.html"
 
 docker-machine:
@@ -87,7 +87,7 @@ gcc:
 
 git:
   name: "Git"
-  version: "2.10.1"
+  version: "2.10.2"
 
 go:
   name: "Go"
@@ -95,7 +95,7 @@ go:
     - "1.4.3"
     - "1.5.4"
     - "1.6.3"
-    - "1.7.1"
+    - "1.7.3"
   default:
     - "1.4.3"
   url: "/docs/go.html"
@@ -112,7 +112,7 @@ grunt:
 
 heroku-toolbelt:
   name: "Heroku Toolbelt"
-  version: "3.43.12"
+  version: "3.43.14"
 
 io.js:
   name: "io.js"
@@ -129,7 +129,7 @@ java:
   name: "Java"
   versions:
     - "openjdk-7u111"
-    - "Oracle jdk-8u101"
+    - "Oracle jdk-8u111"
   default:
     - "openjdk-7u111"
   url: "/docs/java.html"
@@ -173,7 +173,7 @@ node:
     - "4.3.2"
     - "4.4.7"
     - "4.5.0"
-    - "4.6.1"
+    - "4.6.2"
     - "5.0.0"
     - "5.1.1"
     - "5.2.0"
@@ -188,18 +188,25 @@ node:
     - "6.3.1"
     - "6.6.0"
     - "6.9.1"
+    - "7.1.0"
   default:
-    - "0.12.17"
+    - "4.6.2"
   url: "/docs/javascript.html"
 
 npm:
   name: "NPM"
-  version: "2.15.1"
+  version: "2.15.11"
   hide_on_stack_table: true
 
 nvm:
   name: "NVM"
   hide_on_stack_table: true
+
+yarn:
+  name: "Yarn"
+  version: "0.16.1"
+  hide_on_stack_table: true
+
 
 pear:
   name: "PEAR"
@@ -227,10 +234,10 @@ php:
     - "5.3.29"
     - "5.4.45"
     - "5.5.38"
-    - "5.6.27"
-    - "7.0.12"
+    - "5.6.28"
+    - "7.0.13"
   default:
-    - "5.6.27"
+    - "5.6.28"
   url: "/docs/php.html"
 
 phpbrew:
@@ -242,11 +249,11 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.6.1"
+  version: "5.6.3"
 
 pip:
   name: "pip"
-  version: "8.1.2"
+  version: "9.0.1"
 
 postgis:
   name: "PostGIS"
@@ -302,6 +309,7 @@ rethinkdb:
 ruby:
   name: "Ruby"
   versions:
+    - "2.3.3"
     - "2.3.1"
     - "2.3.0"
     - "2.2.5"
@@ -325,7 +333,7 @@ ruby:
     - "1.9.2-p330"
     - "ree-1.8.7-2012.02"
     - "JRuby 1.7.26"
-    - "JRuby 9.1.5.0"
+    - "JRuby 9.1.6.0"
   default:
     - "2.2.2"
   url: "/docs/ruby.html"

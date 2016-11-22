@@ -6,10 +6,11 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1611 - 2016-11-22 (planned)
+### v1611 - 2016-11-22
 ```
 - additions
   - node.js 7.1.0
+  - ruby 2.3.3
 
 - upgrades
   - chromedriver 2.24 -> 2.25
