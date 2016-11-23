@@ -22,11 +22,14 @@ in Docker's build context, add `.semaphore-cache` to the
 [dockerignore file](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
 in your repository. This step is done automatically when you use `docker-cache`.
 
+## Caching Docker images
+
 Docker images can be cached using the included `docker-cache` tool. Add
 `docker-cache restore` to your project's [setup commands](https://semaphoreci.com/docs/customizing-build-commands.html)
 to load the cached images. Images can be saved by adding `docker-cache snapshot`
 as an [after job](https://semaphoreci.com/docs/using-post-thread-commands.html)
 command. Note that only tagged images will be stored.
+
 
 To learn more about using Docker, please consult the following guides:
 

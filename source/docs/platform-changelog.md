@@ -14,6 +14,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 - upgrades
   - chromedriver 2.24 -> 2.25
+  - docker-engine 1.12.2 -> 1.12.3
   - git 2.10.1 -> 2.10.2
   - go 1.7.1 -> 1.7.3
   - jruby 9.1.5.0 -> 9.1.6.0
