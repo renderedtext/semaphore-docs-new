@@ -54,3 +54,34 @@ You can now push or pull images from the Amazon Container Registry through
 Semaphore.
 
 Happy building!
+
+## Example AWS IAM policy
+
+You can attach `AmazonEC2ContainerRegistryPowerUser` policy for the role that 
+is interacting with Semaphore. It provides full access to Amazon EC2 Container 
+Registry repositories, but does not allow repository deletion or policy changes.
+`AmazonEC2ContainerRegistryPowerUser` is shown below, but you can also [attach it in AWS console](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#attach-managed-policy-console).
+
+```javascript
+{
+	"Version": "2012-10-17",
+	"Statement": [{
+		"Effect": "Allow",
+		"Action": [
+			"ecr:GetAuthorizationToken",
+			"ecr:BatchCheckLayerAvailability",
+			"ecr:GetDownloadUrlForLayer",
+			"ecr:GetRepositoryPolicy",
+			"ecr:DescribeRepositories",
+			"ecr:ListImages",
+                        "ecr:DescribeImages",
+			"ecr:BatchGetImage",
+			"ecr:InitiateLayerUpload",
+			"ecr:UploadLayerPart",
+			"ecr:CompleteLayerUpload",
+			"ecr:PutImage"
+		],
+		"Resource": "*"
+	}]
+}
+```
