@@ -46,6 +46,9 @@ deployment method](/docs/generic-deployment.html).
 - <a href="/docs/deploying-with-git-deploy.html">Deploying with git-deploy</a></li>
 - <a href="/docs/ftp-deployment.html">FTP deployment</a></li>
 
+See also our guides to setting up
+<a href="/docs/docker.html">continuous integration and deployment with Docker</a>.
+
 We also very much welcome any <a
 href="mailto:semaphore@renderedtext.com">feedback</a> you may have, as well as
 suggestions which deployment integrations you would like to see next.
