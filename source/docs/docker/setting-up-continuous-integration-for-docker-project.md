@@ -62,11 +62,11 @@ settings page.
 Once you have chosen a platform, you can add your container registry host.
 Semaphore supports:
 
- - [Docker Hub](/docs/docker/setting-up-docker-hub-for-your-project.html),
- - [Amazon EC2 Container Registry (ECR)](/docs/docker/setting-up-amazon-container-registry-for-your-project.html),
- - [Google Container Registry (GCR)](/docs/docker/setting-up-google-container-registry-for-your-project.html),
- - [Quay.io](/docs/docker/setting-up-quay-io-for-your-project.html),
- - [Custom Container Registry](/docs/docker/setting-up-custom-container-registry-for-your-project.html).
+ - [Docker Hub](/docs/docker/continuous-delivery-docker-hub.html),
+ - [Amazon EC2 Container Registry (ECR)](/docs/docker/continuous-delivery-aws-container-registry.html),
+ - [Google Container Registry (GCR)](/docs/docker/continuous-delivery-google-container-registry.html),
+ - [Quay.io](/docs/docker/continuous-delivery-quayio.html),
+ - [Custom Container Registry](/docs/docker/continuous-delivery-on-premise-container-registry.html).
 
 This step is optional, so you can click "Skip this step" if you're not using any
 of the above mentioned registry hosts.
