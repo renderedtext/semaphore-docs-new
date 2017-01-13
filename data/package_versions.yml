@@ -4,6 +4,7 @@
 bower:
   name: "Bower"
   version: "1.7.9"
+  url: "https://bower.io/"
   hide_on_stack_table: true
 
 bundler:
@@ -108,6 +109,7 @@ gradle:
 grunt:
   name: "Grunt"
   version: "0.1.13"
+  url: "http://gruntjs.com"
   hide_on_stack_table: true
 
 heroku-toolbelt:
@@ -198,6 +200,7 @@ node:
 npm:
   name: "NPM"
   version: "2.15.11"
+  url: "https://docs.npmjs.com/"
   hide_on_stack_table: true
 
 nvm:
@@ -372,3 +375,9 @@ virtualenv:
 wkhtmltopdf:
   name: "wkhtmltopdf"
   version: "0.12.3"
+
+yarn:
+  name: "Yarn"
+  version: "0.16.1"
+  url: "https://yarnpkg.com/en/docs/install-ci#semaphore-tab"
+  hide_on_stack_table: true
