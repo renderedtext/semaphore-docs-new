@@ -105,11 +105,12 @@ alt="Ready to deploy" class="img-responsive img-bordered">
 Happy building!
 
 ## Example AWS IAM policy
+
 This example shows a policy which provides Semaphore with access to manage your
 Elastic Beanstalk applications and environments. [This
 section](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#create-managed-policy-console)
 of AWS documentation explains how to create a custom policy. You can copy the
-policy shown below.
+policy shown below, but you must update the `[region]` and `[user-or-group-id]` placeholders accordingly for your configuration.
 
 ```javascript
 {
@@ -158,7 +159,7 @@ policy shown below.
                 "cloudformation:UpdateStack"
             ],
             "Resource": [
-                "arn:aws:cloudformation:[region]:[user-id]:*"
+                "arn:aws:cloudformation:[region]:[user-or-group-id]:*"
             ]
         },
         {
@@ -198,7 +199,7 @@ policy shown below.
                 "sns:GetTopicAttributes",
                 "sns:ListSubscriptionsByTopic"
             ],
-            "Resource": "arn:aws:sns:[region]:[user-id]:*"
+            "Resource": "arn:aws:sns:[region]:[user-or-group-id]:*"
         }
     ]
 }
