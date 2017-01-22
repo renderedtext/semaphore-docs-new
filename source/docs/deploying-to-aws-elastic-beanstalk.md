@@ -187,6 +187,15 @@ policy shown below, but you must update the `[region]` and `[user-or-group-id]` 
         {
             "Effect": "Allow",
             "Action": [
+                "elasticloadbalancing:RegisterInstancesWithLoadBalancer"
+            ],
+            "Resource": [
+                "arn:aws:elasticloadbalancing:*:*:*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
                 "rds:Describe*"
             ],
             "Resource": [
