@@ -28,11 +28,20 @@ information).
 
 ## CI environment for Scala projects
 
-The [Semaphore platform](/docs/supported-stack.html) supports Scala version
-<%= package_version("scala") %>. Version <%= package_version("sbt") %> of the
-[sbt](http://www.scala-sbt.org/) build tool is pre-installed. The current
-version of Scala is also avaliable through the `SEMAPHORE_SCALA_VERSION`
-environment variable.
+The [Semaphore platform](/docs/supported-stack.html) supports the following
+Scala versions:
+
+<% package_versions("scala").each do |version| %>
+  - <%= version %>
+<% end %>
+
+Manually switching between Scala versions can be done with the
+`change-scala-version <version>` command. Supported versions in the
+utility are `2.11` and `2.12`. The current version of Scala is also avaliable
+through the `SEMAPHORE_SCALA_VERSION` environment variable.
+
+[sbt](http://www.scala-sbt.org/) version <%= package_version("sbt") %> is
+pre-installed.
 
 ## Dependency management
 
