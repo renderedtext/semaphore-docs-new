@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1701 - 2017-01-24 (planned)
+### v1701 - 2017-01-24
 ```
 - additions
   - elixir 1.4.0
@@ -15,6 +15,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - scala 2.12.1
 - upgrades
   - chromedriver 2.25 -> 2.27
+  - docker-engine 1.12.2 -> 1.12.6
+  - docker-compose 1.8.0 -> 1.9.0
   - erlang 19.1 -> 19.2
   - firefox 45.3.0 ESR -> 45.6.0 ESR
   - git 2.10.2 -> 2.11.0
@@ -26,6 +28,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - node.js 4.7.0 -> 4.7.2
   - node.js 6.9.0 -> 6.9.4
   - openjdk 7u111 -> 7u121
+  - oracle jdk 8u111 -> 8u121
   - php 5.6.28 -> 5.6.29
   - php 7.0.13 -> 7.0.14
   - rabbitmq 3.6.5 -> 3.6.6
