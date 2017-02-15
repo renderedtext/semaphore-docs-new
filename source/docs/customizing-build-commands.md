@@ -90,7 +90,7 @@ To name a job, click on the "Rename" link.
 
 <img src="/docs/assets/img/custom-build-commands/rename-thread.png" class="img-bordered-padding img-responsive">
 
-Commands editor allows you to add [post
+Commands editor allows you to add [after
 job commands](/docs/using-post-thread-commands.html) that execute after each
 job, even if a job command failed.
 
