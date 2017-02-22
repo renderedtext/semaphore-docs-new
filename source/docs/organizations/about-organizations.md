@@ -4,16 +4,17 @@ title: About organizations
 category: Organizations
 ---
 
-Organizations are a great option for large teams and private projects that
-require multiple project owners and different permission levels for
-collaborators on their projects.
+Organizations are Semaphore's account management framework that lets you grant
+different permissions to team members and delegate project management under
+a single account. Every user can create and be part of any number of organizations.
 
-Organizations allow you to have:
+Features of organizations include:
 
 - [Shared project and billing management](/docs/organizations/granting-users-permission-to-manage-projects-within-an-organization.html)
 - [Different permission levels](/docs/organizations/permission-levels-in-an-organization.html)
 - [Teams with access to different projects](/docs/organizations/creating-a-team.html)
-- Up to 128 [parallel build jobs](/docs/running-tests-in-parallel.html)
+- Paid plans for up to 128 [parallel jobs](/docs/running-tests-in-parallel.html),
+  or an open source plan with 2 paralle jobs.
 
 ##Further reading
 
