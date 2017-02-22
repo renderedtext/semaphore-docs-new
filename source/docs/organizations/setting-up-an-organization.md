@@ -27,7 +27,15 @@ You can also easily create an organization from your navigation.
 
   <img src="/docs/assets/img/setting-up-an-organization/enter-organization-name.png" alt="Enter organization name" class="img-responsive img-bordered">
 
-3. You're done, you've created a new organization :clap:
+3. You're done, you've created a new organization.
+
+When your free 30-day trial ends, you can continue to run up to
+100 private jobs per month on the organization that had the trial.
+If you want to add a private project to another organization, you
+have to upgrade that organization to a paid plan.
+
+Note that you can create as many organizations as you like and add open source
+projects to them.
 
 ##Next steps
 
