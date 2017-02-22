@@ -4,38 +4,33 @@ title: Setting up an organization
 category: Organizations
 ---
 
-Organizations enable businesses and teams to give different permissions to their team members and have multiple project owners.
+Creating [an organization](/docs/organizations/about-organizations.html) is
+very quick and easy to do. Doing it is part of the workflow of
+[setting up a private project to Semaphore](/docs/adding-github-bitbucket-project-to-semahore).
 
-## Creating a new organization
-
-Creating a new organization is very easy and cheap to do. You will be offered
-to create an organization when [adding a private project to Semaphore](/adding-github-bitbucket-project-to-semahore).
-
-You can also easily create an organization from your navigation.
+You can also create additional organizations from the "Create new" menu in top
+navigation inside the application. Here's how:
 
 1. In the navigation click "Create new" and choose "Organization"
 
   <img src="/docs/assets/img/setting-up-an-organization/create-organization-navigation-link.png" alt="Create Organization link" class="img-responsive img-bordered">
 
-2. Enter organization name. Semaphore will check if that name is taken already
-   whilst you type.
-
-   By creating an organization you will get a **free 30-day trial** with up to
-   **8 parallel jobs**. After 30 days of free trial you will be switched to
-   free plan, which allows you unlimited jobs for open source projects and 100
-   jobs per month for private projects.
+2. Enter a name for your organization. While you type, Semaphore will check if
+   the name is available.
 
   <img src="/docs/assets/img/setting-up-an-organization/enter-organization-name.png" alt="Enter organization name" class="img-responsive img-bordered">
 
-3. You're done, you've created a new organization.
+3. That's it, you're done.
 
-When your free 30-day trial ends, you can continue to run up to
-100 private jobs per month on the organization that had the trial.
-If you want to add a private project to another organization, you
-have to upgrade that organization to a paid plan.
+If this is your first organization, this will start a **free 30-day trial**
+in which you can run up to **8 parallel jobs**. After the free trial expires,
+your account will automatically be switched to a free plan, which allows
+unlimited jobs for open source projects and up to 100 jobs per month for private
+projects. For unlimited private jobs, you can upgrade to our one of the
+[paid plans](/pricing).
 
-Note that you can create as many organizations as you like and add open source
-projects to them.
+Note that you can create as many organizations for open source projects as you
+like.
 
 ##Next steps
 
