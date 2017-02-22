@@ -22,8 +22,8 @@ You can also easily create an organization from your navigation.
 
    By creating an organization you will get a **free 30-day trial** with up to
    **8 parallel jobs**. After 30 days of free trial you will be switched to
-   free plan, which allows you unlimited builds for open source projects and
-   100 jobs per month for private projects.
+   free plan, which allows you unlimited jobs for open source projects and 100
+   jobs per month for private projects.
 
   <img src="/docs/assets/img/setting-up-an-organization/enter-organization-name.png" alt="Enter organization name" class="img-responsive img-bordered">
 
