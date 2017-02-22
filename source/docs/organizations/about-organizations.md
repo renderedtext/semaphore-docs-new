@@ -4,11 +4,11 @@ title: About organizations
 category: Organizations
 ---
 
-Organizations are a great option for large teams and open-source projects that
+Organizations are a great option for large teams and private projects that
 require multiple project owners and different permission levels for
 collaborators on their projects.
 
-Organizations include:
+Organizations allow you to have:
 
 - [Shared project and billing management](/docs/organizations/granting-users-permission-to-manage-projects-within-an-organization.html)
 - [Different permission levels](/docs/organizations/permission-levels-in-an-organization.html)
