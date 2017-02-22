@@ -6,7 +6,7 @@ category: Organizations
 
 Organizations enable businesses and teams to give different permissions to their team members and have multiple project owners.
 
-##Creating a new organization
+## Creating a new organization
 
 1. Go to your **Account** in the main menu.
 
