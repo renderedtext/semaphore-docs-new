@@ -26,7 +26,7 @@ pull request status. Select your preferred Git host.
 
 <img src="/docs/assets/img/adding-new-project/select-github-or-bitbucket.png" class="img-responsive img-bordered">
 
-We will now assume that you chose GitHub. On the next screen, select whether you
+We will now assume that you selected GitHub. On the next screen, select whether you
 would like to give Semaphore access to your public (open-source) or
 private projects. Access to private projects also includes access to public
 projects.
@@ -38,7 +38,7 @@ The rest of the procedure is the same as with GitHub.
 
 <img src="/docs/assets/img/adding-new-project/choose-public-private-github-scope.png" class="img-responsive img-bordered">
 
-We will now presume that you chose Private & Public.
+We will now presume that you selected Private & Public.
 
 At this point, Semaphore will redirect you to github.com or bitbucket.com, where
 you will be presented a screen to authorize Semaphore to access your account via
@@ -87,6 +87,27 @@ generate a set of working build commands depending on your project's programming
 language.
 
 <img src="/docs/assets/img/adding-new-project/analysis-results.png" class="img-responsive img-bordered">
+
+In this case, we have a Ruby on Rails application for which we would like to run
+unit and integration tests. We'll go ahead and rename the first job.
+
+<img src="/docs/assets/img/adding-new-project/rename-job.png" class="img-responsive img-bordered">
+
+After that we'll add a new parallel job for integration tests. You can
+add a parallel job by clicking "Parallel job". You can add as many jobs
+as you want.
+
+<img src="/docs/assets/img/adding-new-project/add-parallel-job.png" class="img-responsive img-bordered">
+
+We will enter a command `bundle exec rspec --integration` in our command
+editor.
+
+<img src="/docs/assets/img/adding-new-project/enter-command.png" class="img-responsive img-bordered">
+
+Now our build settings look much better. We have 2 parallel jobs, one for unit test,
+second for integration test.
+
+<img src="/docs/assets/img/adding-new-project/final-commands.png" class="img-responsive img-bordered">
 
 If your project needs to run commands that are different from what Semaphore has
 suggested, just use the commands editor to customize them to your needs.
