@@ -8,31 +8,26 @@ Organizations enable businesses and teams to give different permissions to their
 
 ## Creating a new organization
 
-1. Go to your **Account** in the main menu.
+Creating a new organization is very easy and cheap to do. You will be offered
+to create an organization when [adding a private project to Semaphore](/adding-github-bitbucket-project-to-semahore).
 
-  <img src="/docs/assets/img/setting-up-an-organization/account.png" alt="Semaphore account" class="img-responsive img-bordered">
+You can also easily create an organization from your navigation.
 
-2. Click on the **Organizations** tab.
+1. In the navigation click "Create new" and choose "Organization"
 
-3. Under Organizations, click on **Create new organization**.
+  <img src="/docs/assets/img/setting-up-an-organization/create-organization-navigation-link.png" alt="Create Organization link" class="img-responsive img-bordered">
 
-  <img src="/docs/assets/img/setting-up-an-organization/organizations-tab.png" alt="Creating an organization" class="img-responsive img-bordered">
+2. Enter organization name. Semaphore will check if that name is taken already
+   whilst you type.
 
-4. Under _Organization name_, give your organization a name.
+   By creating an organization you will get a **free 30-day trial** with up to
+   **8 parallel jobs**. After 30 days of free trial you will be switched to
+   free plan, which allows you unlimited builds for open source projects and
+   100 jobs per month for private projects.
 
-5. Under _Semaphore URL_, type your desired organization URL.
+  <img src="/docs/assets/img/setting-up-an-organization/enter-organization-name.png" alt="Enter organization name" class="img-responsive img-bordered">
 
-6. Add your organization’s _Location_, _Website_ and _Gravatar email_ (optional).
-
-  <img src="/docs/assets/img/setting-up-an-organization/organization-details.png" alt="Location, website and gravatar" class="img-responsive img-bordered">
-
-7. Select the payment type and plan.
-
-  <img src="/docs/assets/img/setting-up-an-organization/payment-and-plans.png" alt="Select payment type and plan" class="img-responsive img-bordered">
-
-8. Click **Create Organization**.
-
-  <img src="/docs/assets/img/setting-up-an-organization/create-organization.png" alt="Create organization" class="img-responsive img-bordered">
+3. You're done, you've created a new organization :clap:
 
 ##Next steps
 
