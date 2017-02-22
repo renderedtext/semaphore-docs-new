@@ -14,7 +14,7 @@ Features of organizations include:
 - [Different permission levels](/docs/organizations/permission-levels-in-an-organization.html)
 - [Teams with access to different projects](/docs/organizations/creating-a-team.html)
 - Paid plans for up to 128 [parallel jobs](/docs/running-tests-in-parallel.html),
-  or an open source plan with 2 paralle jobs.
+  or an open source plan with 2 parallel jobs.
 
 ##Further reading
 
