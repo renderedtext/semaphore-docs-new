@@ -15,13 +15,13 @@ open-source projects and up to 100 private builds per month.
 After you have signed in on Semaphore for the first time, a welcome screen will
 prompt you to add your first project. Click on the "Start a Project" button
 to get started. If you have already added some projects on Semaphore, use the
-"Create new" link at the top of your dashboard.
+"Create new" link at the top of your screen.
 
 <img src="/docs/assets/img/adding-new-project/build-new-project.png" class="img-responsive img-bordered">
 
 The next step is to connect your Semaphore account with your GitHub and/or
 Bitbucket account. This will allow Semaphore to do things like present you a
-list of projects to choose from, fetch the chosen Git repositories, and update
+list of projects to select from, fetch the chosen Git repositories, and update
 pull request status. Select your preferred Git host.
 
 <img src="/docs/assets/img/adding-new-project/select-github-or-bitbucket.png" class="img-responsive img-bordered">
@@ -48,10 +48,10 @@ OAuth. Click "Authorize application" to continue.
 
 Once you have confirmed permission access, Semaphore will present you with a
 list of your repositories. If the list is very long, you can use the search box
-located at the top to narrow it down. If you've chose 'Private & Public' option
-you will see private and open source projects in the list.
+located at the top to narrow it down. If you selected 'Private & Public' option,
+you will see both private and open source projects in the list.
 
-We will now go ahead and choose a private project from GitHub.
+We will now go ahead and select a private project from GitHub.
 
 A note for Bitbucket users: in order to add a repository, a user has to
 either be its creator or belong to a Bitbucket group that has admin rights to it.
@@ -65,24 +65,22 @@ project page later on.
 
 <img src="/docs/assets/img/adding-new-project/select-branch.png" class="img-responsive img-bordered">
 
-Select the account which you would like to own this project. Besides your
-personal account, any
-[organizations](/organizations/setting-up-an-organization.html) where you have
-admin or owner access will be listed here as well.
+In the next step, enter a name for your organization on Semaphore — a space
+for projects that you can share with others. Organizations let you to grant
+different permissions to team members and delegate project management under
+a single account.
 
-Select [organization](/organizations/setting-up-an-organization.html) which you
-would like to own this project. Any organization where you have admin or owner
-access will be listed here as well. If you don't belong to or don't own any
-organizations, you will be asked to enter a name for your new organization.
-
-By creating an organization, you will get 30-day free trial with up to 8 parallel jobs.
-
-Semaphore strongly encourages to add private projects to organizations, not
-personal accounts. For example, if you are adding a project that should be
-billed to your company, you can add that project to your company's
-organization.
+In case this is your first private project on Semaphore, this will also start
+a 30-day free trial of Semaphore. After the trial expires, you can continue
+using Semaphore for free for up to 100 private jobs, or upgrade to one of the
+paid plans.
 
 <img src="/docs/assets/img/adding-new-project/create-organization.png" class="img-responsive img-bordered">
+
+Note that in case you're adding an open source project, you won't see this
+step, although you can [create an organization
+account](/organizations/setting-up-an-organization.html) for open source
+separately too.
 
 Next, Semaphore will perform a quick analysis of the source code and
 generate a set of working build commands depending on your project's programming
