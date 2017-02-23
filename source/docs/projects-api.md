@@ -6,7 +6,7 @@ category: API
 
 ## User's projects
 
-List all projects that user has access to and their current status.
+List all projects that a user has access to and their current status.
 
 ```bash
 GET /api/v1/projects
@@ -98,5 +98,23 @@ Status: 200 OK
 ]
 ```
 
+The `result` field in a branch represents the status of the last build on
+the given branch. The `result` can be one of the following:
 
-A build's result can be either "passed", "failed", "stopped" or "pending".
+  - "passed"
+  - "failed"
+  - "stopped"
+  - "pending"
+
+If the branch was never built, the structure of the returned json will be
+slightly different:
+
+``` json
+{
+   "branch_name": "master",
+   "branch_url": "https://semaphoreci.com/projects/61/branches/85",
+   "branch_status_url": "https://semaphoreci.com/api/v1/projects/3f1004b8343faabda63d441734526c854380ab89/85/status?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "branch_history_url": "https://semaphoreci.com/api/v1/projects/3f1004b8343faabda63d441734526c854380ab89/85?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "project_name": "testapp-sphinx"
+}
+```
