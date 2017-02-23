@@ -13,20 +13,20 @@ confirm your email address. The free account gives you unlimited CI service for
 open-source projects and up to 100 private builds per month.
 
 After you have signed in on Semaphore for the first time, a welcome screen will
-prompt you to add your first project. Click on the "Build a New Project" button
-to get started.  If you have already added some projects on Semaphore, use the
-"Add new project" link at the top of your dashboard.
+prompt you to add your first project. Click on the "Start a Project" button
+to get started. If you have already added some projects on Semaphore, use the
+"Create new" link at the top of your screen.
 
 <img src="/docs/assets/img/adding-new-project/build-new-project.png" class="img-responsive img-bordered">
 
 The next step is to connect your Semaphore account with your GitHub and/or
 Bitbucket account. This will allow Semaphore to do things like present you a
-list of projects to choose from, fetch the chosen Git repositories, and update
+list of projects to select from, fetch the chosen Git repositories, and update
 pull request status. Select your preferred Git host.
 
 <img src="/docs/assets/img/adding-new-project/select-github-or-bitbucket.png" class="img-responsive img-bordered">
 
-We will now assume that you chose GitHub. On the next screen, select whether you
+We will now assume that you selected GitHub. On the next screen, select whether you
 would like to give Semaphore access to your public (open-source) or
 private projects. Access to private projects also includes access to public
 projects.
@@ -38,6 +38,8 @@ The rest of the procedure is the same as with GitHub.
 
 <img src="/docs/assets/img/adding-new-project/choose-public-private-github-scope.png" class="img-responsive img-bordered">
 
+We will now presume that you selected Private & Public.
+
 At this point, Semaphore will redirect you to github.com or bitbucket.com, where
 you will be presented a screen to authorize Semaphore to access your account via
 OAuth. Click "Authorize application" to continue.
@@ -46,7 +48,10 @@ OAuth. Click "Authorize application" to continue.
 
 Once you have confirmed permission access, Semaphore will present you with a
 list of your repositories. If the list is very long, you can use the search box
-located at the top to narrow it down.
+located at the top to narrow it down. If you selected 'Private & Public' option,
+you will see both private and open source projects in the list.
+
+We will now go ahead and select a private project from GitHub.
 
 A note for Bitbucket users: in order to add a repository, a user has to
 either be its creator or belong to a Bitbucket group that has admin rights to it.
@@ -60,14 +65,22 @@ project page later on.
 
 <img src="/docs/assets/img/adding-new-project/select-branch.png" class="img-responsive img-bordered">
 
-Select the account which you would like to own this project. Besides your
-personal account, any
-[organizations](/organizations/setting-up-an-organization.html) where you have
-admin or owner access will be listed here as well. For example, if you are
-adding a project that should be billed to your company, you can add that project
- to your company's organization.
+In the next step, enter a name for your organization on Semaphore — a space
+for projects that you can share with others. Organizations let you to grant
+different permissions to team members and delegate project management under
+a single account.
 
-<img src="/docs/assets/img/adding-new-project/select-account.png" class="img-responsive img-bordered">
+In case this is your first private project on Semaphore, this will also start
+a 30-day free trial of Semaphore. After the trial expires, you can continue
+using Semaphore for free for up to 100 private jobs, or upgrade to one of the
+paid plans.
+
+<img src="/docs/assets/img/adding-new-project/create-organization.png" class="img-responsive img-bordered">
+
+Note that in case you're adding an open source project, you won't see this
+step, although you can [create an organization
+account](/organizations/setting-up-an-organization.html) for open source
+separately too.
 
 Next, Semaphore will perform a quick analysis of the source code and
 generate a set of working build commands depending on your project's programming
@@ -76,11 +89,25 @@ language.
 <img src="/docs/assets/img/adding-new-project/analysis-results.png" class="img-responsive img-bordered">
 
 In this case, we have a Ruby on Rails application for which we would like to run
-`bundle exec rake cucumber` in a second, parallel job. That's why  we'll add
-a new parallel job and drag and drop `bundle exec rake cucumber` command to
-the new job.
+unit and integration tests. We'll go ahead and rename the first job.
 
-<img src="/docs/assets/img/adding-new-project/thread2.png" class="img-responsive img-bordered">
+<img src="/docs/assets/img/adding-new-project/rename-job.png" class="img-responsive img-bordered">
+
+After that we'll add a new parallel job for integration tests. You can
+add a parallel job by clicking "Parallel job". You can add as many jobs
+as you want.
+
+<img src="/docs/assets/img/adding-new-project/add-parallel-job.png" class="img-responsive img-bordered">
+
+We will enter a command `bundle exec rspec --integration` in our command
+editor.
+
+<img src="/docs/assets/img/adding-new-project/enter-command.png" class="img-responsive img-bordered">
+
+Now our build settings look much better. We have 2 parallel jobs, one for unit test,
+second for integration test.
+
+<img src="/docs/assets/img/adding-new-project/final-commands.png" class="img-responsive img-bordered">
 
 If your project needs to run commands that are different from what Semaphore has
 suggested, just use the commands editor to customize them to your needs.
