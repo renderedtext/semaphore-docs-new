@@ -1,23 +1,24 @@
 ---
 layout: post
-title: Customizing an organization
+title: Customizing an organization profile
 category: Organizations
 ---
 
-If the name of your project or company has changed, you can easily customize
-your Semaphore organization. You can edit organization's:
+Every organization has a public profile at semaphoreci.com/username which
+includes a list of its open source projects and some basic information that you
+can customize:
 
-  - Name
-  - Location
-  - Website
+  - name
+  - location
+  - website
   - Gravatar email address
 
 ## How to customize an organization
 
-In order to be able to customize an organization, you need to belong to the
-_Owners_ team of that organization.
+In order to be able to customize an organization profile, you need to belong to
+the _Owners_ team of that organization.
 
-To customize your organization, you need to:
+To customize your organization profile, you need to:
 
 1. Click your **username** in the navigation and select organization you wish
    to edit
@@ -37,4 +38,4 @@ To customize your organization, you need to:
 
 ## Further reading
 
-- [Learn more about organizations](/docs/organizations.html)
+- [Learn more about organizations](/docs/organizations/about-organizations.html)
