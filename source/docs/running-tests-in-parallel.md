@@ -25,21 +25,21 @@ for the front end. Your build settings might look similar to this:
 Here's what you need to do to run RSpec, Cucumber and JavaScript tests in parallel.
 First, add a new "Parallel job" near the bottom of the screen:
 
-<img src="/docs/assets/img/running-tests-in-parallel/adding-parallel-thread.png" class="img-responsive">
+<img src="/docs/assets/img/running-tests-in-parallel/adding-parallel-job.png" class="img-responsive">
 
 A new job block will appear, with an input field to enter a build command.
 Since in this example all the commands we want to run have already been entered,
 we'll press the Escape key, and drag and drop the `bundle exec rake cucumber`
 command into our new job:
 
-<img src="/docs/assets/img/running-tests-in-parallel/dragging-command.png" class="img-bordered-padding img-responsive">
+<img src="/docs/assets/img/running-tests-in-parallel/dragging-command.png" class="img-responsive">
 
 You can now rename the job from "Job #2" to "Cucumber" in order to be able to
 differentiate between jobs more easily later. This text will also appear on
 the pages showing build results. To rename the job, click on "Rename" next to
 "Job #2", enter your prefered name, and press Return.
 
-<img src="/docs/assets/img/running-tests-in-parallel/renaming-thread.png" class="img-bordered-padding img-responsive">
+<img src="/docs/assets/img/running-tests-in-parallel/renaming-job.png" class="img-responsive">
 
 Repeating the same for `npm test` gives us a 3-job setup, as shown on the
 following screenshot:
