@@ -5,13 +5,13 @@ category: Insights
 ---
 
 If you want Semaphore to show Insights on your project, you will need to
-start by enabling this feature.
+start by enabling this add-on.
 
 To enable Insights for your project, follow the **Add-ons** link on the project
 page.
 
-<img src="/docs/assets/img/insights/project_header.png" alt="Add-ons
-feature" class="img-responsive img-bordered">
+<img src="/docs/assets/img/insights/project_header.png" alt="Add-ons"
+class="img-responsive img-bordered">
 
 Next, click on **Insights**.
 
