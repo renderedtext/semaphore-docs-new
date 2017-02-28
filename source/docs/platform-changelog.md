@@ -6,12 +6,13 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1702 - 2017-02-28 (planned)
+### v1702 - 2017-02-28
 ```
 - additions
   - geckodriver 0.14.0
   - go 1.8
-  - node.js 7.5.0
+  - node.js 7.6.0
+  - node.js 6.10.0
   - ruby 2.2.6
 - upgrades
   - elixir 1.4.0 -> 1.4.2
