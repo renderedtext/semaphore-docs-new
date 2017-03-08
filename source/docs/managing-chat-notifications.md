@@ -9,11 +9,22 @@ update messages directly in [Campfire](https://campfirenow.com/),
 [Flowdock](https://www.flowdock.com/), [HipChat](https://www.hipchat.com/),
 and [Slack](https://slack.com/).
 
-## Setting up notifications
+## Finding tokens
 
-To get started, head over to your project settings, click on the
-**Notifications** tab, and choose your service. This guide assumes you have
-already entered your service-specific credentials. The screenshots feature Slack
+For Slack, within a chat room open the cog ("Change settings") > "Add an app
+or integration". Search for "Semaphore", select a channel and you'll reach
+instructions and integration settings, as below.
+
+<img src="/docs/assets/img/managing-chat-notifications/slack-integration-settings.png" alt="Slack integration settings for Semaphore" class="img-responsive img-bordered">
+
+Copy the webhook URL, save the integration and open return to Semaphore.
+
+For Hipchat, see a separate [guide for finding the right token](/docs/finding-hipchat-token.html).
+
+## Setting up notifications on Semaphore
+
+Head over to your project settings, click on the
+**Notifications** tab, and choose your service. The screenshots feature Slack
 settings, but the build and deploy forms are identical across all services.
 
 <img src="/docs/assets/img/managing-chat-notifications/setting-up-notifications.png" alt="Setting up notifications" class="img-responsive img-bordered">
