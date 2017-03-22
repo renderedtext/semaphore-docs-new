@@ -10,8 +10,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 - additions
   - firefox 52.0.1 ESR
-  - node.js 4.8.0
-  - node.js 7.7.3
+  - node.js 4.8.1
+  - node.js 7.7.4
 - upgrades
   - chromedriver 2.27 -> 2.28
   - google-chrome 56.0.2924.87 -> 57.0.2987.110
@@ -19,6 +19,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - erlang 19.2 -> 19.3
   - geckodriver 0.14.0 -> 0.15.0
   - jruby 9.1.6.0 -> 9.1.8.0
+  - node.js 6.10.0 -> 6.10.1
   - php 7.0.16 -> 7.0.17
   - php 7.1.2 -> 7.1.3
   - postgresql 9.4 -> 9.6
@@ -26,6 +27,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - pypy3 2.4.0 -> 5.5.0
   - rabbitmq 3.6.6 -> 3.6.8
   - rebar3 3.2.0 -> 3.3.5
+  - yarn 0.20.3 -> 0.21.3
 ```
 
 ### v1702 - 2017-02-28
