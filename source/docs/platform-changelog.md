@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### v1703 - 2017-03-28 (planned)
+### v1703 - 2017-03-28
 ```
 - additions
   - firefox 52.0.1 ESR
