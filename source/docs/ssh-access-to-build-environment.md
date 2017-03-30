@@ -15,14 +15,14 @@ of your terminal.
 
 ### Requirements
 
-To launch an SSH session on Semaphore you'll need to add a
+In order to use Semaphore's SSH session, you'll need to add a
 [public SSH key](https://semaphoreci.com/docs/managing-public-ssh-keys-for-ssh-sessions.html)
 to your account settings.
 
 ### Launching a new SSH session
 
-To launch such a build environment, visit the build or deploy page and click
-on the Launch SSH button above your jobs's output.
+To launch such a debugging environment, click on the `Launch SSH` button,
+found after opening the particular job's log.
 
 <img src="/docs/assets/img/ssh-session/ssh-session-1.png" class="img-responsive">
 
