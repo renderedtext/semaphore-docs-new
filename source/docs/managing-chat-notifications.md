@@ -29,6 +29,9 @@ settings, but the build and deploy forms are identical across all services.
 
 <img src="/docs/assets/img/managing-chat-notifications/setting-up-notifications.png" alt="Setting up notifications" class="img-responsive img-bordered">
 
+Note that notifications can only be set up and modified by users who have admin 
+access to a project.
+
 ## Modifying notification policies
 
 For both builds and deploys, Semaphore offers several filters to better control
