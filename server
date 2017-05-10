@@ -1,3 +1,15 @@
 #!/usr/bin/env bash
 
-bundle exec middleman -p 4000
+bundle install
+
+echo '                                                               '
+echo '  mmmm                              #                          '
+echo ' #"   "  mmm   mmmmm   mmm   mmmm   # mm    mmm    m mm   mmm  '
+echo ' "#mmm  #"  #  # # #  "   #  #" "#  #"  #  #" "#   #"  " #"  # '
+echo '     "# #""""  # # #  m"""#  #   #  #   #  #   #   #     #"""" '
+echo ' "mmm#" "#mm"  # # #  "mm"#  ##m#"  #   #  "#m#"   #     "#mm" '
+echo '                             #                                 '
+echo ' localhost:4000/docs         "                   DOCUMENTATION '
+echo '                                                               '
+
+bundle exec middleman -p 4000 -h "0.0.0.0"
