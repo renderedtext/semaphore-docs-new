@@ -13,7 +13,7 @@ echo ' "#mmm  #"  #  # # #  "   #  #" "#  #"  #  #" "#   #"  " #"  # '
 echo '     "# #""""  # # #  m"""#  #   #  #   #  #   #   #     #"""" '
 echo ' "mmm#" "#mm"  # # #  "mm"#  ##m#"  #   #  "#m#"   #     "#mm" '
 echo '                             #                                 '
-echo ' localhost:4000/docs         "                   DOCUMENTATION '
+echo ' localhost:5000/docs         "                   DOCUMENTATION '
 echo '                                                               '
 
-bundle exec middleman -p 4000 -h "0.0.0.0"
+bundle exec middleman -p 5000 -h "0.0.0.0"
