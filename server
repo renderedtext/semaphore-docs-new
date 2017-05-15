@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+if ! [ -e data/credentials.yml ]; then
+  cp data/credentials.yml.example data/credentials.yml 
+fi
+
 bundle install
 
 echo '                                                               '
