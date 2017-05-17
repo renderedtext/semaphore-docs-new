@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1705 - 2017-05-28 (planned)
+### 1705 - 2017-05-23 (planned)
 ```
 - additions
   - ansible 2.3
@@ -19,7 +19,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - bundler 1.12.5 -> 1.14.6
   - cassandra 2.2.8 -> 3.10
   - chromedriver 2.28 -> 2.29
-  - chrome 57.0.2987.110 -> 58.0.3029.110
+  - google-chrome 57.0.2987.110 -> 58.0.3029.110
   - elasticsearch 5.2.2 -> 5.3.2
   - firefox 52.0.1esr -> 52.1.1esr
   - firefox 45.7.0esr -> 45.9.0esr
@@ -31,7 +31,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - mysql 5.6.35 -> 5.6.36
   - node.js 6.10.1 -> 6.10.3
   - node.js 4.8.1 -> 4.8.3
-  - oracle-jdk8 8u121 -> 8u131
+  - oracle jdk 8u121 -> 8u131
   - php 7.1.3 -> 7.1.5
   - php 7.0.17 -> 7.0.19
   - pypy 5.6.0 -> 5.7.1
