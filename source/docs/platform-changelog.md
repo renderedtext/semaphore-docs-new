@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1705 - 2017-05-23 (planned)
+### 1705 - 2017-05-23
 ```
 - additions
   - ansible 2.3
@@ -31,6 +31,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - mysql 5.6.35 -> 5.6.36
   - node.js 6.10.1 -> 6.10.3
   - node.js 4.8.1 -> 4.8.3
+  - openjdk 7u121 -> 7u131
   - oracle jdk 8u121 -> 8u131
   - php 7.1.3 -> 7.1.5
   - php 7.0.17 -> 7.0.19
@@ -41,7 +42,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - scala 2.12.1 -> 2.12.2
   - scala 2.11.8 -> 2.11.11
   - sphinx 2.0.4 -> 2.2.11
-  - yarn 0.21.3 -> 0.24.4
+  - yarn 0.21.3 -> 0.24.5
 ```
 
 ### v1703 - 2017-03-28
