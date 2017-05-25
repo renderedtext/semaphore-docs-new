@@ -4,7 +4,7 @@ title: Using database from a Ruby or Rails application
 category: Ruby
 ---
 
-In case a database engine in selected in project settings, Semaphore will
+When a database engine is selected in project settings, Semaphore will
 generate a file `config/database.yml` with working [database
 access](/docs/databases.html) credentials.
 
