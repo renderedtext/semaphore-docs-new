@@ -1,23 +1,20 @@
 <% wrap_layout :layout do  %>
+  <div class="fl w-100 w-70-l br-l b--black-10 ph3 ph4-ns">
+    <div class="f4 pv3-ns pa4-l">
 
-  <% content_for :title do %>
-    <title><%= current_page.data.title + " - Semaphore" %></title>
-  <% end %>
+      <a href="#docs-nav" class="f6 dn-l dib link-reset black-50 bg-black-05 hover-bg-black-10 bg-animate pv1 ph3 mb3 br2">Docs Navigation</a>
+      <h2 class="f3 f2-m lh-title mv2"><a href="#" class="link-reset underline-hover"><%= current_page.data.title %></a></h2>
 
-  <article class="block-longform single-no-post-header">
-    <hgroup class="page-header">
-      <small>
-        <span class="edit-link"><%= link_to_file_on_github(current_page) %></span>
-        <%= link_to "Home","/docs" %> / <%= category_link(current_page.data.category) %> /
-      </small>
+      <%= yield %>
 
-      <h1><%= current_page.data.title %></h1>
-    </hgroup>
+      <p class="f6 black-50 mt4">
+      Semaphore Docs are open sourced —
+        <a href="#" class="link-reset black-50 underline-hover">
+          <svg width="13" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg"><g stroke="#888" fill="none" fill-rule="evenodd"><path d="M9.89.49l2.12 2.12-6.364 6.365-3.71 1.998c-.49.263-.675.085-.41-.41l2-3.71L9.888.49z" stroke-linecap="round"/><path d="M3.306 10.235l-1.603.863c-.36.194-.493.055-.305-.294l.876-1.627 1.032 1.058z" fill="#888" stroke-linecap="round"/><path d="M8.828 2.257l1.415 1.415M3.88 7.207L5.292 8.62" stroke-linecap="square"/></g></svg>
+        Edit on GitHub
+        </a>
+      </p>
 
-    <title><%= current_page.data.title %></title>
-
-    <%= yield %>
-
-  </article>
-
+    </div>
+  </div>
 <% end %>

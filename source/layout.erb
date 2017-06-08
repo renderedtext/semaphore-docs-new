@@ -1,59 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <% if content_for?(:title) %>
       <%= yield_content :title %>
     <% else %>
-      <title>Semaphore Documentation</title>
+      <title>Docs - Semaphore, Continuous Integration & Deployment</title>
     <% end %>
 
-    <!-- Icons -->
-    <link rel="shortcut icon" type="image/x-ico" href="/docs/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="/docs/assets/css/community.css">
+    <link href="//cloud.webtype.com/css/16e69f38-4c06-440c-92c2-408236a15160.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- Bootstrap -->
-
-    <!-- Custom styles -->
-    <link href="/docs/assets/css/styles.css" rel="stylesheet" />
-    <link href="/docs/assets/css/highlighting.css" rel="stylesheet" />
-
-    <script src="/docs/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <script src="//use.typekit.net/huv6nfe.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+      function toggle_visibility(id) {
+         var e = document.getElementById(id);
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+      }
+    </script>
   </head>
 
-  <body class="docs-new">
+  <body class="sans-serif lh-copy black-90 bg-washed-brown">
 
     <%= partial(:header) %>
 
-    <% if content_for?(:page_illustration)%>
-      <%= yield_content :page_illustration %>
-    <% else %>
-      <div class="page-illustration no-illustration">
-        <div class="container">
-    <% end %>
+    <div class="ph3 ph4-m">
+      <div class="mw7 center">
+        <div class="cf bg-white shadow-1 br2 pt3">
+          <%= yield  %>
 
-          <%= partial(:search_form) %>
+          <%= partial(:categories)%>
+        </div>
 
-          <div class="row">
-            <div class="col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
-              <%= yield  %>
-            </div>
-          </div>
+        <%= partial(:footer) %>
+      </div>
+    </div>
 
-        </div><!-- .container -->
-      </div><!-- .page-illustration -->
 
-    <%= partial(:footer) %>
-
-    <script src="/docs/assets/js/jquery-1.11.1.min.js"></script>
-    <script src="/docs/assets/js/bootstrap.min.js"></script>
+    <script src="/docs/assets/js/app.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     <%= partial(:swiftype_search)%>
 
