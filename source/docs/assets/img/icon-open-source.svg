@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" height="87px" width="87px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 87 87"><!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+ <title>icon 3</title>
+ <desc>Created with Sketch.</desc>
+ <g id="Page-7" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+  <g id="open-source" transform="translate(-679 -1434)" sketch:type="MSArtboardGroup">
+   <g id="header" transform="translate(410 1434)" sketch:type="MSLayerGroup">
+    <g id="icon-3" sketch:type="MSShapeGroup" transform="translate(269)">
+     <circle id="Oval-21" cy="43.5" cx="43.5" r="43.5" fill="#CECEB8"/>
+     <path id="open-source" fill="#fff" d="m30.414 41h27.172l-13.586-13.586-13.586 13.586zm-2.828 0h-6.581c-2.211 0-4.005 1.791-4.005 3.999v13.002c0 2.209 1.793 3.999 4.005 3.999h44.99c2.211 0 4.005-1.791 4.005-3.999v-13.002c0-2.209-1.793-3.999-4.005-3.999h-5.581l-16.192-16.192-0.222 0.221-0.222-0.221-16.192 16.192zm0.828 2h31.172l0.192 0.192 0.193-0.192h6.032c1.103 0 1.997 0.89 1.997 2v13c0 1.105-0.892 2-1.997 2h-45.006c-1.103 0-1.997-0.89-1.997-2v-13c0-1.105 0.892-2 1.997-2h7.032l0.193 0.192 0.192-0.192zm-1.052 13.168c2.786 0 4.774-2.044 4.774-4.83s-1.988-4.83-4.774-4.83c-2.8 0-4.774 2.044-4.774 4.83s1.974 4.83 4.774 4.83zm0-1.456c-1.89 0-3.094-1.456-3.094-3.374 0-1.932 1.204-3.374 3.094-3.374 1.876 0 3.094 1.442 3.094 3.374 0 1.918-1.218 3.374-3.094 3.374zm9.73 1.288v-3.5h2.478c1.946 0 3.038-1.33 3.038-2.912 0-1.596-1.078-2.926-3.038-2.926h-4.116v9.338h1.638zm2.254-4.942h-2.254v-2.954h2.254c0.924 0 1.582 0.588 1.582 1.484 0 0.882-0.658 1.47-1.582 1.47zm12.782 4.942v-1.442h-4.76v-2.604h4.662v-1.442h-4.662v-2.408h4.76v-1.442h-6.398v9.338h6.398zm11.522 0v-9.338h-1.638v6.468l-4.774-6.468h-1.68v9.338h1.638v-6.678l4.872 6.678h1.582z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
