@@ -2,6 +2,7 @@ require_relative "categories/getting_started"
 require_relative "categories/language_support"
 require_relative "categories/database_support"
 require_relative "categories/docker_support"
+require_relative "categories/semaphore_platform"
 
 CONTENTS = [
   {
@@ -32,7 +33,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-platform",
     :href => "the-semaphore-platform",
-    :title => "The Semaphore platform"
+    :title => "The Semaphore platform",
+    :key => SEMAPHORE_PLATFORM_KEY
   }, {
     :class => "docs-nav-git",
     :href => "git-services",
