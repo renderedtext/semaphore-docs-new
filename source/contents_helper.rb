@@ -4,6 +4,7 @@ require_relative "categories/database_support"
 require_relative "categories/docker_support"
 require_relative "categories/semaphore_platform"
 require_relative "categories/git_services"
+require_relative "categories/build_customization"
 
 CONTENTS = [
   {
@@ -44,7 +45,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-customize",
     :href => "customizing-your-build",
-    :title => "Customizing your build"
+    :title => "Customizing your build",
+    :key => BUILD_CUSTOMIZATION_KEY
   }, {
     :class => "docs-nav-adapting",
     :href => "adapting-semaphore-to-your-workflow",
