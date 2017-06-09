@@ -3,6 +3,7 @@ require_relative "categories/language_support"
 require_relative "categories/database_support"
 require_relative "categories/docker_support"
 require_relative "categories/semaphore_platform"
+require_relative "categories/git_services"
 
 CONTENTS = [
   {
@@ -38,7 +39,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-git",
     :href => "git-services",
-    :title => "Git Services"
+    :title => "Git Services",
+    :key => GIT_SERVICES_KEY
   }, {
     :class => "docs-nav-customize",
     :href => "customizing-your-build",

@@ -3,39 +3,39 @@ DATABASE_SUPPORT_KEY = "Databases"
 DATABASE_SUPPORT_OPTIONS = [
   {
     :href => "databases/cassandra",
-    :title => "Cassandra",
+    :short_title => "Cassandra",
     :key => "Cassandra"
   }, {
     :href => "databases/memcached",
-    :title => "Memcached",
+    :short_title => "Memcached",
     :key => "Memcached"
   }, {
     :href => "databases/mongodb",
-    :title => "MongoDB",
+    :short_title => "MongoDB",
     :key => "MongoDB"
   }, {
     :href => "databases/mysql",
-    :title => "MySQL",
+    :short_title => "MySQL",
     :key => "MySQL"
   }, {
     :href => "databases/postgis",
-    :title => "PostGIS",
+    :short_title => "PostGIS",
     :key => "PostGIS"
   }, {
     :href => "databases/postgresql",
-    :title => "PostgreSQL",
+    :short_title => "PostgreSQL",
     :key => "PostgreSQL"
   }, {
     :href => "databases/redis",
-    :title => "Redis",
+    :short_title => "Redis",
     :key => "Redis"
   }, {
     :href => "databases/rethinkdb",
-    :title => "RethinkDB",
+    :short_title => "RethinkDB",
     :key => "RethinkDB"
   }, {
     :href => "databases/sqlite",
-    :title => "SQLite",
+    :short_title => "SQLite",
     :key => "SQLite"
   }
 ]
