@@ -1,3 +1,7 @@
+require_relative "categories/getting_started"
+require_relative "categories/language_support"
+require_relative "categories/docker_support"
+
 CONTENTS = [
   {
     :class => "docs-nav-home",
@@ -6,11 +10,14 @@ CONTENTS = [
   }, {
     :class => "docs-nav-start",
     :href => "getting-started",
-    :title => "Getting Started"
+    :title => "Getting Started",
+    :key => GETTING_STARTED_KEY
   }, {
     :class => "docs-nav-language",
     :href => "languages",
-    :title => "Language Support"
+    :title => "Language Support",
+    :key => LANGUAGE_SUPPORT_KEY,
+    :subcategories => LANGUAGE_SUPPORT_SUBCATEGORIES
   }, {
     :class => "docs-nav-database",
     :href => "databases",
@@ -18,7 +25,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-docker",
     :href => "docker",
-    :title => "Docker support"
+    :title => "Docker support",
+    :key => DOCKER_SUPPORT_KEY
   }, {
     :class => "docs-nav-platform",
     :href => "the-semaphore-platform",
@@ -81,6 +89,10 @@ CONTENTS = [
     :title => "Guides"
   }
 ]
+
+def category_match?(category, category_key)
+  category[:key] == category_key || category[:subcategories].to_a.include?(category_key)
+end
 
 def contents
   CONTENTS

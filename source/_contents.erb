@@ -3,7 +3,10 @@
   <ul class="docs-nav list b pl0">
     <% contents.each do |category| %>
       <li class="<%= category[:class] %>">
-        <a href="/docs/<%= category[:href] %>.html" class="link-reset db black-80 pv1 pl4"><%= category[:title] %></a>
+      <a href="/docs/<%= category[:href] %>.html" class="link-reset db black-50 hover-black-80 pv1 pl4"><%= category[:title] %></a>
+        <% if category_match?(category, current_page.data.category) %>
+          <%= partial(:category) %>
+        <% end %>
       </li>
     <% end %>
   </ul>

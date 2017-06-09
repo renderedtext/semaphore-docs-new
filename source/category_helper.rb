@@ -1,23 +1,12 @@
 require_relative "categories/getting_started"
+require_relative "categories/language_support"
 require_relative "categories/docker_support"
 
 def category_options
-  options =
-    case current_page.data.category
-    when "Getting started" then GETTING_STARTED_OPTIONS
-    when "Docker" then DOCKER_SUPPORT_OPTIONS
-    else []
-    end
-
-  clone_with_current_selected(options)
-end
-
-def clone_with_current_selected(options)
-  options.map do |const_option|
-    option = const_option.clone
-
-    option[:current] = true if current_page.data.title == option[:full_title]
-
-    option
+  case current_page.data.category
+  when GETTING_STARTED_KEY then GETTING_STARTED_OPTIONS
+  when DOCKER_SUPPORT_KEY then DOCKER_SUPPORT_OPTIONS
+  when LANGUAGE_SUPPORT_KEY, *LANGUAGE_SUPPORT_SUBCATEGORIES then LANGUAGE_SUPPORT_OPTIONS
+  else []
   end
 end
