@@ -1,3 +1,6 @@
+<% require_relative "contents_helper" %>
+<% require_relative "category_helper" %>
+
 <!DOCTYPE html>
 <html lang="en" class="">
 
@@ -36,7 +39,7 @@
         <div class="cf bg-white shadow-1 br2 pt3">
           <%= yield  %>
 
-          <%= partial(:categories)%>
+          <%= partial(:contents)%>
         </div>
 
         <%= partial(:footer) %>

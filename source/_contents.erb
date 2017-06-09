@@ -1,0 +1,10 @@
+<div id="docs-nav" class="fr w-100 w-30-l ph3 ph4-ns pb4">
+  <h2 class="f6 normal ma0 pb2 mb2 bb b--black-10 black-50">Semaphore Docs</h2>
+  <ul class="docs-nav list b pl0">
+    <% contents.each do |category| %>
+      <li class="<%= category[:class] %>">
+        <a href="/docs/<%= category[:href] %>.html" class="link-reset db black-80 pv1 pl4"><%= category[:title] %></a>
+      </li>
+    <% end %>
+  </ul>
+</div>
