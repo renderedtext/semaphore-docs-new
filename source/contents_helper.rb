@@ -1,5 +1,6 @@
 require_relative "categories/getting_started"
 require_relative "categories/language_support"
+require_relative "categories/database_support"
 require_relative "categories/docker_support"
 
 CONTENTS = [
@@ -21,7 +22,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-database",
     :href => "databases",
-    :title => "Database support"
+    :title => "Database support",
+    :key => DATABASE_SUPPORT_KEY
   }, {
     :class => "docs-nav-docker",
     :href => "docker",
