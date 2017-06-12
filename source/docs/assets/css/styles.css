@@ -2523,7 +2523,7 @@ select[multiple].input-lg,
 .btn {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: 600;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -2918,7 +2918,7 @@ tbody.collapse.in {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 160px;
+  min-width: 225px;
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
@@ -6256,7 +6256,7 @@ p {
 }
 
 .section-pretty {
-  background: 50% 0 url(../images/section-edge-t.png) no-repeat, 50% 100% url(../images/section-edge-b.png) no-repeat;
+  background: 50% 0 url(/docs/assets/img/section-edge-t.png) no-repeat, 50% 100% url(/docs/assets/img/section-edge-b.png) no-repeat;
   background-color: #f2f2e9;
 }
 
@@ -6441,7 +6441,7 @@ a.bug-series:hover {
   height: 20px;
   margin-right: 5px;
   margin-bottom: -5px;
-  background: url(../images/icon-semaphore.svg) 50% 50% no-repeat;
+  background: url(/docs/assets/img/icon-semaphore.svg) 50% 50% no-repeat;
   opacity: .8;
 }
 .username:hover {
@@ -6533,7 +6533,7 @@ a.bug-series:hover {
   .sign-up-cta {
     margin-top: 0;
     margin-bottom: 0;
-    background: 100% 0 url(../images/select-project.png) no-repeat;
+    background: 100% 0 url(/docs/assets/img/select-project.png) no-repeat;
     background-size: 48%;
   }
   .sign-up-cta [class^=col] {
@@ -6586,7 +6586,7 @@ a.bug-series:hover {
   width: 16px;
   height: 16px;
   margin-bottom: -4px;
-  background: url(../images/icon-log-out.svg) 50% 50% no-repeat;
+  background: url(/docs/assets/img/icon-log-out.svg) 50% 50% no-repeat;
   background-size: 16px 16px;
 }
 
@@ -6982,7 +6982,7 @@ a.btn-cta:active, a.btn-cta:focus {
   padding-left: 45px;
 }
 .navigation .navigation-group a.explore.tags:before, .navigation .navigation-group a.explore.tutorials:before {
-  content: url("../images/tag.svg");
+  content: url("/docs/assets/img/tag.svg");
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -6991,14 +6991,14 @@ a.btn-cta:active, a.btn-cta:focus {
   left: 10px;
 }
 .navigation .navigation-group a.explore.tutorials:before {
-  content: url("../images/listing-tutorials.svg");
+  content: url("/docs/assets/img/listing-tutorials.svg");
   top: 6px;
 }
 .navigation .navigation-group a.nav-link-back {
   padding-left: 35px;
 }
 .navigation .navigation-group a.nav-link-back:before {
-  content: url("../images/arrow-left.svg");
+  content: url("/docs/assets/img/arrow-left.svg");
   display: inline-block;
   width: 15px;
   height: 25px;
@@ -7026,7 +7026,7 @@ a.btn-cta:active, a.btn-cta:focus {
   float: left;
 }
 .navigation .navigation-group .earn:before {
-  content: url("../images/earn.svg");
+  content: url("/docs/assets/img/earn.svg");
   display: inline-block;
   width: 27px;
   height: 26px;
@@ -7126,7 +7126,7 @@ a.btn-cta:active, a.btn-cta:focus {
   padding: 0 20px 0 46px;
 }
 .navigation-section-title.latest:before {
-  content: url("../images/listing-tutorials.svg");
+  content: url("/docs/assets/img/listing-tutorials.svg");
   display: inline-block;
   width: 26px;
   height: 23px;
@@ -7138,7 +7138,7 @@ a.btn-cta:active, a.btn-cta:focus {
   padding: 0 20px 0 46px;
 }
 .navigation-section-title.tags:before {
-  content: url("../images/tag.svg");
+  content: url("/docs/assets/img/tag.svg");
   display: inline-block;
   width: 26px;
   height: 23px;
@@ -7170,7 +7170,7 @@ a.btn-cta:active, a.btn-cta:focus {
   min-width: 220px;
   padding-left: 47px;
   height: 60px;
-  background-image: url("../images/search.svg");
+  background-image: url("/docs/assets/img/search.svg");
   background-repeat: no-repeat;
   background-size: 27px 27px;
   background-position: 10px center;
@@ -7286,11 +7286,11 @@ section + section > .navigation-top {
   background-repeat: no-repeat;
 }
 .pagination-nav-link.pagination-nav-link-prev {
-  background-image: url("../images/arrow-left.svg");
+  background-image: url("/docs/assets/img/arrow-left.svg");
   border-right: 2px solid #ceceb8;
 }
 .pagination-nav-link.pagination-nav-link-next {
-  background-image: url("../images/arrow-right.svg");
+  background-image: url("/docs/assets/img/arrow-right.svg");
   border-left: 2px solid #ceceb8;
 }
 .pagination-nav-link:hover {
@@ -7356,7 +7356,7 @@ p + .tag-list {
   height: 15px;
   margin: -.2em 0 0 10px;
   background-size: contain;
-  background-image: url("../images/like-inactive.svg");
+  background-image: url("/docs/assets/img/like-inactive.svg");
 }
 
 .btn-tag {
@@ -7523,13 +7523,13 @@ p + .tag-list {
 
 @media (min-width: 992px) {
   .page-illustration-tutorials {
-    background-image: url("../images/page-intro-tutorials.jpg");
+    background-image: url("/docs/assets/img/page-intro-tutorials.jpg");
   }
 }
 
 @media (min-width: 992px) {
   .page-illustration-open-source {
-    background-image: url("../images/page-intro-open-source.jpg");
+    background-image: url("/docs/assets/img/page-intro-open-source.jpg");
   }
 }
 
@@ -7630,7 +7630,7 @@ p + .tag-list {
   width: 24px;
   height: 22px;
   display: inline-block;
-  background-image: url("../images/like-inactive-red.svg");
+  background-image: url("/docs/assets/img/like-inactive-red.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -7638,7 +7638,7 @@ p + .tag-list {
   margin: 0  10px;
 }
 .likes.active .like {
-  background-image: url("../images/like-active.svg");
+  background-image: url("/docs/assets/img/like-active.svg");
   width: 24px;
   height: 23px;
 }
@@ -7648,7 +7648,7 @@ p + .tag-list {
   width: 13px;
   height: 13px;
   margin-left: 10px;
-  background-image: url("../images/checked.svg");
+  background-image: url("/docs/assets/img/checked.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -7672,7 +7672,7 @@ p + .tag-list {
   display: block;
   top: -22px;
   left: 20px;
-  background-image: url(../images/icon-contribute.svg);
+  background-image: url(/docs/assets/img/icon-contribute.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -7833,7 +7833,7 @@ p + .tag-list {
 }
 
 .btn-share {
-  background: url(../images/icon-share.svg) 4px 4px no-repeat !important;
+  background: url(/docs/assets/img/icon-share.svg) 4px 4px no-repeat !important;
   width: 40px;
   height: 43px;
   display: block;
@@ -7865,25 +7865,25 @@ p + .tag-list {
 }
 
 .icon-tweet {
-  background: url(../images/icon-twitter.svg) 0 0 no-repeat;
+  background: url(/docs/assets/img/icon-twitter.svg) 0 0 no-repeat;
 }
 
 .icon-facebook {
-  background: url(../images/icon-facebook.svg) 0 0 no-repeat;
+  background: url(/docs/assets/img/icon-facebook.svg) 0 0 no-repeat;
   top: -2px;
 }
 
 .icon-gplus {
-  background: url(../images/icon-gplus.svg) 0 0 no-repeat;
+  background: url(/docs/assets/img/icon-gplus.svg) 0 0 no-repeat;
 }
 
 .icon-ycombinator {
-  background: url(../images/icon-ycombinator.svg) 0 0 no-repeat;
+  background: url(/docs/assets/img/icon-ycombinator.svg) 0 0 no-repeat;
   top: -2px;
 }
 
 .icon-rss {
-  background: url(../images/icon-rss.svg) 0 0 no-repeat;
+  background: url(/docs/assets/img/icon-rss.svg) 0 0 no-repeat;
   top: -2px;
 }
 
@@ -7985,7 +7985,9 @@ p + .tag-list {
 }
 
 pre {
+  white-space: pre;
   word-break: normal;
+  word-wrap: normal;
 }
 
 pre span {
@@ -7999,7 +8001,7 @@ pre span {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #386E8B;
-  background-image: url("../images/banner-funnel.jpg");
+  background-image: url("/docs/assets/img/banner-funnel.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: 780px auto;
@@ -8334,13 +8336,13 @@ pre span {
   margin-bottom: 18px;
 }
 .block-longform code {
-  background: #F5F5F5 !important;
+  background: #F8F8F8 !important;
   color: #5C5C5C !important;
 }
 
 @media (min-width: 992px) {
   .page-illustration-blog {
-    background-image: url("../images/page-intro-blog.jpg");
+    background-image: url("/docs/assets/img/page-intro-blog.jpg");
   }
 }
 @media (min-width: 992px) {
@@ -8554,6 +8556,109 @@ a.link-heading {
 
 .u-mr-5 {
   margin-right: 5px;
+}
+
+.navbar-with-subscription {
+  margin-top: 50px;
+}
+
+.subscription-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  z-index: 10000;
+}
+.subscription-header p {
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.subscription-header-form {
+  text-align: left;
+}
+.subscription-header-form input {
+  height: 35px;
+  width: 240px !important;
+}
+.subscription-header-form .btn-primary {
+  font-weight: bold;
+  background: #8eb43f;
+  border-color: #8eb43f;
+}
+
+@media (max-width: 768px) {
+  .navbar-with-subscription {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .subscription-header {
+    position: static;
+    margin: 30px auto;
+    max-width: 400px;
+    padding: 15px 20px 30px;
+  }
+  .subscription-header p {
+    text-align: right;
+  }
+
+  .subscription-header-form {
+    text-align: center;
+  }
+  .subscription-header-form input, .subscription-header-form .btn {
+    width: 100% !important;
+  }
+}
+.subscription-header p {
+  float: right;
+  margin-right: 20px;
+}
+
+.category-header {
+  text-align: center;
+  padding: 40px 0;
+}
+.category-header h1 {
+  font-size: 16px;
+  margin: 8px 4px;
+  color: #9056c1;
+  font-weight: bold;
+  border: 3px solid;
+  display: inline-block;
+  padding: 7px 14px 6px;
+  border-radius: 18px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #f5e8ff;
+}
+.category-header .rss-button {
+  background-color: #9056c1;
+  color: #fff;
+  border-radius: 9999px;
+  padding: 6px 16px;
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 4px;
+  text-decoration: none;
+}
+.category-header .rss-button:hover {
+  background-color: #ff6a1c;
+}
+.category-header .rss-button span {
+  vertical-align: middle;
+}
+.category-header .rss-button svg {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=styles.css.map */

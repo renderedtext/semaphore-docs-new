@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" height="60px" width="60px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"><!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+ <title>icon-tag-python</title>
+ <desc>Created with Sketch.</desc>
+ <g id="Page-1" fill-rule="evenodd" sketch:type="MSPage" fill="none">
+  <g id="comunity-tags-icons" transform="translate(-842 -1289)" sketch:type="MSArtboardGroup">
+   <g id="icon-tag-python" transform="translate(842 1289)" sketch:type="MSLayerGroup">
+    <ellipse id="Oval-1" rx="30" sketch:type="MSShapeGroup" ry="30" cy="30" cx="30" fill="#346F9F"/>
+    <g id="g2303" sketch:type="MSShapeGroup" fill="#fff" transform="translate(14 13)">
+     <path id="path1948" d="m16.356 0.11974c-1.351 0.00641-2.641 0.12403-3.775 0.3291-3.3435 0.60316-3.9505 1.8656-3.9505 4.1936v3.0747h7.9005v1.0249h-7.9005-2.9648c-2.296 0-4.3065 1.409-4.9353 4.09-0.72537 3.073-0.75754 4.991-0.00001 8.199 0.56161 2.389 1.9027 4.09 4.1987 4.09h2.7162v-3.685c0-2.663 2.2561-5.012 4.9357-5.012h7.89c2.197 0 3.951-1.847 3.951-4.1v-7.6816c0-2.1863-1.807-3.8287-3.951-4.1936-1.357-0.23066-2.765-0.33546-4.115-0.32906zm-4.273 2.4729c0.816 0 1.483 0.6917 1.483 1.5421 0 0.8474-0.667 1.5326-1.483 1.5326-0.819 0-1.482-0.6852-1.482-1.5326 0-0.8504 0.663-1.5421 1.482-1.5421z"/>
+     <path id="path1950" d="m25.407 8.742v3.582c0 2.778-2.306 5.115-4.936 5.115h-7.89c-2.162 0-3.9505 1.89-3.9505 4.1v7.682c0 2.186 1.8615 3.472 3.9505 4.1 2.5 0.75 4.898 0.886 7.89 0 1.989-0.589 3.951-1.772 3.951-4.1v-3.075h-7.891v-1.025h7.891 3.95c2.296 0 3.151-1.635 3.95-4.09 0.824-2.527 0.789-4.957 0-8.199-0.568-2.334-1.652-4.09-3.95-4.09h-2.965zm-4.438 19.454c0.819 0 1.482 0.685 1.482 1.533 0 0.85-0.663 1.542-1.482 1.542-0.816 0-1.483-0.692-1.483-1.542 0-0.848 0.667-1.533 1.483-1.533z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,13 @@
+<div class="pl4 mb3">
+  <% category_options.each do |option| %>
+    <%
+        classes = "link-reset db normal " +
+          if option[:key] == current_page.data.title
+            "green b pv1"
+          else
+            "black-50 hover-black-80 pv1"
+          end
+    %>
+    <a href="/docs/<%= option[:href] %>.html" class="<%= classes %>"><%= option[:alternate_title] || option[:key] %></a>
+  <% end %>
+</div>
