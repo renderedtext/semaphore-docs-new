@@ -79,11 +79,13 @@ CONTENTS = [
   }, {
     :class => "docs-nav-twostep",
     :href => "two-step-verification",
-    :title => "Two-Step Verification"
+    :title => "Two-Step Verification",
+    :key => TWO_STEP_VERIFICATION_KEY
   }, {
     :class => "docs-nav-notifications",
     :href => "notifications",
-    :title => "Notifications"
+    :title => "Notifications",
+    :key => NOTIFICATIONS_KEY
   }, {
     :class => "docs-nav-api",
     :href => "api",
