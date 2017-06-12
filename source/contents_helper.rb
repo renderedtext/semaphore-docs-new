@@ -94,7 +94,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-billing",
     :href => "billing",
-    :title => "Billing"
+    :title => "Billing",
+    :key => BILLING_KEY
   }, {
     :class => "docs-nav-guides",
     :href => "#",
