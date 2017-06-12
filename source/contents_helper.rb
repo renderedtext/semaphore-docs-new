@@ -89,7 +89,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-api",
     :href => "api",
-    :title => "API"
+    :title => "API",
+    :key => API_KEY
   }, {
     :class => "docs-nav-billing",
     :href => "billing",
