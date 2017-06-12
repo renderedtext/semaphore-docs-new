@@ -74,7 +74,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-organisations",
     :href => "organizations",
-    :title => "Organizations"
+    :title => "Organizations",
+    :key => ORGANIZATIONS_KEY
   }, {
     :class => "docs-nav-twostep",
     :href => "two-step-verification",
