@@ -64,11 +64,13 @@ CONTENTS = [
   }, {
     :class => "docs-nav-insights",
     :href => "insights",
-    :title => "Insights"
+    :title => "Insights",
+    :key => INSIGHTS_KEY
   }, {
     :class => "docs-nav-collaboartion",
     :href => "collaboration",
-    :title => "Collaboration"
+    :title => "Collaboration",
+    :key => COLLABORATION_KEY
   }, {
     :class => "docs-nav-organisations",
     :href => "organizations",
@@ -98,8 +100,4 @@ CONTENTS = [
 
 def category_match?(category, category_key)
   category[:key] == category_key || category[:subcategories].to_a.include?(category_key)
-end
-
-def contents
-  CONTENTS
 end
