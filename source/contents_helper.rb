@@ -6,6 +6,7 @@ require_relative "categories/semaphore_platform"
 require_relative "categories/git_services"
 require_relative "categories/build_customization"
 require_relative "categories/adapting_semaphore"
+require_relative "categories/managing_dependencies"
 
 CONTENTS = [
   {
@@ -56,7 +57,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-dependencies",
     :href => "managing-dependencies",
-    :title => "Managing dependencies"
+    :title => "Managing dependencies",
+    :key => MANAGING_DEPENDENCIES_KEY
   }, {
     :class => "docs-nav-troubleshooting",
     :href => "build-troubleshooting",
