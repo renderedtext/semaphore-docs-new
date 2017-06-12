@@ -59,7 +59,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-deploy",
     :href => "deploying-your-application",
-    :title => "Deploying your application"
+    :title => "Deploying your application",
+    :key => DEPLOYMENT_KEY
   }, {
     :class => "docs-nav-insights",
     :href => "insights",
