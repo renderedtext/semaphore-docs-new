@@ -1,12 +1,4 @@
-require_relative "categories/getting_started"
-require_relative "categories/language_support"
-require_relative "categories/database_support"
-require_relative "categories/docker_support"
-require_relative "categories/semaphore_platform"
-require_relative "categories/git_services"
-require_relative "categories/build_customization"
-require_relative "categories/adapting_semaphore"
-require_relative "categories/managing_dependencies"
+Dir["source/categories/*.rb"].each { |file| require_relative file.split("/").drop(1).join("/") }
 
 def category_options
   case current_page.data.category
@@ -19,6 +11,7 @@ def category_options
   when BUILD_CUSTOMIZATION_KEY then BUILD_CUSTOMIZATION_OPTIONS
   when ADAPTING_SEMAPHORE_KEY then ADAPTING_SEMAPHORE_OPTIONS
   when MANAGING_DEPENDENCIES_KEY then MANAGING_DEPENDENCIES_OPTIONS
+  when BUILD_TROUBLESHOOTING_KEY then BUILD_TROUBLESHOOTING_OPTIONS
   else []
   end
 end

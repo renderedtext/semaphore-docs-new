@@ -1,12 +1,4 @@
-require_relative "categories/getting_started"
-require_relative "categories/language_support"
-require_relative "categories/database_support"
-require_relative "categories/docker_support"
-require_relative "categories/semaphore_platform"
-require_relative "categories/git_services"
-require_relative "categories/build_customization"
-require_relative "categories/adapting_semaphore"
-require_relative "categories/managing_dependencies"
+Dir["source/categories/*.rb"].each { |file| require_relative file.split("/").drop(1).join("/") }
 
 CONTENTS = [
   {
@@ -62,7 +54,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-troubleshooting",
     :href => "build-troubleshooting",
-    :title => "Build troubleshooting"
+    :title => "Build troubleshooting",
+    :key => BUILD_TROUBLESHOOTING_KEY
   }, {
     :class => "docs-nav-deploy",
     :href => "deploying-your-application",
