@@ -5,6 +5,7 @@ require_relative "categories/docker_support"
 require_relative "categories/semaphore_platform"
 require_relative "categories/git_services"
 require_relative "categories/build_customization"
+require_relative "categories/adapting_semaphore"
 
 def category_options
   case current_page.data.category
@@ -15,6 +16,7 @@ def category_options
   when SEMAPHORE_PLATFORM_KEY then SEMAPHORE_PLATFORM_OPTIONS
   when GIT_SERVICES_KEY then GIT_SERVICES_OPTIONS
   when BUILD_CUSTOMIZATION_KEY then BUILD_CUSTOMIZATION_OPTIONS
+  when ADAPTING_SEMAPHORE_KEY then ADAPTING_SEMAPHORE_OPTIONS
   else []
   end
 end

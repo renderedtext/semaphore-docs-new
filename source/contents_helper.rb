@@ -5,6 +5,7 @@ require_relative "categories/docker_support"
 require_relative "categories/semaphore_platform"
 require_relative "categories/git_services"
 require_relative "categories/build_customization"
+require_relative "categories/adapting_semaphore"
 
 CONTENTS = [
   {
@@ -50,7 +51,8 @@ CONTENTS = [
   }, {
     :class => "docs-nav-adapting",
     :href => "adapting-semaphore-to-your-workflow",
-    :title => "Adapting Semaphore"
+    :title => "Adapting Semaphore",
+    :key => ADAPTING_SEMAPHORE_KEY
   }, {
     :class => "docs-nav-dependencies",
     :href => "managing-dependencies",
