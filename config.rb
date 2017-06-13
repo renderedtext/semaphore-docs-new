@@ -4,7 +4,7 @@
 
 # Time.zone = "UTC"
 
-require_relative "source/docs_renderer"
+require "./source/docs_renderer"
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true, :tables => true, :renderer => DocsRenderer
