@@ -1,4 +1,8 @@
-# Shared Configs
+---
+category: API v2
+loyout: post
+title: Shared Configs
+---
 
 <ol type="i">
   

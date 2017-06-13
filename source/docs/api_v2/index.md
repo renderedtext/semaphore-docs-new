@@ -1,4 +1,8 @@
-# Semaphore API v2
+---
+category: API v2
+loyout: post
+title: Semaphore API v2
+---
 
 
 #### [Orgs](orgs.html)

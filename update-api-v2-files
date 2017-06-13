@@ -19,3 +19,18 @@ rm -rf source/docs/api_v2
 
 echo "Copying new markdown files"
 cp -R "$api_repo/markdown" source/docs/api_v2
+
+
+# convert '# Title' to:
+# ---
+# title: Title
+# layout: post
+# category: API v2
+# ---
+echo "Adding middleman data"
+sed -i '1s|#|title:|' $(find source/docs/api_v2 -type f)
+sed -i '1s|$|\n---|'  $(find source/docs/api_v2 -type f)
+sed -i '1s|^|---\n|'  $(find source/docs/api_v2 -type f)
+sed -i '1s|$|\nloyout: post|'     $(find source/docs/api_v2 -type f)
+sed -i '1s|$|\ncategory: API v2|' $(find source/docs/api_v2 -type f)
+
