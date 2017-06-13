@@ -97,3 +97,9 @@ All sensitive credentials are stored in `data/credentials.yml` check `data/crede
 If you turn a blog post into a Semaphore Docs page you should include the
 canonical url in the post meta data. For more info, visit the Semaphore Blog
 [guidelines](https://github.com/renderedtext/semaphore-blog#moving-content-to-semaphore-docs).
+
+## Updating APIv2 docs
+
+```
+./update-api-v2-files
+```

@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+api_repo="${PWD%/*}/api"
+
+if [[ ! -e "$api_repo" ]]; then
+  echo -e "Please clone api repo to $design_repo"
+  exit
+fi
+
+echo "Compiling markdown files"
+cd "$api_repo"
+docker-compose run app ./scripts/compile
+cd -
+
+echo "Removing old markdown files"
+rm -rf source/docs/api_v2
+
+echo "Copying new markdown files"
+cp -R "$api_repo/markdown" source/docs/api_v2
