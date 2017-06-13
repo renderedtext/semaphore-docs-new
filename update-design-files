@@ -1,16 +1,17 @@
 #!/bin/bash
 
-design_repo="${PWD%/*}/semaphore-design/community/public"
+design_repo="${PWD%/*}/semaphore-design"
+assets_source="${design_repo}/community/public/assets"
 
 if [[ ! -e "$design_repo" ]]; then
-  echo -e "Please clone community-design repo to $design_repo"
+  echo -e "Please clone semaphore-design repo to $design_repo"
   exit
 fi
 
 # Copy assets
-rsync -r $design_repo/assets/images/* source/docs/assets/img/
-cp -r $design_repo/assets/css/* source/docs/assets/css/
-cp -r $design_repo/assets/js/* source/docs/assets/js/
+rsync -r $assets_source/images/* source/docs/assets/img/
+cp -r $assets_source/css/* source/docs/assets/css/
+cp -r $assets_source/js/* source/docs/assets/js/
 
 # Convert plain image paths to asset paths
 sed -i 's/..\/images/\/docs\/assets\/img/g' source/docs/assets/css/*
