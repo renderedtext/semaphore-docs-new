@@ -14,7 +14,9 @@ $(document).ready(function() {
         const parent = $(this).parent();
 
         parent.prev().attr('class', current_category_class);
-        parent.addClass('current-category').slideToggle();
+        parent.addClass('current-category').show();
+
+        $(".contents").show();
       };
     });
   }
@@ -28,7 +30,7 @@ $(document).ready(function() {
       if ($(this).prev().text() !== key) {
         $(this).hide();
       } else {
-        $(this).slideToggle();
+        $(this).toggle();
       }
     });
   });
