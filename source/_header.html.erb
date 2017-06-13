@@ -30,8 +30,8 @@
       <div class="dn dib-m">
         <form class="search-form" role="search">
           <fieldset class="cf bn ma0 pa0">
-            <input class="f6 input-reset fl black-80 bg-white pv1 ph2 ba b--black-20 lh-solid br2 form-control" placeholder="Search Docs…" type="text" name="search" value="" id="search" size="30" id="st-search-input">
-            <input class="aa b f6 button-reset lh-solid fl pv1 ph3 ml2 tc bg-green white ba b--green pointer br2 form-control" type="submit" value="Search">
+            <input class="f6 input-reset fl black-80 bg-white pv1 ph2 ba b--black-20 lh-solid br2 form-control search-input" placeholder="Search Docs…" type="text" name="search" value="" size="30" id="st-search-input">
+            <input class="aa b f6 button-reset lh-solid fl pv1 ph3 ml2 tc bg-green white ba b--green pointer br2 form-control" type="submit" value="Search" onclick="document.getElementsByClassName('search-input')[0].click()">
           </fieldset>
         </form>
       </div>
@@ -59,14 +59,14 @@
     </div>
 
     <div class="dn-m ph3 pv3 bt b--black-10">
-      <form class="mw1 center">
+      <form class="mw1 center search-form">
         <fieldset class="cf bn ma0 pa0">
           <div class="cf">
             <div class="fl w-70 ph1">
-              <input class="f6 input-reset fl black-80 bg-white pv1 ph2 ba b--black-20 lh-solid br2 w-100" placeholder="Search Docs…" type="text" name="search" value="" id="search">
+              <input class="f6 input-reset fl black-80 bg-white pv1 ph2 ba b--black-20 lh-solid br2 w-100 form-control search-input-mobile" placeholder="Search Docs…" type="text" name="search" value="" id="st-search-input">
             </div>
             <div class="fl w-30 ph1">
-              <input class="aa b f6 button-reset lh-solid fl pv1 tc bg-green white ba b--green pointer br2 w-100" type="submit" value="Search">
+              <input class="aa b f6 button-reset lh-solid fl pv1 tc bg-green white ba b--green pointer br2 w-100 form-control" type="submit" value="Search" onclick="document.getElementsByClassName('search-input-mobile')[0].click()">
             </div>
           </div>
         </fieldset>
