@@ -3521,7 +3521,7 @@ tr:last-child td { border-bottom:0 }
 }
 .docs-nav li:before {
   content: "";
-  background-image: url('../images/docs-nav-icons.png');
+  background-image: url('/docs/assets/img/docs-nav-icons.png');
   background-size: 22px;
   background-repeat: no-repeat;
   width: 22px;
