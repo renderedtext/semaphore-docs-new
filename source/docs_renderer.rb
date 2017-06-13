@@ -8,7 +8,7 @@ class DocsRenderer < Redcarpet::Render::HTML
   end
 
   def codespan(code)
-    %(<span class="f5 code bg-washed-grayblue black-50blue br2 pa1">#{code}</span>)
+    %(<span class="f7 code bg-washed-grayblue black-50blue br2 pa1">#{code}</span>)
   end
 
   def block_code(code, language)
