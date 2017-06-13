@@ -31,6 +31,6 @@ echo "Adding middleman data"
 sed -i '1s|#|title:|' $(find source/docs/api_v2 -type f)
 sed -i '1s|$|\n---|'  $(find source/docs/api_v2 -type f)
 sed -i '1s|^|---\n|'  $(find source/docs/api_v2 -type f)
-sed -i '1s|$|\nloyout: post|'     $(find source/docs/api_v2 -type f)
+sed -i '1s|$|\nlayout: post|'     $(find source/docs/api_v2 -type f)
 sed -i '1s|$|\ncategory: API v2|' $(find source/docs/api_v2 -type f)
 

@@ -1,6 +1,6 @@
 ---
 category: API v2
-loyout: post
+layout: post
 title: Teams
 ---
 
