@@ -16,10 +16,12 @@ $(document).ready(function() {
         parent.prev().attr('class', current_category_class);
         parent.addClass('current-category').show();
 
-        $(".contents").show();
+        return false;
       };
     });
   }
+
+  $(".contents").show();
 
   $(".category-key").click(function(event) {
     event.preventDefault();
