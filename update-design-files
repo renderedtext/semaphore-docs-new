@@ -8,7 +8,7 @@ if [[ ! -e "$design_repo" ]]; then
 fi
 
 # Copy assets
-rsync --exclude author.jpg --exclude single-post_illustration.png -r $design_repo/assets/images/* source/docs/assets/img/
+rsync -r $design_repo/assets/images/* source/docs/assets/img/
 cp -r $design_repo/assets/css/* source/docs/assets/css/
 cp -r $design_repo/assets/js/* source/docs/assets/js/
 
