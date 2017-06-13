@@ -108,9 +108,13 @@ helpers do
   end
 
   def link_to_file_on_github(current_page)
+    link_to "Edit this article on GitHub", path_to_file_on_github(current_page), :class => "btn btn-default btn-xs pull-right"
+  end
+
+  def path_to_file_on_github(current_page)
     path = current_page.source_file.split("/semaphore-docs-new/").last
 
-    link_to "Edit this article on GitHub", "https://github.com/renderedtext/semaphore-docs-new/blob/master/#{path}", :class => "btn btn-default btn-xs pull-right"
+    "https://github.com/renderedtext/semaphore-docs-new/blob/master/#{path}"
   end
 
   def package_name(package)
