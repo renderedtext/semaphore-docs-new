@@ -1,245 +1,36 @@
-<% content_for :page_illustration do %>
-  <div class="page-illustration page-illustration-single-post page-illustration-none" style="background-image:url(/docs/assets/img/page-intro-documentation.jpg);">
-    <div class="container">
 
-      <section class="intro-block">
-        <div class="intro-content">
-          <h1 class="page-title">Documentation</h1>
-          <h2 class="page-subtitle">
-            Welcome to the help and documentation section of <a href="/">Semaphore</a>,
-            a hosted continuous integration and deployment service.
-          </h2>
-          <p class="page-tagline">
-            There's a good chance your question about using it will be answered here.
-            If not, please <a href="/contact">
-            contact us</a>. This website is <a href="https://github.com/renderedtext/semaphore-docs-new">
-            open source</a> and we welcome your issue reports and pull requests.
-          </p>
-        </div>
-      </section>
+<div class="fl w-100 w-70-l br-l b--black-10 ph3 ph4-ns pb4">
 
-<% end %>
+  <div class="pv3-ns pa4-l bb b--black-10">
+    <a href="#docs-nav" class="f6 dn-l dib link-reset black-50 bg-black-05 hover-bg-black-10 bg-animate pv1 ph3 mb3 br2">Docs Navigation</a>
+    <h2 class="f3 lh-title mv2"><a href="#" class="link-reset underline-hover">Welcome to Semaphore Docs</a></h2>
+    <p class="f4 mv2 mw6 center">
+    There's a good chance your question about using it will be answered here. This website is <a href="#">open source</a> and we welcome your issue reports and pull requests.
+    </p>
+  </div>
 
-<article class="block-longform post-header">
+  <div class="f4 pv3 pa4-l bb b--black-10">
+    <div class="fr-m mt2-m">
+      <svg width="42px" height="42px" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M17 6l16 15-16 15V26H0V16h17z"/></defs><g fill="none" fill-rule="evenodd"><rect fill="#6256AA" width="42" height="42" rx="4"/><rect fill="#B9AFF9" x="1" y="1" width="40" height="40" rx="3"/><use fill="#D8D2FC" xlink:href="#a"/><path stroke="#6256AA" d="M17.5 7.154L32.27 21 17.5 34.846V25.5H.5v-9h17V7.154z"/><path fill="#6256AA" d="M1 6h16v1H1zm0 5h16v1H1zm0 19h16v1H1zm0 5h16v1H1z"/><path fill="#8B7FDC" d="M1 7h16v4H1zm0 24h16v4H1z"/><path fill="#ADA2EA" d="M1 26h16v4H1zm0-14h16v4H1z"/><circle fill="#FFF" cx="32" cy="5" r="1"/><circle fill="#FFF" cx="27" cy="32" r="1"/><circle fill="#FFF" cx="36.5" cy="22.5" r="1"/><circle fill="#FFF" cx="34.5" cy="28.5" r="1"/><circle fill="#FFF" cx="6.5" cy="38.5" r="1"/><circle fill="#FFF" cx="34.5" cy="36.5" r="1"/><circle fill="#FFF" cx="29.5" cy="14.5" r="1"/><circle fill="#FFF" cx="25.5" cy="7.5" r="1"/><circle fill="#FFF" cx="7.5" cy="3.5" r="1"/><circle fill="#FFF" cx="37.5" cy="12.5" r="1"/></g></svg>
+    </div>
+    <h3 class="f4 lh-title mv2">Getting started</h3>
+    <div class="pb1"><a href="/docs/adding-github-bitbucket-project-to-semaphore.html">Adding your GitHub or Bitbucket project to Semaphore</a></div>
+    <div class="pb1"><a href="/docs/running-tests-in-parallel.html">Running tests in parallel</a></div>
+    <div class="pb1"><a href="/docs/how-to-get-build-badge.html">How to get a build badge</a></div>
+    <div class="pb1"><a href="/docs/building-pull-requests.html">Building pull requests</a></div>
+  </div>
 
-  <h2>Table of Contents</h2>
-
-  <h3>Getting started</h3>
-  <ul>
-    <li><a href="/docs/adding-github-bitbucket-project-to-semaphore.html">Adding your GitHub or Bitbucket project to Semaphore</a></li>
-    <li><a href="/docs/running-tests-in-parallel.html">Running tests in parallel</a></li>
-    <li><a href="/docs/how-to-get-build-badge.html">How to get a build badge</a></li>
-    <li><a href="/docs/building-pull-requests.html">Building pull requests</a></li>
-  </ul>
-
-  <h3>Language Support</h3>
-  <ul>
-    <li><a href="/docs/c-continuous-integration.html">C/C++</a></li>
-    <li><a href="/docs/clojure-continuous-integration.html">Clojure</a></li>
-    <li><a href="/docs/elixir-continuous-integration.html">Elixir</a></li>
-    <li><a href="/docs/erlang-continuous-integration.html">Erlang</a></li>
-    <li><a href="/docs/go-continuous-integration.html">Go</a></li>
-    <li><a href="/docs/java-continuous-integration.html">Java</a></li>
-    <li><a href="/docs/javascript-continuous-integration.html">JavaScript</a></li>
-    <li><a href="/docs/php-continuous-integration.html">PHP</a></li>
-    <li><a href="/docs/python-continuous-integration.html">Python</a></li>
-    <li><a href="/docs/ruby-continuous-integration.html">Ruby</a></li>
-    <li><a href="/docs/scala-continuous-integration.html">Scala</a></li>
-  </ul>
-
-  <h3>Database support</h3>
-  <ul>
-    <li><a href="/docs/databases/cassandra.html">Cassandra</a></li>
-    <li><a href="/docs/databases/memcached.html">Memcached</a></li>
-    <li><a href="/docs/databases/mongodb.html">MongoDB</a></li>
-    <li><a href="/docs/databases/mysql.html">MySQL</a></li>
-    <li><a href="/docs/databases/postgresql.html">PostgreSQL</a></li>
-    <li><a href="/docs/databases/redis.html">Redis</a></li>
-    <li><a href="/docs/databases/rethinkdb.html">RethinkDB</a></li>
-    <li><a href="/docs/databases/sqlite.html">SQLite</a></li>
-  </ul>
-
-  <h3>Docker support</h3>
-  <ul>
-    <li><a href="/docs/docker.html">Docker on Semaphore</a></li>
-    <li><a href="/docs/docker/setting-up-continuous-integration-for-docker-project.html">Setting up continuous integration for a Docker project</a></li>
-    <li><a href="/docs/docker/testing-multicontainer-apps-with-docker-compose-and-semaphore.html">Testing multi-container applications with Docker Compose</a></li>
-    <li>
-      Integrations with container registries
-      <ul>
-        <li><a href="/docs/docker/continuous-delivery-aws-container-registry.html">AWS EC2 Container Registry</a></li>
-        <li><a href="/docs/docker/continuous-delivery-docker-hub.html">Docker Hub</a></li>
-        <li><a href="/docs/docker/continuous-delivery-google-container-registry.html">Google Container Registry</a></li>
-        <li><a href="/docs/docker/continuous-delivery-quayio.html">Quay.io</a></li>
-        <li><a href="/docs/docker/continuous-delivery-on-premise-container-registry.html">Custom or self-hosted container registry</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <h3>The Semaphore platform</h3>
-  <ul>
-    <li><a href="/docs/supported-stack.html">Supported stack</a></li>
-    <li><a href="/docs/platform-changelog.html">Platform changelog</a></li>
-    <li><a href="/docs/platform-updates.html">Platform updates</a></li>
-    <li><a href="/docs/available-environment-variables.html">Available environment variables</a></li>
-    <li><a href="/docs/managing-public-ssh-keys-for-ssh-sessions.html">Managing public SSH keys for SSH session</a></li>
-    <li><a href="/docs/ssh-access-to-build-environment.html">SSH access to build environment</a></li>
-    <li><a href="/docs/caching-between-builds.html">Caching between builds</a></li>
-    <li>
-      Advanced topics
-      <ul>
-        <li><a href="/docs/build-sequence.html">Build sequence</a></li>
-        <li><a href="/docs/deploy-sequence.html">Deploy sequence</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <h3>Git Services</h3>
-  <ul>
-    <li><a href="/docs/connecting-a-git-service-account.html">Connecting a Git service account</a></li>
-    <li><a href="/docs/revoking-a-git-service-connection.html">Revoking a Git service connection</a></li>
-    <li><a href="/docs/restoring-an-invalid-git-service-connection.html">Restoring an invalid Git service connection</a></li>
-    <li><a href="/docs/removing-a-branch-from-bitbucket-ui-doesnt-remove-the-branch-on-semaphore.html">Removing a branch on Bitbucket doesn't remove the branch on Semaphore</a></li>
-  </ul>
-
-  <h3>Customizing your build</h3>
-  <ul>
-    <li><a href="/docs/customizing-build-commands.html">Customizing build commands</a></li>
-    <li><a href="/docs/running-build-command-on-specific-branch.html">Running a build command on a specific branch</a></li>
-    <li><a href="/docs/using-post-thread-commands.html">Using post-job commands</a></li>
-    <li><a href="/docs/adding-custom-configuration-files.html">Adding custom configuration files</a></li>
-    <li><a href="/docs/exporting-environment-variables.html">Exporting environment variables</a></li>
-    <li><a href="/docs/adding-more-ssh-keys.html">Adding more SSH keys</a></li>
-    <li><a href="/docs/caching-between-builds.html">How to cache anything between builds</a></li>
-    <li><a href="/docs/changing-system-configuration-file.html">Changing a system configuration file</a></li>
-  </ul>
-
-  <h3>Adapting Semaphore to your workflow</h3>
-  <ul>
-    <li><a href="/docs/how-semaphore-scheduler-works.html">How Semaphore scheduler works</a></li>
-    <li><a href="/docs/how-to-skip-building-for-some-commits-with-ci-skip.html">How to skip building some commits with [ci skip]</a></li>
-    <li><a href="/docs/set-high-priority-branches.html">Set high priority branches</a></li>
-    <li><a href="/docs/set-queued-builds-cancellation-strategy.html">Set queued builds cancellation strategy</a></li>
-    <li><a href="/docs/turn-off-automatic-testing-of-new-branches.html">Turn off automatic testing of new branches</a></li>
-    <li><a href="/docs/scheduling-builds.html">Scheduling daily and hourly builds</a></li>
-    <li><a href="/docs/using-fast-failing.html">Using Fast Failing</a></li>
-  </ul>
-
-  <h3>Managing dependencies</h3>
-  <ul>
-    <li><a href="/docs/building-project-with-git-submodules.html">Building a project with git submodules</a></li>
-    <li><a href="/docs/how-to-use-postgres-mongodb-and-redis-on-one-project.html">Can I use Postgres, MongoDB and Redis on one project?</a></li>
-    <li><a href="/docs/how-to-install-dependency.html">How to install a dependency?</a></li>
-    <li><a href="/docs/how-to-install-dependency-from-ppa.html">How to install a dependency from PPA?</a></li>
-    <li><a href="/docs/how-to-change-timezone.html">How to change the timezone?</a></li>
-    <li><a href="/docs/repository-settings.html">Repository settings</a></li>
-    <li><a href="/docs/databases/postgis.html">How to install PostGIS?</a></li>
-    <li><a href="/docs/test-apps.html">Test applications</a></li>
-  </ul>
-
-  <h3>Build troubleshooting</h3>
-
-  <%= partial "docs/build_troubleshooting" %>
-
-  <h3>Deploying your application</h3>
-  <ul>
-    <li><a href="/docs/continuous-deployment-options.html">Continuous Deployment Options</a></li>
-    <li><a href="/docs/deploying-to-heroku.html">Deploying to Heroku</a></li>
-    <li><a href="/docs/deploying-via-cloud66.html">Deploying via Cloud 66</a></li>
-    <li><a href="/docs/deploying-with-capistrano.html">Deploying with Capistrano</a></li>
-    <li><a href="/docs/deploying-to-aws-elastic-beanstalk.html">Deploying to AWS Elastic Beanstalk</a></li>
-    <li><a href="/docs/deploying-to-amazon-s3.html">Deploying to Amazon S3</a></li>
-    <li><a href="/docs/deploying-to-aws-lambda.html">Deploying to AWS Lambda</a></li>
-    <li><a href="/docs/deploying-with-git-deploy.html">Deploying with git-deploy</a></li>
-    <li><a href="/docs/generic-deployment.html">Generic Deployment</a></li>
-    <li><a href="/docs/ftp-deployment.html">FTP deployment</a></li>
-    <li><a href="/docs/understanding-automatic-and-manual-deployment.html">Understanding automatic and manual deployment</a></li>
-    <li><a href="/docs/deployment-fail-permission-denied.html">Fail: 'permission denied (publickey)'</a></li>
-    <li><a href="/docs/manually-triggerring-an-automatic-deploy.html">Manually triggerring an automatic deploy</a></li>
-    <li><a href="https://semaphoreci.com/blog/2014/02/05/hands-free-deployment-of-static-websites.html">Hands-free deployment of static websites with Semaphore</a></li>
-  </ul>
-
-  <h3>Insights</h3>
-  <ul>
-    <li><a href="/docs/insights/about-insights.html">About Insights</a>
-    <li><a href="/docs/insights/enabling-insights.html">Enabling Insights</a>
-    <li><a href="/docs/insights/interpreting-insights-data.html">Interpreting Insights data</a>
-    <li><a href="/docs/insights/troubleshooting-insights.html">Troubleshooting Insights</a>
-  </ul>
-
-  <h3>Collaboration</h3>
-  <ul>
-    <li><a href="/docs/how-to-add-or-remove-collaborator.html">How can I add or remove a collaborator from my project?</a></li>
-  </ul>
-
-  <h3>Organizations</h3>
-  <ul>
-    <li><a href="/docs/organizations/about-organizations.html">About organizations</a></li>
-    <li><a href="/docs/organizations/setting-up-an-organization.html">Setting up an organization</a></li>
-    <li><a href="/docs/organizations/what-is-the-difference-between-a-user-account-and-an-organization.html">What is the difference between a user account and an organization?</a></li>
-    <li><a href="/docs/organizations/adding-a-user-to-an-organization.html">Adding a user to an organization</a></li>
-    <li><a href="/docs/organizations/transferring-a-project-to-an-organization.html">Transferring a project to an organization</a></li>
-    <li><a href="/docs/organizations/can-i-convert-my-user-account-into-an-organization.html">Can I convert my user account into an organization?</a></li>
-    <li><a href="/docs/organizations/can-i-limit-the-permissions-a-user-has-on-a-specific-project.html">Can I limit the permissions a user has on a specific project?</a></li>
-    <li><a href="/docs/organizations/granting-users-permission-to-manage-projects-within-an-organization.html">Granting users permission to manage projects within an organization</a></li>
-    <li><a href="/docs/organizations/creating-a-team.html">Creating a team</a></li>
-    <li><a href="/docs/organizations/permission-levels-in-an-organization.html">Permission levels in an organization</a></li>
-    <li><a href="/docs/organizations/assigning-different-roles-to-collaborators-on-a-project.html">Assigning different roles to collaborators on a project</a></li>
-    <li><a href="/docs/organizations/removing-a-user-from-your-organization.html">Removing a user from your organization</a></li>
-    <li><a href="/docs/organizations/removing-a-user-from-a-team-in-your-organization.html">Removing a user from a team in your organization</a></li>
-    <li><a href="/docs/organizations/removing-a-user-from-multiple-teams-in-your-organization.html">Removing a user from multiple teams in your organization</a></li>
-    <li><a href="/docs/organizations/customizing-an-organization-profile.html">Customizing an organization profile</a></li>
-    <li><a href="/docs/organizations/deleting-an-organization.html">Deleting an organization</a></li>
-    <li><a href="/docs/organizations/transferring-organization-ownership.html">Transferring organization ownership</a></li>
-  </ul>
-
-  <h3>Two-Step Verification</h3>
-  <ul>
-    <li><a href="/docs/two-step-verification.html">Two-Step Verification</a></li>
-  </ul>
-
-  <h3>Notifications</h3>
-  <ul>
-    <li><a href="/docs/managing-email-addresses.html">Managing email addresses</a></li>
-    <li><a href="/docs/managing-chat-notifications.html">Managing chat notifications (Slack, HipChat, Campfire, Flowdock)</a></li>
-    <li><a href="/docs/subscribe-to-your-work.html">Subscribe only to my work</a></li>
-    <li><a href="/docs/finding-hipchat-token.html">Finding HipChat token</a></li>
-    <li><a href="/docs/post-build-webhooks.html">Post-build webhooks</a></li>
-    <li><a href="/docs/post-deploy-webhooks.html">Post-deploy webhooks</a></li>
-  </ul>
-
-  <h3>API</h3>
-  <ul>
-    <li><a href="/docs/api_authentication.html">Authentication</a></li>
-    <li><a href="/docs/branches-and-builds-api.html">Branches &amp; builds</a></li>
-    <li><a href="/docs/projects-api.html">Projects</a></li>
-    <li><a href="/docs/servers-and-deploys-api.html">Servers &amp; deploys</a></li>
-    <li><a href="/docs/webhooks-api.html">Webhooks</a></li>
-  </ul>
-
-  <h3>Integrations</h3>
-  <ul>
-    <li><a href="/docs/codeclimate.html">Code Climate</a></li>
-    <li><a href="/docs/cctry.html">CruiseControl status</a></li>
-    <li><a href="/docs/third-party-tools.html">Third-party tools</a></li>
-  </ul>
-
-  <h3>Billing</h3>
-  <ul>
-    <li><a href="/docs/repository-settings.html">Changing the project after repository or organization rename</a></li>
-    <li><a href="/docs/how-to-change-credit-card-information.html">How to change credit card information?</a></li>
-    <li><a href="/docs/transferring-project-ownership.html">Transferring project ownership</a></li>
-    <li><a href="/docs/education-plans.html">Education plans on Semaphore</a></li>
-    <li><a href="/docs/does-semaphore-offer-a-discount-for-non-profits.html">Does Semaphore offer a discount for non-profits?</a></li>
-  </ul>
-
-  <h3>Guides</h3>
-  <ul>
-    <li><a href="https://semaphoreci.com/blog/2013/09/19/multi-deployment-approaches.html">Multi-deployment approaches</a></li>
-    <li><a href="https://semaphoreci.com/blog/2013/02/14/clis-and-tools-for-semaphore.html">CLIs and tools for Semaphore</a></li>
-    <li><a href="https://semaphoreci.com/blog/2014/07/10/tdd-antipatterns-local-hero.html">TDD Antipatterns: Local Hero</a></li>
-    <li><a href="https://semaphoreci.com/blog/2014/06/24/tdd-antipatterns-the-free-ride.html">TDD Antipatterns: The Free Ride</a></li>
-    <li><a href="https://semaphoreci.com/blog/2014/09/08/semaphore-stickers-are-here.html">How to order Semaphore stickers?</a></li>
-  </ul>
-
-</article>
+  <div class="f4 pv3 pa4-l">
+    <div class="fr-m mt2-m">
+      <svg width="42px" height="42px" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#36779B" width="42" height="42" rx="4"/><rect fill="#81C7ED" x="1" y="1" width="40" height="40" rx="3"/><path fill="#36779B" d="M36 6h6v13H11v-7h6V6h12V1h7v5"/><path d="M30 1h5v5h-5V1zm1 1v3h1V2h-1zm2 0v3h1V2h-1zm-3 5h5v5h-5V7zm1 1v3h1V8h-1zm2 0v3h1V8h-1zm3-1h5v5h-5V7zm1 1v3h1V8h-1zm2 0v3h1V8h-1zM24 7h5v5h-5V7zm1 1v3h1V8h-1zm2 0v3h1V8h-1zm-9-1h5v5h-5V7zm1 1v3h1V8h-1zm2 0v3h1V8h-1zm-9 5h5v5h-5v-5zm1 1v3h1v-3h-1zm2 0v3h1v-3h-1zm3-1h5v5h-5v-5zm1 1v3h1v-3h-1zm2 0v3h1v-3h-1zm3-1h5v5h-5v-5zm1 1v3h1v-3h-1zm2 0v3h1v-3h-1zm3-1h5v5h-5v-5zm1 1v3h1v-3h-1zm2 0v3h1v-3h-1zm3-1h5v5h-5v-5zm1 1v3h1v-3h-1zm2 0v3h1v-3h-1z" fill="#97D6F8"/><path d="M41.5 18.5h-35S4.99 39.498 26.007 39.498C35.33 39.498 41.5 35.8 41.5 35.8V18.5z" stroke="#36779B" fill="#97D6F8" stroke-linecap="round"/><path d="M25.815 30.003c1.08 0 1.958-.882 1.958-1.97 0-1.09-.877-1.972-1.958-1.972-1.08 0-1.958.886-1.958 1.974 0 1.09.877 1.97 1.958 1.97" fill="#FFF"/><path d="M26.202 27.565c0-.18.09-.335.22-.44-.154-.078-.325-.127-.51-.127-.617 0-1.118.504-1.118 1.126 0 .622.5 1.126 1.118 1.126.618 0 1.12-.504 1.12-1.126l-.007-.065c-.08.04-.165.07-.26.07-.31 0-.563-.254-.563-.567" fill="#4D5C64" fill-rule="nonzero"/><path d="M11.34 33.034c1.393.17 6.92.18 10.755-1.532 1.923 3.46 6.234 6.41 9.046 7.103-10.27 1.44-16.294-1.353-19.8-5.57z" fill="#FFF"/><path d="M10.676 32.97s5.835.212 11.37-1.736" stroke="#36779B"/></g></svg>
+    </div>
+    <h3 class="f4 lh-title mv2">Docker on Semaphore</h3>
+    <div class="pb1"><a href="/docs/organizations/setting-up-an-organization.html">Setting up continuous integration for a Docker project</a></div>
+    <div class="pb1"><a href="/docs/docker/testing-multicontainer-apps-with-docker-compose-and-semaphore.html">Testing multi-container applications with Docker Compose</a></div>
+    <div class="pb1"><a href="/docs/docker/continuous-delivery-aws-container-registry.html">AWS EC2 Container Registry</a></div>
+    <div class="pb1"><a href="/docs/docker/continuous-delivery-docker-hub.html">Docker Hub</a></div>
+    <div class="pb1"><a href="/docs/docker/continuous-delivery-google-container-registry.html">Google Container Registry</a></div>
+    <div class="pb1"><a href="/docs/docker/continuous-delivery-quayio.html">Quay.io</a></div>
+    <div class="pb1"><a href="/docs/docker/continuous-delivery-on-premise-container-registry.html">Custom or self-hosted container registry</a></div>
+  </div>
+</div>

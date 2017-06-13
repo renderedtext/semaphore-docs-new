@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <% if content_for?(:title) %>
+      <%= yield_content :title %>
+    <% else %>
+      <title>Docs - Semaphore, Continuous Integration & Deployment</title>
+    <% end %>
+
+    <link rel="stylesheet" href="/docs/assets/css/community.css">
+    <link href="//cloud.webtype.com/css/16e69f38-4c06-440c-92c2-408236a15160.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript">
+      function toggle_visibility(id) {
+         var e = document.getElementById(id);
+         if(e.style.display == 'block')
+            e.style.display = 'none';
+         else
+            e.style.display = 'block';
+      }
+    </script>
+  </head>
+
+  <body class="sans-serif lh-copy black-90 bg-washed-brown">
+
+    <%= partial(:header) %>
+
+    <div class="ph3 ph4-m">
+      <div class="mw7 center">
+        <div class="cf bg-white shadow-1 br2 pt3">
+          <%= yield  %>
+
+          <%= partial(:contents)%>
+        </div>
+
+        <%= partial(:footer) %>
+      </div>
+    </div>
+
+
+    <script src="/docs/assets/js/app.js"></script>
+    <script src="/docs/assets/js/sidebar.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <%= partial(:swiftype_search)%>
+
+    <% if !development? %>
+      <%= partial(:google_analytics)%>
+      <%= partial(:hubspot_analytics)%>
+    <% end %>
+  </body>
+</html>
