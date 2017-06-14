@@ -1,0 +1,77 @@
+---
+layout: post
+title: Docker Layer Caching
+category: Docker
+---
+
+Docker caches the layers generated while building an image. Subsequent builds
+of the same image will reuse the cached layers that have not changed, thus
+considerably improving the building speed.
+
+Since [Docker 1.13](https://github.com/moby/moby/blob/master/CHANGELOG.md#1130-2017-01-18),
+the `docker run` command introduced a new switch `--cache-from`, which allows
+to specify a tagged image as a cache source. This image's layers would then be
+reused when a Docker image is being built, considerably speeding up the build.
+More than one image can be specified as a cache source, and the resulting image
+can also be used as a cache source in a subsequent Docker build.
+
+The image(s) used as a caching source can be stored on a Docker container
+registry (ECR, GCR, and similar). The image resulting from the build in
+Semaphore can then be pushed in a container regustry, and later pulled and
+reused in subsequent Semaphore builds.
+
+Since Docker stores only the changes between layers and reuses unchanged layers
+between builds, it will use disk space sparingly on the container registry.
+
+To avoid including the project's [dependency cache](/docs/caching-between-builds.html)
+in Docker's build context, add `.semaphore-cache` to the
+[.dockerignore file](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
+in your repository.
+
+
+## Caching in Docker Compose
+
+
+
+## How to use Docker caching in Semaphore builds
+
+Before you begin, make sure you have configured Semaphore to
+[integrate with a Docker container registry](/docs/docker/setting-up-continuous-integration-for-docker-project.html).
+This registry will contain tagged images of your project that were previously
+built and pushed successfully through Semaphore, and their dependencies too.
+The last successfully built image will also be tagged with the `latest` tag,
+and it will be pulled and used as a cache source in your Semaphore build jobs.
+
+To make it easy to perform changes in Semaphore's builds, define several
+[environmental variables in your project's Build settings](/docs/available-environment-variables.html):
+
+- `DOCKER_IMAGE_NAME` with the name of the Docker image you want to build (e.g.
+  `my-project_${BRANCH_NAME}`)
+- `REGISTRY_URL` with the URL to the registry (e.g. `myregistry.com`)
+- `REGISTRY_PORT` with the port used to access the registry (e.g. `5000`)
+
+Place the following code as a job in your project's
+[Build settings](/docs/customizing-build-commands.html):
+
+```
+docker pull $REGISTRY_URL:$REGISTRY_PORT/$DOCKER_IMAGE_NAME || true
+docker build --cache-from $REGISTRY_URL:$REGISTRY_PORT/$DOCKER_IMAGE_NAME --tag $REGISTRY_URL:$REGISTRY_PORT/$DOCKER_IMAGE:${REVISION}_${SEMAPHORE_BUILD_NUMBER} .
+docker tag $REGISTRY_URL:$REGISTRY_PORT/$DOCKER_IMAGE:${REVISION}_${SEMAPHORE_BUILD_NUMBER} $REGISTRY_URL:$REGISTRY_PORT/$DOCKER_IMAGE:latest
+docker push $REGISTRY_URL:5000/$DOCKER_IMAGE:latest
+```
+
+First, if available, the image of your project with the `latest` tag will be
+pulled from the registry. Then it will be used as a cache (if available) and
+your Docker image will be built from the Dockerfile in the current directory
+and tagged with the Git revision hash and Semaphore build number.
+Once built, the resulting image will be tagged with the `latest` tag, and then
+it will be pushed to your container registry together with its dependencies.
+The last successfully built image's layers will be reused as a cache in your
+subsequent Semaphore builds of your project, making the build time shorter.
+
+## Best practices
+
+To improve the speed of pushing and pulling images in your Semaphore builds,
+the Docker container registry should be geographically as close as possible to
+our Semaphore build servers.
+
