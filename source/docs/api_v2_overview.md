@@ -123,7 +123,7 @@ HTTP/1.1 409 Conflict
 ### Pagination
 
 Every request that that returns more than 30 items will be paginated. You can
-specify further pages by passing the `?page` parameter.
+specify further pages by passing the `page` parameter.
 
 ``` bash
 curl 'https://api.semaphoreci.com/v2/orgs?page=2'
@@ -154,26 +154,3 @@ The possible `rel` values are:
 
 It's advised to form calls with Link header values instead of constructing your
 own URLs.
-
-### Rate Limiting
-
-The returned HTTP headers of any API request shows your current rate limit
-status:
-
-```
-curl -i https://api.semaphoreci.com/v2/orgs
-
-*TODO*
-```
-
-| Name                  |               Description                                                    |
-|-----------------------|------------------------------------------------------------------------------|
-| X-RateLimit-Limit     | The maximum number of requests you're permitted to make per hour.            |
-| X-RateLimit-Remaining | The number of requests remaining in the current rate limit window.           |
-| X-RateLimit-Reset     | The time at which the current rate limit window resets in UTC epoch seconds. |
-
-If you exceed the rate limit, an error response returns:
-
-```
-*TODO*
-```
