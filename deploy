@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 bundle exec middleman build
 
 mv build/sitemap.xml build/docs/sitemap.xml
