@@ -10,6 +10,16 @@ REST API v2. If you have any problems or requests please contact our
 
 The root of the API is [https://api.semaphoreci.com/v2](https://api.semaphoreci.com/v2).
 
+<ol type="i">
+  <li>Constraints</li>
+  <li>Authentication</li>
+  <li>Errors</li>
+  <li>Pagination</li>
+  <li>Stability</li>
+</ol>
+
+### Constraints
+
 Every API request and response satisfies the following constraints:
 
 - All requests must use HTTPS.
@@ -154,3 +164,11 @@ The possible `rel` values are:
 
 It's advised to form calls with Link header values instead of constructing your
 own URLs.
+
+### Stability
+
+Each resource in the Semaphore API v2 is annotated with a stability
+attribute, which will be set to one of three values: `prototype`, `development`,
+or `production`. This attribute reflects the change management policy in place
+for the resource. For a full explanation of these policies, please see our [API
+compatibility policy](/docs/api_v2_compatibility_policy.html).
