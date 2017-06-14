@@ -6,8 +6,8 @@
 
 require "raml_parser"
 
-require_relative "source/docs_renderer"
-require_relative "source/api_v2"
+require "./source/docs_renderer"
+require "./source/api_v2"
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true, :tables => true, :renderer => DocsRenderer
