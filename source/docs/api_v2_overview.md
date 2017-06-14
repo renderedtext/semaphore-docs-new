@@ -50,7 +50,7 @@ curl -H "Authorization: Token <token>" https://api.semaphoreci.com/v2
 curl https://api.semaphoreci.com/v2/orgs?auth_token=<token>
 ```
 
-### API Errors
+### Errors
 
 There are several errors that you can receive as a response to an API request:
 
