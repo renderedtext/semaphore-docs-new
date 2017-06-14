@@ -102,7 +102,7 @@ helpers do
   end
 
   def sort_pages(pages)
-    pages.sort_by {|p| p.data.title}
+    pages.sort_by {|p| p.data.title.to_s }
   end
 
   def categories
