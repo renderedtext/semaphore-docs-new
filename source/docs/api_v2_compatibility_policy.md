@@ -5,9 +5,8 @@ title: API v2 Compatibility Policy
 ---
 
 This article describes Semaphore’s commitment to compatibility
-for services built on the Semaphore API v2. It also describes
-how we will introduce changes to the API and how those changes
-are communicated.
+for services built for the Semaphore API v2. It also describes
+how we introduce changes to the API and how those changes are communicated.
 
 Changes to the API will be communicated on
 [Semaphore's changelog](https://semaphoreci.com/renderedtext/semaphore/changelog)
