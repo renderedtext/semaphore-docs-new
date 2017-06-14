@@ -4,7 +4,10 @@
 
 # Time.zone = "UTC"
 
-require "./source/docs_renderer"
+require "raml_parser"
+
+require_relative "source/docs_renderer"
+require_relative "source/api_v2"
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true, :tables => true, :renderer => DocsRenderer
@@ -21,6 +24,13 @@ activate :s3_sync do |s3_sync|
   s3_sync.aws_secret_access_key = data.credentials.aws.secret_access_key
   s3_sync.delete                = false # We delete stray files by default.
   s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
+end
+
+ApiV2.specification.resources.each do |resource|
+  proxy "/docs/api_v2_#{resource.name}.html",
+        "/docs/api_v2_resource.html",
+        :locals => { :resource => resource },
+        :ignore => true
 end
 
 ###

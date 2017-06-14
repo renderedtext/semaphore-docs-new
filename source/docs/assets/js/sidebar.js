@@ -1,39 +1,52 @@
-const current_category_class = "link-reset db black-80 pv1 pl4"
-const current_article_class  = "link-reset db normal green b pv1"
+function Sidebar() {
+  this.categories = $(".category-div")
 
-$(document).ready(function() {
-  const title = $(".article-title").text();
+  this.current_category_class = "link-reset db black-80 pv1 pl4"
+  this.current_article_class  = "link-reset db normal green b pv1"
 
-  if (title === "") {
-    $(".docs-nav-home a").attr('class', current_category_class)
-  } else {
-    $(".article-key").each(function() {
-      if ($(this).text() === title) {
-        $(this).next().attr('class', current_article_class);
+  $(".category-key").on("click", this.click_handler.bind(this));
+}
 
-        const parent = $(this).parent();
-
-        parent.prev().attr('class', current_category_class);
-        parent.addClass('current-category').show();
-
-        return false;
-      };
-    });
-  }
+Sidebar.prototype.activate = function() {
+  this.highlight_sidebar_link_for_current_page();
 
   $(".contents").show();
+}
 
-  $(".category-key").click(function(event) {
-    event.preventDefault();
+Sidebar.prototype.highlight_sidebar_link_for_current_page = function() {
+  const sidebar_link = this.categories.find("a[href='" + location.pathname + "']");
 
-    const key = $(this).text();
+  if(sidebar_link.lenght === 0) {
+    $(".docs-nav-home a").attr('class', this.current_category_class)
+  } else {
+    // highlight element
+    sidebar_link.attr("class", this.current_article_class);
 
-    $(".category-div").not(".current-category").each(function() {
-      if ($(this).prev().text() !== key) {
-        $(this).hide();
-      } else {
-        $(this).toggle();
-      }
-    });
+    // expand the category
+    const parent = sidebar_link.parent();
+
+    parent.prev().attr('class', this.current_category_class);
+    parent.addClass('current-category').show();
+  }
+}
+
+Sidebar.prototype.click_handler = function(event) {
+  event.preventDefault();
+
+  const key = $(event.currentTarget).text();
+  console.log(key);
+
+  $(".category-div").not(".current-category").each(function() {
+    if ($(this).prev().text() !== key) {
+      $(this).hide();
+    } else {
+      $(this).toggle();
+    }
   });
+}
+
+$(document).ready(function() {
+  sidebar = new Sidebar();
+
+  sidebar.activate();
 });

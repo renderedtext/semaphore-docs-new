@@ -1,0 +1,14 @@
+<div class="pl4 mb3 category-div" hidden="true">
+
+  <div hidden="true" class="article-key">API v2 Overview</div>
+  <a href="/docs/api_v2_overview.html" class="link-reset db normal black-50 hover-black-80 pv1">Overview</a>
+
+  <div hidden="true" class="article-key">API v2 Compatibility Policy</div>
+  <a href="/docs/api_v2_compatibility_policy.html" class="link-reset db normal black-50 hover-black-80 pv1">Compatibility Policy</a>
+
+  <% ApiV2.specification.resources.each do |resource| %>
+    <div hidden="true" class="article-key">API v2 <%= resource.display_name %></div>
+    <a href="/docs/api_v2_<%= resource.name %>.html" class="link-reset db normal black-50 hover-black-80 pv1"><%= resource.display_name %></a>
+  <% end %>
+
+</div>

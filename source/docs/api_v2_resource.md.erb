@@ -1,0 +1,35 @@
+---
+layout: post
+category: API v2
+---
+
+Stability: `prototype`
+
+<% content_for :api_v2_title, resource.display_name %>
+
+<ol type="i">
+  <% ApiV2.sorted_routes(resource).each do |route| %>
+    <li><%= route.description %></li>
+  <% end %>
+</ol>
+
+<% ApiV2.sorted_routes(resource).each do |route| %>
+
+### <%= route.description %>
+
+```
+<%= route.verb_and_path %>
+```
+
+<% if route.request %>
+##### Request
+
+<%= ApiV2.request_table(route.request) %>
+
+<% end %>
+
+##### Response
+
+<%= ApiV2.response_example(route) %>
+
+<% end %>
