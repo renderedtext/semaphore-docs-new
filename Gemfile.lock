@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/renderedtext/api-dev-tools.git
+  revision: 99078041ceb96d03ab69f78ff0c8e1b8151f80cd
+  specs:
+    raml_parser (0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -163,7 +169,8 @@ DEPENDENCIES
   middleman-sitemap
   middleman-syntax
   nokogiri
+  raml_parser!
   redcarpet
 
 BUNDLED WITH
-   1.13.1
+   1.14.6
