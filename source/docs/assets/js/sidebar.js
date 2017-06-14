@@ -14,7 +14,7 @@ Sidebar.prototype.activate = function() {
 }
 
 Sidebar.prototype.highlight_sidebar_link_for_current_page = function() {
-  const sidebar_link = this.categories.find("a[href*='" + location.pathname + "']");
+  const sidebar_link = this.categories.find("a[href='" + location.pathname + "']");
 
   if(sidebar_link.lenght === 0) {
     $(".docs-nav-home a").attr('class', this.current_category_class)
