@@ -83,7 +83,7 @@ HTTP/1.1 400 Bad Request
 ```
 HTTP/1.1 404 Not Found
 
-{"message":"Problems parsing JSON"}
+{"message":"Not Found"}
 ```
 
 ##### Requesting resources that are not visible to the user
@@ -91,7 +91,7 @@ HTTP/1.1 404 Not Found
 ```
 HTTP/1.1 404 Not Found
 
-{"message":"Problems parsing JSON"}
+{"message":"Not Found"}
 ```
 
 ##### Resource validation errors
