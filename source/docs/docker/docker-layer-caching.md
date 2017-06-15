@@ -84,4 +84,14 @@ services:
 
 To improve the speed of pushing and pulling images in your Semaphore builds,
 the Docker container registry should be geographically as close as possible to
-our Semaphore build servers.
+the Semaphore build servers.
+
+To compare approximately how much time is needed to push or pull a Docker
+image, depending on the registry's physical location and the image's size,
+you may see the results of our benchmarks visualized on these charts:
+
+<img src="/docs/assets/img/docker/docker-layer-caching/registry-push-graph.png" class="img-responsive img-bordered" alt="Time needed to push Docker image to registry">
+<img src="/docs/assets/img/docker/docker-layer-caching/registry-pull-graph.png" class="img-responsive img-bordered" alt="Time needed to pull Docker image from registry">
+
+The values for `ap-southeast-2` were omitted because they were very high
+(over 300 seconds/5 minutes).
