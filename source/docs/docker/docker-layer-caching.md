@@ -11,17 +11,13 @@ considerably improving the building speed.
 Since [Docker 1.13](https://github.com/moby/moby/blob/master/CHANGELOG.md#1130-2017-01-18),
 the `docker build` command introduced a new switch `--cache-from`, which allows
 to specify a tagged image as a cache source. This image's layers would then be
-reused when a Docker image is being built, considerably speeding up the build.
-More than one image can be specified as a cache source, and the resulting image
-can also be used as a cache source in another Docker build.
+reused when a Docker image is being built. More than one image can be specified
+as a cache source, and the resulting image can also be used as a cache source
+in another Docker build.
 
 The image(s) used as a caching source can be stored on a Docker container
-registry (ECR, GCR, and similar). The image resulting from the build in
-Semaphore can then be pushed in a container regustry, and later pulled and
-reused in subsequent Semaphore builds.
-
-Since Docker stores only the changes between layers and reuses unchanged layers
-between builds, it will use disk space sparingly on the container registry.
+registry. The image resulting from the build in Semaphore can be pushed in a
+container registry, and later pulled and reused in subsequent Semaphore builds.
 
 As a result of changes in Docker's caching mechanism, our `docker-cache` tool
 is deprecated. We suggest you use a Docker registry for caching built images.
