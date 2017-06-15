@@ -6,6 +6,11 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1705.1 - 2017-06-15
+
+- upgrades
+  - heroku-cli 5.11.9 -> 6.11.7
+
 ### 1705 - 2017-05-23
 ```
 - additions
