@@ -126,9 +126,9 @@ grunt:
   url: "http://gruntjs.com"
   hide_on_stack_table: true
 
-heroku-toolbelt:
-  name: "Heroku Toolbelt"
-  version: "3.43.14"
+heroku-cli:
+  name: "Heroku CLI"
+  version: "6.11.7"
 
 io.js:
   name: "io.js"
