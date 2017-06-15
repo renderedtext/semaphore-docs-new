@@ -28,29 +28,33 @@ Make sure you have configured Semaphore to
 [integrate with a Docker container registry](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
 so you can use it for storing the Docker images.
 
-When working with Docker images, it helps to `export` the name of the image and
-its tag as environmental variables, or to define them in your
-[project's Environmental variables settings](/docs/exporting-environment-variables.html),
-so you can easily change them later, if necessary. For example:
+When working with Docker images, it helps to `export` the name of the image as
+an environmental variable, or define it in your
+[project's Environmental variables](/docs/exporting-environment-variables.html),
+so you can easily change it later, if necessary.
 
-- `DOCKER_IMAGE` that specifies the name of the Docker image, together
-  with the registry's address and port, e.g. `registry.com:5000/project`
-- `DOCKER_TAG` for tagging the image when it's built, e.g. `$BRANCH_NAME`
+In the code below, `DOCKER_IMAGE` specifies the name of the Docker image,
+together with the registry address and port, e.g. `registry.com:5000/project`.
+
+`BRANCH_NAME` was chosen as a tag in order to ensure a good cache hit. If you
+would like to push your image to a container registry for production use,
+after these commands you should use `docker tag` to tag it with the version
+format you prefer, and then `docker push` to push it once again.
 
 Place the following code as a job in your project's
 [Build settings](/docs/customizing-build-commands.html):
 
 ```
-docker pull $DOCKER_IMAGE:$DOCKER_TAG || true
-docker build --cache-from $DOCKER_IMAGE:$DOCKER_TAG --tag $DOCKER_IMAGE:$DOCKER_TAG .
-docker push $DOCKER_IMAGE:$DOCKER_TAG
+docker pull $DOCKER_IMAGE:$BRANCH_NAME || true
+docker build --cache-from $DOCKER_IMAGE:$BRANCH_NAME --tag $DOCKER_IMAGE:$BRANCH_NAME .
+docker push $DOCKER_IMAGE:$BRANCH_NAME
 ```
 
 The first command will pull the tagged image of your build from the registry,
 if it's available. If it is the first build, or the image is missing from the
 registry, it will skip to the next step.
 
-The second command will build a Docker image and tag it with the specified tag,
+The second command will build a Docker image and tag it with the branch name,
 the context being your project's directory. In case the tagged image is
 available, it will be used as a cache source.
 
