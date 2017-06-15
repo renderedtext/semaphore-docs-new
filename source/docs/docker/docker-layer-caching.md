@@ -28,8 +28,10 @@ Make sure you have configured Semaphore to
 [integrate with a Docker container registry](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
 so you can use it for storing the Docker images.
 
-To make it easy to perform changes in your project's builds, define several
-[environmental variables in your project's Build settings](/docs/available-environment-variables.html):
+When working with Docker images, it helps to `export` the name of the image and
+its tag as environmental variables, or to define them in your
+[project's Environmental variables settings](/docs/exporting-environment-variables.html),
+so you can easily change them later, if necessary. For example:
 
 - `DOCKER_IMAGE` that specifies the name of the Docker image, together
   with the registry's address and port, e.g. `registry.com:5000/project`
@@ -82,9 +84,9 @@ services:
 
 ## Best practices
 
-To improve the speed of pushing and pulling images in your Semaphore builds,
-the Docker container registry should be geographically as close as possible to
-the Semaphore build servers.
+In order to improve the speed of pushing and pulling images in your Semaphore
+builds, the Docker container registry should be geographically as close as
+possible to the Semaphore build servers.
 
 To compare approximately how much time is needed to push or pull a Docker
 image, depending on the registry's physical location and the image's size,
@@ -93,5 +95,4 @@ you may see the results of our benchmarks visualized on these charts:
 <img src="/docs/assets/img/docker/docker-layer-caching/registry-push-graph.png" class="img-responsive img-bordered" alt="Time needed to push Docker image to registry">
 <img src="/docs/assets/img/docker/docker-layer-caching/registry-pull-graph.png" class="img-responsive img-bordered" alt="Time needed to pull Docker image from registry">
 
-The values for `ap-southeast-2` were omitted because they were very high
-(over 300 seconds/5 minutes).
+Note that `local` refers to a local Docker container registry.
