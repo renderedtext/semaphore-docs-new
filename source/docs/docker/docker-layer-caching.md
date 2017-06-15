@@ -23,11 +23,6 @@ reused in subsequent Semaphore builds.
 Since Docker stores only the changes between layers and reuses unchanged layers
 between builds, it will use disk space sparingly on the container registry.
 
-To avoid including the project's [dependency cache](/docs/caching-between-builds.html)
-in Docker's build context, add `.semaphore-cache` to the
-[.dockerignore file](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
-in your repository.
-
 As a result of changes in Docker's caching mechanism, our `docker-cache` tool
 is deprecated. We suggest you use a Docker registry for caching built images.
 
