@@ -8,7 +8,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 1705.1 - 2017-06-15
 
-```
+``` md
 - upgrades
   - heroku-cli 5.11.9 -> 6.11.7
 - deprecations
@@ -16,7 +16,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### 1705 - 2017-05-23
-```
+``` md
 - additions
   - ansible 2.3
   - node.js 7.10
@@ -55,7 +55,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1703 - 2017-03-28
-```
+``` md
 - additions
   - firefox 52.0.1 ESR
   - node.js 4.8.1
@@ -79,7 +79,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1702 - 2017-02-28
-```
+``` md
 - additions
   - geckodriver 0.14.0
   - go 1.8
@@ -102,7 +102,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1701 - 2017-01-24
-```
+``` md
 - additions
   - elixir 1.4.0
   - node.js 7.4.0
@@ -130,7 +130,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1611.1 - 2016-12-27
-```
+``` md
 - additions
   - node.js 4.7.0
   - node.js 7.3.0
@@ -139,7 +139,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1611 - 2016-11-22
-```
+``` md
 - additions
   - node.js 7.1.0
   - ruby 2.3.3
@@ -158,7 +158,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1610 - 2016-10-25
-```
+``` md
 - additions
   - node.js 4.6.1
   - node.js 6.9.1
@@ -178,13 +178,13 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1609.1 - 2016-09-29
-```
+``` md
 - downgrades
   - bundler 1.13.0 -> 1.12.5
 ```
 
 ### v1609 - 2016-09-27
-```
+``` md
 - additions
   - node.js 6.6.0
   - node.js 4.5.0
@@ -205,7 +205,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1608 - 2016-08-23
-```
+``` md
 - additions
   - go 1.7
 - upgrades
@@ -224,7 +224,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1607 - 2016-07-26
-```
+``` md
 - additions
   - elixir 1.3.2
   - erlang 19.0
@@ -249,7 +249,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1606 - 2016-06-21
-```
+``` md
 - additions
   - node.js 6.2.1
   - qt 5.5.1
@@ -268,7 +268,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1605 - 2016-05-24
-```
+``` md
 - additions
   - node.js 5.11.1
   - node.js 6.1.0
@@ -295,7 +295,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1604 - 2016-04-26
-```
+``` md
 - additions
   - node.js 5.10.1
   - ruby 2.1.9
@@ -319,7 +319,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1603 - 2016-03-22
-```
+``` md
 - additions
   - firefox 45.0esr
   - go 1.6
@@ -344,7 +344,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1602 - 2016-02-23
-```
+``` md
 - additions
   - node.js 4.3.0
   - node.js 5.6.0
@@ -366,7 +366,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1601 - 2016-01-19
-```
+``` md
   - additions
     - elixir 1.2.0
     - node.js 5.4.0
@@ -384,7 +384,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1512 - 2015-12-22
-```
+``` md
   - additions
     - node.js 5.1.1
     - node.js 5.2.0
@@ -407,13 +407,13 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1511.1 - 2015-12-1
-```
+``` md
   - upgrades
     - heroku-toolbelt 3.42.21 -> 3.42.22
 ```
 
 ### v1511 - 2015-11-24
-```
+``` md
   - additions
     - elixir 1.1.1
     - firefox 38.4.0esr
@@ -429,7 +429,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1510 - 2015-10-20
-```
+``` md
   - additions
     - node.js 4.2.1
   - upgrades
@@ -447,7 +447,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1509 - 2015-09-22
-```
+``` md
   - additions
     - go 1.5.1
     - io.js 2.5.0
@@ -464,7 +464,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1508.1 - 2015-09-01
-```
+``` md
   - additions
     - ruby 2.1.7
   - upgrades
@@ -472,7 +472,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1508 - 2015-08-25
-```
+``` md
   - additions
     - ruby 2.2.3
   - upgrades
@@ -490,7 +490,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1507.1 - 2015-07-29
-```
+``` md
 - additions
   - phantomjs 2.0.0
   - python 2.6
@@ -504,7 +504,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1507 - 2015-07-21
-```
+``` md
 - upgrades
   - bundler 1.9.9 -> 1.10.5
   - cassandra 2.1.6 -> 2.1.8
@@ -525,7 +525,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1506 - 2015-06-23
-```
+``` md
 - upgrades
   - bundler 1.9.7 -> 1.9.9
   - cassandra 2.1.5 -> 2.1.6
@@ -543,7 +543,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1505 - 2015-05-19
-```
+``` md
 - upgrades
   - bundler 1.9.3 -> 1.9.7
   - cassandra 2.1.4 -> 2.1.5
@@ -561,7 +561,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1504 - 2015-04-21
-```
+``` md
 - additions
   - gradle 2.3
   - ruby 2.1.6
@@ -587,7 +587,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1503 - 2015-03-24
-```
+``` md
 - additions
   - ruby 2.2.1
 - upgrades
@@ -603,7 +603,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1502 - 2015-02-24
-```
+``` md
 - additions
   - node 0.12.0
   - io.js 1.2.0
@@ -628,7 +628,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1501 - 2015-01-20
-```
+``` md
 - upgrades:
   - chromedriver 2.12 -> 2.13
   - elasticsearch 1.3.2 -> 1.3.7
@@ -638,7 +638,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1412.1 - 2014-12-30
-```
+``` md
 - additions:
   - ruby 2.2.0
 - upgrades:
@@ -655,7 +655,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1412 - 2014-12-23
-```
+``` md
 - additions:
   - go 1.4
 - upgrades:
@@ -670,7 +670,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1411.1 - 2014-11-27
-```
+``` md
 - additions:
   - rabbitmq 3.2.4
 - upgrades:
@@ -678,7 +678,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1411 - 2014-11-25
-```
+``` md
 - additions:
   - ruby 2.1.5
 - upgrades:
@@ -695,7 +695,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1410.1 - 2014-10-31
-```
+``` md
 - additions:
   - ruby 2.1.4
 - upgrades:
@@ -706,7 +706,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1410 - 2014-10-23
-```
+``` md
 - additions:
   - elixir 1.0.1
   - erlang 17.3
@@ -727,7 +727,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```
 
 ### v1409 - 2014-09-24
-```
+``` md
 - additions:
   - php 5.6.0
   - ruby 2.1.3
@@ -747,7 +747,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### v1407 - 2014-07-07
 
-```
+``` md
 - additions:
   - aws cli
 - upgrades:
@@ -763,7 +763,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### v1405.2 - 2014-05-28
 
-```
+``` md
 - additions:
   - php 5.3.28
   - php 5.4.28
@@ -775,7 +775,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### v1405.1 2014-05-15
 
-```
+``` md
 - additions:
   - ruby 2.1.2
 - upgrades:
@@ -784,7 +784,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### v1405 - 2014-05-05
 
-```
+``` md
 - upgrades:
   - bundler 1.5.3 -> 1.6.2
   - elasticsearch 1.0.1 -> 1.1.1
@@ -798,7 +798,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 2014-03-05
 
-```
+``` md
 - additions:
   - ruby 2.1.1
 - upgrades:
@@ -818,14 +818,14 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 2014-01-30
 
-```
+``` md
 - upgrades:
   - chromedriver 2.8
 ```
 
 ### 2014-01-24
 
-```
+``` md
 - nodejs now set up via nvm
 - nodejs versions available:
   - 0.8.26
@@ -838,7 +838,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 2013-12-30
 
-```
+``` md
 - grunt-cli (0.1.11) and bower (1.2.8) available globally for node.js projects
 - elasticsearch default configuration changed to avoid possible race conditions:
   - index.number_of_shards: 1
@@ -856,7 +856,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 2013-11-29
 
-```
+``` md
 - upgrades:
   - ruby 2.1.0-preview2
   - ruby 2.0.0-p353
@@ -873,7 +873,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 2013-11-02
 
-```
+``` md
 - Ruby 2.1.0-preview1 available via rbenv
 - default locale is en_US.UTF-8, instead of C.UTF-8
 - upgrades:
@@ -884,7 +884,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 2013-10-18
 
-```
+``` md
 - upgrades:
   - all ruby version include the latest rubygems (currently 2.1.9)
   - jruby 1.7.5
@@ -892,7 +892,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 2013-10-02
 
-```
+``` md
 - upgrades:
   - git           1.8.4
   - redis         2.6.16
@@ -907,7 +907,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 ### 2013-07-07
 
-```
+``` md
 - ruby 1.9.3 is the default for new projects
 - removed ruby 1.9.3-p327
 - added heroku client 2.39.4
