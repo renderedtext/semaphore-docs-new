@@ -10,6 +10,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 - upgrades
   - heroku-cli 5.11.9 -> 6.11.7
+- deprecations
+  - heroku-toolbelt 3.43.16
 
 ### 1705 - 2017-05-23
 ```
