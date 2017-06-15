@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docker Layer Caching
+title: Docker layer caching
 category: Docker
 ---
 
@@ -26,7 +26,7 @@ between builds, it will use disk space sparingly on the container registry.
 As a result of changes in Docker's caching mechanism, our `docker-cache` tool
 is deprecated. We suggest you use a Docker registry for caching built images.
 
-## How to use Docker caching in Semaphore builds
+## How to use Docker layer caching in Semaphore builds
 
 Before you begin, make sure you have configured Semaphore to
 [integrate with a Docker container registry](/docs/docker/setting-up-continuous-integration-for-docker-project.html).
