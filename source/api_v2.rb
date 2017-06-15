@@ -43,8 +43,8 @@ module ApiV2
     end
   end
 
-  def self.fenced_code(content)
-    "\n\`\`\`\n#{content}\n\`\`\`\n"
+  def self.fenced_code(content, language = "json")
+    "\n\`\`\` #{language}\n#{content}\n\`\`\`\n"
   end
 
 end
