@@ -14,7 +14,7 @@ class DocsRenderer < Redcarpet::Render::HTML
   end
 
   def block_code(code, language)
-    %(<pre class="pre code f7 mv4"><code class="ba b--black-20">#{escape_html(code)}</code></pre>)
+    %(<pre class="pre code f7 mv4"><code class="ba b--black-20 #{language}">#{escape_html(code)}</code></pre>)
   end
 
   private
