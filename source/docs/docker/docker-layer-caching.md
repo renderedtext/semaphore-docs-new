@@ -4,9 +4,8 @@ title: Docker layer caching
 category: Docker
 ---
 
-Docker caches the layers generated while building an image. Subsequent builds
-of the same image will reuse the cached layers that have not changed, thus
-considerably improving the building speed.
+Docker [caches the layers generated while building an image](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#build-cache). Subsequent builds of the same image will reuse the cached layers that have not
+changed, thus considerably improving the building speed.
 
 Since [Docker 1.13](https://github.com/moby/moby/blob/master/CHANGELOG.md#1130-2017-01-18),
 the `docker build` command introduced a new switch `--cache-from`, which allows
@@ -99,4 +98,6 @@ you may see the results of our benchmarks visualized on these charts:
 <img src="/docs/assets/img/docker/docker-layer-caching/registry-push-graph.png" class="img-responsive img-bordered" alt="Time needed to push Docker image to registry">
 <img src="/docs/assets/img/docker/docker-layer-caching/registry-pull-graph.png" class="img-responsive img-bordered" alt="Time needed to pull Docker image from registry">
 
-Note that `local` refers to a local Docker container registry.
+Note that `local` refers to a local Docker container registry. The images'
+contents are generated using `/dev/urandom` to avoid any compression which
+might occur during the push and pull operations.
