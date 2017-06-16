@@ -32,10 +32,10 @@ To view the blog locally run:
 which actually runs
 
 ```
-$ bundle exec middleman -p 4000
+$ bundle exec middleman -p 5000
 ```
 
-Now you can open [http://localhost:4000/docs](http://localhost:4000/docs).
+Now you can open [http://localhost:5000/docs](http://localhost:5000/docs).
 
 ### Categories
 
