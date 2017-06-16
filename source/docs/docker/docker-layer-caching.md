@@ -100,4 +100,5 @@ you may see the results of our benchmarks visualized on these charts:
 
 Note that `local` refers to a local Docker container registry. The images'
 contents are generated using `/dev/urandom` to avoid any compression which
-might occur during the push and pull operations.
+might occur during the push and pull operations. These results can be
+considered to be a worst-case scenario.
