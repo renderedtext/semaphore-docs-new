@@ -4,9 +4,8 @@ layout: post
 title: API v2 Overview
 ---
 
-This document describes all the resources that make up the official Semaphore
-REST API v2. If you have any problems or requests please contact our
-[support](https://semaphoreci.com/support).
+This document describes all the resources that make up the Semaphore REST API
+v2. If you have any problems or requests please contact [support](https://semaphoreci.com/support).
 
 The root of the API is [https://api.semaphoreci.com/v2](https://api.semaphoreci.com/v2).
 
@@ -29,14 +28,15 @@ Every API request and response satisfies the following constraints:
 
 ### Authentication
 
-There are two ways to authenticate through Semaphore API v2. Requests that
-require authentication will return `404 Not Found`, instead of `403 Forbidden`.
-This is to prevent the accidental leakage of private projects to unauthorized
-users.
+All API requests require authentication. To authenticate, you need an
+authentication token. You can find your authentication token by visiting your
+[user settings](https://semaphoreci.com/users/edit).
 
-To authenticate, you need an authentication token. You can find your
-authentication token by visiting your
-[user settings](https://semaphoreci.com/users/edit) on Semaphore.
+Requests that require authorization will return `404 Not Found`, instead of
+`403 Forbidden`. This is to prevent the accidental leakage of private projects
+to unauthorized users.
+
+There are two ways to authenticate through Semaphore API v2.
 
 ##### Authentication Token Sent as a HTTP header
 
