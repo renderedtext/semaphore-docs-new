@@ -1,6 +1,12 @@
 require "cgi"
 
 class DocsRenderer < Redcarpet::Render::HTML
+  def initialize(extensions = {})
+    super({
+      :with_toc_data => true
+    }.merge(extensions))
+  end
+
   def block_quote(quote)
     %(<blockquote cite="http://developer.mozilla.org" class="mh0 ph4 pv1 f5 lh-loose bl b--green bw2 black-70 bg-near-white">#{escape_html(quote)}</blockquote>)
   end

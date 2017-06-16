@@ -16,6 +16,16 @@ module ApiV2
     ].flatten
   end
 
+  def self.toc(routes)
+    list = routes.map do |route|
+      href = route.description.split(" ").map(&:downcase).join("-")
+
+      "<li><a href='##{href}'>#{route.description}</a></li>"
+    end
+
+    "<ol type='i'>#{list.join("\n")}</ol>"
+  end
+
   def self.request_table(request)
     header = [
       ["Name", "Type", "Required", "Example"],

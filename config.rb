@@ -10,11 +10,10 @@ require "./source/docs_renderer"
 require "./source/api_v2"
 
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true, :tables => true, :renderer => DocsRenderer
+set :markdown, :with_toc_data => true, :fenced_code_blocks => true, :smartypants => true, :tables => true, :renderer => DocsRenderer
 activate :syntax #https://github.com/middleman/middleman-syntax
 
 activate :sitemap, :hostname => "https://semaphoreci.com"
-
 activate :alias
 
 #Activate sync extension
