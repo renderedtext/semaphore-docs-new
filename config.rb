@@ -9,6 +9,30 @@ require "raml_parser"
 require "./source/docs_renderer"
 require "./source/api_v2"
 
+module DocsHelpers
+  def toc
+    content = ::File.read(current_page.source_file)
+
+    # remove YAML frontmatter
+    content = content.gsub(/^(---\s*\n.*?\n?)^(---\s*$\n?)/m,'')
+
+    markdown = Redcarpet::Markdown.new(
+      Redcarpet::Render::HTML_TOC.new(nesting_level: 3)
+    )
+    markdown.render(content)
+
+# > <ol type="i">
+# >   <li>Constraints</li>
+# >   <li>Authentication</li>
+# >   <li>Errors</li>
+# >   <li>Pagination</li>
+# >   <li>Stability</li>
+# > </ol>
+  end
+end
+
+helpers DocsHelpers
+
 set :markdown_engine, :redcarpet
 set :markdown, :with_toc_data => true, :fenced_code_blocks => true, :smartypants => true, :tables => true, :renderer => DocsRenderer
 activate :syntax #https://github.com/middleman/middleman-syntax
