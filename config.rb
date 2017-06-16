@@ -29,8 +29,8 @@ activate :s3_sync do |s3_sync|
 end
 
 ApiV2.specification.resources.each do |resource|
-  proxy "/docs/api_v2_#{resource.name}.html",
-        "/docs/api_v2_resource.html",
+  proxy "/docs/api-v2-#{resource.name.gsub("_", "-")}.html",
+        "/docs/api-v2-resource.html",
         :locals => { :resource => resource },
         :ignore => true
 end
