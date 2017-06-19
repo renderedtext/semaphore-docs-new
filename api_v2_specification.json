@@ -240,9 +240,9 @@
                         "required": true,
                         "examples": [
                           {
-                            "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
+                            "value": "https://api.semaphoreci.com/v2/orgs/renderedtext",
                             "strict": true,
-                            "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5"
+                            "structuredValue": "https://api.semaphoreci.com/v2/orgs/renderedtext"
                           }
                         ],
                         "key": "url"
@@ -359,9 +359,9 @@
                           "required": true,
                           "examples": [
                             {
-                              "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
+                              "value": "https://api.semaphoreci.com/v2/orgs/renderedtext",
                               "strict": true,
-                              "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5"
+                              "structuredValue": "https://api.semaphoreci.com/v2/orgs/renderedtext"
                             }
                           ],
                           "key": "url"
@@ -3615,7 +3615,7 @@
                         "withNoBodyResponse",
                         "withNotFoundError"
                       ],
-                      "displayName": "Dissconnect a shared environment variable from a project",
+                      "displayName": "Disconnect a shared environment variable from a project",
                       "method": "delete",
                       "allUriParameters": [
                         {
@@ -3728,7 +3728,7 @@
                               {
                                 "displayName": "encrypted",
                                 "type": "boolean",
-                                "example": true,
+                                "example": false,
                                 "required": true,
                                 "key": "encrypted"
                               },
@@ -3955,7 +3955,7 @@
                         "withNoBodyResponse",
                         "withNotFoundError"
                       ],
-                      "displayName": "Dissconnect a shared config file from a project",
+                      "displayName": "Disconnect a shared config file from a project",
                       "method": "delete",
                       "allUriParameters": [
                         {
@@ -5056,7 +5056,7 @@
                               {
                                 "displayName": "encrypted",
                                 "type": "boolean",
-                                "example": true,
+                                "example": false,
                                 "required": true,
                                 "key": "encrypted"
                               },
@@ -5209,7 +5209,7 @@
                             {
                               "displayName": "encrypted",
                               "type": "boolean",
-                              "example": true,
+                              "example": false,
                               "required": true,
                               "key": "encrypted"
                             },
@@ -5354,9 +5354,9 @@
                           "required": true,
                           "examples": [
                             {
-                              "value": "true",
+                              "value": "false",
                               "strict": true,
-                              "structuredValue": true
+                              "structuredValue": false
                             }
                           ],
                           "key": "encrypted"
@@ -5923,7 +5923,7 @@
                         {
                           "displayName": "encrypted",
                           "type": "boolean",
-                          "example": true,
+                          "example": false,
                           "required": true,
                           "key": "encrypted"
                         },
@@ -6126,7 +6126,7 @@
                         {
                           "displayName": "encrypted",
                           "type": "boolean",
-                          "example": true,
+                          "example": false,
                           "required": true,
                           "key": "encrypted"
                         },
@@ -6414,9 +6414,9 @@
           "required": true,
           "examples": [
             {
-              "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
+              "value": "https://api.semaphoreci.com/v2/orgs/renderedtext",
               "strict": true,
-              "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5"
+              "structuredValue": "https://api.semaphoreci.com/v2/orgs/renderedtext"
             }
           ],
           "key": "url"
@@ -7137,9 +7137,9 @@
           "required": true,
           "examples": [
             {
-              "value": "true",
+              "value": "false",
               "strict": true,
-              "structuredValue": true
+              "structuredValue": false
             }
           ],
           "key": "encrypted"
@@ -7170,7 +7170,7 @@
         {
           "displayName": "encrypted",
           "type": "boolean",
-          "example": true,
+          "example": false,
           "required": true,
           "key": "encrypted"
         },

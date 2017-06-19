@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/renderedtext/api-dev-tools.git
-  revision: c4f5db551d265781e931b5a1950ce1a2e86423eb
+  revision: 77f438556f485b310fe47dda709ea8cf5f7d59ec
   specs:
-    raml_parser (0.3.0)
+    raml_parser (0.4.0)
 
 GEM
   remote: https://rubygems.org/
