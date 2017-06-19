@@ -18,9 +18,9 @@ module ApiV2
 
   def self.toc(routes)
     list = routes.map do |route|
-      href = route.description.split(" ").map(&:downcase).join("-")
+      href = route.display_name.split(" ").map(&:downcase).join("-")
 
-      "<li><a href='##{href}'>#{route.description}</a></li>"
+      "<li><a href='##{href}'>#{route.display_name}</a></li>"
     end
 
     "<ol type='i'>#{list.join("\n")}</ol>"

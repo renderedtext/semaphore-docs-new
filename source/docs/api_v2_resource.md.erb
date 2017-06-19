@@ -11,7 +11,7 @@ Stability: `prototype`
 
 <% ApiV2.sorted_routes(resource).each do |route| %>
 
-### <%= route.description %>
+### <%= route.display_name %>
 
 ``` ruby
 <%= route.verb_and_path %>
