@@ -9,6 +9,6 @@ gem "middleman-s3_sync"
 gem "middleman-sitemap"
 gem "nokogiri"
 
-github "renderedtext/api-dev-tools" do
+github "renderedtext/api" do
   gem "raml_parser"
 end
