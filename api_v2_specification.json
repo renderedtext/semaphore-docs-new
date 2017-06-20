@@ -865,6 +865,7 @@
                     "withNotFoundError",
                     "withPreconditionFailedError"
                   ],
+                  "description": "Only organization owners can create new teams.",
                   "displayName": "Create a team in an organization",
                   "method": "post",
                   "allUriParameters": [
@@ -1744,6 +1745,7 @@
                 "withNoBodyResponse",
                 "withNotFoundError"
               ],
+              "description": "Only organization owners can delete teams.",
               "displayName": "Delete a team",
               "method": "delete",
               "allUriParameters": [
@@ -1961,6 +1963,7 @@
                 },
                 "withNotFoundError"
               ],
+              "description": "Only organization owners can update teams.",
               "displayName": "Update a team",
               "method": "patch",
               "allUriParameters": [
@@ -2204,6 +2207,7 @@
                         "withNoBodyResponse",
                         "withNotFoundError"
                       ],
+                      "description": "The user needs to be a member of the team, and to have admin permissions in the organization.",
                       "displayName": "Add a shared configuration to a team",
                       "method": "post",
                       "allUriParameters": [
@@ -2263,6 +2267,7 @@
                         "withNoBodyResponse",
                         "withNotFoundError"
                       ],
+                      "description": "The user needs to be a member of the team, and to have admin permissions in the organization.",
                       "displayName": "Remove shared configuration from a team",
                       "method": "delete",
                       "allUriParameters": [
@@ -4287,7 +4292,7 @@
                     },
                     "withNotFoundError"
                   ],
-                  "displayName": "List all users fo a project",
+                  "displayName": "List all users for a project",
                   "method": "get",
                   "allUriParameters": [
                     {
@@ -4525,6 +4530,7 @@
                 "withNoBodyResponse",
                 "withNotFoundError"
               ],
+              "description": "Deleting a shared configuration requires at least admin permissions in the organization.",
               "displayName": "Delete a shared configuration",
               "method": "delete",
               "allUriParameters": [
@@ -4708,6 +4714,7 @@
                 },
                 "withNotFoundError"
               ],
+              "description": "To update the shared configuration you need to be an admin or owner in your organization.",
               "displayName": "Update a shared configuration",
               "method": "patch",
               "allUriParameters": [
@@ -5188,6 +5195,7 @@
                     },
                     "withNotFoundError"
                   ],
+                  "description": "Environment variables can be only created by users who can edit the shared configuration.",
                   "displayName": "Create environment variable within a shared configuration",
                   "method": "post",
                   "allUriParameters": [
@@ -5645,6 +5653,7 @@
                     },
                     "withNotFoundError"
                   ],
+                  "description": "Configuration files can be only created by users who can edit the shared configuration.",
                   "displayName": "Create a config file within a shared configuration",
                   "method": "post",
                   "allUriParameters": [
@@ -5880,6 +5889,7 @@
                 },
                 "withNotFoundError"
               ],
+              "description": "Displays the environment variable. Encrypted configuration files  will have `null` as content.",
               "displayName": "Get an environment variable",
               "method": "get",
               "allUriParameters": [
@@ -5931,6 +5941,7 @@
                 "withNoBodyResponse",
                 "withNotFoundError"
               ],
+              "description": "Environment variables can be only deleted by users who has edit access on the project or the shared configuration.",
               "displayName": "Delete an environment variable",
               "method": "delete",
               "allUriParameters": [
@@ -6162,6 +6173,7 @@
                 },
                 "withNotFoundError"
               ],
+              "description": "Environment variables can be only updated by users who has edit access on the project or the shared configuration. Encrypted environment variables can't be edited.\n",
               "displayName": "Update an environment variable",
               "method": "patch",
               "allUriParameters": [
@@ -6389,6 +6401,7 @@
                 },
                 "withNotFoundError"
               ],
+              "description": "Displays the configuration file. Encrypted configuration files  will have `null` as content.",
               "displayName": "Get a config file",
               "method": "get",
               "allUriParameters": [
@@ -6440,6 +6453,7 @@
                 "withNoBodyResponse",
                 "withNotFoundError"
               ],
+              "description": "Configuration files can be only deleted by users who has edit access on the project or the shared configuration.",
               "displayName": "Delete a config file",
               "method": "delete",
               "allUriParameters": [
@@ -6671,6 +6685,7 @@
                 },
                 "withNotFoundError"
               ],
+              "description": "Configuration files can be only updated by users who has edit access on the project or the shared configuration. Encrypted environment variables can't be edited.\n",
               "displayName": "Update a config file",
               "method": "patch",
               "allUriParameters": [
