@@ -28,12 +28,20 @@ module ApiV2
 
   def self.request_table(request)
     header = [
-      ["Name", "Type", "Required", "Example"],
-      ["----", "----", "--------", "-------"]
+      ["Name", "Type", "Description"],
+      ["----", "----", "-----------"]
     ]
 
     data = request.properties.map do |f|
-      [f.name, f.type, f.required?, f.example]
+      description = ""
+
+      description += "__Required.__ " if f.required?
+
+      description += "#{f.description.to_s}"
+
+      description += "<br> __one of:__ (#{f.enum_values.join(", ")}) " if f.enum?
+
+      [f.name, f.type, description]
     end
 
     rows = (header + data).map { |row| "| #{row.join(" | ")} |" }

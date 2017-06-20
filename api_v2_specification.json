@@ -202,12 +202,13 @@
                     "typePropertyKind": "TYPE_EXPRESSION",
                     "properties": [
                       {
+                        "description": "Unique ID of the organization.",
                         "displayName": "id",
-                        "type": "string",
-                        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                         "name": "id",
+                        "type": "string",
                         "typePropertyKind": "TYPE_EXPRESSION",
                         "required": true,
+                        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                         "examples": [
                           {
                             "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -219,6 +220,7 @@
                       },
                       {
                         "type": "string",
+                        "description": "Name of the organization.",
                         "displayName": "name",
                         "name": "name",
                         "typePropertyKind": "TYPE_EXPRESSION",
@@ -234,6 +236,7 @@
                       },
                       {
                         "type": "string",
+                        "description": "Show URL for the organization.",
                         "displayName": "url",
                         "name": "url",
                         "typePropertyKind": "TYPE_EXPRESSION",
@@ -249,6 +252,7 @@
                       },
                       {
                         "type": "string",
+                        "description": "Unique username of the organization.",
                         "displayName": "username",
                         "name": "username",
                         "typePropertyKind": "TYPE_EXPRESSION",
@@ -321,12 +325,13 @@
                       "additionalProperties": true,
                       "properties": [
                         {
+                          "description": "Unique ID of the organization.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -338,6 +343,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Name of the organization.",
                           "displayName": "name",
                           "name": "name",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -353,6 +359,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Show URL for the organization.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -368,6 +375,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Unique username of the organization.",
                           "displayName": "username",
                           "name": "username",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -518,6 +526,7 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Name of the team. The name must be unique in the organization.",
                                 "displayName": "name",
                                 "type": "string",
                                 "example": "developers",
@@ -525,6 +534,7 @@
                                 "key": "name"
                               },
                               {
+                                "description": "The permission level for team members in the organization.",
                                 "enum": [
                                   "read",
                                   "write",
@@ -537,6 +547,7 @@
                                 "key": "permission"
                               },
                               {
+                                "description": "Description for the team.",
                                 "displayName": "description",
                                 "type": "string",
                                 "example": "Developers team",
@@ -544,12 +555,13 @@
                                 "key": "description"
                               },
                               {
+                                "description": "Unique ID of the team.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -561,6 +573,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Show URL for the team.",
                                 "displayName": "url",
                                 "name": "url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -636,6 +649,7 @@
                           "additionalProperties": true,
                           "properties": [
                             {
+                              "description": "Name of the team. The name must be unique in the organization.",
                               "displayName": "name",
                               "type": "string",
                               "example": "developers",
@@ -643,6 +657,7 @@
                               "key": "name"
                             },
                             {
+                              "description": "The permission level for team members in the organization.",
                               "enum": [
                                 "read",
                                 "write",
@@ -655,6 +670,7 @@
                               "key": "permission"
                             },
                             {
+                              "description": "Description for the team.",
                               "displayName": "description",
                               "type": "string",
                               "example": "Developers team",
@@ -662,12 +678,13 @@
                               "key": "description"
                             },
                             {
+                              "description": "Unique ID of the team.",
                               "displayName": "id",
-                              "type": "string",
-                              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                               "name": "id",
+                              "type": "string",
                               "typePropertyKind": "TYPE_EXPRESSION",
                               "required": true,
+                              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                               "examples": [
                                 {
                                   "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -679,6 +696,7 @@
                             },
                             {
                               "type": "string",
+                              "description": "Show URL for the team.",
                               "displayName": "url",
                               "name": "url",
                               "typePropertyKind": "TYPE_EXPRESSION",
@@ -775,6 +793,7 @@
                       "properties": [
                         {
                           "type": "string",
+                          "description": "Name of the team. The name must be unique in the organization.",
                           "displayName": "name",
                           "name": "name",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -789,7 +808,7 @@
                           "key": "name"
                         },
                         {
-                          "type": "string",
+                          "description": "The permission level for team members in the organization.",
                           "enum": [
                             "read",
                             "write",
@@ -797,6 +816,7 @@
                           ],
                           "displayName": "permission",
                           "name": "permission",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
                           "examples": [
@@ -810,6 +830,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Description for the team.",
                           "displayName": "description",
                           "name": "description",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -897,12 +918,13 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Unique ID of the project.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -914,6 +936,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Name of the project.",
                                 "displayName": "name",
                                 "name": "name",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -1016,6 +1039,7 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Name of the shared configuration.",
                                 "displayName": "name",
                                 "type": "string",
                                 "example": "AWS Tokens",
@@ -1023,6 +1047,7 @@
                                 "key": "name"
                               },
                               {
+                                "description": "Description for the shared configuration.",
                                 "displayName": "description",
                                 "type": "string",
                                 "example": "AWS tokens for deployment",
@@ -1030,12 +1055,13 @@
                                 "key": "description"
                               },
                               {
+                                "description": "Unique ID of the shared configuration.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -1047,6 +1073,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Show URL for the shared configuration.",
                                 "displayName": "url",
                                 "name": "url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -1122,6 +1149,7 @@
                           "additionalProperties": true,
                           "properties": [
                             {
+                              "description": "Name of the shared configuration.",
                               "displayName": "name",
                               "type": "string",
                               "example": "AWS Tokens",
@@ -1129,6 +1157,7 @@
                               "key": "name"
                             },
                             {
+                              "description": "Description for the shared configuration.",
                               "displayName": "description",
                               "type": "string",
                               "example": "AWS tokens for deployment",
@@ -1136,12 +1165,13 @@
                               "key": "description"
                             },
                             {
+                              "description": "Unique ID of the shared configuration.",
                               "displayName": "id",
-                              "type": "string",
-                              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                               "name": "id",
+                              "type": "string",
                               "typePropertyKind": "TYPE_EXPRESSION",
                               "required": true,
+                              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                               "examples": [
                                 {
                                   "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -1153,6 +1183,7 @@
                             },
                             {
                               "type": "string",
+                              "description": "Show URL for the shared configuration.",
                               "displayName": "url",
                               "name": "url",
                               "typePropertyKind": "TYPE_EXPRESSION",
@@ -1249,6 +1280,7 @@
                       "properties": [
                         {
                           "type": "string",
+                          "description": "Name of the shared configuration.",
                           "displayName": "name",
                           "name": "name",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -1264,6 +1296,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Description for the shared configuration.",
                           "displayName": "description",
                           "name": "description",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -1351,12 +1384,13 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Unique ID of the user.",
                                 "displayName": "uid",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "uid",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -1368,6 +1402,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Unique username of the user.",
                                 "displayName": "username",
                                 "name": "username",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -1383,6 +1418,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Name of the user.",
                                 "displayName": "name",
                                 "name": "name",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -1536,6 +1572,7 @@
                       "additionalProperties": true,
                       "properties": [
                         {
+                          "description": "Name of the team. The name must be unique in the organization.",
                           "displayName": "name",
                           "type": "string",
                           "example": "developers",
@@ -1543,6 +1580,7 @@
                           "key": "name"
                         },
                         {
+                          "description": "The permission level for team members in the organization.",
                           "enum": [
                             "read",
                             "write",
@@ -1555,6 +1593,7 @@
                           "key": "permission"
                         },
                         {
+                          "description": "Description for the team.",
                           "displayName": "description",
                           "type": "string",
                           "example": "Developers team",
@@ -1562,12 +1601,13 @@
                           "key": "description"
                         },
                         {
+                          "description": "Unique ID of the team.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -1579,6 +1619,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Show URL for the team.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -1729,6 +1770,7 @@
                       "additionalProperties": true,
                       "properties": [
                         {
+                          "description": "Name of the team. The name must be unique in the organization.",
                           "displayName": "name",
                           "type": "string",
                           "example": "developers",
@@ -1736,6 +1778,7 @@
                           "key": "name"
                         },
                         {
+                          "description": "The permission level for team members in the organization.",
                           "enum": [
                             "read",
                             "write",
@@ -1748,6 +1791,7 @@
                           "key": "permission"
                         },
                         {
+                          "description": "Description for the team.",
                           "displayName": "description",
                           "type": "string",
                           "example": "Developers team",
@@ -1755,12 +1799,13 @@
                           "key": "description"
                         },
                         {
+                          "description": "Unique ID of the team.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -1772,6 +1817,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Show URL for the team.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -1844,6 +1890,7 @@
                   "properties": [
                     {
                       "type": "string",
+                      "description": "Name of the team. The name must be unique in the organization.",
                       "displayName": "name",
                       "name": "name",
                       "typePropertyKind": "TYPE_EXPRESSION",
@@ -1858,7 +1905,7 @@
                       "key": "name"
                     },
                     {
-                      "type": "string",
+                      "description": "The permission level for team members in the organization.",
                       "enum": [
                         "read",
                         "write",
@@ -1866,6 +1913,7 @@
                       ],
                       "displayName": "permission",
                       "name": "permission",
+                      "type": "string",
                       "typePropertyKind": "TYPE_EXPRESSION",
                       "required": false,
                       "examples": [
@@ -1879,6 +1927,7 @@
                     },
                     {
                       "type": "string",
+                      "description": "Description for the team.",
                       "displayName": "description",
                       "name": "description",
                       "typePropertyKind": "TYPE_EXPRESSION",
@@ -1989,6 +2038,7 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Name of the shared configuration.",
                                 "displayName": "name",
                                 "type": "string",
                                 "example": "AWS Tokens",
@@ -1996,6 +2046,7 @@
                                 "key": "name"
                               },
                               {
+                                "description": "Description for the shared configuration.",
                                 "displayName": "description",
                                 "type": "string",
                                 "example": "AWS tokens for deployment",
@@ -2003,12 +2054,13 @@
                                 "key": "description"
                               },
                               {
+                                "description": "Unique ID of the shared configuration.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -2020,6 +2072,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Show URL for the shared configuration.",
                                 "displayName": "url",
                                 "name": "url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -2307,12 +2360,13 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Unique ID of the user.",
                                 "displayName": "uid",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "uid",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -2324,6 +2378,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Unique username of the user.",
                                 "displayName": "username",
                                 "name": "username",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -2339,6 +2394,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Name of the user.",
                                 "displayName": "name",
                                 "name": "name",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -2626,12 +2682,13 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Unique ID of the project.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -2643,6 +2700,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Name of the project.",
                                 "displayName": "name",
                                 "name": "name",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -2975,6 +3033,7 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Name of the shared configuration.",
                                 "displayName": "name",
                                 "type": "string",
                                 "example": "AWS Tokens",
@@ -2982,6 +3041,7 @@
                                 "key": "name"
                               },
                               {
+                                "description": "Description for the shared configuration.",
                                 "displayName": "description",
                                 "type": "string",
                                 "example": "AWS tokens for deployment",
@@ -2989,12 +3049,13 @@
                                 "key": "description"
                               },
                               {
+                                "description": "Unique ID of the shared configuration.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -3006,6 +3067,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Show URL for the shared configuration.",
                                 "displayName": "url",
                                 "name": "url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -3112,6 +3174,7 @@
                               "additionalProperties": true,
                               "properties": [
                                 {
+                                  "description": "Name of the shared configuration.",
                                   "displayName": "name",
                                   "type": "string",
                                   "example": "AWS Tokens",
@@ -3119,6 +3182,7 @@
                                   "key": "name"
                                 },
                                 {
+                                  "description": "Description for the shared configuration.",
                                   "displayName": "description",
                                   "type": "string",
                                   "example": "AWS tokens for deployment",
@@ -3126,12 +3190,13 @@
                                   "key": "description"
                                 },
                                 {
+                                  "description": "Unique ID of the shared configuration.",
                                   "displayName": "id",
-                                  "type": "string",
-                                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                   "name": "id",
+                                  "type": "string",
                                   "typePropertyKind": "TYPE_EXPRESSION",
                                   "required": true,
+                                  "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                   "examples": [
                                     {
                                       "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -3143,6 +3208,7 @@
                                 },
                                 {
                                   "type": "string",
+                                  "description": "Show URL for the shared configuration.",
                                   "displayName": "url",
                                   "name": "url",
                                   "typePropertyKind": "TYPE_EXPRESSION",
@@ -3366,39 +3432,19 @@
                           "type": "array",
                           "items": {
                             "additionalProperties": true,
-                            "displayName": "EnvVar",
                             "type": "object",
+                            "displayName": "EnvVar",
                             "name": "EnvVar",
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
-                                "displayName": "name",
-                                "type": "string",
-                                "example": "API_TOKEN",
-                                "required": true,
-                                "key": "name"
-                              },
-                              {
-                                "displayName": "content",
-                                "type": "string",
-                                "example": "8CgLAxXn",
-                                "required": true,
-                                "key": "content"
-                              },
-                              {
-                                "displayName": "encrypted",
-                                "type": "boolean",
-                                "example": true,
-                                "required": true,
-                                "key": "encrypted"
-                              },
-                              {
+                                "description": "Unique ID of the environment variable.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -3410,6 +3456,23 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Name of the environment variable.",
+                                "displayName": "name",
+                                "name": "name",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "API_TOKEN",
+                                    "strict": true,
+                                    "structuredValue": "API_TOKEN"
+                                  }
+                                ],
+                                "key": "name"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Show URL for the environment variable.",
                                 "displayName": "url",
                                 "name": "url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -3424,7 +3487,24 @@
                                 "key": "url"
                               },
                               {
+                                "type": "string",
+                                "description": "Content of the environment variable. Will be `null` if encrypted.",
+                                "displayName": "content",
+                                "name": "content",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "8CgLAxXn",
+                                    "strict": true,
+                                    "structuredValue": "8CgLAxXn"
+                                  }
+                                ],
+                                "key": "content"
+                              },
+                              {
                                 "type": "boolean",
+                                "description": "True if the environment variable belongs to a shared configuration.",
                                 "displayName": "shared",
                                 "name": "shared",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -3437,6 +3517,22 @@
                                   }
                                 ],
                                 "key": "shared"
+                              },
+                              {
+                                "type": "boolean",
+                                "description": "True if the environment variable is encrypted.",
+                                "displayName": "encrypted",
+                                "name": "encrypted",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "true",
+                                    "strict": true,
+                                    "structuredValue": true
+                                  }
+                                ],
+                                "key": "encrypted"
                               },
                               {
                                 "format": "rfc3339",
@@ -3706,39 +3802,19 @@
                           "type": "array",
                           "items": {
                             "additionalProperties": true,
-                            "displayName": "ConfigFile",
                             "type": "object",
+                            "displayName": "ConfigFile",
                             "name": "ConfigFile",
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
-                                "displayName": "path",
-                                "type": "string",
-                                "example": ".credentials",
-                                "required": true,
-                                "key": "path"
-                              },
-                              {
-                                "displayName": "content",
-                                "type": "string",
-                                "example": "password: ec2c9f6f64b5",
-                                "required": true,
-                                "key": "content"
-                              },
-                              {
-                                "displayName": "encrypted",
-                                "type": "boolean",
-                                "example": false,
-                                "required": true,
-                                "key": "encrypted"
-                              },
-                              {
+                                "description": "Unique ID of the configuration file.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -3750,6 +3826,23 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Path of the configuration file.",
+                                "displayName": "path",
+                                "name": "path",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": ".credentials",
+                                    "strict": true,
+                                    "structuredValue": ".credentials"
+                                  }
+                                ],
+                                "key": "path"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Show URL for the configuration file.",
                                 "displayName": "url",
                                 "name": "url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -3764,7 +3857,24 @@
                                 "key": "url"
                               },
                               {
+                                "type": "string",
+                                "description": "Content of the configuration file. Will be `null` if the file is encrypted.",
+                                "displayName": "content",
+                                "name": "content",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "password: ec2c9f6f64b5",
+                                    "strict": true,
+                                    "structuredValue": "password: ec2c9f6f64b5"
+                                  }
+                                ],
+                                "key": "content"
+                              },
+                              {
                                 "type": "boolean",
+                                "description": "True if the configuration file belongs to a shared configuration.",
                                 "displayName": "shared",
                                 "name": "shared",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -3777,6 +3887,22 @@
                                   }
                                 ],
                                 "key": "shared"
+                              },
+                              {
+                                "type": "boolean",
+                                "description": "True if the file is encrypted.",
+                                "displayName": "encrypted",
+                                "name": "encrypted",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "false",
+                                    "strict": true,
+                                    "structuredValue": false
+                                  }
+                                ],
+                                "key": "encrypted"
                               },
                               {
                                 "format": "rfc3339",
@@ -4052,12 +4178,13 @@
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
+                                "description": "Unique ID of the user.",
                                 "displayName": "uid",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "uid",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -4069,6 +4196,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Unique username of the user.",
                                 "displayName": "username",
                                 "name": "username",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -4084,6 +4212,7 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Name of the user.",
                                 "displayName": "name",
                                 "name": "name",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -4237,6 +4366,7 @@
                       "additionalProperties": true,
                       "properties": [
                         {
+                          "description": "Name of the shared configuration.",
                           "displayName": "name",
                           "type": "string",
                           "example": "AWS Tokens",
@@ -4244,6 +4374,7 @@
                           "key": "name"
                         },
                         {
+                          "description": "Description for the shared configuration.",
                           "displayName": "description",
                           "type": "string",
                           "example": "AWS tokens for deployment",
@@ -4251,12 +4382,13 @@
                           "key": "description"
                         },
                         {
+                          "description": "Unique ID of the shared configuration.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -4268,6 +4400,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Show URL for the shared configuration.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -4418,6 +4551,7 @@
                       "additionalProperties": true,
                       "properties": [
                         {
+                          "description": "Name of the shared configuration.",
                           "displayName": "name",
                           "type": "string",
                           "example": "AWS Tokens",
@@ -4425,6 +4559,7 @@
                           "key": "name"
                         },
                         {
+                          "description": "Description for the shared configuration.",
                           "displayName": "description",
                           "type": "string",
                           "example": "AWS tokens for deployment",
@@ -4432,12 +4567,13 @@
                           "key": "description"
                         },
                         {
+                          "description": "Unique ID of the shared configuration.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -4449,6 +4585,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Show URL for the shared configuration.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -4521,6 +4658,7 @@
                   "properties": [
                     {
                       "type": "string",
+                      "description": "Name of the shared configuration.",
                       "displayName": "name",
                       "name": "name",
                       "typePropertyKind": "TYPE_EXPRESSION",
@@ -4536,6 +4674,7 @@
                     },
                     {
                       "type": "string",
+                      "description": "Description for the shared configuration.",
                       "displayName": "description",
                       "name": "description",
                       "typePropertyKind": "TYPE_EXPRESSION",
@@ -4640,39 +4779,19 @@
                           "type": "array",
                           "items": {
                             "additionalProperties": true,
-                            "displayName": "EnvVar",
                             "type": "object",
+                            "displayName": "EnvVar",
                             "name": "EnvVar",
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
-                                "displayName": "name",
-                                "type": "string",
-                                "example": "API_TOKEN",
-                                "required": true,
-                                "key": "name"
-                              },
-                              {
-                                "displayName": "content",
-                                "type": "string",
-                                "example": "8CgLAxXn",
-                                "required": true,
-                                "key": "content"
-                              },
-                              {
-                                "displayName": "encrypted",
-                                "type": "boolean",
-                                "example": true,
-                                "required": true,
-                                "key": "encrypted"
-                              },
-                              {
+                                "description": "Unique ID of the environment variable.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -4684,6 +4803,23 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Name of the environment variable.",
+                                "displayName": "name",
+                                "name": "name",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "API_TOKEN",
+                                    "strict": true,
+                                    "structuredValue": "API_TOKEN"
+                                  }
+                                ],
+                                "key": "name"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Show URL for the environment variable.",
                                 "displayName": "url",
                                 "name": "url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -4698,7 +4834,24 @@
                                 "key": "url"
                               },
                               {
+                                "type": "string",
+                                "description": "Content of the environment variable. Will be `null` if encrypted.",
+                                "displayName": "content",
+                                "name": "content",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "8CgLAxXn",
+                                    "strict": true,
+                                    "structuredValue": "8CgLAxXn"
+                                  }
+                                ],
+                                "key": "content"
+                              },
+                              {
                                 "type": "boolean",
+                                "description": "True if the environment variable belongs to a shared configuration.",
                                 "displayName": "shared",
                                 "name": "shared",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -4711,6 +4864,22 @@
                                   }
                                 ],
                                 "key": "shared"
+                              },
+                              {
+                                "type": "boolean",
+                                "description": "True if the environment variable is encrypted.",
+                                "displayName": "encrypted",
+                                "name": "encrypted",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "true",
+                                    "strict": true,
+                                    "structuredValue": true
+                                  }
+                                ],
+                                "key": "encrypted"
                               },
                               {
                                 "format": "rfc3339",
@@ -4799,33 +4968,13 @@
                           "additionalProperties": true,
                           "properties": [
                             {
-                              "displayName": "name",
-                              "type": "string",
-                              "example": "API_TOKEN",
-                              "required": true,
-                              "key": "name"
-                            },
-                            {
-                              "displayName": "content",
-                              "type": "string",
-                              "example": "8CgLAxXn",
-                              "required": true,
-                              "key": "content"
-                            },
-                            {
-                              "displayName": "encrypted",
-                              "type": "boolean",
-                              "example": true,
-                              "required": true,
-                              "key": "encrypted"
-                            },
-                            {
+                              "description": "Unique ID of the environment variable.",
                               "displayName": "id",
-                              "type": "string",
-                              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                               "name": "id",
+                              "type": "string",
                               "typePropertyKind": "TYPE_EXPRESSION",
                               "required": true,
+                              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                               "examples": [
                                 {
                                   "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -4837,6 +4986,23 @@
                             },
                             {
                               "type": "string",
+                              "description": "Name of the environment variable.",
+                              "displayName": "name",
+                              "name": "name",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "examples": [
+                                {
+                                  "value": "API_TOKEN",
+                                  "strict": true,
+                                  "structuredValue": "API_TOKEN"
+                                }
+                              ],
+                              "key": "name"
+                            },
+                            {
+                              "type": "string",
+                              "description": "Show URL for the environment variable.",
                               "displayName": "url",
                               "name": "url",
                               "typePropertyKind": "TYPE_EXPRESSION",
@@ -4851,7 +5017,24 @@
                               "key": "url"
                             },
                             {
+                              "type": "string",
+                              "description": "Content of the environment variable. Will be `null` if encrypted.",
+                              "displayName": "content",
+                              "name": "content",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "examples": [
+                                {
+                                  "value": "8CgLAxXn",
+                                  "strict": true,
+                                  "structuredValue": "8CgLAxXn"
+                                }
+                              ],
+                              "key": "content"
+                            },
+                            {
                               "type": "boolean",
+                              "description": "True if the environment variable belongs to a shared configuration.",
                               "displayName": "shared",
                               "name": "shared",
                               "typePropertyKind": "TYPE_EXPRESSION",
@@ -4864,6 +5047,22 @@
                                 }
                               ],
                               "key": "shared"
+                            },
+                            {
+                              "type": "boolean",
+                              "description": "True if the environment variable is encrypted.",
+                              "displayName": "encrypted",
+                              "name": "encrypted",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "examples": [
+                                {
+                                  "value": "true",
+                                  "strict": true,
+                                  "structuredValue": true
+                                }
+                              ],
+                              "key": "encrypted"
                             },
                             {
                               "format": "rfc3339",
@@ -4924,6 +5123,7 @@
                       "properties": [
                         {
                           "type": "string",
+                          "description": "Name of the environment variable.",
                           "displayName": "name",
                           "name": "name",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -4939,6 +5139,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Content of the environment variable.",
                           "displayName": "content",
                           "name": "content",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5034,39 +5235,19 @@
                           "type": "array",
                           "items": {
                             "additionalProperties": true,
-                            "displayName": "ConfigFile",
                             "type": "object",
+                            "displayName": "ConfigFile",
                             "name": "ConfigFile",
                             "typePropertyKind": "TYPE_EXPRESSION",
                             "properties": [
                               {
-                                "displayName": "path",
-                                "type": "string",
-                                "example": ".credentials",
-                                "required": true,
-                                "key": "path"
-                              },
-                              {
-                                "displayName": "content",
-                                "type": "string",
-                                "example": "password: ec2c9f6f64b5",
-                                "required": true,
-                                "key": "content"
-                              },
-                              {
-                                "displayName": "encrypted",
-                                "type": "boolean",
-                                "example": false,
-                                "required": true,
-                                "key": "encrypted"
-                              },
-                              {
+                                "description": "Unique ID of the configuration file.",
                                 "displayName": "id",
-                                "type": "string",
-                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "name": "id",
+                                "type": "string",
                                 "typePropertyKind": "TYPE_EXPRESSION",
                                 "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                                 "examples": [
                                   {
                                     "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -5078,6 +5259,23 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Path of the configuration file.",
+                                "displayName": "path",
+                                "name": "path",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": ".credentials",
+                                    "strict": true,
+                                    "structuredValue": ".credentials"
+                                  }
+                                ],
+                                "key": "path"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Show URL for the configuration file.",
                                 "displayName": "url",
                                 "name": "url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -5092,7 +5290,24 @@
                                 "key": "url"
                               },
                               {
+                                "type": "string",
+                                "description": "Content of the configuration file. Will be `null` if the file is encrypted.",
+                                "displayName": "content",
+                                "name": "content",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "password: ec2c9f6f64b5",
+                                    "strict": true,
+                                    "structuredValue": "password: ec2c9f6f64b5"
+                                  }
+                                ],
+                                "key": "content"
+                              },
+                              {
                                 "type": "boolean",
+                                "description": "True if the configuration file belongs to a shared configuration.",
                                 "displayName": "shared",
                                 "name": "shared",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -5105,6 +5320,22 @@
                                   }
                                 ],
                                 "key": "shared"
+                              },
+                              {
+                                "type": "boolean",
+                                "description": "True if the file is encrypted.",
+                                "displayName": "encrypted",
+                                "name": "encrypted",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "false",
+                                    "strict": true,
+                                    "structuredValue": false
+                                  }
+                                ],
+                                "key": "encrypted"
                               },
                               {
                                 "format": "rfc3339",
@@ -5193,33 +5424,13 @@
                           "additionalProperties": true,
                           "properties": [
                             {
-                              "displayName": "path",
-                              "type": "string",
-                              "example": ".credentials",
-                              "required": true,
-                              "key": "path"
-                            },
-                            {
-                              "displayName": "content",
-                              "type": "string",
-                              "example": "password: ec2c9f6f64b5",
-                              "required": true,
-                              "key": "content"
-                            },
-                            {
-                              "displayName": "encrypted",
-                              "type": "boolean",
-                              "example": false,
-                              "required": true,
-                              "key": "encrypted"
-                            },
-                            {
+                              "description": "Unique ID of the configuration file.",
                               "displayName": "id",
-                              "type": "string",
-                              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                               "name": "id",
+                              "type": "string",
                               "typePropertyKind": "TYPE_EXPRESSION",
                               "required": true,
+                              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                               "examples": [
                                 {
                                   "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -5231,6 +5442,23 @@
                             },
                             {
                               "type": "string",
+                              "description": "Path of the configuration file.",
+                              "displayName": "path",
+                              "name": "path",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "examples": [
+                                {
+                                  "value": ".credentials",
+                                  "strict": true,
+                                  "structuredValue": ".credentials"
+                                }
+                              ],
+                              "key": "path"
+                            },
+                            {
+                              "type": "string",
+                              "description": "Show URL for the configuration file.",
                               "displayName": "url",
                               "name": "url",
                               "typePropertyKind": "TYPE_EXPRESSION",
@@ -5245,7 +5473,24 @@
                               "key": "url"
                             },
                             {
+                              "type": "string",
+                              "description": "Content of the configuration file. Will be `null` if the file is encrypted.",
+                              "displayName": "content",
+                              "name": "content",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "examples": [
+                                {
+                                  "value": "password: ec2c9f6f64b5",
+                                  "strict": true,
+                                  "structuredValue": "password: ec2c9f6f64b5"
+                                }
+                              ],
+                              "key": "content"
+                            },
+                            {
                               "type": "boolean",
+                              "description": "True if the configuration file belongs to a shared configuration.",
                               "displayName": "shared",
                               "name": "shared",
                               "typePropertyKind": "TYPE_EXPRESSION",
@@ -5258,6 +5503,22 @@
                                 }
                               ],
                               "key": "shared"
+                            },
+                            {
+                              "type": "boolean",
+                              "description": "True if the file is encrypted.",
+                              "displayName": "encrypted",
+                              "name": "encrypted",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "examples": [
+                                {
+                                  "value": "false",
+                                  "strict": true,
+                                  "structuredValue": false
+                                }
+                              ],
+                              "key": "encrypted"
                             },
                             {
                               "format": "rfc3339",
@@ -5318,6 +5579,7 @@
                       "properties": [
                         {
                           "type": "string",
+                          "description": "Path of the configuration file.",
                           "displayName": "path",
                           "name": "path",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5333,6 +5595,7 @@
                         },
                         {
                           "type": "string",
+                          "description": "Content of the configuration file. Will be `null` if the file is encrypted.",
                           "displayName": "content",
                           "name": "content",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5348,6 +5611,7 @@
                         },
                         {
                           "type": "boolean",
+                          "description": "True if the file is encrypted.",
                           "displayName": "encrypted",
                           "name": "encrypted",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5460,33 +5724,13 @@
                       "additionalProperties": true,
                       "properties": [
                         {
-                          "displayName": "name",
-                          "type": "string",
-                          "example": "API_TOKEN",
-                          "required": true,
-                          "key": "name"
-                        },
-                        {
-                          "displayName": "content",
-                          "type": "string",
-                          "example": "8CgLAxXn",
-                          "required": true,
-                          "key": "content"
-                        },
-                        {
-                          "displayName": "encrypted",
-                          "type": "boolean",
-                          "example": true,
-                          "required": true,
-                          "key": "encrypted"
-                        },
-                        {
+                          "description": "Unique ID of the environment variable.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -5498,6 +5742,23 @@
                         },
                         {
                           "type": "string",
+                          "description": "Name of the environment variable.",
+                          "displayName": "name",
+                          "name": "name",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "API_TOKEN",
+                              "strict": true,
+                              "structuredValue": "API_TOKEN"
+                            }
+                          ],
+                          "key": "name"
+                        },
+                        {
+                          "type": "string",
+                          "description": "Show URL for the environment variable.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5512,7 +5773,24 @@
                           "key": "url"
                         },
                         {
+                          "type": "string",
+                          "description": "Content of the environment variable. Will be `null` if encrypted.",
+                          "displayName": "content",
+                          "name": "content",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "8CgLAxXn",
+                              "strict": true,
+                              "structuredValue": "8CgLAxXn"
+                            }
+                          ],
+                          "key": "content"
+                        },
+                        {
                           "type": "boolean",
+                          "description": "True if the environment variable belongs to a shared configuration.",
                           "displayName": "shared",
                           "name": "shared",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5525,6 +5803,22 @@
                             }
                           ],
                           "key": "shared"
+                        },
+                        {
+                          "type": "boolean",
+                          "description": "True if the environment variable is encrypted.",
+                          "displayName": "encrypted",
+                          "name": "encrypted",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "true",
+                              "strict": true,
+                              "structuredValue": true
+                            }
+                          ],
+                          "key": "encrypted"
                         },
                         {
                           "format": "rfc3339",
@@ -5663,33 +5957,13 @@
                       "additionalProperties": true,
                       "properties": [
                         {
-                          "displayName": "name",
-                          "type": "string",
-                          "example": "API_TOKEN",
-                          "required": true,
-                          "key": "name"
-                        },
-                        {
-                          "displayName": "content",
-                          "type": "string",
-                          "example": "8CgLAxXn",
-                          "required": true,
-                          "key": "content"
-                        },
-                        {
-                          "displayName": "encrypted",
-                          "type": "boolean",
-                          "example": true,
-                          "required": true,
-                          "key": "encrypted"
-                        },
-                        {
+                          "description": "Unique ID of the environment variable.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -5701,6 +5975,23 @@
                         },
                         {
                           "type": "string",
+                          "description": "Name of the environment variable.",
+                          "displayName": "name",
+                          "name": "name",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "API_TOKEN",
+                              "strict": true,
+                              "structuredValue": "API_TOKEN"
+                            }
+                          ],
+                          "key": "name"
+                        },
+                        {
+                          "type": "string",
+                          "description": "Show URL for the environment variable.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5715,7 +6006,24 @@
                           "key": "url"
                         },
                         {
+                          "type": "string",
+                          "description": "Content of the environment variable. Will be `null` if encrypted.",
+                          "displayName": "content",
+                          "name": "content",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "8CgLAxXn",
+                              "strict": true,
+                              "structuredValue": "8CgLAxXn"
+                            }
+                          ],
+                          "key": "content"
+                        },
+                        {
                           "type": "boolean",
+                          "description": "True if the environment variable belongs to a shared configuration.",
                           "displayName": "shared",
                           "name": "shared",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5728,6 +6036,22 @@
                             }
                           ],
                           "key": "shared"
+                        },
+                        {
+                          "type": "boolean",
+                          "description": "True if the environment variable is encrypted.",
+                          "displayName": "encrypted",
+                          "name": "encrypted",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "true",
+                              "strict": true,
+                              "structuredValue": true
+                            }
+                          ],
+                          "key": "encrypted"
                         },
                         {
                           "format": "rfc3339",
@@ -5788,6 +6112,7 @@
                   "properties": [
                     {
                       "type": "string",
+                      "description": "Name of the environment variable.",
                       "displayName": "name",
                       "name": "name",
                       "typePropertyKind": "TYPE_EXPRESSION",
@@ -5803,6 +6128,7 @@
                     },
                     {
                       "type": "string",
+                      "description": "Content of the environment variable.",
                       "displayName": "content",
                       "name": "content",
                       "typePropertyKind": "TYPE_EXPRESSION",
@@ -5907,33 +6233,13 @@
                       "additionalProperties": true,
                       "properties": [
                         {
-                          "displayName": "path",
-                          "type": "string",
-                          "example": ".credentials",
-                          "required": true,
-                          "key": "path"
-                        },
-                        {
-                          "displayName": "content",
-                          "type": "string",
-                          "example": "password: ec2c9f6f64b5",
-                          "required": true,
-                          "key": "content"
-                        },
-                        {
-                          "displayName": "encrypted",
-                          "type": "boolean",
-                          "example": false,
-                          "required": true,
-                          "key": "encrypted"
-                        },
-                        {
+                          "description": "Unique ID of the configuration file.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -5945,6 +6251,23 @@
                         },
                         {
                           "type": "string",
+                          "description": "Path of the configuration file.",
+                          "displayName": "path",
+                          "name": "path",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": ".credentials",
+                              "strict": true,
+                              "structuredValue": ".credentials"
+                            }
+                          ],
+                          "key": "path"
+                        },
+                        {
+                          "type": "string",
+                          "description": "Show URL for the configuration file.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5959,7 +6282,24 @@
                           "key": "url"
                         },
                         {
+                          "type": "string",
+                          "description": "Content of the configuration file. Will be `null` if the file is encrypted.",
+                          "displayName": "content",
+                          "name": "content",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "password: ec2c9f6f64b5",
+                              "strict": true,
+                              "structuredValue": "password: ec2c9f6f64b5"
+                            }
+                          ],
+                          "key": "content"
+                        },
+                        {
                           "type": "boolean",
+                          "description": "True if the configuration file belongs to a shared configuration.",
                           "displayName": "shared",
                           "name": "shared",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -5972,6 +6312,22 @@
                             }
                           ],
                           "key": "shared"
+                        },
+                        {
+                          "type": "boolean",
+                          "description": "True if the file is encrypted.",
+                          "displayName": "encrypted",
+                          "name": "encrypted",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "false",
+                              "strict": true,
+                              "structuredValue": false
+                            }
+                          ],
+                          "key": "encrypted"
                         },
                         {
                           "format": "rfc3339",
@@ -6110,33 +6466,13 @@
                       "additionalProperties": true,
                       "properties": [
                         {
-                          "displayName": "path",
-                          "type": "string",
-                          "example": ".credentials",
-                          "required": true,
-                          "key": "path"
-                        },
-                        {
-                          "displayName": "content",
-                          "type": "string",
-                          "example": "password: ec2c9f6f64b5",
-                          "required": true,
-                          "key": "content"
-                        },
-                        {
-                          "displayName": "encrypted",
-                          "type": "boolean",
-                          "example": false,
-                          "required": true,
-                          "key": "encrypted"
-                        },
-                        {
+                          "description": "Unique ID of the configuration file.",
                           "displayName": "id",
-                          "type": "string",
-                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "name": "id",
+                          "type": "string",
                           "typePropertyKind": "TYPE_EXPRESSION",
                           "required": true,
+                          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
                           "examples": [
                             {
                               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -6148,6 +6484,23 @@
                         },
                         {
                           "type": "string",
+                          "description": "Path of the configuration file.",
+                          "displayName": "path",
+                          "name": "path",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": ".credentials",
+                              "strict": true,
+                              "structuredValue": ".credentials"
+                            }
+                          ],
+                          "key": "path"
+                        },
+                        {
+                          "type": "string",
+                          "description": "Show URL for the configuration file.",
                           "displayName": "url",
                           "name": "url",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6162,7 +6515,24 @@
                           "key": "url"
                         },
                         {
+                          "type": "string",
+                          "description": "Content of the configuration file. Will be `null` if the file is encrypted.",
+                          "displayName": "content",
+                          "name": "content",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "password: ec2c9f6f64b5",
+                              "strict": true,
+                              "structuredValue": "password: ec2c9f6f64b5"
+                            }
+                          ],
+                          "key": "content"
+                        },
+                        {
                           "type": "boolean",
+                          "description": "True if the configuration file belongs to a shared configuration.",
                           "displayName": "shared",
                           "name": "shared",
                           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6175,6 +6545,22 @@
                             }
                           ],
                           "key": "shared"
+                        },
+                        {
+                          "type": "boolean",
+                          "description": "True if the file is encrypted.",
+                          "displayName": "encrypted",
+                          "name": "encrypted",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "required": true,
+                          "examples": [
+                            {
+                              "value": "false",
+                              "strict": true,
+                              "structuredValue": false
+                            }
+                          ],
+                          "key": "encrypted"
                         },
                         {
                           "format": "rfc3339",
@@ -6235,6 +6621,7 @@
                   "properties": [
                     {
                       "type": "string",
+                      "description": "Path of the configuration file.",
                       "displayName": "path",
                       "name": "path",
                       "typePropertyKind": "TYPE_EXPRESSION",
@@ -6250,6 +6637,7 @@
                     },
                     {
                       "type": "string",
+                      "description": "Content of the configuration file.",
                       "displayName": "content",
                       "name": "content",
                       "typePropertyKind": "TYPE_EXPRESSION",
@@ -6376,12 +6764,13 @@
       "typePropertyKind": "TYPE_EXPRESSION",
       "properties": [
         {
+          "description": "Unique ID of the organization.",
           "displayName": "id",
-          "type": "string",
-          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "name": "id",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": true,
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "examples": [
             {
               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -6393,6 +6782,7 @@
         },
         {
           "type": "string",
+          "description": "Name of the organization.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6408,6 +6798,7 @@
         },
         {
           "type": "string",
+          "description": "Show URL for the organization.",
           "displayName": "url",
           "name": "url",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6423,6 +6814,7 @@
         },
         {
           "type": "string",
+          "description": "Unique username of the organization.",
           "displayName": "username",
           "name": "username",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6465,6 +6857,7 @@
       "properties": {
         "name": {
           "type": "string",
+          "description": "Name of the team. The name must be unique in the organization.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6479,7 +6872,7 @@
           "key": "name"
         },
         "permission": {
-          "type": "string",
+          "description": "The permission level for team members in the organization.",
           "enum": [
             "read",
             "write",
@@ -6487,6 +6880,7 @@
           ],
           "displayName": "permission",
           "name": "permission",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": false,
           "examples": [
@@ -6500,6 +6894,7 @@
         },
         "description": {
           "type": "string",
+          "description": "Description for the team.",
           "displayName": "description",
           "name": "description",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6524,6 +6919,7 @@
       "properties": {
         "name": {
           "type": "string",
+          "description": "Name of the team. The name must be unique in the organization.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6538,7 +6934,7 @@
           "key": "name"
         },
         "permission": {
-          "type": "string",
+          "description": "The permission level for team members in the organization.",
           "enum": [
             "read",
             "write",
@@ -6546,6 +6942,7 @@
           ],
           "displayName": "permission",
           "name": "permission",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": true,
           "examples": [
@@ -6559,6 +6956,7 @@
         },
         "description": {
           "type": "string",
+          "description": "Description for the team.",
           "displayName": "description",
           "name": "description",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6582,6 +6980,7 @@
       "typePropertyKind": "TYPE_EXPRESSION",
       "properties": [
         {
+          "description": "Name of the team. The name must be unique in the organization.",
           "displayName": "name",
           "type": "string",
           "example": "developers",
@@ -6589,6 +6988,7 @@
           "key": "name"
         },
         {
+          "description": "The permission level for team members in the organization.",
           "enum": [
             "read",
             "write",
@@ -6601,6 +7001,7 @@
           "key": "permission"
         },
         {
+          "description": "Description for the team.",
           "displayName": "description",
           "type": "string",
           "example": "Developers team",
@@ -6608,12 +7009,13 @@
           "key": "description"
         },
         {
+          "description": "Unique ID of the team.",
           "displayName": "id",
-          "type": "string",
-          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "name": "id",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": true,
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "examples": [
             {
               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -6625,6 +7027,7 @@
         },
         {
           "type": "string",
+          "description": "Show URL for the team.",
           "displayName": "url",
           "name": "url",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6666,12 +7069,13 @@
       "typePropertyKind": "TYPE_EXPRESSION",
       "properties": [
         {
+          "description": "Unique ID of the project.",
           "displayName": "id",
-          "type": "string",
-          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "name": "id",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": true,
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "examples": [
             {
               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -6683,6 +7087,7 @@
         },
         {
           "type": "string",
+          "description": "Name of the project.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6725,6 +7130,7 @@
       "properties": {
         "name": {
           "type": "string",
+          "description": "Name of the shared configuration.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6740,6 +7146,7 @@
         },
         "description": {
           "type": "string",
+          "description": "Description for the shared configuration.",
           "displayName": "description",
           "name": "description",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6764,6 +7171,7 @@
       "properties": {
         "name": {
           "type": "string",
+          "description": "Name of the shared configuration.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6779,6 +7187,7 @@
         },
         "description": {
           "type": "string",
+          "description": "Description for the shared configuration.",
           "displayName": "description",
           "name": "description",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6802,6 +7211,7 @@
       "typePropertyKind": "TYPE_EXPRESSION",
       "properties": [
         {
+          "description": "Name of the shared configuration.",
           "displayName": "name",
           "type": "string",
           "example": "AWS Tokens",
@@ -6809,6 +7219,7 @@
           "key": "name"
         },
         {
+          "description": "Description for the shared configuration.",
           "displayName": "description",
           "type": "string",
           "example": "AWS tokens for deployment",
@@ -6816,12 +7227,13 @@
           "key": "description"
         },
         {
+          "description": "Unique ID of the shared configuration.",
           "displayName": "id",
-          "type": "string",
-          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "name": "id",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": true,
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "examples": [
             {
               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -6833,6 +7245,7 @@
         },
         {
           "type": "string",
+          "description": "Show URL for the shared configuration.",
           "displayName": "url",
           "name": "url",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6875,6 +7288,7 @@
       "properties": {
         "name": {
           "type": "string",
+          "description": "Name of the environment variable.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6890,6 +7304,7 @@
         },
         "content": {
           "type": "string",
+          "description": "Content of the environment variable.",
           "displayName": "content",
           "name": "content",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6914,6 +7329,7 @@
       "properties": {
         "name": {
           "type": "string",
+          "description": "Name of the environment variable.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6929,6 +7345,7 @@
         },
         "content": {
           "type": "string",
+          "description": "Content of the environment variable.",
           "displayName": "content",
           "name": "content",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -6961,39 +7378,19 @@
     },
     "EnvVar": {
       "additionalProperties": true,
-      "displayName": "EnvVar",
       "type": "object",
+      "displayName": "EnvVar",
       "name": "EnvVar",
       "typePropertyKind": "TYPE_EXPRESSION",
       "properties": [
         {
-          "displayName": "name",
-          "type": "string",
-          "example": "API_TOKEN",
-          "required": true,
-          "key": "name"
-        },
-        {
-          "displayName": "content",
-          "type": "string",
-          "example": "8CgLAxXn",
-          "required": true,
-          "key": "content"
-        },
-        {
-          "displayName": "encrypted",
-          "type": "boolean",
-          "example": true,
-          "required": true,
-          "key": "encrypted"
-        },
-        {
+          "description": "Unique ID of the environment variable.",
           "displayName": "id",
-          "type": "string",
-          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "name": "id",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": true,
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "examples": [
             {
               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -7005,6 +7402,23 @@
         },
         {
           "type": "string",
+          "description": "Name of the environment variable.",
+          "displayName": "name",
+          "name": "name",
+          "typePropertyKind": "TYPE_EXPRESSION",
+          "required": true,
+          "examples": [
+            {
+              "value": "API_TOKEN",
+              "strict": true,
+              "structuredValue": "API_TOKEN"
+            }
+          ],
+          "key": "name"
+        },
+        {
+          "type": "string",
+          "description": "Show URL for the environment variable.",
           "displayName": "url",
           "name": "url",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7019,7 +7433,24 @@
           "key": "url"
         },
         {
+          "type": "string",
+          "description": "Content of the environment variable. Will be `null` if encrypted.",
+          "displayName": "content",
+          "name": "content",
+          "typePropertyKind": "TYPE_EXPRESSION",
+          "required": true,
+          "examples": [
+            {
+              "value": "8CgLAxXn",
+              "strict": true,
+              "structuredValue": "8CgLAxXn"
+            }
+          ],
+          "key": "content"
+        },
+        {
           "type": "boolean",
+          "description": "True if the environment variable belongs to a shared configuration.",
           "displayName": "shared",
           "name": "shared",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7032,6 +7463,22 @@
             }
           ],
           "key": "shared"
+        },
+        {
+          "type": "boolean",
+          "description": "True if the environment variable is encrypted.",
+          "displayName": "encrypted",
+          "name": "encrypted",
+          "typePropertyKind": "TYPE_EXPRESSION",
+          "required": true,
+          "examples": [
+            {
+              "value": "true",
+              "strict": true,
+              "structuredValue": true
+            }
+          ],
+          "key": "encrypted"
         },
         {
           "format": "rfc3339",
@@ -7062,6 +7509,7 @@
       "properties": {
         "path": {
           "type": "string",
+          "description": "Path of the configuration file.",
           "displayName": "path",
           "name": "path",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7077,6 +7525,7 @@
         },
         "content": {
           "type": "string",
+          "description": "Content of the configuration file.",
           "displayName": "content",
           "name": "content",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7101,6 +7550,7 @@
       "properties": {
         "path": {
           "type": "string",
+          "description": "Path of the configuration file.",
           "displayName": "path",
           "name": "path",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7116,6 +7566,7 @@
         },
         "content": {
           "type": "string",
+          "description": "Content of the configuration file. Will be `null` if the file is encrypted.",
           "displayName": "content",
           "name": "content",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7131,6 +7582,7 @@
         },
         "encrypted": {
           "type": "boolean",
+          "description": "True if the file is encrypted.",
           "displayName": "encrypted",
           "name": "encrypted",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7148,39 +7600,19 @@
     },
     "ConfigFile": {
       "additionalProperties": true,
-      "displayName": "ConfigFile",
       "type": "object",
+      "displayName": "ConfigFile",
       "name": "ConfigFile",
       "typePropertyKind": "TYPE_EXPRESSION",
       "properties": [
         {
-          "displayName": "path",
-          "type": "string",
-          "example": ".credentials",
-          "required": true,
-          "key": "path"
-        },
-        {
-          "displayName": "content",
-          "type": "string",
-          "example": "password: ec2c9f6f64b5",
-          "required": true,
-          "key": "content"
-        },
-        {
-          "displayName": "encrypted",
-          "type": "boolean",
-          "example": false,
-          "required": true,
-          "key": "encrypted"
-        },
-        {
+          "description": "Unique ID of the configuration file.",
           "displayName": "id",
-          "type": "string",
-          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "name": "id",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": true,
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "examples": [
             {
               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -7192,6 +7624,23 @@
         },
         {
           "type": "string",
+          "description": "Path of the configuration file.",
+          "displayName": "path",
+          "name": "path",
+          "typePropertyKind": "TYPE_EXPRESSION",
+          "required": true,
+          "examples": [
+            {
+              "value": ".credentials",
+              "strict": true,
+              "structuredValue": ".credentials"
+            }
+          ],
+          "key": "path"
+        },
+        {
+          "type": "string",
+          "description": "Show URL for the configuration file.",
           "displayName": "url",
           "name": "url",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7206,7 +7655,24 @@
           "key": "url"
         },
         {
+          "type": "string",
+          "description": "Content of the configuration file. Will be `null` if the file is encrypted.",
+          "displayName": "content",
+          "name": "content",
+          "typePropertyKind": "TYPE_EXPRESSION",
+          "required": true,
+          "examples": [
+            {
+              "value": "password: ec2c9f6f64b5",
+              "strict": true,
+              "structuredValue": "password: ec2c9f6f64b5"
+            }
+          ],
+          "key": "content"
+        },
+        {
           "type": "boolean",
+          "description": "True if the configuration file belongs to a shared configuration.",
           "displayName": "shared",
           "name": "shared",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7219,6 +7685,22 @@
             }
           ],
           "key": "shared"
+        },
+        {
+          "type": "boolean",
+          "description": "True if the file is encrypted.",
+          "displayName": "encrypted",
+          "name": "encrypted",
+          "typePropertyKind": "TYPE_EXPRESSION",
+          "required": true,
+          "examples": [
+            {
+              "value": "false",
+              "strict": true,
+              "structuredValue": false
+            }
+          ],
+          "key": "encrypted"
         },
         {
           "format": "rfc3339",
@@ -7248,12 +7730,13 @@
       "typePropertyKind": "TYPE_EXPRESSION",
       "properties": [
         {
+          "description": "Unique ID of the user.",
           "displayName": "uid",
-          "type": "string",
-          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "name": "uid",
+          "type": "string",
           "typePropertyKind": "TYPE_EXPRESSION",
           "required": true,
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
           "examples": [
             {
               "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
@@ -7265,6 +7748,7 @@
         },
         {
           "type": "string",
+          "description": "Unique username of the user.",
           "displayName": "username",
           "name": "username",
           "typePropertyKind": "TYPE_EXPRESSION",
@@ -7280,6 +7764,7 @@
         },
         {
           "type": "string",
+          "description": "Name of the user.",
           "displayName": "name",
           "name": "name",
           "typePropertyKind": "TYPE_EXPRESSION",
