@@ -3532,9 +3532,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "true",
+                                    "value": "false",
                                     "strict": true,
-                                    "structuredValue": true
+                                    "structuredValue": false
                                   }
                                 ],
                                 "key": "encrypted"
@@ -4881,9 +4881,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "true",
+                                    "value": "false",
                                     "strict": true,
-                                    "structuredValue": true
+                                    "structuredValue": false
                                   }
                                 ],
                                 "key": "encrypted"
@@ -5064,9 +5064,9 @@
                               "required": true,
                               "examples": [
                                 {
-                                  "value": "true",
+                                  "value": "false",
                                   "strict": true,
-                                  "structuredValue": true
+                                  "structuredValue": false
                                 }
                               ],
                               "key": "encrypted"
@@ -5168,9 +5168,9 @@
                           "required": true,
                           "examples": [
                             {
-                              "value": "true",
+                              "value": "false",
                               "strict": true,
-                              "structuredValue": true
+                              "structuredValue": false
                             }
                           ],
                           "key": "encrypted"
@@ -5822,9 +5822,9 @@
                           "required": true,
                           "examples": [
                             {
-                              "value": "true",
+                              "value": "false",
                               "strict": true,
-                              "structuredValue": true
+                              "structuredValue": false
                             }
                           ],
                           "key": "encrypted"
@@ -6057,9 +6057,9 @@
                           "required": true,
                           "examples": [
                             {
-                              "value": "true",
+                              "value": "false",
                               "strict": true,
-                              "structuredValue": true
+                              "structuredValue": false
                             }
                           ],
                           "key": "encrypted"
@@ -7382,9 +7382,9 @@
           "required": true,
           "examples": [
             {
-              "value": "true",
+              "value": "false",
               "strict": true,
-              "structuredValue": true
+              "structuredValue": false
             }
           ],
           "key": "encrypted"
@@ -7488,9 +7488,9 @@
           "required": true,
           "examples": [
             {
-              "value": "true",
+              "value": "false",
               "strict": true,
-              "structuredValue": true
+              "structuredValue": false
             }
           ],
           "key": "encrypted"
