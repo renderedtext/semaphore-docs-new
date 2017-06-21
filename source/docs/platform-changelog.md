@@ -21,8 +21,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - geckodriver 0.16.1 -> 0.17.0
   - golang 1.8.1 -> 1.8.3
   - golang 1.7.5 -> 1.7.6
-  - google-chrome 58.0.3029.110 -> 59.0.3071.104
-  - heroku-cli 6.11.7 -> 6.11.14
+  - google-chrome 58.0.3029.110 -> 59.0.3071.109
+  - heroku-cli 6.11.7 -> 6.11.16
   - jruby 9.1.8.0 -> 9.1.12.0
   - jruby 1.7.26 -> 1.7.27
   - mongodb 3.4.4 -> 3.4.5
