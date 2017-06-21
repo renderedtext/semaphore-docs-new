@@ -6,6 +6,39 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1706 - 2017-06-27 (planned)
+
+```md
+- additions
+  - node.js 8.1.2
+  - node.js 6.11.0
+
+- upgrades
+  - chromedriver 2.29 -> 2.30
+  - elasticsearch 5.3.2 -> 5.4.1
+  - elixir 1.4.2 -> 1.4.4
+  - firefox 52.1.1esr -> 52.2.0esr
+  - geckodriver 0.16.1 -> 0.17.0
+  - golang 1.8.1 -> 1.8.3
+  - golang 1.7.5 -> 1.7.6
+  - google-chrome 58.0.3029.110 -> 59.0.3071.104
+  - heroku-cli 6.11.7 -> 6.11.14
+  - jruby 9.1.8.0 -> 9.1.12.0
+  - jruby 1.7.26 -> 1.7.27
+  - mongodb 3.4.4 -> 3.4.5
+  - php 7.1.5 -> 7.1.6
+  - php 7.0.19 -> 7.0.20
+  - phpunit 5.7.19 -> 5.7.20
+  - postgresql 9.6.2 -> 9.6.3
+  - pypy2 5.7.1 -> 5.8.0
+  - pypy3 5.7.1 -> 5.8.0
+  - rabbitmq 3.6.9 -> 3.6.10
+  - rebar3 3.3.6 -> 3.4.1
+  - redis 3.2.8 -> 3.2.9
+  - wkhtmltopdf 0.12.3 -> 0.12.4
+  - yarn 0.24.5 -> 0.24.6
+```
+
 ### 1705.1 - 2017-06-15
 
 ``` md
