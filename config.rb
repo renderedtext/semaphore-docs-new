@@ -148,6 +148,14 @@ helpers do
   def page_exists?(url)
     sitemap.resources.find { |p| p.url == url }
   end
+
+  def current_page_as_referer
+    current_page.path.gsub("/", "-").gsub(".html", "")
+  end
+
+  def sign_up_path_with_referer
+    "/users/sign_up?from=docs&referer=#{current_page_as_referer}"
+  end
 end
 
 configure :development do
