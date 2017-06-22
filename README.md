@@ -37,6 +37,13 @@ $ bundle exec middleman -p 4000
 
 Now you can open [http://localhost:4000/docs](http://localhost:4000/docs).
 
+To include a sign up link within a page, make sure the file extension is
+`.md.erb` and use the following method:
+
+```
+[sign up for a free Semaphore account](<%= sign_up_path_with_referer %>)
+```
+
 ### Categories
 
 Categories will be automatically grabbed from the post heading:
