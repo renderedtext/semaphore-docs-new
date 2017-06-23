@@ -4787,6 +4787,327 @@
                           "items": {
                             "additionalProperties": true,
                             "type": "object",
+                            "displayName": "Project",
+                            "name": "Project",
+                            "typePropertyKind": "TYPE_EXPRESSION",
+                            "properties": [
+                              {
+                                "description": "Unique ID of the project.",
+                                "displayName": "id",
+                                "name": "id",
+                                "type": "string",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+                                "examples": [
+                                  {
+                                    "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
+                                    "strict": true,
+                                    "structuredValue": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5"
+                                  }
+                                ],
+                                "key": "id"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Name of the project.",
+                                "displayName": "name",
+                                "name": "name",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "elixir-lang",
+                                    "strict": true,
+                                    "structuredValue": "elixir-lang"
+                                  }
+                                ],
+                                "key": "name"
+                              },
+                              {
+                                "format": "rfc3339",
+                                "displayName": "updated_at",
+                                "type": "datetime",
+                                "name": "updated_at",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "key": "updated_at"
+                              },
+                              {
+                                "format": "rfc3339",
+                                "displayName": "created_at",
+                                "type": "datetime",
+                                "name": "created_at",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "key": "created_at"
+                              }
+                            ]
+                          },
+                          "key": "application/json"
+                        }
+                      ],
+                      "key": "200"
+                    },
+                    {
+                      "code": "404",
+                      "body": [
+                        {
+                          "name": "Error",
+                          "displayName": "Error",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "type": "object",
+                          "additionalProperties": true,
+                          "properties": [
+                            {
+                              "type": "string",
+                              "displayName": "message",
+                              "name": "message",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "key": "message"
+                            }
+                          ],
+                          "key": "application/json"
+                        }
+                      ],
+                      "key": "404"
+                    }
+                  ],
+                  "protocols": [
+                    "HTTPS"
+                  ],
+                  "is": [
+                    {
+                      "withResponseItems": {
+                        "item": "Project"
+                      }
+                    },
+                    "withNotFoundError"
+                  ],
+                  "displayName": "List projects for a shared configuration",
+                  "method": "get",
+                  "allUriParameters": [
+                    {
+                      "name": "shared_config_id",
+                      "displayName": "shared_config_id",
+                      "typePropertyKind": "TYPE_EXPRESSION",
+                      "type": "string",
+                      "required": true,
+                      "key": "shared_config_id"
+                    }
+                  ]
+                }
+              ],
+              "relativeUri": "/projects",
+              "displayName": "/projects",
+              "relativeUriPathSegments": [
+                "projects"
+              ],
+              "absoluteUri": "https://api.semaphoreci.com/v2/shared_configs/{shared_config_id}/projects",
+              "parentUrl": "/shared_configs/{shared_config_id}",
+              "uniqueId": "shared_configs__shared_config_id__projects",
+              "allUriParameters": [
+                {
+                  "name": "shared_config_id",
+                  "displayName": "shared_config_id",
+                  "typePropertyKind": "TYPE_EXPRESSION",
+                  "type": "string",
+                  "required": true,
+                  "key": "shared_config_id"
+                }
+              ]
+            },
+            {
+              "methods": [
+                {
+                  "responses": [
+                    {
+                      "code": "200",
+                      "body": [
+                        {
+                          "name": "application/json",
+                          "displayName": "application/json",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "type": "array",
+                          "items": {
+                            "additionalProperties": true,
+                            "displayName": "Team",
+                            "type": "object",
+                            "name": "Team",
+                            "typePropertyKind": "TYPE_EXPRESSION",
+                            "properties": [
+                              {
+                                "description": "Name of the team. The name must be unique in the organization.",
+                                "displayName": "name",
+                                "type": "string",
+                                "example": "developers",
+                                "required": true,
+                                "key": "name"
+                              },
+                              {
+                                "description": "The permission level for team members in the organization.",
+                                "enum": [
+                                  "read",
+                                  "write",
+                                  "admin"
+                                ],
+                                "displayName": "permission",
+                                "type": "string",
+                                "example": "write",
+                                "required": true,
+                                "key": "permission"
+                              },
+                              {
+                                "description": "Description for the team.",
+                                "displayName": "description",
+                                "type": "string",
+                                "example": "Developers team",
+                                "required": false,
+                                "key": "description"
+                              },
+                              {
+                                "description": "Unique ID of the team.",
+                                "displayName": "id",
+                                "name": "id",
+                                "type": "string",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+                                "examples": [
+                                  {
+                                    "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
+                                    "strict": true,
+                                    "structuredValue": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5"
+                                  }
+                                ],
+                                "key": "id"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Show URL for the team.",
+                                "displayName": "url",
+                                "name": "url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
+                                    "strict": true,
+                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5"
+                                  }
+                                ],
+                                "key": "url"
+                              },
+                              {
+                                "format": "rfc3339",
+                                "displayName": "updated_at",
+                                "type": "datetime",
+                                "name": "updated_at",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "key": "updated_at"
+                              },
+                              {
+                                "format": "rfc3339",
+                                "displayName": "created_at",
+                                "type": "datetime",
+                                "name": "created_at",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "key": "created_at"
+                              }
+                            ]
+                          },
+                          "key": "application/json"
+                        }
+                      ],
+                      "key": "200"
+                    },
+                    {
+                      "code": "404",
+                      "body": [
+                        {
+                          "name": "Error",
+                          "displayName": "Error",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "type": "object",
+                          "additionalProperties": true,
+                          "properties": [
+                            {
+                              "type": "string",
+                              "displayName": "message",
+                              "name": "message",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "key": "message"
+                            }
+                          ],
+                          "key": "application/json"
+                        }
+                      ],
+                      "key": "404"
+                    }
+                  ],
+                  "protocols": [
+                    "HTTPS"
+                  ],
+                  "is": [
+                    {
+                      "withResponseItems": {
+                        "item": "Team"
+                      }
+                    },
+                    "withNotFoundError"
+                  ],
+                  "displayName": "List teams for a shared configuration",
+                  "method": "get",
+                  "allUriParameters": [
+                    {
+                      "name": "shared_config_id",
+                      "displayName": "shared_config_id",
+                      "typePropertyKind": "TYPE_EXPRESSION",
+                      "type": "string",
+                      "required": true,
+                      "key": "shared_config_id"
+                    }
+                  ]
+                }
+              ],
+              "relativeUri": "/teams",
+              "displayName": "/teams",
+              "relativeUriPathSegments": [
+                "teams"
+              ],
+              "absoluteUri": "https://api.semaphoreci.com/v2/shared_configs/{shared_config_id}/teams",
+              "parentUrl": "/shared_configs/{shared_config_id}",
+              "uniqueId": "shared_configs__shared_config_id__teams",
+              "allUriParameters": [
+                {
+                  "name": "shared_config_id",
+                  "displayName": "shared_config_id",
+                  "typePropertyKind": "TYPE_EXPRESSION",
+                  "type": "string",
+                  "required": true,
+                  "key": "shared_config_id"
+                }
+              ]
+            },
+            {
+              "methods": [
+                {
+                  "responses": [
+                    {
+                      "code": "200",
+                      "body": [
+                        {
+                          "name": "application/json",
+                          "displayName": "application/json",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "type": "array",
+                          "items": {
+                            "additionalProperties": true,
+                            "type": "object",
                             "displayName": "EnvVar",
                             "name": "EnvVar",
                             "typePropertyKind": "TYPE_EXPRESSION",
