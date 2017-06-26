@@ -23,12 +23,12 @@ cassandra:
 
 chrome:
   name: "Chrome"
-  version: "58.0.3029.110"
+  version: "59.0.3071.109"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.29"
+  version: "2.30"
 
 composer:
   name: "Composer"
@@ -37,7 +37,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.12.6"
+  version: "17.03"
   url: "/docs/docker.html"
 
 docker-machine:
@@ -47,12 +47,12 @@ docker-machine:
 
 docker-compose:
   name: "docker-compose"
-  version: "1.12.0"
+  version: "1.13.0"
   url: "https://docs.docker.com/compose/"
 
 elasticsearch:
   name: "ElasticSearch"
-  version: "5.3.2"
+  version: "5.4.1"
   url: "/docs/elasticsearch.html"
 
 elixir:
@@ -62,7 +62,7 @@ elixir:
     - "1.1.1"
     - "1.2.6"
     - "1.3.4"
-    - "1.4.2"
+    - "1.4.4"
   default:
     - "1.2.6"
   url: "/docs/elixir.html"
@@ -82,7 +82,7 @@ firefox:
     - "34.0"
     - "38.8.0 ESR"
     - "45.9.0 ESR"
-    - "52.1.1 ESR"
+    - "52.2.0 ESR"
   default:
     - "34.0"
   url: "/docs/firefox.html"
@@ -90,9 +90,9 @@ firefox:
 geckodriver:
   name: "geckodriver"
   versions:
-    - "0.16.1"
+    - "0.17"
   default:
-    - "0.16.1"
+    - "0.17"
   url: "https://github.com/mozilla/geckodriver"
 
 gcc:
@@ -109,15 +109,15 @@ go:
     - "1.4.3"
     - "1.5.4"
     - "1.6.4"
-    - "1.7.5"
-    - "1.8.1"
+    - "1.7.6"
+    - "1.8.3"
   default:
     - "1.4.3"
   url: "/docs/go.html"
 
 gradle:
   name: "Gradle"
-  version: "3.4.4"
+  version: "4.0"
   url: "https://gradle.org/"
 
 grunt:
@@ -128,7 +128,7 @@ grunt:
 
 heroku-cli:
   name: "Heroku CLI"
-  version: "6.11.7"
+  version: "6.11.17"
 
 io.js:
   name: "io.js"
@@ -169,7 +169,7 @@ memcached:
 
 mongodb:
   name: "MongoDB"
-  version: "3.4.4"
+  version: "3.4.5"
   url: "/docs/databases/mongodb.html"
 
 mysql:
@@ -207,12 +207,14 @@ node:
     - "6.6.0"
     - "6.9.5"
     - "6.10.3"
+    - "6.11.0"
     - "7.1.0"
     - "7.3.0"
     - "7.4.0"
     - "7.6.0"
     - "7.7.4"
     - "7.10"
+    - "8.1.2"
   default:
     - "4.6.2"
   url: "/docs/javascript.html"
@@ -254,8 +256,8 @@ php:
     - "5.4.45"
     - "5.5.38"
     - "5.6.30"
-    - "7.0.19"
-    - "7.1.5"
+    - "7.0.20"
+    - "7.1.6"
   default:
     - "5.6.30"
   url: "/docs/php.html"
@@ -269,7 +271,7 @@ phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
   url: "http://phpunit.de/"
-  version: "5.7.5"
+  version: "5.7.21"
 
 pip:
   name: "pip"
@@ -294,8 +296,8 @@ python:
   - "3.4.3"
   - "3.5.0"
   - "3.6.0"
-  - "pypy 5.7.1"
-  - "pypy3 5.7.1"
+  - "pypy 5.8.0"
+  - "pypy3 5.8.0"
   default:
     - "2.7.10"
 
@@ -311,7 +313,7 @@ qt:
 
 rabbitmq:
   name: "RabbitMQ"
-  version: "3.6.8"
+  version: "3.6.10"
 
 rbenv:
   name: "rbenv"
@@ -319,7 +321,7 @@ rbenv:
 
 redis:
   name: "Redis"
-  version: "3.2.8"
+  version: "3.2.9"
   url: "http://redis.io/"
 
 rethinkdb:
@@ -358,8 +360,8 @@ ruby:
     - "1.9.3-p551"
     - "1.9.2-p330"
     - "ree-1.8.7-2012.02"
-    - "JRuby 1.7.26"
-    - "JRuby 9.1.8.0"
+    - "JRuby 1.7.27"
+    - "JRuby 9.1.12.0"
   default:
     - "2.2.2"
   url: "/docs/ruby.html"
@@ -395,10 +397,10 @@ virtualenv:
 
 wkhtmltopdf:
   name: "wkhtmltopdf"
-  version: "0.12.3"
+  version: "0.12.4"
 
 yarn:
   name: "Yarn"
-  version: "0.24.5"
+  version: "0.24.6"
   url: "https://yarnpkg.com/en/docs/install-ci#semaphore-tab"
   hide_on_stack_table: true
