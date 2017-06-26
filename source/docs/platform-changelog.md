@@ -15,6 +15,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
 
 - upgrades
   - chromedriver 2.29 -> 2.30
+  - docker 1.12.6 -> 17.03
+  - docker-compose 1.12.0 -> 1.13.0
   - elasticsearch 5.3.2 -> 5.4.1
   - elixir 1.4.2 -> 1.4.4
   - firefox 52.1.1esr -> 52.2.0esr
@@ -22,7 +24,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - golang 1.8.1 -> 1.8.3
   - golang 1.7.5 -> 1.7.6
   - google-chrome 58.0.3029.110 -> 59.0.3071.109
-  - heroku-cli 6.11.7 -> 6.11.16
+  - gradle 3.5 -> 4.0
+  - heroku-cli 6.11.7 -> 6.11.17
   - jruby 9.1.8.0 -> 9.1.12.0
   - jruby 1.7.26 -> 1.7.27
   - mongodb 3.4.4 -> 3.4.5
