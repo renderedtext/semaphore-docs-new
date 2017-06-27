@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <% if current_page.nil? %>
-      <title>Docs - Semaphore, Continuous Integration & Deployment</title>
+    <% if content_for?(:title) %>
+      <title><%= yield_content :title %> - Semaphore</title>
     <% else %>
-      <title><%= current_page.data.title %> - Semaphore </title>
+      <title>Docs - Semaphore, Continuous Integration & Deployment</title>
     <% end %>
 
     <link rel="stylesheet" href="/docs/assets/css/community.css">
