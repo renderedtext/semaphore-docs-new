@@ -164,7 +164,7 @@
     }
   },
   "title": "Semaphore",
-  "version": "v2",
+  "version": "2.0.3",
   "baseUri": "https://api.semaphoreci.com/v2",
   "protocols": [
     "HTTPS"
@@ -1177,6 +1177,22 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Users URL for the project",
+                                "displayName": "users_url",
+                                "name": "users_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users",
+                                    "strict": true,
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users"
+                                  }
+                                ],
+                                "key": "users_url"
+                              },
+                              {
+                                "type": "string",
                                 "description": "Shared Configurations URL for the project",
                                 "displayName": "shared_configs_url",
                                 "name": "shared_configs_url",
@@ -1184,9 +1200,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
                                   }
                                 ],
                                 "key": "shared_configs_url"
@@ -1200,9 +1216,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars"
                                   }
                                 ],
                                 "key": "env_vars_url"
@@ -1216,9 +1232,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files"
                                   }
                                 ],
                                 "key": "config_files_url"
@@ -3281,6 +3297,22 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Users URL for the project",
+                                "displayName": "users_url",
+                                "name": "users_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users",
+                                    "strict": true,
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users"
+                                  }
+                                ],
+                                "key": "users_url"
+                              },
+                              {
+                                "type": "string",
                                 "description": "Shared Configurations URL for the project",
                                 "displayName": "shared_configs_url",
                                 "name": "shared_configs_url",
@@ -3288,9 +3320,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
                                   }
                                 ],
                                 "key": "shared_configs_url"
@@ -3304,9 +3336,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars"
                                   }
                                 ],
                                 "key": "env_vars_url"
@@ -3320,9 +3352,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files"
                                   }
                                 ],
                                 "key": "config_files_url"
@@ -4913,6 +4945,229 @@
                           "type": "array",
                           "items": {
                             "additionalProperties": true,
+                            "displayName": "Team",
+                            "type": "object",
+                            "name": "Team",
+                            "typePropertyKind": "TYPE_EXPRESSION",
+                            "properties": [
+                              {
+                                "description": "Description for the team.",
+                                "displayName": "description",
+                                "type": "string",
+                                "example": "Developers team",
+                                "required": false,
+                                "key": "description"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Projects URL for the team",
+                                "displayName": "projects_url",
+                                "name": "projects_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/projects",
+                                    "strict": true,
+                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/projects"
+                                  }
+                                ],
+                                "key": "projects_url"
+                              },
+                              {
+                                "description": "The permission level for team members in the organization.",
+                                "enum": [
+                                  "read",
+                                  "write",
+                                  "admin"
+                                ],
+                                "displayName": "permission",
+                                "type": "string",
+                                "example": "write",
+                                "required": true,
+                                "key": "permission"
+                              },
+                              {
+                                "description": "Name of the team. The name must be unique in the organization.",
+                                "displayName": "name",
+                                "type": "string",
+                                "example": "developers",
+                                "required": true,
+                                "key": "name"
+                              },
+                              {
+                                "format": "rfc3339",
+                                "displayName": "updated_at",
+                                "type": "datetime",
+                                "name": "updated_at",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "key": "updated_at"
+                              },
+                              {
+                                "description": "Unique ID of the team.",
+                                "displayName": "id",
+                                "name": "id",
+                                "type": "string",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+                                "examples": [
+                                  {
+                                    "value": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
+                                    "strict": true,
+                                    "structuredValue": "86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5"
+                                  }
+                                ],
+                                "key": "id"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Show URL for the team.",
+                                "displayName": "url",
+                                "name": "url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5",
+                                    "strict": true,
+                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5"
+                                  }
+                                ],
+                                "key": "url"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Shared Configurations URL for the team",
+                                "displayName": "shared_configs_url",
+                                "name": "shared_configs_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
+                                    "strict": true,
+                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
+                                  }
+                                ],
+                                "key": "shared_configs_url"
+                              },
+                              {
+                                "type": "string",
+                                "description": "Users URL for the team",
+                                "displayName": "users_url",
+                                "name": "users_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users",
+                                    "strict": true,
+                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users"
+                                  }
+                                ],
+                                "key": "users_url"
+                              },
+                              {
+                                "format": "rfc3339",
+                                "displayName": "created_at",
+                                "type": "datetime",
+                                "name": "created_at",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "key": "created_at"
+                              }
+                            ]
+                          },
+                          "key": "application/json"
+                        }
+                      ],
+                      "key": "200"
+                    },
+                    {
+                      "code": "404",
+                      "body": [
+                        {
+                          "name": "Error",
+                          "displayName": "Error",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "type": "object",
+                          "additionalProperties": true,
+                          "properties": [
+                            {
+                              "type": "string",
+                              "displayName": "message",
+                              "name": "message",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "key": "message"
+                            }
+                          ],
+                          "key": "application/json"
+                        }
+                      ],
+                      "key": "404"
+                    }
+                  ],
+                  "protocols": [
+                    "HTTPS"
+                  ],
+                  "is": [
+                    {
+                      "withResponseItems": {
+                        "item": "Team"
+                      }
+                    },
+                    "withNotFoundError"
+                  ],
+                  "displayName": "List all teams connected to project",
+                  "method": "get",
+                  "allUriParameters": [
+                    {
+                      "name": "project_id",
+                      "displayName": "project_id",
+                      "typePropertyKind": "TYPE_EXPRESSION",
+                      "type": "string",
+                      "required": true,
+                      "key": "project_id"
+                    }
+                  ]
+                }
+              ],
+              "relativeUri": "/teams",
+              "displayName": "/teams",
+              "relativeUriPathSegments": [
+                "teams"
+              ],
+              "absoluteUri": "https://api.semaphoreci.com/v2/projects/{project_id}/teams",
+              "parentUrl": "/projects/{project_id}",
+              "uniqueId": "projects__project_id__teams",
+              "allUriParameters": [
+                {
+                  "name": "project_id",
+                  "displayName": "project_id",
+                  "typePropertyKind": "TYPE_EXPRESSION",
+                  "type": "string",
+                  "required": true,
+                  "key": "project_id"
+                }
+              ]
+            },
+            {
+              "methods": [
+                {
+                  "responses": [
+                    {
+                      "code": "200",
+                      "body": [
+                        {
+                          "name": "application/json",
+                          "displayName": "application/json",
+                          "typePropertyKind": "TYPE_EXPRESSION",
+                          "type": "array",
+                          "items": {
+                            "additionalProperties": true,
                             "type": "object",
                             "displayName": "User",
                             "name": "User",
@@ -5690,6 +5945,22 @@
                               },
                               {
                                 "type": "string",
+                                "description": "Users URL for the project",
+                                "displayName": "users_url",
+                                "name": "users_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "examples": [
+                                  {
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users",
+                                    "strict": true,
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users"
+                                  }
+                                ],
+                                "key": "users_url"
+                              },
+                              {
+                                "type": "string",
                                 "description": "Shared Configurations URL for the project",
                                 "displayName": "shared_configs_url",
                                 "name": "shared_configs_url",
@@ -5697,9 +5968,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
                                   }
                                 ],
                                 "key": "shared_configs_url"
@@ -5713,9 +5984,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars"
                                   }
                                 ],
                                 "key": "env_vars_url"
@@ -5729,9 +6000,9 @@
                                 "required": true,
                                 "examples": [
                                   {
-                                    "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files",
+                                    "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files",
                                     "strict": true,
-                                    "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files"
+                                    "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files"
                                   }
                                 ],
                                 "key": "config_files_url"
@@ -8511,6 +8782,22 @@
         },
         {
           "type": "string",
+          "description": "Users URL for the project",
+          "displayName": "users_url",
+          "name": "users_url",
+          "typePropertyKind": "TYPE_EXPRESSION",
+          "required": true,
+          "examples": [
+            {
+              "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users",
+              "strict": true,
+              "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/users"
+            }
+          ],
+          "key": "users_url"
+        },
+        {
+          "type": "string",
           "description": "Shared Configurations URL for the project",
           "displayName": "shared_configs_url",
           "name": "shared_configs_url",
@@ -8518,9 +8805,9 @@
           "required": true,
           "examples": [
             {
-              "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
+              "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs",
               "strict": true,
-              "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
+              "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/shared_configs"
             }
           ],
           "key": "shared_configs_url"
@@ -8534,9 +8821,9 @@
           "required": true,
           "examples": [
             {
-              "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars",
+              "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars",
               "strict": true,
-              "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars"
+              "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/env_vars"
             }
           ],
           "key": "env_vars_url"
@@ -8550,9 +8837,9 @@
           "required": true,
           "examples": [
             {
-              "value": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files",
+              "value": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files",
               "strict": true,
-              "structuredValue": "https://api.semaphoreci.com/v2/teams/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files"
+              "structuredValue": "https://api.semaphoreci.com/v2/projects/86e78b7e-2f9c-45a7-9939-ec2c9f6f64b5/config_files"
             }
           ],
           "key": "config_files_url"
