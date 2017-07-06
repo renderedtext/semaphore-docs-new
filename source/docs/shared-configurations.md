@@ -115,7 +115,7 @@ Let's [find the team's id](/docs/api-v2-teams.html#list-teams-in-an-organization
 
 curl -X GET \
      -H "Authorization: Token ${AUTH_TOKEN}" \
-     "https://api.semaphoreci.com/v2/org/${ORG_USERNAME}/teams"
+     "https://api.semaphoreci.com/v2/orgs/${ORG_USERNAME}/teams"
 
 # Connect the shared configuration with our team
 
@@ -166,7 +166,7 @@ export ENV_VAR_ID=<env_var_id>
 curl \
  -X GET \
  -H "Authorization: Token ${AUTH_TOKEN}" \
- "https://api.semaphoreci.com/v2/project/${PROJECT_ID}/env_vars/${ENV_VAR_ID}"
+ "https://api.semaphoreci.com/v2/projects/${PROJECT_ID}/env_vars/${ENV_VAR_ID}"
 ```
 
 After this step, you should see the attached environment variable on your
