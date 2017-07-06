@@ -116,6 +116,10 @@ Variables available only during deployment:
       <td>Eg. staging</td>
     </tr>
     <tr>
+      <td>DEPLOY_AUTHOR_NAME</td>
+      <td>Semaphore username or commit author</td>
+    </tr>
+    <tr>
       <td>HEROKU_API_KEY</td>
       <td>Eg. 12139243 - when deploying to Heroku</td>
     </tr>
