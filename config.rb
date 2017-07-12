@@ -64,7 +64,6 @@ set :js_dir, 'assets/js'
 set :images_dir, 'assets/images'
 
 ignore "post.html"
-ignore "category.html"
 
 # Build-specific configuration
 configure :build do
@@ -105,18 +104,6 @@ helpers do
 
   def sort_pages(pages)
     pages.sort_by {|p| p.data.title.to_s }
-  end
-
-  def categories
-    sitemap.resources.reject { |p| p.data["category"].nil? }.group_by {|p| p.data["category"] }
-  end
-
-  def category_link(category)
-    link_to category, category_url(category)
-  end
-
-  def category_url(category)
-    "/docs/#{category.parameterize}.html"
   end
 
   def link_to_file_on_github(current_page)
@@ -174,13 +161,4 @@ configure :build do
   set :protocol, "https://"
   set :host, "semaphoreci.com"
   set :port, 80
-end
-
-ready do
-  categories.each do |category, pages|
-    url = category_url(category)
-    unless page_exists?(url)
-      proxy url, "category.html", :locals => { :category => category, :pages => pages }
-    end
-  end
 end
