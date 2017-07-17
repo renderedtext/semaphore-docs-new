@@ -6,6 +6,26 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1707 - 2017-07-25 (planned)
+
+```md
+- additions
+  - erlang/otp 20.0
+- upgrades
+  - cassandra 3.10 -> 3.11.0
+  - elixir 1.4.4 -> 1.4.5
+  - heroku 6.11.17 -> 6.12.9
+  - mongo 3.4.5 -> 3.4.6
+  - node.js 8.1.2 -> 8.1.4
+  - node.js 7.10.0 -> 7.10.1
+  - node.js 6.11.0 -> 6.11.1
+  - node.js 4.8.3 -> 4.8.4
+  - php 7.1.6 -> 7.1.7
+  - php 7.0.20 -> 7.0.21
+  - php 5.6.30 -> 5.6.31
+  - yarn 0.24.6 -> 0.27.5
+```
+
 ### 1706 - 2017-06-27
 
 ```md
