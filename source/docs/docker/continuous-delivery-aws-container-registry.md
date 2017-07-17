@@ -53,12 +53,20 @@ Semaphore encrypts your credentials and stores them securely.
 You can now push or pull images from the Amazon Container Registry through
 Semaphore.
 
+```
+docker push aws_account_id.dkr.ecr.region.amazonaws.com/my-web-app
+```
+
+__Note:__
+To make a unique image tag, you can combine the [available environment variables](/docs/available-environment-variables.html)
+(eg. `my-web-app:$REVISION`).
+
 Happy building!
 
 ## Example AWS IAM policy
 
-You can attach `AmazonEC2ContainerRegistryPowerUser` policy for the role that 
-is interacting with Semaphore. It provides full access to Amazon EC2 Container 
+You can attach `AmazonEC2ContainerRegistryPowerUser` policy for the role that
+is interacting with Semaphore. It provides full access to Amazon EC2 Container
 Registry repositories, but does not allow repository deletion or policy changes.
 `AmazonEC2ContainerRegistryPowerUser` is shown below, but you can also [attach it in AWS console](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#attach-managed-policy-console).
 
