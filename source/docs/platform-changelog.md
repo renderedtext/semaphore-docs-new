@@ -6,13 +6,15 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1707 - 2017-07-25 (planned)
+### 1707 - 2017-07-25
 
 ```md
 - additions
   - erlang/otp 20.0
 - upgrades
   - cassandra 3.10 -> 3.11.0
+  - docker 17.03 -> 17.06
+  - docker-compose 1.13.0 -> 1.14.0
   - elixir 1.4.4 -> 1.4.5
   - heroku 6.11.17 -> 6.12.9
   - mongo 3.4.5 -> 3.4.6
