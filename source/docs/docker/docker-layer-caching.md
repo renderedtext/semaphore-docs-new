@@ -11,6 +11,8 @@ category: Docker
 
 ## <a name="usage" href="#usage">How to use Docker layer caching</a>
 
+Semaphore doesn't provide a built-in cache registry.true
+
 The following snippet demonstrates how to build an image using `--cache-from`,
 using a pre-existing image as the cache source.
 The commands should be part of your [project's build settings](/docs/customizing-build-commands.html):
