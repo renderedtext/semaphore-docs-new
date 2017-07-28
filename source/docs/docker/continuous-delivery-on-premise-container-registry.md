@@ -50,4 +50,8 @@ will be encrypted and saved by Semaphore.
 
 You can now push or pull images from your custom registry through Semaphore.
 
+```
+docker push your_registry_address/repository_name
+```
+
 Happy building!

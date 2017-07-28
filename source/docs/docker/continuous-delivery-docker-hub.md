@@ -42,4 +42,8 @@ After you've entered your credentials, click "Save".
 
 You can now push or pull images from Docker Hub through Semaphore.
 
+```
+docker push dockerhub_username/repository_name
+```
+
 Happy building!

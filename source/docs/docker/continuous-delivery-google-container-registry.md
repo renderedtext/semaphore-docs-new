@@ -71,4 +71,8 @@ and store your Google credentials.
 
 You can now push or pull images from Google Container Registry through Semaphore.
 
+```
+docker push gcr.io/project_id/repository_name
+```
+
 Happy building!
