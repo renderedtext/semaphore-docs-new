@@ -46,4 +46,8 @@ will be securely encrypted and saved.
 
 You can now push or pull images on Quay.io through Semaphore.
 
+```
+docker push quay.io/quay_username/repository_name
+```
+
 Happy building!
