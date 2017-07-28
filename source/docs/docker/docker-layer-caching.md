@@ -11,28 +11,27 @@ category: Docker
 
 ## <a name="usage" href="#usage">How to use Docker layer caching</a>
 
-Semaphore doesn't provide a built-in cache registry.true
-
 The following snippet demonstrates how to build an image using `--cache-from`,
-using a pre-existing image as the cache source.
+once you've configured a [Docker integration](/docs/docker.html), using a pre-existing image as the cache source.
 The commands should be part of your [project's build settings](/docs/customizing-build-commands.html):
 
 ```bash
-docker pull $ECR_IMAGE:$BRANCH_NAME || true
-docker build --cache-from $ECR_IMAGE:$BRANCH_NAME --tag $ECR_IMAGE:$BRANCH_NAME .
-docker push $ECR_IMAGE:$BRANCH_NAME
+export CACHE_IMAGE=aws_account_id.dkr.ecr.us-east-1.amazonaws.com/my-app
+
+docker pull $CACHE_IMAGE:$BRANCH_NAME || true
+docker build --cache-from $CACHE_IMAGE:$BRANCH_NAME --tag $CACHE_IMAGE:$BRANCH_NAME .
+docker push $CACHE_IMAGE:$BRANCH_NAME
 ```
 
 The [Semaphore's environment variable](/docs/available-environment-variables.html)
 `BRANCH_NAME` was chosen as a tag, in order to ensure a good cache hit.
 This way, each branch will have its own cache, so cache collision is avoided.
 
-The `ECR_IMAGE` environment variable specifies the name of the Docker image, used
-as a cache source (e.g. `phusion/baseimage`).
+The `CACHE_IMAGE` environment variable specifies the name of the Docker image, used
+as a cache source, which is usually your main application image.
 
-The first command will pull the previously pushed image from the registry.
-This step is skipped in the first build of the branch, or if the image is missing
-from the registry.
+The first command will attempt to pull the image from the registry. If this is
+the first time building this branch's image, pulling will be skipped.
 
 The second command will build a Docker image, and tag it with the branch name.
 In case the tagged image is available, it will be used as a cache source.
@@ -62,7 +61,7 @@ services:
     build:
       context: .
       cache_from:
-        - ${ECR_IMAGE}
+        - ${CACHE_IMAGE}
     volumes:
      - .:/code
 ```
@@ -72,7 +71,7 @@ services:
 When building an image from a `Dockerfile`, each line generates its own layer. These
 layers are [cached](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#build-cache)
 and they can be reused, if no changes are detected. If a layer changes, all
-the following layers have to created from scratch.
+the following layers have to be created from scratch.
 
 Starting with [Docker 1.13](https://github.com/moby/moby/blob/master/CHANGELOG.md#1130-2017-01-18),
 the `docker build` command introduced a new switch `--cache-from`, which allows
@@ -96,7 +95,8 @@ To maximize layer re-use between builds, it's important to structure the
 `Dockerfile` so that frequently changing steps (eg. `ADD`ing code) are towards
 the end, and less frequently changing steps (eg. `RUN`ing `apt-get install`) are
 on top. This will assure that steps which are concerned with doing the same
-action are not unnecessarily rebuilt.
+action are not unnecessarily rebuilt. See our guide for [Lightweight Docker
+Images in 5 Steps](/blog/2016/12/13/lightweight-docker-images-in-5-steps.html) for more details.
 
 In order to improve the speed of pushing and pulling images in your Semaphore
 builds, the Docker container registry should be geographically as close as

@@ -2,6 +2,8 @@
 *.swp
 
 # Ignore bundler config
+vendor
+
 /.bundle
 vendor/bundle
 
