@@ -7,10 +7,6 @@ class DocsRenderer < Redcarpet::Render::HTML
     }.merge(extensions))
   end
 
-  def header(text, level)
-    %(<h#{level} class="f#{level + 1} lh-title">#{escape_html(text)}</h#{level}>)
-  end
-
   def block_quote(quote)
     %(<blockquote cite="http://developer.mozilla.org" class="mh0 ph4 pv1 f5 lh-loose bl b--green bw2 black-70 bg-near-white">#{escape_html(quote)}</blockquote>)
   end
