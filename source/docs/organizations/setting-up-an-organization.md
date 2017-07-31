@@ -6,7 +6,7 @@ category: Organizations
 
 Creating [an organization](/docs/organizations/about-organizations.html) is
 very quick and easy to do. Doing it is part of the workflow of
-[setting up a private project to Semaphore](/docs/adding-github-bitbucket-project-to-semahore).
+[setting up a private project to Semaphore](/docs/adding-github-bitbucket-project-to-semaphore.html).
 
 You can also create additional organizations from the "Create new" menu in top
 navigation inside the application. Here's how:
