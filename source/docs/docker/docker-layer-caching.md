@@ -109,6 +109,8 @@ see the results of our benchmarks visualized on these charts:
 <img src="/docs/assets/img/docker/docker-layer-caching/registry-pull-graph.png" class="img-responsive img-bordered" alt="Time needed to pull Docker image from registry">
 
 Note that `local` refers to a local Docker container registry, running inside the build
-environment. The images' contents are generated using `/dev/urandom` to avoid any
-compression which might occur during the push and pull operations. These results can be
-considered to be a worst-case scenario.
+environment. This functionality isn't shipped with the environment, and serves
+only as a base line. The images' contents are generated using `/dev/urandom` to avoid any
+compression which might occur during the push and pull operations. As such, these
+transfer speeds are not likely to occur, and standard images will have considerably
+better performance.
