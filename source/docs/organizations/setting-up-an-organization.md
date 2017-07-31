@@ -12,13 +12,11 @@ You can also create additional organizations from the "Create new" menu in top
 navigation inside the application. Here's how:
 
 1. In the navigation click "Create new" and choose "Organization"
-
-  <img src="/docs/assets/img/setting-up-an-organization/create-organization-navigation-link.png" alt="Create Organization link" class="img-responsive img-bordered">
+   <img src="/docs/assets/img/setting-up-an-organization/create-organization-navigation-link.png" alt="Create Organization link" class="img-responsive img-bordered">
 
 2. Enter a name for your organization. While you type, Semaphore will check if
    the name is available.
-
-  <img src="/docs/assets/img/setting-up-an-organization/enter-organization-name.png" alt="Enter organization name" class="img-responsive img-bordered">
+   <img src="/docs/assets/img/setting-up-an-organization/enter-organization-name.png" alt="Enter organization name" class="img-responsive img-bordered">
 
 3. That's it, you're done.
 
