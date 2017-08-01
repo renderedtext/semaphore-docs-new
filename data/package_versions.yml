@@ -37,7 +37,7 @@ composer:
 
 docker:
   name: "Docker"
-  version: "1.12.6"
+  version: "17.06"
   url: "/docs/docker.html"
 
 docker-machine:
@@ -47,7 +47,7 @@ docker-machine:
 
 docker-compose:
   name: "docker-compose"
-  version: "1.12.0"
+  version: "1.14.0"
   url: "https://docs.docker.com/compose/"
 
 elasticsearch:
