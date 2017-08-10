@@ -53,7 +53,7 @@ These are the commands specified in your project's build settings. The current
 directory is set to `/home/runner/:project_name`.
 
 For language related questions please consult one of our dedicated
-guides found in the sidebar under Language Support.
+guides found in the sidebar, under Language Support.
 
 ### Export job result
 

@@ -9,8 +9,7 @@ manage your applications on any cloud. Semaphore has native
 integration for deployment through Cloud 66.
 
 Make sure your stack is deployed with Cloud 66. Learn more about [deploying
-Rails stacks with Cloud
-66](https://cloud66-help.helpscoutdocs.com/article/129-rails-stacks).
+Rails stacks with Cloud 66](https://cloud66-help.helpscoutdocs.com/article/129-rails-stacks).
 
 To get started, find your desired project and follow "Set Up Deployment" link
 under list of the branches.

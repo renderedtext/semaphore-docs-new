@@ -62,8 +62,7 @@ The Owners team is able to:
 
 ## Further reading
 
-- [More information about Semaphore
-  organizations](/docs/organizations/about-organizations.html)
+- [More information about Semaphore organizations](/docs/organizations/about-organizations.html)
 - [Setting up an organization](/docs/organizations/setting-up-an-organization.html)
 - [Adding a user to a team in an organization](/docs/organizations/adding-a-user-to-an-organization.html)
 - [Granting users permission to manage projects within an organization](/docs/organizations/granting-users-permission-to-manage-projects-within-an-organization.html)
