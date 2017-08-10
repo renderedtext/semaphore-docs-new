@@ -47,4 +47,5 @@ projects.
 
 ##Further reading
 
-You can learn more about organizations on [our organizations page](/docs/organizations.html).
+You can learn more about organizations on [our organizations
+page](/docs/organizations/about-organizations.html).

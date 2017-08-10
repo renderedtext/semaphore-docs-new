@@ -34,4 +34,4 @@ _Manage Organization_.
 
 ##Further reading
 
-- [Learn more about organizations](/docs/organizations.html)
+You can learn more about Semaphore organizations on [our organizations page](/docs/organizations/about-organizations.html)

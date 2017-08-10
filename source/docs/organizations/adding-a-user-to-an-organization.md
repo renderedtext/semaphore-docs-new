@@ -50,4 +50,5 @@ Once you have added a user to your organization, you will be able to:
 
 ##Further reading
 
-You can learn more about organizations on [our organizations page](/docs/organizations.html).
+You can learn more about organizations on [our organizations
+page](/docs/organizations/about-organizations.html).

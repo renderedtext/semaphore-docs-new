@@ -15,7 +15,7 @@ The dependencies will be automatically pulled the first time and
 
 ### Expectations
 
-[Expectations](http://jayfields.com/expectations) is described as
+[Expectations](https://github.com/clojure-expectations/expectations) is described as
 "a minimalist's unit testing framework" with the slogan "adding signal,
 removing noise".
 
