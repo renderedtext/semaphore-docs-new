@@ -5,7 +5,7 @@ category: Insights
 ---
 
 After you have [enabled Insights on a
-project](/docs/insights/inabling-insights.html) and you've ran a successful
+project](/docs/insights/enabling-insights.html) and you've ran a successful
 build, you will be able to access a report on your slowest test files. You can
 see the report by going to the project page and clicking the **Add-ons** link,
 and then following the **Insights** link.

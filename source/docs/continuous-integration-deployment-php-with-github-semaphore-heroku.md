@@ -5,7 +5,7 @@ category: PHP
 ---
 
 In this post we will show you how to set up continuous integration and deployment
-for a simple [Laravel]("http://laravel.com") web application through Semaphore.
+for a simple [Laravel](https://github.com/laravel/laravel) web application through Semaphore.
 You can find the application's source code
 [on GitHub](https://github.com/ervinb/php-base-app).
 

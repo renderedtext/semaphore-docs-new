@@ -91,7 +91,7 @@ curl -X POST \
      "https://api.semaphoreci.com/v2/shared_configs/${SHARED_CONFIG_ID}/env_vars"
 ```
 
-To [add a configuration file to the configuration](/docs/api-v2-config-files.html#create-config-file-within-a-shared-configuration):
+To [add a configuration file to the configuration](/docs/api-v2-config-files.html#create-a-config-file-within-a-shared-configuration):
 
 ``` bash
 export FILE_PATH=<path>

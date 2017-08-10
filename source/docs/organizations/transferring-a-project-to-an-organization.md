@@ -48,7 +48,7 @@ permission.
 
 ##Further reading
 
-- [Learn more about organizations](/docs/organizations.html)
+- [Learn more about Semaphore organizations](/docs/organizations/about-organizations.html)
 - [Setting up an organization](/docs/organizations/setting-up-an-organization.html)
 - [Limiting the permissions a user has on a specific project in an organization](/docs/organizations/can-i-limit-the-permissions-a-user-has-on-a-specific-project.html)
 - [Permission levels in an organization](/docs/organizations/permission-levels-in-an-organization.html)

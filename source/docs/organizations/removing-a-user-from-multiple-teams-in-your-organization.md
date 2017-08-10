@@ -24,5 +24,5 @@ they no longer require access to.
 
 ##Further reading
 
-- [Learn more about organizations](/docs/organizations.html)
+- [Learn more about Semaphore organizations](/docs/organizations/about-organizations.html)
 - [Limiting the permissions a user has on a project](/docs/organizations/can-i-limit-the-permissions-a-user-has-on-a-specific-project.html)

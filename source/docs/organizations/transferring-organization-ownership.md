@@ -22,4 +22,4 @@ if there are some active projects you have added in the organization.
 
 ##Further reading
 
-- [Learn more about organizations](/docs/organizations.html)
+- [Learn more about Semaphore organizations](/docs/organizations/about-organizations.html)

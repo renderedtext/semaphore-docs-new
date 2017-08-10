@@ -7,7 +7,7 @@ ansible:
 bower:
   name: "Bower"
   version: "1.7.9"
-  url: "https://bower.io/"
+  url: "https://github.com/bower/bower"
   hide_on_stack_table: true
 
 bundler:
@@ -124,7 +124,7 @@ gradle:
 grunt:
   name: "Grunt"
   version: "0.1.13"
-  url: "http://gruntjs.com"
+  url: "https://github.com/gruntjs/grunt"
   hide_on_stack_table: true
 
 heroku-cli:

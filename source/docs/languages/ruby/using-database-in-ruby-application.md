@@ -5,8 +5,8 @@ category: Ruby
 ---
 
 When a database engine is selected in project settings, Semaphore will
-generate a file `config/database.yml` with working [database
-access](/docs/databases.html) credentials.
+generate a file `config/database.yml` with working database
+access credentials.
 
 For Rails apps, project analysis also generates `bundle exec rake db:setup` and
 `bundle exec rake db:test:prepare` into your build commands, which is enough for
