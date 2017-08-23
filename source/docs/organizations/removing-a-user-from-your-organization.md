@@ -33,6 +33,16 @@ _Manage Organization_.
 5. Remove the user from the organization by clicking on **Remove Selected**.
 
  <img src="/docs/assets/img/removing-a-user-from-your-organization/remove-selected-member.png" alt="Remove selected member" class="img-responsive img-bordered">
+ 
+ __Note:__ 
+If related user has added at least one project to the organization, it is necessary to replace user-project association. As stated above, this can be performed by a member of the Owners team and the one needs to re-select repository by following [these steps](/docs/repository-settings.html) for a project. Also, in order to perform this action, the user has to have the same level of permissions for the repository as for [adding a project to Semaphore](/docs/adding-github-bitbucket-project-to-semaphore.html).
+
+Projects which are associated with the specific user can be listed as follows:
+
+1. In the top right corner of any Semaphore's page, click on your profile photo,
+then choose a relevant organization from the drop down menu.
+
+2. On the left side of the organization's page click on Projects.
 
 ##Further reading
 
