@@ -48,4 +48,13 @@ Now bundle localy and you are ready to build on Semaphore!
 
 As of November 2013 Semaphore supports saving and using custom configuration files, including SSH keys. [Follow this guide](/docs/adding-more-ssh-keys.html) to set up an additional SSH key which can give your build or deploy permissions to pull private dependencies.
 
-This option works only for 1 private gem and SSH key. If you have more than one, use one of the methods listed above.
+Since the Git client uses only the first key from the `ssh-agent` we'd like to suggest using one of the methods listed above.
+
+## Create a machine user on Github 
+
+If project's dependencies are hosted on the Github, you can enable Semaphore environment to fetch repositories with these steps:
+
+1. Create a [machine user](https://developer.github.com/v3/guides/managing-deploy-keys/#machine-users) with access to repositories
+2. Create new SSH key pair for the purpose of automation
+3. Add private SSH key to the project as a [configuration file](/docs/adding-more-ssh-keys.html) in the project settings
+4. Add the public SSH key to the user settings for the `machine user`
