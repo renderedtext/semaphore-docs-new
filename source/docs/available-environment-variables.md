@@ -62,15 +62,15 @@ Before running your build or deploy, Semaphore exports the following environment
       <td>Eg. rastasheep/my_project</td>
     </tr>
     <tr>
-      <td>SEMAPHORE_THREAD_RESULT</td>
+      <td>SEMAPHORE_JOB_RESULT</td>
       <td>Eg. failed</td>
     </tr>
     <tr>
-      <td>SEMAPHORE_CURRENT_THREAD</td>
+      <td>SEMAPHORE_CURRENT_JOB</td>
       <td>Eg. 1</td>
     </tr>
     <tr>
-      <td>SEMAPHORE_THREAD_COUNT</td>
+      <td>SEMAPHORE_JOB_COUNT</td>
       <td>Eg. 4</td>
     </tr>
     <tr>
