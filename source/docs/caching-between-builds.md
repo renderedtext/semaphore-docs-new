@@ -101,7 +101,7 @@ projects should install their dependencies with the following command, to utiliz
 caching:
 
 ```bash
-mkdir -p $SEMAPHORE_CACHE_DIR/node_modules
+mkdir -p $SEMAPHORE_CACHE_DIR/node_modules; rm -rf $SEMAPHORE_PROJECT_DIR/nested-project/node_modules
 ln -fs $SEMAPHORE_CACHE_DIR/node_modules $SEMAPHORE_PROJECT_DIR/nested-project/node_modules
 cd nested-project
 npm install
