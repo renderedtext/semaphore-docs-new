@@ -66,7 +66,8 @@ Now when `mix compile` populates `deps` and `_build` in the project directory
 (`$SEMAPHORE_PROJECT_DIR`), the artifacts go directly to Semaphore's cache directory.
 
 
-## Docker caching
+## <a name="docker-layer-caching" href="#docker-layer-caching">Docker layer
+caching</a>
 
 Docker images can be cached by using Docker's built-in `--cache-from`
 functionality, which is described in more detail on [this
