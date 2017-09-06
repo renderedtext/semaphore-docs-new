@@ -22,6 +22,7 @@ ignored_paths = %w(
 /security
 /press
 /about
+/support
 )
 
 # Ignored regular expression in paths eg. www.semaphoreci.com/docs/users?sign_in

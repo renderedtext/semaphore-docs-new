@@ -101,8 +101,13 @@ projects should install their dependencies with the following command, to utiliz
 caching:
 
 ```bash
-cd nested-project; npm --cache $SEMAPHORE_CACHE_DIR/node_modules install; cd -
+mkdir -p $SEMAPHORE_CACHE_DIR/node_modules; rm -rf $SEMAPHORE_PROJECT_DIR/nested-project/node_modules
+ln -fs $SEMAPHORE_CACHE_DIR/node_modules $SEMAPHORE_PROJECT_DIR/nested-project/node_modules
+cd nested-project; npm install; cd -
 ```
+
+NPM doesn't support changing the local installation path, so setting a path with
+[`--cache`](https://docs.npmjs.com/misc/config#cache) will not work. A workaround like above is needed.
 
 
 ## <a name="yarn" href="#yarn">Yarn</a>
@@ -114,7 +119,7 @@ projects should install their dependencies with the following command, to utiliz
 caching:
 
 ```bash
-cd nested-project; yarn install --modules-folder $SEMAPHORE_CACHE_DIR/nested-project-1-modules; cd -
+cd nested-project; yarn install --modules-folder $SEMAPHORE_CACHE_DIR/nested-project-modules; cd -
 ```
 
 
@@ -159,4 +164,4 @@ The `~/.hex` directory is cached only when [Elixir](/docs/elixir-continuous-inte
 is selected in Project Settings.
 
 
-If we are not caching packages of your favourite language, please [let us know](mailto:semaphore+docscachepage@renderedtext.com) how you are using them and we will expand our system.
+If we are not caching packages of your favourite language, please [let us know](/support) how you are using them and we will expand our system.
