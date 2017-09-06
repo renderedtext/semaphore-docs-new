@@ -14,11 +14,13 @@ the relevant language is selected in Project Settings.
 - [Caching additional directories](#additional-dir-caching)
 - [Docker layer caching](#docker-layer-caching)
 
-For caching nested directories, see the package manager specific sections:
+Package manager specific sections, including examples for caching dependencies
+for nested projects:
 
 - [Bundler](#bundler)
 - [NPM](#npm)
 - [Yarn](#yarn)
+- [Composer](#composer)
 - [Hex](#hex)
 - [Gradle](#gradle)
 - [Maven](#maven)
@@ -80,6 +82,14 @@ language.
 Semaphore assumes that the gems are installed to the default `.bundle`, or to
 `vendor/bundle` with `bundle install --path vendor/bundle`.
 
+As only the top-level `.bundle` and `vendor/bundle` directories are cached automatically,
+nested projects should install their dependencies with the following command, to utilize
+caching:
+
+```
+cd nested-project; bundle install --path $SEMAPHORE_CACHE_DIR/bundle; cd -
+```
+
 
 ## <a name="npm" href="#npm">NPM</a>
 
@@ -119,6 +129,20 @@ In case of multiple nested projects, each one can have its own cache directory:
 ```bash
 cd nested-project-1; yarn install --modules-folder $SEMAPHORE_CACHE_DIR/nested-project-1-modules; cd -
 cd nested-project-1; yarn install --modules-folder $SEMAPHORE_CACHE_DIR/nested-project-2-modules; cd -
+```
+
+## <a name="composer" href="#composer">Composer</a>
+
+Composer dependencies are cached only if PHP is selected in Project Settings.
+Semaphore assumes that the Composer cache is in `vendor` or in `~/.composer`.
+
+
+As only the top-level `vendor` directory is cached automatically, nested
+projects should install their dependencies with the following command, to utilize
+caching:
+
+```bash
+cd nested-project; COMPOSER_CACHE_DIR=$SEMAPHORE_CACHE_DIR/composer-cache composer install; cd -
 ```
 
 ## <a name="gradle" href="#gradle">Gradle</a>
