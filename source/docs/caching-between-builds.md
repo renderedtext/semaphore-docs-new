@@ -42,8 +42,8 @@ vendor/bundle
 node_modules
 ```
 
-The generic cache directory `.semaphore-cache` is located in `/home/runner/your-app/.semaphore-cache`.
-The full path is available in `SEMAPHORE_CACHE_DIR` environment variable. In
+The generic `.semaphore-cache` directory is located in `/home/runner/your-app/.semaphore-cache`.
+The full path is available in the `$SEMAPHORE_CACHE_DIR` environment variable. In
 case you need to download a lot of dependencies, it's a good idea to keep them
 in this cache directory.
 
