@@ -54,7 +54,7 @@ Often, it's beneficial to cache generic directories as well, besides the
 project dependencies. For this, utilizing symlinks is a good approach.
 
 In the following example, the `_build` and `deps` directories are cached for `mix`, a
-popular Elixir build tool.
+popular [Elixir](/docs/elixir-continuous-integration.html) build tool.
 
 ```bash
 mkdir -p $SEMAPHORE_CACHE_DIR/{_build,deps}
@@ -66,8 +66,7 @@ Now when `mix compile` populates `deps` and `_build` in the project directory
 (`$SEMAPHORE_PROJECT_DIR`), the artifacts go directly to Semaphore's cache directory.
 
 
-## <a name="docker-layer-caching" href="#docker-layer-caching">Docker layer
-caching</a>
+## <a name="docker-layer-caching" href="#docker-layer-caching">Docker layer caching</a>
 
 Docker images can be cached by using Docker's built-in `--cache-from`
 functionality, which is described in more detail on [this
