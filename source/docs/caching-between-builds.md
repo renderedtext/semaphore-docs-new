@@ -104,13 +104,6 @@ caching:
 cd nested-project; npm --cache $SEMAPHORE_CACHE_DIR/node_modules install; cd -
 ```
 
-In case of multiple nested projects, each one can have its own cache directory:
-
-```bash
-cd nested-project-1; npm --cache $SEMAPHORE_CACHE_DIR/nested-project-1-modules install; cd -
-cd nested-project-2; npm --cache $SEMAPHORE_CACHE_DIR/nested-project-2-modules install; cd -
-```
-
 
 ## <a name="yarn" href="#yarn">Yarn</a>
 
@@ -124,12 +117,6 @@ caching:
 cd nested-project; yarn install --modules-folder $SEMAPHORE_CACHE_DIR/nested-project-1-modules; cd -
 ```
 
-In case of multiple nested projects, each one can have its own cache directory:
-
-```bash
-cd nested-project-1; yarn install --modules-folder $SEMAPHORE_CACHE_DIR/nested-project-1-modules; cd -
-cd nested-project-1; yarn install --modules-folder $SEMAPHORE_CACHE_DIR/nested-project-2-modules; cd -
-```
 
 ## <a name="composer" href="#composer">Composer</a>
 
