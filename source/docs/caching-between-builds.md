@@ -70,7 +70,7 @@ Now when `mix compile` populates `deps` and `_build` in the project directory
 
 Docker images can be cached by using Docker's built-in `--cache-from`
 functionality, which is described in more detail on [this
-page](/docs/docker/docker-layer-caching).
+page](/docs/docker/docker-layer-caching.html).
 
 
 ## <a name="bundler" href="#bundler">Bundler</a>
