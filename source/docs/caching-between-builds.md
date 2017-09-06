@@ -108,6 +108,9 @@ npm install
 cd -
 ```
 
+NPM doesn't support changing the local installation path, so setting a path with
+[`--cache`](https://docs.npmjs.com/misc/config#cache) will not work. A workaround like above is needed.
+
 
 ## <a name="yarn" href="#yarn">Yarn</a>
 
