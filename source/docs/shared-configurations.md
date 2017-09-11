@@ -87,7 +87,7 @@ export ENV_VAR_CONTENT=<content>
 
 curl -X POST \
      -H "Authorization: Token ${AUTH_TOKEN}" \
-     -d "{ \"name\" : \"${ENV_VAR_NAME}\" , \"content\" : \"${ENV_VAR_CONTENT}\" }' \
+     -d "{ \"name\" : \"${ENV_VAR_NAME}\" , \"content\" : \"${ENV_VAR_CONTENT}\" }" \
      "https://api.semaphoreci.com/v2/shared_configs/${SHARED_CONFIG_ID}/env_vars"
 ```
 
