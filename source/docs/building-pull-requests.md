@@ -4,15 +4,25 @@ title: Building pull requests
 category: Getting started
 ---
 
-Semaphore supports building pull requests from forked repositories for projects
-hosted on GitHub. Every time a new pull request is opened, Semaphore creates
-a new branch whose name matches the pull request title and number.
+When monitoring pull requests, Semaphore has two main build workflows:
 
-<img src="/docs/assets/img/building-pull-requests/pull-requests.png" class="img-responsive">
+1) For direct pushes to the main repository, Semaphore automatically creates a
+new build, regardless of whether a pull request has been opened or not.  In
+this case, Semaphore does the equivalent of `git checkout <branch-name> && git
+reset --hard <commit-id>`.
 
-Since Semaphore automatically builds branches that are created within a
-repository, it doesn't support building pull requests that are opened within the
-same repository.
+2) For pushes to forked repositories, Semaphore will start a build after a pull
+request has been opened between the main and the forked repository. The pull
+request title and number will appear on the Semaphore project page as a link
+to the full build history.
 
-Because of technical limitations of its API, Semaphore does not support building
-pull requests for projects that are hosted on Bitbucket.
+In this case, Semaphore pulls the the refs/pulls references from the main
+repository with `git fetch +refs/pull/<pull-request-number>/head: && git reset
+--hard <commit-id>`, a [workflow documented by
+Github](https://help.github.com/articles/checking-out-pull-requests-locally/#platform-linux).
+
+After a pull request has been closed, Semaphore will no longer run builds for
+that pull request.
+
+Because of technical limitations of the Bitbucket API, Semaphore does not
+support building pull requests for projects that are hosted on Bitbucket.
