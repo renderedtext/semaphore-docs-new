@@ -97,3 +97,27 @@ variables](/docs/available-environment-variables.html) which might be useful to
 you. You can also [install additional
 packages](/docs/how-to-install-dependency.html) with commands like `sudo apt-get
 install -y something`.
+
+## Customizing command timeout
+
+The default timeout for build commands on Semaphore is 60 minutes.
+This means that if Semaphore detects that a command has been running longer than
+that, it will automatically stop and fail the build.
+
+Tasks such as compiling large binaries, provisioning big infrastructures, or
+running tests that are difficult to parallelize sometimes require more time than
+that.
+
+On the other hand, you may want to reduce the timeout in order to prevent a test
+suite from getting stuck because of an accidental debug statement or a network
+call that will never complete.
+
+For this reason, Semaphore allows to configure a build command timeout on a
+per-project basis. To do that, as project admin:
+
+- Go to project settings
+- Open "Admin" tab
+- Find the "Build options" section
+- Set a new value of "Command timeout".
+
+Options range from 15 minutes to 180 minutes, in increments of 15 minutes.
