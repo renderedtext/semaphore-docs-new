@@ -6,6 +6,33 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1709 - 2017-09-26
+```md
+- additions
+  - elixir 1.5.1
+  - go 1.9
+  - node.js 8.5.0
+  - ruby 2.2.8
+  - ruby 2.3.5
+  - ruby 2.4.2
+- upgrades
+  - chromedriver 2.30 -> 2.32
+  - git 2.13.0 -> 2.14.1
+  - google-chrome 59.0.3071.115 ->  61.0.3163.91
+  - gradle 4.0 -> 4.1
+  - java 1.7 u131 -> u151
+  - java 1.8 u131 -> u144
+  - node.js 6.11.1 -> 6.11.3
+  - php 7.0.21 -> 7.0.23
+  - php 7.1.7 -> 7.1.9
+  - rabbitmq 3.6.10 -> 3.6.12
+  - redis 3.2.9 -> 4.0.1
+  - rubygems 2.4.8 -> 2.6.13
+  - scala 2.12.2 -> 2.12.3
+  - virtualenv 14.0.6 -> 15.1.0
+  - yarn 0.27.5 -> 1.0.2
+```
+
 ### 1707 - 2017-07-25
 
 ```md
