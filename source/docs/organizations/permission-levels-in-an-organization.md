@@ -41,6 +41,7 @@ The teams with the _Admin_ permission level can:
 - Access projects
 - Change settings
 - Add branches
+- Expire dependency cache
 - Manually trigger builds and deploys
 - Start SSH sessions
 - Add and remove projects from the organization account
@@ -52,6 +53,7 @@ The Owners team is able to:
 - Access projects
 - Change settings
 - Add branches
+- Expire dependency cache
 - Manually trigger builds and deploys
 - Start SSH sessions
 - Add and remove projects from the organization account
