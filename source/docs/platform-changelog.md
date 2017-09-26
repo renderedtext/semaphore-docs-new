@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1709 - 2017-09-26 (planned)
+### 1709 - 2017-09-26
 ```md
 - additions
   - elixir 1.5.1
@@ -23,6 +23,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - gradle 4.0 -> 4.1
   - java 1.7 u131 -> u151
   - java 1.8 u131 -> u144
+  - jruby 9.1.12 -> 9.1.13
   - node.js 6.11.1 -> 6.11.3
   - php 7.0.21 -> 7.0.23
   - php 7.1.7 -> 7.1.9
