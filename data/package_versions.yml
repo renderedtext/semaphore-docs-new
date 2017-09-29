@@ -264,7 +264,7 @@ php:
     - "7.0.23"
     - "7.1.9"
   default:
-    - "5.6.30"
+    - "5.6.31"
   url: "/docs/php.html"
 
 phpbrew:
