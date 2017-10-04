@@ -17,3 +17,9 @@ index.number_of_replicas: 0
 ```
 
 The `elasticsearch` service is configured to run automatically.
+
+If you want to stop the `elasticsearch` service for your builds you can run:
+
+```bash
+sudo service elasticsearch stop
+```
