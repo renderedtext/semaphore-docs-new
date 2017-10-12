@@ -182,6 +182,37 @@ The possible `rel` values are:
 
 It's advised to form calls with Link header values instead of constructing your
 own URLs.
+        
+### Cross Origin Resource Sharing
+
+The API supports Cross Origin Resource Sharing (CORS) for AJAX requests from any origin.
+You can read the [CORS W3C Recommendation](https://www.w3.org/TR/cors/), or 
+[this intro](https://code.google.com/archive/p/html5security/wikis/CrossOriginRequestSecurity.wiki) 
+from the HTML 5 Security Guide.
+        
+Here's a sample request sent from a browser hitting `api.semaphoreci.com`:
+        
+``` bash
+curl -I https://api.semaphoreci.com/v2
+        
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-max-age: 86400
+access-control-allow-headers: Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Accept-Encoding, X-Requested-With
+access-control-allow-methods: GET, POST, PATCH, PUT, DELETE
+```
+        
+This is what the CORS preflight request looks like:
+        
+``` bash
+curl -I -X OPTIONS https://api.semaphoreci.com/v2
+        
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-max-age: 86400
+access-control-allow-headers: Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since, Accept-Encoding, X-Requested-With
+access-control-allow-methods: GET, POST, PATCH, PUT, DELETE
+```
 
 ### Stability
 
