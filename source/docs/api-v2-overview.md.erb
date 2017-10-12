@@ -185,12 +185,15 @@ own URLs.
         
 ### Cross Origin Resource Sharing
 
-The API supports Cross Origin Resource Sharing (CORS) for AJAX requests from any origin.
-You can read the [CORS W3C Recommendation](https://www.w3.org/TR/cors/), or 
+The Semaphore API supports Cross Origin Resource Sharing (CORS) for AJAX requests 
+from any origin.
+        
+For more information about Cross Origin Resource Sharing, you can read the 
+[CORS W3C Recommendation](https://www.w3.org/TR/cors/), or 
 [this intro](https://code.google.com/archive/p/html5security/wikis/CrossOriginRequestSecurity.wiki) 
 from the HTML 5 Security Guide.
         
-Here's a sample request sent from a browser hitting `api.semaphoreci.com`:
+Here's a sample request sent from a browser hitting `api.semaphoreci.com/v2`:
         
 ``` bash
 curl -I https://api.semaphoreci.com/v2
