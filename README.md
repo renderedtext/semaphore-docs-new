@@ -114,7 +114,7 @@ For example, to fetch and use the API spec release '2.8.1' use the following sni
 in the root of the project:
 
 ``` bash
-wget 's3://api-v2-specs.semaphoreci.com/api_specs_2_8_1.json' -O api_v2_specification.json
+wget 'http://api-v2-specs.semaphoreci.com/api_specs_2_8_1.json' -O api_v2_specification.json
 ```
 
 To list all available API specs releases, visit `http://api-v2-specs.semaphoreci.com`.
