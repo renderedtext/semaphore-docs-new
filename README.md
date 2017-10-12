@@ -107,6 +107,14 @@ canonical url in the post meta data. For more info, visit the Semaphore Blog
 
 ## Updating APIv2 docs
 
+To update the API v2 docs that are generated from the API specification file, 
+you need to update the specification file in the root of the repo:
+
+For example, to fetch and use the API spec release '2.8.1' use the following snippet
+in the root of the project:
+
+``` bash
+wget 'http://api-v2-specs.semaphoreci.com/api_specs_2_8_1.json' -O api_v2_specification.json
 ```
-./update-api-v2-files
-```
+
+To list all available API specs releases, visit `http://api-v2-specs.semaphoreci.com`.
