@@ -6,6 +6,31 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1710 - 2017-10-24 (planned)
+```md
+- additions
+  - gcc 4.9
+  - git-lfs 2.3.3
+  - node.js 8.7.0
+- upgrades
+  - ansible 2.3 -> 2.4
+  - cassandra 3.11 -> 3.11.1
+  - chromedriver 2.32 -> 2.33
+  - elixir 1.5.1 -> 1.5.2
+  - git 2.14.1 -> 2.14.2
+  - go 1.8.3 -> 1.8.4
+  - go 1.9 -> 1.9.1
+  - google-chrome 61.0.3163.91 -> 61.0.3163.100
+  - heroku cli 6.14.24 -> 6.14.34
+  - mysql 5.6.37 -> 5.6.38
+  - node.js 6.11.3 -> 6.11.4
+  - redis 4.0.1 -> 4.0.2
+  - rubygems 2.6.13 -> 2.6.14
+  - yarn 1.0.2 -> 1.2.1
+- configuration
+  - default node.js set to 4.8.4
+```
+
 ### 1709 - 2017-09-26
 ```md
 - additions
