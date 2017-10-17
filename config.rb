@@ -39,9 +39,9 @@ ApiV2.specification.resources.each do |resource|
 end
 
 
-CLI["namespaces"].each do |cli_namespace|
+CLI.structure["namespaces"].each do |cli_namespace|
   proxy "/docs/cli-#{cli_namespace["name"]}.html",
-        "/docs/cli-resource.html",
+        "/docs/cli-namespace.html",
         :locals => { :namespace => cli_namespace },
         :ignore => true
 end
