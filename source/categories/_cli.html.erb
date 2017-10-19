@@ -4,7 +4,7 @@
   <a href="/docs/cli-overview.html" class="link-reset db normal black-50 hover-black-80 pv1">Overview</a>
 
   <% CLI.structure["namespaces"].each do |cli_namespace| %>
-    <% name = cli_namespace["name"].split("-").map(&:capitalize).join(" ") %>
+    <% name = CLI.page_title(cli_namespace) %>
     <% link = "/docs/cli-#{cli_namespace["name"].split(" ").join("-")}.html" %>
 
     <div hidden="true" class="article-key"><%= name %></div>

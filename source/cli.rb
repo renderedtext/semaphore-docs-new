@@ -5,6 +5,13 @@ module CLI
     JSON.parse(File.read("cli_structure.json"))
   end
 
+  def self.page_title(namespace)
+    namespace["name"]
+      .split("-")
+      .map(&:capitalize)
+      .join(" ")
+  end
+
   def self.toc(namespace)
     list = all_commands_in_namespace(namespace).map do |cmd|
       title = cmd["desc"].capitalize
