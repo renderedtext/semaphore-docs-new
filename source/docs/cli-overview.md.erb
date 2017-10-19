@@ -1,0 +1,87 @@
+---
+category: Semaphore CLI
+layout: post
+title: "Semaphore CLI: Overview"
+---
+
+The Semaphore Command Line Interface (CLI), is a tool for creating and managing
+Semaphore projects from the command line / shell of various operating systems.
+It is built with Ruby and the code is [open sourced](https://github.com/renderedtext/cli).
+
+If you have any problems or requests please contact [support](https://semaphoreci.com/support),
+or [open an issue in the CLI repository on GitHub](https://github.com/renderedtext/cli/issues).
+
+<%= toc %>
+
+### Prerequisites and installation
+
+The Semaphore CLI requires Ruby >= 2.0 to run.
+
+Verify that you have an up to date Ruby on your system before installation:
+
+``` bash
+$ ruby --version
+ruby 2.0.0p648 (2015-12-16 revision 53162) [universal.x86_64-darwin16]
+```
+
+The Semaphore CLI is installed as a gem. Run the following command to install
+the CLI:
+
+``` bash
+$ gem install sem
+```
+
+Verify that the installation succeded:
+
+``` bash
+$ sem version
+0.6.2
+```
+
+### Authentication
+
+To manage resources on Sempahore, you need to log in to Semaphore from the
+command line:
+
+``` bash
+$ sem login --auth-token <your-auth-token>
+```
+
+You can find your authentication token on the bottom of
+[your user edit page](https://semaphoreci.com/users/edit).
+
+To log out, run the following:
+
+``` bash
+$ sem logout
+```
+
+### Using the CLI
+
+
+
+### Troubleshooting
+
+The Semaphore CLI can display all the API requests that can help with identifying
+issues. This mode is called _trace_ mode.
+
+To run the CLI in trace mode, pass the `--trace` flag to the CLI:
+
+``` bash
+$ sem orgs:list --trace
+
+I, [2017-10-19T17:01:26.406390 #20526]  INFO -- : get https://api.semaphoreci.com/v2/orgs
+I, [2017-10-19T17:01:27.297507 #20526]  INFO -- Status: 200
+D, [2017-10-19T17:01:27.297583 #20526] DEBUG -- response: [{"id":"76b2b973-a07c-4336-af1c-b10c6bf1f6d5","name":"renderedtext","username":"renderedtext","url":"https://api.semaphoreci.com/v2/orgs/renderedtext","projects_url":"https://api.semaphoreci.com/v2/orgs/renderedtext/projects","users_url":"https://api.semaphoreci.com/v2/orgs/renderedtext/users","teams_url":"https://api.semaphoreci.com/v2/orgs/renderedtext/teams","shared_configs_url":"https://api.semaphoreci.com/v2/orgs/renderedtext/shared_configs","created_at":"2017-02-07T17:13:14+01:00","updated_at":"2017-03-09T08:00:31+01:00"}]
+
+ID                                    NAME
+76b2b973-a07c-4336-af1c-b10c6bf1f6d5  renderedtext
+```
+
+### Remove Semaphore CLI from your system
+
+To remove the Semaphore CLI from your system, run the following command:
+
+``` bash
+$ gem uninstall sem
+```
