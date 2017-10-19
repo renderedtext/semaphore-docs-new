@@ -7,20 +7,18 @@ category: Semaphore CLI
 
 <%= CLI.toc(namespace) %>
 
-<% namespace["commands"].each do |command| %>
+<% CLI.all_commands_in_namespace(namespace).each do |command| %>
 
 ### <%= command["desc"].capitalize %>
-
-<%= command["long-decs"] %>
 
 ``` bash
 $ <%= command["shell"] %>
 ```
 
-<% if command["options"].size > 0 %>
-##### Options
-
-<%= CLI.options_table(command) %>
+<% if command["flags"].size > 0 %>
+<%= CLI.flags_table(command) %>
 <% end %>
+
+<%= command["long_desc"] %>
 
 <% end %>

@@ -6,9 +6,9 @@ module CLI
   end
 
   def self.toc(namespace)
-    list = namespace["commands"].map do |cmd|
-      title = cmd["desc"]
-      href = title.split(" ").join("-")
+    list = all_commands_in_namespace(namespace).map do |cmd|
+      title = cmd["desc"].capitalize
+      href = cmd["desc"].split(" ").join("-")
 
       "<li><a href='##{href}'>#{title}</a></li>"
     end
@@ -16,24 +16,38 @@ module CLI
     "<ol type='i'>#{list.join("\n")}</ol>"
   end
 
-  def self.options_table(command)
+  def self.flags_table(command)
     header = [
-      ["Option", "Description"],
-      ["------", "-----------"]
+      ["Flag", "Description"],
+      ["----", "-----------"]
     ]
 
-    data = command["options"].map do |opt|
-      option = "-#{opt["alias"]}, --#{opt["name"]}"
+    data = command["flags"].map do |f|
+      flag = []
+      flag << "-#{f["alias"]}" if f["alias"]
+      flag << "--#{f["name"]}"
+      flag = flag.join(", ")
 
-      desc = ""
-      desc += "__required__" if opt["required"]
-      desc += "default: #{opt["default"]}" if opt["required"]
+      description = []
+      description << "__required__" if f["required"]
+      description << "default: #{f["default"]}" if f["default"]
+      description = description.join(", ")
 
-      [option, desc]
+      description = f["desc"] + ".<br>" + description if f["desc"] != ""
+
+      [flag, description]
     end
 
     rows = (header + data).map { |row| "| #{row.join(" | ")} |" }
 
     "\n" + rows.join("\n") + "\n"
+  end
+
+  def all_commands_in_namespace(namespace)
+    nested_commands = namespace["namespaces"].map do |ns|
+      all_commands_in_namespace(ns)
+    end.flatten
+
+    namespace["commands"] + nested_commands
   end
 end
