@@ -15,17 +15,15 @@ or [open an issue in the CLI repository on GitHub](https://github.com/renderedte
 
 ### Prerequisites and installation
 
-The Semaphore CLI requires Ruby >= 2.0 to run.
-
-Verify that you have an up to date Ruby on your system before installation:
+The Semaphore CLI requires Ruby >= 2.0 to run to run on your system. Before
+installation, verify that you have an up to date Ruby on your system.
 
 ``` bash
 $ ruby --version
 ruby 2.0.0p648 (2015-12-16 revision 53162) [universal.x86_64-darwin16]
 ```
 
-The Semaphore CLI is installed as a gem. Run the following command to install
-the CLI:
+The Semaphore CLI is installed as a gem. Run the following command:
 
 ``` bash
 $ gem install sem
@@ -50,7 +48,7 @@ $ sem login --auth-token <your-auth-token>
 You can find your authentication token on the bottom of
 [your user edit page](https://semaphoreci.com/users/edit).
 
-To log out, run the following:
+To log out, execute the following:
 
 ``` bash
 $ sem logout
@@ -58,7 +56,101 @@ $ sem logout
 
 ### Using the CLI
 
+To explore the capabilities of the command line tool, start by running the `help`
+command that displays the list of available commands.
 
+``` bash
+$ sem help
+
+Usage: sem [command]
+
+Command list, type sem help [command] for more details:
+
+  version         Check cli version
+  login           Log in to semaphore from the command line
+  logout          Log out from semaphore
+
+  orgs            Manage organizations
+  teams           Manage teams and team membership
+  shared-configs  Manage shared configurations
+  projects        Manage projects
+
+```
+
+To explore subcommands available in a namespace, run the `help` and pass it the
+name of the command you want to explore further.
+
+``` bash
+$ sem help teams
+
+Usage: sem teams:[command]
+
+Manage teams and team membership
+
+Command list, type sem help teams:[command] for more details:
+
+  teams:list                   List all your teams
+  teams:info                   Show information about a team
+  teams:create                 Create a new team
+  teams:rename                 Change the name of the team
+  teams:set-permission         Set the permission level of the team
+  teams:delete                 Removes a team from your organization
+
+  teams:members:list           List members of the team
+  teams:members:add            Add a user to the team
+  teams:members:remove         Remove a user from the team
+
+  teams:projects:list          List projects in a team
+  teams:projects:add           Add a project to a team
+  teams:projects:remove        Remove a project from the team
+
+  teams:shared-configs:list    List shared configurations in a team
+  teams:shared-configs:add     Add a shared configuration to a team
+  teams:shared-configs:remove  Removes a shared configuration from the team
+
+```
+
+To get a help for a specific command, run the `help` command and pass in the
+name of the command:
+
+``` bash
+$ sem help teams:create
+
+Usage: sem teams:create [TEAM_NAME] [FLAGS]
+
+Create a new team
+
+Flags:
+  --permission PERMISSION  Permission level of the team in the organization
+
+Examples:
+
+    $ sem teams:create renderedtext/interns
+    ID          1bc7ed43-ac8a-487e-b488-c38bc757a034
+    Name        renderedtext/interns
+    Permission  read
+    Members     0 members
+    Created     2017-08-01 13:14:40 +0200
+    Updated     2017-08-02 13:14:40 +0200
+
+    $ sem teams:create renderedtext/devs --permission edit
+    ID          1bc7ed43-ac8a-487e-b488-c38bc757a034
+    Name        renderedtext/devs
+    Permission  edit
+    Members     0 members
+    Created     2017-08-01 13:14:40 +0200
+    Updated     2017-08-02 13:14:40 +0200
+
+    $ sem teams:create renderedtext/admins --permission admin
+    ID          1bc7ed43-ac8a-487e-b488-c38bc757a034
+    Name        renderedtext/admins
+    Permission  admin
+    Members     0 members
+    Created     2017-08-01 13:14:40 +0200
+    Updated     2017-08-02 13:14:40 +0200
+```
+
+The `help` command will always display an example use case of the command.
 
 ### Troubleshooting
 
