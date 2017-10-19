@@ -1,0 +1,14 @@
+<div class="pl4 mb3 category-div" hidden="true">
+
+  <div hidden="true" class="article-key">CLI Overview</div>
+  <a href="/docs/cli-overview.html" class="link-reset db normal black-50 hover-black-80 pv1">Overview</a>
+
+  <% CLI.structure["namespaces"].each do |cli_namespace| %>
+    <% name = cli_namespace["name"].split("-").map(&:capitalize).join(" ") %>
+    <% link = "/docs/cli-#{cli_namespace["name"].split(" ").join("-")}.html" %>
+
+    <div hidden="true" class="article-key"><%= name %></div>
+    <a href="<%= link %>" class="link-reset db normal black-50 hover-black-80 pv1"><%= name %></a>
+  <% end %>
+
+</div>

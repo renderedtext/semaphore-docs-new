@@ -8,7 +8,9 @@ require "raml_parser"
 
 require "./source/docs_renderer"
 require "./source/docs_helpers"
+
 require "./source/api_v2"
+require "./source/cli"
 
 helpers DocsHelpers
 
@@ -28,10 +30,19 @@ activate :s3_sync do |s3_sync|
   s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
 end
 
+
 ApiV2.specification.resources.each do |resource|
   proxy "/docs/api-v2-#{resource.name.gsub("_", "-")}.html",
         "/docs/api-v2-resource.html",
         :locals => { :resource => resource },
+        :ignore => true
+end
+
+
+CLI.structure["namespaces"].each do |cli_namespace|
+  proxy "/docs/cli-#{cli_namespace["name"]}.html",
+        "/docs/cli-namespace.html",
+        :locals => { :namespace => cli_namespace },
         :ignore => true
 end
 

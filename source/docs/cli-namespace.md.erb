@@ -1,0 +1,24 @@
+---
+layout: post
+category: Semaphore CLI
+---
+
+<% content_for :title, "Semaphore CLI: #{namespace["name"].capitalize}" %>
+
+<%= CLI.toc(namespace) %>
+
+<% CLI.all_commands_in_namespace(namespace).each do |command| %>
+
+### <%= command["desc"].capitalize %>
+
+``` bash
+$ <%= command["shell"] %>
+```
+
+<% if command["flags"].size > 0 %>
+<%= CLI.flags_table(command) %>
+<% end %>
+
+<%= command["long_desc"] %>
+
+<% end %>
