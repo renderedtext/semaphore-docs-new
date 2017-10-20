@@ -10,7 +10,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ```md
 - additions
   - gcc 4.9
-  - git-lfs 2.3.3
+  - git-lfs 2.3.4
   - node.js 8.7.0
 - upgrades
   - ansible 2.3 -> 2.4
@@ -20,8 +20,9 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - git 2.14.1 -> 2.14.2
   - go 1.8.3 -> 1.8.4
   - go 1.9 -> 1.9.1
-  - google-chrome 61.0.3163.91 -> 61.0.3163.100
-  - heroku cli 6.14.24 -> 6.14.34
+  - google-chrome 61.0.3163.91 -> 62.0.3202.62
+  - heroku cli 6.14.24 -> 6.14.35
+  - leiningen 2.7.1 -> 2.8.0
   - mysql 5.6.37 -> 5.6.38
   - node.js 6.11.3 -> 6.11.4
   - redis 4.0.1 -> 4.0.2
