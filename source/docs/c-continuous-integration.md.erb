@@ -10,10 +10,14 @@ build tools such as gcc, g++ and Make. You can also leverage
 [caching between builds](/docs/caching-between-builds.html) by copying relevant
 assets to the `.semaphore-cache` directory.
 
-The Semaphore stack includes:
+The Semaphore stack includes the following GCC/G++ versions:
 
-- [<%= package_name("gcc") %>](<%= package_url("gcc") %>)
-(<%= package_version("gcc") %>)
+<% package_versions("gcc").each do |version| %>
+  - <%= version %>
+<% end %>
+
+To switch between versions, add `change-gcc-version <version>` (eg.
+`change-gcc-version 4.9`).
 
 The list of all packages and versions is available on the
 [supported application stack](/docs/supported-stack.html) page.
