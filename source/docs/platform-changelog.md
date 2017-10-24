@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1710 - 2017-10-24 (planned)
+### 1710 - 2017-10-24
 ```md
 - additions
   - gcc 4.9

@@ -14,3 +14,7 @@ commands](/docs/customizing-build-commands.html):
 
 __Note:__ An `-y` option must be used in order to prevent APT from
 requesting an input and blocking a build.
+
+For a more efficient method, use `install-package` with the `--update-new`
+flag. More information can be found
+[here](/docs/how-to-install-dependency.html#caching-installations).
