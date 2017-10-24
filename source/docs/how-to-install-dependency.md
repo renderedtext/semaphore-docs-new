@@ -23,8 +23,7 @@ sudo apt-get update
 ### <a name="caching-installations" href="#caching-installations">Caching installations</a>
 
 An improvement over the steps above, is to use `install-package` instead. It's
-main purpose is to cache installations from APT. Currently, it supports package
-versions, but no `apt-get` options. It can be used as described below, without
+main purpose is to cache installations from APT. It can be used as described below, without
 using `sudo` or running `apt-get update`. If you're using a third party PPA,
 make sure that it's added beforehand.
 
@@ -52,8 +51,7 @@ install-package dependency-1 dependency-2=0.11.2-1
 
 Example:
 
-  $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv
-  2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+  $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
 
   $ echo "deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/testing multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
 
