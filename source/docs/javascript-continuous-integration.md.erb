@@ -12,8 +12,20 @@ is required.
 
 Semaphore also lets you select a version of Node.js to be used in the build
 and deploy environment and includes the most popular package management and
-task running tools preinstalled. Your project dependencies are also
-automatically cached and reused across builds.
+task running tools preinstalled.
+
+#### Dependency Management
+
+Your project dependencies are automatically cached and reused across builds.
+There is no need for additional configuration for cache.
+
+Unfortuantely, there's currently no automatic setup for Yarn. To use Yarn for
+dependency management, use the following setup commands:
+
+```
+yarn config set cache-folder "$SEMAPHORE_CACHE_DIR/yarn"
+yarn --frozen-lockfile
+```
 
 <h4>JavaScript essentials</h4>
 <ul>
