@@ -20,7 +20,7 @@ At the start of your build settings you should have the following:
 sudo apt-get update
 ```
 
-### Caching installations
+### <a name="caching-installations" href="#caching-installations">Caching installations</a>
 
 An improvement over the steps above, is to use `install-package` instead. It's
 main purpose is to cache installations from APT. Currently, it supports package
