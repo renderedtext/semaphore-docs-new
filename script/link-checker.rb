@@ -32,7 +32,13 @@ options = {
   :extension => ".html",
   :allow_hash_href => true,
   :alt_ignore => [/.*/],
-  :url_ignore => ignored_paths
+  :url_ignore => ignored_paths,
+  :typhoeus =>
+  {
+    :followlocation => true,
+    :connecttimeout => 10,
+    :timeout => 30
+  }
 }
 
 puts ">> Installing html-proofer"
