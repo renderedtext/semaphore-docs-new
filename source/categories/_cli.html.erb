@@ -3,12 +3,16 @@
   <div hidden="true" class="article-key">CLI Overview</div>
   <a href="/docs/cli-overview.html" class="link-reset db normal black-50 hover-black-80 pv1">Overview</a>
 
-  <% CLI.structure["namespaces"].each do |cli_namespace| %>
-    <% name = CLI.page_title(cli_namespace) %>
-    <% link = "/docs/cli-#{cli_namespace["name"].split(" ").join("-")}.html" %>
+  <div hidden="true" class="article-key">Semaphore CLI: Organizations</div>
+  <a href="/docs/cli-organizations.html" class="link-reset db normal black-50 hover-black-80 pv1">Organizations</a>
 
-    <div hidden="true" class="article-key"><%= name %></div>
-    <a href="<%= link %>" class="link-reset db normal black-50 hover-black-80 pv1"><%= name %></a>
-  <% end %>
+  <div hidden="true" class="article-key">Semaphore CLI: Teams</div>
+  <a href="/docs/cli-teams.html" class="link-reset db normal black-50 hover-black-80 pv1">Teams</a>
+
+  <div hidden="true" class="article-key">Semaphore CLI: Projects</div>
+  <a href="/docs/cli-projects.html" class="link-reset db normal black-50 hover-black-80 pv1">Projects</a>
+
+  <div hidden="true" class="article-key">Semaphore CLI: Shared Configurations</div>
+  <a href="/docs/cli-shared-configurations.html" class="link-reset db normal black-50 hover-black-80 pv1">Shared Configurations</a>
 
 </div>

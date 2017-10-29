@@ -38,14 +38,6 @@ ApiV2.specification.resources.each do |resource|
         :ignore => true
 end
 
-
-CLI.structure["namespaces"].each do |cli_namespace|
-  proxy "/docs/cli-#{cli_namespace["name"]}.html",
-        "/docs/cli-namespace.html",
-        :locals => { :namespace => cli_namespace },
-        :ignore => true
-end
-
 ###
 # Page options, layouts, aliases and proxies
 ###

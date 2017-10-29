@@ -1,0 +1,73 @@
+---
+title: "Semaphore CLI: Shared Configurations"
+layout: post
+category: Semaphore CLI
+---
+
+Shared Configurations are a way to store and share sensitive information between
+your projects, such as passwords, OAuth tokens, and ssh keys.
+
+<% namespace = CLI.find_namespace("shared-configs") %>
+
+<%= toc %>
+
+Commands in the `shared-configs` CLI namespace:
+
+<%= CLI.toc(namespace) %>
+
+### Overview of Shared Configurations
+
+A Shared Configuraton is a colloction that contains a small amount of sensitive
+data such as a password, a token, or a key, in form of environment variables and
+configuration files. Such information might otherwise be put in the project
+specification as environment variables and configuration files. Putting it in a
+Shared Configuration allows for more control over how it is used, and allows the
+sharing environment variables and files between your projects.
+
+Users with _admin access_ in the organization, can create and destroy shared
+configurations, or attach them to teams to make them accessible to everyone
+in that team.
+
+Once the shared configuration is attached to a project, the environment variables
+and configuration files in the shared configuration are avaiable in builds of
+that project.
+
+### Creating your first Shared Configuration
+
+Say that your builds need access AWS, and you want to expose `AWS_ACCESS_KEY_ID`
+and `AWS_SECRET_ACCESS_KEY` in your builds on several projects. A shared
+configuration is the perfect place to store these sensitive variables.
+
+Lets say that the name of your organization is `playground` and you have admin
+access rights.
+
+To create a new shared configuration `aws-secrets` for your organization:
+
+``` bash
+$ sem shared-configs:create playground/aws-secrets
+```
+
+Add the two environment variables:
+
+``` bash
+$ sem shared-configs:env-vars:add playground/aws-secrets --name AWS_ACCESS_KEY_ID --content 12345abcde
+$ sem shared-configs:env-vars:add playground/aws-secrets --name AWS_SECRET_ACCESS_KEY --content qweeryy1235
+```
+
+### Adding Shared Configuration to your projects
+
+First, allow your developers to access the shared configuration. If your
+developers are part of the `devs` team, you can execute the following:
+
+``` bash
+$ sem teams:shared-configs:add playground/devs playground/aws-secrets
+```
+
+Then, attach the shared configuration to your project
+
+``` bash
+$ sem projects:shared-configs:add playground/project-X playground/aws-secrets
+$ sem projects:shared-configs:add playground/project-Y playground/aws-secrets
+```
+
+<%= partial("_cli_namespace_commands", :locals => { :namespace => namespace }) %>
