@@ -1,0 +1,11 @@
+---
+title: "Semaphore CLI: Teams"
+layout: post
+category: Semaphore CLI
+---
+
+<% namespace = CLI.find_namespace("teams") %>
+
+<%= CLI.toc(namespace) %>
+
+<%= partial("_cli_namespace_commands", :locals => { :namespace => namespace }) %>

@@ -5,6 +5,10 @@ module CLI
     JSON.parse(File.read("cli_structure.json"))
   end
 
+  def self.find_namespace(namespace_name)
+    structure["namespaces"].find { |ns| ns["name"] == namespace_name }
+  end
+
   def self.page_title(namespace)
     namespace["name"]
       .split("-")
