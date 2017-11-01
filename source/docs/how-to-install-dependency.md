@@ -25,7 +25,8 @@ sudo apt-get update
 An improvement over the steps above, is to use `install-package` instead. It's
 main purpose is to cache installations from APT. It can be used as described below, without
 using `sudo` or running `apt-get update`. If you're using a third party PPA,
-make sure that it's added beforehand.
+make sure that it's added beforehand. Additional lists should be added manually
+(see the example below), and `add-apt-repository` isn't supported yet.
 
 ```bash
 install-package dependency-1 dependency-2=0.11.2-1
