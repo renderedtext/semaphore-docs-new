@@ -73,3 +73,4 @@ cucumber command for as many jobs as you need. Here is an example:
 <img src="/docs/assets/img/running-cucumber-scenarios-in-threads/knapsack-config-threads.png" class="img-bordered-padding img-responsive">
 
 Scenarios will be split across jobs.
+
