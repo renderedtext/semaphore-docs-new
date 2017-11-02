@@ -4,6 +4,9 @@ title: Running tests in parallel
 category: Getting started
 ---
 
+This document explains how to run your test suite in parallel. You can 
+either manually set up parallelization for your test suite, or [use Boosters to let Semaphore automatically parallelize your Rails test suite](/docs/about-boosters.html).
+
 For every CI job, Semaphore checks out and runs your code inside an isolated
 container or virtual machine, called [Box](/pricing). Boxes are powerful,
 isolated CI job runners engineered to provide bare metal performance
@@ -15,6 +18,10 @@ boxes in any way.
 
 To split your test suite into parallel jobs, simply rearrange your build
 commands for multiple jobs in your project's settings.
+
+Instructions below should help you manually parallelize your test suite. 
+If you’re parallelizing a Rails application, you can try Semaphore Boosters 
+which can [automatically split your RSpec or Cucumber test suite](/docs/about-boosters.html).
 
 Let's assume that you have a Ruby project with a test suite composed of RSpec
 and Cucumber. In addition to that, you also have a number of JavaScript tests
