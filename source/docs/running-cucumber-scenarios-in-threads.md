@@ -8,7 +8,11 @@ Semaphore lets you run Cucumber scenarios in [parallel
 jobs](https://semaphoreci.com/parallelism). There are couple of ways to use this
 great feature:
 
-### 1. Using tags
+### 1. Using Boosters
+
+Semaphore Boosters are the easiest way to automatically parallelize your Cucumber test suite. With Boosters you don't need to make any changes to your source code. To learn more about Boosters visit our documentation page.
+
+### 2. Using tags
 
 Run [cucumber tag groups](https://github.com/cucumber/cucumber/wiki/Tags) in
 separate jobs.
@@ -17,7 +21,7 @@ separate jobs.
 RAILS_ENV=test CTAGS='--tags @tag_name' bundle exec rake cucumber default: features
 ```
 
-### 2. Groups
+### 3. Groups
 
 You can use gem [cucumber in
 groups](https://github.com/cloudcastle/cucumber_in_groups) and split your
@@ -25,7 +29,7 @@ Cucumber features to run them separately.
 
 <img src="/docs/assets/img/running-cucumber-scenarios-in-threads/group_threads.png" class="img-bordered-padding img-responsive">
 
-### 3. Break by directory structure
+### 4. Break by directory structure
 
 You can split execution of scenarios by grouping them in subdirectories.  e.g
 Let's say you have two directory within features, "foo" and "bar".  Running
@@ -41,7 +45,7 @@ __Note__: In order for all the feature steps to be visible from each directory,
   default: -r features
 ```
 
-### 4. Parallel Cucumber scenarios with Knapsack gem
+### 5. Parallel Cucumber scenarios with Knapsack gem
 
 If you want to get faster feedback from CI then you can try
 [knapsack](https://github.com/ArturT/knapsack) gem. It will split tests across
