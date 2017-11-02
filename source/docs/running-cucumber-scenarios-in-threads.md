@@ -10,7 +10,7 @@ great feature:
 
 ### 1. Using Boosters
 
-Semaphore Boosters are the easiest way to automatically parallelize your Cucumber test suite. With Boosters you don't need to make any changes to your source code. To learn more about Boosters visit our documentation page.
+[Semaphore Boosters](/docs/about-boosters.html) are the easiest way to automatically parallelize your Cucumber test suite. With Boosters you don't need to make any changes to your source code. To learn more about Boosters visit our [documentation page](/docs/about-boosters.html).
 
 ### 2. Using tags
 
