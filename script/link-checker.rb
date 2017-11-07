@@ -36,8 +36,8 @@ options = {
   :typhoeus =>
   {
     :followlocation => true,
-    :connecttimeout => 10,
-    :timeout => 30
+    :connecttimeout => 30,
+    :timeout => 60
   }
 }
 
