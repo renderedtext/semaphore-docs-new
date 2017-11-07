@@ -27,10 +27,10 @@ Credentials for using PostgreSQL are available in environment variables listed b
   </tbody>
 </table>
 
-If your application doesn't create it's own database as part of the start-up 
+If your application doesn't create its own database as part of the start-up 
 process, you can create a PostgreSQL database manually. Adding the following
 command to your [build
-commands](/docs/customizing-build-commands.html) will 
+commands](/docs/customizing-build-commands.html) will
 create a PostgreSQL database:
 
 ```bash
