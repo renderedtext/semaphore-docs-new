@@ -4,8 +4,8 @@ title: "What's the difference between Semaphore pricing as Heroku add-on and on 
 category: Billing
 ---
 
-Besides regular accounts offerred via [semaphoreci.com](https://semaphoreci.com),
-Semaphore's continuous integration and continuous deliver service is also
+Besides regular accounts offered via [semaphoreci.com](https://semaphoreci.com),
+Semaphore's continuous integration and continuous delivery service is also
 available through [a Heroku
 add-on](https://elements.heroku.com/addons/semaphore).
 
