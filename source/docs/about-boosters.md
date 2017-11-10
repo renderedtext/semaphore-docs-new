@@ -44,7 +44,7 @@ You can run it on any green branch. It makes sense to use a branch that is not t
 
 ### Which frameworks are supported?
 
-Currently supported frameworks are Ruby, RSpec and Cucumber.
+Currently supported Ruby testing frameworks are RSpec and Cucumber.
 
 ### Troubleshooting
 
