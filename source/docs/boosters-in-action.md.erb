@@ -55,3 +55,29 @@ distribution of your test files might help. Split Configurations are available
 in each boosted build you run. SSH sessions into the build environment is the
 best way to explore them. Read more about split configurations on the
 [Test Boosters README page](https://github.com/renderedtext/test-boosters#split-configuration).
+
+### Boosters are not working on my project
+
+Boosters are designed to work out of box for most Rails applications. However,
+edge cases are always possible when it comes to project configuration. Here are
+some tips that might help you to track down the issues:
+
+- Make sure that you are using a supported Ruby version. Versions from `1.9.x` to
+the latest `2.4.x` are supported out of box. Older or newer Ruby versions might
+work, but are not officially supported.
+
+- Make sure that your Rails version is supported. Rails 3, 4, 5 are officially
+supported. Rails 2 might work, but is not officially supported.
+
+- Verify that your tests are runnable with `bundle exec rspec <file-list>` and
+`bundle exec cucumber <file-list>`. Boosters are running your test suite via
+those commands.
+
+- If you have changed Ruby version in your builds with `rbenv use <version>` you
+will need to manually install the test booster gem for that ruby version. This
+can be achieved by running `rbenv rehash` or by manually installing the
+test booster gem in your builds `gem install semaphore-test-boosters`.
+
+If everything else fails, please
+[open an issue on the Test Boosters gem repository](https://github.com/renderedtext/test-boosters)
+or [contact the Semaphore support team](https://semaphoreci.com/support).
