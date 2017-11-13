@@ -40,18 +40,18 @@ following could have happened:
 - There is a big variation in the duration of your test files. For example, if
 a file takes 10 seconds to complete in one build, and 5 minutes to complete in
 the next build, Semaphore will have a hard time to properly allocate a job for
-your file. Try to adjust the test file, and limit duration changes upto 10%.
+your file. Try to adjust the test file, and limit duration changes up to 10%.
 
 - If you have added or removed a new test file on one of your branches, it will
-have an effect on all of your builds. Test Boosters work under the assumption
+have an effect on all of your builds. Boosters work under the assumption
 that new branches are short lived and frequently merged into the master branch.
 
 - Boosters run under the assumption that you have no additional filters on your
 test suite. For example, the `:focus` filter that runs only a portion of your
-RSpec test suite will prevent proper test booster execution.
+RSpec test suite will prevent proper booster execution.
 
 - If neither of the above applies to your project, observing the test
 distribution of your test files might help. Split Configurations are available
-in each test boosted build you run. SSH sessions into the build environment
-is the best way to explore them. Read more about split configurations on the
+in each boosted build you run. SSH sessions into the build environment is the
+best way to explore them. Read more about split configurations on the
 [Test Boosters README page](https://github.com/renderedtext/test-boosters#split-configuration).
