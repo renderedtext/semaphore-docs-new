@@ -1,0 +1,69 @@
+---
+layout: post
+title: Boosters for RSpec
+category: Boosters
+---
+
+<%= toc %>
+
+### Boosters for RSpec
+
+#### Supported versions
+
+Boosters currently supports following RSpec versions:
+- `3.0`
+- `3.1`
+- `3.2`
+- `3.3`
+- `3.4`
+- `3.5`
+- `3.6`
+
+#### How Boosters run your RSpec suite
+
+Boosters CLI runs your RSpec tests using `rspec_booster` command:
+```
+rspec_booster --job <job>/<job_count>
+```
+It uses `~/rspec_split_configuration.json` file in order to look for your job configuration.
+
+Assuming you have the following configuration within your `~/rspec_split_configuration.json` file:
+```
+[
+  { "files": ["spec/spec_1.rb", "spec/spec_2.rb"] },
+  { "files": ["spec/spec_3.rb", "spec/spec_4.rb"] },
+  { "files": ["spec/spec_5.rb", "spec/spec_6.rb"] }
+]
+```
+
+And you run your specs using the following command:
+```
+rspec_booster --job 1/3
+```
+
+This would result with following RSpec command under the hood:
+```
+bundle exec rspec --format documentation --format json --out /home/<user>/rspec_report.json spec/spec_1.rb spec/spec_2.rb
+```
+
+As previously shown, it builds and runs RSpec command which output is then formatted as json and redirected to `~/rspec_report.json`.
+The report file contains durations of your test files.
+
+#### Pass additional flags to RSpec
+
+If you want to invoke RSpec runner with additional flags you can do it by
+specifying them within `TB_RSPEC_OPTIONS` environment variable like following:
+```
+TB_RSPEC_OPTIONS='--fail-fast=3' rspec_booster --job 4/32
+```
+This results in following RSpec command under the hood:
+```
+bundle exec rspec --fail-fast=3 --format documentation --format json --out /home/<user>/rspec_report.json <file_list>
+```
+
+#### Customize RSpec configuration used by Boosters
+
+You can customize your RSpec configuration in any way you need. Though some of the RSpec options do not work properly when used with Boosters.
+RSpec [filtering](https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering) option can cause unexpected behaviour when it's used with Boosters. This option can lead to builds with unbalanced Boosted jobs, since your specs are distributed across many jobs.
+
+If you notice any unexpected behaviour of your test suite with Boosters, we encourage you to create a support ticket. There are lot of the RSpec use cases and unfortunately we won't be able to support all of them, though if you think you've found a bug in Boosters gem, we encourage you to [create an issue](https://github.com/renderedtext/test-boosters/issues/new).
