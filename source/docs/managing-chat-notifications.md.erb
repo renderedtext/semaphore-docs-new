@@ -4,6 +4,8 @@ title: Managing chat notifications
 category: Notifications
 ---
 
+<%= toc %>
+
 Semaphore features a chat notification system that lets you receive status
 update messages directly in [Campfire](https://campfirenow.com/),
 [Flowdock](https://www.flowdock.com/), [HipChat](https://www.hipchat.com/),
@@ -29,7 +31,7 @@ settings, but the build and deploy forms are identical across all services.
 
 <img src="/docs/assets/img/managing-chat-notifications/setting-up-notifications.png" alt="Setting up notifications" class="img-responsive img-bordered">
 
-Note that notifications can only be set up and modified by users who have admin 
+Note that notifications can only be set up and modified by users who have admin
 access to a project.
 
 ## Modifying notification policies
@@ -53,6 +55,8 @@ regular expressions](http://ruby-doc.org/core-2.2.3/Regexp.html). Each line
 specifies a branch name pattern for which notifications will be sent.
 
 <img src="/docs/assets/img/managing-chat-notifications/branch-whitelist.png" alt="Branch whitelist" class="img-responsive img-bordered">
+
+If you want to match exactly one specific branch, use exact pattern matching like `^production$`.
 
 ### Choosing for which servers deploy notifications are sent
 
