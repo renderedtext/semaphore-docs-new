@@ -16,4 +16,3 @@ Your work will be matched via committers email address and your personal
 If you commit via various email addresses add them all to your  account.
 Check out [this guide](/docs/managing-email-addresses.html) for more info about
 adding and managing email address.
-
