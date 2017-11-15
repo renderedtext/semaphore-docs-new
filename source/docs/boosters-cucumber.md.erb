@@ -13,7 +13,7 @@ category: Boosters
 Test Boosters currently supports following Cucumber versions:
 ...
 
-#### How do Boosters run your Cucumber scenarios
+#### How Boosters run your Cucumber scenarios
 
 Boosters CLI runs your Cucumber scenarios using `cucumber_booster` command:
 ```
@@ -22,8 +22,7 @@ cucumber_booster --job <job>/<job_count>
 This command uses `~/cucumber_split_configuration.json` file in order to
 look for your job's split configuration.
 
-Assuming that you have following split configuration located at the $HOME
-directory:
+Assuming that you have the following split configuration:
 ```
 [
   { "files": ["features/feature_1.feature", "features/feature_2.feature"] },
@@ -32,12 +31,12 @@ directory:
 ]
 ```
 
-And you run your features with `cucumber_booster` command:
+When you run your features with `cucumber_booster` command:
 ```
 cucumber_booster --job 1/3
 ```
 
-Under the hood, Boosters command invokes Cucumber with the following
+Under the hood, Boosters invokes Cucumber with the following
 command:
 ```
 bundle exec cucumber features/feature_1.feature features/feature_2.feature
@@ -49,13 +48,15 @@ At the end of the chain, you have Cucumber run your features.
 
 You can customize Cucumber configuration by introducing additional
 [profiles](https://github.com/cucumber/cucumber/wiki/cucumber.yml)
-within your `cucumber.yml` file. Only make sure you append them
-to the default one since Test Boosters run Cucumber like following:
+within your `cucumber.yml` file. Make sure you append them
+to the default one since Boosters only run default profile:
 ```
 bundle exec cucumber <file_list>
 ```
 
-Test Boosters create separate `semaphoreci` profile within your `cucumber.yml` configuration,
+Boosters create separate `semaphoreci` profile within your `cucumber.yml` configuration,
 and appends it to the default one. This way your custom defined configuration
-stays unmodified. This is handled by our
-[semaphore_cucumber_booster_config](https://github.com/renderedtext/cucumber_booster_config) gem which is open sourced.
+stays unmodified. This is handled by our Open Source
+[semaphore_cucumber_booster_config](https://github.com/renderedtext/cucumber_booster_config) gem.
+
+If you notice any unexpected behaviour in your test suite with Boosters, we encourage you to create a support ticket. Though if you think you've found a bug in Boosters gem, we encourage you to [create an issue](https://github.com/renderedtext/test-boosters/issues/new).
