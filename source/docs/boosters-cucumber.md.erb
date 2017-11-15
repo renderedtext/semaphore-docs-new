@@ -25,9 +25,9 @@ Let's assume you have the following split configuration:
 
 ```
 [
-  { "files": ["features/feature_1.feature", "features/feature_2.feature"] },
-  { "files": ["features/feature_3.feature", "features/feature_4.feature"] },
-  { "files": ["features/feature_5.feature", "features/feature_6.feature"] }
+  { "files": ["features/f_1.feature", "features/f_2.feature"] },
+  { "files": ["features/f_3.feature", "features/f_4.feature"] },
+  { "files": ["features/f_5.feature", "features/f_6.feature"] }
 ]
 ```
 
@@ -41,7 +41,7 @@ Under the hood Boosters invoke Cucumber using the following
 command:
 
 ```
-bundle exec cucumber features/feature_1.feature features/feature_2.feature
+bundle exec cucumber features/f_1.feature features/f_2.feature
 ```
 
 At the end of the chain, you have Cucumber run your features.

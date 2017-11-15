@@ -41,7 +41,10 @@ rspec_booster --job 1/3
 This results with following RSpec command under the hood:
 
 ```
-bundle exec rspec --format documentation --format json --out /home/<user>/rspec_report.json spec/spec_1.rb spec/spec_2.rb
+bundle exec rspec --format documentation \
+                  --format json \
+                  --out /home/<user>/rspec_report.json \
+                  spec/spec_1.rb spec/spec_2.rb
 ```
 
 As previously shown, RSpec Booster builds and runs RSpec command which output is formatted as json and redirected to `~/rspec_report.json` file.
