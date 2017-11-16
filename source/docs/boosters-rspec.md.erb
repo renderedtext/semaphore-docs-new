@@ -4,6 +4,8 @@ title: Boosters for RSpec
 category: Boosters
 ---
 
+Boosters for RSpec enable you to run specs across many parallel jobs. They come out of the box when they are used on Semaphore. Once Boosters are [set up](/docs/setting-up-boosters.html), they are ready to take action in optimizing build times.
+
 <%= toc %>
 
 ### Supported versions
@@ -24,6 +26,8 @@ rspec_booster --job <job>/<job_count>
 
 The command uses split configuration file in order to
 find the configuration of a job to be run. This file contains distribution of your test files across many jobs. Split configurations for your jobs are located in `~/rspec_split_cofiguration.json` file. Semaphore provides this file to each of the Boosted jobs.
+
+More in detail information about split configurations can be found [here](https://github.com/renderedtext/test-boosters#split-configuration).
 
 Let's assume to have the following split configuration within `~/rspec_split_configuration.json`:
 

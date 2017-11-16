@@ -4,13 +4,15 @@ title: Boosters for Cucumber
 category: Boosters
 ---
 
+Boosters for Cucumber enable you to run specs across many parallel jobs. They come out of the box when they are used on Semaphore. Once Boosters are [set up](/docs/setting-up-boosters.html), they are ready to take action in optimizing build times.
+
 <%= toc %>
 
 ### Supported versions
 
 Boosters officially support Cucumber versions starting <nobr>from `2.0.0-rc.1`</nobr> conclusive <nobr>with `3.0.2`</nobr>.
 
-Boosters may also work with some older versions though we don't make any guarantees. If you encounter an issue when using Boosters with a Cucumber version older then `2.0.0-rc.1`, we encourage you to [contact our support team](https://semaphoreci.com/support).
+Boosters may also work with some older versions though we don't make any guarantees. If you encounter any issue, don't hesitate to [contact](https://semaphoreci.com/support) our support team.
 
 ### How Boosters run your Cucumber scenarios
 
@@ -22,6 +24,8 @@ cucumber_booster --job <job>/<job_count>
 
 The command uses split configuration file in order to
 find the configuration of a job to be run. This file contains distribution of your test files across many jobs. Split configurations for your jobs are located in `~/cucumber_split_cofiguration.json` file. Semaphore provides this file to each of the Boosted jobs.
+
+More in detail information about split configurations can be found [here](https://github.com/renderedtext/test-boosters#split-configuration).
 
 Let's assume to have the following split configuration within `~/cucumber_split_configuration.json`:
 
