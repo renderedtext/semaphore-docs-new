@@ -14,11 +14,11 @@ Boosters officially support following RSpec versions:
 
 `3.0` `3.1` `3.2` `3.3` `3.4` `3.5` `3.6`
 
-If you encounter an issue when using Boosters with RSpec version other than officially supported, we encourage you to [contact our support team](https://semaphoreci.com/support).
+If you encounter an issue when using Boosters with RSpec version other than officially supported, we encourage you to [contact](https://semaphoreci.com/support) our support team.
 
 ### How Boosters run your RSpec suite
 
-Test Boosters gem runs your RSpec tests using `rspec_booster` command:
+[Test Boosters gem](/docs/boosters-in-action.html#test-boosters-gem) runs your RSpec tests using `rspec_booster` command:
 
 ```
 rspec_booster --job <job>/<job_count>
@@ -27,7 +27,7 @@ rspec_booster --job <job>/<job_count>
 The command uses split configuration file in order to
 find the configuration of a job to be run. This file contains distribution of your test files across many jobs. Split configurations for your jobs are located in `~/rspec_split_cofiguration.json` file. Semaphore provides this file to each of the Boosted jobs.
 
-More in detail information about split configurations can be found [here](https://github.com/renderedtext/test-boosters#split-configuration).
+More in detail information about <nobr>[split configurations](https://github.com/renderedtext/test-boosters#split-configuration)</nobr> can be found.
 
 Let's assume to have the following split configuration within `~/rspec_split_configuration.json`:
 
@@ -83,4 +83,4 @@ You are able to customize your RSpec configuration in any way you need. Though s
 
 RSpec [filtering](https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering) option can cause unexpected behaviour when it's used with Boosters. This option can lead to unbalanced builds, since your specs are distributed across available parallel jobs.
 
-If you notice any unexpected behaviour in your test suite with Boosters, we encourage you to create a support ticket. There are lot of the RSpec use cases and unfortunately we won't be able to support all of them, although if you think you've found a bug in Boosters gem, feel free to [create an issue](https://github.com/renderedtext/test-boosters/issues/new) on GitHub.
+If you notice any unexpected behaviour in your test suite with Boosters, we encourage you to [contact](https://semaphoreci.com/support) our support team. There are lot of the RSpec use cases and unfortunately we won't be able to support all of them. Though if you think you've found a bug in <nobr>[Test Boosters gem](/docs/boosters-in-action.html#test-boosters-gem)</nobr>, don't hesitate to [create an issue](https://github.com/renderedtext/test-boosters/issues/new) on GitHub.
