@@ -23,6 +23,7 @@ ignored_paths = %w(
 /press
 /about
 /support
+https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering
 )
 
 # Ignored regular expression in paths eg. www.semaphoreci.com/docs/users?sign_in
