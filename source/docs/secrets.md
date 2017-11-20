@@ -130,7 +130,7 @@ curl \
 
 Continuing with the previous setup, any member of the team can add the
 secret to his projects. As a team member, you can [attach the secret
-to a project](/docs/api-v2-secrets.html#attach-a-secret-to-a-project) and [use the provided environment variables](/docs/api-v2-env-vars.html#connect-a-shared-environment-variable-to-a-project):
+to a project](/docs/api-v2-secrets.html#attach-a-secret-to-a-project) and use the provided environment variables from secret:
 
 ``` bash
 # First, we find the id of the project
@@ -152,20 +152,6 @@ curl \
  -X POST \
  -H "Authorization: Token ${AUTH_TOKEN}" \
  "https://api.semaphoreci.com/v2/projects/${PROJECT_ID}/secrets/${SECRET_ID}"
-
-# Use the environment variable provided by the attached secret
-
-curl \
-  -X GET \
-  -H "Authorization: Token ${AUTH_TOKEN}" \
-  "https://api.semaphoreci.com/v2/secrets/${SECRET_ID}/env_vars"
-
-export ENV_VAR_ID=<env_var_id>
-
-curl \
- -X GET \
- -H "Authorization: Token ${AUTH_TOKEN}" \
- "https://api.semaphoreci.com/v2/projects/${PROJECT_ID}/env_vars/${ENV_VAR_ID}"
 ```
 
 After this step, you should see the attached environment variable on your
