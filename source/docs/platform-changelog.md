@@ -6,6 +6,28 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1711 - 2017-11-28 (planned)
+```md
+- additions
+  - node.js 8.9.1
+  - node.js 9.2.0
+  - oracle jdk 9.0.1
+- upgrades
+  - git 2.14.2 -> 2.15
+  - go 1.8.3 -> 1.8.4
+  - go 1.9.1 -> 1.9.2
+  - java 8 u144 -> u151
+  - jruby 9.1.13 -> 9.1.14
+  - leiningen 2.8.0 -> 2.8.1
+  - maven 4.5.0 -> 4.5.2
+  - mongo 3.4.9 -> 3.4.10
+  - php 5.6.31 -> 5.6.32
+  - php 7.0.24 -> 7.0.25
+  - php 7.1.10 -> 7.1.11
+  - scala 2.12.3 -> 2.12.4
+  - yarn 1.2.1 -> 1.3.2
+```
+
 ### 1710 - 2017-10-24
 ```md
 - additions
