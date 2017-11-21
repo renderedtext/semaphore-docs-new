@@ -83,4 +83,6 @@ You are able to customize your RSpec configuration in any way you need. Though s
 
 RSpec [filtering](https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering) option can cause unexpected behaviour when it's used with Boosters. This option can lead to unbalanced builds, since your specs are distributed across available parallel jobs.
 
+Using `rspec-retry` to rerun flaky tests can lead to unbalanced builds. Retried tests have big standard deviation, and as such they have unpredictable execution duration. Boosters are having trouble to estimate in which job they should be run in the next build. <nobr>Read more about [Flaky Tests](https://semaphoreci.com/blog/2017/04/20/flaky-tests.html).</nobr>
+
 If you notice any unexpected behaviour in your test suite with Boosters, we encourage you to [contact](https://semaphoreci.com/support) our support team. There are lot of the RSpec use cases and unfortunately we won't be able to support all of them. Though if you think you've found a bug in <nobr>[Test Boosters gem](/docs/boosters-in-action.html#test-boosters-gem)</nobr>, don't hesitate to [create an issue](https://github.com/renderedtext/test-boosters/issues/new) on GitHub.
