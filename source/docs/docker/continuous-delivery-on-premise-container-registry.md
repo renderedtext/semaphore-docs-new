@@ -36,7 +36,7 @@ Select the "Custom Container Registry" integration.
 
 <img src="/docs/assets/img/docker/setting-up-custom-container-registry-for-your-project/select-custom-container-registry.png" class="img-responsive img-bordered" alt="Click Custom Container Registry integration">
 
-Next, you will be prompted with four input fields:
+Next, you will be prompted with three input fields:
 
   - `Username`,
   - `Password`, and

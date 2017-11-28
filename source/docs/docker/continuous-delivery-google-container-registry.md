@@ -39,7 +39,7 @@ to:
   public/private key JSON file will be saved to your disk.
   <img src="/docs/assets/img/docker/setting-up-google-container-registry-for-your-project/create-service-account.png" class="img-responsive img-bordered" alt="Create Service account on Google Cloud Platform">
   Store this file somewhere safe — you won't be able to retrieve it again from
-  the Google Console.
+  the Google Cloud Platform.
   6. Be sure to enable [Google Container Registry API](https://console.cloud.google.com/apis/api/containerregistry.googleapis.com/) so you can push and pull images.
 
 After you've follow the steps on Google Cloud Platform, visit your project on
@@ -55,8 +55,8 @@ Select the "Google Container Registry (GCR)" integration.
 
 <img src="/docs/assets/img/docker/setting-up-google-container-registry-for-your-project/select-google-container-registry.png" class="img-responsive img-bordered" alt="Click Google Container Registry">
 
-Enter your email and copy the contents of the JSON file you downloaded earlier
-from the Google Console.
+Choose your GCR region and copy the contents of the JSON file you downloaded
+earlier from the Google Cloud Platform.
 
 <img src="/docs/assets/img/docker/setting-up-google-container-registry-for-your-project/google-container-registry-form.png" class="img-responsive img-bordered" alt="Copy Google Container Registry JSON file">
 
