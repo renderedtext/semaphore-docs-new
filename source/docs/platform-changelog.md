@@ -6,13 +6,15 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1711 - 2017-11-28 (planned)
+### 1711 - 2017-11-28
 ```md
 - additions
   - node.js 8.9.1
   - node.js 9.2.0
   - oracle jdk 9.0.1
 - upgrades
+  - docker 17.06 -> 17.09
+  - docker-compose 1.16.1 -> 1.17.1
   - git 2.14.2 -> 2.15
   - go 1.8.3 -> 1.8.4
   - go 1.9.1 -> 1.9.2
