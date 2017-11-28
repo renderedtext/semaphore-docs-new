@@ -24,7 +24,7 @@ and **pull** images effortlessly, without having to worry about authentication.
 In order to get the data needed for enabling the GCR integration, you will need
 to:
 
-  1. Visit the [Google Developers Console](https://console.developers.google.com/).
+  1. Visit the [Google Developers Console](https://console.cloud.google.com/).
 
   2. Choose a project you want to integrate with Semaphore.
 
@@ -39,14 +39,18 @@ to:
   <img src="/docs/assets/img/docker/setting-up-google-container-registry-for-your-project/click-create-service-account.png" class="img-responsive img-bordered" alt="Click Create service account on Google Developers Console">
 
   5. Type in a name that is meaningful to you. We named the account _Semaphore_, since we
-  are making an integration with Semaphore. Tick "Furnish a new private
-  key", and leave "JSON" selected. Finally, click "Create", and the
+  are making an integration with Semaphore. Make sure to attach a _Storage Admin_ role to
+  the service account if you plan to pull and push Docker images. You can view Permissions and Roles
+  for GCR in the [Google Cloud Platform documentation](https://cloud.google.com/container-registry/docs/access-control#permissions_and_roles).
+  Tick "Furnish a new private key", and leave "JSON" selected. Finally, click "Create", and the
   public/private key JSON file will be saved to your disk.
 
   <img src="/docs/assets/img/docker/setting-up-google-container-registry-for-your-project/create-service-account.png" class="img-responsive img-bordered" alt="Create Service account on Google Developers Console">
 
   Store this file somewhere safe — you won't be able to retrieve it again from
   the Google Console.
+
+  6. Be sure to enable [Google Container Registry API](https://console.cloud.google.com/apis/api/containerregistry.googleapis.com/) so you can push and pull images.
 
 Visit your project on Semaphore, and click "Add-ons" in the upper right
 corner of your screen.
