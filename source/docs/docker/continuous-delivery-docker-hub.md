@@ -33,7 +33,7 @@ Select the "Docker Hub" integration.
 <img src="/docs/assets/img/docker/setting-up-docker-hub-for-your-project/select-docker-hub.png" class="img-responsive img-bordered" alt="Click Docker Hub integration">
 
 You will be prompted with three input fields, requiring your Docker Hub
-`Username`, `Email`, and `Password`. These credentials will be encrypted
+`Username` and `Password`. These credentials will be encrypted
 and stored safely by Semaphore.
 
 <img src="/docs/assets/img/docker/setting-up-docker-hub-for-your-project/docker-hub-form.png" class="img-responsive img-bordered" alt="Docker Hub form">

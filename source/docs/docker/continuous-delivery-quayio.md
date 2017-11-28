@@ -37,7 +37,6 @@ Next, you will be prompted with three input fields:
 
   - Quay.io `Username`,
   - Quay.io `Password`, and
-  - Quay.io `Email address`.
 
 <img src="/docs/assets/img/docker/setting-up-quay-io-for-your-project/quay-io-form.png" class="img-responsive img-bordered" alt="Quay.io form">
 

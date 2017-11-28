@@ -39,7 +39,6 @@ Select the "Custom Container Registry" integration.
 Next, you will be prompted with four input fields:
 
   - `Username`,
-  - `Email`,
   - `Password`, and
   - `Server` — your custom registry server.
 
