@@ -42,7 +42,7 @@ to:
   the Google Cloud Platform.
   6. Be sure to enable [Google Container Registry API](https://console.cloud.google.com/apis/api/containerregistry.googleapis.com/) so you can push and pull images.
 
-After you've follow the steps on Google Cloud Platform, visit your project on
+After you've followed the steps on Google Cloud Platform, visit your project on
 Semaphore, and click "Add-ons" in the upper right corner of your screen.
 
 <img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
