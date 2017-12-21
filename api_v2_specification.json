@@ -1257,6 +1257,23 @@
                               },
                               {
                                 "type": "string",
+                                "name": "html_url",
+                                "displayName": "html_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "description": "Project's HTML URL",
+                                "examples": [
+                                  {
+                                    "value": "https://semaphoreci.com/renderedtext/elixir-lang",
+                                    "strict": true,
+                                    "name": null,
+                                    "structuredValue": "https://semaphoreci.com/renderedtext/elixir-lang"
+                                  }
+                                ],
+                                "key": "html_url"
+                              },
+                              {
+                                "type": "string",
                                 "name": "users_url",
                                 "displayName": "users_url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -1387,6 +1404,23 @@
                                 }
                               ],
                               "key": "name"
+                            },
+                            {
+                              "type": "string",
+                              "name": "html_url",
+                              "displayName": "html_url",
+                              "typePropertyKind": "TYPE_EXPRESSION",
+                              "required": true,
+                              "description": "Project's HTML URL",
+                              "examples": [
+                                {
+                                  "value": "https://semaphoreci.com/renderedtext/elixir-lang",
+                                  "strict": true,
+                                  "name": null,
+                                  "structuredValue": "https://semaphoreci.com/renderedtext/elixir-lang"
+                                }
+                              ],
+                              "key": "html_url"
                             },
                             {
                               "type": "string",
@@ -3765,6 +3799,23 @@
                               },
                               {
                                 "type": "string",
+                                "name": "html_url",
+                                "displayName": "html_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "description": "Project's HTML URL",
+                                "examples": [
+                                  {
+                                    "value": "https://semaphoreci.com/renderedtext/elixir-lang",
+                                    "strict": true,
+                                    "name": null,
+                                    "structuredValue": "https://semaphoreci.com/renderedtext/elixir-lang"
+                                  }
+                                ],
+                                "key": "html_url"
+                              },
+                              {
+                                "type": "string",
                                 "name": "users_url",
                                 "displayName": "users_url",
                                 "typePropertyKind": "TYPE_EXPRESSION",
@@ -5826,7 +5877,7 @@
                 "withNoBodyResponse",
                 "withNotFoundError"
               ],
-              "description": "Deleting a secret requires at least admin permissions in the organization.",
+              "description": "Deleting secret will remove it from all projects it is used on. Deleting a secret requires at least admin permissions in the organization.",
               "displayName": "Delete a secret",
               "method": "delete",
               "allUriParameters": [
@@ -6207,6 +6258,23 @@
                                   }
                                 ],
                                 "key": "name"
+                              },
+                              {
+                                "type": "string",
+                                "name": "html_url",
+                                "displayName": "html_url",
+                                "typePropertyKind": "TYPE_EXPRESSION",
+                                "required": true,
+                                "description": "Project's HTML URL",
+                                "examples": [
+                                  {
+                                    "value": "https://semaphoreci.com/renderedtext/elixir-lang",
+                                    "strict": true,
+                                    "name": null,
+                                    "structuredValue": "https://semaphoreci.com/renderedtext/elixir-lang"
+                                  }
+                                ],
+                                "key": "html_url"
                               },
                               {
                                 "type": "string",
@@ -9233,6 +9301,23 @@
             }
           ],
           "key": "name"
+        },
+        {
+          "type": "string",
+          "name": "html_url",
+          "displayName": "html_url",
+          "typePropertyKind": "TYPE_EXPRESSION",
+          "required": true,
+          "description": "Project's HTML URL",
+          "examples": [
+            {
+              "value": "https://semaphoreci.com/renderedtext/elixir-lang",
+              "strict": true,
+              "name": null,
+              "structuredValue": "https://semaphoreci.com/renderedtext/elixir-lang"
+            }
+          ],
+          "key": "html_url"
         },
         {
           "type": "string",
