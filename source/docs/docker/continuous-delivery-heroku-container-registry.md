@@ -41,7 +41,7 @@ You can obtain Heroku API key in
 
 <img src="/docs/assets/img/docker/continuous-delivery-heroku-docker-registry/heroku-container-registry-form.png" class="img-responsive img-bordered" alt="Heroku Container Registry form">
 
-After you have inputted the API key, click "Save". Your Heroku Container
+After you have entered the API key, click "Save". Your Heroku Container
 Registry credentials will be securely encrypted and saved.
 
 You can now push images to Heroku Container Registry through Semaphore.
