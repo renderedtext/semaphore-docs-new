@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if ! [ -e data/credentials.yml ]; then
-  cp data/credentials.yml.example data/credentials.yml 
+  cp data/credentials.yml.example data/credentials.yml
 fi
 
 bundle install
@@ -16,4 +16,4 @@ echo '                             #                                 '
 echo ' localhost:5000/docs         "                   DOCUMENTATION '
 echo '                                                               '
 
-bundle exec middleman -p 5000 -h "0.0.0.0"
+bundle exec middleman server --port 5000

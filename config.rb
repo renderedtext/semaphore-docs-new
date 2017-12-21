@@ -151,8 +151,6 @@ end
 configure :development do
   if defined? Middleman::PreviewServer # false when doing s3_sync, no idea
     set :protocol, "http://"
-    set :host, Middleman::PreviewServer.host
-    set :port, Middleman::PreviewServer.port
   else
     set :protocol, "https://"
     set :host, "semaphoreci.com"
