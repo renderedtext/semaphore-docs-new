@@ -4,6 +4,11 @@
 ansible:
   name: "Ansible"
   version: "2.4.0"
+  
+boost:
+  name: "Boost C++ libraries"
+  version: "1.54.0.1"
+  
 bower:
   name: "Bower"
   version: "1.7.9"
