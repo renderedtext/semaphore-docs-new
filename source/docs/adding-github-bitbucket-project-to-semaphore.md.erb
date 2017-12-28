@@ -31,14 +31,16 @@ pull request status. Select your preferred Git host.
 
 <img src="/docs/assets/img/adding-new-project/select-github-or-bitbucket.png" class="img-responsive img-bordered">
 
-On the next screen, select whether you would like to give Semaphore access to your
+## <a name="adding_github_project" href="#adding_github_project">Adding a project from GitHub organization</a>
+
+From the next screen, select whether you would like to give Semaphore access to your
 public (open-source) or private projects. Access to private projects also includes
 access to public projects.
 
 <img src="/docs/assets/img/adding-new-project/choose-public-private-github-scope.png" class="img-responsive img-bordered">
 
 We will now presume that you selected Private & Public. At this point, Semaphore
-will redirect you to github.com where you will be presented a screen to authorize
+will redirect you to [github.com](https://github.com) where you will be presented a screen to authorize
 Semaphore to access your account via OAuth. Click "Authorize application" to continue.
 
 <img src="/docs/assets/img/adding-new-project/authorize-semaphore-for-github.png" class="img-responsive img-bordered">
@@ -54,12 +56,10 @@ a 30-day free trial of Semaphore. After the trial expires, you can continue
 using Semaphore for free for up to 100 private jobs, or upgrade to one of the
 paid plans.
 
-## <a name="adding_github_project" href="#adding_github_project">Adding a project from GitHub organization</a>
-
 In the upper-right corner of the homepage is a button “Add new project”. Once you
-click on it, you will get the option to choose one of the repositories. (Step 1/3).
-If the repository is marked with exclamation mark it means that you don't have
-permission level needed for adding a project to Semaphore.
+click on it, you will get the option to choose one of the repositories (Step 1/3).
+If the repository is marked with an exclamation mark, this means that you don't
+have the permission level needed for adding a project to Semaphore.
 
 <img src="/docs/assets/img/adding-new-project/no-access-repo.png" class="img-responsive img-bordered">
 
@@ -75,7 +75,7 @@ also has the option to deny the access).
 <img src="/docs/assets/img/adding-new-project/select-project.png" class="img-responsive img-bordered">
 
 After you've selected the repository, you will be asked to select a branch that
-you want the first build to run from. (Step 2/3) Semaphore will automatically test
+you want the first build to run from (Step 2/3). Semaphore will automatically test
 every new branch you create, and remove the ones you delete in origin. Additional
 preexisting branches can be easily added from your project page later on.
 
