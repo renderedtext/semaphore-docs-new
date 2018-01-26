@@ -13,4 +13,5 @@ After you click on your profile photo, from the drop-down menu choose the organi
 Click on your profile photo in the top right corner. Then open “Subscriptions” > “Change billing information” > "Edit Subscription" > “Update address”.
 
 __Note:__
-If you want to change recipient name or billing email address, please contact us at <mailto:support@semaphoreci.com>.
+If you want to change recipient name, billing email address or country, please
+contact us at <mailto:support@semaphoreci.com>.
