@@ -24,7 +24,7 @@ Before running your build or deploy, Semaphore exports the following environment
     </tr>
     <tr>
       <td>BRANCH_NAME</td>
-      <td>Eg. master</td>
+      <td>Eg. master, pull-request-7</td>
     </tr>
     <tr>
       <td>REVISION</td>
