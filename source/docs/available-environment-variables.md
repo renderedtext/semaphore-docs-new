@@ -80,7 +80,7 @@ Before running your build or deploy, Semaphore exports the following environment
   </tbody>
 </table>
 
-Variables available only for pull requests:
+Variables available only for [pull requests originating from forks](/docs/building-pull-requests.html):
 
 <table class="table table-striped table-bordered">
   <thead>
