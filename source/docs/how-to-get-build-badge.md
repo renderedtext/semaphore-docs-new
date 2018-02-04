@@ -18,5 +18,5 @@ Settings > Badge tab.
 
 <img src="/docs/assets/img/settings/settings-badge.png" class="img-responsive">
 
-Once you have set up your badge, its' image will always automatically represent
+Once you have set up your badge, its image will always automatically represent
 the current status of your build.
