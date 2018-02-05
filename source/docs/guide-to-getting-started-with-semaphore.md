@@ -19,13 +19,13 @@ To get started, you need to add your first GitHub or Bitbucket project to Semaph
 
 <img src="/docs/assets/img/guide/add_a_project.png" class="img-responsive img-bordered">
 
-Need help? [Read our step-by-step tutorial.](https://semaphoreci.com/docs/adding-github-bitbucket-project-to-semaphore.html)
+Need help? [Read our step-by-step tutorial.](/docs/adding-github-bitbucket-project-to-semaphore.html)
 
 ## <a name="debugging_failed_builds" href="#debugging_failed_builds">Debugging failed builds</a>
 
 A red build can be discouraging. To debug a failed build on Semaphore, you can launch
 an SSH session by clicking on the “Launch SSH” button within build results.
-To learn more, check out our [detailed how-to guide] (https://semaphoreci.com/docs/ssh-access-to-build-environment.html)
+To learn more, check out our [detailed how-to guide](/docs/ssh-access-to-build-environment.html).
 
 ## <a name="managing_branches_and_pull_requests" href="#managing_branches_and_pull_requests">Managing branches and pull requests</a>
 
@@ -65,15 +65,15 @@ the top of your project’s branch list.
 Semaphore's platform is very flexible:
 
 * It includes major runtimes for most programming languages, databases, Firefox,
-PhantomJS, ElasticSearch,[and more](https://semaphoreci.com/docs/supported-stack.html).
+PhantomJS, ElasticSearch,[and more](/docs/supported-stack.html).
 * You can run arbitrary programs within your builds and deploys.
 * You have sudo access, so you can install pretty much anything that runs on Linux.
-* Semaphore exports a number of [environment variables](https://semaphoreci.com/docs/available-environment-variables.html) you
+* Semaphore exports a number of [environment variables](/docs/available-environment-variables.html) you
 can use in your configure, build, test and deploy scripts.
 * The platform is based on Ubuntu 14.04 LTS and is updated monthly. We post in-app
-notifications a couple of days in advance and keep a [changelog](https://semaphoreci.com/docs/platform-changelog.html)
+notifications a couple of days in advance and keep a [changelog](/docs/platform-changelog.html).
 
-[The build command editor](https://semaphoreci.com/docs/customizing-build-commands.html)
+[The build command editor](/docs/customizing-build-commands.html)
 lets you customize the setup of your build pipeline, enable parallel threads, and
 set up post-thread commands that run on both success and failure.
 
@@ -89,33 +89,33 @@ To start running your Docker project, all you need to do is [add it on Semaphore
 of your Git repository, Semaphore will pre-select the Docker-enabled platform, and
 you’ll be ready to use the Docker CLI tools in your builds and deploys.
 
-Semaphore will also cache your Docker images to ensure that your builds are only
-doing what they're meant to, and that the time needed for dependency resolving is
-minimal.
+Semaphore will also [cache your Docker images](/docs/docker/docker-layer-caching.html)
+to ensure that your builds are only doing what they're meant to, and that the time
+needed for dependency resolving is minimal.
 
-For most up-to-date information about our Docker platform, you can [refer to our documentation page](https://semaphoreci.com/docs/docker.html). The following guides can help
+For most up-to-date information about our Docker platform, you can [refer to our documentation page](/docs/docker.html). The following guides can help
 you get started:
 
-* [Setting up continuous integration for a Docker project] (https://semaphoreci.com/docs/docker/setting-up-continuous-integration-for-docker-project.html)
-* [Testing multi-container applications with Docker Compose](https://semaphoreci.com/docs/docker/testing-multicontainer-apps-with-docker-compose-and-semaphore.html)
+* [Setting up continuous integration for a Docker project](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
+* [Testing multi-container applications with Docker Compose](/docs/docker/testing-multicontainer-apps-with-docker-compose-and-semaphore.html).
 
 Semaphore also provides in-app integrations with most popular Docker registries —
-[Amazon EC2 Container registry](https://semaphoreci.com/docs/docker/continuous-delivery-aws-container-registry.html), [Docker Hub](https://semaphoreci.com/docs/docker/continuous-delivery-docker-hub.html), [Google Container registry](https://semaphoreci.com/docs/docker/continuous-delivery-google-container-registry.html), [Heroku Container Registry](https://semaphoreci.com/docs/docker/continuous-delivery-heroku-container-registry.html), [Quay.io](https://semaphoreci.com/docs/docker/continuous-delivery-quayio.html), and [custom or self-hosted container registries](https://semaphoreci.com/docs/docker/continuous-delivery-on-premise-container-registry.html).
+[Amazon EC2 Container registry](/docs/docker/continuous-delivery-aws-container-registry.html), [Docker Hub](/docs/docker/continuous-delivery-docker-hub.html), [Google Container registry](/docs/docker/continuous-delivery-google-container-registry.html), [Heroku Container Registry](/docs/docker/continuous-delivery-heroku-container-registry.html), [Quay.io](/docs/docker/continuous-delivery-quayio.html), and [custom or self-hosted container registries](/docs/docker/continuous-delivery-on-premise-container-registry.html).
 
 ## <a name="running_tests_in_parallel_to_speed_up_your_ci" href="#running_tests_in_parallel_to_speed_up_your_ci">Running tests in parallel to speed up your CI</a>
 
 Speeding up your builds on Semaphore is easy:
 
-* [Run tests in parallel](https://semaphoreci.com/docs/running-tests-in-parallel.html).
+* [Run tests in parallel](/docs/running-tests-in-parallel.html).
 Schedule different parts of your test suite in parallel threads to save time.
 * If you have a Rails application, you don't have to parallelize your tests
-manually — with Semaphore Boosters, you can [automatically parallelize your Rails CI build in a few clicks](http://semaphoreci.com/docs/about-boosters.html).
+manually — with Semaphore Boosters, you can [automatically parallelize your Rails CI build in a few clicks](/docs/about-boosters.html).
 * Semaphore automatically caches and reuses your repository and recognized dependencies
-between builds. You can also [use the same cache for additional purposes](https://semaphoreci.com/docs/caching-between-builds.html).
+between builds. You can also [use the same cache for additional purposes](/docs/caching-between-builds.html).
 
 ## <a name="setting_up_continuous_deployment" href="#setting_up_continuous_deployment">Setting up Continuous deployment</a>
 
-In addition to continuous integration, Semaphore can also [continuously deploy your application](https://semaphoreci.com/docs/continuous-deployment-options.html) when
+In addition to continuous integration, Semaphore can also [continuously deploy your application](/docs/continuous-deployment-options.html) when
 all tests pass.
 
 Even if you would rather deploy manually, you can quickly set up a target server
@@ -142,7 +142,7 @@ You can get started with general practice tutorials:
 * [Behavior-driven Development](https://semaphoreci.com/community/tutorials/behavior-driven-development)
 * [How to Deal With and Eliminate Flaky Tests](https://semaphoreci.com/community/tutorials/how-to-deal-with-and-eliminate-flaky-tests)
 
-You can also take a look at all categories and [read tutorials about the technologies of your choice.](https://semaphoreci.com/community/tags).
+You can also take a look at all categories and [read tutorials about the technologies of your choice](https://semaphoreci.com/community/tags).
 
 This should be all you need to get started with building and deploying your application
 with Semaphore. If you have any questions or need some more hands-on assistance,
