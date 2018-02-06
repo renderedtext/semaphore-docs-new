@@ -28,7 +28,7 @@ Once the build is finished, Semaphore will recommend the optimal number of jobs 
 
 You can now go to Project settings and remove the manually set up job. It will be replaced by the Booster job with parallel jobs. Boosters will now automatically parallelize each new build. 
 
-If you would like to be guided through setting up Boosters by one of our engineers, you can [schedule a Boosters demo](https://semaphoreci.com/landers/boosters-rails).
+If you would like to be guided through setting up Boosters by one of our engineers, you can [contact us to schedule a Boosters demo](https://semaphoreci.com/contact).
 
 ### Will Boosters affect my current build configuration?
 
