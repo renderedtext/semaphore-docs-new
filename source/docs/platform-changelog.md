@@ -9,39 +9,39 @@ Current package versions are listed on the [Supported application stack](/docs/s
 ### 1802 - 2018-02-27 (planned)
 ```md
 - additions
-  - Elixir 1.6.1
-  - Node.js 9.5.0
-  - PHP 7.2
-  - Ruby 2.2.9
-  - Ruby 2.2.9
-  - Ruby 2.3.6
-  - Ruby 2.4.3
-  - Ruby 2.5.0
+  - elixir 1.6.1
+  - node.js 9.5.0
+  - php 7.2
+  - ruby 2.2.9
+  - ruby 2.2.9
+  - ruby 2.3.6
+  - ruby 2.4.3
+  - ruby 2.5.0
 - upgrades
   - chromedriver 2.33 -> 2.35
   - google-chrome 62.0.3202.94 -> 64.0.3282.140
-  - ElasticSearch 5.4.1 -> 5.4.3
-  - Elixir 1.5.2 -> 1.5.3
-  - Erlang 20.0 -> 20.2
-  - Go 1.8.5 -> 1.8.6
-  - Go 1.9 -> 1.9.3
-  - Git 2.15 -> 2.16.1
+  - elasticsearch 5.4.1 -> 5.4.3
+  - elixir 1.5.2 -> 1.5.3
+  - erlang 20.0 -> 20.2
+  - go 1.8.5 -> 1.8.6
+  - go 1.9 -> 1.9.3
+  - git 2.15 -> 2.16.1
   - heroku-toolbelt 6.14.38 -> 6.15.22
   - java 8u151 -> 8u161
   - mongodb 3.4.10 -> 3.4.11
   - mysql 5.6.38 -> 5.6.39
   - node 8.9.1 -> 8.9.4
-  - Redis 4.0.1 -> 4.0.8
-  - PHP 5.6.32 -> 5.6.33
-  - PHP 7.0.25 -> 7.0.27
-  - PHP 7.1.11 -> 7.1.14
+  - redis 4.0.1 -> 4.0.8
+  - php 5.6.32 -> 5.6.33
+  - php 7.0.25 -> 7.0.27
+  - php 7.1.11 -> 7.1.14
   - rabbitmq 3.6.14 -> 3.6.15
   - redis 4.0.2 -> 4.0.3
-  - JRuby 9.1.14 -> 9.1.15
+  - jruby 9.1.14 -> 9.1.15
 - deprecations
-  - PHP 5.3
-  - Elixir 1.2
-  - Ruby 1.9.2
+  - php 5.3
+  - elixir 1.2
+  - ruby 1.9.2
 ```
 
 ### 1711 - 2017-11-28
