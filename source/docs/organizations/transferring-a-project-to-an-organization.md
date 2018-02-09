@@ -18,7 +18,7 @@ Transferring a project to an organization is simple:
 1. Go to your **Account** in the main menu and select the **Account Settings**
 tab.
 
- <img src="/docs/assets/img/transferring-a-project-to-an-organization/account-settings.png" alt="Account settings" class="img-responsive img-bordered">
+ <img src="/docs/assets/img/transferring-a-project-to-an-organization/account-settings-tab.png" class="img-responsive img-bordered">
 
 2. Scroll to the bottom of the page and click on **Transfer** next to the
 name of the project you would like to transfer.
@@ -40,11 +40,13 @@ organization and re-add it to your user account.
 
 Transferring a project to a Semaphore organization gives all the members of the
 _Owners_ team immediate administrative access to the project, and creates a new
-team to which you can add collaborators for that project. If you would like to
-further limit access permissions for some project collaborators, you can [create
-additional teams](/docs/organizations/creating-a-team.html) with different
-permission levels, or add the project to existing teams with the desired access
-permission.
+team to which you can add collaborators for that project. In case you already had
+collaborators on your project, Semaphore will automatically transfer them together
+with the project and create new team called "collaborators team for _project name_".
+This new team will have [Edit permission level](/docs/organizations/permission-levels-in-an-organization.html)
+by default. If you would like to further limit  access permissions for some project
+collaborators, you can [create additional teams](/docs/organizations/creating-a-team.html)
+with different permission levels, or change permission levels for the existing teams.
 
 ##Further reading
 
