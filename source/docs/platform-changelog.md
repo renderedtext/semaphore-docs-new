@@ -11,7 +11,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
 - additions
   - elixir 1.6.1
   - node.js 9.5.0
-  - php 7.2
+  - php 7.2.0
   - ruby 2.2.9
   - ruby 2.2.9
   - ruby 2.3.6
@@ -19,29 +19,30 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - ruby 2.5.0
 - upgrades
   - chromedriver 2.33 -> 2.35
-  - google-chrome 62.0.3202.94 -> 64.0.3282.140
   - elasticsearch 5.4.1 -> 5.4.3
   - elixir 1.5.2 -> 1.5.3
   - erlang 20.0 -> 20.2
+  - git 2.15 -> 2.16.1
   - go 1.8.5 -> 1.8.6
   - go 1.9 -> 1.9.3
-  - git 2.15 -> 2.16.1
+  - google-chrome 62.0.3202.94 -> 64.0.3282.140
   - heroku-toolbelt 6.14.38 -> 6.15.22
-  - java 8u151 -> 8u161
   - mongodb 3.4.10 -> 3.4.11
   - mysql 5.6.38 -> 5.6.39
   - node 8.9.1 -> 8.9.4
-  - redis 4.0.1 -> 4.0.8
   - php 5.6.32 -> 5.6.33
   - php 7.0.25 -> 7.0.27
   - php 7.1.11 -> 7.1.14
   - rabbitmq 3.6.14 -> 3.6.15
-  - redis 4.0.2 -> 4.0.3
+  - redis 4.0.1 -> 4.0.8
   - jruby 9.1.14 -> 9.1.15
 - deprecations
-  - php 5.3
   - elixir 1.2
+  - php 5.3
   - ruby 1.9.2
+- configuration
+  - default elixir version set to 1.5.3
+  - default erlang version  set to 20.2
 ```
 
 ### 1711 - 2017-11-28
