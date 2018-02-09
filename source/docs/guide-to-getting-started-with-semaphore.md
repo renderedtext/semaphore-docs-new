@@ -141,14 +141,13 @@ you'll also find wizards for AWS, Heroku and more.
 [Semaphore Community](https://semaphoreci.com/community) is a collection of tutorials
 and interviews on continuous delivery practices and tools for various programming
 languages, written by Semaphore engineers and contributors from the community.
+You can take a look at all categories and [read tutorials about the technologies of your choice](https://semaphoreci.com/community/tags).
 
-You can get started with general practice tutorials:
+We recommend you to read a few general practice tutorials:
 
 * [Why We Need Continuous Integration](https://semaphoreci.com/community/tutorials/continuous-integration)
 * [Behavior-driven Development](https://semaphoreci.com/community/tutorials/behavior-driven-development)
 * [How to Deal With and Eliminate Flaky Tests](https://semaphoreci.com/community/tutorials/how-to-deal-with-and-eliminate-flaky-tests)
-
-You can also take a look at all categories and [read tutorials about the technologies of your choice](https://semaphoreci.com/community/tags).
 
 This should be all you need to get started with building and deploying your application
 with Semaphore. If you have any questions or need some more hands-on assistance,
