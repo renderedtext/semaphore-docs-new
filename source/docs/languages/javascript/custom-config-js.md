@@ -8,7 +8,7 @@ If you select PostgreSQL or MySQL as database for a project, Semaphore will
 populate `DATABASE_USERNAME` and `DATABASE_PASSWORD`, with working credentials.
 
 You can create a custom `config.js` using [custom configuration
-files](/docs/adding-custom-configuration-files.html) and [environment
+files](/docs/adding-configuration-files.html) and [environment
 variables](/docs/available-environment-variables.html).
 
 An example custom configuration file at `project_name/config/config.js` path

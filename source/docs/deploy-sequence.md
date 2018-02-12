@@ -26,7 +26,7 @@ For a full list of available variables, please see [this page](/docs/available-e
 
 ### Write custom files
 
-Any [custom configuration files](/docs/adding-custom-configuration-files.html) you've added are written to disk.
+Any [custom configuration files](/docs/adding-configuration-files.html) you've added are written to disk.
 
 ### SSH key initialization
 

@@ -49,4 +49,4 @@ and how to [add an environment variable to a secret](/docs/secrets.html#adding-a
 
 Modifying `PATH` is not supported and will result in build failure.
 
-See also: [how to add configuration files](/docs/adding-custom-configuration-files.html) to your build.
+See also: [how to add configuration files](/docs/adding-configuration-files.html) to your build.

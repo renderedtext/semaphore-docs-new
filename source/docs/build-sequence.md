@@ -44,7 +44,7 @@ builds](/docs/caching-between-builds.html).
 
 ### Write custom files
 
-Any [custom configuration files](/docs/adding-custom-configuration-files.html)
+Any [custom configuration files](/docs/adding-configuration-files.html)
   you've added are written to disk.
 
 ### Run your build commands

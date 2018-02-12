@@ -10,7 +10,7 @@ some cases you might want to use your own `database.yml`. This includes
 projects that depend on more than one database.
 
 You can create a custom `database.yml` using [custom configuration
-files](/docs/adding-custom-configuration-files.html) and [environment
+files](/docs/adding-configuration-files.html) and [environment
 variables](/docs/available-environment-variables.html).
 
 An example custom configuration file at `project_name/config/database.yml` path

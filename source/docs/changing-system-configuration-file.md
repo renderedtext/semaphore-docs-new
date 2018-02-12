@@ -14,7 +14,7 @@ For example, the following command allows you to update your `/etc/hosts` file:
 sudo sh -c "echo 'yourchange' >> /etc/hosts"
 ```
 
-As an alternative, you can [create a custom configuration file](/docs/adding-custom-configuration-files.html)
+As an alternative, you can [create a custom configuration file](/docs/adding-configuration-files.html)
 from the Semaphore interface and then copy or move it to the desired location:
 
 ```bash

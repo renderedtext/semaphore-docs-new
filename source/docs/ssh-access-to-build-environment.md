@@ -34,7 +34,7 @@ and prepare your session.
 Semaphore will start a build environment identical to the one where your current
 build or deploy ran. Your project’s Git repository will be checked out at the same
 revision. Semaphore will also export any
-[configuration files](https://semaphoreci.com/docs/adding-custom-configuration-files.html) and
+[configuration files](https://semaphoreci.com/docs/adding-configuration-files.html) and
 [environment variables](https://semaphoreci.com/docs/exporting-environment-variables.html)
 which you have configured in your project's settings.
 

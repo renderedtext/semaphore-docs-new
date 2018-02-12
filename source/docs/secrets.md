@@ -7,7 +7,7 @@ category: Customizing your build
 Every project can be configured with
 [environment variables](/docs/exporting-environment-variables.html)
 and
-[configuration files](/docs/adding-custom-configuration-files.html).
+[configuration files](/docs/adding-configuration-files.html).
 If you want to share environment variables and configuration files between two
 or more projects, your organization can set up a secret and
 attach it to multiple projects.
