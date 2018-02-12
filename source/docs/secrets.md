@@ -136,7 +136,8 @@ environment variable in the list.
 #### Adding a Configuration File to the secret
 
 To add a configuration file to a secret, click "+ Add first" next to the
-Configuration Files title.
+Configuration Files title (if there were some configuration files, the link
+text would be "+ Add new").
 
 Form for a new configuration file will be shown where you can fill in file
 path, content and choose whether the content will be encrypted or not.
@@ -188,14 +189,16 @@ the project name. There will be a 'Saved.' message once the secret is detached.
 After you've added a secret to a project, you can view what has been added to
 the project in the Project Settings.
 
-You can visit Project Settings -> Environment Variables to see which
-environment variables are added to your project.
+You can visit the project where you attached the secret and go into Project
+Settings -> Environment Variables to see which environment variables are added
+to your project.
 
-You can visit Project Settings -> Configuration Files to see which
-configuration files are added to your project.
+You can visit the project where you attached the secret and go into Project
+Settings -> Configuration Files to see which configuration files are added to
+your project.
 
-Each time you add or remove a secret from a project, Environment Variables and
-Configuration Files tabs will reflect the change.
+Each time you add or remove a secret from a project, project's Environment
+Variables and Configuration Files tabs will reflect the change.
 
 ## Setting up a secret via API v2
 
