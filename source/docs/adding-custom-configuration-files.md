@@ -33,4 +33,12 @@ of your file can be determined by the MD5 hash.
 
 <img src="/docs/assets/img/how-to-securely-add-custom-file/custom-file-list.png" class="img-responsive">
 
+### Adding a configuration file from a secret
+
+In order to share the common build configuration, you can add a configuration
+file from a secret that you've previously added. Secrets are more convenient solution
+if you have projects that share some configuration files (e.g. `~/.aws/credentials`).
+Learn more about [secrets](/docs/secrets.html) and
+[adding a configuration file to a secret](/docs/secrets.html#adding-a-configuration-file-to-the-secret).
+
 See also: [how to add another SSH key](/docs/adding-more-ssh-keys.html) to your build.
