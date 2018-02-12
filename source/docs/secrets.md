@@ -45,12 +45,99 @@ To use the entries from the secret in your projects, you need to
 attach the secret to your project, and select the environment
 variables you want to use from the secret.
 
+## Setting up a secret via UI
+
+In order to add a secret to your organization, you have to an owner of the
+organization, or be in a team with "admin" permission level.
+
+### Adding a secret
+
+Once you've obtained proper permission to add a secret, you can visit your
+organization settings, and go to "Secrets" tab. You can add a new secret by
+clicking "New Secret" button on the organization "Secrets" tab. You can fill in
+
+ - Secret name, and,
+ - Secret description
+
+This will create a secret that can be shared across your organization. Newly
+created secret is automatically added to the "Owners" team of your
+organization.
+
+### Adding entries to the secret
+
+Since secret is a collection of environment variables and configuration files
+that can be shared across organization's projects, you can add perform these
+actions in the user interface:
+
+- Add an Environment Variables
+- Add a Configuration Files
+- Attach the secret to a Team
+- Attach the secret to a Project
+
+#### Adding an Environment Variable to the secret
+
+Once you've added a secret, you can add an environment variable to it. You can
+do that by clicking "+ Add first" link next to the Environment Variables title.
+
+After you click the link, a form for the new environment variable will be
+shown. Environment variable has a name, content and an option to encrypt
+it's content.
+
+When you're finished with filling in the form, click "Save", and new environment
+variable should be added to the secret.
+
+#### Adding a Configuration File to the secret
+
+To add a configuration file to a secret, click "+ Add first" next to the
+Configuration Files title.
+
+Form for a new configuration file will be shown where you can fill in file
+path, content and choose whether the content will be encrypted or not.
+
+After you've filled in the form, click "Save" and new configuration file should
+be added to the secret.
+
+#### Attaching the secret to a Team
+
+In order to attach a secret to a team, click "Edit permission" next to
+'Who can see and edit this?' title.
+
+Once you click the link, you should see a list of teams. In order to attach
+a secret to a team, you need to click a check box next to team name. You will
+see a 'Saved' message once the secret is attached.
+
+Note that you can only see teams that are available to you.
+
+#### Attaching the secret to a Project
+
+In order to attach a secret to a project, click "Edit" next to
+'Projects sharing this Secret' title.
+
+Once "Edit" is clicked, you should see a list of projects that belong to your
+organization. In order to attach a secret to a project, you need to click a
+check box next to the project name. You will see a 'Saved' message once the
+secret is attached.
+
+### Viewing attached entries in the Project Settings
+
+After you've added a secret to a project, you can view what has been added to
+the project in the Project Settings.
+
+You can visit Project Settings -> Environment Variables to see which
+environment variables are added to your project.
+
+You can visit Project Settings -> Configuration Files to see which
+configuration files are added to your project.
+
+Each time you add or remove a secret from a project, Environment Variables and
+Configuration Files tabs will reflect the change.
+
 ## Setting up a secret via API v2
 
 First, you need to find your API credentials to access your organization via the
 API.  You can find your API credentials at the bottom of your your
 [users settings page](https://semaphoreci.com/users/edit). To learn more about
-API authentiacation read the [API v2 authentiacation guide](/docs/api-v2-overview.html#authentication).
+API authentication read the [API v2 authentication guide](/docs/api-v2-overview.html#authentication).
 
 ``` bash
 export AUTH_TOKEN=<token>
