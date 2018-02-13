@@ -47,16 +47,16 @@ project.
 
 ## Setting up a secret via UI
 
-In order to add a secret to your organization, you have to an owner of the
-organization, or be in a team with "admin" permission level. You can perform these
-actions:
+In order to add a secret to your organization, it is necessary to be a member
+of the organization's owners team organization, or team with the "admin"
+permission level. You can perform these actions on the secret:
 
-- [Adding a secret](#adding-a-secret)
+- [Creating a secret](#creating-a-secret)
 - [Editing a secret](#editing-a-secret)
 - [Deleting a secret](#deleting-a-secret)
 - [Managing secret's entries](#managing-secrets-entries)
 
-### Adding a secret
+### Creating a secret
 
 Once you've obtained proper permission to add a secret, visit your organization
 page on Semaphore, and go to "Secrets" tab. To add a new secret, click "New
@@ -65,9 +65,9 @@ Secret" button on the organization "Secrets" tab. You can fill in:
  - Secret name, and,
  - Secret description.
 
-This will create a secret that can be shared across your organization. Newly
-created secret is automatically added to the "Owners" team of your
-organization.
+After, click "Create Secret". This will create a secret that can be shared
+across your organization. Newly created secret is automatically added to the
+"Owners" team of your organization.
 
 ### Editing a secret
 
@@ -106,16 +106,16 @@ actions are available in the user interface:
 
 #### Adding an Environment Variable to the secret
 
-Once the secret is added, you can add an environment variable to it. You can do
-that by clicking "+ Add first" link next to the Environment Variables title (if
-there were some environment variables, the link text would be "+ Add new").
+Once the secret is created, you can add an environment variable to it. You can
+do that by clicking "+ Add first" link next to the Environment Variables title
+(if there were some environment variables, the link text would be "+ Add new").
 
 After you click the link, a form for the new environment variable will be
 shown. Environment variable has a name, content and an option to encrypt
 it's content.
 
-When you're finished with filling in the form, click "Save", and new environment
-variable should be added to the secret.
+When you're finished with filling in the form, click "Save", and the new
+environment variable should be added to the secret.
 
 #### Editing and deleting an Environment Variable from the secret
 
@@ -142,8 +142,8 @@ text would be "+ Add new").
 Form for a new configuration file will be shown where you can fill in file
 path, content and choose whether the content will be encrypted or not.
 
-After you've filled in the form, click "Save" and new configuration file should
-be added to the secret.
+After you've filled in the form, click "Save" and the new configuration file
+should be added to the secret.
 
 #### Editing and deleting a Configuration File from the secret
 
@@ -163,11 +163,11 @@ To attach a secret to a team, click "Edit permission" next to
 "Who can see and edit this?" title.
 
 Once clicked, there should be a list of teams. In order to attach a secret to a
-team, you need to check a box next to the team name. There will be a 'Saved.'
+team, you need to check a box next to the team name. You will see a 'Saved.'
 message once the secret is attached.
 
 To detach the secret from a team, you will need to uncheck the box next to the
-team name. There will be a 'Saved.' message once the secret is detached.
+team name. 'Saved.' message should show once the secret is detached.
 
 Note that you can only see teams that are available to you.
 
@@ -182,7 +182,7 @@ next to the project name. You will see a short 'Saved.' message once the secret
 is attached.
 
 To detach the secret from a project, you will need to uncheck the box next to
-the project name. There will be a 'Saved.' message once the secret is detached.
+the project name. Once the secret is detached, you will see a 'Saved' message.
 
 ### Viewing attached entries in the Project Settings
 

@@ -18,7 +18,7 @@ the build and deploy process.
 To get started, open your project settings, "Environment Variables" tab. Click
 on "Add an environment variable" to open a form.
 
-For each variable you need to specify its' name and value (content). For
+For each variable you need to specify its name and value (content). For
 instance, you would enter "SECRET_TOKEN" as name and "123abcde" as content.
 
 Each environment variable is exported before your build starts along with
