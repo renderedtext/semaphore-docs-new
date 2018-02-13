@@ -59,8 +59,8 @@ To use Insights, replace the `SPEC_OPTS` environment variable with an `.rspec`
 file.  You can commit the file to the repository. In that case, these options
 will be used on all development machines, unless a developer overrides them. If
 you don't want to commit the `.rspec` file to the project repository, you can
-create the file using [custom configuration
-files](/docs/adding-custom-configuration-files.html). That way, the `.rspec`
+create the file using [configuration
+files](/docs/adding-configuration-files.html). That way, the `.rspec`
 file will be available only on Semaphore.
 
 An alternative is to construct the `SPEC_OPTS` environment variable yourself.

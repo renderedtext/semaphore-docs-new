@@ -45,6 +45,7 @@ The teams with the _Admin_ permission level can:
 - Manually trigger builds and deploys
 - Start SSH sessions
 - Add and remove projects from the organization account
+- Manage secrets
 
 ### 4. Owner
 
@@ -61,6 +62,7 @@ The Owners team is able to:
 - Manage billing
 - Edit the organization profile
 - Delete the organization account
+- Manage secrets
 
 ## Further reading
 
