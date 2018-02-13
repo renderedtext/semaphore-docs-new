@@ -42,10 +42,10 @@ also provide `.semaphore-cache` directory which you can use custom caching. For
 more information on this topic, please read about [caching between
 builds](/docs/caching-between-builds.html).
 
-### Write custom files
+### Write configuration files
 
-Any [custom configuration files](/docs/adding-configuration-files.html)
-  you've added are written to disk.
+Any [configuration file](/docs/adding-configuration-files.html)
+you've added are written to disk.
 
 ### Run your build commands
 

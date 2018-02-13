@@ -16,8 +16,8 @@ curl -u 'masonforest' -d '{"scopes":["repo"], "note":"Semaphore CI private gem"}
 
 ### - Authenticate bundler to GitHub via OAuth Token
 
-Add this line to your Gemfile replacing "your_token" with the token you got from first step.
-In this example we are installing the 'ventana' gem:
+Add this line to your Gemfile replacing "your_token" with the token you got
+from first step.  In this example we are installing the 'ventana' gem:
 
 ```bash
 gem 'ventana', git: "https://your_token:x-oauth-basic@github.com/renderedtext/ventana.git"
@@ -27,8 +27,11 @@ gem 'ventana', git: "https://your_token:x-oauth-basic@github.com/renderedtext/ve
 
 ### Storing the OAuth token in an environment variable
 
-For additional security you can store your OAuth token in an environment variable. This way your token is not included in your codebase which is insecure.
-However this technique require form you to export OAuth token in your development environment too (Best way is to export it in ~/.zshrc or ~/.bashrc).
+For additional security you can store your OAuth token in an environment
+variable. This way your token is not included in your codebase which is
+insecure.  However this technique require form you to export OAuth token in
+your development environment too (Best way is to export it in ~/.zshrc or
+~/.bashrc).
 
 Change the line in your Gemfile to
 
@@ -46,11 +49,15 @@ Now bundle localy and you are ready to build on Semaphore!
 
 ## Third alternative: additional SSH key
 
-As of November 2013 Semaphore supports saving and using custom configuration files, including SSH keys. [Follow this guide](/docs/adding-more-ssh-keys.html) to set up an additional SSH key which can give your build or deploy permissions to pull private dependencies.
+As of November 2013 Semaphore supports saving and using configuration files,
+including SSH keys. [Follow this guide](/docs/adding-more-ssh-keys.html) to set
+up an additional SSH key which can give your build or deploy permissions to
+pull private dependencies.
 
-Since the Git client uses only the first key from the `ssh-agent` we'd like to suggest using one of the methods listed above.
+Since the Git client uses only the first key from the `ssh-agent` we'd like to
+suggest using one of the methods listed above.
 
-## Create a machine user on Github 
+## Create a machine user on Github
 
 If project's dependencies are hosted on the Github, you can enable Semaphore environment to fetch repositories with these steps:
 

@@ -24,9 +24,9 @@ Your code will be placed in `/home/runner/:project_name`.
 
 For a full list of available variables, please see [this page](/docs/available-environment-variables.html).
 
-### Write custom files
+### Write configuration files
 
-Any [custom configuration files](/docs/adding-configuration-files.html) you've added are written to disk.
+Any [configuration file](/docs/adding-configuration-files.html) you've added are written to disk.
 
 ### SSH key initialization
 
