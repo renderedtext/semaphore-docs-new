@@ -45,7 +45,7 @@ builds](/docs/caching-between-builds.html).
 ### Write configuration files
 
 Any [configuration file](/docs/adding-configuration-files.html)
-you've added are written to disk.
+you've added is written to disk.
 
 ### Run your build commands
 

@@ -23,10 +23,10 @@ organization. It covers topics:
       - [Attaching and detaching the secret from a Team](#attaching-and-detaching-the-secret-from-a-team)
       - [Attaching and detaching the secret from a Project](#attaching-and-detaching-the-secret-from-a-project)
 - [Setting up a secret via API](#setting-up-a-secret-via-api-v2)
-    - [Creating a secret via API](#creating-a-secret-via-api)
-    - [Adding entries to the secret](#adding-entries-to-the-secret)
-    - [Adding secret to your teams](#adding-secret-to-your-teams)
-    - [Using secrets in projects](#using-secrets-in-projects)
+  - [Creating a secret via API](#creating-a-secret-via-api)
+  - [Adding entries to the secret](#adding-entries-to-the-secret)
+  - [Adding secret to your teams](#adding-secret-to-your-teams)
+  - [Using secrets in projects](#using-secrets-in-projects)
 - [Viewing attached entries in the Project Settings](#viewing-attached-entries-in-the-project-settings)
 
 ## What is a secret?
