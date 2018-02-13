@@ -48,8 +48,8 @@ project.
 ## Setting up a secret via UI
 
 In order to add a secret to your organization, it is necessary to be a member
-of the organization's owners team organization, or team with the "admin"
-permission level. You can perform these actions on the secret:
+of the organization's owners team, or team with the "admin" permission level.
+You can perform these actions on the secret:
 
 - [Creating a secret](#creating-a-secret)
 - [Editing a secret](#editing-a-secret)
@@ -71,7 +71,7 @@ across your organization. Newly created secret is automatically added to the
 
 ### Editing a secret
 
-To change secret name and description, click on "Setting" button next to the
+To change secret name and description, click on "Settings" button next to the
 secret name and description. Then you will see a form where you can change
 name and description. Once finished with editing, click "Save Changes" button.
 
