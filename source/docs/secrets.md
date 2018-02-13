@@ -1,8 +1,35 @@
 ---
 layout: post
-title: Sharing build configurations across multiple projects
+title: Secrets
 category: Customizing your build
 ---
+
+This document describes all the ways you can set up and manage secrets for your
+organization. It covers topics:
+
+- [What is a secret?](#what-is-a-secret)
+  - [Example use of a secret](#example-use-of-a-secret)
+  - [Needed permissions](#needed-permissions)
+  - [Using a secret in your project](#using-a-secret-in-your-project)
+- [Setting up a secret via UI](#setting-up-a-secret-via-ui)
+  - [Creating a secret](#creating-a-secret)
+  - [Editing a secret](#editing-a-secret)
+  - [Deleting a secret](#deleting-a-secret)
+  - [Managing secret's entries](#managing-secrets-entries)
+      - [Adding an Environment Variables to the secret](#adding-an-environment-variable-to-the-secret)
+      - [Editing and deleting an Environment Variable from the secret](#editing-and-deleting-an-environment-variable-from-the-secret)
+      - [Adding a Configuration Files to the secret](#adding-a-configuration-file-to-the-secret)
+      - [Editing and deleting an Configuration File from the secret](#editing-and-deleting-a-configuration-file-from-the-secret)
+      - [Attaching and detaching the secret from a Team](#attaching-and-detaching-the-secret-from-a-team)
+      - [Attaching and detaching the secret from a Project](#attaching-and-detaching-the-secret-from-a-project)
+- [Setting up a secret via API](#setting-up-a-secret-via-api-v2)
+    - [Creating a secret via API](#creating-a-secret-via-api)
+    - [Adding entries to the secret](#adding-entries-to-the-secret)
+    - [Adding secret to your teams](#adding-secret-to-your-teams)
+    - [Using secrets in projects](#using-secrets-in-projects)
+- [Viewing attached entries in the Project Settings](#viewing-attached-entries-in-the-project-settings)
+
+## What is a secret?
 
 Every project can be configured with
 [environment variables](/docs/exporting-environment-variables.html)
@@ -15,26 +42,31 @@ attach it to multiple projects.
 A _secret_ is a collection of environment variables and
 configuration files in an organization that can be shared between projects.
 
-An ideal workflow for secrets is for an admin in the
-organization to set up several configurations containing organization wide
-secrets necessary for building your projects. Once the shared
-configurations are set up, admins and owners can share it with their teams.
+### Example use of a secret
 
-For example, if you have have a set of environment variables (`AWS_ACCESS_KEY_ID`,
-`AWS_SECRET_ACCESS_KEY`) for accessing a your resources on AWS, you can create a
-secret called `AWS Access Keys`.
+If you have have a set of environment variables (`AWS_ACCESS_KEY_ID`,
+`AWS_SECRET_ACCESS_KEY`) for accessing a your resources on AWS, you can create
+a secret called `AWS Access Keys`. Then, you can share that secret across the
+teams that need to access the same resources.
+
+Idea of a secret is to minimize duplication of environment variables and
+configuration files across your teams and projects.
+
+### Needed permissions
+
+An ideal workflow for secrets is for a person with
+["admin" or "owner" permission
+level in the organization](/docs/organizations/permission-levels-in-an-organization.html)
+to set up several organization wide secrets necessary for building your
+projects. Once the secrets are set up, members of the "admin" and "owner" teams
+can share them with other teams.
 
 To use entries from the secret, you need to add it to your teams
 and to attach it to your project.
 
-### Creating a secret and adding it to your teams
+To read more about permission level of a team inside the organization, go to
+[Permission levels in an organization](/docs/organizations/permission-levels-in-an-organization.html)
 
-Any admin or owner in your organization can create a secret, and
-fill it environment variables and configuration files. When created, the shared
-configuration is added to the owners team only.
-
-Following this, admins and owners in the organization can add the shared
-configuration to their teams to allow non-admin users to use it on their projects.
 
 ### Using a secret in your project
 
@@ -184,22 +216,6 @@ is attached.
 To detach the secret from a project, you will need to uncheck the box next to
 the project name. Once the secret is detached, you will see a 'Saved' message.
 
-### Viewing attached entries in the Project Settings
-
-After you've added a secret to a project, you can view what has been added to
-the project in the Project Settings.
-
-You can visit the project where you attached the secret and go into Project
-Settings -> Environment Variables to see which environment variables are added
-to your project.
-
-You can visit the project where you attached the secret and go into Project
-Settings -> Configuration Files to see which configuration files are added to
-your project.
-
-Each time you add or remove a secret from a project, project's Environment
-Variables and Configuration Files tabs will reflect the change.
-
 ## Setting up a secret via API v2
 
 First, you need to find your API credentials to access your organization via the
@@ -210,6 +226,8 @@ API authentication read the [API v2 authentication guide](/docs/api-v2-overview.
 ``` bash
 export AUTH_TOKEN=<token>
 ```
+
+### Creating a secret via API
 
 With the authorization token in place, let's continue by
 [creating a secret in our organization](/docs/api-v2-secrets.html#create-secret-in-an-organization). For this, you will need to
@@ -281,7 +299,7 @@ curl \
  "https://api.semaphoreci.com/v2/teams/${TEAM_ID}/secrets/${SECRET_ID}"
 ```
 
-## Using secrets in projects
+### Using secrets in projects
 
 Continuing with the previous setup, any member of the team can add the
 secret to his projects. As a team member, you can [attach the secret
@@ -312,6 +330,20 @@ curl \
 After this step, you should see the attached environment variable on your
 project.
 
-![Shared Environment Variables](/docs/assets/shared-configurations/env-vars.png)
-
 The next build on our project will include the connected environment variable.
+
+## Viewing attached entries in the Project Settings
+
+After you've added a secret to a project, you can view what has been added to
+the project in the Project Settings.
+
+You can visit the project where you attached the secret and go into Project
+Settings -> Environment Variables to see which environment variables are added
+to your project.
+
+You can visit the project where you attached the secret and go into Project
+Settings -> Configuration Files to see which configuration files are added to
+your project.
+
+Each time you add or remove a secret from a project, project's Environment
+Variables and Configuration Files tabs will reflect the change.
