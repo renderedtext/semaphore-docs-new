@@ -45,7 +45,7 @@ configuration files in an organization that can be shared between projects.
 ### Example use of a secret
 
 If you have have a set of environment variables (`AWS_ACCESS_KEY_ID`,
-`AWS_SECRET_ACCESS_KEY`) for accessing a your resources on AWS, you can create
+`AWS_SECRET_ACCESS_KEY`) for accessing your resources on AWS, you can create
 a secret called `AWS Access Keys`. Then, you can share that secret across the
 teams that need to access the same resources.
 
@@ -58,11 +58,11 @@ An ideal workflow for secrets is for a person with
 ["admin" or "owner" permission
 level in the organization](/docs/organizations/permission-levels-in-an-organization.html)
 to set up several organization wide secrets necessary for building your
-projects. Once the secrets are set up, members of the "admin" and "owner" teams
-can share them with other teams.
+projects. Once the secrets are set up, members of teams with "admin" and
+"owner" permissions can share them with other teams.
 
-To use entries from the secret, you need to add it to your teams
-and to attach it to your project.
+To use entries from the secret, you need to add it to your teams and to attach
+it to your project.
 
 To read more about permission level of a team inside the organization, go to
 [Permission levels in an organization](/docs/organizations/permission-levels-in-an-organization.html)
@@ -70,8 +70,8 @@ To read more about permission level of a team inside the organization, go to
 
 ### Using a secret in your project
 
-To use a secret in your project, you must be a member of a team
-that has the secret.
+To use a secret in your project, you must be a member of a team that has the
+secret.
 
 To use the entries from the secret in your projects, you need to attach the
 secret to your project. Once attached, all entries will be included in your
@@ -179,7 +179,7 @@ should be added to the secret.
 
 #### Editing and deleting a Configuration File from the secret
 
-Please note that only configuration files that were not encrpyted can be edited.
+Please note that only configuration files that were not encrypted can be edited.
 
 To edit an unencrypted configuration file, click "Edit" next to the
 configuration file.  Form similar to the one when adding a configuration file
@@ -230,8 +230,9 @@ export AUTH_TOKEN=<token>
 ### Creating a secret via API
 
 With the authorization token in place, let's continue by
-[creating a secret in our organization](/docs/api-v2-secrets.html#create-secret-in-an-organization). For this, you will need to
- be either an admin or an owner in your organization.
+[creating a secret in our organization](/docs/api-v2-secrets.html#create-secret-in-an-organization).
+For this, you will need to be in a team with either "admin" or "owner"
+permission in your organization.
 
 ``` bash
 export ORG_USERNAME=<org_name>
@@ -341,9 +342,9 @@ You can visit the project where you attached the secret and go into Project
 Settings -> Environment Variables to see which environment variables are added
 to your project.
 
-You can visit the project where you attached the secret and go into Project
-Settings -> Configuration Files to see which configuration files are added to
-your project.
+To see which configuration files are added to your project, you can visit the
+project where you attached the secret and go into Project Settings ->
+Configuration Files.
 
 Each time you add or remove a secret from a project, project's Environment
 Variables and Configuration Files tabs will reflect the change.
