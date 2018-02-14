@@ -3555,3 +3555,17 @@ tr:last-child td { border-bottom:0 }
   }
 }
 
+.anchor-link {
+  float: left;
+  margin-left: -24px;
+  font-weight: 400;
+  background: none;
+  display: block;
+  width: 20px;
+  padding-right: 4px;
+  text-align: right;
+  visibility: hidden;
+}
+h2:hover .anchor-link, h3:hover .anchor-link, h4:hover .anchor-link, h5:hover .anchor-link, h6:hover .anchor-link {
+  visibility: visible;
+}
