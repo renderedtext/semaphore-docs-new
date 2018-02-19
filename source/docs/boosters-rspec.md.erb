@@ -81,7 +81,7 @@ bundle exec rspec --fail-fast=3 \
 
 You are able to customize your RSpec configuration in any way you need. Though some of the RSpec options do not work properly when used with Boosters.
 
-RSpec [filtering](https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering) option can cause unexpected behaviour when it's used with Boosters. This option can lead to unbalanced builds, since your specs are distributed across available parallel jobs.
+RSpec [filter_run_when_matching](https://relishapp.com/rspec/rspec-core/v/3-6/docs/filtering/filter-run-when-matching) configuration option can cause unexpected behaviour when it's used with Boosters. This option can lead to unbalanced builds, since your specs are distributed across available parallel jobs.
 
 Using `rspec-retry` to rerun flaky tests can lead to unbalanced builds. Retried tests have big standard deviation, and as such they have unpredictable execution duration. Boosters are having trouble to estimate in which job they should be run in the next build. <nobr>Read more about [Flaky Tests](https://semaphoreci.com/blog/2017/04/20/flaky-tests.html).</nobr>
 
