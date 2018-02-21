@@ -12,7 +12,7 @@ Clone the repo and install all necessary gems with
 ```
 $ git clone git@github.com:renderedtext/semaphore-docs-new.git
 $ cd semaphore-docs-new
-$ bundle install --path .bundle
+$ bundle install
 $ cp data/credentials.yml.example data/credentials.yml
 ```
 
@@ -32,7 +32,7 @@ To view the blog locally run:
 which actually runs
 
 ```
-$ bundle exec middleman -p 5000
+$ bundle exec middleman server --port 5000
 ```
 
 Now you can open [http://localhost:5000/docs](http://localhost:5000/docs).
@@ -43,6 +43,18 @@ To include a sign up link within a page, make sure the file extension is
 ```
 [sign up for a free Semaphore account](<%= sign_up_path_with_referer %>)
 ```
+
+### Troubleshooting
+
+If you can't install `nokogiri` dependency on Mac OS, make sure to run in
+terminal:
+
+```
+xcode-select --install
+```
+
+After `xcode-select` is finished installing, `nokogiri` should be able to
+install.
 
 ### Categories
 
@@ -97,7 +109,8 @@ bucket using the AWS CLI. It requires a valid `~/.aws` configuration.
 
 ## Configuration
 
-All sensitive credentials are stored in `data/credentials.yml` check `data/credentials.yml.example` for more info about format of file.
+All sensitive credentials are stored in `data/credentials.yml` check
+`data/credentials.yml.example` for more info about format of file.
 
 ## Importing content from Semaphore Blog
 
@@ -107,11 +120,11 @@ canonical url in the post meta data. For more info, visit the Semaphore Blog
 
 ## Updating APIv2 docs
 
-To update the API v2 docs that are generated from the API specification file, 
+To update the API v2 docs that are generated from the API specification file,
 you need to update the specification file in the root of the repo:
 
-For example, to fetch and use the API spec release '2.8.1' use the following snippet
-in the root of the project:
+For example, to fetch and use the API spec release '2.8.1' use the following
+snippet in the root of the project:
 
 ``` bash
 wget 'http://api-v2-specs.semaphoreci.com/api_specs_2_8_1.json' -O api_v2_specification.json

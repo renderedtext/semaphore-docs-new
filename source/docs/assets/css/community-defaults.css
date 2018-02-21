@@ -1,0 +1,58 @@
+/* Overrides of Tachyons defaults */
+
+/* Links
+----------------------------------------------------------------------------- */
+
+a {
+  text-decoration: none;
+  color: #191919;
+
+  background-image: -webkit-linear-gradient(top,rgba(0, 0, 0, .5) 50%,rgba(0, 0, 0, 0) 50%);
+
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, .5) 50%,rgba(0, 0, 0, 0) 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 0.1em;
+  background-position: 0 100%;
+}
+
+a:hover {
+  opacity: .75;
+}
+
+.link-reset, .link-reset:hover, .link-reset:focus, .link-reset:active {
+  opacity: 1;
+  background-image: none;
+  background-repeat: repeat;
+  background-size: auto auto;
+  background-position: 0 0;
+}
+
+/* Tables
+----------------------------------------------------------------------------- */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+  min-width: 480px;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+  background-color: var(--near-white);
+}
+
+th, td {
+  padding: 4px 8px;
+  padding: .25rem .5rem;
+  line-height: inherit;
+  border-bottom: 1px solid var(--black-20);
+}
+
+th { vertical-align: bottom }
+
+td { vertical-align: top }
+
+tr:last-child td { border-bottom:0 }

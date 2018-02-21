@@ -11,6 +11,15 @@ class DocsRenderer < Redcarpet::Render::HTML
     %(<blockquote cite="http://developer.mozilla.org" class="mh0 ph4 pv1 f5 lh-loose bl b--green bw2 black-70 bg-near-white">#{escape_html(quote)}</blockquote>)
   end
 
+  def header(text, header_level)
+    id = header_anchor(text)
+
+    %(<h#{header_level} id="#{id}" class="f#{header_level + 1} lh-title">
+        <a class="anchor-link" href="##{id}">#</a>
+        #{text}
+      </h#{header_level}>)
+  end
+
   def table(header, body)
     %(<div class="overflow-x-scroll"><table class="f5">#{header}#{body}</table></div>)
   end
@@ -27,5 +36,16 @@ class DocsRenderer < Redcarpet::Render::HTML
 
   def escape_html(string)
     CGI.escapeHTML(string)
+  end
+
+  # TOC anchor hack from https://github.com/vmg/redcarpet/issues/638
+  def header_anchor(text)
+    markdown_header = "# #{text}"
+
+    Nokogiri::HTML(
+      Redcarpet::Markdown.new(
+        Redcarpet::Render::HTML.new(with_toc_data: true)
+      ).render(markdown_header) # make Redcarpet render a h1 tag from Markdown
+    ).css('h1')[0]["id"]        # then fetch the generated ID from the new h1 tag
   end
 end

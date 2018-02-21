@@ -20,8 +20,8 @@ sbt ++$SEMAPHORE_SCALA_VERSION test
 
 You can easily [change or add more build
 commands](/docs/customizing-build-commands.html), customize your build
-environment with [custom configuration
-files](/docs/adding-custom-configuration-files.html), [environment
+environment with [configuration
+files](/docs/adding-configuration-files.html), [environment
 variables](/docs/exporting-environment-variables.html) and more (see the
 'Customizing your build' section for more
 information).
@@ -40,13 +40,13 @@ Manually switching between Scala versions can be done with the
 utility are `2.11` and `2.12`. The current version of Scala is also avaliable
 through the `SEMAPHORE_SCALA_VERSION` environment variable.
 
-[sbt](http://www.scala-sbt.org/) version <%= package_version("sbt") %> is
+[sbt](https://www.scala-sbt.org/) version <%= package_version("sbt") %> is
 pre-installed.
 
 ## Dependency management
 
 Cached resolution is available in `sbt` as an [experimental feature]
-(http://www.scala-sbt.org/0.13/docs/Cached-Resolution.html#Cached+resolution)
+(https://www.scala-sbt.org/0.13/docs/Cached-Resolution.html#Cached+resolution)
 starting from version `0.13.7`. If you use this feature, the contents of
 `~/.sbt/0.13/dependency/` is [cached between
 builds](/docs/caching-between-builds.html) on Semaphore.

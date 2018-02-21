@@ -33,11 +33,10 @@ Choose the "Quay.io" integration.
 
 <img src="/docs/assets/img/docker/setting-up-quay-io-for-your-project/select-quay-io.png" class="img-responsive img-bordered" alt="Click Quay.io integration">
 
-Next, you will be prompted with three input fields:
+Next, you will be prompted with two input fields:
 
   - Quay.io `Username`,
-  - Quay.io `Password`, and
-  - Quay.io `Email address`.
+  - Quay.io `Password`
 
 <img src="/docs/assets/img/docker/setting-up-quay-io-for-your-project/quay-io-form.png" class="img-responsive img-bordered" alt="Quay.io form">
 

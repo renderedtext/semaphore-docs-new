@@ -33,11 +33,14 @@ options = {
   :allow_hash_href => true,
   :alt_ignore => [/.*/],
   :url_ignore => ignored_paths,
+  :http_status_ignore => [0],
   :typhoeus =>
   {
     :followlocation => true,
     :connecttimeout => 30,
-    :timeout => 60
+    :timeout => 60,
+    :ssl_verifypeer => false,
+    :ssl_verifyhost => 0
   }
 }
 

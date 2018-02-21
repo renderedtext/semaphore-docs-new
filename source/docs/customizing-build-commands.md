@@ -121,3 +121,37 @@ per-project basis. To do that, as project admin:
 - Set a new value of "Command timeout".
 
 Options range from 15 minutes to 180 minutes, in increments of 15 minutes.
+
+## Retrying commands
+
+Sometimes, commands like `bundle install` fail due to the intermittent network
+issues. To avoid this, you can use `retry` to re-run the command several times.
+
+The [retry command](https://github.com/renderedtext/scripts/blob/master/utility/retry)
+is installed by default in all builds on Semaphore.
+
+To retry a command use the following scheme in your build configuration:
+
+``` bash
+retry --times N <command>
+```
+
+For example, to retry `bundle install` five times use the following snippet:
+
+``` bash
+retry --times 5 bundle install
+```
+
+You can also specify a sleep duration between consecutive executions of your
+command. You the following form for that:
+
+``` bash
+retry --sleep N <command>
+```
+
+For example, to test if an endpoint is alive, you can retry a `curl` command
+several times with a `10` second delay:
+
+``` bash
+retry --times 20 --sleep 10 curl http://<your-domain>/is_alive
+```

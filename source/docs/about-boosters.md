@@ -52,4 +52,4 @@ If any of these jobs turn red, that will not prevent you from continuing to set 
 
 ### Getting started
 
-To learn more or schedule a Boosters demo and be guided through setting up Boosters by one of our engineers, [visit this page](https://semaphoreci.com/landers/boosters-rails).
+To learn more and see Boosters in action, [visit this page](https://semaphoreci.com/landers/boosters-rails).

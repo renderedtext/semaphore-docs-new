@@ -71,11 +71,11 @@ Status: 200 OK
 {
    "branch_name": "gem_updates",
    "branch_url": "https://semaphoreci.com/projects/44/branches/50",
-   "branch_status_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/status?auth_token=Yds3w6o26FLfJTnVK2y9",
-   "branch_history_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "branch_status_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/status?auth_token=:auth_token",
+   "branch_history_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89?auth_token=:auth_token",
    "project_name": "base-app",
    "build_url": "https://semaphoreci.com/projects/44/branches/50/builds/15",
-   "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/builds/1?auth_token=:auth_token",
    "build_number": 15,
    "result": "passed",
    "started_at": "2012-07-09T15:23:53Z",
@@ -130,13 +130,13 @@ Status: 200 OK
 {
    "branch_name": "gem_updates",
    "branch_url": "https://semaphoreci.com/projects/44/branches/50",
-   "branch_status_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/status?auth_token=Yds3w6o26FLfJTnVK2y9",
-   "branch_history_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89?auth_token=Yds3w6o26FLfJTnVK2y9",
+   "branch_status_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89/status?auth_token=:auth_token",
+   "branch_history_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/89?auth_token=:auth_token",
    "project_name": "base-app",
    "builds": [
       {
          "build_url": "https://semaphoreci.com/projects/57/branches/80/builds/46",
-         "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/80/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
+         "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/80/builds/1?auth_token=:auth_token",
          "build_number": 46,
          "result": "failed",
          "started_at": "2012-10-02T15:01:41Z",
@@ -152,7 +152,7 @@ Status: 200 OK
       },
       {
          "build_url": "https://semaphoreci.com/projects/57/branches/80/builds/45",
-         "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/80/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9",
+         "build_info_url": "https://semaphoreci.com/api/v1/projects/649e584dc507ca4b73e1374d3125ef0b567a949c/80/builds/1?auth_token=:auth_token",
          "build_number": 45,
          "result": "passed",
          "started_at": "2012-10-02T14:47:06Z",
@@ -267,7 +267,7 @@ Status: 200 OK
       ]
     }
   ],
-  "build_info_url": "https://semaphoreci.com/api/v1/projects/3f1004b8343faabda63d441734526c854380ab89/85/builds/1?auth_token=Yds3w6o26FLfJTnVK2y9"
+  "build_info_url": "https://semaphoreci.com/api/v1/projects/3f1004b8343faabda63d441734526c854380ab89/85/builds/1?auth_token=:auth_token"
 }
 ```
 

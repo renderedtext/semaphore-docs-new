@@ -6,6 +6,69 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1802 - 2018-02-27 (planned)
+```md
+- additions
+  - elixir 1.6.1
+  - node.js 9.5.0
+  - php 7.2.0
+  - ruby 2.2.9
+  - ruby 2.2.9
+  - ruby 2.3.6
+  - ruby 2.4.3
+  - ruby 2.5.0
+- upgrades
+  - chromedriver 2.33 -> 2.35
+  - elasticsearch 5.4.1 -> 5.4.3
+  - elixir 1.5.2 -> 1.5.3
+  - erlang 20.0 -> 20.2
+  - git 2.15 -> 2.16.1
+  - go 1.8.5 -> 1.8.6
+  - go 1.9 -> 1.9.3
+  - google-chrome 62.0.3202.94 -> 64.0.3282.140
+  - heroku-toolbelt 6.14.38 -> 6.15.22
+  - mongodb 3.4.10 -> 3.4.11
+  - mysql 5.6.38 -> 5.6.39
+  - node 8.9.1 -> 8.9.4
+  - php 5.6.32 -> 5.6.33
+  - php 7.0.25 -> 7.0.27
+  - php 7.1.11 -> 7.1.14
+  - rabbitmq 3.6.14 -> 3.6.15
+  - redis 4.0.1 -> 4.0.8
+  - jruby 9.1.14 -> 9.1.15
+- deprecations
+  - elixir 1.2
+  - php 5.3
+  - ruby 1.9.2
+- configuration
+  - default elixir version set to 1.5.3
+  - default erlang version  set to 20.2
+```
+
+### 1711 - 2017-11-28
+```md
+- additions
+  - node.js 8.9.1
+  - node.js 9.2.0
+  - oracle jdk 9.0.1
+- upgrades
+  - docker 17.06 -> 17.09
+  - docker-compose 1.16.1 -> 1.17.1
+  - git 2.14.2 -> 2.15
+  - go 1.8.3 -> 1.8.4
+  - go 1.9.1 -> 1.9.2
+  - java 8 u144 -> u151
+  - jruby 9.1.13 -> 9.1.14
+  - leiningen 2.8.0 -> 2.8.1
+  - maven 4.5.0 -> 4.5.2
+  - mongo 3.4.9 -> 3.4.10
+  - php 5.6.31 -> 5.6.32
+  - php 7.0.24 -> 7.0.25
+  - php 7.1.10 -> 7.1.11
+  - scala 2.12.3 -> 2.12.4
+  - yarn 1.2.1 -> 1.3.2
+```
+
 ### 1710 - 2017-10-24
 ```md
 - additions

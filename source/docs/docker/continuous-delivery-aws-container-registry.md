@@ -34,7 +34,7 @@ Select the "Amazon EC2 Container Registry (ECR)" integration.
 
 <img src="/docs/assets/img/docker/setting-up-amazon-container-registry-for-your-project/select-amazon-container-registry.png" class="img-responsive img-bordered" alt="Click Amazon Container Registry">
 
-You will be prompted with three input fields, requiring your:
+You will be prompted with two input fields and one select box, requiring your:
 
   - `AWS Access Key ID`,
   - `AWS Secret Access Key`, and

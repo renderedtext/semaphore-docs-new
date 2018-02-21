@@ -21,7 +21,8 @@ with his Semaphore account.
 ### Primary email
 
 The "Primary email address" is the one you are using to sign in on Semaphore. It
-is also the default address for email notifications on all new projects.
+is also the default address for email notifications on all new projects. Semaphore
+uses primary email address to fetch your profile photo from [Gravatar](https://gravatar.com).
 
 There can be only one "Primary email address" per account. You have the option to
 change it by clicking on "set as primary" button on the right side of your verified
