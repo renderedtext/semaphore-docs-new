@@ -16,9 +16,6 @@ Semaphore runs your test files on multiple machines, e.g. if you have 100 test f
 
 In practice, test files have different runtimes, so packing them across jobs in a way that each job takes roughly same amount of time to complete is essential for optimizing your build time. Semaphore Boosters know how to pack your test files into separate jobs based on their duration. They do this based on a history of runtimes for all the files in your test suite.
 
-To be able to use Boosters in your projects, please [contact us](https://semaphoreci.com/support). We
-will enable you the feature right away.
-
 ### Trying out Boosters
 
 To set up Boosters, go to your project page. Below the list of branches, you will find the Go to Boosters button.
@@ -31,7 +28,7 @@ Once the build is finished, Semaphore will recommend the optimal number of jobs 
 
 You can now go to Project settings and remove the manually set up job. It will be replaced by the Booster job with parallel jobs. Boosters will now automatically parallelize each new build.
 
-If you would like to be guided through setting up Boosters by one of our engineers, you can [schedule a Boosters demo](https://semaphoreci.com/landers/boosters-rails).
+If you would like try it out, you can [schedule a Boosters demo](https://semaphoreci.com/landers/boosters-rails). One of our engineers will guide you through Boosters setup and will enable the Boosters feature for you.
 
 ### Will Boosters affect my current build configuration?
 
