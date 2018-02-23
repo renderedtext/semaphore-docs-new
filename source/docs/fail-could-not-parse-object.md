@@ -17,4 +17,4 @@ If this error persists you could try removing the cache directory '/home/runner/
 
 This problem occurs when there have been changes like force-pushes to a git repo which is referenced in a Gemfile.
 
-The solution is is to comment that gem line in Gemfile, run bundle, uncomment it and bundle again. Then the Gemfile.lock will reference a valid git revision.
+The solution is to comment that gem line in Gemfile, run bundle, uncomment it and bundle again. Then the Gemfile.lock will reference a valid git revision.
