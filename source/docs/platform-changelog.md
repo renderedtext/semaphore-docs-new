@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1802 - 2018-02-27 (planned)
+### 1802 - 2018-02-27
 ```md
 - additions
   - elixir 1.6.1
@@ -19,6 +19,8 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - ruby 2.5.0
 - upgrades
   - chromedriver 2.33 -> 2.35
+  - docker 17.09 -> 17.12
+  - docker-compose 1.17.1 -> 1.18.0
   - elasticsearch 5.4.1 -> 5.4.3
   - elixir 1.5.2 -> 1.5.3
   - erlang 20.0 -> 20.2
