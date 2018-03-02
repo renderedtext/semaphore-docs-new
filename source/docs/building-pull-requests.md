@@ -13,6 +13,10 @@ new build, regardless of whether a pull request has been opened or not.  In
 this case, Semaphore does the equivalent of `git checkout <branch-name> && git
 reset --hard <commit-id>`.
 
+If your development process includes the pull request number,
+steps illustrated on [this page](/docs/how-to-fetch-pull-request-number-from-github.html)
+will help you to fetch it from Github.
+
 ## Pull requests originating from forks
 
 For pushes to forked repositories, Semaphore will start a build after a pull
