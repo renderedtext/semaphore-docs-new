@@ -2,6 +2,8 @@
 layout: post
 title: Building a project with private gems
 category: Managing dependencies
+tags:
+  - ruby
 ---
 
 Either use a hosted private gem repository such as [Gemfury](http://www.gemfury.com/), or follow this procedure:

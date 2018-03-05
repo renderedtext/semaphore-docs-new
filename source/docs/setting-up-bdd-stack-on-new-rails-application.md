@@ -2,6 +2,8 @@
 layout: post
 title: Setting up the BDD stack on a new Rails 4 application
 category: Ruby
+tags:
+  - ruby
 ---
 
 This tutorial guides you through generating a new Rails 4 application with

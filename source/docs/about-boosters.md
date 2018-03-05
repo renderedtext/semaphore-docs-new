@@ -2,6 +2,8 @@
 layout: post
 title: About Boosters
 category: Boosters
+tags:
+  - ruby
 ---
 
 ### Automatically parallelizing your test suite

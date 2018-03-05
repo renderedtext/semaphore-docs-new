@@ -2,6 +2,8 @@
 layout: post
 title: Branch specific database adapters
 category: Ruby
+tags:
+  - ruby
 ---
 
 Let's say you are migrating your project from MySQL to PostgreSQL. You want one
