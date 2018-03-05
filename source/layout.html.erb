@@ -25,6 +25,11 @@
             e.style.display = 'block';
       }
     </script>
+
+    <% if page_tagged?("ruby") && !development? -%>
+      <%= partial(:retargeting_global) %>
+      <%= partial(:retargeting_ruby) %>
+    <% end -%>
   </head>
 
   <body class="sans-serif lh-copy black-90 bg-washed-brown">
