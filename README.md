@@ -131,3 +131,8 @@ wget 'http://api-v2-specs.semaphoreci.com/api_specs_2_8_1.json' -O api_v2_specif
 ```
 
 To list all available API specs releases, visit `http://api-v2-specs.semaphoreci.com`.
+
+## Tags
+
+We use tags in YML frontmatter to render topic-specific content or tracking code.
+Currently only `ruby` tag is in use.

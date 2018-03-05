@@ -2,6 +2,8 @@
 layout: post
 title: Deploying with Capistrano
 category: Deploying your application
+tags:
+  - ruby
 ---
 
 [Capistrano](http://www.capistranorb.com) is a widely used server automation and

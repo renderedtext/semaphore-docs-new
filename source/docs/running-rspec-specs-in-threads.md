@@ -2,10 +2,12 @@
 layout: post
 title: Running RSpec specs in parallel
 category: Customizing your build
+tags:
+  - ruby
 ---
 
-Semaphore lets you run RSpec specs in [parallel jobs](https://semaphoreci.com/parallelism). 
-If you want to get faster feedback from CI, we recommend 
+Semaphore lets you run RSpec specs in [parallel jobs](https://semaphoreci.com/parallelism).
+If you want to get faster feedback from CI, we recommend
 [using Boosters to let Semaphore automatically parallelize your Rails test suite](/docs/about-boosters.html).
 
 Alternatively, you can try the [knapsack](https://github.com/ArturT/knapsack) gem. It

@@ -2,6 +2,8 @@
 layout: post
 title: Running Minitest tests in parallel
 category: Customizing your build
+tags:
+  - ruby
 ---
 
 Semaphore lets you run Minitest tests in [parallel
