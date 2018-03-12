@@ -48,5 +48,13 @@ and how to [add an environment variable to a secret](/docs/secrets.html#adding-a
 ### Limitations
 
 Modifying `PATH` is not supported and will result in build failure.
+Also, using Bash variables is not supported.
+
+To use Bash variables in environment variables, create them by using `export`
+in the [build commands](/docs/customizing-build-commands.html#setup-commands):
+
+```bash
+export tmp_variable=$SEMAPHORE_BUILD_NUMBER
+```
 
 See also: [how to add configuration files](/docs/adding-configuration-files.html) to your build.
