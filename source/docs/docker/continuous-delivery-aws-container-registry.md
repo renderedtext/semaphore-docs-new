@@ -14,15 +14,15 @@ Integrating your **Semaphore account** with the **Amazon EC2 Container Registry
 (ECR)** is quick and straightforward. It will only take a couple of minutes of
 your time.
 
-Container registry integrations are available as project add-ons for all
-Semaphore projects that are set up to use **Docker**. For more information on
-how to set up a Docker project on Semaphore, read our documentation page on
+Container registry integrations are available for all Semaphore projects that
+are set up to use **Docker**. For more information on how to set up a Docker
+project on Semaphore, read our documentation page on
 [setting up continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html).
 
-Configuring the Amazon EC2 Container Registry (ECR) project add-on will enable
+Configuring the Amazon EC2 Container Registry (ECR) integration will enable
 you to **push** and **pull** your images without having to log into ECR during
 builds and deployments. This can be done by visiting your project on Semaphore
-and clicking "Add-ons" in the upper right corner of your screen.
+and clicking "Project settings" in the upper right corner of your screen.
 
 <img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
 
