@@ -17,14 +17,14 @@ consult our documentation page on
 and enable Docker integrations for your project.
 
 Projects that are set up as **Docker** projects will have container registry
-integrations available as project add-ons.
+integrations available through project settings.
 
 Configuring the Custom Registry project add-on will enable you to **push** and
 **pull** your images without explicitly having to log into your Custom Registry
 during builds and deployments.
 
-This can be done by visiting your project on Semaphore and clicking "Add-ons"
-in the upper right corner of your screen.
+This can be done by visiting your project on Semaphore and clicking "Project
+settings" in the upper right corner of your screen.
 
 <img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
 
