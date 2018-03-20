@@ -13,7 +13,7 @@ new monthly subscription.
 
 ### How can I switch from monthly to annual subscription?
 
-If you want to transfer to an annual subscription, you don’t have to wait for
+If you want to switch to an annual subscription, you don’t have to wait for
 your current monthly subscription period to end. When you order annual subscription,
 it will be activated immediately and you will receive a refund for the unused
 portion of your monthly subscription.
