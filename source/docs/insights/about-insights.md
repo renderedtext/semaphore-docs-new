@@ -4,6 +4,10 @@ title: About Insights
 category: Insights
 ---
 
+Here: about inisghts as group
+      about CI speed insights
+      about tfp insights
+
 Insights is a Semaphore feature which provides a report on your slowest test
 files. Its goal is to give you useful feedback on your continuous
 integration process.
@@ -15,6 +19,6 @@ To get started with Insights, you need to enable them for the test frameworks
 you use in your project.
 
 ## Further reading
-- [Enabling Insights](/docs/insights/enabling-insights.html)
-- [Interpreting Insights data](/docs/insights/interpreting-insights-data.html)
-- [Insights troubleshooting](/docs/insights/troubleshooting-insights.html)
+- [Enabling Test file performance Insights](/docs/insights/enabling-insights.html)
+- [Interpreting Test file performance data](/docs/insights/interpreting-insights-data.html)
+- [Test file performance troubleshooting](/docs/insights/troubleshooting-insights.html)
