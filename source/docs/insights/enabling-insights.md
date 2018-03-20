@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Enabling Insights
+title: Enabling Test file performance Insights
 category: Insights
 ---
 
-If you want Semaphore to show Insights on your project, you will need to
-start by enabling this feature.
+If you want Semaphore to show Test file performance Insights on your project,
+you will need to start by enabling this feature.
 
-To enable Insights for your project, follow the **Add-ons** link on the project
-page.
+To enable Test file performance Insights for your project, follow the
+**Insights** link on the project page.
 
 <img src="/docs/assets/img/insights/project_header.png" alt="Add-ons
 feature" class="img-responsive img-bordered">
 
-Next, click on **Insights**.
+Next, click on **Test file performance**.
 
 <img src="/docs/assets/img/insights/insights_option.png" alt="Insights
 option" class="img-responsive img-bordered">
@@ -23,11 +23,12 @@ You will see a list of currently supported frameworks.
 <img src="/docs/assets/img/insights/framework_list.png" alt="Framework
 list" class="img-responsive img-bordered">
 
-Enable Insights for the frameworks used in your project. For example, if you're
-using _RSpec_ and _Cucumber_, and you want Insights for both frameworks, you'll
-need to enable them for each framework.
+Enable Test file performance Insights for the frameworks used in your project.
+For example, if you're using _RSpec_ and _Cucumber_, and you want Test file
+performance Insights for both frameworks, you'll need to enable them for each
+framework.
 
-## Enabling Insights for a test framework
+## Enabling Test file performance Insights for a test framework
 After you have chosen the desired framework, the next step is to click
 **Enable**.
 
@@ -45,5 +46,5 @@ build" class="img-responsive img-bordered">
 
 
 ## Further reading
-- [Interpreting Insights data](/docs/insights/interpreting-insights-data.html)
-- [Insights troubleshooting](/docs/insights/troubleshooting-insights.html)
+- [Interpreting Test file performance data](/docs/insights/interpreting-insights-data.html)
+- [Test file performance troubleshooting](/docs/insights/troubleshooting-insights.html)
