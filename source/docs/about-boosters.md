@@ -20,17 +20,8 @@ In practice, test files have different runtimes, so packing them across jobs in 
 
 ### Trying out Boosters
 
-To set up Boosters, go to your project page. Below the list of branches, you will find the Go to Boosters button.
-
-When you click on that button, you will land on the Insights page. Scroll to *Build time improvements* and select your framework. Next, pick a branch, and start a test build. Once we start the build, everything will be sandboxed to this branch, so your project configuration will not be affected.
-
-In this test build, Semaphore split your test suite across 32 jobs to get the results as quickly as possible.
-
-Once the build is finished, Semaphore will recommend the optimal number of jobs required to make your build as fast as possible. Select the number of jobs that works best for you, and click on *Append parallel jobs*.
-
-You can now go to Project settings and remove the manually set up job. It will be replaced by the Booster job with parallel jobs. Boosters will now automatically parallelize each new build.
-
-If you would like try it out, you can [schedule a Boosters demo](https://semaphoreci.com/landers/boosters-rails). One of our engineers will guide you through Boosters setup and will enable the Boosters feature for you.
+For more information on setting up and trying Boosters, check out our
+[setting up Boosters documentation](/docs/setting-up-boosters.html).
 
 ### Will Boosters affect my current build configuration?
 
