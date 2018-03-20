@@ -16,7 +16,7 @@ documentation page on
 [setting up continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html) for more information.
 
 Configuring your project as a **Docker** project will enable you to set up
-Docker registry integrations in project add-ons.
+Docker registry integrations in project settings.
 
 By adding the Google Container Registry integration, you will be able to **push**
 and **pull** images effortlessly, without having to worry about authentication.
@@ -43,7 +43,7 @@ to:
   6. Be sure to enable [Google Container Registry API](https://console.cloud.google.com/apis/api/containerregistry.googleapis.com/) so you can push and pull images.
 
 After you've followed the steps on Google Cloud Platform, visit your project on
-Semaphore, and click "Add-ons" in the upper right corner of your screen.
+Semaphore, and click "Project settings" in the upper right corner of your screen.
 
 <img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
 
