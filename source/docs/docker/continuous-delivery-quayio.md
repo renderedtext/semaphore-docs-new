@@ -16,12 +16,12 @@ your project as a Docker project on Semaphore. Read
 [Setting up continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
 for more information.
 
-Configuring the **Quay.io** project add-on will enable you to **push** and
+Configuring the **Quay.io** project integration will enable you to **push** and
 **pull** Docker images without having to log into Quay.io during builds
 and deployments.
 
-This can be done by visiting your project on Semaphore and clicking "Add-ons"
-in the upper right corner of your screen.
+This can be done by visiting your project on Semaphore and clicking "Project
+settings" in the upper right corner of your screen.
 
 <img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
 
