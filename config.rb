@@ -163,3 +163,6 @@ configure :build do
   set :host, "semaphoreci.com"
   set :port, 80
 end
+
+require "lib/docs_helpers"
+helpers DocsHelpers

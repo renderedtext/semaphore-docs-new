@@ -2,6 +2,8 @@
 layout: post
 title: Using database from a Ruby or Rails application
 category: Ruby
+tags:
+  - ruby
 ---
 
 When a database engine is selected in project settings, Semaphore will

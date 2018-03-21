@@ -2,6 +2,8 @@
 layout: post
 title: Custom database.yml
 category: Ruby
+tags:
+  - ruby
 ---
 
 If you select PostgreSQL or MySQL as database for a project, Semaphore will
