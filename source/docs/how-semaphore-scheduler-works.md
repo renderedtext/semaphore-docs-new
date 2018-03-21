@@ -59,6 +59,6 @@ or stopped.
 ## Observing the state of the Scheduler
 
 You can observe all the builds, deploys, and SSH sessions in the scheduler by
-visiting your organization's Activity Monitor:
+visiting your organization's [Activity Monitor](/docs/activity-monitor.html):
 
 <img src="/docs/assets/img/activity-monitor.png" class="img-responsive">
