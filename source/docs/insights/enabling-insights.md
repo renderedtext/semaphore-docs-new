@@ -22,8 +22,9 @@ you can start by enabling this particular feature:
 
 4. Click **Enable**.
 
-    After this, each time you run a build, Semaphore will gather info on build
+    After this, each time you run a build, Semaphore will gather data  on build
     running time for that project.
+
     You can click **Start build** right away, and it will build your project's
     latest code revision. You need at least one successful build after clicking
     the **Enable** button in order to be able to get a report on your test files.
