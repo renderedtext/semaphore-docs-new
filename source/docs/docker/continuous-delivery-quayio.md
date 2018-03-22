@@ -18,27 +18,17 @@ for more information.
 
 Configuring the **Quay.io** project integration will enable you to **push** and
 **pull** Docker images without having to log into Quay.io during builds
-and deployments.
+and deployments. To achieve this, do the following:
 
-This can be done by visiting your project on Semaphore and clicking "Project
-settings" in the upper right corner of your screen.
-
-<img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
-
-Next, click "Docker Registry".
-
-<img src="/docs/assets/img/docker/shared/select-docker-registry.png" class="img-responsive img-bordered" alt="Click Docker Registry">
-
-Choose the "Quay.io" integration.
-
-<img src="/docs/assets/img/docker/setting-up-quay-io-for-your-project/select-quay-io.png" class="img-responsive img-bordered" alt="Click Quay.io integration">
+  - visit your project on Semaphore and click on "Project settings" in the upper
+      right corner of your screen
+  - select "Docker Registry"
+  - select the "Quay.io" integration
 
 Next, you will be prompted with two input fields:
 
   - Quay.io `Username`,
   - Quay.io `Password`
-
-<img src="/docs/assets/img/docker/setting-up-quay-io-for-your-project/quay-io-form.png" class="img-responsive img-bordered" alt="Quay.io form">
 
 After you have inputted the credentials, click "Save". Your Quay.io credentials
 will be securely encrypted and saved.
