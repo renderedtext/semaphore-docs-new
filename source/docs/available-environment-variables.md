@@ -18,7 +18,6 @@ it's a build or a deploy. These are different environment variables that are exp
 - [Locale variables](#locale-variables)
 - [Variables in Ruby projects with databases](#variables-in-ruby-projects-with-databases)
 
-
 ## Variables exported in builds and deploys
 
 Before running your build or deploy, Semaphore exports the following environment variables:
@@ -173,7 +172,7 @@ These variables are exported in all AWS deployment integrations.
   </tbody>
 </table>
 
-### AWS Elastic Beanstalk Variables
+### [AWS Elastic Beanstalk](/docs/deploying-to-aws-elastic-beanstalk.html) Variables
 
 Together with the common [AWS variables](#common-aws-variables), Semaphore exports
 also these variables:
@@ -209,7 +208,7 @@ also these variables:
   </tbody>
 </table>
 
-### AWS S3 Variables
+### [AWS S3](/docs/deploying-to-amazon-s3.html) Variables
 
 Together with the common [AWS variables](#common-aws-variables), Semaphore exports
 also these variables:
@@ -237,7 +236,7 @@ also these variables:
   </tbody>
 </table>
 
-### AWS Lambda Variables
+### [AWS Lambda](/docs/deploying-to-aws-lambda.html) Variables
 
 Together with the common [AWS variables](#common-aws-variables), Semaphore exports
 also this variable:
