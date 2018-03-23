@@ -19,4 +19,4 @@ Also, Activity Monitor allows you to see the number of occupied boxes at any giv
 moment.
 
 __Note:__
-This feature is available for paid organizations only.
+This feature is available for organizations only.
