@@ -161,6 +161,11 @@ you can click the link to your website to see your homepage.
 Congratulations! You have successfully configured your website to be
 automatically updated with Semaphore.
 
+### Environment variables exported with S3 integration
+
+You can view [which environment variables are exported during deploy to S3](/docs/available-environment-variables.html#aws-s3-variables),
+together with some [common AWS environment variables](/docs/available-environment-variables.html#common-aws-variables).
+
 ### Example AWS IAM policy
 This example shows a policy which provides Semaphore with access to manage your
 S3 buckets in the process of setting up your deployment. [This

@@ -104,6 +104,12 @@ alt="Ready to deploy" class="img-responsive img-bordered">
 
 Happy building!
 
+## Environment variables exported with Elastic Beanstalk integration
+
+You can view [which environment variables are exported during deploy to Elastic
+Beanstalk](/docs/available-environment-variables.html#aws-elastic-beanstalk-variables),
+together with some [common AWS environment variables](/docs/available-environment-variables.html#common-aws-variables).
+
 ## Example AWS IAM policy
 
 This example shows a policy which provides Semaphore with access to manage your

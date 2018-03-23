@@ -85,3 +85,8 @@ All you need to do is click on _Deploy_.
 
 <img src="https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/227/Screen_Shot_2015-12-11_at_9.26.14_AM.png"
 alt="Ready to deploy" class="img-responsive img-bordered">
+
+## Environment variables exported with Lambda integration
+
+You can view [which environment variables are exported during deploy to Lambda](/docs/available-environment-variables.html#aws-lambda-variables),
+together with some [common AWS environment variables](/docs/available-environment-variables.html#common-aws-variables).
