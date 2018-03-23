@@ -14,16 +14,18 @@ TARGET_DIRECTORY = "#{File.expand_path File.dirname(__FILE__)}/../build"
 ## These links appear mostly in the header/footer -- these paths need to addressed
 ignored_paths = %w(
 /pricing
-/product
 /privacy
 /community
 /contact
 /tos
 /security
 /press
-/about
 /support
 )
+
+ignored_paths << /product/
+ignored_paths << /about/
+ignored_paths << /customers/
 
 # Ignored regular expression in paths eg. www.semaphoreci.com/docs/users?sign_in
 ignored_paths.concat [ /^\/$/, /renderedtext/, /blog/, /users/ ]
