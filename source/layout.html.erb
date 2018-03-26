@@ -26,6 +26,10 @@
       }
     </script>
 
+    <% if !development? %>
+      <%= partial(:google_tag_manager_head) %>
+    <% end %>
+
     <% if page_tagged?("ruby") && !development? -%>
       <%= partial(:retargeting_global) %>
       <%= partial(:retargeting_ruby) %>
@@ -33,6 +37,10 @@
   </head>
 
   <body class="sans-serif lh-copy black-90 bg-washed-brown">
+
+    <% if !development? %>
+      <%= partial(:google_tag_manager_body) %>
+    <% end %>
 
     <%= partial(:header) %>
 
