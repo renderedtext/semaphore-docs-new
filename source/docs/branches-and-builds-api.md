@@ -462,3 +462,25 @@ Status: 200 OK
 ```json
 { "error": "Build not found." }
 ```
+
+## How to launch a build with the specific commit sha?
+
+The following steps demonstrate how to use the `commit_sha` parameter and cURL
+in order to launch a build.
+
+- To find your `auth_token` click on the profile picture
+in the top navigation bar and visit the Settings [YOUR AUTHENTICATION TOKEN].
+- To find the project's `hash_id` visit the Admin tab in its Project Settings.
+- In order to reveal the `branch_id` execute a command similar to the following
+from the comfort of your terminal. The request [response](/docs/branches-and-builds-api.html#response)
+lists branches' details. It includes `branch id` as well.
+
+```bash
+curl -X GET 'https://semaphoreci.com/api/v1/projects/<hash_id_of_this_project>/branches?auth_token=<your_auth_token>'
+```
+
+- Launch a build with a command similar to the following
+
+```bash
+curl -X POST 'https://semaphoreci.com/api/v1/projects/<hash_id_of_this_project>/<branch_id>/build?commit_sha=<commit_sha_of_your_commit>&auth_token=<your_auth_token>'
+```
