@@ -11,8 +11,9 @@ Semaphore caches certain directories automatically, and some only if the
 the relevant language is selected in Project Settings.
 
 - [Automatically cached directories](#automatic-caching)
-- [Caching additional directories](#additional-dir-caching)
+- [Caching system packages (apt-get)](#caching-apt-get)
 - [Docker layer caching](#docker-layer-caching)
+- [Caching additional directories](#additional-dir-caching)
 
 Package manager specific sections, including examples for caching dependencies
 for nested projects:
@@ -47,7 +48,6 @@ The full path is available in the `$SEMAPHORE_CACHE_DIR` environment variable. I
 case you need to download a lot of dependencies, it's a good idea to keep them
 in this cache directory.
 
-
 ## <a name="additional-dir-caching" href="#additional-dir-caching">Caching additional directories</a>
 
 Often, it's beneficial to cache generic directories as well, besides the
@@ -66,11 +66,19 @@ Now when `mix compile` populates `deps` and `_build` in the project directory
 (`$SEMAPHORE_PROJECT_DIR`), the artifacts go directly to Semaphore's cache directory.
 
 
+## <a name="caching-apt-get" href="#caching-apt-get">Caching system packages (apt-get)</a>
+
+System package installations can be cached using the built in `install-package`
+utility. It is a wrapper around 'apt-get' with additional options, to minimize
+runtime. See [this page](/docs/how-to-install-dependency.html#caching-installations) for more details.
+
+
 ## <a name="docker-layer-caching" href="#docker-layer-caching">Docker layer caching</a>
 
 Docker images can be cached by using Docker's built-in `--cache-from`
 functionality, which is described in more detail on [this
 page](/docs/docker/docker-layer-caching.html).
+
 
 
 ## <a name="bundler" href="#bundler">Bundler</a>
