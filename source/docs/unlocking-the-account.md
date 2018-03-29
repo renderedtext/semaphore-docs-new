@@ -10,7 +10,8 @@ In the top right corner of your Semaphore CI homepage you will find "Log in" but
 If, by any reason, you enter wrong password 5 times in a row, your account will
 be locked due to an excessive number of unsuccessful log in attempts. In order
 to unlock the account, you should check your email. There you will find link for
-unlocking the account.
+unlocking the account. That link will be valid for 2 hours from the moment you
+receive an email.
 
  __Note:__
 If you’re still not sure about your old password, we suggest that you change it
