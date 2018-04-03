@@ -13,6 +13,8 @@ collaborators. On the other hand, **organizations** allow you to create both
 private and open source projects, and are used by businesses and teams which
 have the need to be able to allow more than one user to manage their projects,
 or to set different permission levels for different teams and/or collaborators.
+Also, organizations include features like [Activity monitor](/docs/activity-monitor.html)
+and [Secrets](/docs/secrets.html).
 
 ## Next steps
 
