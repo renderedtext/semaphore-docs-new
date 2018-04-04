@@ -28,6 +28,7 @@
 
     <% if !development? %>
       <%= partial(:google_tag_manager_head) %>
+      <%= partial(:autopilot) %>
     <% end %>
 
     <% if page_tagged?("ruby") && !development? -%>
