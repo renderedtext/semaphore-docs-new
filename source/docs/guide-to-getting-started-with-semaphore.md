@@ -12,6 +12,7 @@ category: Getting started
 - [Running tests in parallel to speed up your CI](#running_tests_in_parallel_to_speed_up_your_ci)
 - [Setting up Continuous deployment](#setting_up_continuous_deployment)
 - [Tutorials on TDD, BDD and DevOps](#tutorials_on_tdd_bdd_and_devops)
+- [Rails Testing Handbook](#rails_testing_handbook)
 
 ## <a name="adding_a_project" href="#adding_a_project">Adding a project</a>
 
@@ -148,6 +149,25 @@ We recommend you to read a few general practice tutorials:
 * [Why We Need Continuous Integration](https://semaphoreci.com/community/tutorials/continuous-integration)
 * [Behavior-driven Development](https://semaphoreci.com/community/tutorials/behavior-driven-development)
 * [How to Deal With and Eliminate Flaky Tests](https://semaphoreci.com/community/tutorials/how-to-deal-with-and-eliminate-flaky-tests)
+
+## <a name="rails_testing_handbook" href="#rails_testing_handbook">Rails Testing Handbook</a>
+
+After publishing many [Ruby tutorials](https://semaphoreci.com/community/tags/ruby)
+focused on TDD/BDD, as well as tutorials for many other languages, we’ve decided
+to write a handbook encompassing everything a developer needs to build sustainable
+Rails apps.
+
+In Rails Testing Handbook, you’ll learn about:
+
+* How to get in the BDD mindset and apply it in practice;
+* Setting up RSpec, Cucumber, database cleaner and others;
+* Developing features from scratch in red-green-refactor cycles;
+* Writing integration tests as Cucumber scenarios;
+* Writing controller tests using RSpec with mocking approach;
+* Writing model specs with RSpec;
+* How to collaborate via pull requests and continuous integration.
+
+The book is free, and you can download it [here](https://semaphoreci.com/ebooks/rails-testing-handbook).
 
 This should be all you need to get started with building and deploying your application
 with Semaphore. If you have any questions or need some more hands-on assistance,
