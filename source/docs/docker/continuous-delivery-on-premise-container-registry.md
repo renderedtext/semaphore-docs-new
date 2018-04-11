@@ -17,32 +17,22 @@ consult our documentation page on
 and enable Docker integrations for your project.
 
 Projects that are set up as **Docker** projects will have container registry
-integrations available as project add-ons.
+integrations available through project settings.
 
 Configuring the Custom Registry project add-on will enable you to **push** and
 **pull** your images without explicitly having to log into your Custom Registry
-during builds and deployments.
+during builds and deployments. To achieve this, do the following:
 
-This can be done by visiting your project on Semaphore and clicking "Add-ons"
-in the upper right corner of your screen.
-
-<img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
-
-Next, click "Docker Registry".
-
-<img src="/docs/assets/img/docker/shared/select-docker-registry.png" class="img-responsive img-bordered" alt="Click Docker Registry">
-
-Select the "Custom Container Registry" integration.
-
-<img src="/docs/assets/img/docker/setting-up-custom-container-registry-for-your-project/select-custom-container-registry.png" class="img-responsive img-bordered" alt="Click Custom Container Registry integration">
+  - visit your project on Semaphore and click on "Project settings" in the upper
+      right corner of your screen
+  - select "Docker Registry"
+  - select the "Custom Container Registry" integration
 
 Next, you will be prompted with three input fields:
 
   - `Username`,
   - `Password`, and
   - `Server` — your custom registry server.
-
-<img src="/docs/assets/img/docker/setting-up-custom-container-registry-for-your-project/custom-container-registry-form.png" class="img-responsive img-bordered" alt="Custom Container Registry form">
 
 After you have entered your credentials, click "Save". All of your credentials
 will be encrypted and saved by Semaphore.

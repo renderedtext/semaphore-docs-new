@@ -16,7 +16,7 @@ documentation page on
 [setting up continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html) for more information.
 
 Configuring your project as a **Docker** project will enable you to set up
-Docker registry integrations in project add-ons.
+Docker registry integrations in project settings.
 
 By adding the Google Container Registry integration, you will be able to **push**
 and **pull** images effortlessly, without having to worry about authentication.
@@ -42,23 +42,16 @@ to:
   the Google Cloud Platform.
   6. Be sure to enable [Google Container Registry API](https://console.cloud.google.com/apis/api/containerregistry.googleapis.com/) so you can push and pull images.
 
-After you've followed the steps on Google Cloud Platform, visit your project on
-Semaphore, and click "Add-ons" in the upper right corner of your screen.
+After you've followed the steps on Google Cloud Platform, there are a few steps
+to be completed on Semaphore as well:
 
-<img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
-
-Next, click "Docker Registry".
-
-<img src="/docs/assets/img/docker/shared/select-docker-registry.png" class="img-responsive img-bordered" alt="Click Docker integrations">
-
-Select the "Google Container Registry (GCR)" integration.
-
-<img src="/docs/assets/img/docker/setting-up-google-container-registry-for-your-project/select-google-container-registry.png" class="img-responsive img-bordered" alt="Click Google Container Registry">
+  - visit your project on Semaphore and click on "Project settings" in the upper
+      right corner of your screen
+  - select "Docker Registry"
+  - select the "Google Container Registry (GCR)" integration
 
 Choose your GCR region and copy the contents of the JSON file you downloaded
 earlier from the Google Cloud Platform.
-
-<img src="/docs/assets/img/docker/setting-up-google-container-registry-for-your-project/google-container-registry-form.png" class="img-responsive img-bordered" alt="Copy Google Container Registry JSON file">
 
 Once you've copied the contents, click "Save". Semaphore will safely encrypt
 and store your Google credentials.
