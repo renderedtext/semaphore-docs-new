@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Interpreting Insights data
+title: Interpreting Test file performance data
 category: Insights
 ---
 
-After you have [enabled Insights on a
+After you have [enabled Test file performance Insights on a
 project](/docs/insights/enabling-insights.html) and you've ran a successful
 build, you will be able to access a report on your slowest test files. You can
-see the report by going to the project page and clicking the **Add-ons** link,
-and then following the **Insights** link.
+see the report by going to the project page and clicking the **Insights** link,
+and then opening the **Test file performance** tab.
 
 You can choose the framework for which you want to see the report from the
-Insights page. For example, if you want to see which Cucumber files are the
-slowest in your test suite, if you follow the **Cucumber** link, you will see
+Insights page. For example, if you want to see which RSpec files are the
+slowest in your test suite, if you follow the **RSpec** link, you will see
 a table similar to the one in the screenshot below.
 
-<img src="/docs/assets/img/insights/cucumber_table.png" alt="Cucumber
-table" class="img-responsive img-bordered">
+<img src="/docs/assets/img/insights/rspec_table.png" alt="RSpec table"
+class="img-responsive img-bordered">
 
 ## Report data
 The table contains all test files which take more than a minute to run, and if
@@ -33,7 +33,7 @@ data in the report is based on the last 50 builds.
 <img src="/docs/assets/img/insights/insights_graph.png" alt="Insights
 graph" class="img-responsive img-bordered">
 
-## How to use Insights data to enhance your tests
+## How to use Test file performance data to enhance your tests
 If you notice some test files with a lower build pass rate and you're not sure
 why that keeps happening, it's possible that your test suite contains a flaky
 test. You can check out [this
@@ -60,4 +60,4 @@ FactoryGirl](https://semaphoreci.com/community/tutorials/working-effectively-wit
 Rails](https://semaphoreci.com/community/tutorials/stubbing-external-services-in-rails)
 
 ## Further reading
-- [Insights troubleshooting](/docs/insights/troubleshooting-insights.html)
+- [Test file performance troubleshooting](/docs/insights/troubleshooting-insights.html)
