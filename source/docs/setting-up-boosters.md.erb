@@ -17,64 +17,81 @@ will enable the Boosters feature for you.
 
 ### Parallelizing RSpec tests with Boosters
 
-To set up RSpec Boosters, go to your project page. Below the list of branches,
-you will find the Go to Boosters button.
+To set up RSpec Boosters, complete the following steps:
 
-When you click on that button, you will land on the Insights page. Scroll to
-Build time improvements and select RSpec Booster. Next, pick a branch, and start
-a test build. Once we start the build, everything will be sandboxed to this
-branch, so your project configuration will not be affected.
+1. Visit your project settings page.
 
-In this test build, Semaphore split your test suite across 32 jobs to get the
+2. Below your project commands, you will see the option to add new commands and
+   Boosters. Select "RSpec Booster".
+
+3. Pick a branch and start a test build.
+
+    Once Semaphore starts the build, everything will be sandboxed to this branch, so
+your project configuration will not be affected.
+
+    In this test build, Semaphore splits your test suite across 32 jobs to get the
 results as quickly as possible.
 
-Once the build is finished, Semaphore will recommend the optimal number of jobs
-required to make your build as fast as possible. Select the number of jobs that
-works best for you, and click on Append parallel jobs.
+    Once the build is finished, Semaphore will recommend the optimal number of jobs
+required to make your build as fast as possible.
+
+4. Select the number of jobs that works best for you, and click on "Append
+   parallel jobs".
 
 Boosters will now automatically parallelize your RSpec test suite for each new
 build.
 
 ### Parallelizing Cucumber tests with Boosters
 
-To set up Cucumber Boosters, go to your project page. Below the list of branches,
-you will find the Go to Boosters button.
+To set up Cucumber Boosters, complete the following steps:
 
-When you click on that button, you will land on the Insights page. Scroll to
-Build time improvements and select Cucumber Booster. Next, pick a branch, and
-start a test build. Once we start the build, everything will be sandboxed to
-this branch, so your project configuration will not be affected.
+1. Visit your project settings page.
 
-In this test build, Semaphore split your test suite across 32 jobs to get the
+2. Below your project commands, you will see the option to add new commands and
+   Boosters. Select "Cucumber Booster".
+
+3. Pick a branch and start a test build.
+
+    Once Semaphore starts the build, everything will be sandboxed to this branch, so
+your project configuration will not be affected.
+
+    In this test build, Semaphore splits your test suite across 32 jobs to get the
 results as quickly as possible.
 
-Once the build is finished, Semaphore will recommend the optimal number of jobs
-required to make your build as fast as possible. Select the number of jobs that
-works best for you, and click on Append parallel jobs.
+    Once the build is finished, Semaphore will recommend the optimal number of jobs
+required to make your build as fast as possible.
 
-Boosters will now automatically parallelize your Cucumber test suite for each
-new build.
+4. Select the number of jobs that works best for you, and click on "Append
+   parallel jobs".
+
+Boosters will now automatically parallelize your RSpec test suite for each new
+build.
 
 ### Changing Boosters parallelism throughput
 
-To change Boosters configuration, go to your project page. Below the list of
-branches, you will find the Go to Boosters button. On this page, find the Booster
-you want to adjust, and click edit.
+To change Boosters configuration, follow these steps:
 
-A slider will appear that allows you to adjust the number of parallel jobs.
+1. Go to your project settings page.
 
-Under the slider, you will notice Semaphore's recommendations for your Best Buy
-option, and for the option that will bring the best performance to your test
-suite.
+2. Find the Booster you want to adjust, and click "Edit".
 
-After editing the boosters, click Save Changes. The new configuration will take
-effect in your new builds.
+    A slider will appear that allows you to adjust the number of parallel jobs.
+
+    Under the slider, you will notice Semaphore's recommendations for the option
+that will bring the best performance to your test suite.
+
+3. After editing the boosters, click "Save Changes".
+
+The new configuration will take effect in your new builds.
 
 ### Disabling Boosters
 
-To disable Boosters, go to your project page. Below the list
-of branches, you will find the Go to Boosters button. On this page, find the
-Booster you want to remove from your project.
+To disable Boosters, do the following:
 
-Click on Remove to delete the Booster configuration. New builds on your project
-won't be boosted anymore.
+1. Go to your project settings page.
+
+2. Find the Booster you want to remove from your project.
+
+3. Click on "x" and confirm to delete the Booster configuration.
+
+New builds on your project won't be boosted anymore.
