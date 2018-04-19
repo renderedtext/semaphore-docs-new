@@ -27,7 +27,7 @@ module.exports = {
 ```
 
 You can use credentials in `config.js` to instantiate
-[Sequelize](http://sequelizejs.com/):
+[Sequelize](https://github.com/sequelize/sequelize):
 
 ```javascript
 var Sequelize = require('sequelize')
