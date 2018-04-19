@@ -6,6 +6,13 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1802.1 - 2018-04-19
+```md
+- upgrades
+  - google-chrome 64.0.3282.140 -> 66.0.3359.117
+  - chromedriver 2.35 -> 2.38
+```
+
 ### 1802 - 2018-02-27
 ```md
 - additions
