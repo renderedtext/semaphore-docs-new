@@ -28,12 +28,12 @@ cassandra:
 
 chrome:
   name: "Chrome"
-  version: "64.0.3282.140"
+  version: "66.0.3359.117"
   url: "http://www.google.com/chrome/browser/index.html"
 
 chromedriver:
   name: "ChromeDriver"
-  version: "2.35"
+  version: "2.38"
 
 composer:
   name: "Composer"
