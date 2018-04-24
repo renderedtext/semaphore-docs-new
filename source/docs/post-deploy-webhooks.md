@@ -4,7 +4,8 @@ title: Post-deploy webhooks
 category: Notifications
 ---
 
-Semaphore allows you to set up webhooks that will receive payload about every finished deploy.  You can use them, for example, to implement alerts through [Hubot](http://hubot.github.com/), or keep track of your projects on a company dashboard.
+Semaphore allows you to set up webhooks that will receive payload about every finished deploy.
+You can use them, for example, to implement alerts through [Hubot](https://github.com/hubotio/hubot), or keep track of your projects on a company dashboard.
 
 To set up one or more webhooks for your project, follow these steps:
 

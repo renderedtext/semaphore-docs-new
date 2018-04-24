@@ -21,7 +21,7 @@ The Semaphore stack includes:
 List of all packages and versions is available on the
 [supported application stack](/docs/supported-stack.html) page.
 
-### PHP versions
+## PHP versions
 
 The major version specified in project settings will be set as global to the
 latest corresponding version. Semaphore uses
@@ -32,15 +32,28 @@ Setting a PHP version is performed by the equivalent of the following command:
 
     phpbrew switch php-7.0
 
-### Modifying the PHP configuration file
+## Modifying the PHP configuration file
 
-For simple changes like setting a different timezone you can use a build command
+The examples below illustrate how PHP can be configured with build commands.
+
+### Changing timezone
+
+To set a different timezone you can use a build command
 like below which changes the timezone from `UTC` to `America/Denver`. We're using
 `|` as a delimiter in `sed` to avoid escaping the forward slash in the timezone.
 
     phpbrew cd etc && sed -i "s|date.timezone = UTC|date.timezone = 'America/Denver'|" php.ini && cd -
 
-You can also use your custom `php.ini` file. Include the configuration file in
+### Increasing the Memory Limit
+
+To increase [the default memory limit](http://php.net/manual/en/ini.core.php#ini.sect.resource-limits)
+for the PHP add a setup command similar to the following.
+
+    phpbrew cd etc && sed -i "s/memory_limit = 128M/memory_limit = 256M/" php.ini && cd -
+
+### Using custom PHP configuration file
+
+To use your custom `php.ini` file include it in
 Project Settings > Configuration Files and add the line below as a build command.
 In this case, the configuration file is called `custom_php.ini`.
 
