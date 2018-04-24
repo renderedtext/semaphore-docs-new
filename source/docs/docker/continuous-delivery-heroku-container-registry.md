@@ -17,29 +17,19 @@ your project as a Docker project on Semaphore. Read
 [Setting up continuous integration for a Docker project on Semaphore](/docs/docker/setting-up-continuous-integration-for-docker-project.html)
 for more information.
 
-Configuring the **Heroku Container Registry** project add-on will enable you to
-**push** Docker images without having to log into Heroku during builds and
-deployments.
+Configuring the **Heroku Container Registry** project integration will enable you
+to **push** Docker images without having to log into Heroku during builds and
+deployments. To achieve this, do the following:
 
-This can be done by visiting your project on Semaphore and clicking "Add-ons"
-in the upper right corner of your screen.
-
-<img src="/docs/assets/img/docker/shared/click-add-ons.png" class="img-responsive img-bordered" alt="Click Project Add-ons">
-
-Next, click "Docker Registry".
-
-<img src="/docs/assets/img/docker/shared/select-docker-registry.png" class="img-responsive img-bordered" alt="Click Docker Registry">
-
-Choose the "Heroku Container Registry" integration.
-
-<img src="/docs/assets/img/docker/continuous-delivery-heroku-docker-registry/select-heroku-container-registry.png" class="img-responsive img-bordered" alt="Click Heroku Container Registry integration">
+  - visit your project on Semaphore and click on "Project settings" in the upper
+      right corner of your screen
+  - select "Docker Registry"
+  - select the "Heroku Container Registry" integration
 
 Next, you will be prompted with an input field requiring your Heroku API key.
 
 You can obtain Heroku API key in
 [Heroku account settings](https://dashboard.heroku.com/account).
-
-<img src="/docs/assets/img/docker/continuous-delivery-heroku-docker-registry/heroku-container-registry-form.png" class="img-responsive img-bordered" alt="Heroku Container Registry form">
 
 After you have entered the API key, click "Save". Your Heroku Container
 Registry credentials will be securely encrypted and saved.

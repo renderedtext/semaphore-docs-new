@@ -1,0 +1,42 @@
+---
+layout: post
+title: How to update Chrome on Semaphore?
+category: Build troubleshooting
+---
+
+If your developement process depends on the latest Chrome version which is not pre-installed on Semaphore,
+you can install it by adding the following commands to the setup of the build:
+
+```bash
+sudo touch /etc/apt/sources.list.d/google-chrome-source.list
+install-package --update-new google-chrome-stable
+```
+
+These commands [cache](/docs/caching-between-builds.html) installations from APT with our `install-package` tool.
+To get more detailed informations about its options,
+refer to [this](/docs/how-to-install-dependency.html#caching-installations) page.
+
+Software updates on Semaphore are provided with [regular platform updates](/docs/platform-updates.html).
+Also, every platform update comes with updated and compatible versions of ChromeDriver and Google Chrome stable.
+
+Semaphore currently supports Chrome <%= package_version("chrome") %>
+and ChromeDriver <%= package_version("chromedriver") %>.
+
+# Common issues
+
+`chromedriver-helper` gem is often configured to use
+the [latest available version of ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads). 
+This can lead to an incompatibility issue (shown below), 
+indicating that the pre-installed Google Chrome version isn't supported.
+
+```bash
+session not created exception: Chrome version must be >= 65.0.3325.0 
+(Driver info: chromedriver=2.38.551591 (bcc4a2cdef0f6b942b2bb8049068f65340fa2a69)
+```
+
+In this case, the `chromedriver-helper` gem overrides the pre-installed version,
+and the latest version is used instead of the included one.
+
+Besides updating Google Chrome, you can also [configure](https://github.com/flavorjones/chromedriver-helper#specifying-a-version) `chromedriver-helper` gem to use a compatible ChromeDriver version (<%= package_version("chromedriver") %>)
+
+For the fastest feedback loop, you can try these steps while in an [SSH session](/docs/ssh-access-to-build-environment.html).
