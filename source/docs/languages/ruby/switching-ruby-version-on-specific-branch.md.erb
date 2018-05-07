@@ -12,10 +12,10 @@ Add a new [build command](/docs/customizing-build-commands.html) that will set t
 if [ "$BRANCH_NAME" = "ruby-2" ]; then rbenv local 2.0.0-p247 ; fi
 ```
 
-Another option is to add a [build command](/docs/customizing-build-commands.html) that reads and sets the ruby version from the first line of the Gemfile:
+Another option is to add a [build command](/docs/customizing-build-commands.html) that reads and sets the ruby version from the `.ruby-version` file:
 
 ```bash
-if [[ $(head -n 1 .ruby-version) =~ ([[:digit:]].[[:digit:]].[[:digit:]](-p[[:digit:]]+)?) ]]; then echo "Setting rbenv to version ${BASH_REMATCH[1]}" && rbenv local ${BASH_REMATCH[1]}; else echo "Unable to parse ruby version from Gemfile"; fi
+if [[ $(head -n 1 .ruby-version) =~ ([[:digit:]].[[:digit:]].[[:digit:]](-p[[:digit:]]+)?) ]]; then echo "Setting rbenv to version ${BASH_REMATCH[1]}" && rbenv local ${BASH_REMATCH[1]}; else echo "Unable to parse ruby version from .ruby-version"; fi
 ```
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
