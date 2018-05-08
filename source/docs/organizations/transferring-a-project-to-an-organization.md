@@ -17,18 +17,15 @@ Transferring a project to an organization is simple:
 
 1. Go to your **Account** in the main menu and select the **Account Settings**
 tab.
-
- <img src="/docs/assets/img/transferring-a-project-to-an-organization/account-settings-tab.png" class="img-responsive img-bordered">
+<br><img src="/docs/assets/img/transferring-a-project-to-an-organization/account-settings-tab.png" class="img-responsive img-bordered">
 
 2. Scroll to the bottom of the page and click on **Transfer** next to the
 name of the project you would like to transfer.
-
- <img src="/docs/assets/img/transferring-a-project-to-an-organization/transfer.png" alt="Transfer project" class="img-responsive img-bordered">
+<br><img src="/docs/assets/img/transferring-a-project-to-an-organization/transfer.png" alt="Transfer project" class="img-responsive img-bordered">
 
 3. Select the organization to which you would like to transfer the project
 and click on **Transfer**.
-
- <img src="/docs/assets/img/transferring-a-project-to-an-organization/select-organization-and-transfer.png" alt="Select organization and transfer project" class="img-responsive img-bordered">
+<br><img src="/docs/assets/img/transferring-a-project-to-an-organization/select-organization-and-transfer.png" alt="Select organization and transfer project" class="img-responsive img-bordered">
 
 Your project has now been successfully transferred to your organization. You
 can access it and manage its settings under _Projects_ on your organization's
