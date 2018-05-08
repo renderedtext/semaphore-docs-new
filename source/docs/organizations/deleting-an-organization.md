@@ -15,22 +15,17 @@ restored.
 Follow these steps to delete your Semaphore organization:
 
 1. Go to your **Account** in the main menu.
-
-  <img src="/docs/assets/img/setting-up-an-organization/account.png" alt="Semaphore account" class="img-responsive img-bordered">
+  <br><img src="/docs/assets/img/setting-up-an-organization/account.png" alt="Semaphore account" class="img-responsive img-bordered">
 
 2. Click on the **Organizations** tab and select the organization you would like
 to delete.
+ <br><img  src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/select-organization.png" alt="Select organization" class="img-responsive img-bordered">
 
- <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/select-organization.png" alt="Select organization" class="img-responsive img-bordered">
-
-3. On the left side of your organization page, click on **Profile** under
-_Manage Organization_.
-
- <img src="/docs/assets/img/renaming-an-organization/profile.png" alt="Select profile" class="img-responsive img-bordered">
+3. On the left side of your organization page, click on **Profile** under _Manage Organization_.
+<br><img src="/docs/assets/img/renaming-an-organization/profile.png" alt="Select profile" class="img-responsive img-bordered">
 
 4. Click on **delete this organization** in the bottom right corner of the page.
-
- <img src="/docs/assets/img/deleting-an-organization/delete-organization.png" alt="Delete organization" class="img-responsive img-bordered">
+ <br><img src="/docs/assets/img/deleting-an-organization/delete-organization.png" alt="Delete organization" class="img-responsive img-bordered">
 
 ##Further reading
 
