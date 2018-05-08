@@ -13,28 +13,23 @@ Only users who are in the _Owners_ team can remove other users from an
 organization. In order to remove a user from your organization, you need to:
 
 1. Go to your **Account** in the main menu.
-
-  <img src="/docs/assets/img/setting-up-an-organization/account.png" alt="Semaphore account" class="img-responsive img-bordered">
+<br><img src="/docs/assets/img/setting-up-an-organization/account.png" alt="Semaphore account" class="img-responsive img-bordered">
 
 2. Click on the **Organizations** tab and select the organization you would like
 to manage.
-
- <img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/select-organization.png" alt="Organizations tab" class="img-responsive img-bordered">
+<br><img src="/docs/assets/img/can-i-limit-the-permissions-a-user-has-on-a-specific-project/select-organization.png" alt="Organizations tab" class="img-responsive img-bordered">
 
 3. On the left side of your organization page, click on **Members** under
 _Manage Organization_.
-
- <img src="/docs/assets/img/removing-a-user-from-your-organization/members.png" alt="Organization members" class="img-responsive img-bordered">
+<br><img src="/docs/assets/img/removing-a-user-from-your-organization/members.png" alt="Organization members" class="img-responsive img-bordered">
 
 4. Select the member you would like to remove from all teams.
-
- <img src="/docs/assets/img/removing-a-user-from-your-organization/select-member.png" alt="Select member" class="img-responsive img-bordered">
+<br><img src="/docs/assets/img/removing-a-user-from-your-organization/select-member.png" alt="Select member" class="img-responsive img-bordered">
 
 5. Remove the user from the organization by clicking on **Remove Selected**.
+<br><img src="/docs/assets/img/removing-a-user-from-your-organization/remove-selected-member.png" alt="Remove selected member" class="img-responsive img-bordered">
 
- <img src="/docs/assets/img/removing-a-user-from-your-organization/remove-selected-member.png" alt="Remove selected member" class="img-responsive img-bordered">
- 
- __Note:__ 
+ __Note:__
 If related user has added at least one project to the organization, it is necessary to replace user-project association. As stated above, this can be performed by a member of the Owners team and the one needs to re-select repository by following [these steps](/docs/repository-settings.html) for a project. Also, in order to perform this action, the user has to have the same level of permissions for the repository as for [adding a project to Semaphore](/docs/adding-github-bitbucket-project-to-semaphore.html).
 
 Projects which are associated with the specific user can be listed as follows:
