@@ -4,7 +4,8 @@ title: Deleting a project
 category: Organizations
 ---
 
-In order to be able to delete a project, you need to belong to either _Admin_ or _Owners_ team of an organization.
+In order to be able to delete a project, you need to belong to either _Admin_ or
+_Owners_ team of an organization.
 
 To delete your Semaphore project follow these steps:
 
