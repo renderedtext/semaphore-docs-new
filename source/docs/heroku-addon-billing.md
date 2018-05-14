@@ -9,8 +9,8 @@ Semaphore's continuous integration and continuous delivery service is also
 available through [a Heroku
 add-on](https://elements.heroku.com/addons/semaphore).
 
-The Heroku add-on can be applied to only one project on Semaphore, the one which
-you configure after provisioning the add-on.
+The Heroku add-on can be applied per project on Semaphore. Heroku project is the
+one which you configure after provisioning the add-on.
 The add-on pricing is designed with that limitation in mind, and varies based on
 number of boxes available to that project for parallel jobs.
 
@@ -23,7 +23,7 @@ Billing of the Heroku add-on is managed by Heroku and incorporated in the
 invoice of your Heroku application.
 
 Accounts created directly on [semaphoreci.com](https://semaphoreci.com) can
-accomodate an unlimited number of projects, and the billing is managed by
+accommodate an unlimited number of projects, and the billing is managed by
 Semaphore. Boxes allocated by the account can be shared among all projects that
 belong to that account.
 
