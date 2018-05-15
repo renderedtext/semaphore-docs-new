@@ -12,6 +12,8 @@ container or virtual machine, called [Box](/pricing). Boxes are powerful,
 isolated CI job runners engineered to provide bare metal performance
 at the convenience of cloud.
 
+[Boxes](/pricing) of the same Semaphore project cannot communicate with each other. One way for sending data to a single Box or sharing the same data among multiple Boxes of the same Semaphore project is with the use of [Configuration Files](/docs/adding-configuration-files.html).
+
 Use your boxes to parallelize a large test suite, or build and deploy multiple
 branches across different projects. Semaphore does not limit how you use your
 boxes in any way.
