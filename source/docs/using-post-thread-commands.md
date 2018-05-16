@@ -4,8 +4,8 @@ title: Using after job commands
 category: Customizing your build
 ---
 
-You can easily define commands for Semaphore to execute after build commands on
-each job, regardless of whether the build commands passed or failed.
+You can easily define commands for Semaphore to execute on each job after the build commands,
+regardless of whether the build commands passed or failed.
 
 To do this, simply set a command to "after job" in your project's [Build
 Settings](/docs/customizing-build-commands.html):
