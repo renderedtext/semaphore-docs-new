@@ -25,7 +25,7 @@ request title and number will appear on the Semaphore project page as a link
 to the full build history. For example, branch name on Semaphore will be similar to
 `https://semaphoreci.com/my-organization/awesome-project/branches/pull-request-5`.
 
-In this case, Semaphore pulls the the refs/pulls references from the main
+In this case, Semaphore pulls the refs/pulls references from the main
 repository with `git fetch +refs/pull/<pull-request-number>/head: && git reset
 --hard <commit-id>`, a [workflow documented by
 Github](https://help.github.com/articles/checking-out-pull-requests-locally/#platform-linux).
