@@ -95,6 +95,8 @@ website.
 
 ![Enter Credentials](https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/175/04_credentials.png)
 
+If you pass that screen without getting any error messages, it means that your AWS credentials are working.
+
 ### Adding Build Commands
 The files created during the build phase on Semaphore won't be available
 during deployment, so if you need to generate some files before deploying
@@ -108,6 +110,8 @@ If your entire repository is a static website, you can leave both the
 directory and command fields empty.
 
 ![Choose Commands](https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/176/041_commands.png)
+
+If you do not have the required AWS setup for listing all available buckets, Semaphore will fail to list all the buckets for you and will take you to the screen where you will need to put your AWS credentials again. However, this does not mean that your AWS credentials were incorrect. Please keep reading this documentation page to find out more about changing the AWS policy.
 
 ### Choosing a Bucket
 The S3 Index document is the name of the file which will be your website's
