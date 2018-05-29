@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1805 - 2018-05-29 (planned)
+### 1805 - 2018-05-29
 ```md
 - additions
   - go 1.10.2
