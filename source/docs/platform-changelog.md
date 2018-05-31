@@ -6,6 +6,12 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1805.1 - 2018-05-31
+```md
+- additions
+  - libgconf-2-4
+```
+
 ### 1805 - 2018-05-29
 ```md
 - additions
