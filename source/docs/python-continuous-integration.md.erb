@@ -40,6 +40,18 @@ Pre-installed packages include [pip](https://pip.pypa.io/en/stable/), [mock](htt
 [pytest](https://docs.pytest.org/en/latest/), [virtualenv](https://virtualenv.pypa.io/en/latest/),
 and [nose](http://nose.readthedocs.io/en/latest/).
 
+### Change Python version with a command
+
+If you have another language set in Project Settings, but you need a specific Python
+version as well, you can use `change-python-version` in your setup:
+
+```bash
+Usage:
+  change-python-version <version>
+
+  Supported versions are: 2.6, 2.7, 3.3, 3.4, 3.5, 3.6
+```
+
 ## Dependency management
 
 Python packages installed with `pip` are [cached between builds](/docs/caching-between-builds.html)
