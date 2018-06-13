@@ -298,7 +298,7 @@ phpbrew:
 phpunit:
   name: "PHPunit"
   hide_on_stack_table: true
-  url: "http://phpunit.de/"
+  url: "https://phpunit.de/"
   version: "6.3.1"
 
 pip:
