@@ -13,7 +13,7 @@ After you click on your profile photo, from the drop-down menu choose the organi
 Click on your profile photo in the top right corner. Then open “Subscriptions” > “Change billing information” > "Edit Subscription" > “Update address”.
 
 __Note:__
-Email address used for the confirmation after changing the mailing address should be the one associated with billing.
+Email address used for the confirmation after changing the mailing address should be the one you entered while ordering a Semaphore subscription.
 
 If you want to change recipient name, billing email address or country, please
 contact us at <mailto:support@semaphoreci.com>.
