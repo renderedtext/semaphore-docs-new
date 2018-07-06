@@ -21,7 +21,7 @@ private and public.
 <img src="/docs/assets/img/git-services/public-private-repos.png" alt="public private repos" class="img-responsive img-bordered">
 
  __Note:__
-If you're connecting Bitbucket account, this step is skipped because Bitbucket only
+If you're connecting a Bitbucket account, this step is skipped because Bitbucket only
 supports giving access to both private and public repositories at the same time.
 
 After you authorize Semaphore to access your account for the chosen Git service,
