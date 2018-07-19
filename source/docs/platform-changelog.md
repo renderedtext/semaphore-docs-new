@@ -6,6 +6,38 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1807 - 2018-07-31 (planned)
+```md
+- additions
+  - dartlang 1.24.3
+  - erlang 21
+  - firefox 60.1.0 ESR
+  - node 10.7.0
+  - postgresql 10
+- upgrades
+  - ansible 2.5.2 -> 2.6.1
+  - chromedriver 2.38 -> 2.40
+  - docker-compose 1.21.0 -> 1.22.0
+  - elixir 1.6.4 -> 1.6.6
+  - geckodriver 0.20.1 -> 0.21.0
+  - git 2.17 -> 2.18
+  - git-lfs 2.4.0 -> 2.4.2
+  - go 1.9.6 -> 1.9.7
+  - go 1.10.2 -> 1.10.3
+  - google-chrome 66.0.3359.139 -> 67.0.3396.99
+  - java 7u171 -> 7u181
+  - java 8u171 -> 8u181
+  - java 10.0.1 -> 10.0.2
+  - maven 3.5.2 -> 3.5.4
+  - mongo 3.4.14 -> 3.4.16
+  - node 8.11.1 -> 8.11.3
+  - php 7.1.17 -> 7.1.19
+  - php 7.2.5 -> 7.2.7
+  - rebar3 3.4.1 > 3.6.1
+  - redis 4.0.9 -> 4.0.10
+  - yarn 1.6.0 -> 1.7.0
+  ```
+
 ### 1805.1 - 2018-05-31
 ```md
 - additions
