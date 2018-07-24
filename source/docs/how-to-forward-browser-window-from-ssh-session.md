@@ -37,7 +37,7 @@ firefox &
 OR
 
 ```bash
-google-chrome-stable &
+google-chrome --disable-gpu &
 ```
 
 Running a single integration spec should be visible as well.
