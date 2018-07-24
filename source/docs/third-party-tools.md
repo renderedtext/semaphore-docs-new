@@ -10,6 +10,7 @@ category: Integrations
 - [Project Monitor](https://github.com/pivotal/projectmonitor): Big visible chart CI aggregator by Pivotal Labs. Made for big screens.
 - [Semaphore CI monitor](https://github.com/lucianoratamero/semaphore-ci-monitor): Python based CI monitor for Semaphore. You can run it locally to keep an eye on your projects statuses. It uses Twitter Bootstrap and is mobile ready.
 - [Kore] (https://www.kore.com): Get build notifications into Kore's collaborative messaging environment and work simply.
+- [Alfred Workflow](https://github.com/renuo/semaphoreci-workflow): See the list of your projects and the current status of the builds directly on Alfred.
 
 ## API clients
 
