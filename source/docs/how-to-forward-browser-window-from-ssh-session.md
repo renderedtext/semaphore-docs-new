@@ -46,7 +46,8 @@ Running a single integration spec should be visible as well.
 
 If you're having difficulties forwarding a browser window, try installing the
 X11 apps package, and see if you can forward one of them.
-```sh
+
+```bash
 $ sudo apt-get install -y x11-apps
 
 # the command below should start a window, where two eyeballs will follow your cursor
