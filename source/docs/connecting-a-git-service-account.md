@@ -32,6 +32,10 @@ you should see that Semaphore has a working connection.
 You now have successfully connected your Semaphore account to GitHub. You
 can follow the same steps again to connect to Bitbucket.
 
+__Note:__ Semaphore account can only be associated with one GitHub account. This also
+applies to Bitbucket - Semaphore account cannot be associated with more than one
+Bitbucket account.
+
 ### Restoring an invalid Git Service Connection
 
 To check if your Git service connection is valid, you can go to the Git Services
