@@ -13,11 +13,11 @@ and inspect the site on your local machine.
 
 - install [XQuartz](https://www.xquartz.org/) on your machine
 - start [an SSH session](/docs/ssh-access-to-build-environment.html) from one of your builds
-- when the session is started add '-AX' after 'ssh' in the command which
+- when the session is started add '-ACX' after 'ssh' in the command which
  Semaphore gives you. Example:
 
 ```bash
-ssh -AX -o StrictHostKeychecking=no -p 49204 runner@136.243.57.31
+ssh -ACX -o StrictHostKeychecking=no -p 49204 runner@136.243.57.31
 ```
 
 - in the SSH session run the following command
