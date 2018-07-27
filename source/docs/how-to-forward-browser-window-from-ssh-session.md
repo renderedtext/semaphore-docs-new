@@ -106,11 +106,13 @@ Start one of the browsers in the SSH session, with the following commands:
 $ firefox &
 
 # Google Chrome
-$ google-chrome --disable-gpu
+$ google-chrome --disable-gpu &
 ```
 
 The browser window should appear inside VNC Viewer.
 
+**Note**: the tunnel will remain active, as long as your local machine is connected
+to the SSH session, with the modified command.
 
 ## Forward X over SSH
 
