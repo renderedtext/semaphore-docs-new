@@ -50,7 +50,7 @@ to the SSH session, with the modified command.
 
 This approach forwards the complete virtual screen from Semaphore's SSH session to your
 local machine. Handy when you want your debugging to entirely happen inside the
-Semaphore environment, using one of the shipped browers.
+Semaphore environment, using one of the shipped browsers.
 
 Like in the previous section, we'll use an SSH tunnel, but this time, we will
 connect to a VNC server in the SSH session, with a VNC client on your local machine.
@@ -74,8 +74,11 @@ SSH session.
 # install
 $ sudo apt-get install -y x11vnc
 
+# if you're on the Docker Light platform, install Xvfb with the following script
+$ curl -L https://gist.githubusercontent.com/rtgkurel/d4b5f41a814d2c032955ed61f231792e/raw/xvfb-dockerl.sh | sudo bash
+
 # start
-$ x11vnc -safer -localhost -nopw -forever -display :99 &
+$ x11vnc -safer -localhost -nopw -forever -display $DISPLAY &
 ```
 
 Now, on your local machine install a VNC client, and connect to the server in the
