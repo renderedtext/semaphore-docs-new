@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1807 - 2018-07-31 (planned)
+### 1807 - 2018-07-31
 ```md
 - additions
   - dartlang 1.24.3
