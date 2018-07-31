@@ -123,6 +123,10 @@ helpers do
     data.package_versions[platform][package]["name"]
   end
 
+  def default_package_version(package, platform = "standard")
+    data.package_versions[platform][package]["default"].first
+  end
+
   def package_version(package, platform = "standard")
     data.package_versions[platform][package]["version"]
   end

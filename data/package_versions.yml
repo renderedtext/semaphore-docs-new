@@ -306,6 +306,8 @@ standard:
     versions:
       - "9.6"
       - "10.0"
+    default:
+      - "9.6"
     url: "/docs/databases/postgresql.html"
 
   python:
