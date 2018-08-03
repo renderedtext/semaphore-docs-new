@@ -74,6 +74,9 @@ SSH session.
 # install
 $ sudo apt-get install -y x11vnc
 
+# if using the Docker Light platform install Xvfb
+curl -L https://gist.githubusercontent.com/rtgkurel/d4b5f41a814d2c032955ed61f231792e/raw/xvfb-dockerl.sh | sudo bash
+
 # start
 $ x11vnc -safer -localhost -nopw -forever -display $DISPLAY &
 ```
@@ -129,6 +132,7 @@ After running the following command inside the SSH session, Google Chrome (from
 the Docker container) should pop-up in your VNC Viewer.
 
 ```
+# start a Docker image with appropriate options
 docker run -it --env="DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" selenium/standalone-chrome google-chrome
 ```
 
