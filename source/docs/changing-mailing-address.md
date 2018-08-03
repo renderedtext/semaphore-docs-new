@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to change mailing address?
+title: Changing mailing address
 category: Billing
 ---
 

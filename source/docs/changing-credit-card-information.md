@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to change credit card information?
+title: Changing credit card information
 category: Billing
 ---
 
