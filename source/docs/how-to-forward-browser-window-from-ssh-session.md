@@ -74,13 +74,6 @@ SSH session.
 # install
 $ sudo apt-get install -y x11vnc
 
-# if you're on the Docker Light platform, install Xvfb with the following script
-$ curl -L https://gist.githubusercontent.com/rtgkurel/d4b5f41a814d2c032955ed61f231792e/raw/xvfb-dockerl.sh | sudo bash
-
-$ echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list; install-package --update-new google-chrome-stable
-
-& curl -L https://gist.githubusercontent.com/rtgkurel/082a7142ae55d4dfbbe121df9347d1e4/raw/chromedrv-install.sh | sudo bash -s 2.40
-
 # start
 $ x11vnc -safer -localhost -nopw -forever -display $DISPLAY &
 ```
@@ -102,6 +95,9 @@ and start `VNC Viewer` after the installation.
 
 In VNC Viewer, enter `localhost:5900` and connect. This connects to your local
 machines port `5900` which is forwarded to the VNC server inside the SSH session.
+A completely black window should appear in VNC Viewer. This is the virtual
+display in the SSH session, on which the GUI apps will be visible, after they're
+started.
 
 Start one of the browsers in the SSH session, with the following commands:
 
@@ -117,6 +113,28 @@ The browser window should appear inside VNC Viewer.
 
 **Note**: the tunnel will remain active, as long as your local machine is connected
 to the SSH session, with the modified command.
+
+### Docker Light
+
+The [Docker Light](/docs/supported-stack.html#docker-light-platform) platform doesn't come with preinstalled browsers, nor with a
+running Xvfb in the background. The preassumption is that these things are part
+of the given Docker image. Let's see how to forward a browser from a Docker
+image through the SSH tunnel.
+
+Make sure that all steps are executed from above, until starting the
+browsers. Our job is to let the Docker image know about our running X11 server
+and the `$DISPLAY` we're using.
+
+After running the following command inside the SSH session, Google Chrome (from
+the Docker container) should pop-up in your VNC Viewer.
+
+```
+docker run -it --env="DISPLAY" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" selenium/standalone-chrome google-chrome
+```
+
+We're forwarding `$DISPLAY` and the X11 socket, so the `selenium/standalone-chrome`
+container know where to draw. You would similarly use these 2 parameters
+when starting up your own container, which has Xvfb configured inside it.
 
 ## Forward X over SSH
 
