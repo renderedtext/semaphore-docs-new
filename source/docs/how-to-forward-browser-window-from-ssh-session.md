@@ -77,6 +77,10 @@ $ sudo apt-get install -y x11vnc
 # if you're on the Docker Light platform, install Xvfb with the following script
 $ curl -L https://gist.githubusercontent.com/rtgkurel/d4b5f41a814d2c032955ed61f231792e/raw/xvfb-dockerl.sh | sudo bash
 
+$ echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list; install-package --update-new google-chrome-stable
+
+& curl -L https://gist.githubusercontent.com/rtgkurel/082a7142ae55d4dfbbe121df9347d1e4/raw/chromedrv-install.sh | sudo bash -s 2.40
+
 # start
 $ x11vnc -safer -localhost -nopw -forever -display $DISPLAY &
 ```
