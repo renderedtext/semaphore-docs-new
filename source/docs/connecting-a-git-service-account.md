@@ -41,3 +41,5 @@ Bitbucket account.
 To check if your Git service connection is valid, you can go to the Git Services
 tab. If you have an invalid connection, Semaphore will detect this, and offer you the options
 to either restore your connection, or remove it.
+
+__Note:__ In case you decide to change the username of your GitHub account associated with the Semaphore account, it is needed to reconnect your GitHub and Semaphore account because Semaphore won’t update it automatically. In this situation, please contact us at <mailto:support@semaphoreci.com> and we will provide you with the needed steps.
