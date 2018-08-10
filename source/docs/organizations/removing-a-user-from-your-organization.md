@@ -29,14 +29,30 @@ _Manage Organization_.
 5. Remove the user from the organization by clicking on **Remove Selected**.
 <br><img src="/docs/assets/img/removing-a-user-from-your-organization/remove-selected-member.png" alt="Remove selected member" class="img-responsive img-bordered">
 
- __Note:__
-If related user has added at least one project to the organization, it is necessary to replace user-project association. As stated above, this can be performed by a member of the Owners team and the one needs to re-select repository by following [these steps](/docs/repository-settings.html) for a project. Also, in order to perform this action, the user has to have the same level of permissions for the repository as for [adding a project to Semaphore](/docs/adding-github-bitbucket-project-to-semaphore.html).
+
+##How to remove a user who has created some projects in your organization
+
+In order to remove the user who has created some projects, it is necessary to
+replace user-project association first.
+For security reasons, we are not able to do this on your behalf, and you can do
+it by following the next steps:
+
+1. Go to Project Settings page
+2. Choose Repository tab
+3. Click on the "Change repository" button in the bottom right corner.
+
+This way, these projects will become associated with your GitHub/Bitbucket account.
+These steps should be repeated for all project created by the user you would
+like to remove from the organization. This can be performed by any member of the
+Owners team in your organization.
+
+Also, in order to perform this action, the user has to have the same level of
+permissions for the repository as for [adding a project to Semaphore](/docs/adding-github-bitbucket-project-to-semaphore.html).
 
 Projects which are associated with the specific user can be listed as follows:
 
 1. In the top right corner of any Semaphore's page, click on your profile photo,
 then choose a relevant organization from the drop down menu.
-
 2. On the left side of the organization's page click on Projects.
 
 ##Further reading
