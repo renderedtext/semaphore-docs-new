@@ -74,9 +74,6 @@ SSH session.
 # install
 $ sudo apt-get install -y x11vnc
 
-# if using the Docker Light platform install Xvfb
-curl -L https://gist.githubusercontent.com/rtgkurel/d4b5f41a814d2c032955ed61f231792e/raw/xvfb-dockerl.sh | sudo bash
-
 # start
 $ x11vnc -safer -localhost -nopw -forever -display $DISPLAY &
 ```
