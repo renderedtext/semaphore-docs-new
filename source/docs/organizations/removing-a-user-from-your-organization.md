@@ -37,8 +37,8 @@ replace user-project association first.
 For security reasons, we are not able to do this on your behalf, and you can do
 it by following the next steps:
 
-1. Go to Project Settings page
-2. Choose Repository tab
+1. Go to Project Settings page,
+2. Choose Repository tab,
 3. Click on the "Change repository" button in the bottom right corner.
 
 This way, these projects will become associated with your GitHub/Bitbucket account.
