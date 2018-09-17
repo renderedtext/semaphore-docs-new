@@ -6,6 +6,32 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1809 - 2018-09-25 (planned)
+```md
+- additions
+  - elixir 1.7.3
+  - go 1.11
+  - jruby 9.2.0.0
+  - node.js 10.10.0
+  - node.js 8.12.0
+- upgrades
+  - ansible 2.6.1 -> 2.6.4
+  - cassandra 3.11.2 -> 3.11.3
+  - chromedriver 2.40 -> 2.41
+  - docker 18.03 -> 18.06
+  - git 2.18 -> 2.1.9
+  - git-lfs 2.4.2 -> 2.5.1
+  - mongod 3.4.14 -> 3.4.17
+  - php 7.2.7 -> 7.2.9
+  - php 7.1.19 -> 7.1.21
+  - php 7.0.30 -> 7.0.31
+  - php 5.6.36 -> 5.6.37
+  - pip 10.0.0.1 -> 18.0
+  - redis 4.0.10 -> 4.0.11
+  - yarn 1.7.0 -> 1.9.4
+```
+
+
 ### 1807 - 2018-07-31
 ```md
 - additions
