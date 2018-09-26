@@ -6,7 +6,7 @@
 standard:
   ansible:
     name: "Ansible"
-    version: "2.6.1"
+    version: "2.6.4"
 
   boost:
     name: "Boost C++ libraries"
@@ -26,17 +26,17 @@ standard:
 
   cassandra:
     name: "Cassandra"
-    version: "3.11.2"
+    version: "3.11.3"
     url: "/docs/databases/cassandra.html"
 
   chrome:
     name: "Chrome"
-    version: "67.0.3396.99"
+    version: "69.0.3497.92"
     url: "http://www.google.com/chrome/browser/index.html"
 
   chromedriver:
     name: "ChromeDriver"
-    version: "2.40"
+    version: "2.41"
 
   composer:
     name: "Composer"
@@ -57,6 +57,7 @@ standard:
       - "1.4.5"
       - "1.5.3"
       - "1.6.6"
+      - "1.7.3"
     default:
       - "1.5.3"
     url: "/docs/elixir.html"
@@ -102,11 +103,11 @@ standard:
 
   git:
     name: "Git"
-    version: "2.18.0"
+    version: "2.19.0"
 
   'git-lfs':
     name: "Git LFS"
-    version: "2.4.2"
+    version: "2.5.1"
 
   go:
     name: "Go"
@@ -118,6 +119,7 @@ standard:
       - "1.8.6"
       - "1.9.7"
       - "1.10.3"
+      - "1.11"
     default:
       - "1.4.3"
     url: "/docs/go.html"
@@ -135,7 +137,7 @@ standard:
 
   heroku-cli:
     name: "Heroku CLI"
-    version: "7.7.3"
+    version: "7.15.2"
 
   io.js:
     name: "io.js"
@@ -165,7 +167,7 @@ standard:
 
   linux:
     name: "Linux Kernel"
-    version: "4.4.0-121"
+    version: "4.4.0-135"
 
   maven:
     name: "Apache Maven"
@@ -178,7 +180,7 @@ standard:
 
   mongodb:
     name: "MongoDB"
-    version: "3.4.16"
+    version: "3.4.17"
     url: "/docs/databases/mongodb.html"
 
   mysql:
@@ -229,11 +231,13 @@ standard:
       - "8.7.0"
       - "8.9.4"
       - "8.11.3"
+      - "8.12.0"
       - "9.2.0"
       - "9.5.0"
       - "9.11.1"
       - "10.0.0"
       - "10.7.0"
+      - "10.10.0"
     default:
       - "4.8.4"
     url: "/docs/javascript.html"
@@ -273,12 +277,12 @@ standard:
     versions:
       - "5.4.45"
       - "5.5.38"
-      - "5.6.36"
-      - "7.0.30"
-      - "7.1.19"
-      - "7.2.7"
+      - "5.6.37"
+      - "7.0.31"
+      - "7.1.21"
+      - "7.2.9"
     default:
-      - "5.6.32"
+      - "5.6.37"
     url: "/docs/php.html"
 
   phpbrew:
@@ -294,7 +298,7 @@ standard:
 
   pip:
     name: "pip"
-    version: "10.0.1"
+    version: "18.0"
 
   postgis:
     name: "PostGIS"
@@ -395,6 +399,7 @@ standard:
       - "ree-1.8.7-2012.02"
       - "JRuby 1.7.27"
       - "JRuby 9.1.15.0"
+      - "JRuby 9.2.0.0"
     default:
       - "2.2.2"
     url: "/docs/ruby.html"
@@ -434,14 +439,14 @@ standard:
 
   yarn:
     name: "Yarn"
-    version: "1.7.0"
+    version: "1.9.4"
     url: "https://yarnpkg.com/en/docs/install-ci#semaphore-tab"
     hide_on_stack_table: true
 
 docker:
   docker:
     name: "docker-ce"
-    version: "18.03"
+    version: "18.06"
     url: "/docs/docker.html"
 
   docker-compose:
@@ -453,18 +458,18 @@ docker:
 'docker-light':
   docker:
     name: "docker-ce"
-    version: "18.03"
+    version: "18.06"
     url: "/docs/docker.html"
 
   docker-compose:
     name: "docker-compose"
-    version: "1.21.0"
+    version: "1.22.0"
     url: "https://docs.docker.com/compose/"
 
   gcloud:
     name: "gcloud"
-    version: "200.0.0"
+    version: "216.0.0"
 
   kubectl:
     name: "kubectl"
-    version: "1.10"
+    version: "1.11"

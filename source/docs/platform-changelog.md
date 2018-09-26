@@ -6,7 +6,7 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
-### 1809 - 2018-09-25 (planned)
+### 1809 - 2018-09-26
 ```md
 - additions
   - elixir 1.7.3
@@ -18,9 +18,11 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - ansible 2.6.1 -> 2.6.4
   - cassandra 3.11.2 -> 3.11.3
   - chromedriver 2.40 -> 2.41
-  - docker 18.03 -> 18.06
+  - docker 18.03 -> 18.06 [all Docker platforms]
+  - gcloud 200.0.0 -> 216.0.0 [Docker Light platform only]
   - git 2.18 -> 2.1.9
   - git-lfs 2.4.2 -> 2.5.1
+  - kubectl 1.10 -> 1.11 [Docker Light platform only]
   - mongod 3.4.14 -> 3.4.17
   - php 7.2.7 -> 7.2.9
   - php 7.1.19 -> 7.1.21
