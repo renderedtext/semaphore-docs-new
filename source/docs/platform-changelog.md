@@ -6,6 +6,13 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1809.1 - 2018-09-27
+```md
+- upgrades
+  - aws-cli 1.16.13 -> 1.16.22
+  - aws-eb-cli 3.10.1 -> 3.14.6
+```
+
 ### 1809 - 2018-09-26
 ```md
 - additions
