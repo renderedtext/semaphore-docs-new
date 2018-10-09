@@ -6,6 +6,73 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1809.1 - 2018-09-27
+```md
+- upgrades
+  - aws-cli 1.16.13 -> 1.16.22
+  - aws-eb-cli 3.10.1 -> 3.14.6
+```
+
+### 1809 - 2018-09-26
+```md
+- additions
+  - elixir 1.7.3
+  - go 1.11
+  - jruby 9.2.0.0
+  - node.js 10.10.0
+  - node.js 8.12.0
+- upgrades
+  - ansible 2.6.1 -> 2.6.4
+  - cassandra 3.11.2 -> 3.11.3
+  - chromedriver 2.40 -> 2.41
+  - docker 18.03 -> 18.06 [all Docker platforms]
+  - gcloud 200.0.0 -> 216.0.0 [Docker Light platform only]
+  - git 2.18 -> 2.1.9
+  - git-lfs 2.4.2 -> 2.5.1
+  - kubectl 1.10 -> 1.11 [Docker Light platform only]
+  - mongod 3.4.14 -> 3.4.17
+  - php 7.2.7 -> 7.2.9
+  - php 7.1.19 -> 7.1.21
+  - php 7.0.30 -> 7.0.31
+  - php 5.6.36 -> 5.6.37
+  - pip 10.0.0.1 -> 18.0
+  - redis 4.0.10 -> 4.0.11
+  - yarn 1.7.0 -> 1.9.4
+```
+
+
+### 1807 - 2018-07-31
+```md
+- additions
+  - dartlang 1.24.3
+  - erlang 21
+  - firefox 60.1.0 ESR
+  - node 10.7.0
+  - postgresql 10
+- upgrades
+  - ansible 2.5.2 -> 2.6.1
+  - chromedriver 2.38 -> 2.40
+  - docker-compose 1.21.0 -> 1.22.0
+  - elixir 1.6.4 -> 1.6.6
+  - geckodriver 0.20.1 -> 0.21.0
+  - git 2.17 -> 2.18
+  - git-lfs 2.4.0 -> 2.4.2
+  - go 1.9.6 -> 1.9.7
+  - go 1.10.2 -> 1.10.3
+  - google-chrome 66.0.3359.139 -> 67.0.3396.99
+  - java 7u171 -> 7u181
+  - java 8u171 -> 8u181
+  - java 10.0.1 -> 10.0.2
+  - maven 3.5.2 -> 3.5.4
+  - mongo 3.4.14 -> 3.4.16
+  - node 8.11.1 -> 8.11.3
+  - php 7.1.17 -> 7.1.19
+  - php 7.2.5 -> 7.2.7
+  - rebar3 3.4.1 > 3.6.1
+  - redis 4.0.9 -> 4.0.10
+  - yarn 1.6.0 -> 1.7.0
+  ```
+
 ### 1805.1 - 2018-05-31
 ```md
 - additions

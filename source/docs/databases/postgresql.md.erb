@@ -4,7 +4,26 @@ title: PostgreSQL
 category: Databases
 ---
 
-PostgreSQL is running on the default port of 5432.
+Semaphore supports 2 versions of PostgreSQL:
+
+<% package_versions("postgresql").each do |version| %>
+  - <%= version %>
+<% end %>
+
+The default version is <%= default_package_version("postgresql") %>, and it's
+running on port of 5432.
+
+Versions can be changed by adding `change-pg-version <version>` to your setup commands:
+
+```bash
+change-pg-version 10
+```
+
+This will shut down the currently active version, start version 10, and export
+`PGCLUSTER=10`. After this, the whole PostgreSQL toolchain will be switched to
+version 10, and port 5432 will be served by the newly selected version as well.
+
+Note that adding this command to a script currently isn't supported.
 
 Credentials for using PostgreSQL are available in environment variables listed below:
 
@@ -27,7 +46,7 @@ Credentials for using PostgreSQL are available in environment variables listed b
   </tbody>
 </table>
 
-If your application doesn't create its own database as part of the start-up 
+If your application doesn't create its own database as part of the start-up
 process, you can create a PostgreSQL database manually. Adding the following
 command to your [build
 commands](/docs/customizing-build-commands.html) will

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Does Semaphore offer a discount for non-profits?
+title: Non-profit discount
 category: Billing
 ---
 
