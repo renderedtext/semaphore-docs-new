@@ -30,6 +30,10 @@ for nested projects:
 
 In all cases, only top-level directories are cached, residing in [`$SEMAPHORE_PROJECT_DIR`](/docs/available-environment-variables.html).
 
+__Note:__
+In order to expire cache for your projects, please go to Project Settings ->
+Admin [Expire Dependency Cache] and click on Expire Cache.
+
 
 ## <a name="automatic-caching" href="#automatic-caching">Automatically cached directories</a>
 

@@ -171,6 +171,7 @@ You can view [which environment variables are exported during deploy to S3](/doc
 together with some [common AWS environment variables](/docs/available-environment-variables.html#common-aws-variables).
 
 ### Example AWS IAM policy
+
 This example shows a policy which provides Semaphore with access to manage your
 S3 buckets in the process of setting up your deployment. [This
 section](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#create-managed-policy-console)
@@ -179,29 +180,50 @@ policy shown below.
 
 ```javascript
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Stmt1461232964000",
-            "Effect": "Allow",
-            "Action": [
-                "s3:CreateBucket",
-                "s3:DeleteObject",
-                "s3:GetBucketLocation",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketWebsite",
-                "s3:GetObject",
-                "s3:GetObjectAcl",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:PutBucketWebsite",
-                "s3:PutObject",
-                "s3:PutObjectAcl"
-            ],
-            "Resource": [
-                "arn:aws:s3:::*"
-            ]
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1461232964000",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:DeleteObject",
+        "s3:GetBucketLocation",
+        "s3:GetBucketPolicy",
+        "s3:GetBucketWebsite",
+        "s3:GetObject",
+        "s3:GetObjectAcl",
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket",
+        "s3:PutBucketWebsite",
+        "s3:PutObject",
+        "s3:PutObjectAcl"
+      ],
+      "Resource": [
+        "arn:aws:s3:::*"
+      ]
+    }
+  ]
 }
 ```
+
+### Minimal required permissions
+
+Semaphore lists all the S3 buckets with the [ListAllMyBuckets](https://docs.aws.amazon.com/cli/latest/reference/s3api/list-buckets.html)
+action. For this to work, your policy should contain the following snippet,
+along with the bucket specific policies:
+
+```javascript
+{
+  "Sid": "VisualEditor1",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetBucketLocation",
+      "s3:ListAllMyBuckets"
+    ],
+    "Resource": "*"
+}
+```
+
+When these permissions are missing, you will get an `Access denied` error when
+listing the buckets, even if your AWS credentials (added in the first step) are valid.

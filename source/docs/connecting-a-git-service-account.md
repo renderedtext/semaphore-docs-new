@@ -21,7 +21,7 @@ private and public.
 <img src="/docs/assets/img/git-services/public-private-repos.png" alt="public private repos" class="img-responsive img-bordered">
 
  __Note:__
-If you're connecting Bitbucket account, this step is skipped because Bitbucket only
+If you're connecting a Bitbucket account, this step is skipped because Bitbucket only
 supports giving access to both private and public repositories at the same time.
 
 After you authorize Semaphore to access your account for the chosen Git service,
@@ -32,8 +32,14 @@ you should see that Semaphore has a working connection.
 You now have successfully connected your Semaphore account to GitHub. You
 can follow the same steps again to connect to Bitbucket.
 
+__Note:__ Semaphore account can only be associated with one GitHub account. This also
+applies to Bitbucket - Semaphore account cannot be associated with more than one
+Bitbucket account.
+
 ### Restoring an invalid Git Service Connection
 
 To check if your Git service connection is valid, you can go to the Git Services
 tab. If you have an invalid connection, Semaphore will detect this, and offer you the options
 to either restore your connection, or remove it.
+
+__Note:__ In case you decide to change the username of your GitHub account associated with the Semaphore account, it is needed to reconnect your GitHub and Semaphore account because Semaphore won’t update it automatically. In this situation, please contact us at <mailto:support@semaphoreci.com> and we will provide you with the needed steps.

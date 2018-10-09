@@ -46,14 +46,14 @@ curl https://api.semaphoreci.com/v2/orgs?auth_token=<token>
 
 ### Rate limiting
 
-All API v2 endpoints are limited to 60 requests per hour per user.
+All API v2 endpoints are limited to 5000 requests per hour per user.
 When exceeding the limit you will receive an error response:
 
 ``` bash
 HTTP/1.1 429 Too Many Requests
 Date: Wed, 28 Jun 2017 14:50:34 GMT
 Status: 429 Too Many Requests
-X-RateLimit-Limit: 60
+X-RateLimit-Limit: 5000
 X-RateLimit-Remaining: 0
 X-RateLimit-Reset: 2017-06-28 15:00:00 +0000
 

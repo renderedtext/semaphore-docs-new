@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How annual subscription works?
+title: Annual subscriptions
 category: Billing
 ---
 ### How can I switch from annual to monthly subscription?

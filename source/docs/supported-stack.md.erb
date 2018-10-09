@@ -4,14 +4,30 @@ title: Supported stack
 category: The Semaphore platform
 ---
 
-Every build and deploy on Semaphore runs in a lightweight, isolated virtual
-machine based on Ubuntu 14.04 LTS 64-bit. This page describes the software
-provided in these VMs.
+Every build and deployment on Semaphore runs in an isolated virtual machine, based on
+Ubuntu 14.04 LTS 64-bit or Ubuntu 16.04 LTS 64-bit, depending on the selected
+platform type. This page describes the out-of-the-box software stack and the
+difference between platform types.
 
-The timezone in the virtual machine is set to UTC. To find out how to change
+The timezone in the Semaphore environment is set to UTC. To find out how to change
 this value visit [this page](/docs/how-to-change-timezone.html).
 
-### <a name="language-support" href="#language-support">Language support</a>
+
+## <a name="platform-types" href="#platform-types">Platform types</a>
+
+- [Standard](#standard-platform)
+- [Docker](#docker-platform)
+- [Docker Light](#docker-light-platform)
+
+The platform can be changed in Project Settings > Platform.
+
+### <a name="standard-platform" href="#standard-platform">Standard</a>
+
+The Standard platform ships with a number of pre-installed languages, DB backends,
+and libraries. It's the go-to platform if you want a fully configured CI
+environment, with minimal setup from your side.
+
+#### <a name="language-support" href="#language-support">Language support</a>
 
 Semaphore provides first-class support for the following programming languages:
 
@@ -32,7 +48,7 @@ If you would like a language which is not listed above to be supported
 out of the box, please [send us email](mailto:support@semaphoreci.com) or
 [install it manually](/docs/how-to-install-dependency.html).
 
-### <a name="setting-multiple-language-versions-in-jobs" href="#setting-multiple-language-versions-in-jobs">Setting multiple language versions in jobs</a>
+#### <a name="setting-multiple-language-versions-in-jobs" href="#setting-multiple-language-versions-in-jobs">Setting multiple language versions in jobs</a>
 
 Besides using the language which is selected in the project settings,
 you can utilize any combination of languages and versions
@@ -47,7 +63,7 @@ nvm use 5.6.0
 To find more information about managing different language versions
 on Semaphore, please refer to the corresponding [language page](/docs).
 
-### <a name="available-components-and-services" href="#available-components-and-services">Available components & services</a>
+#### <a name="available-components-and-services" href="#available-components-and-services">Available components & services</a>
 
 <table class="table table-striped">
   <thead>
@@ -57,7 +73,7 @@ on Semaphore, please refer to the corresponding [language page](/docs).
     </tr>
   </thead>
   <tbody>
-    <% data.package_versions.each do |name, package| %>
+    <% data.package_versions["standard"].each do |name, package| %>
       <% unless package["hide_on_stack_table"] %>
         <tr>
           <td>
@@ -80,7 +96,56 @@ on Semaphore, please refer to the corresponding [language page](/docs).
   </tbody>
 </table>
 
-__Note:__ this is a partial list. You can upgrade or add additional packages for your builds with [apt-get](/docs/how-to-install-dependency.html) - either from Ubuntu's [official distribution channels](http://packages.ubuntu.com) or third-party PPAs.
+__Note:__ If you need to upgrade or install additional packages for your builds,
+you can do it with [apt-get](/docs/how-to-install-dependency.html) - either from Ubuntu's
+[official distribution channels](http://packages.ubuntu.com) or third-party PPAs.
+
+### <a name="docker-platform" href="#docker-platform">Docker</a>
+
+The Docker plaform has an identical software stack to the Standard platform, but
+with added support for running Docker images, and a pre-installed Docker toolchain
+(docker-ce <%= data.package_versions["docker"]["docker"]["version"] %> and
+ docker-compose <%= data.package_versions["docker"]["docker-compose"]["version"] %>).
+
+
+### <a name="docker-light-platform" href="#docker-light-platform">Docker Light</a>
+#
+The Docker Light platform is stripped from all software, and ships only with the
+bare essentials needed for running Docker containers during builds and deployments.
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% data.package_versions["docker-light"].each do |name, package| %>
+      <% unless package["hide_on_stack_table"] %>
+        <tr>
+          <td>
+            <% if package["url"] %>
+              <a href="<%= package["url"] %>"><%= package["name"] %></a>
+            <% else %>
+              <%= package["name"] %>
+            <% end %>
+          </td>
+          <td>
+            <% if package["versions"] %>
+              <%= package["versions"].map{ |version| [version] == package["default"] ? "#{version} (default)" : version }.join("<br/>")  %>
+            <% else %>
+              <%= package["version"] %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+
+### Open source
 
 We have a number of open source [test apps](/docs/test-apps.html) in various flavors that we use for verification. If your setup is different or you're having problems making your build pass, we encourage you to [contact us](mailto:semaphore@renderedtext.com) - we'd be happy to get your app building on Semaphore as quickly as possible.
 
@@ -90,13 +155,21 @@ Test frameworks known to be used by our users includes:
 
 * test/unit
 * RSpec
+* minitest
 * Cucumber
 * Steak
-* Capybara with Selenium
+* Selenium and Chrome headless
 * Capybara Webkit
-* Poltergeist and PhantomJS
 * Jasmine
 * Minitest
 * Karma
+* JUnit
+* QUnit
+* go test
+* Spock
+* Mockito
+* Mocha
+* PHPUnit
+* pytest
 
 Note that these are simply a reflection of the whole supported stack.
