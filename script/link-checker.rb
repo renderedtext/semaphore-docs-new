@@ -36,6 +36,7 @@ options = {
   :alt_ignore => [/.*/],
   :url_ignore => ignored_paths,
   :http_status_ignore => [0],
+  :checks_to_ignore => ['ScriptCheck'],
   :typhoeus =>
   {
     :followlocation => true,
