@@ -75,7 +75,7 @@ only during the deployment process. After the initial setup there is no way to
 change it through Semaphore interface. You can identify it with the fingerprint
 on the project settings page.
 
-If you are using port forwarding with Capistrano, you will need to make sure
+If you are using SSH agent forwarding with Capistrano, you will need to make sure
 that the SSH key which is used on Semaphore is added as a deploy key to the
 GitHub repository as well.
 

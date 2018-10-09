@@ -119,20 +119,24 @@ helpers do
     "https://github.com/renderedtext/semaphore-docs-new/blob/master/#{path}"
   end
 
-  def package_name(package)
-    data.package_versions[package]["name"]
+  def package_name(package, platform = "standard")
+    data.package_versions[platform][package]["name"]
   end
 
-  def package_version(package)
-    data.package_versions[package]["version"]
+  def default_package_version(package, platform = "standard")
+    data.package_versions[platform][package]["default"].first
   end
 
-  def package_versions(package)
-    data.package_versions[package]["versions"]
+  def package_version(package, platform = "standard")
+    data.package_versions[platform][package]["version"]
   end
 
-  def package_url(package)
-    data.package_versions[package]["url"]
+  def package_versions(package, platform = "standard")
+    data.package_versions[platform][package]["versions"]
+  end
+
+  def package_url(package, platform = "standard")
+    data.package_versions[platform][package]["url"]
   end
 
   def page_exists?(url)

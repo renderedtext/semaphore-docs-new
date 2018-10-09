@@ -21,6 +21,6 @@ In this case, you have 2 options:
 Owners team in your organization has to replace user-project association first.
 This can be done by visiting Project Settings -> Repository tab, and clicking on
 the "Change repository" button in the bottom right corner.
-This way, your project(s) This way will become associated with other GitHub/Bitbucket
+This way your project(s) will become associated with other GitHub/Bitbucket
 account. These steps have to be repeated for each project you added to Semaphore.
 When you're done with switching repositories, you will be able to revoke access.
