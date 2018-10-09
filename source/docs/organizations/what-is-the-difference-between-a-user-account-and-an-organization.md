@@ -4,17 +4,16 @@ title: What is the difference between a user account and an organization?
 category: Organizations
 ---
 
-Organizations differ from user accounts. A user account is an account created
-and used by a single person, while an organization is a group that one or more
-users can own and manage.
+Organizations differ from user accounts. A user account is an account created and used
+by an individual user for building open source projects, while an organization can be
+owned and managed by one or more users for building both private and open source projects.
 
-A **user account** allows you to create open source projects and invite
-collaborators. On the other hand, **organizations** allow you to create both
-private and open source projects, and are used by businesses and teams which
-have the need to be able to allow more than one user to manage their projects,
-or to set different permission levels for different teams and/or collaborators.
-Also, organizations include features like [Activity monitor](/docs/activity-monitor.html)
-and [Secrets](/docs/secrets.html).
+A **user account** allows you to create open source projects only and invite collaborators
+for those projects. On the other hand, **organizations** are used by businesses and teams
+which have the need to be able to allow more than one user to manage their projects, or
+to set different permission levels for different teams and/or collaborators. However, organizations are great for individual users, too, since they offer more features such as [Activity monitor](/docs/activity-monitor.html) and [Secrets](/docs/secrets.html).
+
+__Note:__ If you try to add a private project to a user account, Semaphore will automatically require that you create an organization since it is not possible to build private projects on user accounts.
 
 ## Next steps
 
