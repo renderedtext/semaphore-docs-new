@@ -59,7 +59,7 @@ puts pr_value
 
 ### Exporting the `PULL_REQUEST_NUMBER` variable
 
-Now, environment variable can be set by adding these commands
+Now, environment variables can be set by adding these commands
 to the setup of the build on Semaphore:
 
 ```bash
