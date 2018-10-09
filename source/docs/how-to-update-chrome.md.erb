@@ -8,8 +8,11 @@ If your developement process depends on the latest Chrome version which is not p
 you can install it by adding the following commands to the setup of the build:
 
 
-* `sudo touch /etc/apt/sources.list.d/google-chrome-source.list`
-* `install-package --update-new google-chrome-stable`
+```bash
+sudo touch /etc/apt/sources.list.d/google-chrome-source.list
+
+install-package --update-new google-chrome-stable
+```
 
 These commands [cache](/docs/caching-between-builds.html) installations from APT with our `install-package` tool.
 To get more detailed informations about its options,
