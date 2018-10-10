@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What's the difference between Semaphore pricing as Heroku add-on and on semaphoreci.com?"
+title: Semaphore as a Heroku add-on pricing
 category: Billing
 ---
 
@@ -9,7 +9,7 @@ Semaphore's continuous integration and continuous delivery service is also
 available through [a Heroku
 add-on](https://elements.heroku.com/addons/semaphore).
 
-The Heroku add-on can be applied per project on Semaphore. Heroku project is the
+The Heroku add-on is applied per project on Semaphore. Heroku project is the
 one which you configure after provisioning the add-on.
 The add-on pricing is designed with that limitation in mind, and varies based on
 number of boxes available to that project for parallel jobs.

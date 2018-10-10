@@ -95,6 +95,8 @@ website.
 
 ![Enter Credentials](https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/175/04_credentials.png)
 
+If you pass that screen without getting any error messages, it means that your AWS credentials are working.
+
 ### Adding Build Commands
 The files created during the build phase on Semaphore won't be available
 during deployment, so if you need to generate some files before deploying
@@ -108,6 +110,8 @@ If your entire repository is a static website, you can leave both the
 directory and command fields empty.
 
 ![Choose Commands](https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/176/041_commands.png)
+
+If you do not have the required AWS setup for listing all available buckets, Semaphore will fail to list all the buckets for you and will take you to the screen where you will need to put your AWS credentials again. However, this does not mean that your AWS credentials were incorrect. Please keep reading this documentation page to find out more about changing the AWS policy.
 
 ### Choosing a Bucket
 The S3 Index document is the name of the file which will be your website's
@@ -167,6 +171,7 @@ You can view [which environment variables are exported during deploy to S3](/doc
 together with some [common AWS environment variables](/docs/available-environment-variables.html#common-aws-variables).
 
 ### Example AWS IAM policy
+
 This example shows a policy which provides Semaphore with access to manage your
 S3 buckets in the process of setting up your deployment. [This
 section](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-using.html#create-managed-policy-console)
@@ -175,29 +180,50 @@ policy shown below.
 
 ```javascript
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "Stmt1461232964000",
-            "Effect": "Allow",
-            "Action": [
-                "s3:CreateBucket",
-                "s3:DeleteObject",
-                "s3:GetBucketLocation",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketWebsite",
-                "s3:GetObject",
-                "s3:GetObjectAcl",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:PutBucketWebsite",
-                "s3:PutObject",
-                "s3:PutObjectAcl"
-            ],
-            "Resource": [
-                "arn:aws:s3:::*"
-            ]
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1461232964000",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:DeleteObject",
+        "s3:GetBucketLocation",
+        "s3:GetBucketPolicy",
+        "s3:GetBucketWebsite",
+        "s3:GetObject",
+        "s3:GetObjectAcl",
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket",
+        "s3:PutBucketWebsite",
+        "s3:PutObject",
+        "s3:PutObjectAcl"
+      ],
+      "Resource": [
+        "arn:aws:s3:::*"
+      ]
+    }
+  ]
 }
 ```
+
+### Minimal required permissions
+
+Semaphore lists all the S3 buckets with the [ListAllMyBuckets](https://docs.aws.amazon.com/cli/latest/reference/s3api/list-buckets.html)
+action. For this to work, your policy should contain the following snippet,
+along with the bucket specific policies:
+
+```javascript
+{
+  "Sid": "VisualEditor1",
+    "Effect": "Allow",
+    "Action": [
+      "s3:GetBucketLocation",
+      "s3:ListAllMyBuckets"
+    ],
+    "Resource": "*"
+}
+```
+
+When these permissions are missing, you will get an `Access denied` error when
+listing the buckets, even if your AWS credentials (added in the first step) are valid.
