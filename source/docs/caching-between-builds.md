@@ -4,7 +4,7 @@ title: Caching between builds
 category: The Semaphore platform
 ---
 
-Installing application dependencies can take a significant amount of time, so
+Installing application dependencies and building artifacts can take a significant amount of time, so
 Semaphore caches them to make your build time shorter.
 
 Semaphore caches certain directories automatically, and some only if the
