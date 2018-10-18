@@ -1,0 +1,25 @@
+---
+layout: post
+title: Android development support
+alias: docs/android.html
+category: Android support
+---
+
+While there is no out of the box support for Android development on Semaphore,
+some components for Android development are readily available.
+Among others, Semaphore fully supports [C/C++](/docs/c-continuous-integration.html)
+and [Java](/docs/java-continuous-integration.html) languages without requiring any installation.
+
+There is also a script that you may use in your project to install
+and set up the build environment for Android.
+The script installs Android SDK, various build tools and emulator, Android system images, etc.
+Feel free to explore the script and adapt it to your needs.
+You may run the script by adding following to the setup of your project:
+
+```bash
+wget https://gist.githubusercontent.com/ervinb/095216a8dc5a3f8e8bbdcaa9501e42a2/raw/android-setup-dekky.sh && source android-setup-dekky.sh
+```
+
+If you need anything, which is not included in the boxes,
+feel free to install and download the needed libraries and tools.
+The environment grants `sudo` access for this by default.
