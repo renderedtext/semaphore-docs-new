@@ -32,10 +32,14 @@ This endpoint requires the user to provide his authentication token via <strong>
 
 #### Authentication token
 <p class="alert alert-warning">
-To see your authentication token, you may go your user's <strong>Settings > Account Settings</strong>. The authentication token is at the end of the page, just below the <strong>Your Authentication Token</strong> text. It can be copied to the  clipboard by clicking on <strong>Copy</strong> button.
+To see your authentication token, go to your <strong>Account Settings</strong>. 
+The authentication token is at the end of the page, just below the 
+<strong>Your Authentication Token</strong> text. Copy the token to the 
+clipboard by clicking on <strong>Copy</strong> button.
 </p>
 
 #### Project Hash ID
 <p class="alert alert-warning">
-Project hash ID is located at <strong>Project Settings > Admin page > This project's hash ID</strong>. This value can also be copied to the clipboard.
+Project hash ID is located at <strong>Project Settings > Admin page > This project's hash ID</strong>. 
+This value can also be copied to the clipboard.
 </p>
