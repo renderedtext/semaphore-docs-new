@@ -7,6 +7,10 @@ standard:
   ansible:
     name: "Ansible"
     version: "2.6.4"
+    
+  apache:
+    name: "Apache HTTP server"
+    version: "2.4.7"
 
   boost:
     name: "Boost C++ libraries"
