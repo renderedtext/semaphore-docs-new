@@ -19,7 +19,7 @@ module CLI
   def self.toc(namespace)
     list = all_commands_in_namespace(namespace).map do |cmd|
       title = cmd["desc"].capitalize
-      href = cmd["desc"].split(" ").join("-")
+      href = cmd["desc"].split(" ").map(&:downcase).join("-")
 
       "<li><a href='##{href}'>#{title}</a></li>"
     end
