@@ -121,6 +121,22 @@ cd nested-project; npm install; cd -
 NPM doesn't support changing the local installation path, so setting a path with
 [`--cache`](https://docs.npmjs.com/misc/config#cache) will not work. A workaround like above is needed.
 
+### Caching Cypress binary
+
+The recommended approach to Cypress caching is to create a symbolic link to
+`$SEMAPHORE_CACHE` folder. The Cypress download will be performed only if the
+Cypress binary could not be found in the cache. Using the commands below in
+setup of your project would use Cypress binary from cache:
+
+```bash
+# Setup caching
+mkdir -p $SEMAPHORE_CACHE_DIR/Cypress
+sudo ln -s $SEMAPHORE_CACHE_DIR/Cypress ~/.cache/Cypress
+
+# Install cypress
+npm install cypress --save-dev
+```
+
 
 ## <a name="yarn" href="#yarn">Yarn</a>
 
@@ -174,6 +190,5 @@ is selected in Project Settings.
 
 The `~/.hex` directory is cached only when [Elixir](/docs/elixir-continuous-integration.html)
 is selected in Project Settings.
-
 
 If we are not caching packages of your favourite language, please [let us know](/support) how you are using them and we will expand our system.
