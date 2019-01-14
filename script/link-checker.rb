@@ -48,7 +48,7 @@ options = {
 }
 
 puts ">> Installing html-proofer"
-system("gem install html-proofer --no-ri --no-rdoc")
+system("gem install html-proofer -v 3.9.3 --no-ri --no-rdoc")
 require "html-proofer"
 
 puts ">> Building pages with Middleman"
