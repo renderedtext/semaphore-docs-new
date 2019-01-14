@@ -47,8 +47,18 @@ options = {
   }
 }
 
-puts ">> Installing html-proofer"
-system("bundle install")
+require 'bundler/inline'
+
+gemfile do
+  source 'https://rubygems.org'
+
+  gem "html-proofer"
+  gem "nokogiri", "= 1.8.5"
+  gem "i18n", "= 1.5.1"
+end
+
+puts 'Gems installed and loaded!'
+
 require "html-proofer"
 
 puts ">> Building pages with Middleman"
