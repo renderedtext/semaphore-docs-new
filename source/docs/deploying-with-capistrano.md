@@ -51,9 +51,7 @@ Writing custom deploy commands gives you an ability to use the deploy steps that
 match your server setup. During a deploy, Semaphore sets the `REVISION` [environment
 variable](/docs/available-environment-variables.html) which contains the current Git revision being deployed.
 
-**Note**: Capistrano by default truncates server responses that are longer than the terminal. Even though error messages are never truncated you might want to display full server response. 
-
-This can be done by adding to your `deploy.rb` the following:
+**Note**: Capistrano truncates server responses that are longer than the terminal. Full display can be achieved by adding to your `deploy.rb` the following:
 ```
 set :format_options, truncate: false
 ```
