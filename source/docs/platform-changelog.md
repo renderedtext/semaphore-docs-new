@@ -6,6 +6,36 @@ category: The Semaphore platform
 
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
+### 1902 - 2019-02-18
+```md
+- additions:
+  - java 11.0.2
+  - postgres 11, without postgis
+  - nodejs 10.15
+  - ruby 2.6.0, 2.6.1
+- upgrades:
+  - ansible 2.6.4 -> 2.7.12
+  - aws-cli 1.16.22 -> 1.16.102
+  - aws-ecs 1.8.0 -> 1.12.1
+  - bower 1.8.4 -> 1.8.8
+  - cassandra 3.11.3 -> 3.11.4
+  - chromedriver 2.41 -> 2.46
+  - chrome 71 -> 72
+  - git 2.19.0 -> 2.20.1
+  - git-lfs 2.5.1 -> 2.6.1
+  - gradle 4.1 -> 5.2
+  - grunt 1.3.1 -> 1.3.2
+  - heroku 7.15.2 -> 7.21.0
+  - java8 u181 -> u201
+  - lein 2.8.1 -> 2.9.0
+  - mongodb 3.4.17 -> 3.4.19
+  - npm 2.15.11 -> 3.10.10
+  - pip 18.0 -> 19.0.2
+  - redis 4.0.11 -> 5.0.3
+  - yarn 1.9.4 -> 1.13.0
+  - kernel 4.4.0.135 -> 4.4.0.142
+```
+
 ### 1809.1 - 2018-09-27
 ```md
 - upgrades
