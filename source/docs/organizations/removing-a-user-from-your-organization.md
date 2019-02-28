@@ -42,7 +42,7 @@ it by following the next steps:
 3. Click on the "Change repository" button in the bottom right corner.
 
 This way, these projects will become associated with your GitHub/Bitbucket account.
-These steps should be repeated for all project created by the user you would
+These steps should be repeated for all projects created by the user you would
 like to remove from the organization. This can be performed by any member of the
 Owners team in your organization.
 
