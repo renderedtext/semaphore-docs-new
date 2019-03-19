@@ -25,7 +25,7 @@ in which you can run up to **8 parallel jobs**. After the free trial expires,
 your account will automatically be switched to a free plan, which allows
 unlimited jobs for open source projects and up to 100 jobs per month for private
 projects. For unlimited private jobs, you can upgrade to our one of the
-[paid plans](/pricing).
+[paid plans](https://semaphoreci.com/v1-pricing).
 
 Note that you can create as many organizations for open source projects as you
 like.
