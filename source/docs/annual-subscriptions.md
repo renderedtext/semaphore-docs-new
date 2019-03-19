@@ -36,4 +36,4 @@ original plan.
 ### How can I downgrade annual subscription?
 
 Annual subscriptions cannot be downgraded and are non-refundable as mentioned on
-our [pricing page](https://semaphoreci.com/pricing).
+our [pricing page](https://semaphoreci.com/v1-pricing).
