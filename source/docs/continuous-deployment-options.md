@@ -4,23 +4,21 @@ title: Continuous Deployment Options
 category: Deploying your application
 ---
 
-Semaphore lets you continuously deploy your applications and services when all
+Semaphore Classic lets you continuously deploy your applications and services when all
 automated tests pass. This way, developers only need to push new code to a Git
-repository in order for Semaphore to run all tests and deploy a new version.
+repository in order for Semaphore Classic to run all tests and deploy a new version.
 
 To accomplish this is very easy. You only need to set up a target **server**, an
-entity which encapsulates deployment settings and history on Semaphore. The
+entity which encapsulates deployment settings and history on Semaphore Classic. The
 server can be linked to a particular branch, and it will trigger deployment
 after every successful build on that branch.
 
-Note: It is also possible to set up a deployment server without continuous
+**Note:** It is also possible to set up a deployment server without continuous
 deployment and perform manual, one-click deployment from any branch.
 
 Servers, which can be accessed from project pages, display a detailed deploy
 history in a form similar to a changelog. This way, your team can keep track of
 who delivered what and when.
-
-<img src="https://d2l3jyjp24noqc.cloudfront.net/uploads/image/img/273/continuous-deployment-server-page-semaphoreci.png" class="img-bordered-padding img-responsive" alt="Continuous deployment changelog">
 
 In addition, each deploy can trigger a [notification in your favorite group chat
 channel](/docs/managing-chat-notifications.html).
@@ -33,7 +31,7 @@ contributions on their first day at the job quickly and without friction.
 ### Guides to help you set up deployment
 
 The following guides show you how to set up deployment to one of the cloud
-platforms and tools Semaphore integrates with. If your service is not listed, or
+platforms and tools Semaphore Classic integrates with. If your service is not listed, or
 you have custom scripts and infrastructure, we recommend going with the [Generic
 deployment method](/docs/generic-deployment.html).
 
