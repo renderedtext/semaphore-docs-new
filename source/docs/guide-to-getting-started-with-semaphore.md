@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Semaphore
+title: Getting started with Semaphore Classic
 category: Getting started
 ---
 
@@ -16,7 +16,7 @@ category: Getting started
 
 ## <a name="adding_a_project" href="#adding_a_project">Adding a project</a>
 
-To get started, you need to add your first GitHub or Bitbucket project to Semaphore.
+To get started, you need to add your first GitHub or Bitbucket project to Semaphore Classic.
 
 <img src="/docs/assets/img/guide/add_a_project.png" class="img-responsive img-bordered">
 
