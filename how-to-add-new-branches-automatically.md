@@ -9,5 +9,5 @@ Semaphore Classic project are in sync, new branches will need to be added
 automatically and the existing ones will need to be added manually. Specific
 naming of branches does not affect the automatic adding of the branches,
 however some form of the naming convention might be useful if there are any
-[high priority branches](/docs/set-high-priority-branches.html), or if you wish to [turn off automatic testing](/docs/turn-off-automatic-testing-of-new-branches.html) for some of the
+[high priority branches](https://semaphoreci.com/docs/set-high-priority-branches.html), or if you wish to [turn off automatic testing](https://semaphoreci.com/docs/turn-off-automatic-testing-of-new-branches.html) for some of the
 new branches.
