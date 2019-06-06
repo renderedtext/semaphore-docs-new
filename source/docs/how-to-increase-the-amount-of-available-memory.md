@@ -16,6 +16,6 @@ sudo swapon /swapfile
 ```
 
 These commands will create a 1GB swap file. If you’d like to create a larger
-swap file, you’d need to Increase the count parameter. The Semaphore Classic
+swap file, you’d need to increase the **count** parameter. The Semaphore Classic
 environment runs in a RAMDisk, so the performance overhead of a swap file
 should be minimal.
