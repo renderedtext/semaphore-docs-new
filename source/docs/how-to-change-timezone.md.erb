@@ -4,13 +4,19 @@ title: How to change the timezone?
 category: Managing dependencies
 ---
 
-Default timezone in the virtual machine is set to UTC. In order to customize its value,
-add an [environment variable](/docs/exporting-environment-variables.html) called `TZ`
-with a value from this [table](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
-For example:
+Default timezone in the virtual machine is set to UTC and can be changed in 2 ways:
+
+1. You may assign a different value to **TZ** environment variable. For example:
 
 ```
-TZ=America/Los_Angeles
+export TZ=Europe/Belgrade
 ```
 
-List of the available environment variables in the VMs can be found on [this page](/docs/available-environment-variables.html).
+This would change the time zone from default UTC, to CET (Europe/Belgrade).
+
+2. Alternatively, the same result can be achieved by creating a symlink in /etc/localtime 
+to one of the available timezones. Using the same timezone as in the previous example:
+
+```
+ln -sf /usr/share/zoneinfo/Europe/Belgrade /etc/localtime
+```
