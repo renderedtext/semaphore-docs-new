@@ -100,7 +100,7 @@ Images in 5 Steps](/blog/2016/12/13/lightweight-docker-images-in-5-steps.html) f
 
 In order to improve the speed of pushing and pulling images in your Semaphore
 builds, the Docker container registry should be geographically as close as
-possible to the Semaphore build servers in Germany.
+possible to the Semaphore build servers in Germany. The US east region also provides good results. 
 To compare approximately how much time is needed to push or pull a Docker
 image, depending on the registry's physical location and the image's size,
 see the results of our benchmarks visualized in the following charts:
