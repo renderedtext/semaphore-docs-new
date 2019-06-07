@@ -114,3 +114,31 @@ only as a base line. To avoid any compression that might occur during the push a
 pull operations, image contents are generated using `/dev/urandom`. As such, these
 transfer speeds are not likely to occur, and standard images will have considerably
 better performance.
+
+If you wish to cache some Docker image layers and thus save time in future builds, you may activate the layer caching by adding the bolded lines to your Docker compose file:
+
+```yaml
+version: '3.2'
+services:
+  web:
+  build:
+  context: .
+  cache_from:
+  - ${CACHE_IMAGE}
+```
+
+where CACHE_IMAGE is, for example, defined with the following command that should be added to the setup of your project (please update value according to your needs):
+
+```bash
+export CACHE_IMAGE=aws_account_id.dkr.ecr.us-east-1.amazonaws.com/my-app
+```
+
+
+
+
+
+
+
+  volumes: - .:/code
+     - .:/code
+```
