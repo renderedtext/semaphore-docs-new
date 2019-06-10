@@ -124,7 +124,7 @@ Options range from 15 minutes to 180 minutes, in increments of 15 minutes.
 
 __Note:__
 
-Since Semaphore Classic has a hard limit of task running maximum 3 hours, if you need to run a non-trivial task that takes more than 3 hours to finish, this can be done by increasing the timeout on Semaphore Classic in Project Settings > Admin and by splitting a non-trivial task to two subtasks would allow for each running up to 3 hours.
+Since Semaphore Classic has a hard limit of task running maximum 3 hours, if you need to run a non-trivial task that takes more than 3 hours to finish, this can be done by increasing the timeout on Semaphore Classic in **Project Settings > Admin** and by splitting a non-trivial task to two subtasks would allow for each running up to 3 hours.
 
 ## Retrying commands
 
