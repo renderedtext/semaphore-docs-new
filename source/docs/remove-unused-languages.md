@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Remove unused languages to gain more free disk space
+title: Removing unused languages to gain more free disk space
 category: Customizing your build
 ---
 
