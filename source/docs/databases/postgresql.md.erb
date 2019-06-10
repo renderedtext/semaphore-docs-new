@@ -70,6 +70,30 @@ psql -c "some command" -d $DATABASE_NAME_TEST -P pager
 
 List of all packages and versions is available on the [supported application stack](/docs/supported-stack.html) page.
 
+### PostgreSQL hstore schema extension
+  
+In case your database setup enables the `hstore` extension in `structure.sql`,
+but it does not work as expected, please check if you have something similar to 
+following in your `structure.sql` file:
+
+```
+CREATE EXTENSION IF NOT EXISTS hstore WITH SCHEMA public;
+```
+
+The `hstore` extension is enabled by default, which prevents your `structure.sql` to 
+re-create it with the `public` schema, due to:
+
+```
+CREATE EXTENSION IF NOT EXISTS
+```
+
+A simplified solution would be to drop the existing extension, as the first step 
+in the setup, and let `structure.sql` do its thing afterwards.
+
+```
+psql -c 'DROP EXTENSION hstore' -d template1
+```
+
 ### Extensions
 
 - [PostGIS support on Semaphore](/docs/databases/postgis.html)
