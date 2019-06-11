@@ -13,6 +13,7 @@ category: API
 - [Launch Build](#launch_build)
 - [Stop Build](#stop)
 - [Run a deploy from build](#deploy)
+- [Using specific code revision in scheduled builds](#specific_code)
 
 ## <a name="project_branches" href="#project_branches">Project's branches</a>
 
@@ -480,6 +481,14 @@ curl -X GET 'https://semaphoreci.com/api/v1/projects/<hash_id_of_this_project>/b
 ```
 
 - Launch a build with a command similar to the following
+
+```bash
+curl -X POST 'https://semaphoreci.com/api/v1/projects/<hash_id_of_this_project>/<branch_id>/build?commit_sha=<commit_sha_of_your_commit>&auth_token=<your_auth_token>'
+```
+
+## <a name="specific_code" href="#specific_code">Using specific code revision in scheduled builds</a>
+
+If you notice that scheduled builds use code revision used in last manual/pushed build, it is not  the latest code revision, the solution would be triggering the build of latest code revision, which will make the scheduler run builds using that code revision. If you wish to trigger the build of the specific commit, you may use an API call. Builds can be started manually using the following API call (please replace variables with real values):
 
 ```bash
 curl -X POST 'https://semaphoreci.com/api/v1/projects/<hash_id_of_this_project>/<branch_id>/build?commit_sha=<commit_sha_of_your_commit>&auth_token=<your_auth_token>'
