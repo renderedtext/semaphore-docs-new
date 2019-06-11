@@ -22,8 +22,8 @@ base64 gnupg-for-semaphore/random_seed | tee gnupg-for-semaphore/random_seed.b64
 sem secrets:files:add confluent/gpg --local-path gnupg-for-semaphore/random_seed.b64 --path-on-semaphore .gnupg/random_seed.b64 --trace
 ```
 
-First command will encode "random_seed" binary file to a Base64 encoded text
-file named "random_seed.b64". This text file can be added as a secret to
+First command will encode `random_seed` binary file to a Base64 encoded text
+file named `random_seed.b64`. This text file can be added as a secret to
 Semaphore Classic using second command.
 
 - To decode the file back to binary form, _base64_ command is used again but with
