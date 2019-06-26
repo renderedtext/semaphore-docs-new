@@ -192,3 +192,18 @@ The `~/.hex` directory is cached only when [Elixir](/docs/elixir-continuous-inte
 is selected in Project Settings.
 
 If we are not caching packages of your favourite language, please [let us know](/support) how you are using them and we will expand our system.
+
+## Caching speed
+
+Semaphore uses cache to keep the installed application dependencies across the builds
+and to make your builds faster. The cache is shared among the builds of the same project
+and it is copied for each job during the system setup and at the end of the build,
+the cache is saved back to the central cache repository.
+
+However, caching is not instant, which means it takes some time to propagate changes
+throughout the infrastructure. If the next build or deployment runs shortly after the
+current one, the cache might not reflect the latest changes. This is why it is not
+recommended to use cache for files that change often or which need to be up-to-date all
+the time. If builds generate files which are needed immediately after the build, or files
+that need to be accessible after the build, the best approach currently is to use some
+external storage, an S3 bucket for example.
