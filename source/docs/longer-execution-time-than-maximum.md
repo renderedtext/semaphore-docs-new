@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Longer execution time than Semaphore Classic maximum
+title: Push back to repository from Semaphore Classic without triggering the build
 category: Adapting Semaphore
 ---
 
