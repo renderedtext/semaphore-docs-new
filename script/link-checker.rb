@@ -21,6 +21,7 @@ ignored_paths = %w(
 /security
 /press
 /support
+/feed
 )
 
 ignored_paths << /product/
