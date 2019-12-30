@@ -44,7 +44,7 @@ options = {
     :connecttimeout => 30,
     :timeout => 60,
     :ssl_verifypeer => false,
-    :ssl_verifyhost => 0
+    :ssl_verifyhost => false
   }
 }
 
