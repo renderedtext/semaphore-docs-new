@@ -6,7 +6,7 @@
 standard:
   ansible:
     name: "Ansible"
-    version: "2.7.7
+    version: "2.7.7"
     
   apache:
     name: "Apache HTTP server"
@@ -18,7 +18,7 @@ standard:
 
   bower:
     name: "Bower"
-    version: "1.8.8
+    version: "1.8.8"
     url: "https://github.com/bower/bower"
     hide_on_stack_table: true
 
@@ -30,7 +30,7 @@ standard:
 
   cassandra:
     name: "Cassandra"
-    version: "3.11.4
+    version: "3.11.4"
     url: "/docs/databases/cassandra.html"
 
   chrome:
