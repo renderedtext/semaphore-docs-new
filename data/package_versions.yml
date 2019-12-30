@@ -130,7 +130,7 @@ standard:
 
   gradle:
     name: "Gradle"
-    version: "5.2
+    version: "5.2"
     url: "https://gradle.org/"
 
   grunt:
