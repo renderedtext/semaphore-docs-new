@@ -53,9 +53,9 @@ require 'bundler/inline'
 gemfile do
   source 'https://rubygems.org'
 
-  gem "html-proofer", "=3.14.1"
-  gem "nokogiri"
-  gem "i18n"
+  gem "html-proofer", "=3.12.2"
+  gem "nokogiri", "= 1.8.5"
+  gem "i18n", "= 1.5.1"
 end
 
 puts 'Gems installed and loaded!'
