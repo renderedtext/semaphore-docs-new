@@ -68,30 +68,55 @@ on Semaphore, please refer to the corresponding [language page](/docs).
   <thead>
     <tr>
       <th>Name</th>
-      <th>Version</th>
+      <th>Ubuntu 14.04</th>
+      <th>Ubuntu 18.04</th>
     </tr>
   </thead>
   <tbody>
-    <% data.package_versions["standard"].each do |name, package| %>
-      <% unless package["hide_on_stack_table"] %>
-        <tr>
-          <td>
-            <% if package["url"] %>
-              <a href="<%= package["url"] %>"><%= package["name"] %></a>
-            <% else %>
-              <%= package["name"] %>
-            <% end %>
-          </td>
-          <td>
-            <% if package["versions"] %>
-              <%= package["versions"].map{ |version| [version] == package["default"] ? "#{version} (default)" : version }.join("<br/>")  %>
-            <% else %>
-              <%= package["version"] %>
-            <% end %>
-          </td>
-        </tr>
-      <% end %>
-    <% end %>
+<tr><td>Ansible</td><td>2.6.4</td><td>2.9.6</td></tr>
+<tr><td>Apache HTTP server</td><td>2.4.7</td><td>-</td></tr>
+<tr><td>Boost C++ libraries</td><td>1.54.0.1</td><td>-</td></tr>
+<tr><td><a href="/docs/databases/cassandra.html">Cassandra</a></td><td>3.11.3</td><td>Not baked in</td></tr>
+<tr><td><a href="http://www.google.com/chrome/browser/index.html">Chrome</a></td><td>69.0.3497.92</td><td>80</td></tr>
+<tr><td>ChromeDriver</td><td>2.41</td><td>-</td></tr>
+<tr><td><a href="/docs/elasticsearch.html">ElasticSearch</a></td><td>5.4.3</td><td>7.6.1</td></tr>
+<tr><td><a href="/docs/elixir.html">Elixir</a></td><td>1.0.5<br>1.1.1<br>1.3.4<br>1.4.5<br>1.5.3 (default)<br>1.6.6<br>1.7.3</td><td>1.7.4<br>1.8.0<br>1.8.1<br>1.8.2<br>1.9.0<br>1.9.1<br>1.9.2<br>1.9.3<br>1.9.4</td></tr>
+<tr><td><a href="/docs/erlang.html">Erlang</a></td><td>18.3<br>19.3<br>20.3 (default)<br>21.0</td><td>20.3<br>21.3<br>22.1</td></tr>
+<tr><td><a href="/docs/firefox.html">Firefox</a></td><td>34.0 (default)<br>38.8.0 ESR<br>45.9.0 ESR<br>52.2.0 ESR<br>60.1.0 ESR</td><td>68.2</td></tr>
+<tr><td><a href="https://github.com/mozilla/geckodriver">geckodriver</a></td><td>0.21.0 (default)</td><td>-</td></tr>
+<tr><td>gcc</td><td>4.6.4<br>4.7.3<br>4.8.4<br>4.9.4</td><td>4.8<br>5<br>6<br>7<br>8</td></tr>
+<tr><td>Git</td><td>2.19.0</td><td>2.25.1</td></tr>
+<tr><td>Git LFS</td><td>2.5.1</td><td>2.10.0</td></tr>
+<tr><td><a href="/docs/go.html">Go</a></td><td>1.4.3 (default)<br>1.5.4<br>1.6.4<br>1.7.6<br>1.8.6<br>1.9.7<br>1.10.3<br>1.11</td><td>1.10.8<br>1.11.13<br>1.12.10<br>1.13.1</td></tr>
+<tr><td><a href="https://gradle.org/">Gradle</a></td><td>4.1</td><td>6.2.1</td></tr>
+<tr><td>Heroku CLI</td><td>7.15.2</td><td>7.39</td></tr>
+<tr><td>io.js</td><td>1.8.4<br>2.5.0<br>3.3.1</td><td>2.9.1</td></tr>
+<tr><td>ImageMagick</td><td>6.7.7.11</td><td>-</td></tr>
+<tr><td><a href="/docs/java.html">Java</a></td><td>OpenJDK 7u181<br>Oracle JDK 8u181<br>Oracle JDK 9.0.1<br>Oracle JDK 10.0.2</td><td>-</td></tr>
+<tr><td>Leiningen</td><td>2.8.1</td><td>-</td></tr>
+<tr><td>Linux Kernel</td><td>4.4.0-135</td><td>-</td></tr>
+<tr><td>Apache Maven</td><td>3.5.4</td><td>3.5.4</td></tr>
+<tr><td><a href="/docs/databases/memcached.html">Memcached</a></td><td>1.4.14</td><td>Not baked in</td></tr>
+<tr><td><a href="/docs/databases/mongodb.html">MongoDB</a></td><td>3.4.17</td><td>Not baked in</td></tr>
+<tr><td><a href="/docs/databases/mysql.html">MySQL</a></td><td>5.6.40</td><td>5.7.29</td></tr>
+<tr><td><a href="/docs/javascript.html">Node.js</a></td><td>0.8.28<br>0.10.48<br>0.11.16<br>0.12.18<br>4.1.2<br>4.2.6<br>4.3.2<br>4.4.7<br>4.5.0<br>4.6.2<br>4.7.3<br>4.8.4 (default)<br>5.0.0<br>5.1.1<br>5.2.0<br>5.3.0<br>5.4.1<br>5.6.0<br>5.8.0<br>5.10.1<br>5.11.1<br>6.1.0<br>6.2.2<br>6.3.1<br>6.6.0<br>6.9.5<br>6.10.3<br>6.11.3<br>7.1.0<br>7.3.0<br>7.4.0<br>7.6.0<br>7.7.4<br>7.10.1<br>8.1.4<br>8.2.1<br>8.5.0<br>8.7.0<br>8.9.4<br>8.11.3<br>8.12.0<br>9.2.0<br>9.5.0<br>9.11.1<br>10.0.0<br>10.7.0<br>10.10.0</td><td>all</td></tr>
+<tr><td><a href="/docs/phantomjs.html">PhantomJS</a></td><td>1.9.8 (default)<br>2.0.0<br>2.1.1</td><td>1.9.8<br>2.1.1</td></tr>
+<tr><td><a href="/docs/php.html">PHP</a></td><td>5.4.45<br>5.5.38<br>5.6.37 (default)<br>7.0.31<br>7.1.21<br>7.2.9</td><td>5.6.40<br>7.0.33<br>7.1.33<br>7.2.28<br>7.3.15<br>7.4.3</td></tr>
+<tr><td>pip</td><td>18.0</td><td>-</td></tr>
+<tr><td><a href="/docs/databases/postgis.html">PostGIS</a></td><td>2.3</td><td>-</td></tr>
+<tr><td><a href="/docs/databases/postgresql.html">PostgreSQL</a></td><td>9.6 (default)<br>10.0</td><td>9.6<br>10<br>11<br>12</td></tr>
+<tr><td>Python</td><td>2.6.9<br>2.7.10 (default)<br>3.3.6<br>3.4.3<br>3.5.0<br>3.6.0<br>pypy 5.8.0<br>pypy3 5.8.0</td><td>2.7<br>3.6<br>3.7<br>3.8</td></tr>
+<tr><td><a href="/docs/qt.html">Qt</a></td><td>4.8.1 (default)<br>5.4.2<br>5.5.1</td><td>None</td></tr>
+<tr><td>RabbitMQ</td><td>3.6.15</td><td>Not baked in</td></tr>
+<tr><td><a href="http://redis.io/">Redis</a></td><td>4.0.10</td><td>5.0.7</td></tr>
+<tr><td><a href="/docs/databases/rethinkdb.html">RethinkDB</a></td><td>2.3.6</td><td>Not baked in</td></tr>
+<tr><td><a href="/docs/ruby.html">Ruby</a></td><td>2.5.1<br>2.5.0<br>2.4.4<br>2.4.3<br>2.4.2<br>2.4.1<br>2.4.0<br>2.3.7<br>2.3.6<br>2.3.5<br>2.3.4<br>2.3.3<br>2.3.1<br>2.3.0<br>2.2.10<br>2.2.9<br>2.2.8<br>2.2.7<br>2.2.6<br>2.2.5<br>2.2.4<br>2.2.3<br>2.2.2 (default)<br>2.2.1<br>2.2.0<br>2.1.9<br>2.1.8<br>2.1.7<br>2.1.6<br>2.1.5<br>2.1.4<br>2.1.3<br>2.1.2<br>2.1.1<br>2.1.0<br>2.0.0-p598<br>1.9.3-p551<br>ree-1.8.7-2012.02<br>JRuby 1.7.27<br>JRuby 9.1.15.0<br>JRuby 9.2.0.0</td><td>1.9.3<br>2.7.0<br>2.0.1<br>3</td></tr>
+<tr><td>Sphinx</td><td>2.2.11</td><td>Not baked in</td></tr>
+<tr><td>sbt</td><td>0.13.15</td><td>0.13.17</td></tr>
+<tr><td><a href="/docs/scala.html">Scala</a></td><td>2.11.11<br>2.12.6</td><td>2.11.11<br>2.12.7</td></tr>
+<tr><td><a href="/docs/databases/sqlite.html">SQLite</a></td><td>3.8.2</td><td>3.22.0</td></tr>
+<tr><td>virtualenv</td><td>15.1.0</td><td>-</td></tr>
+<tr><td>wkhtmltopdf</td><td>0.12.4</td><td>-</td></tr>
   </tbody>
 </table>
 
