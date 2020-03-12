@@ -1,66 +1,16 @@
 ---
 layout: post
-title: Ubuntu 18.04 LTS
+title: Ubuntu 18.04
 category: The Semaphore platform
 ---
 
-Every build and deployment on Semaphore runs in an isolated virtual machine, based on
-Ubuntu 14.04 LTS 64-bit, Ubuntu 16.04 LTS 64-bit or Ubuntu 18.04 LTS 64-bit, depending on the selected
-platform type. This page describes the out-of-the-box software stack and the
-difference between platform types.
+### <a name="ubuntu-1804" href="#ubuntu-1804">Ubuntu 18.04 LTS 64-bit</a>
 
-The timezone in the Semaphore environment is set to UTC. To find out how to change
-this value visit [this page](/docs/how-to-change-timezone.html).
-
-## <a name="platform-types" href="#platform-types">Platform types</a>
-
-- [Standard](#standard-platform)
-- [Docker](#docker-platform)
-- [Docker Light](#docker-light-platform)
-
-The platform can be changed in Project Settings > Platform.
-
-### <a name="standard-platform" href="#standard-platform">Standard</a>
-
-The Standard platform ships with a number of pre-installed languages, DB backends,
+Ubuntu 18.04 standard platform ships with a number of pre-installed languages, DB backends,
 and libraries. It's the go-to platform if you want a fully configured CI
 environment, with minimal setup from your side.
 
-#### <a name="language-support" href="#language-support">Language support</a>
-
-Semaphore provides first-class support for the following programming languages:
-
-- [C/C++](/docs/c-continuous-integration.html)
-- [Clojure](/docs/clojure-continuous-integration.html)
-- [Elixir](/docs/elixir-continuous-integration.html)
-- [Go](/docs/go-continuous-integration.html)
-- [Java](/docs/java-continuous-integration.html)
-- [JavaScript](/docs/javascript-continuous-integration.html), via Node.js
-- [PHP](/docs/php-continuous-integration.html)
-- [Python](/docs/python-continuous-integration.html)
-- [Ruby](/docs/ruby-continuous-integration.html)
-- [Scala](/docs/scala-continuous-integration.html)
-
-Note that applications in any programming language can be configured manually
-in [project settings](/docs/customizing-build-commands.html).
-If you would like a language which is not listed above to be supported
-out of the box, please [send us email](mailto:support@semaphoreci.com) or
-[install it manually](/docs/how-to-install-dependency.html).
-
-#### <a name="setting-multiple-language-versions-in-jobs" href="#setting-multiple-language-versions-in-jobs">Setting multiple language versions in jobs</a>
-
-Besides using the language which is selected in the project settings,
-you can utilize any combination of languages and versions
-from the table bellow. For example, to use Node.js `5.6.0`
-with a project which is not configured as such, add a following line as a
-[setup command](/docs/customizing-build-commands.html).
-
-```bash
-nvm use 5.6.0
-```
-
-To find more information about managing different language versions
-on Semaphore, please refer to the corresponding [language page](/docs).
+To find more information about other supported platforms on Semaphore, please refer to the corresponding [suported stack page](/supported-stack).
 
 #### <a name="available-components-and-services" href="#available-components-and-services">Available components & services</a>
 
@@ -72,106 +22,45 @@ on Semaphore, please refer to the corresponding [language page](/docs).
     </tr>
   </thead>
   <tbody>
-    <% data.package_versions["standard"].each do |name, package| %>
-      <% unless package["hide_on_stack_table"] %>
-        <tr>
-          <td>
-            <% if package["url"] %>
-              <a href="<%= package["url"] %>"><%= package["name"] %></a>
-            <% else %>
-              <%= package["name"] %>
-            <% end %>
-          </td>
-          <td>
-            <% if package["versions"] %>
-              <%= package["versions"].map{ |version| [version] == package["default"] ? "#{version} (default)" : version }.join("<br/>")  %>
-            <% else %>
-              <%= package["version"] %>
-            <% end %>
-          </td>
-        </tr>
-      <% end %>
-    <% end %>
+<tr><td>Ansible</td><td> 2.9.6</td></tr>
+<tr><td>Bundler</td><td> 1.16<br> 2.0</td></tr>
+<tr><td>Chrome/ChromeDriver </td><td> 80</td></tr>
+<tr><td>Docker-compose</td><td> 1.124.1</td></tr>
+<tr><td>Docker</td><td> 19.03</td></tr>
+<tr><td>Dockerize</td><td> 0.6.1</td></tr>
+<tr><td>Elasticsearch</td><td> 7.6.1</td></tr>
+<tr><td>Elixir</td><td> 1.7.4<br> 1.8.0<br> 1.8.1<br> 1.8.2<br> 1.9.0<br> 1.9.1<br> 1.9.2<br> 1.9.3<br> 1.9.4</td></tr>
+<tr><td>Erlang</td><td> 20.3<br> 21.3<br> 22.1</td></tr>
+<tr><td>Firefox</td><td> 68.2-esr</td></tr>
+<tr><td>Gcc</td><td> 4.8<br> 5<br> 6<br> 7<br> 8</td></tr>
+<tr><td>Geckodriver</td><td> 0.26.0</td></tr>
+<tr><td>Git-LFS</td><td> 2.10.0</td></tr>
+<tr><td>Git</td><td> 2.25.1</td></tr>
+<tr><td>Go</td><td> 1.10.8<br> 1.11.13<br> 1.12.10<br> 1.13.1</td></tr>
+<tr><td>Gradle</td><td> 6.2.1</td></tr>
+<tr><td>Heroku</td><td> 7.39</td></tr>
+<tr><td>Leiningen</td><td> 2.9.1</td></tr>
+<tr><td>Maven</td><td> 3.5.4</td></tr>
+<tr><td>MySQL</td><td> 5.7.9</td></tr>
+<tr><td>NodeJS</td><td> 8.16.2<br> 10.17.0<br> 12.13.0</td></tr>
+<tr><td>OpenJDK</td><td> 1.8<br> 1.11</td></tr>
+<tr><td>PhantomJS</td><td> 1.9.8<br> 2.1.1</td></tr>
+<tr><td>Php</td><td> 5.6.40<br> 7.0.33<br> 7.1.33<br> 7.2.28<br> 7.3.15<br> 7.4.3</td></tr>
+<tr><td>PostgreSQL</td><td> with postgis 2.5: 9.6<br>with postgis 3: 10, 11, 12</td></tr>
+<tr><td>Pypy</td><td> 5.8.0</td></tr>
+<tr><td>Pypy3</td><td> 5.8.0</td></tr>
+<tr><td>Python</td><td> 2.7<br> 3.6<br> 3.7<br> 3.8</td></tr>
+<tr><td>Redis</td><td> 5.0.7</td></tr>
+<tr><td>Ruby</td><td> 1.9.3<br> 2.0.x<br> 2.1.x<br> 2.2.x<br> 2.3.x<br> 2.4.x<br> 2.5.x<br> 2.6.x<br> 2.7.0</td></tr>
+<tr><td>Sbt</td><td> 0.13.17</td></tr>
+<tr><td>Scala</td><td> 2.11.11<br> 2.12.7</td></tr>
+<tr><td>Sqlite</td><td> 3.22.0</td></tr>
   </tbody>
 </table>
 
 __Note:__ If you need to upgrade or install additional packages for your builds,
 you can do it with [apt-get](/docs/how-to-install-dependency.html) - either from Ubuntu's
 [official distribution channels](http://packages.ubuntu.com) or third-party PPAs.
-
-### <a name="docker-platform" href="#docker-platform">Docker</a>
-
-The Docker plaform has an identical software stack to the Standard platform, but
-with added support for running Docker images, and a pre-installed Docker toolchain
-(docker-ce <%= data.package_versions["docker"]["docker"]["version"] %> and
- docker-compose <%= data.package_versions["docker"]["docker-compose"]["version"] %>).
-
-
-### <a name="docker-light-platform" href="#docker-light-platform">Docker Light</a>
-#
-The Docker Light platform is stripped from all software, and ships only with the
-bare essentials needed for running Docker containers during builds and deployments.
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Version</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% data.package_versions["docker-light"].each do |name, package| %>
-      <% unless package["hide_on_stack_table"] %>
-        <tr>
-          <td>
-            <% if package["url"] %>
-              <a href="<%= package["url"] %>"><%= package["name"] %></a>
-            <% else %>
-              <%= package["name"] %>
-            <% end %>
-          </td>
-          <td>
-            <% if package["versions"] %>
-              <%= package["versions"].map{ |version| [version] == package["default"] ? "#{version} (default)" : version }.join("<br/>")  %>
-            <% else %>
-              <%= package["version"] %>
-            <% end %>
-          </td>
-        </tr>
-      <% end %>
-    <% end %>
-  </tbody>
-</table>
-
-
-### Open source
-
-We have a number of open source [test apps](/docs/test-apps.html) in various flavors that we use for verification. If your setup is different or you're having problems making your build pass, we encourage you to [contact us](mailto:semaphore@renderedtext.com) - we'd be happy to get your app building on Semaphore as quickly as possible.
-
-### <a name="supported-test-frameworks-and-backends" href="#supported-test-frameworks-and-backends">Supported test frameworks and backends</a>
-
-Test frameworks known to be used by our users includes:
-
-* test/unit
-* RSpec
-* minitest
-* Cucumber
-* Steak
-* Selenium and Chrome headless
-* Capybara Webkit
-* Jasmine
-* Minitest
-* Karma
-* JUnit
-* QUnit
-* go test
-* Spock
-* Mockito
-* Mocha
-* PHPUnit
-* pytest
-
-Note that these are simply a reflection of the whole supported stack.
 
 ### <a name="macos-ios" href="#macos-ios">MacOS and iOS</a>
 
