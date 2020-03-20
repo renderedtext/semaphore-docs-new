@@ -4,6 +4,12 @@ title: MongoDB
 category: Databases
 ---
 
+This documment contains information related to projects based on Ubuntu 14.04 image. 
+If you are using Ubuntu 18.04 image for your projects please refer to [this page](https://semaphoreci.com/docs/ubuntu-1804.html). 
+
+If you are using Ubuntu 14.04 image and you want to switch to Ubuntu 18.04 be sure to check our [migration guide](URL).
+___
+
 [MongoDB](https://www.mongodb.org/) doesn't provide a command to create a "database".
 
 Actually, you don’t need to create it manually, because, MongoDB will create it
