@@ -3,6 +3,11 @@ layout: post
 title: Platform updates
 category: The Semaphore platform
 ---
+This documment contains information related to projects based on Ubuntu 14.04 image. 
+If you are using Ubuntu 18.04 image for your projects please refer to [this page](https://semaphoreci.com/docs/ubuntu-1804.html). 
+
+If you are using Ubuntu 14.04 image and you want to switch to Ubuntu 18.04 be sure to check our [migration guide](URL).
+___
 
 Each platform update is named with a YYMM pattern, for example the update for
 September in the year 2014 is represented with 1409. For incremental and bugfix
