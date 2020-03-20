@@ -3,30 +3,63 @@ layout: post
 title: Ubuntu 1804 - Bionic
 category: The Semaphore platform
 ---
-## <a name="intro" href="#intro">Intro</a>
+The Ubuntu 18.04 is a customized image based on [Ubuntu 18.04 LTS](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes) optimized for CI/CD. It comes with a set of preinstalled languages, databases, and utility tools commonly used for CI/CD workflows.
 
-## <a name="why-migrate" href="#why-migrate">Why migrate to this platform version</a>
-- Ubuntu 14.04 is deprecated and cannot be updated any more
+The user in the environment, named `runner`, has full `sudo` access.
+
+The Ubuntu 18.04 VM uses an APT *mirror* that is in the same data center as Semaphore's build cluster, which means that caching packages will have little effect.
+
+## <a name="why-upgrade" href="#why-upgrade">Why upgrade</a>
+- **Ubuntu 14.04 is deprecated** and cannot be updated any more
   - Ubuntu 14.04 uses an old version of OpenSSL which means you won’t be able to build new versions of languages like php.
-- Ubuntu 18.04 brings newer versions of every programming language available on the previous platform.
-- It is updated in a non-disruptive, rolling release process every two weeks.
-- More free space in the image (Ubuntu 14.04 - 7.9GB, Ubuntu 18.04 - ?X)
-- 18.04 comes with a lot of other benefits (new drivers, broader file systems support, tools like snapd).
-To start the upgrade process read our [Migrating from Ubuntu 14.04 (Trusty)](URL) guide.
+- **(A lot of new software)** 18.04 comes with a lot of other benefits (new drivers, broader file systems support, tools like snapd).
+- **(More new Languages)** Ubuntu 18.04 brings newer versions of every programming language available on the previous platform.
+- **(More new Databases)** More databases and multiple versions of databases.
+- It is updated in a **non-disruptive, rolling release** process every two weeks.
+- **More free space** in the image (Ubuntu 14.04 - 7.9GB, Ubuntu 18.04 - 15GB)
 
-## <a name="release-process" href="#release-process">How and when is it updated</a>
-The image will be updated bi-weekly, on the first and third Monday of every month. Updates can be followed on [Semaphore Changelog](http://semaphoreci.com/docs/platform-changelog.html). 
+## <a name="upgrade-guide" href="#upgrade-guide">How to use new platform</a>
+1. **Switch to new version of the platform**  
+Go into Project > platform settings
 
-Updates may happen sooner if there are any security updates or bug fixes that need to be implemented.
+2. **Select programming language version with sem-version CLI**  
+Versions are now configured with a built-in `sem-version` command. This new approach enables you to configure versions of different languages and also enables us to add new versions faster.  
 
-## <a name="how-to-configure" href="#how-to-configure">How can you configure your project to use it</a>
-- Go into Project > platform settings
+With `sem-version` you can configure versions of the following programming languages: `Php, ruby, erlang, go, java, c, python, elixir, scala, node`. For information about available versions [check documentation](#supported-languages).  
 
-For more information on differences in setting up Ubuntu 14.04 project and Ubuntu 18.04 project please visit our [migration guide](URL).
+Example of commands that you can add to your job, or to setup commands that will be executed as a part of every job:
+`sem-version ruby 2.6.3`  
+`sem-version node 10.1`
 
-## <a name="languages" href="#languages">Programming languages & versions</a>
-### <a name="sem-version" href="#sem-version">sem-version: Managing Language Versions on Linux</a>
-The `sem-version` utility in Linux based virtual machines is used for changing the version of a programming language.
+For more information about using sem-version [check documentation](#sem-version).
+
+3. **Start databases with sem-service CLI**  
+Start only services that you need with the built-in `sem-service` command. Databases are no longer running by default so you can use desired versions and more resources are left for running your workloads.  
+
+With `sem-service` you can start desired version of following databases and services: `mysql, postgres, redis, memcached, mongodb, elasticsearch and rabbitmq`.  
+
+Example of commands that you can add to your job, or to Setup commands that will be executed before every job:
+```bash
+sem-service start mysql
+sem-service start rabbitmq
+sem-service start postgres 11.5
+```
+
+For the list of all databases, services and available versions check [Ubuntu 18.04 platform documentation](#supported-stack).
+
+4. **Install additional software** - If your application requires software packages that are not pre-installed be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-stack) before installing software manually.
+
+Ubuntu 14.04 and Ubuntu 18.04 have mostly the same components with newer versions. 
+
+Notable changes:  
+- Background services are now managed with **systemd** while in Ubuntu 14.04 it was managed by **init.d** and **upstart**.
+- AppArmor is started by default. It’s likely that this will not affect your application unless you are using KVM or QEMU.
+
+5. **Finally**: Run your jobs as you used to.
+
+## <a name="sem-version" href="#sem-version">Programming languages</a>
+The `sem-version` utility in Linux based virtual machines is used for changing the version of a programming language. You can find list of all available programming languages with available versions [here](#supported-languages).  
+
 The supported programming languages are `elixir, erlang, go, java, php, ruby, python, scala` and `node`.
 The general form of the `sem-version` utility is:
 
@@ -37,9 +70,8 @@ Example of sem-version in your job set up:
 
 `sem-version go 1.9`
 
-## <a name="databases" href="#databases">Databases & services</a>
-### <a name="sem-service" href="#sem-service">sem-service: Managing Databases and Services on Linux</a>
-The `sem-service` is a utility on Linux based virtual machines for starting, stopping and getting the status of background services. Started services will listen on 0.0.0.0 and their default port. The 0.0.0.0 IP address includes all available network interfaces. Essentially, you will be using services as if they were natively installed in the Operating System.
+## <a name="sem-service" href="#sem-service">Databases & services</a>
+The `sem-service` is a utility on Linux based virtual machines for starting, stopping and getting the status of background services. Started services will listen on 0.0.0.0 and their default port. The 0.0.0.0 IP address includes all available network interfaces. For MySQL and Postgres it’s also possible to access them via the usual socket. Essentially, you will be using services as if they were natively installed in the Operating System.
 
 The general form of a `sem-service` command is as follows:
 
@@ -51,13 +83,13 @@ Therefore, each `sem-service` command requires at least two parameters: the firs
 
 For MySQL and PostgreSQL it is possible to provide username via `--username=username`, password for the new username via `--password=password` and database name for which the user will be granted admin access via `--db=dbname`.
 
-- The default MySQL username is root, the password is blank and the default database name is test
-- The default PostgreSQL username is postgres and password is blank.
+- The default MySQL username is `root`, the password is `semaphoredb` and the default database name is `test`
+- The default PostgreSQL username is `runner` and password is `semaphoredb`.
 
 If no version value is given, a default value will be used according to the following list:
 
 - mysql: The default value is `5.6`
-- postgres: The default value is `10.6`
+- postgres: The default value is `9.6`
 - redis: The default value is `4`
 - memcached: The default value is `1.5`
 - mongodb: The default value is `4.1`
@@ -91,16 +123,12 @@ sem-service start elasticsearch 6.5.2
 sem-service start mongodb
 sem-service start mongodb 3.2
 ```
-## <a name="migration-guide" href="#migration-guide">Migrating from Ubuntu 14.04 (Trusty)</a>
-You can find a couple of useful tips for migrating from Ubuntu 14.04 to Ubuntu 18.04 in our [migration guide](URL).
+## <a name="release-process" href="#release-process" style="background-color:red;">Release process</a>
+- **Rolling release** - Add note what this means and link to https://en.wikipedia.org/wiki/Rolling_release
+- **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates can be followed on Semaphore Changelog.Updates may happen sooner if there are any security updates or bug fixes that need to be implemented.
+- **No action required** from user side (was not like this before)
 
-## <a name="supported-stack" href="#supported-stack">What is preinstalled</a>
-### <a name="ubuntu-1804-image" href="#ubuntu-1804-image">Ubuntu 18.04 Image</a>
-The `ubuntu1804` is a customized image based on [Ubuntu 18.04 LTS](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes) optimized for CI/CD. It comes with a set of preinstalled languages, databases, and utility tools commonly used for CI/CD workflows.
-
-The `ubuntu1804` is a virtual machine (VM) image. The user in the environment, named `runner`, has full `sudo` access.
-
-The `ubuntu1804` VM uses an APT *mirror* that is in the same data center as Semaphore's build cluster, which means that caching packages will have little effect.
+## <a name="supported-stack" href="#supported-stack">Supported software stack</a>
 
 #### <a name="version-control" href="#version-control">Version control</a>
 Following version control tools are pre-installed:
