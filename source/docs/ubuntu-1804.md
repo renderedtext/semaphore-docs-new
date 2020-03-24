@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Ubuntu 1804 - Bionic
+title: Ubuntu 1804 Platform
 category: The Semaphore platform
 ---
-The Ubuntu 18.04 is a customized image based on [Ubuntu 18.04 LTS](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes) optimized for CI/CD. It comes with a set of preinstalled languages, databases, and utility tools commonly used for CI/CD workflows.
+The Ubuntu 18.04 platform is based on [Ubuntu 18.04 LTS](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes) and optimized for CI/CD. It comes with a set of preinstalled languages, databases, and utility tools commonly used for CI/CD workflows.
 
 The user in the environment, named `runner`, has full `sudo` access.
 
-The Ubuntu 18.04 VM uses an APT *mirror* that is in the same data center as Semaphore's build cluster, which means that caching packages will have little effect.
+The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as Semaphore's build cluster, which means that caching packages will have little effect.
 
-## <a name="why-upgrade" href="#why-upgrade">Why upgrade</a>
+## Why upgrade
+
 - **Ubuntu 14.04 is deprecated** and cannot be updated any more
   - Ubuntu 14.04 uses an old version of OpenSSL which means you won’t be able to build new versions of languages like php.
 - **(A lot of new software)** 18.04 comes with a lot of other benefits (new drivers, broader file systems support, tools like snapd).
@@ -18,25 +19,28 @@ The Ubuntu 18.04 VM uses an APT *mirror* that is in the same data center as Sema
 - It is updated in a **non-disruptive, rolling release** process every two weeks.
 - **More free space** in the image (Ubuntu 14.04 - 7.9GB, Ubuntu 18.04 - 15GB)
 
-## <a name="upgrade-guide" href="#upgrade-guide">How to use new platform</a>
+## How to use new platform
+
 1. **Switch to new version of the platform**  
 Go into Project > platform settings
 
 2. **Select programming language version with sem-version CLI**  
 Versions are now configured with a built-in `sem-version` command. This new approach enables you to configure versions of different languages and also enables us to add new versions faster.  
 
-With `sem-version` you can configure versions of the following programming languages: `Php, ruby, erlang, go, java, c, python, elixir, scala, node`. For information about available versions [check documentation](#supported-languages).  
+With `sem-version` you can configure versions of the following programming languages: PHP, Ruby, Erlang, Go, Java, C/C++, Python, Elixir, Scala, Node.js. For information about available versions [check documentation](#supported-languages).  
 
 Example of commands that you can add to your job, or to setup commands that will be executed as a part of every job:
-`sem-version ruby 2.6.3`  
-`sem-version node 10.1`
+```bash
+sem-version ruby 2.6.3
+sem-version node 10.1
+```
 
 For more information about using sem-version [check documentation](#sem-version).
 
 3. **Start databases with sem-service CLI**  
 Start only services that you need with the built-in `sem-service` command. Databases are no longer running by default so you can use desired versions and more resources are left for running your workloads.  
 
-With `sem-service` you can start desired version of following databases and services: `mysql, postgres, redis, memcached, mongodb, elasticsearch and rabbitmq`.  
+With `sem-service` you can start desired version of following databases and services: MySQL, Postgres, Redis, memcached, MongoDB, ElasticSearch and RabbitMQ`.  
 
 Example of commands that you can add to your job, or to Setup commands that will be executed before every job:
 ```bash
