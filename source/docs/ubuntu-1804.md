@@ -124,7 +124,7 @@ sem-service start mongodb
 sem-service start mongodb 3.2
 ```
 ## <a name="release-process" href="#release-process" style="background-color:red;">Release process</a>
-- **Rolling release**: - Ubuntu 18.04 platform will be automatically updated in short increments, meaning that users will always have the latest versions of software without having to take any action on their side. Read more about rolling release [here] (https://en.wikipedia.org/wiki/Rolling_release).
+- **Rolling release**: - Ubuntu 18.04 platform will be automatically updated in short increments, meaning that users will always have the latest versions of software without having to take any action on their side. Read more about rolling release [here](https://en.wikipedia.org/wiki/Rolling_release).
 - **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates can be followed on [Semaphore Changelog](https://semaphoreci.com/docs/platform-changelog.html). Updates may happen sooner if there are any security updates or bug fixes that need to be implemented.
 - **No action required**: Since rolling release process is used to update this image no action is required on user side. Newest version of software and services will be automatically available to users once the update happenes.
 
