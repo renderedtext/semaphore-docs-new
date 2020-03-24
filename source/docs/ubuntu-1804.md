@@ -3,6 +3,17 @@ layout: post
 title: Ubuntu 1804 Platform
 category: The Semaphore platform
 ---
+
+- [Overview](#overview)
+- [Why upgrade](#why-upgrade)
+- [How to upgrade](#how-to-upgrade)
+- [Programming languages](#programming-languages)
+- [Databases](#databases)
+- [Release process](#release-process)
+- [Supported software stack](#supported-software-stack)
+
+## Overview
+
 The Ubuntu 18.04 platform is based on [Ubuntu 18.04 LTS](https://wiki.ubuntu.com/BionicBeaver/ReleaseNotes) and optimized for CI/CD. It comes with a set of preinstalled languages, databases, and utility tools commonly used for CI/CD workflows.
 
 The user in the environment, named `runner`, has full `sudo` access.
@@ -80,7 +91,7 @@ Example of sem-version in your job set up:
 
 `sem-version go 1.9`
 
-## Databases & services
+## Databases
 
 The `sem-service` is a utility on Linux based virtual machines for starting, stopping and getting the status of background services. Started services will listen on 0.0.0.0 and their default port. The 0.0.0.0 IP address includes all available network interfaces. For MySQL and Postgres it’s also possible to access them via the usual socket. Essentially, you will be using services as if they were natively installed in the Operating System.
 
@@ -187,36 +198,18 @@ Docker toolset is installed and following versions are available:
 
 ### Languages
 
-#### Erlang and Elixir
+#### Ruby
 
-Erlang versions are installed and managed via [kerl](https://github.com/kerl/kerl). Elixir versions are installed with [kiex](https://github.com/taylor/kiex).
-
-- Erlang: 20.3, 21.3, 22.2
-- Elixir: 1.7.4, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4
-
-##### Additional libraries
-
-- rebar: 2.6.4
-- rebar3: 3.12.1
-
-#### Go
-
-- 1.10.8
-- 1.11.13
-- 1.12.10
-- 1.13.1
-
-#### Java and JVM languages
-
-- Java: 8, 11
-- Scala: 2.11.11, 2.12.10
-- Leiningen: 2.9.1 (Clojure)
-- sbt
-
-##### Additional build tools
-
-- Maven: 3.5.4
-- Gradle: 5.2
+- 1.9.3-p551
+- 2.0.0-p648
+- 2.1.0 to 2.1.10
+- 2.2.0 to 2.2.10
+- 2.3.0 to 2.3.8
+- 2.4.0 to 2.4.9
+- 2.5.0 to 2.5.7
+- 2.6.0 to 2.6.5
+- 2.7.0
+- jruby-9.1.17.0
 
 #### JavaScript via Node.js
 
@@ -253,6 +246,7 @@ The default installed PHP version is 17.2.281.
 - phpunit: 7.5.20
 
 #### Python
+
 Python versions are installed and managed by [virtualenv](https://virtualenv.pypa.io/en/stable/). 
 
 Installed versions:
@@ -270,15 +264,37 @@ Installed versions:
 - pip3: 19
 - venv: 16.0.0
 
-#### Ruby
+#### Erlang and Elixir
 
-- 1.9.3-p551
-- 2.0.0-p648
-- 2.1.0 to 2.1.10
-- 2.2.0 to 2.2.10
-- 2.3.0 to 2.3.8
-- 2.4.0 to 2.4.9
-- 2.5.0 to 2.5.7
-- 2.6.0 to 2.6.5
-- 2.7.0
-- jruby-9.1.17.0
+Erlang versions are installed and managed via [kerl](https://github.com/kerl/kerl). Elixir versions are installed with [kiex](https://github.com/taylor/kiex).
+
+- Erlang: 20.3, 21.3, 22.2
+- Elixir: 1.7.4, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4
+
+##### Additional libraries
+
+- rebar: 2.6.4
+- rebar3: 3.12.1
+
+#### Go
+
+- 1.10.8
+- 1.11.13
+- 1.12.10
+- 1.13.1
+
+#### Java and JVM languages
+
+- Java: 8, 11
+- Scala: 2.11.11, 2.12.10
+- Leiningen: 2.9.1 (Clojure)
+- sbt
+
+##### Additional build tools
+
+- Maven: 3.5.4
+- Gradle: 5.2
+
+
+
+
