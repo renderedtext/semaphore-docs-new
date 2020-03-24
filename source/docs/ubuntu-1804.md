@@ -53,7 +53,7 @@ For more information about using sem-version [check documentation](#sem-version)
 
 Start only services that you need with the built-in `sem-service` command. Databases are no longer running by default so you can use desired versions and more resources are left for running your workloads.  
 
-With `sem-service` you can start desired version of following databases and services: MySQL, Postgres, Redis, memcached, MongoDB, ElasticSearch and RabbitMQ.  
+With `sem-service` you can start desired version of following databases and services: MySQL, PostgreSQL, Redis, memcached, MongoDB, ElasticSearch and RabbitMQ.  
 
 Example of commands that you can add to your job, or to Setup commands that will be executed before every job:
 
@@ -79,25 +79,29 @@ Notable changes:
 
 ## Programming languages
 
-The `sem-version` utility in Linux based virtual machines is used for changing the version of a programming language. You can find list of all available programming languages with available versions [here](#supported-languages).  
+The `sem-version` utility is used for changing the version of a programming language. You can find list of all available programming languages with available versions [here](#languages).  
 
-The supported programming languages are `elixir, erlang, go, java, php, ruby, python, scala` and `node`.
+The supported programming languages are Elixir, Erlang, Go, Java, PHP, Ruby, Python, Scala and Node.js.
 The general form of the `sem-version` utility is:
 
-```sem-version [PROGRAMMING LANGUAGE] [VERSION]```
+```bash
+sem-version [LANGUAGE] [VERSION]
+```
 
-where [PROGRAMMING LANGUAGE] is one of `elixir, erlang, go, java, php, ruby, python, scala` and `node`. The value of the [VERSION] parameter depends on the programming language used.
+where [LANGUAGE] is one of `elixir, erlang, go, java, php, ruby, python, scala` and `node`. The value of the [VERSION] parameter depends on the programming language used.
 Example of sem-version in your job set up:
 
-`sem-version go 1.9`
+```bash
+sem-version go 1.9
+```
 
 ## Databases
 
-The `sem-service` is a utility on Linux based virtual machines for starting, stopping and getting the status of background services. Started services will listen on 0.0.0.0 and their default port. The 0.0.0.0 IP address includes all available network interfaces. For MySQL and Postgres it’s also possible to access them via the usual socket. Essentially, you will be using services as if they were natively installed in the Operating System.
+The `sem-service` is a utility for starting, stopping and getting the status of background services. Started services will listen on 0.0.0.0 and their default port. The 0.0.0.0 IP address includes all available network interfaces. For MySQL and Postgres it’s also possible to access them via the usual socket. Essentially, you will be using services as if they were natively installed in the Operating System.
 
 The general form of a `sem-service` command is as follows:
 
-```
+```bash
 sem-service start [mysql | postgres | redis | memcached | mongodb | elasticsearch | rabbitmq] [version] [--username=username] [--password=password] [--db=databasename]
 ```
 
@@ -118,7 +122,7 @@ If no version value is given, a default value will be used according to the foll
 - elasticsearch: The default value is `6.5.1`
 - rabbitmq: The default is `3.8.2`
 
-`sem-service` pulls images from Docker Hub and supports all versions that are available in Docker Hub. You can find the list of available versions at the following URLs:
+`sem-service` uses images from Docker Hub and supports all versions that are available in Docker Hub. You can find the list of available versions at the following URLs:
 
 - ElasticSearch: <https://hub.docker.com/_/elasticsearch/>
 - MySQL: <https://hub.docker.com/_/mysql/>
@@ -128,7 +132,7 @@ If no version value is given, a default value will be used according to the foll
 - Memcached: <https://hub.docker.com/_/memcached/>
 - RabbitMQ: <https://hub.docker.com/_/rabbitmq/>
 
-The following are valid uses of `sem-service`:
+### Examples
 
 ``` bash
 sem-service start redis
@@ -136,8 +140,8 @@ sem-service stop redis
 sem-service start redis 5
 sem-service status postgres
 sem-service start postgres 11
-sem-service start postgres 11 --username=some_user_name --password=some_password --db=some_db_name
-sem-service start mysql 8.0.19 --username=some_user_name --password=some_password --db=some_db_name
+sem-service start postgres 11 --username=demo --password=asdf --db=mydb
+sem-service start mysql 8.0.19 --username=demo --password=asdf --db=mydb
 sem-service status mysql
 sem-service start memcached
 sem-service start elasticsearch
