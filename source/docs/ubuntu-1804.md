@@ -19,12 +19,12 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 - It is updated in a **non-disruptive, rolling release** process every two weeks.
 - **More free space** in the image (Ubuntu 14.04 - 7.9GB, Ubuntu 18.04 - 15GB)
 
-## How to use new platform
+## How to upgrade
 
-#### 1. Switch to new version of the platform
+### 1. Switch to new version of the platform
 Go into Project > platform settings
 
-#### 2. Select programming language version with sem-version CLI
+### 2. Select programming language version with sem-version CLI
 
 Versions are now configured with a built-in `sem-version` command. This new approach enables you to configure versions of different languages and also enables us to add new versions faster.  
 
@@ -38,7 +38,7 @@ sem-version node 10.1
 
 For more information about using sem-version [check documentation](#sem-version).
 
-#### 3. Start databases with sem-service CLI
+### 3. Start databases with sem-service CLI
 
 Start only services that you need with the built-in `sem-service` command. Databases are no longer running by default so you can use desired versions and more resources are left for running your workloads.  
 
@@ -54,7 +54,9 @@ sem-service start postgres 11.5
 
 For the list of all databases, services and available versions check [Ubuntu 18.04 platform documentation](#supported-stack).
 
-#### 4. **Install additional software** - If your application requires software packages that are not pre-installed be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-stack) before installing software manually.
+### 4. Install additional software
+
+If your application requires software packages that are not pre-installed be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-stack) before installing software manually.
 
 Ubuntu 14.04 and Ubuntu 18.04 have mostly the same components with newer versions. 
 
@@ -62,7 +64,7 @@ Notable changes:
 - Background services are now managed with **systemd** while in Ubuntu 14.04 it was managed by **init.d** and **upstart**.
 - AppArmor is started by default. It’s likely that this will not affect your application unless you are using KVM or QEMU.
 
-#### 5. Finally: Run your jobs as you used to.
+### 5. Finally: Run your jobs as you used to.
 
 ## Programming languages
 
@@ -141,7 +143,7 @@ sem-service start mongodb 3.2
 
 ## Supported software stack
 
-#### Version control
+### Version control
 
 Following version control tools are pre-installed:
 
@@ -150,7 +152,7 @@ Following version control tools are pre-installed:
 - Mercurial (4.5.x)
 - Svn (1.9.x)
 
-#### Browsers and Headless Browser Testing
+### Browsers and Headless Browser Testing
 
 - Firefox 68.4.1
 - geckodriver 0.26.0
@@ -161,14 +163,14 @@ Following version control tools are pre-installed:
 
 Chrome and Firefox both support headless mode. You shouldn't need to do more than install and use the relevant Selenium library for your language. Refer to the documentation of associated libraries when configuring your project.
 
-#### Docker
+### Docker
 
 Docker toolset is installed and following versions are available:
 
 - Docker 19.03
 - docker-compose 1.24.1
 
-#### Cloud CLIs
+### Cloud CLIs
 
 - aws-cli
 - eb-cli
@@ -177,7 +179,7 @@ Docker toolset is installed and following versions are available:
 - kubectl
 - heroku
 
-#### Network utilities
+### Network utilities
 
 - httpie
 - curl
