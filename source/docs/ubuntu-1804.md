@@ -21,10 +21,11 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 
 ## How to use new platform
 
-1. **Switch to new version of the platform**  
+#### 1. Switch to new version of the platform
 Go into Project > platform settings
 
-2. **Select programming language version with sem-version CLI**  
+#### 2. Select programming language version with sem-version CLI
+
 Versions are now configured with a built-in `sem-version` command. This new approach enables you to configure versions of different languages and also enables us to add new versions faster.  
 
 With `sem-version` you can configure versions of the following programming languages: PHP, Ruby, Erlang, Go, Java, C/C++, Python, Elixir, Scala, Node.js. For information about available versions [check documentation](#supported-languages).  
@@ -37,12 +38,14 @@ sem-version node 10.1
 
 For more information about using sem-version [check documentation](#sem-version).
 
-3. **Start databases with sem-service CLI**  
+#### 3. Start databases with sem-service CLI
+
 Start only services that you need with the built-in `sem-service` command. Databases are no longer running by default so you can use desired versions and more resources are left for running your workloads.  
 
-With `sem-service` you can start desired version of following databases and services: MySQL, Postgres, Redis, memcached, MongoDB, ElasticSearch and RabbitMQ`.  
+With `sem-service` you can start desired version of following databases and services: MySQL, Postgres, Redis, memcached, MongoDB, ElasticSearch and RabbitMQ.  
 
 Example of commands that you can add to your job, or to Setup commands that will be executed before every job:
+
 ```bash
 sem-service start mysql
 sem-service start rabbitmq
@@ -51,7 +54,7 @@ sem-service start postgres 11.5
 
 For the list of all databases, services and available versions check [Ubuntu 18.04 platform documentation](#supported-stack).
 
-4. **Install additional software** - If your application requires software packages that are not pre-installed be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-stack) before installing software manually.
+#### 4. **Install additional software** - If your application requires software packages that are not pre-installed be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-stack) before installing software manually.
 
 Ubuntu 14.04 and Ubuntu 18.04 have mostly the same components with newer versions. 
 
@@ -59,9 +62,10 @@ Notable changes:
 - Background services are now managed with **systemd** while in Ubuntu 14.04 it was managed by **init.d** and **upstart**.
 - AppArmor is started by default. It’s likely that this will not affect your application unless you are using KVM or QEMU.
 
-5. **Finally**: Run your jobs as you used to.
+#### 5. Finally: Run your jobs as you used to.
 
-## <a name="sem-version" href="#sem-version">Programming languages</a>
+## Programming languages
+
 The `sem-version` utility in Linux based virtual machines is used for changing the version of a programming language. You can find list of all available programming languages with available versions [here](#supported-languages).  
 
 The supported programming languages are `elixir, erlang, go, java, php, ruby, python, scala` and `node`.
@@ -74,7 +78,8 @@ Example of sem-version in your job set up:
 
 `sem-version go 1.9`
 
-## <a name="sem-service" href="#sem-service">Databases & services</a>
+## Databases & services
+
 The `sem-service` is a utility on Linux based virtual machines for starting, stopping and getting the status of background services. Started services will listen on 0.0.0.0 and their default port. The 0.0.0.0 IP address includes all available network interfaces. For MySQL and Postgres it’s also possible to access them via the usual socket. Essentially, you will be using services as if they were natively installed in the Operating System.
 
 The general form of a `sem-service` command is as follows:
@@ -127,14 +132,17 @@ sem-service start elasticsearch 6.5.2
 sem-service start mongodb
 sem-service start mongodb 3.2
 ```
-## <a name="release-process" href="#release-process" style="background-color:red;">Release process</a>
+
+## Release process
+
 - **Rolling release**: - Ubuntu 18.04 platform will be automatically updated in short increments, meaning that users will always have the latest versions of software without having to take any action on their side. Read more about rolling release [here](https://en.wikipedia.org/wiki/Rolling_release).
 - **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates can be followed on [Semaphore Changelog](https://semaphoreci.com/docs/platform-changelog.html). Updates may happen sooner if there are any security updates or bug fixes that need to be implemented.
 - **No action required**: Since rolling release process is used to update this image no action is required on user side. Newest version of software and services will be automatically available to users once the update happenes.
 
-## <a name="supported-stack" href="#supported-stack">Supported software stack</a>
+## Supported software stack
 
-#### <a name="version-control" href="#version-control">Version control</a>
+#### Version control
+
 Following version control tools are pre-installed:
 
 - Git (2.x)
@@ -142,7 +150,8 @@ Following version control tools are pre-installed:
 - Mercurial (4.5.x)
 - Svn (1.9.x)
 
-#### <a name="browsers" href="#browsers">Browsers and Headless Browser Testing</a>
+#### Browsers and Headless Browser Testing
+
 - Firefox 68.4.1
 - geckodriver 0.26.0
 - Google Chrome 80
@@ -151,12 +160,16 @@ Following version control tools are pre-installed:
 - phantomjs 2.1.1
 
 Chrome and Firefox both support headless mode. You shouldn't need to do more than install and use the relevant Selenium library for your language. Refer to the documentation of associated libraries when configuring your project.
-#### <a name="docker" href="#browsers">Docker</a>
+
+#### Docker
+
 Docker toolset is installed and following versions are available:
 
 - Docker 19.03
 - docker-compose 1.24.1
-#### <a name="cloud-cli" href="#cloud-cli">Cloud CLIs</a>
+
+#### Cloud CLIs
+
 - aws-cli
 - eb-cli
 - ecs-cli
@@ -164,42 +177,47 @@ Docker toolset is installed and following versions are available:
 - kubectl
 - heroku
 
-#### <a name="network" href="#network">Network utilities</a>
+#### Network utilities
+
 - httpie
 - curl
 - rsync
 
-### <a name="supported-languages" href="#supported-languages">Languages</a>
-#### <a name="erlang-and-elixir" href="#erlang-and-elixir">Erlang and Elixir</a>
+### Languages
+
+#### Erlang and Elixir
+
 Erlang versions are installed and managed via [kerl](https://github.com/kerl/kerl). Elixir versions are installed with [kiex](https://github.com/taylor/kiex).
 
 - Erlang: 20.3, 21.3, 22.2
 - Elixir: 1.7.4, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4
 
-**Additional libraries:**
+##### Additional libraries
 
 - rebar: 2.6.4
 - rebar3: 3.12.1
 
-#### <a name="go" href="#go">Go</a>
+#### Go
 
 - 1.10.8
 - 1.11.13
 - 1.12.10
 - 1.13.1
 
-#### <a name="java" href="#java">Java and JVM languages</a>
+#### Java and JVM languages
 
 - Java: 8, 11
 - Scala: 2.11.11, 2.12.10
 - Leiningen: 2.9.1 (Clojure)
 - sbt
-.**Additional build tools**
+
+##### Additional build tools
 
 - Maven: 3.5.4
 - Gradle: 5.2
 
-#### <a name="javascript" href="#javascript">JavaScript via Node.js</a>
+#### JavaScript via Node.js
+
 Node.js versions are managed by [nvm](https://github.com/creationix/nvm). You can install any version you need with `nvm install [version]`. 
 
 Installed versions:
@@ -208,12 +226,12 @@ Installed versions:
 - v10.19.0
 - v12.16.0
 
-**Additional tools**
+##### Additional tools
 
 - Yarn: 1.22.4
 - Bower: 1.8.8
 
-#### <a name="php" href="#php">PHP</a>
+#### PHP
 
 PHP versions are managed by [phpbrew](https://github.com/phpbrew/phpbrew).
 
@@ -228,11 +246,11 @@ Installed versions:
 
 The default installed PHP version is 17.2.281.
 
-**Additional libraries**
+##### Additional libraries
 
 - phpunit: 7.5.20
 
-#### <a name="python" href="#python">Python</a>
+#### Python
 Python versions are installed and managed by [virtualenv](https://virtualenv.pypa.io/en/stable/). 
 
 Installed versions:
@@ -242,7 +260,7 @@ Installed versions:
 - 3.7
 - 3.8
 
-**Supporting libraries:**
+##### Supporting libraries
 
 - pypy: 5.8.0
 - pypy3: 5.8.0
@@ -250,7 +268,7 @@ Installed versions:
 - pip3: 19
 - venv: 16.0.0
 
-#### <a name="ruby" href="#ruby">Ruby</a>
+#### Ruby
 
 - 1.9.3-p551
 - 2.0.0-p648
