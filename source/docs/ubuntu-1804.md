@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu 1804 Platform
+title: Ubuntu 18.04 Platform
 category: The Semaphore platform
 ---
 
@@ -11,6 +11,7 @@ category: The Semaphore platform
 - [Databases](#databases)
 - [Release process](#release-process)
 - [Supported software stack](#supported-software-stack)
+- [Changelog](#changelog)
 
 ## Overview
 
@@ -138,14 +139,12 @@ If no version value is given, a default value will be used according to the foll
 ### Examples
 
 ``` bash
-sem-service start redis
-sem-service stop redis
-sem-service start redis 5
-sem-service status postgres
-sem-service start postgres 11
-sem-service start postgres 11 --username=demo --password=asdf --db=mydb
+sem-service start mysql
+sem-service start postgres
 sem-service start mysql 8.0.19 --username=demo --password=asdf --db=mydb
-sem-service status mysql
+sem-service start postgres 11 --username=demo --password=asdf --db=mydb
+sem-service start redis
+sem-service start redis 5
 sem-service start memcached
 sem-service start elasticsearch
 sem-service start elasticsearch 6.5.2
@@ -302,6 +301,10 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - Maven: 3.5.4
 - Gradle: 5.2
 
+## Changelog
 
+### 25th March 2020
+
+Initial release.
 
 
