@@ -4,6 +4,10 @@ title: Platform changelog
 category: The Semaphore platform
 ---
 
+*This page is referring to [Ubuntu 14.04 based version](/docs/supported-stack.html) of the platform. If you are using latest [Ubuntu 18.04 platform](/docs/ubuntu-1804.html#changelog) see: [Ubuntu 18.04 platform changelog](/docs/ubuntu-1804.html#changelog).*
+
+<hr>
+
 Current package versions are listed on the [Supported application stack](/docs/supported-stack.html) page.
 
 ### 1902 - 2019-02-18
