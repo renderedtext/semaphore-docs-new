@@ -43,7 +43,7 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 
 Versions are now configured with a built-in `sem-version` command. This new approach enables you to configure versions of different languages and also enables us to add new versions faster.  
 
-With `sem-version` you can configure versions of the following programming languages: PHP, Ruby, Erlang, Go, Java, C/C++, Python, Elixir, Scala, Node.js. For information about available versions [check documentation](#supported-languages).  
+With `sem-version` you can configure versions of the following programming languages: PHP, Ruby, Erlang, Go, Java, C/C++, Python, Elixir, Scala, Node.js. For information about available versions [check documentation](#supported-software-stack).  
 
 Example of commands that you can add to your job, or to setup commands that will be executed as a part of every job:
 ```bash
@@ -67,11 +67,11 @@ sem-service start rabbitmq
 sem-service start postgres 11.5
 ```
 
-For the list of all databases, services and available versions check [Ubuntu 18.04 platform documentation](#supported-stack).
+For the list of all databases, services and available versions check [Ubuntu 18.04 platform documentation](#supported-software-stack).
 
 ### 4. Install additional software
 
-If your application requires software packages that are not pre-installed be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-stack) before installing software manually.
+If your application requires software packages that are not pre-installed be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-software-stack) before installing software manually.
 
 Ubuntu 14.04 and Ubuntu 18.04 have mostly the same components with newer versions. 
 
@@ -83,7 +83,7 @@ Notable changes:
 
 ## Programming languages
 
-The `sem-version` utility is used for changing the version of a programming language. You can find list of all available programming languages with available versions [here](#languages).  
+The `sem-version` utility is used for changing the version of a programming language. You can find list of all available programming languages with available versions [here](#programming-languages).  
 
 The supported programming languages are Elixir, Erlang, Go, Java, PHP, Ruby, Python, Scala and Node.js.
 The general form of the `sem-version` utility is:
@@ -155,7 +155,7 @@ sem-service start mongodb 3.2
 ## Release process
 
 - **Rolling release**: - Ubuntu 18.04 platform will be automatically updated in small increments, meaning that users will always have the latest versions of software.
-- **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates can be followed on [Semaphore Changelog](/docs/platform-changelog.html). Updates may happen sooner if there are any security updates or bug fixes that need to be implemented.
+- **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates may happen sooner if there are any security updates or bug fixes that need to be implemented. For updates please check [changelng](#changelog)
 - **No action required**: Since rolling release process is used to update this image no action is required on user side. Newest version of software and services will be automatically available to users once the update happenes.
 
 ## Supported software stack
