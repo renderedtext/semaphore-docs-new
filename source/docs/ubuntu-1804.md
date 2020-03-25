@@ -106,7 +106,7 @@ The `sem-service` is a utility for starting, stopping and getting the status of 
 The general form of a `sem-service` command is as follows:
 
 ```bash
-sem-service start [mysql | postgres | redis | memcached | mongodb | elasticsearch | rabbitmq] [version] [--username=username] [--password=password] [--db=databasename]
+sem-service start [mysql | postgres | redis | memcached | mongodb | elasticsearch | rabbitmq | rethinkdb | cassandra] [version] [--username=username] [--password=password] [--db=databasename]
 ```
 
 Therefore, each `sem-service` command requires at least two parameters: the first one is the task you want to perform and the second parameter is the name of the service that will be used for the task. The third parameter is optional and is the version of the service that you want to start.
@@ -125,6 +125,8 @@ If no version value is given, a default value will be used according to the foll
 - mongodb: The default value is `4.1`
 - elasticsearch: The default value is `6.5.1`
 - rabbitmq: The default is `3.8.2`
+- rethinkdb: The default is `2.3.6`
+- cassandra: The default is `3.11.3`
 
 `sem-service` uses images from Docker Hub and supports all versions that are available in Docker Hub. You can find the list of available versions at the following URLs:
 
@@ -135,6 +137,8 @@ If no version value is given, a default value will be used according to the foll
 - MongoDB: <https://hub.docker.com/_/mongo/>
 - Memcached: <https://hub.docker.com/_/memcached/>
 - RabbitMQ: <https://hub.docker.com/_/rabbitmq/>
+- RethinkDB: <https://hub.docker.com/_/rethinkdb/>
+- Cassandra: <https://hub.docker.com/_/cassandra/>
 
 ### Examples
 
