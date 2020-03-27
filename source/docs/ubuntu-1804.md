@@ -32,7 +32,7 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 
 ## How to upgrade
 
-### 1. Switch to new version of the platform
+### 1. Switch to the new version of the platform
 
 - Visit **Project settings**.
 - Click on **Platform** tab in Project settings.
@@ -41,23 +41,23 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 
 ### 2. Select programming language version with sem-version CLI
 
-Versions are now configured with a built-in `sem-version` command. This new approach enables you to configure versions of different languages and also enables us to add new versions faster.  
+Versions are now configured with a built-in `sem-version` command. This new approach enables you to configure versions of different languages and it also enables us to add new versions faster.  
 
 With `sem-version` you can configure versions of the following programming languages: PHP, Ruby, Erlang, Go, Java, C/C++, Python, Elixir, Scala, Node.js. For information about available versions [check documentation](#supported-software-stack).  
 
-Example of commands that you can add to your job, or to setup commands that will be executed as a part of every job:
+Example of commands that you can add to your job, or to Setup commands that will be executed as a part of every job:
 ```bash
 sem-version ruby 2.6.3
 sem-version node 10.1
 ```
 
-For more information about using sem-version [check documentation](#sem-version).
+For more information about using sem-version, [check documentation](#sem-version).
 
 ### 3. Start databases with sem-service CLI
 
-Start only services that you need with the built-in `sem-service` command. Databases are no longer running by default so you can use desired versions and more resources are left for running your workloads.  
+Start only services that you need with the built-in `sem-service` command. Databases are no longer running by default so you can use the desired versions and more resources are left for running your workloads.  
 
-With `sem-service` you can start desired version of following databases and services: MySQL, PostgreSQL, Redis, memcached, MongoDB, ElasticSearch and RabbitMQ.  
+With `sem-service` you can start the desired version of the following databases and services: MySQL, PostgreSQL, Redis, memcached, MongoDB, ElasticSearch and RabbitMQ.  
 
 Example of commands that you can add to your job, or to Setup commands that will be executed before every job:
 
@@ -67,23 +67,23 @@ sem-service start rabbitmq
 sem-service start postgres 11.5
 ```
 
-For the list of all databases, services and available versions check [Ubuntu 18.04 platform documentation](#supported-software-stack).
+For the list of all databases, services and available versions, check the [Ubuntu 18.04 platform documentation](#supported-software-stack).
 
 ### 4. Install additional software
 
-If your application requires software packages that are not pre-installed be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-software-stack) before installing software manually.
+If your application requires software packages that are not pre-installed, be aware that versions available in Ubuntu 18.04 might differ. The best way to go about this is to check the [list of pre-installed packages](#supported-software-stack) before installing software manually.
 
 Ubuntu 14.04 and Ubuntu 18.04 have mostly the same components with newer versions. 
 
 Notable changes:  
-- Background services are now managed with **systemd** while in Ubuntu 14.04 it was managed by **init.d** and **upstart**.
+- Background services are now managed with **systemd**, while in Ubuntu 14.04 it was managed by **init.d** and **upstart**.
 - AppArmor is started by default. It’s likely that this will not affect your application unless you are using KVM or QEMU.
 
 ### 5. Finally: Run your jobs as you used to.
 
 ## Programming languages
 
-The `sem-version` utility is used for changing the version of a programming language. You can find list of all available programming languages with available versions [here](#programming-languages).  
+The `sem-version` utility is used for changing the version of a programming language. You can find a list of all available programming languages with available versions [here](#programming-languages).  
 
 The supported programming languages are Elixir, Erlang, Go, Java, PHP, Ruby, Python, Scala and Node.js.
 The general form of the `sem-version` utility is:
@@ -93,7 +93,7 @@ sem-version [LANGUAGE] [VERSION]
 ```
 
 where [LANGUAGE] is one of `elixir, erlang, go, java, php, ruby, python, scala` and `node`. The value of the [VERSION] parameter depends on the programming language used.
-Example of sem-version in your job set up:
+Example of the sem-version in your job setup:
 
 ```bash
 sem-version go 1.9
@@ -111,10 +111,10 @@ sem-service start [mysql | postgres | redis | memcached | mongodb | elasticsearc
 
 Therefore, each `sem-service` command requires at least two parameters: the first one is the task you want to perform and the second parameter is the name of the service that will be used for the task. The third parameter is optional and is the version of the service that you want to start.
 
-For MySQL and PostgreSQL it is possible to provide username via `--username=username`, password for the new username via `--password=password` and database name for which the user will be granted admin access via `--db=dbname`.
+For MySQL and PostgreSQL, it is possible to provide a username via `--username=username`, the password for the new username via `--password=password` and a database name for which the user will be granted admin access via `--db=dbname`.
 
 - The default MySQL username is `root`, the password is `semaphoredb` and the default database name is `test`
-- The default PostgreSQL username is `runner` and password is `semaphoredb`.
+- The default PostgreSQL username is `runner` and the password is `semaphoredb`.
 
 If no version value is given, a default value will be used according to the following list:
 
@@ -159,14 +159,14 @@ sem-service start mongodb 3.2
 ## Release process
 
 - **Rolling release**: - Ubuntu 18.04 platform will be automatically updated in small increments, meaning that users will always have the latest versions of software.
-- **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates may happen sooner if there are any security updates or bug fixes that need to be implemented. For updates please check [changelng](#changelog)
-- **No action required**: Since rolling release process is used to update this image no action is required on user side. Newest version of software and services will be automatically available to users once the update happenes.
+- **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates may happen sooner if there are any security updates or bug fixes that need to be implemented. For updates please check [changelog](#changelog)
+- **No action required**: Since the rolling release process is used to update this image, no action is required on user side. The newest version of software and services will be automatically available to users once the update happenes.
 
 ## Supported software stack
 
 ### Version control
 
-Following version control tools are pre-installed:
+The following version control tools are pre-installed:
 
 - Git (2.x)
 - Git LFS (Git Large File Storage)
@@ -186,7 +186,7 @@ Chrome and Firefox both support headless mode. You shouldn't need to do more tha
 
 ### Docker
 
-Docker toolset is installed and following versions are available:
+Docker toolset is installed and the following versions are available:
 
 - Docker 19.03
 - docker-compose 1.24.1
