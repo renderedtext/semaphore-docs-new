@@ -24,7 +24,7 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 ## Why upgrade
 
 - **Ubuntu 14.04 is deprecated** - It means that no new updates are being officaly released and that most package mainteners are no longer shipping new versions. OpenSSL and other core components are outdated and installing newer versions of programming languages is either hard or impossible.
-- **Ubuntu 18.04 brings new software** - New release comes with latest software from Linux kernel and system libraties to snapd package management.
+- **Ubuntu 18.04 brings new software** - New release comes with latest software from the Linux kernel and system libraries to snapd package management.
 - **New versions of programming languages** - New platform release brings newest versions every supported languages.
 - **New versions of database** - More databases and multiple versions of databases are now available.
 - **Rolling release process** - With new version of the platform we are intorducing new non-disruptive bi-weekly platform update strategy.
