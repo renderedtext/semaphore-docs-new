@@ -23,11 +23,11 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 
 ## Why upgrade
 
-- **Ubuntu 14.04 is deprecated** - It means that no new updates are being officaly released and that most package mainteners are no longer shipping new versions. OpenSSL and other core components are outdated and installing newer versions of programming languages is either hard or impossible.
-- **Ubuntu 18.04 brings new software** - New release comes with latest software from Linux kernel and system libraties to snapd package management.
-- **New versions of programming languages** - New platform release brings newest versions every supported languages.
+- **Ubuntu 14.04 is deprecated** - It means that no new updates are being officially released and that most package maintainers are no longer shipping new versions. OpenSSL and other core components are outdated and installing newer versions of programming languages is either hard or impossible.
+- **Ubuntu 18.04 brings new software** - New release comes with the latest software from the Linux kernel and system libraries to snapd package management.
+- **New versions of programming languages** - New platform release brings the newest versions of all supported languages.
 - **New versions of database** - More databases and multiple versions of databases are now available.
-- **Rolling release process** - With new version of the platform we are intorducing new non-disruptive bi-weekly platform update strategy.
+- **Rolling release process** - With the new version of the platform we are introducing a new non-disruptive bi-weekly platform update strategy.
 - **Better resource management** - We are no longer running all databases by default which frees resources for your workloads. Also some legacy software has been removed freeing a couple more Gb of disk space.
 
 ## How to upgrade
@@ -35,8 +35,8 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 ### 1. Switch to the new version of the platform
 
 - Visit **Project settings**.
-- Click on **Platform** tab in Project settings.
-- Select **Ubuntu 18.04 - Rolling relase** platform.
+- Click on the **Platform** tab in Project settings.
+- Select **Ubuntu 18.04 - Rolling release** platform.
 - Click **Save** button located at the bottom of the page.
 
 ### 2. Select programming language version with sem-version CLI
@@ -160,7 +160,7 @@ sem-service start mongodb 3.2
 
 - **Rolling release**: - Ubuntu 18.04 platform will be automatically updated in small increments, meaning that users will always have the latest versions of software.
 - **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates may happen sooner if there are any security updates or bug fixes that need to be implemented. For updates please check [changelog](#changelog)
-- **No action required**: Since the rolling release process is used to update this image, no action is required on user side. The newest version of software and services will be automatically available to users once the update happenes.
+- **No action required**: Since the rolling release process is used to update this image, no action is required on user side. The newest version of software and services will be automatically available to users once the update happens.
 
 ## Supported software stack
 
