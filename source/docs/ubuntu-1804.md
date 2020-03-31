@@ -27,7 +27,7 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 - **Ubuntu 18.04 brings new software** - New release comes with latest software from the Linux kernel and system libraries to snapd package management.
 - **New versions of programming languages** - New platform release brings the newest versions of all supported languages.
 - **New versions of database** - More databases and multiple versions of databases are now available.
-- **Rolling release process** - With new version of the platform we are introducing new non-disruptive bi-weekly platform update strategy.
+- **Rolling release process** - With the new version of the platform we are introducing new non-disruptive bi-weekly platform update strategy.
 - **Better resource management** - We are no longer running all databases by default which frees resources for your workloads. Also some legacy software has been removed freeing a couple more Gb of disk space.
 
 ## How to upgrade
@@ -35,7 +35,7 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 ### 1. Switch to the new version of the platform
 
 - Visit **Project settings**.
-- Click on **Platform** tab in Project settings.
+- Click on the **Platform** tab in Project settings.
 - Select **Ubuntu 18.04 - Rolling release** platform.
 - Click **Save** button located at the bottom of the page.
 
