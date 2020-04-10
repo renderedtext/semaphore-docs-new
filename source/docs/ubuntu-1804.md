@@ -64,7 +64,7 @@ Example of commands that you can add to your job, or to Setup commands that will
 ```bash
 sem-service start mysql
 sem-service start rabbitmq
-sem-service start postgres 11.5
+sem-service start postgres 11
 ```
 
 For the list of all databases, services and available versions, check the [Ubuntu 18.04 platform documentation](#supported-software-stack).
@@ -177,10 +177,10 @@ The following version control tools are pre-installed:
 
 - Firefox 68.4.1
 - geckodriver 0.26.0
-- Google Chrome 80
-- chrome_driver 80
-- xvfb (X Virtual Framebuffer)
-- phantomjs 2.1.1
+- Google Chrome 81
+- Chromedriver 81
+- Xvfb (X Virtual Framebuffer)
+- Phantomjs 2.1.1
 
 Chrome and Firefox both support headless mode. You shouldn't need to do more than install and use the relevant Selenium library for your language. Refer to the documentation of associated libraries when configuring your project.
 
@@ -215,10 +215,10 @@ Docker toolset is installed and the following versions are available:
 - 2.1.0 to 2.1.10
 - 2.2.0 to 2.2.10
 - 2.3.0 to 2.3.8
-- 2.4.0 to 2.4.9
-- 2.5.0 to 2.5.7
-- 2.6.0 to 2.6.5
-- 2.7.0
+- 2.4.0 to 2.4.10
+- 2.5.0 to 2.5.8
+- 2.6.0 to 2.6.6
+- 2.7.0, 2.7.1
 - jruby-9.1.17.0
 
 #### JavaScript via Node.js
@@ -278,7 +278,7 @@ Installed versions:
 
 Erlang versions are installed and managed via [kerl](https://github.com/kerl/kerl). Elixir versions are installed with [kiex](https://github.com/taylor/kiex).
 
-- Erlang: 20.3, 21.3, 22.2
+- Erlang: 20.3, 21.3, 22.3
 - Elixir: 1.7.4, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4
 
 ##### Additional libraries
@@ -290,8 +290,8 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 - 1.10.8
 - 1.11.13
-- 1.12.10
-- 1.13.1
+- 1.12.17
+- 1.13.9
 
 #### Java and JVM languages
 
@@ -306,6 +306,22 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - Gradle: 5.2
 
 ## Changelog
+
+### 13th April 2020
+
+- Additions:
+  - Wkhtmltox 0.15
+  - Ruby 2.4.10, 2.5.8, 2.6.6, 2.7.1
+- Updates  
+  - Aws-cli 1.18.20 -> 1.18.39
+  - Git  2.25 -> 2.26
+  - Erlang 22.1 -> 22.3
+  - Go 1.12.10 -> 1.12.17
+  - Go 1.13.1  -> 1.13.8
+  - Heroku 7.39.0 -> 7.39.2
+  - Google Chrome 80 -> 81
+  - Chromedriver 80 -> 81
+  
 
 ### 25th March 2020
 
