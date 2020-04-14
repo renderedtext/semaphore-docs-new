@@ -106,20 +106,21 @@ The `sem-service` is a utility for starting, stopping and getting the status of 
 The general form of a `sem-service` command is as follows:
 
 ```bash
-sem-service start [mysql | postgres | redis | memcached | mongodb | elasticsearch | rabbitmq | rethinkdb | cassandra] [version] [--username=username] [--password=password] [--db=databasename]
+sem-service start [mysql | postgres | postgis | redis | memcached | mongodb | elasticsearch | rabbitmq | rethinkdb | cassandra] [version] [--username=username] [--password=password] [--db=databasename]
 ```
 
 Therefore, each `sem-service` command requires at least two parameters: the first one is the task you want to perform and the second parameter is the name of the service that will be used for the task. The third parameter is optional and is the version of the service that you want to start.
 
-For MySQL and PostgreSQL, it is possible to provide a username via `--username=username`, the password for the new username via `--password=password` and a database name for which the user will be granted admin access via `--db=dbname`.
+For MySQL, PostgreSQL and PostGIS it is possible to provide a username via `--username=username`, the password for the new username via `--password=password` and a database name for which the user will be granted admin access via `--db=dbname`.
 
 - The default MySQL username is `root`, the password is `semaphoredb` and the default database name is `test`
-- The default PostgreSQL username is `runner` and the password is `semaphoredb`.
+- The default PostgreSQL and PostGIS username is `runner` and the password is `semaphoredb`.
 
 If no version value is given, a default value will be used according to the following list:
 
 - mysql: The default value is `5.6`
 - postgres: The default value is `9.6`
+- postgis: The default value is `9.6-2.5`, meaning postgis 2.5 and postgres 9.6
 - redis: The default value is `4`
 - memcached: The default value is `1.5`
 - mongodb: The default value is `4.1`
@@ -133,6 +134,7 @@ If no version value is given, a default value will be used according to the foll
 - ElasticSearch: <https://hub.docker.com/_/elasticsearch/>
 - MySQL: <https://hub.docker.com/_/mysql/>
 - PostgreSQL: <https://hub.docker.com/_/postgres/>
+- PostGIS: <https://hub.docker.com/r/postgis/postgis>
 - Redis: <https://hub.docker.com/_/redis/>
 - MongoDB: <https://hub.docker.com/_/mongo/>
 - Memcached: <https://hub.docker.com/_/memcached/>
@@ -147,6 +149,7 @@ sem-service start mysql
 sem-service start postgres
 sem-service start mysql 8.0.19 --username=demo --password=asdf --db=mydb
 sem-service start postgres 11 --username=demo --password=asdf --db=mydb
+sem-service start postgis 12-3.0 --username=demo --password=asdf --db=mydb
 sem-service start redis
 sem-service start redis 5
 sem-service start memcached
