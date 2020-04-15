@@ -106,20 +106,21 @@ The `sem-service` is a utility for starting, stopping and getting the status of 
 The general form of a `sem-service` command is as follows:
 
 ```bash
-sem-service start [mysql | postgres | redis | memcached | mongodb | elasticsearch | rabbitmq | rethinkdb | cassandra] [version] [--username=username] [--password=password] [--db=databasename]
+sem-service start [mysql | postgres | postgis | redis | memcached | mongodb | elasticsearch | rabbitmq | rethinkdb | cassandra] [version] [--username=username] [--password=password] [--db=databasename]
 ```
 
 Therefore, each `sem-service` command requires at least two parameters: the first one is the task you want to perform and the second parameter is the name of the service that will be used for the task. The third parameter is optional and is the version of the service that you want to start.
 
-For MySQL and PostgreSQL, it is possible to provide a username via `--username=username`, the password for the new username via `--password=password` and a database name for which the user will be granted admin access via `--db=dbname`.
+For MySQL,PostgreSQL and PostGIS it is possible to provide a username via `--username=username`, the password for the new username via `--password=password` and a database name for which the user will be granted admin access via `--db=dbname`.
 
-- The default MySQL username is `root`, the password is `semaphoredb` and the default database name is `test`
-- The default PostgreSQL username is `runner` and the password is `semaphoredb`.
+- The default MySQL username is `root`, the password is `semaphoredb`.
+- The default PostgreSQL and PostGIS username is `runner` and the password is `semaphoredb`.
 
 If no version value is given, a default value will be used according to the following list:
 
 - mysql: The default value is `5.6`
 - postgres: The default value is `9.6`
+- postgis: The default value is `9.6-2.5`, meaning postgis 2.5 and postgres 9.6
 - redis: The default value is `4`
 - memcached: The default value is `1.5`
 - mongodb: The default value is `4.1`
@@ -133,6 +134,7 @@ If no version value is given, a default value will be used according to the foll
 - ElasticSearch: <https://hub.docker.com/_/elasticsearch/>
 - MySQL: <https://hub.docker.com/_/mysql/>
 - PostgreSQL: <https://hub.docker.com/_/postgres/>
+- PostGIS: <https://hub.docker.com/r/postgis/postgis>
 - Redis: <https://hub.docker.com/_/redis/>
 - MongoDB: <https://hub.docker.com/_/mongo/>
 - Memcached: <https://hub.docker.com/_/memcached/>
@@ -147,6 +149,7 @@ sem-service start mysql
 sem-service start postgres
 sem-service start mysql 8.0.19 --username=demo --password=asdf --db=mydb
 sem-service start postgres 11 --username=demo --password=asdf --db=mydb
+sem-service start postgis 12-3.0 --username=demo --password=asdf --db=mydb
 sem-service start redis
 sem-service start redis 5
 sem-service start memcached
@@ -177,8 +180,8 @@ The following version control tools are pre-installed:
 
 - Firefox 68.4.1
 - geckodriver 0.26.0
-- Google Chrome 80
-- chrome_driver 80
+- Google Chrome 81
+- chrome_driver 81
 - xvfb (X Virtual Framebuffer)
 - phantomjs 2.1.1
 
@@ -215,10 +218,10 @@ Docker toolset is installed and the following versions are available:
 - 2.1.0 to 2.1.10
 - 2.2.0 to 2.2.10
 - 2.3.0 to 2.3.8
-- 2.4.0 to 2.4.9
-- 2.5.0 to 2.5.7
-- 2.6.0 to 2.6.5
-- 2.7.0
+- 2.4.0 to 2.4.10
+- 2.5.0 to 2.5.8
+- 2.6.0 to 2.6.6
+- 2.7.0 and 2.7.1
 - jruby-9.1.17.0
 
 #### JavaScript via Node.js
@@ -229,7 +232,7 @@ Installed versions:
 
 - v8.17.0 (set as default, with alias 8.17)
 - v10.19.0
-- v12.16.0
+- v12.16.1
 
 ##### Additional tools
 
@@ -249,7 +252,7 @@ Installed versions:
 - 7.3.15
 - 7.4.3
 
-The default installed PHP version is 17.2.281.
+The default installed PHP version is 7.2.28.
 
 ##### Additional libraries
 
@@ -278,7 +281,7 @@ Installed versions:
 
 Erlang versions are installed and managed via [kerl](https://github.com/kerl/kerl). Elixir versions are installed with [kiex](https://github.com/taylor/kiex).
 
-- Erlang: 20.3, 21.3, 22.2
+- Erlang: 20.3, 21.3, 22.3
 - Elixir: 1.7.4, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4
 
 ##### Additional libraries
@@ -290,8 +293,8 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 - 1.10.8
 - 1.11.13
-- 1.12.10
-- 1.13.1
+- 1.12.17
+- 1.13.9
 
 #### Java and JVM languages
 
@@ -307,6 +310,20 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 ## Changelog
 
+### 13th April 2020
+- Additions:
+  - Wkhtmltox 0.15
+  - Ruby 2.4.10, 2.5.8, 2.6.6, 2.7.1
+- Updates  
+  - Aws-cli 1.18.20 -> 1.18.39
+  - Git  2.25 -> 2.26
+  - Erlang 22.1 -> 22.3
+  - Go 1.12.10 -> 1.12.17
+  - Go 1.13.1  -> 1.13.8
+  - Heroku 7.39.0 -> 7.39.2
+  - Google Chrome 80 -> 81
+  - Chromedriver 80 -> 81
+  
 ### 25th March 2020
 
 Initial release.
