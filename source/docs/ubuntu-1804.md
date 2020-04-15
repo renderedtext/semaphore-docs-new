@@ -23,11 +23,11 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 
 ## Why upgrade
 
-- **Ubuntu 14.04 is deprecated** - It means that no new updates are being officially released and that most package maintainers are no longer shipping new versions. OpenSSL and other core components are outdated and installing newer versions of programming languages is either hard or impossible.
-- **Ubuntu 18.04 brings new software** - New release comes with the latest software from the Linux kernel and system libraries to snapd package management.
-- **New versions of programming languages** - New platform release brings the newest versions of all supported languages.
+- **Ubuntu 14.04 is deprecated** - It means that no new updates are being officaly released and that most package mainteners are no longer shipping new versions. OpenSSL and other core components are outdated and installing newer versions of programming languages is either hard or impossible.
+- **Ubuntu 18.04 brings new software** - New release comes with latest software from Linux kernel and system libraties to snapd package management.
+- **New versions of programming languages** - New platform release brings newest versions every supported languages.
 - **New versions of database** - More databases and multiple versions of databases are now available.
-- **Rolling release process** - With the new version of the platform we are introducing a new non-disruptive bi-weekly platform update strategy.
+- **Rolling release process** - With new version of the platform we are intorducing new non-disruptive bi-weekly platform update strategy.
 - **Better resource management** - We are no longer running all databases by default which frees resources for your workloads. Also some legacy software has been removed freeing a couple more Gb of disk space.
 
 ## How to upgrade
@@ -35,15 +35,15 @@ The Ubuntu 18.04 platform uses an APT mirror that is in the same data center as 
 ### 1. Switch to the new version of the platform
 
 - Visit **Project settings**.
-- Click on the **Platform** tab in Project settings.
-- Select **Ubuntu 18.04 - Rolling release** platform.
+- Click on **Platform** tab in Project settings.
+- Select **Ubuntu 18.04 - Rolling relase** platform.
 - Click **Save** button located at the bottom of the page.
 
 ### 2. Select programming language version with sem-version CLI
 
 Versions are now configured with a built-in `sem-version` command. This new approach enables you to configure versions of different languages and it also enables us to add new versions faster.  
 
-With `sem-version` you can configure versions of the following programming languages: PHP, Ruby, Erlang, Go, Java, C/C++, Python, Elixir, Scala, Node.js. For information about available versions [check documentation](#supported-software-stack).  
+With `sem-version` you can configure versions of the following programming languages: PHP, Ruby, Erlang, Go, Java, C/C++, Python, Elixir, Scala, Node.js. For information about available versions, [check documentation](#supported-software-stack).  
 
 Example of commands that you can add to your job, or to Setup commands that will be executed as a part of every job:
 ```bash
@@ -64,7 +64,7 @@ Example of commands that you can add to your job, or to Setup commands that will
 ```bash
 sem-service start mysql
 sem-service start rabbitmq
-sem-service start postgres 11.5
+sem-service start postgres 11
 ```
 
 For the list of all databases, services and available versions, check the [Ubuntu 18.04 platform documentation](#supported-software-stack).
@@ -92,8 +92,8 @@ The general form of the `sem-version` utility is:
 sem-version [LANGUAGE] [VERSION]
 ```
 
-where [LANGUAGE] is one of `elixir, erlang, go, java, php, ruby, python, scala` and `node`. The value of the [VERSION] parameter depends on the programming language used.
-Example of the sem-version in your job setup:
+where [LANGUAGE] is one of `elixir, erlang, go, java, php, ruby, python, scala` and `node`. The value of the [VERSION] parameter depends on the programming language used.  
+Example of the sem-version in your job set up:
 
 ```bash
 sem-version go 1.9
@@ -106,20 +106,21 @@ The `sem-service` is a utility for starting, stopping and getting the status of 
 The general form of a `sem-service` command is as follows:
 
 ```bash
-sem-service start [mysql | postgres | redis | memcached | mongodb | elasticsearch | rabbitmq | rethinkdb | cassandra] [version] [--username=username] [--password=password] [--db=databasename]
+sem-service start [mysql | postgres | postgis | redis | memcached | mongodb | elasticsearch | rabbitmq | rethinkdb | cassandra] [version] [--username=username] [--password=password] [--db=databasename]
 ```
 
 Therefore, each `sem-service` command requires at least two parameters: the first one is the task you want to perform and the second parameter is the name of the service that will be used for the task. The third parameter is optional and is the version of the service that you want to start.
 
-For MySQL and PostgreSQL, it is possible to provide a username via `--username=username`, the password for the new username via `--password=password` and a database name for which the user will be granted admin access via `--db=dbname`.
+For MySQL, PostgreSQL and PostGIS it is possible to provide a username via `--username=username`, the password for the new username via `--password=password` and a database name for which the user will be granted admin access via `--db=dbname`.
 
 - The default MySQL username is `root`, the password is `semaphoredb` and the default database name is `test`
-- The default PostgreSQL username is `runner` and the password is `semaphoredb`.
+- The default PostgreSQL and PostGIS username is `runner` and the password is `semaphoredb`.
 
 If no version value is given, a default value will be used according to the following list:
 
 - mysql: The default value is `5.6`
 - postgres: The default value is `9.6`
+- postgis: The default value is `9.6-2.5`, meaning postgis 2.5 and postgres 9.6
 - redis: The default value is `4`
 - memcached: The default value is `1.5`
 - mongodb: The default value is `4.1`
@@ -133,6 +134,7 @@ If no version value is given, a default value will be used according to the foll
 - ElasticSearch: <https://hub.docker.com/_/elasticsearch/>
 - MySQL: <https://hub.docker.com/_/mysql/>
 - PostgreSQL: <https://hub.docker.com/_/postgres/>
+- PostGIS: <https://hub.docker.com/r/postgis/postgis>
 - Redis: <https://hub.docker.com/_/redis/>
 - MongoDB: <https://hub.docker.com/_/mongo/>
 - Memcached: <https://hub.docker.com/_/memcached/>
@@ -147,6 +149,7 @@ sem-service start mysql
 sem-service start postgres
 sem-service start mysql 8.0.19 --username=demo --password=asdf --db=mydb
 sem-service start postgres 11 --username=demo --password=asdf --db=mydb
+sem-service start postgis 12-3.0 --username=demo --password=asdf --db=mydb
 sem-service start redis
 sem-service start redis 5
 sem-service start memcached
@@ -159,8 +162,8 @@ sem-service start mongodb 3.2
 ## Release process
 
 - **Rolling release**: - Ubuntu 18.04 platform will be automatically updated in small increments, meaning that users will always have the latest versions of software.
-- **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates may happen sooner if there are any security updates or bug fixes that need to be implemented. For updates please check [changelog](#changelog)
-- **No action required**: Since the rolling release process is used to update this image, no action is required on user side. The newest version of software and services will be automatically available to users once the update happens.
+- **Schedule**: The image will be updated bi-weekly, on the first and third week of every month. Updates may happen sooner if there are any security updates or bug fixes that need to be implemented. For updates please check [changelng](#changelog)
+- **No action required**: Since the rolling release process is used to update this image, no action is required on user side. The newest version of software and services will be automatically available to users once the update happenes.
 
 ## Supported software stack
 
@@ -177,10 +180,10 @@ The following version control tools are pre-installed:
 
 - Firefox 68.4.1
 - geckodriver 0.26.0
-- Google Chrome 80
-- chrome_driver 80
-- xvfb (X Virtual Framebuffer)
-- phantomjs 2.1.1
+- Google Chrome 81
+- Chromedriver 81
+- Xvfb (X Virtual Framebuffer)
+- Phantomjs 2.1.1
 
 Chrome and Firefox both support headless mode. You shouldn't need to do more than install and use the relevant Selenium library for your language. Refer to the documentation of associated libraries when configuring your project.
 
@@ -215,10 +218,10 @@ Docker toolset is installed and the following versions are available:
 - 2.1.0 to 2.1.10
 - 2.2.0 to 2.2.10
 - 2.3.0 to 2.3.8
-- 2.4.0 to 2.4.9
-- 2.5.0 to 2.5.7
-- 2.6.0 to 2.6.5
-- 2.7.0
+- 2.4.0 to 2.4.10
+- 2.5.0 to 2.5.8
+- 2.6.0 to 2.6.6
+- 2.7.0, 2.7.1
 - jruby-9.1.17.0
 
 #### JavaScript via Node.js
@@ -278,7 +281,7 @@ Installed versions:
 
 Erlang versions are installed and managed via [kerl](https://github.com/kerl/kerl). Elixir versions are installed with [kiex](https://github.com/taylor/kiex).
 
-- Erlang: 20.3, 21.3, 22.2
+- Erlang: 20.3, 21.3, 22.3
 - Elixir: 1.7.4, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4
 
 ##### Additional libraries
@@ -290,8 +293,8 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 - 1.10.8
 - 1.11.13
-- 1.12.10
-- 1.13.1
+- 1.12.17
+- 1.13.9
 
 #### Java and JVM languages
 
@@ -306,6 +309,22 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - Gradle: 5.2
 
 ## Changelog
+
+### 13th April 2020
+
+- Additions:
+  - Wkhtmltox 0.15
+  - Ruby 2.4.10, 2.5.8, 2.6.6, 2.7.1
+- Updates  
+  - Aws-cli 1.18.20 -> 1.18.39
+  - Git  2.25 -> 2.26
+  - Erlang 22.1 -> 22.3
+  - Go 1.12.10 -> 1.12.17
+  - Go 1.13.1  -> 1.13.8
+  - Heroku 7.39.0 -> 7.39.2
+  - Google Chrome 80 -> 81
+  - Chromedriver 80 -> 81
+  
 
 ### 25th March 2020
 
