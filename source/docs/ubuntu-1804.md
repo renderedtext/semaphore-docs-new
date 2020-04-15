@@ -113,7 +113,7 @@ Therefore, each `sem-service` command requires at least two parameters: the firs
 
 For MySQL, PostgreSQL and PostGIS it is possible to provide a username via `--username=username`, the password for the new username via `--password=password` and a database name for which the user will be granted admin access via `--db=dbname`.
 
-- The default MySQL username is `root`, the password is `semaphoredb` and the default database name is `test`
+- The default MySQL username is `root`, the password is `semaphoredb`.
 - The default PostgreSQL and PostGIS username is `runner` and the password is `semaphoredb`.
 
 If no version value is given, a default value will be used according to the following list:
