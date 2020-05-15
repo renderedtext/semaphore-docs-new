@@ -199,6 +199,7 @@ Docker toolset is installed and the following versions are available:
 - aws-cli
 - eb-cli
 - ecs-cli
+- doctl
 - gcloud
 - kubectl
 - heroku
@@ -248,11 +249,11 @@ Installed versions:
 - 5.6.40
 - 7.0.33
 - 7.1.33
-- 7.2.28
-- 7.3.15
-- 7.4.3
+- 7.2.29
+- 7.3.16
+- 7.4.4
 
-The default installed PHP version is 7.2.28.
+The default installed PHP version is 7.2.29.
 
 ##### Additional libraries
 
@@ -294,8 +295,8 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - 1.10.8
 - 1.11.13
 - 1.12.17
-- 1.13.9
-- 1.14.1
+- 1.13.10
+- 1.14.2
 
 #### Java and JVM languages
 
@@ -310,6 +311,23 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - Gradle: 5.2
 
 ## Changelog
+
+### 18th May 2020
+
+- Additions :
+    - Doctl 1.43.0
+
+- Updates :
+    - Aws-cli 1.18.42 -> 1.18.59
+    - Git-lfs 2.10.0 -> 2.11.0
+    - Go 1.13.9 -> 1.13.10
+    - Go 1.14.1 -> 1.14.2
+    - Heroku 7.39.3 -> 7.41.1
+    - Php 7.2.28 -> 7.2.29
+    - Php 7.3.15 -> 7.3.16
+    - Php 7.4.3 -> 7.4.4
+    - Sbt 0.13.17 -> 1.3.10
+
 
 ### 27th April 2020
 
