@@ -4,27 +4,8 @@ title: Longer execution time than Semaphore Classic maximum
 category: Adapting Semaphore
 ---
 
-After the Semaphore Classic build is done, you would like to push the updated
-FILE in the project (which gets updated during the build on Semaphore) back to
-your GitHub repo. However, if a push is made to the GitHub repo, it will
-trigger a build on Semaphore, leading to an infinite build recursion.
-
-To skip building a commit, putting **[ci skip]** or **[skip ci]** anywhere in the
-commit message is enough. Before committing the FILE, a minimal git setup
-should be performed. Setting the name and email is required for being able to
-make the commits. Something similar to the following should be added to your
-project:
-
-```
-# Setup
-git config --global user.email "<your-email@example.com>"
-git config --global user.name "<your_name>"
-
-# Job
-git add FILE
-git commit -m "Automatically updating the FILE file [skip ci]"
-git push origin master
-```
-
-This should allow you to update the FILE in your repository, but not trigger
-the new build.
+Semaphore Classic has a hard limit of task running maximum 3 hours. If your 
+project needs to run a non-trivial task that takes more than 3 hours to finish,
+the timeout on Semaphore Classic can be increased to maximum of 3 hours in 
+`Project Settings > Admin`. Splitting a non-trivial task to two subtasks would 
+allow for each running up to 3 hours.
