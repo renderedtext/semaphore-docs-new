@@ -180,8 +180,8 @@ The following version control tools are pre-installed:
 
 - Firefox 68.4.1
 - geckodriver 0.26.0
-- Google Chrome 81
-- chrome_driver 81
+- Google Chrome 83
+- chrome_driver 83
 - xvfb (X Virtual Framebuffer)
 - phantomjs 2.1.1
 
@@ -249,9 +249,9 @@ Installed versions:
 - 5.6.40
 - 7.0.33
 - 7.1.33
-- 7.2.29
-- 7.3.16
-- 7.4.4
+- 7.2.31
+- 7.3.18
+- 7.4.6
 
 The default installed PHP version is 7.2.29.
 
@@ -282,7 +282,7 @@ Installed versions:
 
 Erlang versions are installed and managed via [kerl](https://github.com/kerl/kerl). Elixir versions are installed with [kiex](https://github.com/taylor/kiex).
 
-- Erlang: 20.3, 21.3, 22.3
+- Erlang: 20.3, 21.3, 22.3, 23.0
 - Elixir: 1.7.4, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4, 1.10.1, 1.10.2
 
 ##### Additional libraries
@@ -311,6 +311,19 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - Gradle: 5.2
 
 ## Changelog
+
+### 1st June 2020
+
+- Additions to the ubuntu1804 image
+    - Erlang 23.0
+
+- Updates to the ubuntu1804 image:
+    - Aws-cli 1.18.59 -> 1.18.68
+    - Chromedriver 81 -> 83
+    - Google Chrome 81 -> 83
+    - Php 7.2.29 -> 7.2.31
+    - Php 7.3.16 -> 7.3.18
+    - Php 7.4.4 -> 7.4.6
 
 ### 18th May 2020
 
