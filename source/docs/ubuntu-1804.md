@@ -178,7 +178,7 @@ The following version control tools are pre-installed:
 
 ### Browsers and Headless Browser Testing
 
-- Firefox 68.4.1
+- Firefox 68.9esr
 - geckodriver 0.26.0
 - Google Chrome 83
 - chrome_driver 83
@@ -295,8 +295,8 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - 1.10.8
 - 1.11.13
 - 1.12.17
-- 1.13.10
-- 1.14.2
+- 1.13.12
+- 1.14.4
 
 #### Java and JVM languages
 
@@ -312,6 +312,16 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 ## Changelog
 
+### 15th June 2020
+
+- Updates to the ubuntu1804 image:
+    - Aws-cli 1.18.68 -> 1.18.77
+    - Firefox 68.4esr -> 68.9esr
+    - Git 2.26 -> 2.27
+    - Go 1.13.10 -> 1.13.12
+    - Go 1.14.2 -> 1.14.4
+    - Heroku 7.41.1 -> 7.42.1
+    
 ### 1st June 2020
 
 - Additions to the ubuntu1804 image
