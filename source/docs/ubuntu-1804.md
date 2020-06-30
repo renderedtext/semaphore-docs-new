@@ -318,7 +318,7 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
     - Sysstat
 
 - Updates to the ubuntu1804 image:
-    - Aws-cli 1.18.77 -> 1.18.89
+    - Aws-cli 1.18.77 -> 1.18.90
     - Docker-compose 1.24.1 -> 1.26.0
 
 ### 15th June 2020
