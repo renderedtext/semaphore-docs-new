@@ -312,7 +312,10 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 ## Changelog
 
-### 15th June 2020
+### 30th June 2020
+
+- Additions to the ubuntu1804 image
+    - Sysstat
 
 - Updates to the ubuntu1804 image:
     - Aws-cli 1.18.77 -> 1.18.89
