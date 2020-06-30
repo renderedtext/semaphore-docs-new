@@ -192,7 +192,7 @@ Chrome and Firefox both support headless mode. You shouldn't need to do more tha
 Docker toolset is installed and the following versions are available:
 
 - Docker 19.03
-- docker-compose 1.24.1
+- docker-compose 1.26.0
 
 ### Cloud CLIs
 
@@ -311,6 +311,15 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - Gradle: 5.2
 
 ## Changelog
+
+### 30th June 2020
+
+- Additions to the ubuntu1804 image
+    - Sysstat
+
+- Updates to the ubuntu1804 image:
+    - Aws-cli 1.18.77 -> 1.18.90
+    - Docker-compose 1.24.1 -> 1.26.0
 
 ### 15th June 2020
 
