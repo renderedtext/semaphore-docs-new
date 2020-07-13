@@ -315,6 +315,7 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 ### 13th July 2020
 
 - Updates to the ubuntu1804 image:
+
     - Aws-cli 1.18.90 -> 1.18.96
     - Elixir 1.8.1 -> 1.8.2
     - Elixir 1.9.3 -> 1.9.4
