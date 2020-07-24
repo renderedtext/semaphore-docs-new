@@ -249,9 +249,9 @@ Installed versions:
 - 5.6.40
 - 7.0.33
 - 7.1.33
-- 7.2.31
-- 7.3.18
-- 7.4.6
+- 7.2.32
+- 7.3.20
+- 7.4.8
 
 The default installed PHP version is 7.2.29.
 
@@ -295,8 +295,8 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - 1.10.8
 - 1.11.13
 - 1.12.17
-- 1.13.12
-- 1.14.4
+- 1.13.14
+- 1.14.6
 
 #### Java and JVM languages
 
@@ -311,6 +311,24 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 - Gradle: 5.2
 
 ## Changelog
+
+### 27th July 2020
+
+- Additions to the ubuntu1804 image:
+
+    - Parallel version 20161222
+
+- Updates to the ubuntu1804 image:
+
+    - Aws-cli 1.18.96 -> 1.18.104
+    - Go 1.13.12 -> 1.13.14
+    - Go 1.14.4 -> 1.14.6
+    - Heroku 7.42.2 -> 7.42.5
+    - OpenJDK 11.0.7 -> 11.0.8
+    - PHP 7.2.31 -> 7.3.32
+    - PHP 7.3.19 -> 7.3.20
+    - PHP 7.4.7 -> 7.4.8
+
 
 ### 13th July 2020
 
