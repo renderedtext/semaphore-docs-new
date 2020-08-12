@@ -312,6 +312,20 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 ## Changelog
 
+### 12th August 2020
+
+- Additions to the ubuntu1804 image:
+
+    - Firefox version 78.1.0esr
+
+- Updates to the ubuntu1804 image:
+
+    - Aws-cli 1.18.104 -> 1.18.117
+    - Java 8u252 -> 8u265
+    - Heroku 7.42.5 -> 7.42.6
+    - Google-cloud-sdk downgrade 300 -> 297
+    
+
 ### 27th July 2020
 
 - Additions to the ubuntu1804 image:
