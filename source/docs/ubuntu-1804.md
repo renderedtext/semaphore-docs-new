@@ -312,6 +312,19 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 ## Changelog
 
+### 24th August 2020
+
+- Updates to the ubuntu1804 image:
+
+    - Aws-cli 1.18.117 -> 1.18.124
+    - Elixir 1.10.4 now uses Erlang 23.0.3
+    - Java 8u252 -> 8u265
+    - Heroku 7.42.6 -> 7.42.8
+    - Php 7.3.20 -> 7.3.21
+    - Php 7.4.8 -> 7.4.9
+    - Pypy 5.8.0 -> 7.3.1
+    
+
 ### 12th August 2020
 
 - Additions to the ubuntu1804 image:
