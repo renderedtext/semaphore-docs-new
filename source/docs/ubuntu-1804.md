@@ -312,6 +312,26 @@ Erlang versions are installed and managed via [kerl](https://github.com/kerl/ker
 
 ## Changelog
 
+### 23th September 2020
+
+- Additions to the ubuntu1804 image:
+  - Elixir versions: 1.10.0, 1.10.2, 1.10.3
+  - Go version: 1.15.2
+  - Azure-cli version: 2.11.1
+  
+- Updates to the ubuntu1804 image:
+  - Aws cli 1.18.129 -> 1.18.142
+  - Chrome 84 -> 85
+  - Chromedriver 84 -> 85
+  - Docker-compose 1.26.2 -> 1.27.2
+  - Go 1.13.14 -> 1.13.15
+  - Go 1.14.6 -> 1.14.7
+  - Heroku 7.42.8 -> 7.43.0
+  - Php 7.2.31 -> 7.2.33
+  - Php 7.3.21 -> 7.3.22
+  - Php 7.4.9 -> 7.4.10
+  - Yarn 1.22.4 -> 1.22.5
+
 ### 24th August 2020
 
 - Updates to the ubuntu1804 image:
