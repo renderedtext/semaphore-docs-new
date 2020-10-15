@@ -78,7 +78,7 @@ The `docker login` command will display a **Login Succeeded** message as an outp
 
 Another way to check is to open `~/.docker/config.json` and check the `auths` field. 
 
-If you have been successfully logged in the `auths` field will be updated accordingly:
+If you have been successfully logged in then the `auths` field will be updated accordingly:
 ```
 {
 	"auths": {
