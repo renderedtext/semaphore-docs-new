@@ -55,12 +55,14 @@ To add a secret to your organization, it is necessary to be a member of the orga
 - Open your organization page on Semaphore  
 - Go to the **Secrets** tab  
 - Click on the **New Secret** button  
+
 - Fill in the form and enter the name of the secret and optionally a description  
 - Click on **+Add first** next to the **Environment Variables**  
 - Enter `DOCKER_USERNAME` as variable name and your Docker Hub username as content and **Save**  
 - Click on **+ Add new** next to **Environment Variables**  
 - Enter `DOCKER_PASSWORD` as variable name and your Docker Hub password as content  
 - Make sure to select the **Encrypt** checkbox before clicking **Save**  
+
 - Click on **Edit** next to the **No Projects sharing this Secret**  
 - Select the projects that you want the secret to be available on and finish editing.  
 
