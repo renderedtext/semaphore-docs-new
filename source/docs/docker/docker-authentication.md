@@ -28,7 +28,7 @@ Please check instructions on [how to authenticate Docker pulls](#how-to-authenti
 If you have exceeded the rate limit Docker will throw the `Too Many Requests` error.  
 In the job log check the output of your `docker pull` command, if you have exceeded the rate limit output will be the following:  
 ```bash
-Error pulling image [DOCKER IMAGE NAME]: Error response from daemon: toomanyrequests: Too Many Requests.`
+Error pulling image <docker-image-name>: Error response from daemon: toomanyrequests: Too Many Requests.`
 ```
 
 ## How to authenticate Docker pulls  
