@@ -43,7 +43,7 @@ There are two ways of doing this:
 - Open the project where you want to use Docker Hub credentials  
 - Click on **Project settings** in the top right corner  
 - Click on **Enviroment Variables** in the left side menu  
-- Click on **+ Add** next to the "Project specific Enviroment Variables"  
+- Click on **+ Add** next to the **Project specific Enviroment Variables**  
 - Fill in the form `Name: DOCKER_USERNAME, Content: <your-docker-hub-username>`  
 - Click **Create Variable**  
 - Repeat the process and add one more variable: `Name: DOCKER_PASSWORD, Content:<your-docker-hub-password>`  
