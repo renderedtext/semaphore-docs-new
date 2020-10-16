@@ -20,13 +20,13 @@ We want to support you through this transition and help you reduce the impact of
 Feel free to reach out to our support team with any questions that you might have.  
 
 ## What should you do to minimize the effect of the rate limit   
-If you have a DockerHub account, **to avoid failing jobs we suggest that you start authenticating your pulls** in your Semaphore configuration.  
+If you have a DockerHub account, **to avoid failing jobs, we suggest that you start authenticating** in your Semaphore configuration.  
 Docker offers a rate limit of 200 pulls per 6 hours for their free plan accounts and unlimited pulls for Pro and Team Docker Hub accounts.  
 Please check instructions on [how to authenticate Docker pulls](#how-to-authenticate-Docker-pulls) in the section below.  
 
 ## How can you know if you are hitting the limit  
-If you have exceeded the rate limit Docker will throw the `Too Many Requests` error.  
-In the job log check the output of your `docker pull` command, if you have exceeded the rate limit output will be the following:  
+If you have exceeded the rate limit, Docker will throw the `Too Many Requests` error.  
+Check the output of your `docker pull` command in the job log, if you have exceeded the rate limit, the output will be the following:  
 ```bash
 Error pulling image <docker-image-name>: Error response from daemon: toomanyrequests: Too Many Requests.`
 ```
@@ -55,17 +55,17 @@ To add a secret to your organization, it is necessary to be a member of the orga
 - Open your organization page on Semaphore  
 - Go to the **Secrets** tab  
 - Click on the **New Secret** button  
-- Fill in the form and enter the name of the secret and optionally a description  
+- Fill in the form, enter the name of the secret and optionally a description  
 - Click on **+Add first** next to the **Environment Variables**  
-- Enter `DOCKER_USERNAME` as variable name and your Docker Hub username as content and **Save**  
+- Enter `DOCKER_USERNAME` as a variable name and your Docker Hub username as content, then click on **Save**  
 - Click on **+ Add new** next to **Environment Variables**  
-- Enter `DOCKER_PASSWORD` as variable name and your Docker Hub password as content  
+- Enter `DOCKER_PASSWORD` as a variable name and your Docker Hub password as content  
 - Make sure to select the **Encrypt** checkbox before clicking **Save**  
 - Click on **Edit** next to the **No Projects sharing this Secret**  
 - Select the projects that you want the secret to be available on and finish editing.  
 
 ### Log in to the Docker Hub
-After you have stored your Docker Hub credentials you must update your project configuration too.  
+After you have stored your Docker Hub credentials, you need to update your project configuration too.  
 You want to log into the Docker Hub before running any `docker pull` commands. 
 
 The easiest way to do this is to:  
@@ -74,7 +74,7 @@ The easiest way to do this is to:
 - Add the following command: `echo $DOCKER_PASSWORD | docker login --username "$DOCKER_USERNAME" --password-stdin`  
 
 ## How to check if you are logged in
-The `docker login` command will display a **Login Succeeded** message as an output if authentication was successful. 
+The `docker login` command will display a **Login Succeeded** message as an output if the authentication was successful. 
 
 Another way to check is to open `~/.docker/config.json` and check the `auths` field. 
 
