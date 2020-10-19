@@ -22,6 +22,8 @@ If you have a DockerHub account, **to avoid failing jobs, we suggest that you st
 Docker offers a rate limit of 200 pulls per 6 hours for their free plan accounts and unlimited pulls for Pro and Team Docker Hub accounts.  
 Please check instructions on [how to authenticate Docker pulls](#how-to-authenticate-Docker-pulls) in the section below.  
 
+## What are we doing? (sem-service, convenience images)
+
 ## How can you know if you are hitting the limit  
 If you have exceeded the rate limit, Docker will throw the `Too Many Requests` error.  
 Check the output of your `docker pull` command in the job log, if you have exceeded the rate limit, the output will be the following:  
