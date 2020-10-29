@@ -129,19 +129,6 @@ If no version value is given, a default value will be used according to the foll
 - rethinkdb: The default is `2.3.6`
 - cassandra: The default is `3.11.3`
 
-`sem-service` uses images from Docker Hub and supports all versions that are available in Docker Hub. You can find the list of available versions at the following URLs:
-
-- ElasticSearch: <https://hub.docker.com/_/elasticsearch/>
-- MySQL: <https://hub.docker.com/_/mysql/>
-- PostgreSQL: <https://hub.docker.com/_/postgres/>
-- PostGIS: <https://hub.docker.com/r/postgis/postgis>
-- Redis: <https://hub.docker.com/_/redis/>
-- MongoDB: <https://hub.docker.com/_/mongo/>
-- Memcached: <https://hub.docker.com/_/memcached/>
-- RabbitMQ: <https://hub.docker.com/_/rabbitmq/>
-- RethinkDB: <https://hub.docker.com/_/rethinkdb/>
-- Cassandra: <https://hub.docker.com/_/cassandra/>
-
 ### Examples
 
 ``` bash
