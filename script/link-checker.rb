@@ -44,7 +44,7 @@ options = {
     :connecttimeout => 30,
     :timeout => 60,
     :ssl_verifypeer => false,
-    :ssl_verifyhost => 0
+    :ssl_verifyhost => false
   }
 }
 
@@ -53,9 +53,9 @@ require 'bundler/inline'
 gemfile do
   source 'https://rubygems.org'
 
-  gem "html-proofer"
-  gem "nokogiri", "= 1.8.5"
-  gem "i18n", "= 1.5.1"
+  gem "html-proofer", "=3.9.3"
+  gem "nokogiri"
+  gem "i18n"
 end
 
 puts 'Gems installed and loaded!'
