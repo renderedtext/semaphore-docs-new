@@ -18,7 +18,7 @@ Current package versions are listed on the [Supported application stack](/docs/s
   - nodejs 10.15
   - ruby 2.6.0, 2.6.1
 - upgrades:
-  - ansible 2.6.4 -> 2.7.12
+  - ansible 2.6.4 -> 2.7.7
   - aws-cli 1.16.22 -> 1.16.102
   - aws-ecs 1.8.0 -> 1.12.1
   - bower 1.8.4 -> 1.8.8
