@@ -167,8 +167,8 @@ The following version control tools are pre-installed:
 
 - Firefox 68.9esr
 - geckodriver 0.26.0
-- Google Chrome 83
-- chrome_driver 83
+- Google Chrome 102
+- chrome_driver 102
 - xvfb (X Virtual Framebuffer)
 - phantomjs 2.1.1
 
@@ -178,8 +178,8 @@ Chrome and Firefox both support headless mode. You shouldn't need to do more tha
 
 Docker toolset is installed and the following versions are available:
 
-- Docker 19.03
-- docker-compose 1.26.0
+- Docker 20.10.16
+- docker-compose 1.29.2
 
 ### Cloud CLIs
 
@@ -208,8 +208,10 @@ Docker toolset is installed and the following versions are available:
 - 2.3.0 to 2.3.8
 - 2.4.0 to 2.4.10
 - 2.5.0 to 2.5.8
-- 2.6.0 to 2.6.6
-- 2.7.0 and 2.7.1
+- 2.6.0 to 2.6.9
+- 2.7.0 to 2.7.6
+- 3.0.0 to 3.0.4
+- 3.1.0 to 3.1.2
 - jruby-9.2.11.1
 
 #### JavaScript via Node.js
@@ -218,14 +220,11 @@ Node.js versions are managed by [nvm](https://github.com/creationix/nvm). You ca
 
 Installed versions:
 
-- v8.17.0 (set as default, with alias 8.17)
-- v10.19.0
-- v12.16.1
+- v16.15.0 (set as default, with alias 16.15)
 
 ##### Additional tools
 
-- Yarn: 1.22.4
-- Bower: 1.8.8
+- Yarn: 1.22.19
 
 #### PHP
 
@@ -237,10 +236,11 @@ Installed versions:
 - 7.0.33
 - 7.1.33
 - 7.2.32
-- 7.3.20
-- 7.4.8
+- 7.3.x
+- 7.4.x
+- 8.0.x
 
-The default installed PHP version is 7.2.29.
+The default installed PHP version is 7.4.29.
 
 ##### Additional libraries
 
@@ -253,51 +253,80 @@ Python versions are installed and managed by [virtualenv](https://virtualenv.pyp
 Installed versions:
 
 - 2.7
-- 3.6
 - 3.7
 - 3.8
+- 3.9
 
 ##### Supporting libraries
 
-- pypy: 5.8.0
-- pypy3: 5.8.0
-- pip: 20.0.2
-- pip3: 19
-- venv: 16.0.0
+- pypy: 7.3.9
+- pypy3: 7.3.9
+- pip: 20.3.4
+- pip3: 20.3.4
+- venv: 20.14.1
 
 #### Erlang and Elixir
 
 Erlang versions are installed and managed via [kerl](https://github.com/kerl/kerl). Elixir versions are installed with [kiex](https://github.com/taylor/kiex).
 
 - Erlang: 20.3, 21.3, 22.3, 23.0
-- Elixir: 1.7.4, 1.8.0, 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4, 1.10.1, 1.10.2
+- Elixir: 1.8.1, 1.8.2, 1.9.0, 1.9.1, 1.9.2, 1.9.3, 1.9.4, 1.10.1, 1.10.2, 1.10.3, 1.10.4, 1.11.1, 1.11.2, 1.11.3, 1.11.4, 1.12.3
 
 ##### Additional libraries
 
 - rebar: 2.6.4
-- rebar3: 3.12.1
+- rebar3: 3.18.0
 
 #### Go
 
 - 1.10.8
-- 1.11.13
-- 1.12.17
-- 1.13.14
-- 1.14.6
+- 1.11.x
+- 1.12.x
+- 1.13.x
+- 1.14.x
+- 1.15.x
+- 1.16.x
+- 1.17.x
+- 1.18.x
 
 #### Java and JVM languages
 
-- Java: 8, 11
+- Java: 8, 11, 17
 - Scala: 2.11.11, 2.12.10
-- Leiningen: 2.9.1 (Clojure)
+- Leiningen: 2.8.1 (Clojure)
 - sbt
 
 ##### Additional build tools
 
-- Maven: 3.5.4
+- Maven: 3.5.3
 - Gradle: 5.2
 
 ## Changelog
+
+### 1th June 2022
+
+- Additions to the ubuntu1804 image:
+  - Elixir versions: 1.10.4, 1.11.x 1.12
+  - Go versions 1.15.x, 1.16.x, 1.17.x, 1.18.x
+  - Java 17
+  - Php versions: 7.4.10+, 8.0.x
+  
+- Updates to the ubuntu1804 image:
+  - Azure-cli 2.11.1 -> 2.37.0
+  - Aws-cli 1.18.142 -> 1.23.8
+  - Bazel 4.2.1 -> 5.1.1
+  - Chrome 94 -> 102
+  - ChromeDriver 94 -> 102
+  - Docker 19 -> 20.10.16
+  - Docker-compose 1.26 -> 1.29.2
+  - Git 2.33 -> 2.36.1
+  - Git-lfs 3.0.1 -> 3.2.0
+  - Helm 3.7.0 -> 3.9.0
+  - Kerl 2.1.2 -> 2.4.0
+  - Rebar3 3.15.2 -> 3.18.0
+  - Terraform 0.15.0 -> 1.1.9
+
+
 
 ### 23th September 2020
 
