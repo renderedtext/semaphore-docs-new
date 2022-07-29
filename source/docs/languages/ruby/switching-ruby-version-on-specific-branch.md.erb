@@ -12,6 +12,12 @@ Add a new [build command](/docs/customizing-build-commands.html) that will set t
 if [ "$BRANCH_NAME" = "ruby-2" ]; then rbenv local 2.0.0-p247 ; fi
 ```
 
+Use specific ruby version for a specific branch:
+
+```bash
+if [ "$BRANCH_NAME" = "ruby-2.6" ]; then cd ~/.rbenv/plugins/ruby-build && git pull && cd $SEMAPHORE_PROJECT_DIR && rbenv install 2.6.0 && rbenv local 2.6.0 && gem install bundler ; fi
+```
+
 Another option is to add a [build command](/docs/customizing-build-commands.html) that reads and sets the ruby version from the first line of the Gemfile:
 
 ```bash
