@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/renderedtext/api.git
-  revision: 3159a1edf7cd0393cd3c33ab94407f7668a998ec
+  remote: git@github.com:renderedtext/api.git
+  revision: 158b096ff10b1b93638fa86b0b1ab46c8bad59b3
   specs:
     raml_parser (0.5.0)
 
@@ -124,7 +124,7 @@ GEM
     padrino-support (0.12.8.1)
       activesupport (>= 3.1)
     pmap (1.0.1)
-    rack (1.6.8)
+    rack (1.6.13)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rb-fsevent (0.10.2)
@@ -159,6 +159,9 @@ GEM
     unf (0.1.3)
       unf_ext
     unf_ext (0.0.6)
+    webrick (1.7.0)
+    xmlrpc (0.3.2)
+      webrick
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -174,6 +177,7 @@ DEPENDENCIES
   nokogiri
   raml_parser!
   redcarpet
+  xmlrpc
 
 BUNDLED WITH
    1.16.0
