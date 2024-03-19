@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/renderedtext/api.git
-  revision: 3159a1edf7cd0393cd3c33ab94407f7668a998ec
+  remote: git@github.com:renderedtext/api.git
+  revision: 158b096ff10b1b93638fa86b0b1ab46c8bad59b3
   specs:
     raml_parser (0.5.0)
 
@@ -109,14 +109,15 @@ GEM
       middleman-core (~> 3.0)
       rouge (~> 0.3.0)
     mime-types (2.0)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.8.5)
     minitest (5.10.3)
     multi_json (1.12.2)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.7.0)
-    nokogiri (1.8.4)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.15.6)
+      mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
     padrino-helpers (0.12.8.1)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.12.8.1)
@@ -124,6 +125,7 @@ GEM
     padrino-support (0.12.8.1)
       activesupport (>= 3.1)
     pmap (1.0.1)
+    racc (1.7.3)
     rack (1.6.8)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
@@ -159,6 +161,9 @@ GEM
     unf (0.1.3)
       unf_ext
     unf_ext (0.0.6)
+    webrick (1.8.1)
+    xmlrpc (0.3.3)
+      webrick
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -174,6 +179,7 @@ DEPENDENCIES
   nokogiri
   raml_parser!
   redcarpet
+  xmlrpc
 
 BUNDLED WITH
    1.16.0
